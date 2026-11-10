@@ -1,12 +1,12 @@
 # morechat.co-Assistant · 内容库
 
-morechat.co（Multica）的**助手 / 小队 / 技能内容仓**：只放内容，不放客户端代码，不放头像图片。
+morechat.co（morechat.co）的**助手 / 小队 / 技能内容仓**：只放内容，不放客户端代码，不放头像图片。
 
 - **39 个包**：34 个 Agent（单助手）+ 5 个 Squad（小队）
 - **113 个技能**（`SKILL.md` 口径），跨包同名技能已命名空间化
-- **977 个文件 / 14.28 MiB**（不含上游头像图，81 张 PNG 共 46.6 MB 未入库）
+- **976 个文件 / 14.26 MiB**（不含上游头像图，81 张 PNG 共 46.6 MB 未入库）
 - 机器可读清单：[`index.json`](index.json)（schemaVersion 1）
-- 逐字节上游快照：[`upstream/`](upstream)
+- 逐字节上游快照：[`upstream/`](upstream)（仅一处安全例外，见 §7）
 
 ---
 
@@ -31,11 +31,11 @@ morechat.co（Multica）的**助手 / 小队 / 技能内容仓**：只放内容�
 └── .github/workflows/validate.yml
 ```
 
-## 2. Multica 如何加载
+## 2. morechat.co 如何加载
 
-1. **整包导入**：把 `catalog/packages/<kind>/<id>/` 作为包根目录交给 Multica 导入 —— `plugin.json` 建 Agent/Squad，`agents/` 建角色，`skills/` 注册技能。
+1. **整包导入**：把 `catalog/packages/<kind>/<id>/` 作为包根目录交给 morechat.co 导入 —— `plugin.json` 建 Agent/Squad，`agents/` 建角色，`skills/` 注册技能。
 2. **索引消费**：列表页/检索/版本对比读 `index.json`；`path` 字段相对 `catalog/`，`sha256` 用于导入前校验与增量同步。
-3. **小队装配**：`kind: "team"` 的条目带 `leadAgent` 与 `members[]`；编排由 leader 建 Multica Squad、以 `@成员` 派发子任务。
+3. **小队装配**：`kind: "team"` 的条目带 `leadAgent` 与 `members[]`；编排由 leader 建 Squad、以 `@成员` 派发子任务。
 4. **依赖提示**：`requires` 由包内文件类型推断，`python`（含 `.py`）、`node`（含 `.mjs`）、`canvas`（含 `.ttf` 字体，技能侧画布渲染）；运行时按此预置环境。
 5. **技能挂载**：技能以物理目录名 `<pkg>--<skill>` 作为唯一 `ns` 挂载，避免跨包同名冲突。
 
@@ -44,7 +44,7 @@ morechat.co（Multica）的**助手 / 小队 / 技能内容仓**：只放内容�
 `plugin.json`（上游字段全保留）：`name` / `version` / `description` / `displayName{zh,en}` / `profession{zh,en}` / `displayDescription` / `categoryId` / `tags` / `skills[]` / `agents[]`；小队另有 `teamInfo{leadAgent,memberAgents}`、`members[]`。
 `avatar` 字段保留为元数据，**不随包分发**（见第 6 节）。
 
-### 技能 frontmatter 约定（DSH / Multica 运行时）
+### 技能 frontmatter 约定（DSH / morechat.co 运行时）
 
 工具声明键统一为 `allowed-tools-dsh`（原 `allowed-tools`），映射：
 
@@ -59,8 +59,8 @@ morechat.co（Multica）的**助手 / 小队 / 技能内容仓**：只放内容�
 | 上游写法 | 仓内写法 |
 |---|---|
 | `AskUserQuestion` / `ask_user` | 使用 dsh-tool-ask-user（ask_user_question）向用户提问；若运行时无该能力，改为在任务评论中提问并等待 |
-| `present_files` / `WorkBuddy 产物` | 使用 dsh-tool-present 声明交付；在 Multica 中作为 Issue 附件提交 |
-| `TeamCreate` | 创建 Multica Squad 并由 leader 通过 @ 派发子任务 |
+| `present_files` / `WorkBuddy 产物` | 使用 dsh-tool-present 声明交付；在任务评论中作为附件提交 |
+| `TeamCreate` | 创建平台小队（Squad）并由 leader 通过 @ 派发子任务 |
 
 ## 4. 命名空间与重名技能
 
@@ -109,7 +109,9 @@ morechat.co（Multica）的**助手 / 小队 / 技能内容仓**：只放内容�
 
 `upstream/packages/<kind>/<id>/` 保存上游原文（`plugin.json`、`agents/**`、`skills/**`、`README.md`、`references/**` 等，**不含头像**）。差异只在于：`upstream/` 保留上游运行期绑定字符串与上游安装说明，`catalog/` 已改写。两者可 `diff` 出全部转换点。
 
-`catalog` 的 `plugin.json` 保持上游字段顺序、缩进与换行，仅把禁止的运行期字符串就地替换（`WorkBuddy`/`CodeBuddy` → `Multica`），其余字节未动；未改动的原文在 `upstream/packages/<kind>/<id>/plugin/plugin.json`（`.codebuddy-plugin/plugin.json` 的副本）。
+**一处有意例外（安全）**：上游 `koc-ops-report/skills/…/scripts/skill_track.py` 会把报告正文、`account_id`、`client_ip` POST 到硬编码第三方地址，因此**既不进 `catalog/` 也不进 `upstream/`**；对应章节改写为「写完后直接作为附件交付」。其余文件的 `upstream/` 快照逐字节保留。
+
+`catalog` 的 `plugin.json` 保持上游字段顺序、缩进与换行，仅把禁止的运行期字符串就地替换（`WorkBuddy`/`CodeBuddy` → `morechat.co`），其余字节未动；未改动的原文在 `upstream/packages/<kind>/<id>/plugin/plugin.json`（`.codebuddy-plugin/plugin.json` 的副本）。
 
 ## 8. 门禁与 CI
 
@@ -142,9 +144,9 @@ node scripts/check-portability.mjs
 |---|---|
 | 包 | 39（34 agent / 5 team） |
 | 技能 | 113（107 唯一名，6 组重名已命名空间化） |
-| 文件 | 977 |
-| catalog 体积 | 14.28 MiB |
-| upstream 体积 | 14.37 MiB |
+| 文件 | 976 |
+| catalog 体积 | 14.26 MiB |
+| upstream 体积 | 14.35 MiB |
 | 转换前源树 | 1104 文件 / 61.69 MB（含 81 张头像 PNG 46.6 MB） |
 | 最大单包 | `agent/backend-architect` 5.56 MiB / 112 文件 |
 | 最大单技能 | `backend-architect--frontend-dev` 98 文件 / 5.42 MiB |
