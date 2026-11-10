@@ -54,7 +54,7 @@
     }
   ],
   "skills": [
-    "./skills/frontend-dev",
-    "./skills/fullstack-dev"
+    "./skills/backend-architect--frontend-dev",
+    "./skills/backend-architect--fullstack-dev"
   ]
 }

@@ -6,12 +6,14 @@
     "name": "mdit-lu",
     "email": "mdit-lu@example.com"
   },
-  "agents": ["./agents/rea-reverse-engineer.md"],
-  "skills": ["./skills/rea-analysis"],
-
+  "agents": [
+    "./agents/rea-reverse-engineer.md"
+  ],
+  "skills": [
+    "./skills/rea-reverse-engineer--rea-analysis"
+  ],
   "expertType": "agent",
   "agentName": "rea-reverse-engineer",
-
   "displayName": {
     "en": "REA Reverse Engineer Anything Expert",
     "zh": "REA 逆向功能分析专家"
@@ -32,13 +34,31 @@
   },
   "plugin": "rea-reverse-engineer",
   "tags": [
-    { "en": "Reverse Engineering", "zh": "逆向分析" },
-    { "en": "Feature Reconstruction", "zh": "功能重建" },
-    { "en": "Software Security", "zh": "软件安全" }
+    {
+      "en": "Reverse Engineering",
+      "zh": "逆向分析"
+    },
+    {
+      "en": "Feature Reconstruction",
+      "zh": "功能重建"
+    },
+    {
+      "en": "Software Security",
+      "zh": "软件安全"
+    }
   ],
   "quickPrompts": [
-    { "en": "I want to analyze how a software feature works, please run the authorization and purpose confirmation first", "zh": "我想分析一个软件的功能是怎么实现的，请先帮我做授权与用途确认" },
-    { "en": "Help me plan a reverse investigation to rebuild a feature from another app in my own project", "zh": "我想在自己的项目里重建某个应用的类似功能，帮我规划逆向调查流程" },
-    { "en": "Check whether my REA environment is ready and recommend an analysis method", "zh": "检查我的REA环境是否就绪，并推荐合适的分析方法" }
+    {
+      "en": "I want to analyze how a software feature works, please run the authorization and purpose confirmation first",
+      "zh": "我想分析一个软件的功能是怎么实现的，请先帮我做授权与用途确认"
+    },
+    {
+      "en": "Help me plan a reverse investigation to rebuild a feature from another app in my own project",
+      "zh": "我想在自己的项目里重建某个应用的类似功能，帮我规划逆向调查流程"
+    },
+    {
+      "en": "Check whether my REA environment is ready and recommend an analysis method",
+      "zh": "检查我的REA环境是否就绪，并推荐合适的分析方法"
+    }
   ]
 }

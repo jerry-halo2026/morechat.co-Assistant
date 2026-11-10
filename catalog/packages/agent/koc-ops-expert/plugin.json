@@ -20,17 +20,15 @@
     "./agents/koc-ops-expert.md"
   ],
   "skills": [
-    "./skills/koc-recruit-radar",
-    "./skills/koc-nurture-academy",
-    "./skills/koc-incentive-engine",
-    "./skills/koc-distribution-engine",
-    "./skills/koc-compliance-guard",
-    "./skills/koc-ops-report"
+    "./skills/koc-ops-expert--koc-compliance-guard",
+    "./skills/koc-ops-expert--koc-distribution-engine",
+    "./skills/koc-ops-expert--koc-incentive-engine",
+    "./skills/koc-ops-expert--koc-nurture-academy",
+    "./skills/koc-ops-expert--koc-ops-report",
+    "./skills/koc-ops-expert--koc-recruit-radar"
   ],
-
   "expertType": "agent",
   "agentName": "koc-ops-expert",
-
   "displayName": {
     "en": "KOC Operations Expert",
     "zh": "KOC运营专家"
@@ -51,9 +49,18 @@
   },
   "plugin": "koc-ops-expert",
   "tags": [
-    { "en": "KOC Recruiting", "zh": "KOC 招募" },
-    { "en": "Nurture & Incentive", "zh": "培育激励" },
-    { "en": "Affiliate Distribution", "zh": "分销变现" }
+    {
+      "en": "KOC Recruiting",
+      "zh": "KOC 招募"
+    },
+    {
+      "en": "Nurture & Incentive",
+      "zh": "培育激励"
+    },
+    {
+      "en": "Affiliate Distribution",
+      "zh": "分销变现"
+    }
   ],
   "quickPrompts": [
     {

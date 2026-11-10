@@ -5,7 +5,7 @@
 # source       : catalog/packages/agent/douyin-live-ad-expert
 # persona      : catalog/packages/agent/douyin-live-ad-expert/agents/douyin-live-ad-expert.md
 # skills root  : catalog/packages/agent/douyin-live-ad-expert/skills (5 bundle(s))
-# contentSha256: fd5c353ed5930553f4d5b2ded64fd9a88a92d6924924acc4444a465b437ba55d
+# contentSha256: c38f4644bcca0c990b38dadeb2321766cb34d104fddf88217e05f5252b3eccee
 #
 # DSH side of the preset layer: one @deepseek-ai/dsh-agent-preset declaration, shaped like
 # @deepseek-ai/dsh-web-app/presets/standard.patch.yml. It injects the package persona and the

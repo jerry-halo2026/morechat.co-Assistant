@@ -5,7 +5,7 @@
 # source       : catalog/packages/agent/workspace-builder
 # persona      : catalog/packages/agent/workspace-builder/agents/workspace-builder.md
 # skills root  : (package ships no skills)
-# contentSha256: 736d5a1e06da50de87484ba9b5f00923b5da268ead47c83c6f14f201075a8d1b
+# contentSha256: 9cedefa10e001a1c21a815b3123428b5e771e531600e19ef8f3d2ad729ceab80
 #
 # DSH side of the preset layer: one @deepseek-ai/dsh-agent-preset declaration, shaped like
 # @deepseek-ai/dsh-web-app/presets/standard.patch.yml. It injects the package persona and the

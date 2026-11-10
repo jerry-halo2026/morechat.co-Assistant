@@ -54,7 +54,7 @@
     }
   ],
   "skills": [
-    "./skills/anti-distill",
-    "./skills/humanizer"
+    "./skills/douyin-strategist--anti-distill",
+    "./skills/douyin-strategist--humanizer"
   ]
 }

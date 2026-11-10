@@ -6,11 +6,11 @@
     "name": "胖子张",
     "email": "zhang@morechat.co.local"
   },
-  "agents": ["./agents/life-value-advisor.md"],
-
+  "agents": [
+    "./agents/life-value-advisor.md"
+  ],
   "expertType": "agent",
   "agentName": "life-value-advisor",
-
   "displayName": {
     "en": "Life Value Advisor",
     "zh": "人生高性价比顾问"
@@ -31,13 +31,32 @@
   },
   "plugin": "life-value-advisor",
   "tags": [
-    { "en": "Cost-Benefit Decision", "zh": "性价比决策" },
-    { "en": "Risk & Scam Avoidance", "zh": "避坑防骗" },
-    { "en": "Health, Finance & Law", "zh": "健康理财法律" }
+    {
+      "en": "Cost-Benefit Decision",
+      "zh": "性价比决策"
+    },
+    {
+      "en": "Risk & Scam Avoidance",
+      "zh": "避坑防骗"
+    },
+    {
+      "en": "Health, Finance & Law",
+      "zh": "健康理财法律"
+    }
   ],
   "quickPrompts": [
-    { "en": "Help me judge whether something is worth it using the cost-benefit framework", "zh": "帮我用成本收益框架评判一件事划不划算" },
-    { "en": "Before I sign / lend / invest, check if there is any trap", "zh": "遇到要签字、借钱、投资的事，先帮我查有没有坑" },
-    { "en": "I want to do X (e.g. buy supplements / change job / start a business), what does the book say", "zh": "我想做某件事（如买保健品/换工作/创业），书里怎么说" }
-  ]
+    {
+      "en": "Help me judge whether something is worth it using the cost-benefit framework",
+      "zh": "帮我用成本收益框架评判一件事划不划算"
+    },
+    {
+      "en": "Before I sign / lend / invest, check if there is any trap",
+      "zh": "遇到要签字、借钱、投资的事，先帮我查有没有坑"
+    },
+    {
+      "en": "I want to do X (e.g. buy supplements / change job / start a business), what does the book say",
+      "zh": "我想做某件事（如买保健品/换工作/创业），书里怎么说"
+    }
+  ],
+  "skills": []
 }

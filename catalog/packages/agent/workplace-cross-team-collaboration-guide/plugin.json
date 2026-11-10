@@ -38,9 +38,9 @@
     }
   ],
   "skills": [
-    "./skills/goal-alignment-charter",
-    "./skills/role-progress-sync",
-    "./skills/conflict-resolution"
+    "./skills/workplace-cross-team-collaboration-guide--conflict-resolution",
+    "./skills/workplace-cross-team-collaboration-guide--goal-alignment-charter",
+    "./skills/workplace-cross-team-collaboration-guide--role-progress-sync"
   ],
   "tags": [
     {

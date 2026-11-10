@@ -57,5 +57,6 @@
       "en": "Smooth the wording of report.docx and keep all changes tracked."
     }
   ],
-  "plugin": "huashu-doc-reviewer"
+  "plugin": "huashu-doc-reviewer",
+  "skills": []
 }

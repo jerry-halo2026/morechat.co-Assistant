@@ -12,7 +12,7 @@
   ],
   "agentName": "blm-strategy-advisor",
   "skills": [
-    "./skills/blm-coverage-checker"
+    "./skills/blm-strategy-advisor--blm-coverage-checker"
   ],
   "displayName": {
     "en": "BLM Strategy Advisor",

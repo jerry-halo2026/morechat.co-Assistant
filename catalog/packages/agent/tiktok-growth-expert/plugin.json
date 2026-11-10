@@ -6,11 +6,11 @@
     "name": "Gavin Yang",
     "email": "gavin@live.cn"
   },
-  "agents": ["./agents/tiktok-growth-expert.md"],
-
+  "agents": [
+    "./agents/tiktok-growth-expert.md"
+  ],
   "expertType": "agent",
   "agentName": "tiktok-growth-expert",
-
   "displayName": {
     "en": "TikTok Ops Expert",
     "zh": "TikTok运营实战专家"
@@ -31,9 +31,18 @@
   },
   "plugin": "tiktok-growth-expert",
   "tags": [
-    { "en": "TikTok Live", "zh": "TikTok 直播" },
-    { "en": "Short Video Growth", "zh": "短视频运营" },
-    { "en": "Cross-border Monetization", "zh": "跨境变现" }
+    {
+      "en": "TikTok Live",
+      "zh": "TikTok 直播"
+    },
+    {
+      "en": "Short Video Growth",
+      "zh": "短视频运营"
+    },
+    {
+      "en": "Cross-border Monetization",
+      "zh": "跨境变现"
+    }
   ],
   "quickPrompts": [
     {
@@ -48,5 +57,8 @@
       "zh": "我的 TikTok 视频播放量卡在 500，帮我诊断原因并给出突破方案",
       "en": "My TikTok videos are stuck at 500 views. Diagnose the cause and give me a breakthrough plan."
     }
+  ],
+  "skills": [
+    "./skills/tiktok-growth-expert--tiktok-growth-playbook"
   ]
 }

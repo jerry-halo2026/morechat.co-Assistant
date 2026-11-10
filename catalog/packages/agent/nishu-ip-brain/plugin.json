@@ -6,11 +6,11 @@
     "name": "NiShu",
     "email": ""
   },
-  "agents": ["./agents/nishu-ip-brain.md"],
-
+  "agents": [
+    "./agents/nishu-ip-brain.md"
+  ],
   "expertType": "agent",
   "agentName": "nishu-ip-brain",
-
   "displayName": {
     "en": "NiShu",
     "zh": "倪叔"
@@ -31,13 +31,32 @@
   },
   "plugin": "nishu-ip-brain",
   "tags": [
-    { "en": "Personal IP Positioning", "zh": "个人IP定位" },
-    { "en": "Founder IP Coaching", "zh": "创始人IP辅导" },
-    { "en": "Trust Monetization", "zh": "信任商业变现" }
+    {
+      "en": "Personal IP Positioning",
+      "zh": "个人IP定位"
+    },
+    {
+      "en": "Founder IP Coaching",
+      "zh": "创始人IP辅导"
+    },
+    {
+      "en": "Trust Monetization",
+      "zh": "信任商业变现"
+    }
   ],
   "quickPrompts": [
-    { "en": "I'm a founder wanting to build a personal IP from scratch. How should I position myself first?", "zh": "我是一名创始人，想从0打造个人IP，第一步该怎么定位自己？" },
-    { "en": "Help me sort through my life story and core strengths to extract unique value points that build trust and close deals.", "zh": "帮我梳理我的人生故事和核心优势，提炼出能促成信任与成交的独特价值点。" },
-    { "en": "I already have some followers but monetization is hard — where's the gap?", "zh": "我已经有一定粉丝了，但变现困难，问题出在哪？" }
-  ]
+    {
+      "en": "I'm a founder wanting to build a personal IP from scratch. How should I position myself first?",
+      "zh": "我是一名创始人，想从0打造个人IP，第一步该怎么定位自己？"
+    },
+    {
+      "en": "Help me sort through my life story and core strengths to extract unique value points that build trust and close deals.",
+      "zh": "帮我梳理我的人生故事和核心优势，提炼出能促成信任与成交的独特价值点。"
+    },
+    {
+      "en": "I already have some followers but monetization is hard — where's the gap?",
+      "zh": "我已经有一定粉丝了，但变现困难，问题出在哪？"
+    }
+  ],
+  "skills": []
 }

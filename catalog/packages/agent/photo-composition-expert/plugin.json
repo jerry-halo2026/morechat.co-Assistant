@@ -6,11 +6,11 @@
     "name": "kefeng",
     "email": "kefeng@local.morechat.co"
   },
-  "agents": ["./agents/photo-composition-expert.md"],
-
+  "agents": [
+    "./agents/photo-composition-expert.md"
+  ],
   "expertType": "agent",
   "agentName": "photo-composition-expert",
-
   "displayName": {
     "en": "FrameCraft",
     "zh": "光影工匠"
@@ -31,13 +31,32 @@
   },
   "plugin": "photo-composition-expert",
   "tags": [
-    { "en": "Portrait Composition", "zh": "人像构图" },
-    { "en": "Landscape Composition", "zh": "风光构图" },
-    { "en": "Product Composition", "zh": "产品构图" }
+    {
+      "en": "Portrait Composition",
+      "zh": "人像构图"
+    },
+    {
+      "en": "Landscape Composition",
+      "zh": "风光构图"
+    },
+    {
+      "en": "Product Composition",
+      "zh": "产品构图"
+    }
   ],
   "quickPrompts": [
-    { "en": "I'm shooting a portrait set in a park at 4pm with backlight, aiming for a clean, story-rich feel. Give me 5 composition options with camera position, focal length, and framing notes.", "zh": "我要在公园下午 4 点拍一组人像写真，逆光、想让画面干净有故事感。请给我 5 个构图方案，标注机位、景别和画面组织要点。" },
-    { "en": "I'm heading to western Sichuan to shoot autumn landscapes and want to capture that 'layered forest in blazing colors' feeling. Give me a composition checklist for the field.", "zh": "去川西拍秋色风光，想拍出『层林尽染』的感觉，给我一份能在现场对照执行的构图要点清单。" },
-    { "en": "I need to shoot the hero image of a perfume bottle for an e-commerce listing. What 3 angles and lighting approaches will best convey the bottle's texture and luxury feel?", "zh": "我要给一款香水瓶拍电商主图，怎么构图才能凸显质感？给我 3 个角度和对应的布光思路。" }
-  ]
+    {
+      "en": "I'm shooting a portrait set in a park at 4pm with backlight, aiming for a clean, story-rich feel. Give me 5 composition options with camera position, focal length, and framing notes.",
+      "zh": "我要在公园下午 4 点拍一组人像写真，逆光、想让画面干净有故事感。请给我 5 个构图方案，标注机位、景别和画面组织要点。"
+    },
+    {
+      "en": "I'm heading to western Sichuan to shoot autumn landscapes and want to capture that 'layered forest in blazing colors' feeling. Give me a composition checklist for the field.",
+      "zh": "去川西拍秋色风光，想拍出『层林尽染』的感觉，给我一份能在现场对照执行的构图要点清单。"
+    },
+    {
+      "en": "I need to shoot the hero image of a perfume bottle for an e-commerce listing. What 3 angles and lighting approaches will best convey the bottle's texture and luxury feel?",
+      "zh": "我要给一款香水瓶拍电商主图，怎么构图才能凸显质感？给我 3 个角度和对应的布光思路。"
+    }
+  ],
+  "skills": []
 }

@@ -11,13 +11,13 @@
   },
   "license": "",
   "skills": [
-    "./skills/product-management-workflows",
-    "./skills/feature-spec",
-    "./skills/roadmap-management",
-    "./skills/stakeholder-comms",
-    "./skills/user-research-synthesis",
-    "./skills/competitive-analysis",
-    "./skills/metrics-tracking"
+    "./skills/product-management--competitive-analysis",
+    "./skills/product-management--feature-spec",
+    "./skills/product-management--metrics-tracking",
+    "./skills/product-management--product-management-workflows",
+    "./skills/product-management--roadmap-management",
+    "./skills/product-management--stakeholder-comms",
+    "./skills/product-management--user-research-synthesis"
   ],
   "expertType": "agent",
   "agentName": "product-management-expert",

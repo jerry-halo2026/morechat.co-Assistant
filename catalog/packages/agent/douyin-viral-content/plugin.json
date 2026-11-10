@@ -6,21 +6,21 @@
     "name": "morechat.co",
     "email": ""
   },
-  "agents": ["./agents/douyin-viral-content.md"],
-  "skills": [
-    "./skills/douyin-hot-trend",
-    "./skills/douyin-search",
-    "./skills/douyin-ai-feed",
-    "./skills/douyin-daily-hot",
-    "./skills/douyin-weekly-surge",
-    "./skills/multi-copywrite-alchemy",
-    "./skills/douyin-prohibited-word",
-    "./skills/douyin-content-surge"
+  "agents": [
+    "./agents/douyin-viral-content.md"
   ],
-
+  "skills": [
+    "./skills/douyin-viral-content--douyin-ai-feed",
+    "./skills/douyin-viral-content--douyin-content-surge",
+    "./skills/douyin-viral-content--douyin-daily-hot",
+    "./skills/douyin-viral-content--douyin-hot-trend",
+    "./skills/douyin-viral-content--douyin-prohibited-word",
+    "./skills/douyin-viral-content--douyin-search",
+    "./skills/douyin-viral-content--douyin-weekly-surge",
+    "./skills/douyin-viral-content--multi-copywrite-alchemy"
+  ],
   "expertType": "agent",
   "agentName": "douyin-viral-content",
-
   "displayName": {
     "en": "Douyin Viral Content Expert",
     "zh": "抖音爆款内容专家"
@@ -41,9 +41,18 @@
   },
   "plugin": "douyin-viral-content",
   "tags": [
-    { "en": "Viral Copywriting", "zh": "爆款文案" },
-    { "en": "Trend Discovery", "zh": "热点挖掘" },
-    { "en": "Content Compliance", "zh": "合规扫雷" }
+    {
+      "en": "Viral Copywriting",
+      "zh": "爆款文案"
+    },
+    {
+      "en": "Trend Discovery",
+      "zh": "热点挖掘"
+    },
+    {
+      "en": "Content Compliance",
+      "zh": "合规扫雷"
+    }
   ],
   "quickPrompts": [
     {

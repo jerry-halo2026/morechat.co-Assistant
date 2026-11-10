@@ -5,12 +5,14 @@
   "author": {
     "name": "chenghao"
   },
-  "agents": ["./agents/omnichannel-ads-expert.md"],
-  "skills": ["./skills/omnichannel-ads-playbook"],
-
+  "agents": [
+    "./agents/omnichannel-ads-expert.md"
+  ],
+  "skills": [
+    "./skills/omnichannel-ads-expert--omnichannel-ads-playbook"
+  ],
   "expertType": "agent",
   "agentName": "omnichannel-ads-expert",
-
   "displayName": {
     "en": "Omni",
     "zh": "全渠道投放官"
@@ -31,9 +33,18 @@
   },
   "plugin": "omnichannel-ads-expert",
   "tags": [
-    { "en": "Cross-Platform Media Strategy", "zh": "跨平台投放策略" },
-    { "en": "Ad Creative Production", "zh": "广告素材创意" },
-    { "en": "Campaign Monitoring & Optimization", "zh": "投放监控与优化" }
+    {
+      "en": "Cross-Platform Media Strategy",
+      "zh": "跨平台投放策略"
+    },
+    {
+      "en": "Ad Creative Production",
+      "zh": "广告素材创意"
+    },
+    {
+      "en": "Campaign Monitoring & Optimization",
+      "zh": "投放监控与优化"
+    }
   ],
   "quickPrompts": [
     {

@@ -5,7 +5,7 @@
 # source       : catalog/packages/agent/life-value-advisor
 # persona      : catalog/packages/agent/life-value-advisor/agents/life-value-advisor.md
 # skills root  : (package ships no skills)
-# contentSha256: effb36adcff7361e23566b586acb646ed6eb0808c340b4a631b549ed837a8179
+# contentSha256: 63896abba991bdbd5c4afd90ca4e8b661121f1363c3931538aace2dbd076bb87
 #
 # DSH side of the preset layer: one @deepseek-ai/dsh-agent-preset declaration, shaped like
 # @deepseek-ai/dsh-web-app/presets/standard.patch.yml. It injects the package persona and the

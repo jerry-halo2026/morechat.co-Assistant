@@ -15,9 +15,8 @@
     "./agents/content-adapter.md"
   ],
   "skills": [
-    "./skills/ai-content-production"
+    "./skills/ai-content-creator-team--ai-content-production"
   ],
-
   "expertType": "team",
   "agentName": "ai-content-creator-team-lead",
   "teamInfo": {
@@ -31,7 +30,6 @@
       "content-adapter"
     ]
   },
-
   "displayName": {
     "en": "Content Creator Team",
     "zh": "内容创作专家团"
@@ -52,62 +50,122 @@
     "zh": "帮我确定新产品的品牌视觉方向，做一个情绪板"
   },
   "tags": [
-    { "en": "Creative Strategy", "zh": "创意策划" },
-    { "en": "AI Video & Image", "zh": "AI视频与图片" },
-    { "en": "Generative Polish", "zh": "精修合成" }
+    {
+      "en": "Creative Strategy",
+      "zh": "创意策划"
+    },
+    {
+      "en": "AI Video & Image",
+      "zh": "AI视频与图片"
+    },
+    {
+      "en": "Generative Polish",
+      "zh": "精修合成"
+    }
   ],
   "quickPrompts": [
-    { "en": "Help me define the brand visual direction for my new product and create a moodboard", "zh": "帮我确定新产品的品牌视觉方向，做一个情绪板" },
-    { "en": "Help me generate a 15-second product promotional short video with AI", "zh": "帮我用 AI 生成一段 15 秒的产品宣传短视频" },
-    { "en": "Generate a set of Xiaohongshu-style lifestyle images with matching copy for my new product launch", "zh": "为我的新品上市生成一组小红书风格的种草图文，包含配图和文案" }
+    {
+      "en": "Help me define the brand visual direction for my new product and create a moodboard",
+      "zh": "帮我确定新产品的品牌视觉方向，做一个情绪板"
+    },
+    {
+      "en": "Help me generate a 15-second product promotional short video with AI",
+      "zh": "帮我用 AI 生成一段 15 秒的产品宣传短视频"
+    },
+    {
+      "en": "Generate a set of Xiaohongshu-style lifestyle images with matching copy for my new product launch",
+      "zh": "为我的新品上市生成一组小红书风格的种草图文，包含配图和文案"
+    }
   ],
   "members": [
     {
       "id": "ai-content-creator-team-lead",
-      "name": { "en": "Soren", "zh": "司远" },
-      "profession": { "en": "Creative Director", "zh": "创意总监" },
+      "name": {
+        "en": "Soren",
+        "zh": "司远"
+      },
+      "profession": {
+        "en": "Creative Director",
+        "zh": "创意总监"
+      },
       "avatar": "avatars/ai-content-creator-team-lead.png",
       "role": "lead"
     },
     {
       "id": "creative-strategist",
-      "name": { "en": "Celine", "zh": "策凌" },
-      "profession": { "en": "Creative Strategist", "zh": "创意策划师" },
+      "name": {
+        "en": "Celine",
+        "zh": "策凌"
+      },
+      "profession": {
+        "en": "Creative Strategist",
+        "zh": "创意策划师"
+      },
       "avatar": "avatars/creative-strategist.png",
       "role": "member"
     },
     {
       "id": "copywriter",
-      "name": { "en": "Penn", "zh": "笔澜" },
-      "profession": { "en": "Copywriter", "zh": "文案创作专家" },
+      "name": {
+        "en": "Penn",
+        "zh": "笔澜"
+      },
+      "profession": {
+        "en": "Copywriter",
+        "zh": "文案创作专家"
+      },
       "avatar": "avatars/copywriter.png",
       "role": "member"
     },
     {
       "id": "video-generator",
-      "name": { "en": "Veo", "zh": "维欧" },
-      "profession": { "en": "Video Generation Expert", "zh": "视频生成专家" },
+      "name": {
+        "en": "Veo",
+        "zh": "维欧"
+      },
+      "profession": {
+        "en": "Video Generation Expert",
+        "zh": "视频生成专家"
+      },
       "avatar": "avatars/video-generator.png",
       "role": "member"
     },
     {
       "id": "image-creator",
-      "name": { "en": "Percy", "zh": "珀西" },
-      "profession": { "en": "Image & Text Creator", "zh": "图文创作专家" },
+      "name": {
+        "en": "Percy",
+        "zh": "珀西"
+      },
+      "profession": {
+        "en": "Image & Text Creator",
+        "zh": "图文创作专家"
+      },
       "avatar": "avatars/image-creator.png",
       "role": "member"
     },
     {
       "id": "video-editor",
-      "name": { "en": "Clip", "zh": "柯立" },
-      "profession": { "en": "Video Editing Expert", "zh": "视频编辑专家" },
+      "name": {
+        "en": "Clip",
+        "zh": "柯立"
+      },
+      "profession": {
+        "en": "Video Editing Expert",
+        "zh": "视频编辑专家"
+      },
       "avatar": "avatars/video-editor.png",
       "role": "member"
     },
     {
       "id": "content-adapter",
-      "name": { "en": "Ada", "zh": "艾达" },
-      "profession": { "en": "Content Adaptation Expert", "zh": "素材改编专家" },
+      "name": {
+        "en": "Ada",
+        "zh": "艾达"
+      },
+      "profession": {
+        "en": "Content Adaptation Expert",
+        "zh": "素材改编专家"
+      },
       "avatar": "avatars/content-adapter.png",
       "role": "member"
     }

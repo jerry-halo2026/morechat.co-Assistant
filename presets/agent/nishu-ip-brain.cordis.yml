@@ -5,7 +5,7 @@
 # source       : catalog/packages/agent/nishu-ip-brain
 # persona      : catalog/packages/agent/nishu-ip-brain/agents/nishu-ip-brain.md
 # skills root  : (package ships no skills)
-# contentSha256: c276326a804455f445a3133ed3b7a5f3435d22a244b1295825b32945995d4bd5
+# contentSha256: 280711b5e2500fb069b5970ff2a50f80476a550360cb5fe41bb896444ccef90e
 #
 # DSH side of the preset layer: one @deepseek-ai/dsh-agent-preset declaration, shaped like
 # @deepseek-ai/dsh-web-app/presets/standard.patch.yml. It injects the package persona and the

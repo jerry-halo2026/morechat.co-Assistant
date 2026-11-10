@@ -6,12 +6,15 @@
     "name": "morechat.co",
     "email": "morechat.co@tencent.com"
   },
-  "agents": ["./agents/douyin-operation-expert.md"],
-  "skills": ["./skills/douyin-precision-ops", "./skills/douyin-video-intel"],
-
+  "agents": [
+    "./agents/douyin-operation-expert.md"
+  ],
+  "skills": [
+    "./skills/douyin-operation-expert--douyin-precision-ops",
+    "./skills/douyin-operation-expert--douyin-video-intel"
+  ],
   "expertType": "agent",
   "agentName": "douyin-operation-expert",
-
   "displayName": {
     "en": "Douyin Precision Operations Expert",
     "zh": "抖音精细化运营专家"
@@ -32,9 +35,18 @@
   },
   "plugin": "douyin-operation-expert",
   "tags": [
-    { "en": "Live & Short-Video Ops", "zh": "直播与短视频运营" },
-    { "en": "Local-Life Group-Buying", "zh": "团购本地生活" },
-    { "en": "Full-Funnel Audience Asset", "zh": "全域人群资产精细化" }
+    {
+      "en": "Live & Short-Video Ops",
+      "zh": "直播与短视频运营"
+    },
+    {
+      "en": "Local-Life Group-Buying",
+      "zh": "团购本地生活"
+    },
+    {
+      "en": "Full-Funnel Audience Asset",
+      "zh": "全域人群资产精细化"
+    }
   ],
   "quickPrompts": [
     {

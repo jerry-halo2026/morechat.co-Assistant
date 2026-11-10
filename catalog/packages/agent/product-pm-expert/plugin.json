@@ -52,5 +52,8 @@
   ],
   "agents": [
     "./agents/product-pm-expert.md"
+  ],
+  "skills": [
+    "./skills/product-pm-expert--product-pm"
   ]
 }

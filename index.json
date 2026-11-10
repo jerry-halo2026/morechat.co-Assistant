@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "generator": "morechat-assistant/scripts/build-catalog.mjs",
-  "generatedAt": "2026-11-10T05:31:44.807Z",
+  "generatedAt": "2026-11-10T09:00:36.244Z",
   "source": {
     "catalogRoot": "catalog",
     "upstreamRoot": "upstream",
@@ -15,7 +15,7 @@
     "teams": 5,
     "skills": 113,
     "files": 976,
-    "bytes": 14951068,
+    "bytes": 14956698,
     "sourceBytes": 14933887,
     "duplicateSkillNames": [
       {
@@ -61,8 +61,8 @@
       "version": "1.0.2",
       "path": "packages/agent/ai-engineer",
       "files": 44,
-      "bytes": 223546,
-      "sha256": "89dea66a04809f8fbd1e30cb594a230c938612427892cbf331af83cf41ef7f90",
+      "bytes": 224162,
+      "sha256": "b60157c27498dc65ee12231a44cca1f21569af4dd8f6d7ad19c3f5559affcc5a",
       "skills": [
         {
           "name": "agent-browser-core",
@@ -212,8 +212,8 @@
       "version": "1.0.1",
       "path": "packages/agent/backend-architect",
       "files": 112,
-      "bytes": 5832133,
-      "sha256": "de4650f576a14221daacf8782f4d751b7419690b8e3531c171e85eb0cb3d8bf2",
+      "bytes": 5832113,
+      "sha256": "6ccec3214125b53660d26ce3620239e76ab2da2299b3ba692050f74643a92841",
       "skills": [
         {
           "name": "frontend-dev",
@@ -268,8 +268,8 @@
       "version": "1.1.1",
       "path": "packages/agent/blm-strategy-advisor",
       "files": 5,
-      "bytes": 49015,
-      "sha256": "58e6e482c883d442118ecc78df1fb852f3f2c678828c7a43db5d6b5b0f25cebd",
+      "bytes": 49037,
+      "sha256": "cfad2b5bb291d7de4be8cf64ad7fa928b73d455bc78913f71f70f44fee7f5138",
       "skills": [
         {
           "name": "blm-coverage-checker",
@@ -315,8 +315,8 @@
       "version": "1.0.0",
       "path": "packages/agent/data-analysis",
       "files": 19,
-      "bytes": 101632,
-      "sha256": "4776f6e95a4679f96898213ccc4c83460946d963775f7dbaefe702472712e035",
+      "bytes": 102171,
+      "sha256": "0f4fd1efce0825b130da0bf17da2a923d7b2ff5f31538fbf1e67422c57d2f354",
       "skills": [
         {
           "name": "data-analysis-cn",
@@ -362,8 +362,8 @@
       "version": "1.0.39",
       "path": "packages/agent/designkit-ugc-commerce",
       "files": 5,
-      "bytes": 40809,
-      "sha256": "178bfb273cd80fe9ff88191fa4661eb9beffe801304ac7dc9f04f68117ef2571",
+      "bytes": 40833,
+      "sha256": "d8bd6c725780ea5d835928648c952d7dd9d670aaaa2e310a931a8e824bb6ff18",
       "skills": [
         {
           "name": "ugc-commerce",
@@ -407,8 +407,8 @@
       "version": "1.0.1",
       "path": "packages/agent/douyin-live-ad-expert",
       "files": 15,
-      "bytes": 74517,
-      "sha256": "fd5c353ed5930553f4d5b2ded64fd9a88a92d6924924acc4444a465b437ba55d",
+      "bytes": 74627,
+      "sha256": "c38f4644bcca0c990b38dadeb2321766cb34d104fddf88217e05f5252b3eccee",
       "skills": [
         {
           "name": "live-ad-analyze",
@@ -484,8 +484,8 @@
       "version": "2.0.0",
       "path": "packages/agent/douyin-operation-expert",
       "files": 9,
-      "bytes": 122637,
-      "sha256": "93aa0c9be79827a68a69cf0012a2d086d098e8588c94b9904e58f26cd95b2e21",
+      "bytes": 122700,
+      "sha256": "f187c3c99758397fbd0b46b33664aa18fa1858082ba4ebcca6d8758d5e989d13",
       "skills": [
         {
           "name": "douyin-precision-ops",
@@ -539,8 +539,8 @@
       "version": "1.0.2",
       "path": "packages/agent/douyin-strategist",
       "files": 13,
-      "bytes": 68678,
-      "sha256": "a0f98bbd96e5d123f97651cfffff13a20c156c2614f9cfbddf2c7a8941010c46",
+      "bytes": 68658,
+      "sha256": "897d8e5fd2a81b762ab06b34fc9364cc98904d2a3c686024a5302cd6602236b5",
       "skills": [
         {
           "name": "anti-distill",
@@ -592,8 +592,8 @@
       "version": "1.0.0",
       "path": "packages/agent/douyin-viral-content",
       "files": 49,
-      "bytes": 418358,
-      "sha256": "6056424cd9edc97cc4940a6cb2e9ffa498b4127a845b716f545348742aaf5b81",
+      "bytes": 418526,
+      "sha256": "9804ca326a6c5645c370fdb68af4c088b7b2676970fbfe4cfb9b501b54927035",
       "skills": [
         {
           "name": "douyin-ai-feed",
@@ -695,8 +695,8 @@
       "version": "1.0.0",
       "path": "packages/agent/ecom-data-analyst",
       "files": 3,
-      "bytes": 15249,
-      "sha256": "37735298a0f946c59c80f73e37b6abe4a9c748fd5aa4a31e7168d6284e652723",
+      "bytes": 15324,
+      "sha256": "9bbe49453cb8a0917a4725aa122883c163103df363138ef4133575a1f6bfb43d",
       "skills": [],
       "requires": [],
       "tags": [
@@ -731,8 +731,8 @@
       "version": "2026.11.3",
       "path": "packages/agent/fbsir-industry-scene-researcher",
       "files": 50,
-      "bytes": 360482,
-      "sha256": "586729d09df91b1de2bcc929418651acd12bf539c29876f96adbc57a777d5da2",
+      "bytes": 360450,
+      "sha256": "ae6ca3f6758fd914df6aba24fb7a7227c44a34068dd54106026420b9fa4e739b",
       "skills": [
         {
           "name": "industry-scene-service-recording",
@@ -778,8 +778,8 @@
       "version": "1.0.0",
       "path": "packages/agent/finance",
       "files": 12,
-      "bytes": 118233,
-      "sha256": "1959af94aa4e69177168685a5206cad6bcca0a3be68847144e040a261955f927",
+      "bytes": 118297,
+      "sha256": "38c0a93b308594c99104fa1ff46d25f7bbb72e4c044e3de39dcca83daefda4d5",
       "skills": [
         {
           "name": "audit-support",
@@ -858,8 +858,8 @@
       "version": "1.0.0",
       "path": "packages/agent/flywheel-koc-matrix-recruiter",
       "files": 8,
-      "bytes": 4412,
-      "sha256": "d57648a37fe82dc3ccaf432c1eccd793441f257f8b3cdb2632a6181e05c0116c",
+      "bytes": 4444,
+      "sha256": "72b0a4399c655d2cce7c4711cb7e0615de0204b84e95b02893091231331212fc",
       "skills": [
         {
           "name": "flywheel-koc-matrix-recruiter-core",
@@ -905,8 +905,8 @@
       "version": "1.0.1",
       "path": "packages/agent/huashu-doc-reviewer",
       "files": 3,
-      "bytes": 10511,
-      "sha256": "59d3a6bdba7a9b467904cc2aa440eb3038490f01b054975ba48d66b909c1d56e",
+      "bytes": 10527,
+      "sha256": "02c14cdc71a6fc776e0d7136fcb4c7f802e74c3ada90bff11ec272bf86a8f4ce",
       "skills": [],
       "requires": [],
       "tags": [
@@ -941,8 +941,8 @@
       "version": "1.0.2",
       "path": "packages/agent/jifan-lapian-fuke",
       "files": 21,
-      "bytes": 42470,
-      "sha256": "de664591a1e4e950e2846633a7bae8743d7c516b57cce5389d18a020f89cbc96",
+      "bytes": 42528,
+      "sha256": "f3edd45c01d03306ebe9239cebbbb03eb570314e9a60d001757fd73aa1eec957",
       "skills": [
         {
           "name": "jifan-lapian-chaifen",
@@ -1004,8 +1004,8 @@
       "version": "1.0.0",
       "path": "packages/agent/koc-ops-expert",
       "files": 30,
-      "bytes": 444618,
-      "sha256": "ae646398331225867ad0095b410605b10618922f2e3097cc4c76356d27525181",
+      "bytes": 444760,
+      "sha256": "44cb218af8d0b991fd89d49c3655bfad42e4a1927c76160137d58072cf7332da",
       "skills": [
         {
           "name": "koc-compliance-guard",
@@ -1091,8 +1091,8 @@
       "version": "1.0.1",
       "path": "packages/agent/life-value-advisor",
       "files": 38,
-      "bytes": 1831609,
-      "sha256": "effb36adcff7361e23566b586acb646ed6eb0808c340b4a631b549ed837a8179",
+      "bytes": 1831684,
+      "sha256": "63896abba991bdbd5c4afd90ca4e8b661121f1363c3931538aace2dbd076bb87",
       "skills": [],
       "requires": [],
       "tags": [
@@ -1127,8 +1127,8 @@
       "version": "1.0.2",
       "path": "packages/agent/livestream-ecommerce-coach",
       "files": 30,
-      "bytes": 389672,
-      "sha256": "94a3ecabb34b2d3cd8f0c2b40df1542f3c217f8da7d646374bcb82eb0938b7e8",
+      "bytes": 391029,
+      "sha256": "941ad33f42a12df341b46cb67fcf1ef476c45a41ff609edb276a373a68932375",
       "skills": [
         {
           "name": "ab-test-setup",
@@ -1364,8 +1364,8 @@
       "version": "2026.11.5",
       "path": "packages/agent/long-manuscript-expert",
       "files": 74,
-      "bytes": 766696,
-      "sha256": "e34a708edd24cdceb7748b7016790bddae4210e90b8158c27e755acc5476ed27",
+      "bytes": 766655,
+      "sha256": "aebd490167d22491a35d43c66f4d572dc967c11ddd9b61ad7e3f2e1cbe58b07d",
       "skills": [
         {
           "name": "long-manuscript-core",
@@ -1411,8 +1411,8 @@
       "version": "1.5.1",
       "path": "packages/agent/long-video-remix",
       "files": 170,
-      "bytes": 2075945,
-      "sha256": "201233523ce80bb1752fd07ca45556137ed23644ffb99c9c4d5f5608cb318a1b",
+      "bytes": 2075883,
+      "sha256": "ad0d0743c9991972da1e4d1e870a6643d44fea3b193fbc4ffb88db24ff93eb81",
       "skills": [
         {
           "name": "long-video-remix",
@@ -1458,8 +1458,8 @@
       "version": "1.0.0",
       "path": "packages/agent/nishu-ip-brain",
       "files": 3,
-      "bytes": 12665,
-      "sha256": "c276326a804455f445a3133ed3b7a5f3435d22a244b1295825b32945995d4bd5",
+      "bytes": 12784,
+      "sha256": "280711b5e2500fb069b5970ff2a50f80476a550360cb5fe41bb896444ccef90e",
       "skills": [],
       "requires": [],
       "tags": [
@@ -1494,8 +1494,8 @@
       "version": "1.0.0",
       "path": "packages/agent/omnichannel-ads-expert",
       "files": 10,
-      "bytes": 45122,
-      "sha256": "68f3a59e9e5b0c6094a1188b2e457153d4e87b9f4583932d4f9f44fbda97258f",
+      "bytes": 45156,
+      "sha256": "3f4334ed15ae011c1d00691d77f0c21a64eeaa17ecf7ccca9cb68236faa074e9",
       "skills": [
         {
           "name": "omnichannel-ads-playbook",
@@ -1539,8 +1539,8 @@
       "version": "1.6.6",
       "path": "packages/agent/performance-payroll-employment-risk-expert",
       "files": 6,
-      "bytes": 27228,
-      "sha256": "a51be31943683df451b69501dec4abf5480202aae1d38c75beec07a5b4e96dcf",
+      "bytes": 27272,
+      "sha256": "d43b26eecfc0c426cf9ecf1548d301d1ca37a99fe9b6469b23f6f24c9eb96316",
       "skills": [
         {
           "name": "performance-payroll-risk-analysis",
@@ -1584,8 +1584,8 @@
       "version": "1.0.0",
       "path": "packages/agent/photo-composition-expert",
       "files": 3,
-      "bytes": 9958,
-      "sha256": "8573dce856dc09f17bae26193a0a121a6cbd98da4d06bde2fc3c70bd092d5861",
+      "bytes": 10035,
+      "sha256": "86849ba2c3a37bfa03f089fbfa8b850ef8c038befcd12a95493bd60286beac66",
       "skills": [],
       "requires": [],
       "tags": [
@@ -1620,8 +1620,8 @@
       "version": "1.0.0",
       "path": "packages/agent/product-management",
       "files": 12,
-      "bytes": 121866,
-      "sha256": "6d52d52305b03495950d128261a6eddb8c4b65e984f5ae1b0824a9e276586bf4",
+      "bytes": 122007,
+      "sha256": "4c5aa8786a0eac478b884f112b7483daa51deb5ac1744e86e23a6b9d195a1ff2",
       "skills": [
         {
           "name": "competitive-analysis",
@@ -1700,8 +1700,8 @@
       "version": "1.19.25",
       "path": "packages/agent/product-pm-expert",
       "files": 14,
-      "bytes": 321290,
-      "sha256": "f53881faa50fd8093cd3fda2ea2900df00d1cda1b6a4a8cdc3702d1b65c5e795",
+      "bytes": 321300,
+      "sha256": "6d62b2555189ca7f7a3a23007c74463f445ae56c649f8ccfc7afe9924ef5e98e",
       "skills": [
         {
           "name": "product-pm",
@@ -1745,8 +1745,8 @@
       "version": "1.1.1",
       "path": "packages/agent/product-strategy-advisor",
       "files": 19,
-      "bytes": 36324,
-      "sha256": "65762a70a67820be12033245bbec7b253ac7224a62020fa5073177b14d16f1ce",
+      "bytes": 36341,
+      "sha256": "8dcf63508da16a5922ee01bc78f0e8b5dfed07b1a936f5082df2bf4117e2cd90",
       "skills": [],
       "requires": [],
       "tags": [
@@ -1781,8 +1781,8 @@
       "version": "1.0.0",
       "path": "packages/agent/rea-reverse-engineer",
       "files": 8,
-      "bytes": 24073,
-      "sha256": "00a35dfc8a698104f5946322a82a2313682af0be0ae7dcbd4bc84da53166ee37",
+      "bytes": 24161,
+      "sha256": "10e7e867565b5143f51a81eb1bae40961ae5ba558938bf51b9e5ea994e2edbb9",
       "skills": [
         {
           "name": "rea-analysis",
@@ -1826,8 +1826,8 @@
       "version": "2.0.0",
       "path": "packages/agent/resume-match-expert",
       "files": 11,
-      "bytes": 105363,
-      "sha256": "55816ae9b55069a22131366270b74f14da33c3f37268de1e7ee19a4d919c50f0",
+      "bytes": 105496,
+      "sha256": "c768135843479f2132912d00f83b06f69b9cb20eb04e7d6744cb51ce269f9e4f",
       "skills": [
         {
           "name": "resume-match",
@@ -1873,8 +1873,8 @@
       "version": "1.0.0",
       "path": "packages/agent/short-video-script-writer",
       "files": 5,
-      "bytes": 18199,
-      "sha256": "1424ab40f14076466891500e82cbc123f0a4e8260a7b57dc64f722c9686edd29",
+      "bytes": 18226,
+      "sha256": "fddcb50b5777683fe93e81282143329aef759c880a1a9f0721deec778050e053",
       "skills": [
         {
           "name": "short-video-script-templates",
@@ -1918,8 +1918,8 @@
       "version": "1.0.0",
       "path": "packages/agent/tiktok-growth-expert",
       "files": 12,
-      "bytes": 41182,
-      "sha256": "57aa78367b969f274aa12ba4b94695b74ee06b297fa0c89599c2e24018032676",
+      "bytes": 41315,
+      "sha256": "8b0592062f5629071e2ee6804873db00fdc516844d9f5a6fb7c35f380e58abc8",
       "skills": [
         {
           "name": "tiktok-growth-playbook",
@@ -1963,8 +1963,8 @@
       "version": "0.1.5",
       "path": "packages/agent/trade-market-analyst",
       "files": 19,
-      "bytes": 148808,
-      "sha256": "085b4b64dda44a84aeeebe05feac18555a1af2f3cbc1943c843d464389a296bc",
+      "bytes": 148964,
+      "sha256": "fc7ee388a98d2031124ff4d90575cfedd421a911c3a8e8e95b5d6a02aff54059",
       "skills": [
         {
           "name": "trade-data-router",
@@ -2024,8 +2024,8 @@
       "version": "0.1.0",
       "path": "packages/agent/workplace-cross-team-collaboration-guide",
       "files": 9,
-      "bytes": 20968,
-      "sha256": "6ab496619a22a6b79b0c46e8af602f3bda899bd134116b895b50340a8902c7b9",
+      "bytes": 21095,
+      "sha256": "5b3a54fdb9d57606d9b2726e8d9de0850e5336c6ff29014e5f9a89873c25cad0",
       "skills": [
         {
           "name": "conflict-resolution",
@@ -2085,8 +2085,8 @@
       "version": "1.5.1",
       "path": "packages/agent/workspace-builder",
       "files": 2,
-      "bytes": 25986,
-      "sha256": "736d5a1e06da50de87484ba9b5f00923b5da268ead47c83c6f14f201075a8d1b",
+      "bytes": 26104,
+      "sha256": "9cedefa10e001a1c21a815b3123428b5e771e531600e19ef8f3d2ad729ceab80",
       "skills": [],
       "requires": [],
       "tags": [
@@ -2121,8 +2121,8 @@
       "version": "1.0.0",
       "path": "packages/team/ai-content-creator-team",
       "files": 16,
-      "bytes": 145698,
-      "sha256": "d5df3ac9554ab2920a03147216c2dbf4316f01c40a057971ab486a3be22aa800",
+      "bytes": 146125,
+      "sha256": "47e4369d5d1ffdf18ea98c2470ba4d052cefd6efde549622b1811c4d2ab37c7a",
       "skills": [
         {
           "name": "ai-content-production",
@@ -2253,8 +2253,8 @@
       "version": "1.0.0",
       "path": "packages/team/content-monetization-team",
       "files": 12,
-      "bytes": 77933,
-      "sha256": "906f4f9648534027c223359b5ff00a0084746f242a8577a1f07e120916eeeb2c",
+      "bytes": 78276,
+      "sha256": "f472640dd042b03cc066b4144f18136ca0bc7ff0e36e4eb2675465145ae0040b",
       "skills": [
         {
           "name": "content-monetization-ops",
@@ -2361,8 +2361,8 @@
       "version": "2.4.1",
       "path": "packages/team/fullstack-forge-team",
       "files": 19,
-      "bytes": 155179,
-      "sha256": "1d96644a3ccf4641aa695c3476111bab0e25b7982e1cbda200b75c220133268f",
+      "bytes": 155201,
+      "sha256": "67bc4bf9494455e259231c5310aa55dc2497a730cdf010f41f21f57f3a3a6db5",
       "skills": [
         {
           "name": "forge-orchestrator",
@@ -2505,8 +2505,8 @@
       "version": "2.1.1",
       "path": "packages/team/mvp-dev-expert-team",
       "files": 44,
-      "bytes": 510767,
-      "sha256": "82976df56754565af4c0542348039d6217a3cb72b764020cde56b25ce244d0de",
+      "bytes": 510589,
+      "sha256": "eaeae06f2b821fe0bb36f669c3f6d7c7e80bfd018332ab3386a60f859e2a780b",
       "skills": [],
       "requires": [],
       "tags": [
@@ -2640,8 +2640,8 @@
       "version": "1.0.0",
       "path": "packages/team/opc-team",
       "files": 42,
-      "bytes": 111237,
-      "sha256": "c5541cc0672dda64c6bc8f8b7bef765ce8f401602c07d5eff55eda4ca94cb2a7",
+      "bytes": 111843,
+      "sha256": "7aebfe4d958ffca60665d156694e39766e508bddae63a2fcbcf506379f0a18b2",
       "skills": [
         {
           "name": "opc-asset-ops",

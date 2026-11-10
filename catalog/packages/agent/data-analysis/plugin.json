@@ -26,7 +26,9 @@
       "red-team-reviewer"
     ]
   },
-  "skills": ["./skills/data-analysis-cn"],
+  "skills": [
+    "./skills/data-analysis--data-analysis-cn"
+  ],
   "displayName": {
     "en": "Data Team",
     "zh": "数据分析专家团"
@@ -47,9 +49,18 @@
   },
   "plugin": "data-analysis",
   "tags": [
-    { "en": "Data Analysis", "zh": "数据分析" },
-    { "en": "Data Driven", "zh": "数据驱动" },
-    { "en": "Business Analysis", "zh": "经营分析" }
+    {
+      "en": "Data Analysis",
+      "zh": "数据分析"
+    },
+    {
+      "en": "Data Driven",
+      "zh": "数据驱动"
+    },
+    {
+      "en": "Business Analysis",
+      "zh": "经营分析"
+    }
   ],
   "quickPrompts": [
     {
@@ -66,11 +77,83 @@
     }
   ],
   "members": [
-    { "id": "data-team-lead", "name": { "en": "Horizon", "zh": "Horizon" }, "profession": { "en": "Data Team Lead", "zh": "首席分析师" }, "avatar": "avatars/team-lead.png", "role": "lead" },
-    { "id": "data-engineer", "name": { "en": "Chen", "zh": "陈澈" }, "profession": { "en": "Data Engineer", "zh": "数据工程师" }, "avatar": "avatars/data-engineer.png", "role": "member" },
-    { "id": "data-statistician", "name": { "en": "Yan", "zh": "严谨" }, "profession": { "en": "Statistician", "zh": "统计学家" }, "avatar": "avatars/data-statistician.png", "role": "member" },
-    { "id": "insight-consultant", "name": { "en": "Ming", "zh": "顾明" }, "profession": { "en": "Insight Consultant", "zh": "行业洞察顾问" }, "avatar": "avatars/insight-consultant.png", "role": "member" },
-    { "id": "visual-storyteller", "name": { "en": "Shu", "zh": "陈述" }, "profession": { "en": "Visual Storyteller", "zh": "可视化叙事官" }, "avatar": "avatars/visual-storyteller.png", "role": "member" },
-    { "id": "red-team-reviewer", "name": { "en": "Zhen", "zh": "甄核" }, "profession": { "en": "Red Team Reviewer", "zh": "复核官" }, "avatar": "avatars/red-team-reviewer.png", "role": "member" }
+    {
+      "id": "data-team-lead",
+      "name": {
+        "en": "Horizon",
+        "zh": "Horizon"
+      },
+      "profession": {
+        "en": "Data Team Lead",
+        "zh": "首席分析师"
+      },
+      "avatar": "avatars/team-lead.png",
+      "role": "lead"
+    },
+    {
+      "id": "data-engineer",
+      "name": {
+        "en": "Chen",
+        "zh": "陈澈"
+      },
+      "profession": {
+        "en": "Data Engineer",
+        "zh": "数据工程师"
+      },
+      "avatar": "avatars/data-engineer.png",
+      "role": "member"
+    },
+    {
+      "id": "data-statistician",
+      "name": {
+        "en": "Yan",
+        "zh": "严谨"
+      },
+      "profession": {
+        "en": "Statistician",
+        "zh": "统计学家"
+      },
+      "avatar": "avatars/data-statistician.png",
+      "role": "member"
+    },
+    {
+      "id": "insight-consultant",
+      "name": {
+        "en": "Ming",
+        "zh": "顾明"
+      },
+      "profession": {
+        "en": "Insight Consultant",
+        "zh": "行业洞察顾问"
+      },
+      "avatar": "avatars/insight-consultant.png",
+      "role": "member"
+    },
+    {
+      "id": "visual-storyteller",
+      "name": {
+        "en": "Shu",
+        "zh": "陈述"
+      },
+      "profession": {
+        "en": "Visual Storyteller",
+        "zh": "可视化叙事官"
+      },
+      "avatar": "avatars/visual-storyteller.png",
+      "role": "member"
+    },
+    {
+      "id": "red-team-reviewer",
+      "name": {
+        "en": "Zhen",
+        "zh": "甄核"
+      },
+      "profession": {
+        "en": "Red Team Reviewer",
+        "zh": "复核官"
+      },
+      "avatar": "avatars/red-team-reviewer.png",
+      "role": "member"
+    }
   ]
 }

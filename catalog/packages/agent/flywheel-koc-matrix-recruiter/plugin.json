@@ -11,7 +11,7 @@
     "./agents/flywheel-koc-matrix-recruiter.md"
   ],
   "skills": [
-    "./skills/flywheel-koc-matrix-recruiter-core"
+    "./skills/flywheel-koc-matrix-recruiter--flywheel-koc-matrix-recruiter-core"
   ],
   "expertType": "agent",
   "agentName": "flywheel-koc-matrix-recruiter",

@@ -18,7 +18,7 @@
  *     is preserved under upstream/.
  *
  * Node built-ins only. Run:
- *   node scripts/build-catalog.mjs [--src D:/dev/bot] [--root E:/CodexData/morechat-assistant]
+ *   node scripts/build-catalog.mjs [--src D:/dev/bot] [--root D:/dev/morechat-assistant]
  */
 import fs from 'node:fs';
 import path from 'node:path';
@@ -31,7 +31,7 @@ const argOf = (name, dflt) => {
   return i >= 0 && argv[i + 1] ? argv[i + 1] : dflt;
 };
 const SRC = path.resolve(argOf('--src', 'D:/dev/bot'));
-const ROOT = path.resolve(argOf('--root', 'E:/CodexData/morechat-assistant'));
+const ROOT = path.resolve(argOf('--root', 'D:/dev/morechat-assistant'));
 const CAT = path.join(ROOT, 'catalog');
 const UP = path.join(ROOT, 'upstream');
 const PKG_OUT = path.join(CAT, 'packages');
@@ -416,8 +416,19 @@ function copyPackage(kind, id) {
     }
     outFiles.push({ rel, abs: dst });
   }
-  // plugin.json (converted in place, layout preserved)
-  fs.writeFileSync(path.join(catalogDir, 'plugin.json'), convertPluginJson(pluginRaw.toString('utf8')), 'utf8');
+  // plugin.json (converted in place, layout preserved) — except the skills
+  // list: upstream paths (./skills/<name>) do not exist in catalog/, where
+  // every skill directory is namespaced. Leaving them would make any importer
+  // that trusts plugin.json resolve zero skills.
+  let convertedPlugin = convertPluginJson(pluginRaw.toString('utf8'));
+  const namespacedSkills = skills.map((s) => './skills/' + skillNs.get(s.relDir));
+  // Parse → set → re-serialize: a regex over upstream formatting was fragile
+  // (the array did not get rewritten), and the upstream byte copy already lives
+  // in upstream/. The catalog copy only has to be valid JSON with real paths.
+  const pluginObj = JSON.parse(convertedPlugin);
+  pluginObj.skills = namespacedSkills;
+  const finalPlugin = JSON.stringify(pluginObj, null, 2) + '\n';  if (process.env.DEBUG_PLUGIN) console.error('DBG', kind, id, 'skills', skills.length, 'ns', namespacedSkills.slice(0,2));
+  fs.writeFileSync(path.join(catalogDir, 'plugin.json'), finalPlugin, 'utf8');
   outFiles.push({ rel: 'plugin.json', abs: path.join(catalogDir, 'plugin.json') });
 
   // 3) index entry

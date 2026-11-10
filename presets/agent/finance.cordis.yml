@@ -5,7 +5,7 @@
 # source       : catalog/packages/agent/finance
 # persona      : catalog/packages/agent/finance/agents/finance-accounting-expert.md
 # skills root  : catalog/packages/agent/finance/skills (7 bundle(s))
-# contentSha256: 1959af94aa4e69177168685a5206cad6bcca0a3be68847144e040a261955f927
+# contentSha256: 38c0a93b308594c99104fa1ff46d25f7bbb72e4c044e3de39dcca83daefda4d5
 #
 # DSH side of the preset layer: one @deepseek-ai/dsh-agent-preset declaration, shaped like
 # @deepseek-ai/dsh-web-app/presets/standard.patch.yml. It injects the package persona and the

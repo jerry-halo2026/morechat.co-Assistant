@@ -6,18 +6,18 @@
     "name": "未来阳光数据科技（深圳）有限公司"
   },
   "homepage": "https://ad.auradatarep.com",
-  "agents": ["./agents/douyin-live-ad-expert.md"],
-  "skills": [
-    "./skills/live-ad-theory",
-    "./skills/live-ad-flash",
-    "./skills/live-ad-collect",
-    "./skills/live-ad-analyze",
-    "./skills/live-ad-strategy"
+  "agents": [
+    "./agents/douyin-live-ad-expert.md"
   ],
-
+  "skills": [
+    "./skills/douyin-live-ad-expert--live-ad-analyze",
+    "./skills/douyin-live-ad-expert--live-ad-collect",
+    "./skills/douyin-live-ad-expert--live-ad-flash",
+    "./skills/douyin-live-ad-expert--live-ad-strategy",
+    "./skills/douyin-live-ad-expert--live-ad-theory"
+  ],
   "expertType": "agent",
   "agentName": "douyin-live-ad-expert",
-
   "displayName": {
     "en": "Douyin Live Ad Expert",
     "zh": "抖音投流专家"
@@ -38,9 +38,18 @@
   },
   "plugin": "douyin-live-ad-expert",
   "tags": [
-    { "en": "Traffic Diagnosis", "zh": "直播间投流诊断" },
-    { "en": "Root-Cause Attribution", "zh": "流量归因" },
-    { "en": "Market Benchmark", "zh": "大盘数据对比" }
+    {
+      "en": "Traffic Diagnosis",
+      "zh": "直播间投流诊断"
+    },
+    {
+      "en": "Root-Cause Attribution",
+      "zh": "流量归因"
+    },
+    {
+      "en": "Market Benchmark",
+      "zh": "大盘数据对比"
+    }
   ],
   "quickPrompts": [
     {

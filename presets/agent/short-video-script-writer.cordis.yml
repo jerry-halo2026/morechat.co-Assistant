@@ -5,7 +5,7 @@
 # source       : catalog/packages/agent/short-video-script-writer
 # persona      : catalog/packages/agent/short-video-script-writer/agents/short-video-script-writer.md
 # skills root  : catalog/packages/agent/short-video-script-writer/skills (1 bundle(s))
-# contentSha256: 1424ab40f14076466891500e82cbc123f0a4e8260a7b57dc64f722c9686edd29
+# contentSha256: fddcb50b5777683fe93e81282143329aef759c880a1a9f0721deec778050e053
 #
 # DSH side of the preset layer: one @deepseek-ai/dsh-agent-preset declaration, shaped like
 # @deepseek-ai/dsh-web-app/presets/standard.patch.yml. It injects the package persona and the

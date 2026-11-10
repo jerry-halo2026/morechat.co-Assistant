@@ -54,9 +54,19 @@
     }
   ],
   "skills": [
-    "./skills/agent-browser-core",
-    "./skills/agent-team-orchestration",
-    "./skills/deep-research",
-    "./skills/fullstack-dev"
+    "./skills/ai-engineer--agent-browser-core",
+    "./skills/ai-engineer--agent-team-orchestration",
+    "./skills/ai-engineer--research",
+    "./skills/ai-engineer--research-add-fields",
+    "./skills/ai-engineer--research-add-items",
+    "./skills/ai-engineer--research-deep",
+    "./skills/ai-engineer--deep-research-research-en-research",
+    "./skills/ai-engineer--deep-research-research-en-research-add-fields",
+    "./skills/ai-engineer--deep-research-research-en-research-add-items",
+    "./skills/ai-engineer--deep-research-research-en-research-deep",
+    "./skills/ai-engineer--research-report",
+    "./skills/ai-engineer--deep-research-research-report",
+    "./skills/ai-engineer--deep-research",
+    "./skills/ai-engineer--fullstack-dev"
   ]
 }

@@ -11,13 +11,13 @@
   },
   "license": "",
   "skills": [
-    "./skills/finance-workflows",
-    "./skills/journal-entry-prep",
-    "./skills/reconciliation",
-    "./skills/financial-statements",
-    "./skills/variance-analysis",
-    "./skills/close-management",
-    "./skills/audit-support"
+    "./skills/finance--audit-support",
+    "./skills/finance--close-management",
+    "./skills/finance--finance-workflows",
+    "./skills/finance--financial-statements",
+    "./skills/finance--journal-entry-prep",
+    "./skills/finance--reconciliation",
+    "./skills/finance--variance-analysis"
   ],
   "expertType": "agent",
   "agentName": "finance-accounting-expert",

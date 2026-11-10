@@ -54,7 +54,30 @@
     }
   ],
   "skills": [
-    "./skills/market-researcher",
-    "./skills/marketing-skills"
+    "./skills/livestream-ecommerce-coach--market-researcher",
+    "./skills/livestream-ecommerce-coach--ab-test-setup",
+    "./skills/livestream-ecommerce-coach--analytics-tracking",
+    "./skills/livestream-ecommerce-coach--competitor-alternatives",
+    "./skills/livestream-ecommerce-coach--copy-editing",
+    "./skills/livestream-ecommerce-coach--copywriting",
+    "./skills/livestream-ecommerce-coach--email-sequence",
+    "./skills/livestream-ecommerce-coach--form-cro",
+    "./skills/livestream-ecommerce-coach--free-tool-strategy",
+    "./skills/livestream-ecommerce-coach--launch-strategy",
+    "./skills/livestream-ecommerce-coach--marketing-ideas",
+    "./skills/livestream-ecommerce-coach--marketing-psychology",
+    "./skills/livestream-ecommerce-coach--onboarding-cro",
+    "./skills/livestream-ecommerce-coach--page-cro",
+    "./skills/livestream-ecommerce-coach--paid-ads",
+    "./skills/livestream-ecommerce-coach--paywall-upgrade-cro",
+    "./skills/livestream-ecommerce-coach--popup-cro",
+    "./skills/livestream-ecommerce-coach--pricing-strategy",
+    "./skills/livestream-ecommerce-coach--programmatic-seo",
+    "./skills/livestream-ecommerce-coach--referral-program",
+    "./skills/livestream-ecommerce-coach--schema-markup",
+    "./skills/livestream-ecommerce-coach--seo-audit",
+    "./skills/livestream-ecommerce-coach--signup-flow-cro",
+    "./skills/livestream-ecommerce-coach--social-content",
+    "./skills/livestream-ecommerce-coach--marketing-skills"
   ]
 }

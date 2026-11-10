@@ -5,7 +5,7 @@
 # source       : catalog/packages/agent/designkit-ugc-commerce
 # persona      : catalog/packages/agent/designkit-ugc-commerce/agents/designkit-ugc-commerce.md
 # skills root  : catalog/packages/agent/designkit-ugc-commerce/skills (1 bundle(s))
-# contentSha256: 178bfb273cd80fe9ff88191fa4661eb9beffe801304ac7dc9f04f68117ef2571
+# contentSha256: d8bd6c725780ea5d835928648c952d7dd9d670aaaa2e310a931a8e824bb6ff18
 #
 # DSH side of the preset layer: one @deepseek-ai/dsh-agent-preset declaration, shaped like
 # @deepseek-ai/dsh-web-app/presets/standard.patch.yml. It injects the package persona and the

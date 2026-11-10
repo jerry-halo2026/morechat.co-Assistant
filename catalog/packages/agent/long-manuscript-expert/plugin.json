@@ -10,7 +10,7 @@
     "./agents/long-manuscript-expert.md"
   ],
   "skills": [
-    "./skills/long-manuscript-core"
+    "./skills/long-manuscript-expert--long-manuscript-core"
   ],
   "expertType": "agent",
   "agentName": "long-manuscript-expert",

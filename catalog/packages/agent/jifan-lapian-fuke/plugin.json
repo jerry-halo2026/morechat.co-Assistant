@@ -10,9 +10,9 @@
     "./agents/jifan-lapian-fuke.md"
   ],
   "skills": [
-    "./skills/jifan-lapian-chaifen",
-    "./skills/jifan-lapian-jiegou",
-    "./skills/jifan-lapian-qingdan"
+    "./skills/jifan-lapian-fuke--jifan-lapian-chaifen",
+    "./skills/jifan-lapian-fuke--jifan-lapian-jiegou",
+    "./skills/jifan-lapian-fuke--jifan-lapian-qingdan"
   ],
   "expertType": "agent",
   "agentName": "jifan-lapian-fuke",

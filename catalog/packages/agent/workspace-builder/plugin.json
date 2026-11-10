@@ -6,11 +6,11 @@
     "name": "morechat.co 团队",
     "email": ""
   },
-  "agents": ["./agents/workspace-builder.md"],
-
+  "agents": [
+    "./agents/workspace-builder.md"
+  ],
   "expertType": "agent",
   "agentName": "workspace-builder",
-
   "displayName": {
     "en": "DeskCraft",
     "zh": "小台"
@@ -31,13 +31,32 @@
   },
   "plugin": "workspace-builder",
   "tags": [
-    { "en": "Workspace Builder", "zh": "工作台搭建" },
-    { "en": "Responsive Web", "zh": "响应式网页" },
-    { "en": "Personal Productivity", "zh": "个人效率工具" }
+    {
+      "en": "Workspace Builder",
+      "zh": "工作台搭建"
+    },
+    {
+      "en": "Responsive Web",
+      "zh": "响应式网页"
+    },
+    {
+      "en": "Personal Productivity",
+      "zh": "个人效率工具"
+    }
   ],
   "quickPrompts": [
-    { "en": "Build a literacy learning workspace for my 4-year-old: 5 new characters daily with pictograph cards, word exercises, and point rewards", "zh": "帮我4岁宝宝做一个识字启蒙工作台，每天学5个字，有象形字卡片、组词练习和闯关积分奖励" },
-    { "en": "Build a health + finance workspace: daily water/sleep/exercise check-in with weekly charts, plus income/expense tracking with monthly budget pie chart", "zh": "做一个健康打卡+记账理财工作台，包含每日饮水/睡眠/运动打卡和周统计图表，加上收支记录和月度预算饼图" },
-    { "en": "Build a goal planning workspace: monthly goals broken into weekly tasks and daily todos, with progress dashboard and overdue auto-carry-forward", "zh": "搭一个计划表+进度看板工作台，月目标拆解到周任务再到每日待办，带完成率仪表盘和逾期自动顺延" }
-  ]
+    {
+      "en": "Build a literacy learning workspace for my 4-year-old: 5 new characters daily with pictograph cards, word exercises, and point rewards",
+      "zh": "帮我4岁宝宝做一个识字启蒙工作台，每天学5个字，有象形字卡片、组词练习和闯关积分奖励"
+    },
+    {
+      "en": "Build a health + finance workspace: daily water/sleep/exercise check-in with weekly charts, plus income/expense tracking with monthly budget pie chart",
+      "zh": "做一个健康打卡+记账理财工作台，包含每日饮水/睡眠/运动打卡和周统计图表，加上收支记录和月度预算饼图"
+    },
+    {
+      "en": "Build a goal planning workspace: monthly goals broken into weekly tasks and daily todos, with progress dashboard and overdue auto-carry-forward",
+      "zh": "搭一个计划表+进度看板工作台，月目标拆解到周任务再到每日待办，带完成率仪表盘和逾期自动顺延"
+    }
+  ],
+  "skills": []
 }

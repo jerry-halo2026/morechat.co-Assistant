@@ -5,7 +5,7 @@
 # source       : catalog/packages/team/mvp-dev-expert-team
 # persona      : catalog/packages/team/mvp-dev-expert-team/agents/mvp-dev-expert-team-team-lead.md
 # skills root  : (package ships no skills)
-# contentSha256: 82976df56754565af4c0542348039d6217a3cb72b764020cde56b25ce244d0de
+# contentSha256: eaeae06f2b821fe0bb36f669c3f6d7c7e80bfd018332ab3386a60f859e2a780b
 #
 # DSH side of the preset layer: one @deepseek-ai/dsh-agent-preset declaration, shaped like
 # @deepseek-ai/dsh-web-app/presets/standard.patch.yml. It injects the package persona and the

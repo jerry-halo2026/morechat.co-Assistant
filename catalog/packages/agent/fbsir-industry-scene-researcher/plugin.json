@@ -11,7 +11,7 @@
     "./agents/fbsir-industry-scene-researcher.md"
   ],
   "skills": [
-    "./skills/industry-scene-service-recording"
+    "./skills/fbsir-industry-scene-researcher--industry-scene-service-recording"
   ],
   "expertType": "agent",
   "agentName": "fbsir-industry-scene-researcher",

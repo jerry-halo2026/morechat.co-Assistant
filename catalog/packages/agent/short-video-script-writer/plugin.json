@@ -6,7 +6,7 @@
     "./agents/short-video-script-writer.md"
   ],
   "skills": [
-    "./skills/short-video-script-templates"
+    "./skills/short-video-script-writer--short-video-script-templates"
   ],
   "expertType": "agent",
   "agentName": "short-video-script-writer",
