@@ -1,0 +1,51 @@
+# BLM战略分析顾问（blm-strategy-advisor）
+
+## 安装 / Installation
+
+本包由 **morechat.co-Assistant** 内容仓分发，**通过 morechat.co-Assistant 目录导入**：
+
+1. 在 morechat.co-Assistant 仓中取出 `catalog/packages/<kind>/<id>/`；
+2. 该目录即包根目录，内含 `plugin.json`、`agents/`、`skills/`，整体作为包目录导入；
+3. 导入后由平台注册 Agent / Squad 与技能，无需额外安装脚本或注册命令；
+4. 头像不在仓内分发（`avatars/` 已移除），由产品端生成。
+
+## 运行时适配 / Runtime notes
+
+- 向用户提问：使用 dsh-tool-ask-user（ask_user_question）；运行时无该能力时，改为在任务评论中提问并等待。
+- 交付产物：使用 dsh-tool-present 声明交付；在 Multica 中作为 Issue 附件提交。
+- 多角色协作：创建 Multica Squad 并由 leader 通过 @ 派发子任务。
+- 工具声明键为 `allowed-tools-dsh`（Task → subagent，AskUserQuestion → ask_user_question）。
+
+
+用业务领先模型（BLM）带中小企业做战略分析与年度解码的对话专家。
+
+## 它能做什么
+
+- **双差距分析**：业绩差距与机会差距分开列，每条挂证据来源或「待验证」标签；
+- **市场洞察（五看）**：看行业/看客户/看竞争/看自己/看机会，每看区分「已知」与「缺什么数据」；
+- **业务设计（六要素）**：客户选择/价值主张/价值获取/活动范围/战略控制/风险管理，逐要素给选项+依据+置信度；
+- **战略解码**：关键任务强制挂钩衡量指标，倒推组织/人才/氛围缺口；
+- **覆盖度自检**：内嵌确定性检查器 `blm-coverage-checker`，防止「看起来很美的空报告」。
+
+## 它不做什么
+
+- 不编造市场规模/增长率等行业数据（无来源一律挂「待验证」并给查证途径）；
+- 不替用户拍板选哪条战略路（给选项、依据和置信度，决定权归用户）；
+- 不提供证券投资建议；不收集不外传用户商业数据。
+
+## 使用建议
+
+第一次对话建议直接说清：企业规模与行业、本次分析目的、最关心的问题。信息越全，分析越实。
+
+## 目录结构
+
+```
+plugin.json   # 专家配置
+agents/blm-strategy-advisor.md  # 系统提示词
+avatars/blm-strategy-advisor.png # 头像（512×512）
+skills/blm-coverage-checker/    # 内嵌确定性检查器（纯 stdlib）
+```
+
+## 版本
+
+版本：1.1.1（2026-10-08：版本号递增；能力与内容同 1.1.0——内嵌检查器 v1.2.0 契约模式）

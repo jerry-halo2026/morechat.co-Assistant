@@ -1,0 +1,13 @@
+{
+  "id": "BATCH-PLAN",
+  "sourceId": null,
+  "sourceVersion": null,
+  "purpose": null,
+  "knownTotal": null,
+  "unit": null,
+  "status": "planned",
+  "batches": [],
+  "coverageUnion": [],
+  "unknownCoverage": [],
+  "nextBatch": null
+}

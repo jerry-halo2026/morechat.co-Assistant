@@ -1,0 +1,960 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:fbs:paper.strategy-receipt.v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "request_id",
+    "request_digest",
+    "state",
+    "response",
+    "executable",
+    "retry_permitted"
+  ],
+  "properties": {
+    "schema": {
+      "const": "paper.strategy-receipt.v1"
+    },
+    "request_id": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "request_digest": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "state": {
+      "enum": [
+        "recorded",
+        "expired",
+        "catalog_changed",
+        "unknown"
+      ]
+    },
+    "response": {
+      "anyOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "schema",
+            "request_id",
+            "intent_revision",
+            "evidence_revision",
+            "request_digest",
+            "decision_id",
+            "status",
+            "catalog_revision",
+            "strategy",
+            "plan",
+            "reason_codes",
+            "issued_at",
+            "expires_at",
+            "track",
+            "candidates",
+            "track_evaluations",
+            "selection_mode"
+          ],
+          "properties": {
+            "schema": {
+              "const": "paper.strategy-decision.v2"
+            },
+            "request_id": {
+              "type": "string",
+              "format": "uuid",
+              "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$"
+            },
+            "intent_revision": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 1000000
+            },
+            "evidence_revision": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 1000000
+            },
+            "request_digest": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            },
+            "decision_id": {
+              "type": "string",
+              "format": "uuid",
+              "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$"
+            },
+            "status": {
+              "enum": [
+                "selected",
+                "skipped",
+                "no_match",
+                "needs_selection"
+              ]
+            },
+            "catalog_revision": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 2147483647
+            },
+            "strategy": {
+              "anyOf": [
+                {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "id",
+                    "version",
+                    "digest"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string",
+                      "pattern": "^[a-z][a-z0-9-]{2,47}$"
+                    },
+                    "version": {
+                      "type": "integer",
+                      "minimum": 1,
+                      "maximum": 1000000
+                    },
+                    "digest": {
+                      "type": "string",
+                      "pattern": "^[0-9a-f]{64}$"
+                    }
+                  }
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "plan": {
+              "anyOf": [
+                {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "query_axes",
+                    "source_classes",
+                    "checks",
+                    "stop_rules",
+                    "budget",
+                    "domain_checks"
+                  ],
+                  "properties": {
+                    "query_axes": {
+                      "type": "array",
+                      "uniqueItems": true,
+                      "maxItems": 8,
+                      "items": {
+                        "enum": [
+                          "scope_boundary",
+                          "primary_data",
+                          "comparable_dimensions",
+                          "independent_outcomes",
+                          "counterevidence",
+                          "applicability_conditions",
+                          "latest_updates",
+                          "change_impact"
+                        ]
+                      },
+                      "minItems": 1
+                    },
+                    "source_classes": {
+                      "type": "array",
+                      "uniqueItems": true,
+                      "maxItems": 4,
+                      "items": {
+                        "enum": [
+                          "primary",
+                          "independent",
+                          "complementary",
+                          "vendor_disclosed"
+                        ]
+                      },
+                      "minItems": 1
+                    },
+                    "checks": {
+                      "type": "array",
+                      "uniqueItems": true,
+                      "maxItems": 10,
+                      "items": {
+                        "enum": [
+                          "subject_period",
+                          "denominator_metric",
+                          "independence",
+                          "counterevidence",
+                          "applicability",
+                          "source_freshness",
+                          "conflict_alignment",
+                          "author_protection",
+                          "claim_to_section",
+                          "alternative_explanation"
+                        ]
+                      },
+                      "minItems": 9,
+                      "allOf": [
+                        {
+                          "contains": {
+                            "const": "subject_period"
+                          }
+                        },
+                        {
+                          "contains": {
+                            "const": "denominator_metric"
+                          }
+                        },
+                        {
+                          "contains": {
+                            "const": "independence"
+                          }
+                        },
+                        {
+                          "contains": {
+                            "const": "counterevidence"
+                          }
+                        },
+                        {
+                          "contains": {
+                            "const": "applicability"
+                          }
+                        },
+                        {
+                          "contains": {
+                            "const": "source_freshness"
+                          }
+                        },
+                        {
+                          "contains": {
+                            "const": "conflict_alignment"
+                          }
+                        },
+                        {
+                          "contains": {
+                            "const": "author_protection"
+                          }
+                        },
+                        {
+                          "contains": {
+                            "const": "claim_to_section"
+                          }
+                        }
+                      ]
+                    },
+                    "stop_rules": {
+                      "type": "array",
+                      "uniqueItems": true,
+                      "maxItems": 5,
+                      "items": {
+                        "enum": [
+                          "budget_exhausted",
+                          "material_conflict_unresolved",
+                          "source_unavailable",
+                          "evidence_sufficient",
+                          "no_new_evidence"
+                        ]
+                      },
+                      "minItems": 5,
+                      "allOf": [
+                        {
+                          "contains": {
+                            "const": "budget_exhausted"
+                          }
+                        },
+                        {
+                          "contains": {
+                            "const": "material_conflict_unresolved"
+                          }
+                        },
+                        {
+                          "contains": {
+                            "const": "source_unavailable"
+                          }
+                        },
+                        {
+                          "contains": {
+                            "const": "evidence_sufficient"
+                          }
+                        },
+                        {
+                          "contains": {
+                            "const": "no_new_evidence"
+                          }
+                        }
+                      ]
+                    },
+                    "budget": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "max_queries",
+                        "max_reads",
+                        "max_claims",
+                        "max_rounds"
+                      ],
+                      "properties": {
+                        "max_queries": {
+                          "type": "integer",
+                          "minimum": 0,
+                          "maximum": 12
+                        },
+                        "max_reads": {
+                          "type": "integer",
+                          "minimum": 0,
+                          "maximum": 20
+                        },
+                        "max_claims": {
+                          "type": "integer",
+                          "minimum": 1,
+                          "maximum": 12
+                        },
+                        "max_rounds": {
+                          "type": "integer",
+                          "minimum": 1,
+                          "maximum": 2
+                        }
+                      }
+                    },
+                    "domain_checks": {
+                      "type": "array",
+                      "uniqueItems": true,
+                      "minItems": 1,
+                      "maxItems": 13,
+                      "items": {
+                        "enum": [
+                          "aftersales_manual_dispatch",
+                          "escalation_route",
+                          "ticket_data_boundary",
+                          "competitor_identity_version",
+                          "license_entitlements",
+                          "benchmark_task_alignment",
+                          "qa_citation_grounding",
+                          "retrieval_access_scope",
+                          "stale_knowledge",
+                          "device_test_conditions",
+                          "edge_cloud_boundary",
+                          "power_latency_connectivity",
+                          "bom_manufacturing_support"
+                        ]
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "reason_codes": {
+              "type": "array",
+              "uniqueItems": true,
+              "maxItems": 23,
+              "items": {
+                "enum": [
+                  "goal_match",
+                  "unknown_preserved",
+                  "conflict_preserved",
+                  "native_short_path",
+                  "no_active_strategy",
+                  "capability_limited",
+                  "track_selected",
+                  "track_selection_required",
+                  "track_no_match",
+                  "track_catalog_unavailable",
+                  "track_catalog_changed",
+                  "track_not_found",
+                  "track_version_mismatch",
+                  "track_paused",
+                  "track_unreviewed",
+                  "track_not_yet_effective",
+                  "track_review_expired",
+                  "track_goal_mismatch",
+                  "sector_unknown_not_supported",
+                  "scenario_unknown_not_supported",
+                  "scope_conflict",
+                  "sector_mismatch",
+                  "scenario_mismatch"
+                ]
+              }
+            },
+            "issued_at": {
+              "type": "number",
+              "minimum": 0
+            },
+            "expires_at": {
+              "type": "number",
+              "minimum": 0
+            },
+            "track": {
+              "anyOf": [
+                {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "id",
+                    "version",
+                    "display_name",
+                    "digest",
+                    "expires_at"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string",
+                      "pattern": "^[a-z][a-z0-9-]{2,47}$"
+                    },
+                    "version": {
+                      "type": "integer",
+                      "minimum": 1,
+                      "maximum": 1000000
+                    },
+                    "display_name": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 80,
+                      "pattern": "^[^\\u0000-\\u001f\\u007f]+$"
+                    },
+                    "digest": {
+                      "type": "string",
+                      "pattern": "^[0-9a-f]{64}$"
+                    },
+                    "expires_at": {
+                      "type": "integer",
+                      "minimum": 0,
+                      "maximum": 4102444800
+                    }
+                  }
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "candidates": {
+              "type": "array",
+              "maxItems": 12,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "id",
+                  "version",
+                  "display_name",
+                  "sector_ids",
+                  "scenario_ids",
+                  "allowed_goals",
+                  "expires_at"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "pattern": "^[a-z][a-z0-9-]{2,47}$"
+                  },
+                  "version": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 1000000
+                  },
+                  "display_name": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 80,
+                    "pattern": "^[^\\u0000-\\u001f\\u007f]+$"
+                  },
+                  "sector_ids": {
+                    "type": "array",
+                    "uniqueItems": true,
+                    "minItems": 1,
+                    "maxItems": 6,
+                    "items": {
+                      "enum": [
+                        "smart_hardware",
+                        "manufacturing",
+                        "enterprise_software",
+                        "cross_industry",
+                        "other",
+                        "unknown"
+                      ]
+                    }
+                  },
+                  "scenario_ids": {
+                    "type": "array",
+                    "uniqueItems": true,
+                    "minItems": 1,
+                    "maxItems": 6,
+                    "items": {
+                      "enum": [
+                        "product_feasibility",
+                        "aftersales_ai",
+                        "competitive_comparison",
+                        "knowledge_qa",
+                        "other",
+                        "unknown"
+                      ]
+                    }
+                  },
+                  "allowed_goals": {
+                    "type": "array",
+                    "uniqueItems": true,
+                    "minItems": 1,
+                    "maxItems": 5,
+                    "items": {
+                      "enum": [
+                        "industry_overview",
+                        "competitive_comparison",
+                        "decision_verification",
+                        "incremental_update",
+                        "unknown"
+                      ]
+                    }
+                  },
+                  "expires_at": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 4102444800
+                  }
+                }
+              }
+            },
+            "track_evaluations": {
+              "type": "array",
+              "maxItems": 12,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "id",
+                  "version",
+                  "display_name",
+                  "eligible",
+                  "reasons",
+                  "expires_at"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "pattern": "^[a-z][a-z0-9-]{2,47}$"
+                  },
+                  "version": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 1000000
+                  },
+                  "display_name": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 80,
+                    "pattern": "^[^\\u0000-\\u001f\\u007f]+$"
+                  },
+                  "eligible": {
+                    "type": "boolean"
+                  },
+                  "reasons": {
+                    "type": "array",
+                    "uniqueItems": true,
+                    "minItems": 0,
+                    "maxItems": 17,
+                    "items": {
+                      "enum": [
+                        "track_selected",
+                        "track_selection_required",
+                        "track_no_match",
+                        "track_catalog_unavailable",
+                        "track_catalog_changed",
+                        "track_not_found",
+                        "track_version_mismatch",
+                        "track_paused",
+                        "track_unreviewed",
+                        "track_not_yet_effective",
+                        "track_review_expired",
+                        "track_goal_mismatch",
+                        "sector_unknown_not_supported",
+                        "scenario_unknown_not_supported",
+                        "scope_conflict",
+                        "sector_mismatch",
+                        "scenario_mismatch"
+                      ]
+                    }
+                  },
+                  "expires_at": {
+                    "anyOf": [
+                      {
+                        "type": "integer",
+                        "minimum": 0,
+                        "maximum": 4102444800
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            "selection_mode": {
+              "enum": [
+                "automatic_unique",
+                "explicit",
+                "none"
+              ]
+            }
+          },
+          "allOf": [
+            {
+              "if": {
+                "properties": {
+                  "status": {
+                    "const": "selected"
+                  }
+                }
+              },
+              "then": {
+                "properties": {
+                  "strategy": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "id",
+                      "version",
+                      "digest"
+                    ],
+                    "properties": {
+                      "id": {
+                        "type": "string",
+                        "pattern": "^[a-z][a-z0-9-]{2,47}$"
+                      },
+                      "version": {
+                        "type": "integer",
+                        "minimum": 1,
+                        "maximum": 1000000
+                      },
+                      "digest": {
+                        "type": "string",
+                        "pattern": "^[0-9a-f]{64}$"
+                      }
+                    }
+                  },
+                  "plan": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "query_axes",
+                      "source_classes",
+                      "checks",
+                      "stop_rules",
+                      "budget",
+                      "domain_checks"
+                    ],
+                    "properties": {
+                      "query_axes": {
+                        "type": "array",
+                        "uniqueItems": true,
+                        "maxItems": 8,
+                        "items": {
+                          "enum": [
+                            "scope_boundary",
+                            "primary_data",
+                            "comparable_dimensions",
+                            "independent_outcomes",
+                            "counterevidence",
+                            "applicability_conditions",
+                            "latest_updates",
+                            "change_impact"
+                          ]
+                        },
+                        "minItems": 1
+                      },
+                      "source_classes": {
+                        "type": "array",
+                        "uniqueItems": true,
+                        "maxItems": 4,
+                        "items": {
+                          "enum": [
+                            "primary",
+                            "independent",
+                            "complementary",
+                            "vendor_disclosed"
+                          ]
+                        },
+                        "minItems": 1
+                      },
+                      "checks": {
+                        "type": "array",
+                        "uniqueItems": true,
+                        "maxItems": 10,
+                        "items": {
+                          "enum": [
+                            "subject_period",
+                            "denominator_metric",
+                            "independence",
+                            "counterevidence",
+                            "applicability",
+                            "source_freshness",
+                            "conflict_alignment",
+                            "author_protection",
+                            "claim_to_section",
+                            "alternative_explanation"
+                          ]
+                        },
+                        "minItems": 9,
+                        "allOf": [
+                          {
+                            "contains": {
+                              "const": "subject_period"
+                            }
+                          },
+                          {
+                            "contains": {
+                              "const": "denominator_metric"
+                            }
+                          },
+                          {
+                            "contains": {
+                              "const": "independence"
+                            }
+                          },
+                          {
+                            "contains": {
+                              "const": "counterevidence"
+                            }
+                          },
+                          {
+                            "contains": {
+                              "const": "applicability"
+                            }
+                          },
+                          {
+                            "contains": {
+                              "const": "source_freshness"
+                            }
+                          },
+                          {
+                            "contains": {
+                              "const": "conflict_alignment"
+                            }
+                          },
+                          {
+                            "contains": {
+                              "const": "author_protection"
+                            }
+                          },
+                          {
+                            "contains": {
+                              "const": "claim_to_section"
+                            }
+                          }
+                        ]
+                      },
+                      "stop_rules": {
+                        "type": "array",
+                        "uniqueItems": true,
+                        "maxItems": 5,
+                        "items": {
+                          "enum": [
+                            "budget_exhausted",
+                            "material_conflict_unresolved",
+                            "source_unavailable",
+                            "evidence_sufficient",
+                            "no_new_evidence"
+                          ]
+                        },
+                        "minItems": 5,
+                        "allOf": [
+                          {
+                            "contains": {
+                              "const": "budget_exhausted"
+                            }
+                          },
+                          {
+                            "contains": {
+                              "const": "material_conflict_unresolved"
+                            }
+                          },
+                          {
+                            "contains": {
+                              "const": "source_unavailable"
+                            }
+                          },
+                          {
+                            "contains": {
+                              "const": "evidence_sufficient"
+                            }
+                          },
+                          {
+                            "contains": {
+                              "const": "no_new_evidence"
+                            }
+                          }
+                        ]
+                      },
+                      "budget": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": [
+                          "max_queries",
+                          "max_reads",
+                          "max_claims",
+                          "max_rounds"
+                        ],
+                        "properties": {
+                          "max_queries": {
+                            "type": "integer",
+                            "minimum": 0,
+                            "maximum": 12
+                          },
+                          "max_reads": {
+                            "type": "integer",
+                            "minimum": 0,
+                            "maximum": 20
+                          },
+                          "max_claims": {
+                            "type": "integer",
+                            "minimum": 1,
+                            "maximum": 12
+                          },
+                          "max_rounds": {
+                            "type": "integer",
+                            "minimum": 1,
+                            "maximum": 2
+                          }
+                        }
+                      },
+                      "domain_checks": {
+                        "type": "array",
+                        "uniqueItems": true,
+                        "minItems": 1,
+                        "maxItems": 13,
+                        "items": {
+                          "enum": [
+                            "aftersales_manual_dispatch",
+                            "escalation_route",
+                            "ticket_data_boundary",
+                            "competitor_identity_version",
+                            "license_entitlements",
+                            "benchmark_task_alignment",
+                            "qa_citation_grounding",
+                            "retrieval_access_scope",
+                            "stale_knowledge",
+                            "device_test_conditions",
+                            "edge_cloud_boundary",
+                            "power_latency_connectivity",
+                            "bom_manufacturing_support"
+                          ]
+                        }
+                      }
+                    }
+                  },
+                  "track": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "id",
+                      "version",
+                      "display_name",
+                      "digest",
+                      "expires_at"
+                    ],
+                    "properties": {
+                      "id": {
+                        "type": "string",
+                        "pattern": "^[a-z][a-z0-9-]{2,47}$"
+                      },
+                      "version": {
+                        "type": "integer",
+                        "minimum": 1,
+                        "maximum": 1000000
+                      },
+                      "display_name": {
+                        "type": "string",
+                        "minLength": 1,
+                        "maxLength": 80,
+                        "pattern": "^[^\\u0000-\\u001f\\u007f]+$"
+                      },
+                      "digest": {
+                        "type": "string",
+                        "pattern": "^[0-9a-f]{64}$"
+                      },
+                      "expires_at": {
+                        "type": "integer",
+                        "minimum": 0,
+                        "maximum": 4102444800
+                      }
+                    }
+                  }
+                }
+              },
+              "else": {
+                "properties": {
+                  "strategy": {
+                    "type": "null"
+                  },
+                  "plan": {
+                    "type": "null"
+                  },
+                  "track": {
+                    "type": "null"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "executable": {
+      "type": "boolean"
+    },
+    "retry_permitted": {
+      "const": false
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "state": {
+            "const": "unknown"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "response": {
+            "type": "null"
+          },
+          "executable": {
+            "const": false
+          }
+        }
+      },
+      "else": {
+        "properties": {
+          "response": {
+            "type": "object"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "state": {
+            "enum": [
+              "expired",
+              "catalog_changed"
+            ]
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "executable": {
+            "const": false
+          }
+        }
+      }
+    }
+  ]
+}

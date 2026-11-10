@@ -1,0 +1,138 @@
+{
+  "schema_version": "1.0",
+  "authorization_id": "AUTH-SYNTHETIC",
+  "version": 1,
+  "status": "confirmed",
+  "confirmed_by": "synthetic-fixture-author",
+  "project_id": "synthetic-review",
+  "project_version": 2,
+  "execution_plan_digest": "ae42a8500f6a179840415c26e9b19a6bd62d994a0680eda4d3e7b172ac5111b0",
+  "narrative_direction_digest": "7c0eaeb6190c4ea4d249b5dbf75285e3f29f6e03283571225932dbb0a7930013",
+  "selected_events": [
+    "E001"
+  ],
+  "sequence": [
+    "E001"
+  ],
+  "allowed_units": [
+    "U001"
+  ],
+  "allowed_boundaries": [
+    "EB001"
+  ],
+  "allowed_adjustments": {
+    "E001": []
+  },
+  "event_specs": {
+    "E001": {
+      "event_id": "E001",
+      "kind": "source",
+      "source_id": "SRC001",
+      "unit_id": "U001",
+      "source_in_ms": 1000,
+      "source_out_ms": 6000,
+      "speed": 1,
+      "function": "controlled synthetic scene",
+      "deep_observation_refs": [
+        "DO001"
+      ],
+      "edit_boundary_ref": "EB001",
+      "source_signature": "81b93a79efb1ad2a8c5cf0610e1576051c9383c95147670c7ef2aae11f43c3bd",
+      "time_mapping_digest": "da3787e2d862bcce35bac3c8f3c3e23e5d6feb8619cb9c04cae4219e779b043b",
+      "adopted_observation_refs": [
+        "DO001"
+      ],
+      "adopted_boundary_ref": "EB001",
+      "evidence_status": "supported",
+      "source_constraint_ref": "source:SRC001",
+      "audio_boundary": {
+        "required_start_ms": 1300,
+        "required_end_ms": 5800
+      },
+      "dialogue_required_range": "1300-5800",
+      "sync_mode": "locked",
+      "audio_source_refs": [
+        "A001"
+      ],
+      "adopted_utterance_refs": [
+        "T001"
+      ],
+      "d2_selection_snapshot": {
+        "edit_boundary_ref": "EB001",
+        "planned_source_in_ms": 1000,
+        "planned_source_out_ms": 6000,
+        "safe_in_start_ms": 900,
+        "safe_in_end_ms": 1200,
+        "safe_out_start_ms": 5900,
+        "safe_out_end_ms": 6200,
+        "allowed_adjustments": []
+      }
+    }
+  },
+  "audio_specs": {
+    "A001": {
+      "track_id": "A001",
+      "kind": "original",
+      "source_id": "SRC001",
+      "source_in_ms": 1000,
+      "source_out_ms": 6000,
+      "gain_db": 0,
+      "anchor_event_id": "E001",
+      "local_in_frame": 0,
+      "local_out_frame": 125,
+      "narrative_role": "dialogue_information",
+      "treatment_reason": "preserve full synthetic audio",
+      "source_signature": "81b93a79efb1ad2a8c5cf0610e1576051c9383c95147670c7ef2aae11f43c3bd",
+      "time_mapping_digest": "da3787e2d862bcce35bac3c8f3c3e23e5d6feb8619cb9c04cae4219e779b043b",
+      "source_constraint_ref": "source:SRC001",
+      "sync_event_id": "E001",
+      "sync_mode": "locked",
+      "speed": 1,
+      "fade_in_ms": 0,
+      "fade_out_ms": 0,
+      "treatment": "preserve",
+      "review_refs": [
+        "R001"
+      ]
+    }
+  },
+  "text_specs": [
+    {
+      "text_id": "TXT001",
+      "kind": "explanation",
+      "text": "synthetic review",
+      "anchor_event_id": "E001",
+      "local_in_frame": 0,
+      "local_out_frame": 125,
+      "fade_in_frames": 0,
+      "stable_hold_frames": 125,
+      "fade_out_frames": 0
+    }
+  ],
+  "transitions": [],
+  "output": {
+    "fps_num": 25,
+    "fps_den": 1,
+    "width": 320,
+    "height": 180
+  },
+  "audio_policy": {
+    "allow_original_music": null,
+    "preserve_dialogue": true,
+    "preserve_ambience": true
+  },
+  "source_bindings": {
+    "SRC001": {
+      "source_signature": "81b93a79efb1ad2a8c5cf0610e1576051c9383c95147670c7ef2aae11f43c3bd",
+      "time_mapping_digest": "da3787e2d862bcce35bac3c8f3c3e23e5d6feb8619cb9c04cae4219e779b043b",
+      "source_constraint_digest": "d929f71d728b9a75d4dcc4283246982b563e54f4eaf7a7f7b57daf377a2e58a9"
+    }
+  },
+  "evidence_digest": "99723f7616c8dfc85556559767478fbe27a8be3bdfa101631f7aa012117efac8",
+  "execution_reference_digest": "410fe3172d354c392e54c0ce924789956e8884a6834aac9cf07b197f5d7e6f90",
+  "execution_reference_asset_digests": {
+    "mockup.svg": "16288333cedb6f31ccb7323f479cbdc36801b617cdaa72d06fad0fb1148bc08d",
+    "proof.svg": "1b18437ed72e2d69d367ea0b78d66e4d57e586eda23d469be4f744129ac44709",
+    "capability-map.json": "8798a490b1d362e00c198f68665b70489bb26b5ff6a9c83a3049a31fe2475830"
+  }
+}

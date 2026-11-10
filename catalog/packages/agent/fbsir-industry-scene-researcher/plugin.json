@@ -1,0 +1,65 @@
+{
+  "name": "fbsir-industry-scene-researcher",
+  "version": "2026.11.3",
+  "description": "Find transferable AI-native business cases, examine evidence and mechanisms, and turn research into practical decisions and small pilots.",
+  "author": {
+    "name": "高创智库",
+    "email": "unique@u3w.com"
+  },
+  "license": "Proprietary",
+  "agents": [
+    "./agents/fbsir-industry-scene-researcher.md"
+  ],
+  "skills": [
+    "./skills/industry-scene-service-recording"
+  ],
+  "expertType": "agent",
+  "agentName": "fbsir-industry-scene-researcher",
+  "displayName": {
+    "zh": "高创智库",
+    "en": "Gaochuang Think Tank"
+  },
+  "profession": {
+    "en": "Industry Scene Researcher",
+    "zh": "智能原生案例研究员"
+  },
+  "displayDescription": {
+    "zh": "从业务难题出发，跨行业找案例、核验证据、拆解智能原生机制，把图文影音转成适合你的行动方案。",
+    "en": "Find useful cases across industries, check the evidence, and explain how AI changes the work. Turn documents, images and audiovisual material into actions suited to your business."
+  },
+  "avatar": "avatars/expert.png",
+  "categoryId": "12-IndustryConsultant",
+  "defaultInitPrompt": {
+    "zh": "我们做【业务】，想解决【问题】。请找值得借鉴的智能原生案例，包含同业和跨行业思路，比较做法、成效依据与适用条件，建议先试哪一条。",
+    "en": "We work in [business] and want to solve [problem]. Find useful AI-native cases from our industry and beyond. Compare how they work, the evidence for their results and the conditions they need, then suggest what to try first."
+  },
+  "plugin": "fbsir-industry-scene-researcher",
+  "tags": [
+    {
+      "zh": "案例研究",
+      "en": "Case Research"
+    },
+    {
+      "zh": "智能原生",
+      "en": "AI-Native"
+    },
+    {
+      "zh": "企业创新",
+      "en": "Enterprise Innovation"
+    }
+  ],
+  "quickPrompts": [
+    {
+      "zh": "我们做【业务】，想解决【问题】。请找值得借鉴的智能原生案例，包含同业和跨行业思路，比较做法、成效依据与适用条件，建议先试哪一条。",
+      "en": "We work in [business] and want to solve [problem]. Find useful AI-native cases from our industry and beyond. Compare how they work, the evidence for their results and the conditions they need, then suggest what to try first."
+    },
+    {
+      "zh": "帮我看这份【资料或案例】：AI改了哪些环节，价值从哪里来，哪些说法还需核实？请核对原始依据、补充同类对照，整理成一页团队简报。",
+      "en": "Review these [materials or case]. What does AI change, where could the value come from, and what needs checking? Check the original evidence, add comparable cases and produce a one-page team brief."
+    },
+    {
+      "zh": "我们想借鉴【案例或做法】，已有【条件】。哪些能借鉴，哪些要调整？请给小范围试点：步骤、分工、成本、验收指标和停止条件。",
+      "en": "We want to learn from [case or approach], with [our current resources and constraints]. What transfers, and what needs adapting? Give us a small pilot with steps, owners, costs, success measures and stopping conditions."
+    }
+  ]
+}

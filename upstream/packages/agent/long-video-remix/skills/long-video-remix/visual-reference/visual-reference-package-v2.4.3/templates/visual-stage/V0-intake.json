@@ -1,0 +1,75 @@
+{
+  "stage": "V0",
+  "_说明": "只登记，不设计。",
+  "project_id": "<项目 id>",
+  "source": {
+    "source_id": "<SRC…>",
+    "signature": "sha256:<…>",
+    "geometry": [
+      "<源宽度，填正整数>",
+      "<源高度，填正整数>"
+    ],
+    "time_mapping": "<identity / …>"
+  },
+  "confirmed_from_d2": {
+    "direction": "<D1 方向>",
+    "units": [
+      "<B001>"
+    ],
+    "audio": "<音轨策略>",
+    "output": "1920x1080, scale_x == scale_y",
+    "copy_status": "<confirmed | working>",
+    "copy_lines": [
+      {
+        "id": "T1",
+        "unit": "<B001>",
+        "text": "<逐字文案>",
+        "role": "<act | say>"
+      }
+    ]
+  },
+  "text_policy": {
+    "glyph_floor_px": 59.4,
+    "contrast_median_min": 4.5,
+    "contrast_worst_min": 3.0,
+    "clearance_px": 24
+  },
+  "keyframes": [
+    {
+      "id": "M01",
+      "unit": "<B001>",
+      "time_ms": 0,
+      "file": "keyframes/<文件>.png",
+      "full_frame": true,
+      "proxy_scale": 1.0,
+      "note": "<来源>"
+    }
+  ],
+  "blocked_keyframes": [],
+  "blocked_reason": {},
+  "design_scope": {
+    "mode": "<explore_new | reuse_confirmed | simple_text>",
+    "basis": "<复用已有明确方案/简单文字处理时说明依据；新风格探索可写 new style exploration>",
+    "reuse_evidence": {
+      "decision": {
+        "file": "reuse-basis/V6-user-decision.json",
+        "sha256": "<sha256>"
+      },
+      "lock": {
+        "file": "reuse-basis/V7-lock.json",
+        "sha256": "<sha256>"
+      },
+      "confirmed_artifact": {
+        "file": "reuse-basis/confirmed-mockup.png",
+        "sha256": "<sha256>",
+        "candidate": "<prior candidate>"
+      }
+    },
+    "material_changes": [],
+    "_reuse说明": "仅 reuse_confirmed 使用：必须绑定此前真实 V6/V7 + 已确认样稿；若图文关系/动效语言/几何策略有实质变化，改用 explore_new。"
+  },
+  "design_review_policy": {
+    "independent_review": "optional",
+    "small_screen_width_px": 480
+  }
+}

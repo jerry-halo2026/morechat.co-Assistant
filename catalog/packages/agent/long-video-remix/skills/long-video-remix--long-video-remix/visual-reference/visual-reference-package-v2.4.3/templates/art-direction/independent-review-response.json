@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.1",
+  "source_blind_map_sha256": "<from generated template>",
+  "small_screen_board_sha256": "<from generated template>",
+  "blur_squint_board_sha256": "<from generated template>",
+  "reviewer": {
+    "id": "<human/model/session id>",
+    "type": "<human|model>",
+    "origin": "<how this reviewer was obtained>",
+    "independence_declared": true
+  },
+  "results": [
+    {
+      "alias": "X1",
+      "scores": {
+        "first_read": 3,
+        "image_integration": 3,
+        "typography": 3,
+        "narrative_detail": 3,
+        "template_risk_inverse": 3,
+        "overall": 3
+      },
+      "finding": "<至少20字>"
+    }
+  ],
+  "top_alias": "X1",
+  "reason": "<至少20字>"
+}

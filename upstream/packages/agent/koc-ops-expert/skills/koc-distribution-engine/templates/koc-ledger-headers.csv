@@ -1,0 +1,7 @@
+# KOC 台账三张表的表头，可直接导入飞书多维表格 / Excel。每张表一段，按 ### 分隔后分别新建表。
+### A 达人档案 koc_profile
+koc_id,platform,account_uid,nickname,profile_url,fans_count_at_entry,fans_count_latest,identity_type,realname_verified,age_over_18,content_type,category_tags,city_tier,fans_gender_ratio,fans_age_dist,target_audience_ratio,avg_read_l30d,avg_engage_l30d,engage_rate_l30d,comment_like_ratio,collect_like_ratio,fit6_score,fit6_veto,source_channel,first_cooperate_date,tier,fulfillment_rate_hist,platform_risk_flag,credit_score,audit_result,blacklist_flag,blacklist_reason,owner
+### B 合作单 campaign_task
+task_id,koc_id,campaign_id,sku_id,coop_mode,sample_cost,ship_cost,fee_amount,fee_timing,incentive_amount,address_collected_at,shipped_at,delivered_at,brief_sent_at,due_at,draft_at,revise_rounds,published_at,publish_flag,qc_score,qc_flag,qc_fail_reason,note_url,has_link,link_alive_hours,coupon_code,utm_content,filed_flag,ad_marked_flag,contains_aigc,aigc_marked,auth_flag,auth_platforms,auth_scope,auth_region,auth_edit_right,auth_sublicense,auth_expire_at,settle_base,settle_at,penalty_amount,penalty_reason
+### C 内容表现 content_perf
+note_id,koc_id,snapshot_date,day_offset,impression,effective_impression,read_cnt,like_cnt,collect_cnt,comment_cnt,share_cnt,click_cnt,order_cnt_attr,gmv_attr,attr_window,attr_model,is_boosted,boost_spend,reuse_cnt,reuse_channels,cumulative_auth_fee,material_marginal_cost,reuse_status

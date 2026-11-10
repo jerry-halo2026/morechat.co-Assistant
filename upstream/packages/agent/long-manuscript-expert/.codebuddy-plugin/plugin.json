@@ -1,0 +1,65 @@
+{
+  "name": "long-manuscript-expert",
+  "version": "2026.11.5",
+  "description": "Researches industries, companies, competitors, strategies, cases and special topics from web and local evidence, then delivers substantive editable working papers in five selectable report forms, with traceable sources, counterevidence, protected scoped revision and portable project continuity.",
+  "author": {
+    "name": "FBSir",
+    "email": "unique@u3w.com"
+  },
+  "agents": [
+    "./agents/long-manuscript-expert.md"
+  ],
+  "skills": [
+    "./skills/long-manuscript-core"
+  ],
+  "expertType": "agent",
+  "agentName": "long-manuscript-expert",
+  "displayName": {
+    "en": "FBSir",
+    "zh": "福帮手"
+  },
+  "profession": {
+    "en": "Professional Research Working Paper Assistant",
+    "zh": "专业研报底稿助手"
+  },
+  "displayDescription": {
+    "en": "Turns web and local materials into sourced long-form working papers with counterevidence, five report forms, protected scoped revision and portable project continuity.",
+    "zh": "结合联网与本地材料，生成有出处、含反证的长篇底稿，支持五类报告形态、局部修订与接续。"
+  },
+  "avatar": "avatars/fbsir-icon.png",
+  "categoryId": "12-IndustryConsultant",
+  "defaultInitPrompt": {
+    "en": "Research [an industry, company, or issue] using web sources and my materials. Produce a sourced working paper with counterevidence and practical writing guidance.",
+    "zh": "围绕【行业、企业或议题】，结合联网搜索和我的材料，形成有出处、含反证的研究底稿，并给出写作建议。"
+  },
+  "plugin": "long-manuscript-expert",
+  "tags": [
+    {
+      "en": "Topic Research",
+      "zh": "主题研究"
+    },
+    {
+      "en": "Evidence Working Papers",
+      "zh": "证据底稿"
+    },
+    {
+      "en": "Long-form Revision",
+      "zh": "长文续改"
+    }
+  ],
+  "quickPrompts": [
+    {
+      "en": "Research [an industry, company, or issue] using web sources and my materials. Produce a sourced working paper with counterevidence and practical writing guidance.",
+      "zh": "围绕【行业、企业或议题】，结合联网搜索和我的材料，形成有出处、含反证的研究底稿，并给出写作建议。"
+    },
+    {
+      "en": "Organize these materials as an atlas, whitepaper, data report, population study or methodology write-up, and tell me which form fits my readers.",
+      "zh": "把这批材料整理成图鉴、白皮书、数据报告、人群专题或方法论，并说明哪种形态更适合我的读者。"
+    },
+    {
+      "en": "Add these new materials to the existing working paper. Update only affected sections, preserve my judgments and hand edits, and continue from the project file.",
+      "zh": "将这些新材料加入已有底稿，只更新受影响章节，保留我的判断和手改，并从项目文件接着写。"
+    }
+  ],
+  "license": "MIT"
+}

@@ -1,0 +1,19 @@
+{
+ "case_id": "RC-xx",
+ "work": "<作品名（原名）>",
+ "platform": "<平台 / 出品>",
+ "episode": "<集数、标题、播出日期>",
+ "segment": "<录屏覆盖的范围；只分析哪一段，为什么>",
+ "analysis_window_s": [0, 0],
+ "why_reference": "<为什么认为这段剪得成功：字和画面的哪种关系值得学>",
+ "recording": {
+  "file_name": "<本地录屏文件名，不进包>",
+  "provided_by": "用户",
+  "provided_on": "<YYYY-MM-DD>",
+  "sha256": "<python3 -c \"import hashlib,sys;print(hashlib.sha256(open(sys.argv[1],'rb').read()).hexdigest())\" 录屏>",
+  "width": 0, "height": 0, "aspect": 0, "fps": 0, "duration_s": 0,
+  "note": "画面完整，无播放器控件、弹幕、平台外挂字幕；百分比数值可用，绝对像素不跨片源比较"
+ },
+ "shipped": false,
+ "fact_sources": [{"title": "<有出处的作品信息页>", "url": "https://", "supports": "<支持哪些事实>"}]
+}

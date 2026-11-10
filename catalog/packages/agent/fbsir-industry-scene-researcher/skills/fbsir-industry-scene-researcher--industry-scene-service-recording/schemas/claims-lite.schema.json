@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "research.claims-lite/v1",
+  "type": "object",
+  "required": ["schemaVersion", "brief", "claims"],
+  "additionalProperties": false,
+  "properties": {
+    "schemaVersion": {"const": "research.claims-lite/v1"},
+    "brief": {
+      "type": "object", "required": ["question"], "additionalProperties": false,
+      "properties": {
+        "question": {"type": "string", "minLength": 1},
+        "allowedSourceIds": {"type": "array", "items": {"type": "string", "minLength": 1}, "uniqueItems": true},
+        "declaredSourceFamilyCount": {"type": "integer", "minimum": 0},
+        "queryCoverage": {"type": "array", "items": {
+          "type": "object", "required": ["axis", "status", "reason"], "additionalProperties": false,
+          "properties": {"axis": {"enum": ["same_industry", "same_mechanism", "same_conditions"]},
+            "status": {"enum": ["not_run", "searched", "sources_read", "blocked", "not_needed"]},
+            "reason": {"type": "string", "minLength": 1},
+            "query": {"type": "string"}, "sourceIds": {"type": "array", "items": {"type": "string"}, "uniqueItems": true}}
+        }}
+      }
+    },
+    "claims": {"type": "array", "maxItems": 200, "items": {"$ref": "#/$defs/claim"}}
+  },
+  "$defs": {
+    "evidence": {
+      "type": "object", "required": ["sourceId", "familyId", "sourceRole", "reference", "readStatus", "anchor"], "additionalProperties": false,
+      "properties": {
+        "sourceId": {"type": "string", "minLength": 1}, "familyId": {"type": "string", "minLength": 1},
+        "sourceRole": {"enum": ["primary_record", "company_self_report", "independent_observation", "media_reporting", "community_self_report", "user_supplied", "unknown"]},
+        "reference": {"type": "string", "minLength": 1},
+        "readStatus": {"enum": ["content_read", "summary_only", "metadata_only", "unavailable"]},
+        "anchor": {"type": "string"}, "excerpt": {"type": "string"},
+        "productionMethod": {"enum": ["human", "ai_assisted", "unknown"]}
+      }
+    },
+    "claim": {
+      "type": "object", "required": ["id", "text", "status", "evidenceLevel", "assertionKind", "evidence"], "additionalProperties": false,
+      "properties": {
+        "id": {"type": "string", "minLength": 1}, "text": {"type": "string", "minLength": 1},
+        "status": {"enum": ["current", "invalidated"]},
+        "evidenceLevel": {"enum": ["source_fact", "company_claim", "independent_observation", "user_statement", "inference", "hypothesis", "unknown"]},
+        "assertionKind": {"enum": ["descriptive", "numeric", "date", "verbatim_quote", "causal"]},
+        "assertionScope": {"enum": ["underlying_fact", "reported_content", "interpretation"]},
+        "evidence": {"type": "array", "maxItems": 30, "items": {"$ref": "#/$defs/evidence"}},
+        "subject": {"type": "string"}, "period": {"type": "string"}, "unit": {"type": "string"}, "denominator": {"type": "string"},
+        "dateKind": {"enum": ["published", "announced", "effective", "event", "unknown"]},
+        "dateValue": {"type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"},
+        "exactQuote": {"type": "string"}, "methodSummary": {"type": "string"},
+        "causalDesignObserved": {"type": "boolean"},
+        "limitations": {"type": "array", "items": {"type": "string", "minLength": 1}},
+        "derivedFromClaimIds": {"type": "array", "items": {"type": "string", "minLength": 1}, "uniqueItems": true}
+      }
+    }
+  }
+}

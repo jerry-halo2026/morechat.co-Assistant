@@ -1,0 +1,97 @@
+{
+  "schema_version": "1.0",
+  "name": "Visual Direction Atlas",
+  "scope": "live-action character interaction + original audio + Chinese creator observation text",
+  "not_a_gate": true,
+  "axes": [
+    "attention_owner",
+    "text_role",
+    "spatial_relation",
+    "typography_voice",
+    "motion_relation",
+    "emphasis_budget"
+  ],
+  "directions": [
+    {
+      "id": "VD-01",
+      "name": "Observational Whisper",
+      "zh": "轻观察",
+      "default_text_role": "observer_comment",
+      "default_emphasis": "low",
+      "primary_timing": [
+        "reaction_echo",
+        "appear_with_fact"
+      ]
+    },
+    {
+      "id": "VD-02",
+      "name": "Relationship Geometry",
+      "zh": "关系几何",
+      "default_text_role": "relationship_annotation",
+      "default_emphasis": "low-medium",
+      "primary_timing": [
+        "two_step_relation"
+      ]
+    },
+    {
+      "id": "VD-03",
+      "name": "Reaction Punch",
+      "zh": "反应补刀 / 轻Q",
+      "default_text_role": "observer_comment",
+      "default_emphasis": "medium",
+      "primary_timing": [
+        "reaction_echo",
+        "sound_bound"
+      ]
+    },
+    {
+      "id": "VD-04",
+      "name": "Emotional Editorial",
+      "zh": "情绪编辑",
+      "default_text_role": "emotional_afterimage",
+      "default_emphasis": "low",
+      "primary_timing": [
+        "afterimage_hold"
+      ]
+    },
+    {
+      "id": "VD-05",
+      "name": "Ironic Second Voice",
+      "zh": "反差第二声部",
+      "default_text_role": "ironic_second_voice",
+      "default_emphasis": "low-medium",
+      "primary_timing": [
+        "reaction_echo",
+        "cut_definition"
+      ]
+    },
+    {
+      "id": "VD-06",
+      "name": "Spatial Annotation",
+      "zh": "空间标注",
+      "default_text_role": "detail_label",
+      "default_emphasis": "low",
+      "primary_timing": [
+        "fact_sync"
+      ]
+    },
+    {
+      "id": "VD-07",
+      "name": "Controlled Takeover",
+      "zh": "受控夺权 / Punchline",
+      "default_text_role": "punchline",
+      "default_emphasis": "high",
+      "primary_timing": [
+        "cut_definition",
+        "sound_bound"
+      ]
+    }
+  ],
+  "integration_contract": {
+    "preliminary": "V1.direction_hypothesis (after V1 facts, before V2 refs)",
+    "reference_calibration": "V2.direction_context + no_ref_needed",
+    "global_deepening": "V3.direction_read",
+    "candidate": "V3.candidates[].direction_strategy",
+    "shot": "V3.candidates[].per_shot[].direction_use"
+  }
+}

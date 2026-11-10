@@ -1,0 +1,24 @@
+{
+  "stage": "V6",
+  "inputs_design_sha256": {
+    "…": "<前序全部文件的 design sha256>"
+  },
+  "status": "<pending | confirmed | revise>",
+  "chosen_candidate": null,
+  "user_message_verbatim": "<用户原话，逐字>",
+  "changes_requested": [],
+  "confirmed_artifacts": [
+    {
+      "file": "mockups/A_M01.png",
+      "sha256": "<sha256>",
+      "candidate": "A"
+    }
+  ],
+  "copy_confirmation": {
+    "status": "<confirmed only when V0 copy_status=working>",
+    "lines": {
+      "T1": "<逐字同 V0>"
+    },
+    "user_message_verbatim": "<用户文案确认原话>"
+  }
+}

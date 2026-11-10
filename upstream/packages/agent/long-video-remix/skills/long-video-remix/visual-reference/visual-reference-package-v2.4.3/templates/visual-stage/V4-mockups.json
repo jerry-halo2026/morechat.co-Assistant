@@ -1,0 +1,40 @@
+{
+ "stage": "V4",
+ "inputs_design_sha256": {
+  "…": "<前序全部文件的 design sha256>"
+ },
+ "renderer": "<caption_place.py 或项目渲染器>",
+ "mockups": [
+  {
+   "candidate": "A",
+   "keyframe": "M01",
+   "file": "mockups/A_M01.png",
+   "sha256": "<…>",
+   "geometry": {
+    "mode": "crop",
+    "crop_x": 0,
+    "scale": 1.0
+   },
+   "scale_x_equals_scale_y": true,
+   "burned_subtitle_glyph_px": null,
+   "elements": [
+    {
+     "id": "A_M01.1",
+     "text": "<…>",
+     "bbox": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "min_hanzi_ink_px": 0,
+     "contrast_median": 0,
+     "contrast_worst": 0,
+     "min_clearance_px": 0,
+     "subtitle_overlap": false
+    }
+   ]
+  }
+ ],
+ "skipped": {}
+}

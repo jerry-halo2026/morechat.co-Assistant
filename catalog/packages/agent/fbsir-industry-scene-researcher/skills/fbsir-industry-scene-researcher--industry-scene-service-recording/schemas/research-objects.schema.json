@@ -1,0 +1,898 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://gaochuang.example/schemas/research-objects.schema.json",
+  "title": "Research bundle with lossless evidence semantics",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "researchBrief",
+    "sources",
+    "observations",
+    "claims",
+    "cases",
+    "analysis",
+    "outputs",
+    "continuation"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "enum": ["research.bundle/v1", "research.bundle/v2"]
+    },
+    "researchBrief": {
+      "$ref": "common.schema.json#/$defs/brief"
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/source"
+      }
+    },
+    "observations": {
+      "type": "array",
+      "items": {
+        "$ref": "material-observation.schema.json"
+      }
+    },
+    "claims": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/claim"
+      }
+    },
+    "cases": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/case"
+      }
+    },
+    "analysis": {
+      "$ref": "#/$defs/analysis"
+    },
+    "outputs": {
+      "type": "array",
+      "items": {
+        "$ref": "common.schema.json#/$defs/output"
+      }
+    },
+    "continuation": {
+      "anyOf": [
+        {
+          "$ref": "continuation.schema.json"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    }
+  },
+  "$defs": {
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "uriOrLabel",
+        "publisher",
+        "publishedAt",
+        "eventAt",
+        "readAt",
+        "materialRole",
+        "readStatus",
+        "readScope",
+        "sourceFamily",
+        "contentDigest",
+        "version",
+        "identityBasis",
+        "independence",
+        "observationMethod",
+        "derivedFrom",
+        "limitations"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "common.schema.json#/$defs/id"
+        },
+    "uriOrLabel": {
+      "type": "string",
+      "minLength": 1
+    },
+    "sourceOrigin": {
+      "enum": ["web", "user_material", "other", "synthetic"]
+    },
+    "requestedUrl": {
+      "type": ["string", "null"],
+      "minLength": 1
+    },
+    "effectiveUrl": {
+      "type": ["string", "null"],
+      "minLength": 1
+    },
+        "publisher": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "publishedAt": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time"
+        },
+        "publishedDate": {
+          "type": ["string", "null"],
+          "format": "date",
+          "description": "Calendar date when the source gives no time or time zone; never synthesize a midnight timestamp."
+        },
+        "eventAt": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time"
+        },
+        "readAt": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time"
+        },
+        "materialRole": {
+          "$ref": "common.schema.json#/$defs/sourceRole"
+        },
+        "readStatus": {
+          "enum": [
+            "not_read",
+            "metadata_only",
+            "partial",
+            "read",
+            "failed"
+          ]
+        },
+        "readScope": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sourceFamily": {
+          "$ref": "common.schema.json#/$defs/id"
+        },
+        "contentDigest": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "version": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "identityBasis": {
+          "enum": [
+            "observed_bytes",
+            "provided_digest",
+            "synthetic_fixture",
+            "unknown"
+          ]
+        },
+        "independence": {
+          "enum": [
+            "independent",
+            "interested_party",
+            "user",
+            "unknown"
+          ]
+        },
+        "observationMethod": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "derivedFrom": {
+          "anyOf": [
+            {
+              "$ref": "common.schema.json#/$defs/id"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "limitations": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "claim": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "text",
+        "status",
+        "evidenceContext",
+        "sourceIds",
+        "observationIds",
+        "basisClaimIds",
+        "anchors",
+        "subject",
+        "period",
+        "statementType",
+        "polarity",
+        "qualifiers",
+        "conditions",
+        "metric",
+        "limitations",
+        "conflictsWith"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "common.schema.json#/$defs/id"
+        },
+        "text": {
+          "type": "string",
+          "minLength": 1
+        },
+        "status": {
+          "$ref": "common.schema.json#/$defs/evidenceStatus"
+        },
+        "evidenceContext": {
+          "enum": [
+            "real",
+            "synthetic"
+          ]
+        },
+        "sourceIds": {
+          "type": "array",
+          "items": {
+            "$ref": "common.schema.json#/$defs/id"
+          },
+          "uniqueItems": true
+        },
+        "observationIds": {
+          "type": "array",
+          "items": {
+            "$ref": "common.schema.json#/$defs/id"
+          },
+          "uniqueItems": true
+        },
+        "basisClaimIds": {
+          "type": "array",
+          "items": {
+            "$ref": "common.schema.json#/$defs/id"
+          },
+          "uniqueItems": true
+        },
+        "anchors": {
+          "type": "array",
+          "items": {
+            "$ref": "common.schema.json#/$defs/anchor"
+          }
+        },
+        "subject": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "period": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "statementType": {
+          "enum": [
+            "historical_result",
+            "current_state",
+            "plan",
+            "target",
+            "budget",
+            "forecast",
+            "hypothesis",
+            "unknown"
+          ]
+        },
+        "polarity": {
+          "enum": [
+            "affirmative",
+            "negative",
+            "mixed",
+            "unknown"
+          ]
+        },
+        "qualifiers": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "conditions": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "metric": {
+          "anyOf": [
+            {
+              "$ref": "common.schema.json#/$defs/metric"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "limitations": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "conflictsWith": {
+          "type": "array",
+          "items": {
+            "$ref": "common.schema.json#/$defs/id"
+          },
+          "uniqueItems": true
+        }
+      }
+    },
+    "case": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "organization",
+        "innovation",
+        "period",
+        "problem",
+        "before",
+        "change",
+        "aiRole",
+        "humanRole",
+        "outputs",
+        "acceptanceAndFeedback",
+        "claimIds",
+        "sourceIds",
+        "evidenceStatus",
+        "evidenceContext",
+        "innovationDimensions",
+        "chinaContext",
+        "unknowns"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "common.schema.json#/$defs/id"
+        },
+        "organization": {
+          "type": "string",
+          "minLength": 1
+        },
+        "innovation": {
+          "type": "string",
+          "minLength": 1
+        },
+        "period": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "problem": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "before": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "change": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "aiRole": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "humanRole": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "outputs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "acceptanceAndFeedback": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "claimIds": {
+          "type": "array",
+          "items": {
+            "$ref": "common.schema.json#/$defs/id"
+          },
+          "uniqueItems": true
+        },
+        "sourceIds": {
+          "type": "array",
+          "items": {
+            "$ref": "common.schema.json#/$defs/id"
+          },
+          "uniqueItems": true
+        },
+        "evidenceStatus": {
+          "$ref": "common.schema.json#/$defs/evidenceStatus"
+        },
+        "evidenceContext": {
+          "enum": [
+            "real",
+            "synthetic"
+          ]
+        },
+        "innovationDimensions": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [],
+          "properties": {
+            "new_business_form": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "status",
+                "summary",
+                "claimIds",
+                "limitations"
+              ],
+              "properties": {
+                "status": {
+                  "enum": [
+                    "supported",
+                    "inference",
+                    "unknown",
+                    "not_applicable"
+                  ]
+                },
+                "summary": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "minLength": 1
+                },
+                "claimIds": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "common.schema.json#/$defs/id"
+                  },
+                  "uniqueItems": true
+                },
+                "limitations": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                }
+              }
+            },
+            "new_model": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "status",
+                "summary",
+                "claimIds",
+                "limitations"
+              ],
+              "properties": {
+                "status": {
+                  "enum": [
+                    "supported",
+                    "inference",
+                    "unknown",
+                    "not_applicable"
+                  ]
+                },
+                "summary": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "minLength": 1
+                },
+                "claimIds": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "common.schema.json#/$defs/id"
+                  },
+                  "uniqueItems": true
+                },
+                "limitations": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                }
+              }
+            },
+            "new_value_space": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "status",
+                "summary",
+                "claimIds",
+                "limitations"
+              ],
+              "properties": {
+                "status": {
+                  "enum": [
+                    "supported",
+                    "inference",
+                    "unknown",
+                    "not_applicable"
+                  ]
+                },
+                "summary": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "minLength": 1
+                },
+                "claimIds": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "common.schema.json#/$defs/id"
+                  },
+                  "uniqueItems": true
+                },
+                "limitations": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                }
+              }
+            },
+            "new_scenario": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "status",
+                "summary",
+                "claimIds",
+                "limitations"
+              ],
+              "properties": {
+                "status": {
+                  "enum": [
+                    "supported",
+                    "inference",
+                    "unknown",
+                    "not_applicable"
+                  ]
+                },
+                "summary": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "minLength": 1
+                },
+                "claimIds": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "common.schema.json#/$defs/id"
+                  },
+                  "uniqueItems": true
+                },
+                "limitations": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                }
+              }
+            },
+            "new_factor": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "status",
+                "summary",
+                "claimIds",
+                "limitations"
+              ],
+              "properties": {
+                "status": {
+                  "enum": [
+                    "supported",
+                    "inference",
+                    "unknown",
+                    "not_applicable"
+                  ]
+                },
+                "summary": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "minLength": 1
+                },
+                "claimIds": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "common.schema.json#/$defs/id"
+                  },
+                  "uniqueItems": true
+                },
+                "limitations": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                }
+              }
+            },
+            "new_organization": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "status",
+                "summary",
+                "claimIds",
+                "limitations"
+              ],
+              "properties": {
+                "status": {
+                  "enum": [
+                    "supported",
+                    "inference",
+                    "unknown",
+                    "not_applicable"
+                  ]
+                },
+                "summary": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "minLength": 1
+                },
+                "claimIds": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "common.schema.json#/$defs/id"
+                  },
+                  "uniqueItems": true
+                },
+                "limitations": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                }
+              }
+            },
+            "new_tool": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "status",
+                "summary",
+                "claimIds",
+                "limitations"
+              ],
+              "properties": {
+                "status": {
+                  "enum": [
+                    "supported",
+                    "inference",
+                    "unknown",
+                    "not_applicable"
+                  ]
+                },
+                "summary": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "minLength": 1
+                },
+                "claimIds": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "common.schema.json#/$defs/id"
+                  },
+                  "uniqueItems": true
+                },
+                "limitations": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                }
+              }
+            }
+          }
+        },
+        "chinaContext": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "industryPosition",
+            "existingSystems",
+            "knowledgeResources",
+            "resourceConstraints",
+            "dataRights",
+            "decisionOwner",
+            "marketRegion"
+          ],
+          "properties": {
+            "industryPosition": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "minLength": 1
+            },
+            "existingSystems": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "minLength": 1
+            },
+            "knowledgeResources": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "minLength": 1
+            },
+            "resourceConstraints": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "minLength": 1
+            },
+            "dataRights": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "minLength": 1
+            },
+            "decisionOwner": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "minLength": 1
+            },
+            "marketRegion": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "minLength": 1
+            }
+          }
+        },
+        "unknowns": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "analysis": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "similarities",
+        "differences",
+        "mechanisms",
+        "alternativeExplanations",
+        "transferConditions",
+        "failureConditions",
+        "recommendations"
+      ],
+      "properties": {
+        "similarities": {
+          "type": "array",
+          "items": {
+            "$ref": "common.schema.json#/$defs/analysisItem"
+          }
+        },
+        "differences": {
+          "type": "array",
+          "items": {
+            "$ref": "common.schema.json#/$defs/analysisItem"
+          }
+        },
+        "mechanisms": {
+          "type": "array",
+          "items": {
+            "$ref": "common.schema.json#/$defs/analysisItem"
+          }
+        },
+        "alternativeExplanations": {
+          "type": "array",
+          "items": {
+            "$ref": "common.schema.json#/$defs/analysisItem"
+          }
+        },
+        "transferConditions": {
+          "type": "array",
+          "items": {
+            "$ref": "common.schema.json#/$defs/analysisItem"
+          }
+        },
+        "failureConditions": {
+          "type": "array",
+          "items": {
+            "$ref": "common.schema.json#/$defs/analysisItem"
+          }
+        },
+        "recommendations": {
+          "type": "array",
+          "items": {
+            "$ref": "common.schema.json#/$defs/analysisItem"
+          }
+        }
+      }
+    }
+  }
+}

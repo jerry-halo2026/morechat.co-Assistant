@@ -1,0 +1,6 @@
+# Keep the catalog byte-exact on every platform: no EOL translation, no text munging.
+# index.json sha256 values are computed over LF bytes as stored in the repo.
+* -text
+*.ttf binary
+*.png binary
+*.jpg binary

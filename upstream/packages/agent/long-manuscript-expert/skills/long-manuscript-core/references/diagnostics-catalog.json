@@ -1,0 +1,380 @@
+{
+  "schema": "paper.feedback-catalog.v1",
+  "revision": 1,
+  "product": "long-manuscript-expert",
+  "items": {
+    "not_started": {
+      "code": "FBS-PAPER-1001",
+      "kind": "unknown",
+      "phase": "not_started",
+      "message": "尚未观察到这次策略请求执行。",
+      "next_action": "先核对本轮实际工具调用；不要据此推断客户端平台不支持。",
+      "retry_policy": "no_automatic_retry"
+    },
+    "host_blocked": {
+      "code": "FBS-PAPER-1002",
+      "kind": "limitation",
+      "phase": "host",
+      "message": "本次辅助操作被宿主权限限制拦截。",
+      "next_action": "保留提示，按当前可用工具继续；不要绕过限制。",
+      "retry_policy": "no_automatic_retry"
+    },
+    "runtime_unavailable": {
+      "code": "FBS-PAPER-1003",
+      "kind": "limitation",
+      "phase": "runtime",
+      "message": "当前缺少可用的本地脚本运行能力。",
+      "next_action": "直接用可用的原生检索、附件和对话能力继续研究。",
+      "retry_policy": "no_automatic_retry"
+    },
+    "file_tools_unavailable": {
+      "code": "FBS-PAPER-1004",
+      "kind": "limitation",
+      "phase": "file",
+      "message": "当前没有可验证的文件写出能力。",
+      "next_action": "先交付可复制正文和接续说明；不把聊天内容称为已保存文件。",
+      "retry_policy": "no_automatic_retry"
+    },
+    "source_unverified": {
+      "code": "FBS-PAPER-1005",
+      "kind": "unknown",
+      "phase": "source",
+      "message": "本次工具来源尚未完成核对。",
+      "next_action": "核对实际Skill入口和文件指纹；普通内容任务可按原生能力继续。",
+      "retry_policy": "no_automatic_retry"
+    },
+    "input_invalid": {
+      "code": "FBS-PAPER-1101",
+      "kind": "technical",
+      "phase": "prepare",
+      "message": "辅助请求的结构或取值未通过检查。",
+      "next_action": "核对已声明条件；未知保留未知，不拼造缺失字段。",
+      "retry_policy": "no_automatic_retry"
+    },
+    "file_unavailable": {
+      "code": "FBS-PAPER-1102",
+      "kind": "technical",
+      "phase": "prepare",
+      "message": "本次指定文件无法读取。",
+      "next_action": "核对已授权文件或附件是否可用，不搜索无关目录代替。",
+      "retry_policy": "no_automatic_retry"
+    },
+    "endpoint_rejected": {
+      "code": "FBS-PAPER-1103",
+      "kind": "technical",
+      "phase": "prepare",
+      "message": "请求地址或跳转未通过固定入口检查。",
+      "next_action": "使用本产品正式入口；不改成任意网址或关闭证书校验。",
+      "retry_policy": "no_automatic_retry"
+    },
+    "source_changed": {
+      "code": "FBS-PAPER-1301",
+      "kind": "technical",
+      "phase": "source",
+      "message": "本次客户端执行文件与包内指纹不一致。",
+      "next_action": "停止该辅助调用，核对实际加载副本；不换另一副本冒充通过。",
+      "retry_policy": "no_automatic_retry"
+    },
+    "binding_failed": {
+      "code": "FBS-PAPER-1302",
+      "kind": "technical",
+      "phase": "contract",
+      "message": "返回结果与本次请求、目录或方法绑定不一致。",
+      "next_action": "保留诊断摘要并继续可支持的原生工作；不采用未核对结果。",
+      "retry_policy": "no_automatic_retry"
+    },
+    "outcome_unknown": {
+      "code": "FBS-PAPER-1400",
+      "kind": "unknown",
+      "phase": "transport",
+      "message": "本次辅助请求结果尚未确认。",
+      "next_action": "保留同一请求标记核对，不换号重发或假定没有发送。",
+      "retry_policy": "same_request_id_bounded_transport_only"
+    },
+    "transport_timeout": {
+      "code": "FBS-PAPER-1401",
+      "kind": "unknown",
+      "phase": "transport",
+      "message": "本次辅助请求在时限内未完成。",
+      "next_action": "结果可能未知；保留诊断摘要，按现有预算转原生处理。",
+      "retry_policy": "same_request_id_bounded_transport_only"
+    },
+    "dns_failure": {
+      "code": "FBS-PAPER-1402",
+      "kind": "technical",
+      "phase": "transport",
+      "message": "固定服务地址的名称解析未完成。",
+      "next_action": "核对当前连接条件；不要把执行器问题推断成所有客户端不支持。",
+      "retry_policy": "no_automatic_retry"
+    },
+    "tls_verification_failed": {
+      "code": "FBS-PAPER-1403",
+      "kind": "technical",
+      "phase": "transport",
+      "message": "固定服务的证书校验未通过。",
+      "next_action": "保留反馈码交维护者核对；不要关闭TLS校验。",
+      "retry_policy": "no_automatic_retry"
+    },
+    "connection_failed": {
+      "code": "FBS-PAPER-1404",
+      "kind": "technical",
+      "phase": "transport",
+      "message": "未能建立到固定服务的连接。",
+      "next_action": "保留连接阶段证据并使用原生路径，不盲目增加重试。",
+      "retry_policy": "no_automatic_retry"
+    },
+    "http_rejected": {
+      "code": "FBS-PAPER-1500",
+      "kind": "technical",
+      "phase": "http",
+      "message": "服务已返回HTTP拒绝或异常响应。",
+      "next_action": "提供反馈码和安全关联标记核对；不将明确HTTP返回当网络未知重发。",
+      "retry_policy": "no_automatic_retry"
+    },
+    "service_unavailable": {
+      "code": "FBS-PAPER-1501",
+      "kind": "technical",
+      "phase": "service",
+      "message": "服务端本次无法完成处理。",
+      "next_action": "保留本次诊断摘要，由维护者核对服务状态；不归为用户业务失败。",
+      "retry_policy": "no_automatic_retry"
+    },
+    "response_invalid": {
+      "code": "FBS-PAPER-1502",
+      "kind": "technical",
+      "phase": "contract",
+      "message": "响应格式、大小或合同校验未通过。",
+      "next_action": "不使用该结果，保留诊断摘要并继续可支持的原生工作。",
+      "retry_policy": "no_automatic_retry"
+    },
+    "decision_expired": {
+      "code": "FBS-PAPER-1503",
+      "kind": "business",
+      "phase": "validity",
+      "message": "此前策略结果已不在本次有效期内。",
+      "next_action": "重新确认当前任务后再决定是否查询；不延长旧结果有效期。",
+      "retry_policy": "no_automatic_retry"
+    },
+    "budget_exhausted": {
+      "code": "FBS-PAPER-1504",
+      "kind": "limitation",
+      "phase": "execution",
+      "message": "本批辅助操作已达到约定预算。",
+      "next_action": "先交付已有依据和未完成项，不通过重启流程重置预算。",
+      "retry_policy": "no_automatic_retry"
+    },
+    "local_record_failed": {
+      "code": "FBS-PAPER-1600",
+      "kind": "technical",
+      "phase": "local_record",
+      "message": "本次本地记录未能完成保存或校验。",
+      "next_action": "保留当前成果和既有原件；不要宣称记录已持久保存。",
+      "retry_policy": "no_automatic_retry"
+    },
+    "artifact_readback_failed": {
+      "code": "FBS-PAPER-1601",
+      "kind": "technical",
+      "phase": "readback",
+      "message": "本次成果尚未完成有效读回。",
+      "next_action": "保留已生成文件，核对实际内容和呈现后再声明交付验证。",
+      "retry_policy": "no_automatic_retry"
+    },
+    "write_result_unconfirmed": {
+      "code": "FBS-PAPER-1700",
+      "kind": "unknown",
+      "phase": "admin_write",
+      "message": "本次目录操作可能已生效，但结果尚未确认。",
+      "next_action": "先保存草案，再刷新核对当前目录，不重复提交。",
+      "retry_policy": "reconcile_same_operation_no_resend"
+    },
+    "acknowledged_readback_failed": {
+      "code": "FBS-PAPER-1701",
+      "kind": "unknown",
+      "phase": "readback",
+      "message": "操作已返回有效回执，但当前目录未完成重新读取。",
+      "next_action": "先保存草案并刷新核对，不把读回失败当成操作未生效。",
+      "retry_policy": "reconcile_same_operation_no_resend"
+    },
+    "no_match": {
+      "code": "FBS-PAPER-2001",
+      "kind": "business",
+      "phase": "selection",
+      "message": "当前目录没有适用于这些已声明条件的方法。",
+      "next_action": "保持真实研究范围，继续原生研究；不为匹配而改变条件。",
+      "retry_policy": "no_automatic_retry"
+    },
+    "needs_selection": {
+      "code": "FBS-PAPER-2002",
+      "kind": "business",
+      "phase": "selection",
+      "message": "当前有多个候选，需要明确选择。",
+      "next_action": "先说明候选差异并让用户选择，不擅自决定。",
+      "retry_policy": "no_automatic_retry"
+    },
+    "local_path": {
+      "code": "FBS-PAPER-2003",
+      "kind": "info",
+      "phase": "local",
+      "message": "本次按任务范围使用原生或本地短路径。",
+      "next_action": "直接完成本次内容任务，无需额外策略请求。",
+      "retry_policy": "no_automatic_retry"
+    },
+    "capability_limited": {
+      "code": "FBS-PAPER-2004",
+      "kind": "limitation",
+      "phase": "runtime",
+      "message": "当前工具或预算不足以执行额外策略研究。",
+      "next_action": "先完成已有材料能支持的部分，清楚列出缺口。",
+      "retry_policy": "no_automatic_retry"
+    },
+    "completed": {
+      "code": "FBS-PAPER-2005",
+      "kind": "info",
+      "phase": "complete",
+      "message": "本次结果在已验证范围内完成。",
+      "next_action": "按结果继续任务，不把技术成功当成采用或经营效果。",
+      "retry_policy": "no_automatic_retry"
+    },
+    "clock_unverified": {
+      "code": "FBS-PAPER-1505",
+      "kind": "technical",
+      "phase": "validity",
+      "message": "本次策略时效无法可靠核对。",
+      "next_action": "核对服务与执行器时钟和返回时限，不延长或重用未核对结果。",
+      "retry_policy": "no_automatic_retry"
+    },
+    "result_changed": {
+      "code": "FBS-PAPER-2006",
+      "kind": "business",
+      "phase": "selection",
+      "message": "目录、条件或已选方法版本已变化。",
+      "next_action": "保留当前工作，明确刷新核对后再选择，不自动覆盖或改选。",
+      "retry_policy": "no_automatic_retry"
+    }
+  },
+  "reason_aliases": {
+    "invalid_request": "input_invalid",
+    "invalid_consumer": "input_invalid",
+    "invalid_schema": "input_invalid",
+    "invalid_json": "input_invalid",
+    "invalid_uuid": "input_invalid",
+    "invalid_enum": "input_invalid",
+    "invalid_budget": "input_invalid",
+    "invalid_capabilities": "input_invalid",
+    "sensitive_field": "input_invalid",
+    "excluded_key": "input_invalid",
+    "unknown_field": "input_invalid",
+    "invalid_scope": "input_invalid",
+    "invalid_track_selection": "input_invalid",
+    "invalid_timeout": "input_invalid",
+    "invalid_record": "input_invalid",
+    "invalid_counts": "input_invalid",
+    "invalid_time": "input_invalid",
+    "invalid_duration": "input_invalid",
+    "unobserved_mismatch": "input_invalid",
+    "privacy_field_refused": "input_invalid",
+    "timing_scope_mismatch": "input_invalid",
+    "input_file_unavailable": "file_unavailable",
+    "file_not_found": "file_unavailable",
+    "file_permission_denied": "file_unavailable",
+    "fixed_endpoint_violation": "endpoint_rejected",
+    "redirect_rejected": "endpoint_rejected",
+    "source_fingerprint_mismatch": "source_changed",
+    "source_drift": "source_changed",
+    "request_id_mismatch": "binding_failed",
+    "request_digest_mismatch": "binding_failed",
+    "catalog_digest_mismatch": "binding_failed",
+    "track_digest_mismatch": "binding_failed",
+    "response_binding_invalid": "binding_failed",
+    "strategy_binding_invalid": "binding_failed",
+    "transport_failure": "outcome_unknown",
+    "transport_outcome_unknown": "outcome_unknown",
+    "write_failed": "local_record_failed",
+    "record_exists": "local_record_failed",
+    "record_too_large": "local_record_failed",
+    "local_record_failed": "local_record_failed",
+    "artifact_readback_failed": "artifact_readback_failed",
+    "invalid_response": "response_invalid",
+    "body_too_large": "response_invalid",
+    "invalid_content_type": "response_invalid",
+    "invalid_json_response": "response_invalid",
+    "transport_envelope_invalid": "response_invalid",
+    "expired": "decision_expired",
+    "deadline_elapsed": "decision_expired",
+    "time_skew_exceeded": "clock_unverified",
+    "time_invalid": "clock_unverified",
+    "time_duration_exceeded": "clock_unverified",
+    "budget_exhausted": "budget_exhausted",
+    "query_budget_exhausted": "budget_exhausted",
+    "read_budget_exhausted": "budget_exhausted",
+    "claim_budget_exhausted": "budget_exhausted",
+    "round_budget_exhausted": "budget_exhausted",
+    "no_match": "no_match",
+    "track_no_match": "no_match",
+    "no_active_strategy": "no_match",
+    "needs_selection": "needs_selection",
+    "track_selection_required": "needs_selection",
+    "local_only": "local_path",
+    "native_short_path": "local_path",
+    "skipped": "local_path",
+    "capability_limited": "capability_limited",
+    "host_permission_blocked": "host_blocked",
+    "runtime_unavailable": "runtime_unavailable",
+    "service_unavailable": "service_unavailable",
+    "service_not_ready": "service_unavailable",
+    "catalog_not_ready": "service_unavailable",
+    "decision_feedback_capacity": "service_unavailable",
+    "metrics_flush_failed": "service_unavailable",
+    "admin_session_required": "http_rejected",
+    "admin_session_expired": "http_rejected",
+    "paper_admin_not_granted": "http_rejected",
+    "admin_capability_required": "http_rejected",
+    "csrf_required": "http_rejected",
+    "same_origin_required": "http_rejected",
+    "host_not_allowed": "http_rejected",
+    "route_not_found": "http_rejected",
+    "unexpected_query": "http_rejected",
+    "catalog_revision_conflict": "result_changed",
+    "revision_conflict": "result_changed",
+    "request_id_reused": "binding_failed",
+    "catalog_changed": "result_changed",
+    "track_catalog_changed": "result_changed",
+    "track_version_mismatch": "result_changed"
+  },
+  "evidence_basis": [
+    "not_observed",
+    "host_tool_observation",
+    "pre_send_validation",
+    "transport_exception",
+    "http_response",
+    "response_validation",
+    "validated_business_response",
+    "local_io",
+    "operation_receipt"
+  ],
+  "execution_platforms": [
+    "win32",
+    "darwin",
+    "linux",
+    "other"
+  ],
+  "client_platforms": [
+    "windows",
+    "macos",
+    "linux",
+    "ios",
+    "android",
+    "harmonyos",
+    "mini_program",
+    "web",
+    "unknown"
+  ],
+  "scope": "diagnostic metadata only; no grant, no business-wire mutation, no platform-support or user-identity proof",
+  "diagnostic_constraints": [
+    "Catalog phase is a classification; observed_stage and send_state require actual evidence.",
+    "Do not infer an observed HTTP status from the legacy Error.status field.",
+    "Unknown or unrecognized reasons are sanitized to unknown, never echoed.",
+    "Transport attempts are not automatically counted as network sends.",
+    "Business wire bodies and local-observation.v2 remain unchanged."
+  ]
+}

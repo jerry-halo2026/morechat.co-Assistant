@@ -1,0 +1,29 @@
+{
+  "id": "REQUEST",
+  "question": null,
+  "decisionOrWork": null,
+  "audience": null,
+  "constraints": [],
+  "primaryDeliverable": "case_comparison",
+  "additionalDeliverables": [],
+  "readingScope": "question_directed",
+  "researchMode": "live_search",
+  "searchTerms": {
+    "industry": [],
+    "workflow": [],
+    "mechanism": [],
+    "conditions": []
+  },
+  "geography": [],
+  "timeRange": null,
+  "requestedCount": null,
+  "sourcePolicy": {
+    "mode": "unrestricted",
+    "domains": [],
+    "userMaterialSourceIds": []
+  },
+  "formats": [
+    "markdown"
+  ],
+  "unknowns": []
+}

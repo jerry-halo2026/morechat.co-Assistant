@@ -1,0 +1,18 @@
+{
+  "schemaVersion": "research.continuation/v1",
+  "version": "r0",
+  "currentQuestion": null,
+  "confirmedChoices": [],
+  "constraints": [],
+  "audience": null,
+  "primaryDeliverable": null,
+  "sourceChanges": [],
+  "completed": [],
+  "openItems": [],
+  "invalidatedReviews": [],
+  "nextAction": null,
+  "sources": [],
+  "observationStates": [],
+  "reviews": [],
+  "sections": []
+}

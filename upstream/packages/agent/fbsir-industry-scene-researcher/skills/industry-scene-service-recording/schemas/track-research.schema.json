@@ -1,0 +1,188 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://gaochuang.example/schemas/track-research.schema.json",
+  "title": "Independent local track research sidecar",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "record_id", "record_version", "brief_binding", "state", "selection", "demand_snapshot", "supply_snapshot", "fit_matrix", "coverage", "decision_log", "supersedes"],
+  "properties": {
+    "schema": {"const": "research.track-research/v1"},
+    "record_id": {"type": "string", "minLength": 1, "maxLength": 128},
+    "record_version": {"type": "integer", "minimum": 1, "maximum": 1000000},
+    "brief_binding": {"$ref": "#/$defs/briefBinding"},
+    "state": {"enum": ["current", "needs_selection", "stale"]},
+    "selection": {
+      "anyOf": [{"$ref": "#/$defs/selection"}, {"type": "null"}]
+    },
+    "demand_snapshot": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["decision", "goal", "context", "process", "constraints", "reader", "deliverable"],
+      "properties": {
+        "decision": {"$ref": "#/$defs/fact"},
+        "goal": {"$ref": "#/$defs/fact"},
+        "context": {"$ref": "#/$defs/fact"},
+        "process": {"$ref": "#/$defs/fact"},
+        "constraints": {"$ref": "#/$defs/fact"},
+        "reader": {"$ref": "#/$defs/fact"},
+        "deliverable": {"$ref": "#/$defs/fact"}
+      }
+    },
+    "supply_snapshot": {
+      "type": "array",
+      "maxItems": 100,
+      "items": {"$ref": "#/$defs/supply"}
+    },
+    "fit_matrix": {
+      "type": "array",
+      "maxItems": 500,
+      "items": {"$ref": "#/$defs/fit"}
+    },
+    "coverage": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["search_read", "claim_verification", "counterevidence", "transfer_conditions", "adoption", "outcomes"],
+      "properties": {
+        "search_read": {"$ref": "#/$defs/metric"},
+        "claim_verification": {"$ref": "#/$defs/metric"},
+        "counterevidence": {"$ref": "#/$defs/metric"},
+        "transfer_conditions": {"$ref": "#/$defs/metric"},
+        "adoption": {"$ref": "#/$defs/metric"},
+        "outcomes": {"$ref": "#/$defs/metric"}
+      }
+    },
+    "decision_log": {
+      "type": "array",
+      "maxItems": 1000,
+      "items": {"$ref": "#/$defs/decision"}
+    },
+    "supersedes": {
+      "anyOf": [{"$ref": "#/$defs/supersedes"}, {"type": "null"}]
+    }
+  },
+  "$defs": {
+    "reference": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["source_id", "source_version"],
+      "properties": {
+        "source_id": {"type": "string", "minLength": 1, "maxLength": 256},
+        "source_version": {"type": "string", "minLength": 1, "maxLength": 128}
+      }
+    },
+    "referenceList": {
+      "type": "array",
+      "maxItems": 100,
+      "items": {"$ref": "#/$defs/reference"}
+    },
+    "fact": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["value_text", "origin", "status", "evidence_refs", "source_version", "observed_at"],
+      "properties": {
+        "value_text": {"type": ["string", "null"], "maxLength": 4000},
+        "origin": {"enum": ["user_explicit", "user_statement", "source_fact", "company_claim", "independent_observation", "derived", "inference", "hypothesis", "unknown"]},
+        "status": {"enum": ["known", "unknown", "conflict", "withheld"]},
+        "evidence_refs": {"$ref": "#/$defs/referenceList"},
+        "source_version": {"type": "string", "minLength": 1, "maxLength": 128},
+        "observed_at": {"type": "string", "minLength": 1, "maxLength": 64}
+      }
+    },
+    "briefBinding": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["brief_id", "brief_version", "intent_revision", "brief_sha256"],
+      "properties": {
+        "brief_id": {"type": "string", "minLength": 1, "maxLength": 128},
+        "brief_version": {"type": "integer", "minimum": 1, "maximum": 1000000},
+        "intent_revision": {"type": "integer", "minimum": 1, "maximum": 1000000},
+        "brief_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"}
+      }
+    },
+    "selection": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["track_id", "track_version", "origin", "selection_basis", "evidence_refs"],
+      "properties": {
+        "track_id": {"type": "string", "pattern": "^[a-z][a-z0-9-]{2,95}$"},
+        "track_version": {"type": "integer", "minimum": 1, "maximum": 1000000},
+        "origin": {"enum": ["bundled_method", "user_proposed"]},
+        "selection_basis": {"enum": ["user_explicit", "unambiguous_non_mutating_rule"]},
+        "evidence_refs": {"$ref": "#/$defs/referenceList"}
+      }
+    },
+    "supply": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["supply_id", "supply_version", "synthetic", "relation", "evidence", "applicability", "method", "availability", "limitations", "evidence_refs"],
+      "properties": {
+        "supply_id": {"type": "string", "minLength": 1, "maxLength": 128},
+        "supply_version": {"type": "integer", "minimum": 1, "maximum": 1000000},
+        "synthetic": {"type": "boolean"},
+        "relation": {"$ref": "#/$defs/fact"},
+        "evidence": {"$ref": "#/$defs/fact"},
+        "applicability": {"$ref": "#/$defs/fact"},
+        "method": {"$ref": "#/$defs/fact"},
+        "availability": {"$ref": "#/$defs/fact"},
+        "limitations": {"type": "array", "maxItems": 100, "items": {"type": "string", "minLength": 1, "maxLength": 1000}},
+        "evidence_refs": {"$ref": "#/$defs/referenceList"}
+      }
+    },
+    "fit": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["fit_id", "track_id", "supply_id", "condition", "demand_value", "supply_value", "status", "support_refs", "counter_refs", "limitations", "next_validation", "derivation_status", "user_edit_text"],
+      "properties": {
+        "fit_id": {"type": "string", "minLength": 1, "maxLength": 128},
+        "track_id": {"type": ["string", "null"], "pattern": "^[a-z][a-z0-9-]{2,95}$"},
+        "supply_id": {"type": "string", "minLength": 1, "maxLength": 128},
+        "condition": {"type": "string", "minLength": 1, "maxLength": 256},
+        "demand_value": {"type": ["string", "null"], "maxLength": 2000},
+        "supply_value": {"type": ["string", "null"], "maxLength": 2000},
+        "status": {"enum": ["aligned", "conditional", "not_aligned", "unknown", "conflict"]},
+        "support_refs": {"$ref": "#/$defs/referenceList"},
+        "counter_refs": {"$ref": "#/$defs/referenceList"},
+        "limitations": {"type": "array", "maxItems": 100, "items": {"type": "string", "minLength": 1, "maxLength": 1000}},
+        "next_validation": {"type": ["string", "null"], "maxLength": 2000},
+        "derivation_status": {"enum": ["current", "needs_review", "stale"]},
+        "user_edit_text": {"type": ["string", "null"], "maxLength": 4000}
+      }
+    },
+    "metric": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["value", "unit", "period", "denominator", "status", "evidence_refs"],
+      "properties": {
+        "value": {"type": ["integer", "null"], "minimum": 0, "maximum": 1000000000},
+        "unit": {"type": "string", "minLength": 1, "maxLength": 128},
+        "period": {"type": ["string", "null"], "maxLength": 128},
+        "denominator": {"type": ["integer", "null"], "minimum": 0, "maximum": 1000000000},
+        "status": {"enum": ["known", "unknown"]},
+        "evidence_refs": {"$ref": "#/$defs/referenceList"}
+      }
+    },
+    "decision": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["record_version", "action", "track_id", "accepted", "observed_at", "details"],
+      "properties": {
+        "record_version": {"type": "integer", "minimum": 1, "maximum": 1000000},
+        "action": {"enum": ["select", "switch", "evidence_update", "review"]},
+        "track_id": {"type": ["string", "null"], "maxLength": 96},
+        "accepted": {"type": "boolean"},
+        "observed_at": {"type": "string", "minLength": 1, "maxLength": 64},
+        "details": {"type": "string", "maxLength": 4000}
+      }
+    },
+    "supersedes": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["record_id", "record_version", "sha256"],
+      "properties": {
+        "record_id": {"type": "string", "minLength": 1, "maxLength": 128},
+        "record_version": {"type": "integer", "minimum": 1, "maximum": 1000000},
+        "sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"}
+      }
+    }
+  }
+}

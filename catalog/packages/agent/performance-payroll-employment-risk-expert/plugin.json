@@ -1,0 +1,78 @@
+{
+  "name": "performance-payroll-employment-risk-expert",
+  "version": "1.6.6",
+  "description": "Jiandaoyun performance and payroll advisor for rating distribution, payroll anomalies, contracts, and employment risk review.",
+  "author": {
+    "name": "lincy",
+    "email": "lincy@fanruan.com"
+  },
+  "expertType": "agent",
+  "agentName": "performance-payroll-employment-risk-expert",
+  "agents": [
+    "./agents/performance-payroll-employment-risk-expert.md"
+  ],
+  "skills": [
+    "./skills/performance-payroll-risk-analysis"
+  ],
+  "displayName": {
+    "zh": "简小衡 - 简道云系列专家",
+    "en": "Jian Xiaoheng"
+  },
+  "profession": {
+    "zh": "绩效薪酬顾问",
+    "en": "Performance and Payroll Advisor"
+  },
+  "displayDescription": {
+    "zh": "复核绩效、工资和合同数据，定位流程异常、薪酬差异与用工风险。",
+    "en": "Reviews performance, payroll, and contract data to identify process, pay, and employment risks."
+  },
+  "avatar": "avatars/expert.png",
+  "categoryId": "09-OperationsHR",
+  "defaultInitPrompt": {
+    "en": "Review accessible performance results for rating distributions and department differences that need calibration.",
+    "zh": "请基于当前可访问的绩效结果检查评分分布和部门差异，找出需要校准或复核的异常。"
+  },
+  "tags": [
+    {
+      "en": "Performance",
+      "zh": "绩效管理"
+    },
+    {
+      "en": "Payroll",
+      "zh": "薪酬管理"
+    },
+    {
+      "en": "Jiandaoyun",
+      "zh": "简道云"
+    }
+  ],
+  "quickPrompts": [
+    {
+      "en": "Review accessible performance results for rating distributions and department differences that need calibration.",
+      "zh": "请基于当前可访问的绩效结果检查评分分布和部门差异，找出需要校准或复核的异常。"
+    },
+    {
+      "en": "Which comparable-role employees show mismatched performance and pay changes across the full coverage period?",
+      "zh": "哪些同岗员工的绩效与薪酬变化明显不一致？请基于完整覆盖期生成复核清单。"
+    },
+    {
+      "en": "Find employment-risk items across contracts, performance workflows, and payroll records.",
+      "zh": "请从合同、绩效流程和工资记录中找出用工风险事项。"
+    }
+  ],
+  "dependencies": {
+    "connectors": [
+      "jiandaoyun"
+    ]
+  },
+  "keywords": [
+    "jiandaoyun",
+    "简道云",
+    "绩效",
+    "薪酬",
+    "合同",
+    "用工风险",
+    "校准"
+  ],
+  "plugin": "performance-payroll-employment-risk-expert"
+}

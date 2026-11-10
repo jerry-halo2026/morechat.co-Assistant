@@ -1,0 +1,116 @@
+/* long-manuscript-expert 2026.11.5 — five report forms
+   Shared base layer plus per-form semantic tokens. Original values, not copied
+   from any supplied report asset. Every colour is also expressed in text. */
+
+:root {
+  --page-width: 210mm;
+  --page-height: 297mm;
+  --margin: 18mm;
+  --grid-columns: 12;
+  --gutter: 5mm;
+  --rhythm: 8pt;
+  --font-h1: 26pt;
+  --font-h2: 17pt;
+  --font-body: 10.5pt;
+  --font-caption: 8.5pt;
+  --c-main: #24465e;
+  --c-baseline: #6b7280;
+  --c-observation: #2f8f79;
+  --c-hypothesis: #8a6d3b;
+  --c-risk: #b75f46;
+  --c-unknown: #9aa3ad;
+  --c-unknown-pattern: repeating-linear-gradient(45deg, #eceff2 0 4px, #ffffff 4px 8px);
+}
+
+.paper-page {
+  box-sizing: border-box;
+  width: var(--page-width);
+  min-height: var(--page-height);
+  margin: 0 auto 12mm;
+  padding: var(--margin);
+  background: #fff;
+  color: #1c2430;
+  font-family: "Noto Sans CJK SC", "Source Han Sans SC", "Microsoft YaHei", sans-serif;
+  font-size: var(--font-body);
+  line-height: 1.62;
+  break-after: page;
+}
+.paper-page h1 { font-size: var(--font-h1); line-height: 1.25; margin: 0 0 var(--rhythm); }
+.paper-page h2 { font-size: var(--font-h2); line-height: 1.3; margin: calc(var(--rhythm) * 2) 0 var(--rhythm); }
+.paper-page p { margin: 0 0 var(--rhythm); }
+.paper-grid { display: grid; grid-template-columns: repeat(var(--grid-columns), 1fr); gap: var(--gutter); }
+.paper-caption { font-size: var(--font-caption); line-height: 1.45; color: #4b5563; }
+.paper-source { font-size: var(--font-caption); border-top: 1px solid #d7dde3; padding-top: 3pt; margin-top: 6pt; }
+.paper-page-number { font-size: var(--font-caption); text-align: right; }
+
+/* Wide tables: paginate or append, never shrink font continuously. */
+.paper-table { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; }
+.paper-table th, .paper-table td { border-bottom: 1px solid #d7dde3; padding: 4pt 6pt; text-align: left; vertical-align: top; }
+.paper-table td.num { text-align: right; }
+.paper-table .unit, .paper-table .period { font-size: var(--font-caption); color: #4b5563; }
+.paper-wide { overflow-x: auto; }
+
+/* Semantics are also spelled out in text; colour alone never carries meaning. */
+.sem-main { border-left: 3pt solid var(--c-main); padding-left: 6pt; }
+.sem-baseline { color: var(--c-baseline); }
+.sem-observation { border-left: 3pt solid var(--c-observation); padding-left: 6pt; }
+.sem-hypothesis { border-left: 3pt dashed var(--c-hypothesis); padding-left: 6pt; }
+.sem-risk { border-left: 3pt solid var(--c-risk); padding-left: 6pt; }
+.sem-unknown { background: var(--c-unknown-pattern); color: #4b5563; }
+.sem-unknown::before { content: "未知 / 未观测："; }
+.zero-vs-missing { font-size: var(--font-caption); }
+.zero-vs-missing .zero::before { content: "真实零值 "; }
+.zero-vs-missing .missing::before { content: "缺失 / 未读取 "; }
+
+/* Static substitute: critical values are printed, never hover-only. */
+.paper-static-chart { border: 1px solid #d7dde3; padding: 8pt; }
+.paper-static-chart figcaption { font-size: var(--font-caption); }
+.paper-static-chart .value-labels { font-variant-numeric: tabular-nums; }
+.no-animated-figure { animation: none !important; transition: none !important; }
+
+/* T01 atlas — warm, image/short-quote alternation, spread-friendly */
+[data-form="T01"] { --c-main: #2c7068; --c-observation: #b75f46; --c-unknown: #b9ae9c; background: #f6f1e8; }
+[data-form="T01"] .paper-spread { display: grid; grid-template-columns: 55fr 45fr; gap: var(--gutter); }
+[data-form="T01"] .quote-card { background: #fffaf1; border-left: 3pt solid #2c7068; padding: 8pt; }
+[data-form="T01"] .decorative { opacity: .8; } /* never evidence */
+
+/* T02 whitepaper — restrained, two-column argument, full-page architecture */
+[data-form="T02"] { --c-main: #33466e; --c-hypothesis: #69558d; background: #f5f7fb; }
+[data-form="T02"] .two-column { column-count: 2; column-gap: var(--gutter); }
+[data-form="T02"] .architecture { break-inside: avoid; }
+[data-form="T02"] .architecture figcaption { break-after: avoid; }
+[data-form="T02"] .vendor-claim { border-left: 3pt dashed #69558d; padding-left: 6pt; }
+[data-form="T02"] .independent-measure { border-left: 3pt solid #33466e; padding-left: 6pt; }
+
+/* T03 data report — white, fine grid, stable numerals */
+[data-form="T03"] { --c-main: #24465e; --c-risk: #b17b2b; background: #ffffff; }
+[data-form="T03"] .kpi { font-variant-numeric: tabular-nums; font-size: 20pt; }
+[data-form="T03"] .chart-panels { display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--gutter); }
+[data-form="T03"] .base-table { font-size: var(--font-caption); }
+[data-form="T03"] .partial-year { background: #fff6e5; border-left: 3pt solid #b17b2b; padding: 6pt; }
+
+/* T04 population study — repeated fixed-field cards, N/n adjacent */
+[data-form="T04"] { --c-main: #a2552e; --c-observation: #287578; background: #fbf7f2; }
+[data-form="T04"] .persona-card { border: 1px solid #d8c9b9; padding: 8pt; }
+[data-form="T04"] .persona-card .field { display: grid; grid-template-columns: 28% 1fr; gap: 3pt; }
+[data-form="T04"] .sample-note { font-size: var(--font-caption); margin-bottom: 4pt; }
+[data-form="T04"] .overlap-matrix { border-collapse: collapse; }
+[data-form="T04"] .simulated::after { content: "（模拟，非真人样本）"; font-size: var(--font-caption); }
+
+/* T05 methodology — process chain, numbered steps, role/gate tables */
+[data-form="T05"] { --c-main: #226e83; --c-observation: #2f8f79; background: #f4f8f9; }
+[data-form="T05"] .step-card { border-left: 4pt solid #226e83; padding: 6pt 8pt; margin-bottom: var(--rhythm); }
+[data-form="T05"] .step-card .gate { font-size: var(--font-caption); color: #4b5563; }
+[data-form="T05"] .conceptual::after { content: "（概念模型，非实测效果）"; font-size: var(--font-caption); }
+[data-form="T05"] .no-effect-curve { display: none; }
+
+@media print {
+  .paper-page { margin: 0; break-after: page; }
+  .paper-page:last-child { break-after: auto; }
+  .no-animated-figure { animation: none !important; }
+}
+@media (max-width: 720px) {
+  .paper-page { width: 100%; padding: 8mm; }
+  [data-form="T01"] .paper-spread { grid-template-columns: 1fr; } /* spread splits to single-page order */
+  [data-form="T02"] .two-column { column-count: 1; }
+}

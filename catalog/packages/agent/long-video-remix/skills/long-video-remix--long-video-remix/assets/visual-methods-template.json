@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0",
+  "project_id": null,
+  "methods": [
+    {
+      "method_id": "PM001",
+      "visual_problem": null,
+      "library_refs": [],
+      "fallback_refs": [],
+      "event_ids": [],
+      "source_evidence_refs": [],
+      "narrative_role": null,
+      "visual_focus": null,
+      "source_conditions": null,
+      "original_frame_assessment": null,
+      "selected_treatment": null,
+      "selection_reason": null,
+      "alternatives_considered": [],
+      "parameters": {},
+      "failure_modes": [],
+      "demo_checks": [],
+      "composition_required": true,
+      "visual_stage_problem_refs": [],
+      "visual_stage_note": "Reference selection, candidate design, review and user approval live in visual/V0–V7; this file only records the production method that implements the confirmed design."
+    }
+  ]
+}

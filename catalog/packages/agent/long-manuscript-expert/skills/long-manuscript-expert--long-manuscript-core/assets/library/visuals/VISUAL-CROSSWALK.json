@@ -1,0 +1,84 @@
+{
+  "schema": "paper.visual-crosswalk.v1",
+  "stable_product_id": "long-manuscript-expert",
+  "target_version": "2026.11.5",
+  "mapping": [
+    {
+      "block_visual_kind": "card",
+      "contract_id": "decision-card"
+    },
+    {
+      "block_visual_kind": "diff",
+      "contract_id": "change-impact-map"
+    },
+    {
+      "block_visual_kind": "coverage",
+      "contract_id": "evidence-heatmap"
+    },
+    {
+      "block_visual_kind": "matrix",
+      "contract_id": "evidence-heatmap"
+    },
+    {
+      "block_visual_kind": "graph",
+      "contract_id": "source-family-graph"
+    },
+    {
+      "block_visual_kind": "table",
+      "contract_id": "evidence-table"
+    },
+    {
+      "block_visual_kind": "paired-cards",
+      "contract_id": "decision-card"
+    },
+    {
+      "block_visual_kind": "interval",
+      "contract_id": "interval-comparison"
+    },
+    {
+      "block_visual_kind": "swimlane",
+      "contract_id": "process-swimlane"
+    },
+    {
+      "block_visual_kind": "waterfall",
+      "contract_id": "cost-waterfall"
+    },
+    {
+      "block_visual_kind": "flow",
+      "contract_id": "process-swimlane"
+    },
+    {
+      "block_visual_kind": "paired",
+      "contract_id": "paired-effect"
+    },
+    {
+      "block_visual_kind": "identity-cards",
+      "contract_id": "decision-card"
+    },
+    {
+      "block_visual_kind": "heatmap",
+      "contract_id": "evidence-heatmap"
+    },
+    {
+      "block_visual_kind": "evidence-chain",
+      "contract_id": "source-family-graph"
+    },
+    {
+      "block_visual_kind": "timeline",
+      "contract_id": "freshness-timeline"
+    },
+    {
+      "block_visual_kind": "impact-map",
+      "contract_id": "change-impact-map"
+    },
+    {
+      "block_visual_kind": "status-grid",
+      "contract_id": "evidence-heatmap"
+    },
+    {
+      "block_visual_kind": "version-card",
+      "contract_id": "decision-card"
+    }
+  ],
+  "graph_roles": "Source-family/dependency/evidence-chain nodes retain typed meaning;shared rendering does not merge evidence or permissions."
+}

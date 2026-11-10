@@ -1,0 +1,105 @@
+{
+  "schema": "paper.five-forms.catalog.v2",
+  "version": "2026.11.5",
+  "state": "PACKAGED_RUNTIME_ASSET",
+  "dimensions": [
+    "research_question",
+    "effective_intent",
+    "industry_adapter",
+    "primary_report_form",
+    "evidence_readiness",
+    "material_readiness",
+    "output_medium"
+  ],
+  "wire_change_authorized": false,
+  "form_is_wire_field": false,
+  "first_pass_max_pages": 30,
+  "max_pages_each": 6,
+  "forms": [
+    {
+      "id": "T01",
+      "name": "图鉴",
+      "slug": "atlas",
+      "narrative": "具体、可感知、短段落；先写观察再解释",
+      "visual": "浅暖底、图文交替、原声卡、可对页",
+      "hard_limits": "撤销图片或原声后合法降级",
+      "page_roles": [
+        "范围与旅程",
+        "趋势证据",
+        "场景比较",
+        "画像与原声",
+        "案例拆解",
+        "行动回顾"
+      ],
+      "template": "templates/T01-atlas.md"
+    },
+    {
+      "id": "T02",
+      "name": "白皮书",
+      "slug": "whitepaper",
+      "narrative": "主张—依据—机制—适用条件—小结",
+      "visual": "克制双栏、全页架构、连续图号",
+      "hard_limits": "厂商声明与独立测量分层；概念公式不数值化",
+      "page_roles": [
+        "摘要与范围",
+        "定义与争议",
+        "论点与证据",
+        "参考架构",
+        "方案与案例",
+        "实施与限制"
+      ],
+      "template": "templates/T02-whitepaper.md"
+    },
+    {
+      "id": "T03",
+      "name": "数据报告",
+      "slug": "data-report",
+      "narrative": "数值先行，明确期间、单位、基准",
+      "visual": "白底细网格、原值底表、异常高亮",
+      "hard_limits": "期间/单位/分母；缺月不补0；单对象不虚构TOP10",
+      "page_roles": [
+        "范围和KPI",
+        "总体与对象",
+        "时间变化",
+        "结构与排名",
+        "异常与诊断",
+        "行动与附录"
+      ],
+      "template": "templates/T03-data-report.md"
+    },
+    {
+      "id": "T04",
+      "name": "人群专题",
+      "slug": "population-study",
+      "narrative": "样本范围内描述，原声与推断分开",
+      "visual": "固定字段画像卡、N/n 就近标注",
+      "hard_limits": "多选不归一；缺基准不算TGI；模拟不计真人",
+      "page_roles": [
+        "问题与样本",
+        "分群与分布",
+        "人群A",
+        "人群B",
+        "差异与旅程",
+        "机会与验证"
+      ],
+      "template": "templates/T04-population-study.md"
+    },
+    {
+      "id": "T05",
+      "name": "方法论",
+      "slug": "methodology",
+      "narrative": "讲清怎么做、为何做、何时不做",
+      "visual": "过程链、步骤卡、角色与门槛表",
+      "hard_limits": "缺前提受限或退出；未实测不画效果曲线",
+      "page_roles": [
+        "问题与边界",
+        "总体方法",
+        "步骤与产物",
+        "案例与反例",
+        "执行路线",
+        "检验与复盘"
+      ],
+      "template": "templates/T05-methodology.md"
+    }
+  ]
+}

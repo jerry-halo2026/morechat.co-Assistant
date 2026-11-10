@@ -1,0 +1,12 @@
+{
+  "schema": "caption-place/1.0",
+  "style": {
+    "scheme_id": "<V3 style identifier>",
+    "fonts": {},
+    "roles": {},
+    "ink": {}
+  },
+  "policy": {},
+  "frames": {},
+  "screens": []
+}

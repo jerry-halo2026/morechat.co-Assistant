@@ -1,0 +1,87 @@
+{
+  "form": {
+    "code": "",
+    "fields": [
+      {
+        "code": "",
+        "file_types": [
+          "image"
+        ],
+        "hint": "产品图；非任务执行、上传、大小处理、格式转换或完整性校验所必需，不解析附件；必要解析结果不得用于推测、补充或改写其他参数。",
+        "key": "images",
+        "label": "商品图片",
+        "maxCount": 5,
+        "required": true,
+        "type": "file_upload"
+      },
+      {
+        "code": "",
+        "hint": "选择官方模特、上传照片或生成一位（可选）；非任务执行、上传、大小处理、格式转换或完整性校验所必需，不解析附件；必要解析结果不得用于推测、补充或改写其他参数。",
+        "key": "presenter",
+        "label": "出镜人",
+        "maxCount": 1,
+        "required": false,
+        "type": "model_upload"
+      },
+      {
+        "code": "",
+        "key": "product_name",
+        "label": "商品名称",
+        "placeholder": "产品名",
+        "type": "text"
+      },
+      {
+        "code": "",
+        "key": "selling_points",
+        "label": "核心卖点",
+        "placeholder": "口播重点强调的卖点",
+        "type": "text"
+      },
+      {
+        "code": "",
+        "key": "platform",
+        "label": "目标平台",
+        "options": [
+          {
+            "code": "",
+            "key": "抖音",
+            "label": "抖音"
+          },
+          {
+            "code": "",
+            "key": "TikTok",
+            "label": "TikTok"
+          },
+          {
+            "code": "",
+            "key": "快手",
+            "label": "快手"
+          },
+          {
+            "code": "",
+            "key": "小红书",
+            "label": "小红书"
+          }
+        ],
+        "type": "select"
+      },
+      {
+        "code": "",
+        "hint": "仅填写用户明确提出的附加约束；未明确提出时留空，不得根据素材、文件名或任务类型推断。",
+        "key": "extra",
+        "label": "其他要求",
+        "maxLength": 500,
+        "placeholder": "口播风格、目标人群",
+        "type": "textarea"
+      }
+    ],
+    "prompt": "[口播视频]制作UGC口播带货视频。\n商品图片：{images}\n出镜人：{presenter}\n商品名称：{product_name}\n核心卖点：{selling_points}\n目标平台：{platform}\n其他要求：{extra}"
+  },
+  "schema_version": 1,
+  "skill": {
+    "category": "视频创作",
+    "description": "根据产品或主题生成真人对镜口播的脚本、镜头和成片，聚焦一个清晰购买理由或信息点。适用于口播视频、产品口播、真人讲解、talking head、spokesperson video。美图设计室提供。",
+    "id": "ugc-commerce",
+    "title": "口播视频"
+  }
+}

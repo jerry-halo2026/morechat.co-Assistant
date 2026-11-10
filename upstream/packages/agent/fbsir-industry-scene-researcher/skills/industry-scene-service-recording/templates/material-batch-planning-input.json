@@ -1,0 +1,31 @@
+{
+  "id": "batch-plan-001",
+  "sourceId": "source-001",
+  "sourceVersion": null,
+  "purpose": "明确分批处理的可读内容单元",
+  "knownTotal": null,
+  "unit": "pages",
+  "maxUnitsPerBatch": 10,
+  "contentUnits": [
+    {
+      "id": "unit-001",
+      "locator": "PDF pages 1-3",
+      "range": [0, 3],
+      "state": "available",
+      "observationIds": [],
+      "unknowns": [],
+      "readReceiptRef": "synthetic-fixture-read-001",
+      "contentSha256": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"
+    },
+    {
+      "id": "unit-002",
+      "locator": "PDF appendix size unknown",
+      "range": null,
+      "state": "metadata_only",
+      "observationIds": [],
+      "unknowns": ["Content has not been observed"],
+      "readReceiptRef": null,
+      "contentSha256": null
+    }
+  ]
+}

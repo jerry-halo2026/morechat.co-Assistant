@@ -1,0 +1,113 @@
+{
+  "schema": "research.track-research/v1",
+  "record_id": "track-synthetic-service-01",
+  "record_version": 1,
+  "brief_binding": {
+    "brief_id": "brief-synthetic-service-01",
+    "brief_version": 1,
+    "intent_revision": 1,
+    "brief_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+  },
+  "state": "current",
+  "selection": {
+    "track_id": "smart-hardware-service-triage",
+    "track_version": 1,
+    "origin": "bundled_method",
+    "selection_basis": "user_explicit",
+    "evidence_refs": [{"source_id": "synthetic/user-requirement", "source_version": "v1"}]
+  },
+  "demand_snapshot": {
+    "decision": {"value_text": "研究智能硬件售后分类建议、人工复核与人工派单", "origin": "user_explicit", "status": "known", "evidence_refs": [{"source_id": "synthetic/user-requirement", "source_version": "v1"}], "source_version": "v1", "observed_at": "2026-10-27T00:00:00+08:00"},
+    "goal": {"value_text": "compare_cases", "origin": "derived", "status": "known", "evidence_refs": [{"source_id": "synthetic/user-requirement", "source_version": "v1"}], "source_version": "v1", "observed_at": "2026-10-27T00:00:00+08:00"},
+    "context": {"value_text": "customer_service", "origin": "derived", "status": "known", "evidence_refs": [{"source_id": "synthetic/user-requirement", "source_version": "v1"}], "source_version": "v1", "observed_at": "2026-10-27T00:00:00+08:00"},
+    "process": {"value_text": "smart_hardware_after_sales", "origin": "user_explicit", "status": "known", "evidence_refs": [{"source_id": "synthetic/user-requirement", "source_version": "v1"}], "source_version": "v1", "observed_at": "2026-10-27T00:00:00+08:00"},
+    "constraints": {"value_text": "specified", "origin": "user_explicit", "status": "known", "evidence_refs": [{"source_id": "synthetic/no-text-export", "source_version": "v1"}], "source_version": "v1", "observed_at": "2026-10-27T00:00:00+08:00"},
+    "reader": {"value_text": "售后负责人", "origin": "user_statement", "status": "known", "evidence_refs": [{"source_id": "synthetic/user-requirement", "source_version": "v1"}], "source_version": "v1", "observed_at": "2026-10-27T00:00:00+08:00"},
+    "deliverable": {"value_text": "故障分诊试点卡", "origin": "user_statement", "status": "known", "evidence_refs": [{"source_id": "synthetic/user-requirement", "source_version": "v1"}], "source_version": "v1", "observed_at": "2026-10-27T00:00:00+08:00"}
+  },
+  "supply_snapshot": [
+    {
+      "supply_id": "supply-a",
+      "supply_version": 1,
+      "synthetic": true,
+      "relation": {"value_text": "same_mechanism", "origin": "hypothesis", "status": "known", "evidence_refs": [{"source_id": "synthetic/supply-a", "source_version": "v1"}], "source_version": "v1", "observed_at": "2026-10-27T00:00:00+08:00"},
+      "evidence": {"value_text": null, "origin": "unknown", "status": "unknown", "evidence_refs": [], "source_version": "v1", "observed_at": "2026-10-27T00:00:00+08:00"},
+      "applicability": {"value_text": null, "origin": "unknown", "status": "unknown", "evidence_refs": [], "source_version": "v1", "observed_at": "2026-10-27T00:00:00+08:00"},
+      "method": {"value_text": "假设的本地日志分诊方法，性能未验证", "origin": "hypothesis", "status": "known", "evidence_refs": [{"source_id": "synthetic/supply-a", "source_version": "v1"}], "source_version": "v1", "observed_at": "2026-10-27T00:00:00+08:00"},
+      "availability": {"value_text": null, "origin": "unknown", "status": "unknown", "evidence_refs": [], "source_version": "v1", "observed_at": "2026-10-27T00:00:00+08:00"},
+      "limitations": ["合成供给，不是真实厂商或产品", "准确率、工时和适用范围未知"],
+      "evidence_refs": [{"source_id": "synthetic/supply-a", "source_version": "v1"}]
+    },
+    {
+      "supply_id": "supply-b",
+      "supply_version": 1,
+      "synthetic": true,
+      "relation": {"value_text": "same_mechanism", "origin": "hypothesis", "status": "known", "evidence_refs": [{"source_id": "synthetic/supply-b", "source_version": "v1"}], "source_version": "v1", "observed_at": "2026-10-27T00:00:00+08:00"},
+      "evidence": {"value_text": null, "origin": "unknown", "status": "unknown", "evidence_refs": [], "source_version": "v1", "observed_at": "2026-10-27T00:00:00+08:00"},
+      "applicability": {"value_text": null, "origin": "derived", "status": "conflict", "evidence_refs": [{"source_id": "synthetic/no-text-export", "source_version": "v1"}, {"source_id": "synthetic/supply-b", "source_version": "v1"}], "source_version": "v1", "observed_at": "2026-10-27T00:00:00+08:00"},
+      "method": {"value_text": "假设的云端全文分析方法，需要客户原文外传", "origin": "hypothesis", "status": "known", "evidence_refs": [{"source_id": "synthetic/supply-b", "source_version": "v1"}], "source_version": "v1", "observed_at": "2026-10-27T00:00:00+08:00"},
+      "availability": {"value_text": null, "origin": "unknown", "status": "unknown", "evidence_refs": [], "source_version": "v1", "observed_at": "2026-10-27T00:00:00+08:00"},
+      "limitations": ["合成供给，不是真实厂商或产品", "与本次禁止客户原文外传冲突"],
+      "evidence_refs": [{"source_id": "synthetic/supply-b", "source_version": "v1"}]
+    }
+  ],
+  "fit_matrix": [
+    {
+      "fit_id": "fit-a-performance",
+      "track_id": "smart-hardware-service-triage",
+      "supply_id": "supply-a",
+      "condition": "diagnostic_performance",
+      "demand_value": "性能与误判边界需要核验",
+      "supply_value": null,
+      "status": "unknown",
+      "support_refs": [],
+      "counter_refs": [],
+      "limitations": ["合成供给A没有实测性能或指标分母"],
+      "next_validation": "以授权脱敏样本和人工复核口径验证",
+      "derivation_status": "current",
+      "user_edit_text": "用户手改：保留人工最终派单。"
+    },
+    {
+      "fit_id": "fit-b-data-export",
+      "track_id": "smart-hardware-service-triage",
+      "supply_id": "supply-b",
+      "condition": "customer_text_export",
+      "demand_value": "forbidden",
+      "supply_value": "required",
+      "status": "conflict",
+      "support_refs": [{"source_id": "synthetic/no-text-export", "source_version": "v1"}],
+      "counter_refs": [{"source_id": "synthetic/supply-b", "source_version": "v1"}],
+      "limitations": ["只能比较机制，不能列为可直接采用方案"],
+      "next_validation": null,
+      "derivation_status": "current",
+      "user_edit_text": null
+    },
+    {
+      "fit_id": "fit-cross-industry",
+      "track_id": null,
+      "supply_id": "supply-a",
+      "condition": "cross_industry_mechanism_transfer",
+      "demand_value": "资源与责任条件未知",
+      "supply_value": "仅机制相似假设",
+      "status": "conditional",
+      "support_refs": [{"source_id": "synthetic/supply-a", "source_version": "v1"}],
+      "counter_refs": [],
+      "limitations": ["不得外推收益", "资源现实可得性与人工责任未知"],
+      "next_validation": "核对本地日志、系统接口和复核责任",
+      "derivation_status": "current",
+      "user_edit_text": null
+    }
+  ],
+  "coverage": {
+    "search_read": {"value": null, "unit": "sources", "period": null, "denominator": null, "status": "unknown", "evidence_refs": []},
+    "claim_verification": {"value": null, "unit": "claims", "period": null, "denominator": null, "status": "unknown", "evidence_refs": []},
+    "counterevidence": {"value": null, "unit": "checks", "period": null, "denominator": null, "status": "unknown", "evidence_refs": []},
+    "transfer_conditions": {"value": null, "unit": "conditions", "period": null, "denominator": null, "status": "unknown", "evidence_refs": []},
+    "adoption": {"value": null, "unit": "user_adoptions", "period": null, "denominator": null, "status": "unknown", "evidence_refs": []},
+    "outcomes": {"value": null, "unit": "business_outcomes", "period": null, "denominator": null, "status": "unknown", "evidence_refs": []}
+  },
+  "decision_log": [
+    {"record_version": 1, "action": "select", "track_id": "smart-hardware-service-triage", "accepted": true, "observed_at": "2026-10-27T00:00:00+08:00", "details": "合成测试记录：用户明确选择售后分诊，不代表真实业务事件。"}
+  ],
+  "supersedes": null
+}

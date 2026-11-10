@@ -1,0 +1,15 @@
+{
+ "_how": "每处字一张卡。shot = 这处字所在镜头的起止秒；box = 粗框（百分比 x0, y0, x1, y1），工具会在框里找紧框；face = 所指对象的粗框（百分比），用来算离对象距离；side = 字在对象的哪一侧。ink：chroma:blue | hex:#RRGGBB:容差 | bright:亮度 | dark:亮度。",
+ "cards": [
+  {
+   "id": "T1",
+   "shot": [0.0, 0.0],
+   "side": "left",
+   "face": [50, 10, 80, 90],
+   "lines": {
+    "main": {"box": [10, 40, 35, 55], "ink": "bright:200"},
+    "sub": {"box": [10, 55, 40, 62], "ink": "bright:200"}
+   }
+  }
+ ]
+}

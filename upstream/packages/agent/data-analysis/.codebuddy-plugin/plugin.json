@@ -1,0 +1,76 @@
+{
+  "name": "data-analysis",
+  "version": "1.0.0",
+  "description": "A six-role data analysis expert team: lead analyst clarifies the business question, data engineer audits and cleans with a built-in zero-dependency datakit toolbox (profiler, cleaner, funnel, cohort, RFM, ABC, significance testing), statistician runs ten deep-dive playbooks, insight consultant translates findings into action, storyteller delivers three-tier reports, and a red-team reviewer challenges every conclusion before it ships. China-first: six industry metric packs, promotion-season correction, wan/yi conventions, PIPL compliance. Use for business analysis, sales analysis, user analysis, attribution, funnel, retention, A/B testing, or any 'why did this number move' question with Excel/CSV data.",
+  "author": {
+    "name": "Horizon215",
+    "email": ""
+  },
+  "agents": [
+    "./agents/data-team-lead.md",
+    "./agents/data-engineer.md",
+    "./agents/data-statistician.md",
+    "./agents/insight-consultant.md",
+    "./agents/visual-storyteller.md",
+    "./agents/red-team-reviewer.md"
+  ],
+  "expertType": "team",
+  "agentName": "data-team-lead",
+  "teamInfo": {
+    "leadAgent": "data-team-lead",
+    "memberAgents": [
+      "data-engineer",
+      "data-statistician",
+      "insight-consultant",
+      "visual-storyteller",
+      "red-team-reviewer"
+    ]
+  },
+  "skills": ["./skills/data-analysis-cn"],
+  "displayName": {
+    "en": "Data Team",
+    "zh": "数据分析专家团"
+  },
+  "profession": {
+    "en": "Data Analysis Expert Team",
+    "zh": "数据分析团队"
+  },
+  "displayDescription": {
+    "en": "Six-expert data team: clarify the question, audit the data, dig with ten playbooks, red-team every conclusion before delivery - with a zero-dependency analysis toolbox built in.",
+    "zh": "六人专家团接力：澄清需求、体检数据、十大打法深挖，结论先过红队复核再交付，自带零依赖分析工具箱。"
+  },
+  "avatar": "avatars/team.png",
+  "categoryId": "04-DataAI",
+  "defaultInitPrompt": {
+    "zh": "这是我们店上半年的销售 Excel，帮我分析下为什么 6 月掉得厉害，周五汇报要用",
+    "en": "Here's my shop's H1 sales spreadsheet - figure out why June dropped hard, I need it for a Friday report"
+  },
+  "plugin": "data-analysis",
+  "tags": [
+    { "en": "Data Analysis", "zh": "数据分析" },
+    { "en": "Data Driven", "zh": "数据驱动" },
+    { "en": "Business Analysis", "zh": "经营分析" }
+  ],
+  "quickPrompts": [
+    {
+      "zh": "这是我们店上半年的销售 Excel，帮我分析下为什么 6 月掉得厉害，周五汇报要用",
+      "en": "Here's my shop's H1 sales spreadsheet - figure out why June dropped hard, I need it for a Friday report"
+    },
+    {
+      "zh": "帮我算下这个转化漏斗哪步最拉胯：浏览 10 万、加购 3.2 万、下单 1.5 万、支付 9800",
+      "en": "Which step of my funnel is the weakest: 100k views, 32k add-to-cart, 15k orders, 9.8k paid"
+    },
+    {
+      "zh": "拿这份用户订单表做全套分析：先体检数据，再 RFM 分层和留存矩阵，结论过一遍红队复核，最后出给老板的一页纸",
+      "en": "Full analysis on this order table: audit the data, run RFM segmentation and cohort retention, red-team the conclusions, then give me a one-pager for the boss"
+    }
+  ],
+  "members": [
+    { "id": "data-team-lead", "name": { "en": "Horizon", "zh": "Horizon" }, "profession": { "en": "Data Team Lead", "zh": "首席分析师" }, "avatar": "avatars/team-lead.png", "role": "lead" },
+    { "id": "data-engineer", "name": { "en": "Chen", "zh": "陈澈" }, "profession": { "en": "Data Engineer", "zh": "数据工程师" }, "avatar": "avatars/data-engineer.png", "role": "member" },
+    { "id": "data-statistician", "name": { "en": "Yan", "zh": "严谨" }, "profession": { "en": "Statistician", "zh": "统计学家" }, "avatar": "avatars/data-statistician.png", "role": "member" },
+    { "id": "insight-consultant", "name": { "en": "Ming", "zh": "顾明" }, "profession": { "en": "Insight Consultant", "zh": "行业洞察顾问" }, "avatar": "avatars/insight-consultant.png", "role": "member" },
+    { "id": "visual-storyteller", "name": { "en": "Shu", "zh": "陈述" }, "profession": { "en": "Visual Storyteller", "zh": "可视化叙事官" }, "avatar": "avatars/visual-storyteller.png", "role": "member" },
+    { "id": "red-team-reviewer", "name": { "en": "Zhen", "zh": "甄核" }, "profession": { "en": "Red Team Reviewer", "zh": "复核官" }, "avatar": "avatars/red-team-reviewer.png", "role": "member" }
+  ]
+}

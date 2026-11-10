@@ -1,0 +1,93 @@
+{
+  "stage": "V1",
+  "inputs_design_sha256": {
+    "V0-intake.json": "<design sha256>"
+  },
+  "shots": [
+    {
+      "keyframe": "M01",
+      "geometry": {
+        "mode": "crop",
+        "crop_x": 0,
+        "scale": 1.0
+      },
+      "protect": [
+        {
+          "id": "<face_…>",
+          "class": "<face | hand | object | body>",
+          "rect_src": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "subtitle_band_src": [
+        880,
+        920,
+        1700,
+        1040
+      ],
+      "narrative_anchor": {
+        "id": "<物件或动作>",
+        "point_src": [
+          0,
+          0
+        ],
+        "why": "<为什么它是焦点>"
+      },
+      "zones": [
+        {
+          "id": "Z1",
+          "rect_src": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "luma_mean": 0,
+          "luma_std": 0,
+          "note": "<这块是什么>"
+        }
+      ],
+      "problems": [
+        {
+          "id": "P1",
+          "statement": "<画面里什么东西造成了什么限制>",
+          "evidence": [
+            "Z1",
+            "<保护区 id>"
+          ]
+        }
+      ],
+      "text_reference_context": null
+    }
+  ],
+  "direction_hypothesis": {
+    "analysis_order": "after_visual_problem_before_reference",
+    "global_baseline": {
+      "primary_direction": "<VD-01 … VD-07>",
+      "secondary_direction": "<optional VD id or null>",
+      "attention_owner": "<face | action | relationship | text | environment>",
+      "text_role": "<observer_comment | relationship_annotation | detail_label | ironic_second_voice | emotional_afterimage | punchline | segment_marker>",
+      "spatial_relation": "<adjacent | axis_bound | negative_space | surface_bound | counterweight | dominant_field | separate_field>",
+      "timing_mode": "<fact_sync | reaction_echo | two_step_relation | afterimage_hold | cut_definition | sound_bound>",
+      "emphasis_budget": "<low | medium | high>",
+      "why": "<只根据内容/人物关系和 V1 画面事实作初判；此时不要引用 REF/XR/MR>"
+    },
+    "per_shot": [
+      {
+        "keyframe": "M01",
+        "primary_direction": "<VD-01 … VD-07>",
+        "attention_owner": "<face | action | relationship | text | environment>",
+        "text_role": "<…>",
+        "spatial_relation": "<…>",
+        "timing_mode": "<…>",
+        "why": "<该镜头为何采用/偏离全局基调；只引用 V1 事实>",
+        "emphasis_budget": "<low | medium | high>"
+      }
+    ]
+  },
+  "_方向说明": "方向初判属于 V1 完成后的分析产物，必须先于 V2 参考选择；V3 再结合参考校准深化。Atlas 是知识资产，不是新增阶段或用户审批。"
+}

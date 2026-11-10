@@ -1,0 +1,61 @@
+{
+  "agents": [
+    "./agents/workplace-cross-team-collaboration-guide.md"
+  ],
+  "avatar": "./avatar.png",
+  "categoryId": "06-ContentCreative",
+  "defaultInitPrompt": {
+    "en": "I lead a cross-department project involving product, engineering, and operations. We are stuck on who owns the launch checklist, and deadlines keep slipping. I will paste the project goal, each side's demands, and the sticking point in their own words. Please first align the goal, set responsibilities and a sync rhythm, then give me a collaboration charter table, a responsibility table, a sync rhythm table, and conflict-resolution steps.",
+    "zh": "我负责一个跨部门项目，产品、技术、运营三方都要参与，现在卡在上线检查清单到底谁负责、截止时间一拖再拖。我把项目目标、各方诉求和卡住的地方原话都贴给你，请你先帮我对齐目标、定好分工和同步节奏，再给我一张协作章程表、一张分工表、一张同步节奏表和一个冲突处理步骤。"
+  },
+  "description": "面向跨部门项目负责人的协作指南：先对齐目标、定好分工和同步节奏，再按清单推进、处理冲突，让各方按表复核、按期交付。",
+  "displayDescription": {
+    "en": "A collaboration guide for cross-department project leads: align goals, set responsibilities and a sync rhythm, then advance by checklist, resolve conflicts, and let every side verify against the tables for on-time delivery.",
+    "zh": "面向跨部门项目负责人的协作指南：先对齐目标、定好分工和同步节奏，再按清单推进、处理冲突，让各方按表复核、按期交付。"
+  },
+  "displayName": {
+    "en": "Workplace Cross-team Collaboration Expert",
+    "zh": "职场跨部门协作专家"
+  },
+  "expertType": "agent",
+  "name": "workplace-cross-team-collaboration-guide",
+  "profession": {
+    "en": "Workplace Cross-team Collaboration Expert",
+    "zh": "职场跨部门协作专家"
+  },
+  "quickPrompts": [
+    {
+      "en": "I lead a cross-department project involving product, engineering, and operations. We are stuck on who owns the launch checklist, and deadlines keep slipping. I will paste the project goal, each side's demands, and the sticking point in their own words. Please first align the goal, set responsibilities and a sync rhythm, then give me a collaboration charter table, a responsibility table, a sync rhythm table, and conflict-resolution steps.",
+      "zh": "我负责一个跨部门项目，产品、技术、运营三方都要参与，现在卡在上线检查清单到底谁负责、截止时间一拖再拖。我把项目目标、各方诉求和卡住的地方原话都贴给你，请你先帮我对齐目标、定好分工和同步节奏，再给我一张协作章程表、一张分工表、一张同步节奏表和一个冲突处理步骤。"
+    },
+    {
+      "en": "Three departments describe success for the same project differently, and meetings keep arguing about priorities. Please align one shared goal from each side's own words, then put the disagreements in a table marking who decides, who executes, and who verifies.",
+      "zh": "我们三个部门对同一个项目的成功标准说法不一样，开会总在争优先级。请你按各方原话对齐一个共同目标，再把分歧写进一张表，标出谁拍板、谁执行、谁复核。"
+    },
+    {
+      "en": "Project progress is chased verbally every week, and only near the deadline do we learn someone never started. Please give me a sync rhythm table and a progress comparison table marking who reports what each week, who to escalate to when blocked, and how many days late counts as a delay.",
+      "zh": "项目进度每周都靠口头问，到了截止前才发现有人没动手。请你给我一个同步节奏表和一份进度对照表，标出每周谁汇报什么、卡住了找谁、超过几天算延期。"
+    }
+  ],
+  "skills": [
+    "./skills/goal-alignment-charter",
+    "./skills/role-progress-sync",
+    "./skills/conflict-resolution"
+  ],
+  "tags": [
+    {
+      "en": "Cross-team collaboration",
+      "zh": "跨部门协作"
+    },
+    {
+      "en": "Project delivery",
+      "zh": "项目推进"
+    },
+    {
+      "en": "Workplace communication",
+      "zh": "职场沟通"
+    }
+  ],
+  "version": "0.1.0",
+  "agentName": "workplace-cross-team-collaboration-guide"
+}

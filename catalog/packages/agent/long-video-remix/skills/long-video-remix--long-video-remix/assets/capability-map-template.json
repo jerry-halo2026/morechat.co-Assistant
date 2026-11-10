@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0",
+  "capabilities": [
+    {
+      "capability": "render_timeline",
+      "actual_tool": null,
+      "entrypoint": null,
+      "status": "unverified",
+      "input_mapping": {},
+      "output_mapping": {},
+      "time_unit": null,
+      "end_semantics": null,
+      "limits": {},
+      "tested_range": null,
+      "timestamp_method": null,
+      "audio_observation": false,
+      "video_observation": false,
+      "fallback": "If the final Execute environment cannot call this tool and entrypoint, keep the Visual Gate open."
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+{
+  "stage": "V5",
+  "inputs_design_sha256": {
+    "…": "<前序全部文件的 design sha256>"
+  },
+  "quality_claim": "not_automated",
+  "reviews": [
+    {
+      "candidate": "A",
+      "thesis_delivered": {
+        "answer": "<建议填写；这只是设计论证，不是机器审美证明>",
+        "evidence": [
+          "<V4/V1 evidence id>"
+        ]
+      },
+      "first_read": {
+        "answer": "<建议填写>",
+        "evidence": []
+      },
+      "image_integration": {
+        "answer": "<建议填写>",
+        "evidence": []
+      },
+      "typography": {
+        "answer": "<建议填写>",
+        "evidence": []
+      },
+      "color": {
+        "answer": "<建议填写>",
+        "evidence": []
+      },
+      "narrative_detail": {
+        "answer": "<建议填写>",
+        "evidence": []
+      },
+      "strip_decoration_test": {
+        "answer": "<建议填写>",
+        "evidence": []
+      },
+      "template_risk": {
+        "answer": "<建议填写>",
+        "evidence": []
+      },
+      "do_not_transfer_checks": []
+    }
+  ],
+  "recommendation": {
+    "candidate": "A",
+    "reason": "<设计者建议；用户仍需 V6 选择>"
+  },
+  "rejected": [
+    {
+      "candidate": "C",
+      "reason": "<若 do-not-transfer 为 fail，则该候选必须在此被否决，或回 V4 修改后重做 V5>",
+      "evidence": [
+        "<...>"
+      ]
+    }
+  ],
+  "review_scope": {
+    "blur_squint": {
+      "status": "<used | not_needed>",
+      "reason": "<按问题决定；not_needed 时说明理由>"
+    }
+  },
+  "review_artifacts": {
+    "small_screen_board": {
+      "file": "review/small-screen-board.png",
+      "sha256": "<sha256>"
+    },
+    "blur_squint_board": null,
+    "blind_map": null
+  },
+  "independent_review": {
+    "status": "<not_used|completed>",
+    "reason": "<not_used 时说明没有独立 reviewer；completed 时填 file/sha256>",
+    "file": "",
+    "sha256": ""
+  },
+  "presented_to_user": {
+    "context": "user",
+    "what": "<交给用户的比较页/Mockup>",
+    "date": "<YYYY-MM-DD>",
+    "artifacts": [
+      {
+        "file": "mockups/A_M01.png",
+        "sha256": "<sha256>",
+        "candidate": "A"
+      }
+    ]
+  },
+  "same_source_ab": {
+    "controls": {
+      "keyframe": "M01",
+      "copy_ids": [
+        "T1"
+      ],
+      "same_source": true,
+      "same_canvas": true,
+      "same_copy": true,
+      "audio_unchanged": true,
+      "source_frame": {
+        "keyframe": "M01",
+        "file": "keyframes/<与 V0 M01 完全一致>.png",
+        "sha256": "<当前源帧实际 sha256>"
+      },
+      "canvas": [
+        1920,
+        1080
+      ]
+    },
+    "baseline": {
+      "file": "review/ab-baseline-M01.png",
+      "sha256": "<sha256>"
+    },
+    "candidate": {
+      "file": "mockups/A_M01.png",
+      "sha256": "<与 V4 完全一致>",
+      "candidate": "A",
+      "keyframe": "M01"
+    },
+    "observations": {
+      "hierarchy": "<主次是否更清楚，具体指出画面证据>",
+      "person_text_relation": "<文字与人物/动作关系是否更自然，具体指出距离和避让>",
+      "typography_voice": "<字体、字重、行型是否更符合文案语气>",
+      "timing_note": "<静态 V5 不证明动态时机；动效/出现时机在 Dynamic Proof 验证>"
+    },
+    "result": {
+      "status": "<visible_change | no_visible_change>",
+      "evidence_use": "<comparison_only | not_visual_improvement_evidence>",
+      "note": "<文件相同或解码后像素完全相同（包括仅 PNG 元数据/编码变化）都必须记 no_visible_change，不能作为视觉提升证据；若该候选因此不成立，列入 rejected>"
+    }
+  }
+}

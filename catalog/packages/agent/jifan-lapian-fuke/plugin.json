@@ -1,0 +1,73 @@
+{
+  "name": "jifan-lapian-fuke",
+  "version": "1.0.2",
+  "description": "把一条爆款视频拆成逐镜结构表，再把结构搬到你自己的题材上，只借结构不搬素材。",
+  "author": {
+    "name": "广州极帆信息科技有限公司",
+    "email": ""
+  },
+  "agents": [
+    "./agents/jifan-lapian-fuke.md"
+  ],
+  "skills": [
+    "./skills/jifan-lapian-chaifen",
+    "./skills/jifan-lapian-jiegou",
+    "./skills/jifan-lapian-qingdan"
+  ],
+  "expertType": "agent",
+  "agentName": "jifan-lapian-fuke",
+  "displayName": {
+    "zh": "爆款视频拉片与分镜复刻",
+    "en": "Video Breakdown and Restructure"
+  },
+  "profession": {
+    "zh": "拉片复刻师",
+    "en": "Video Breakdown and Restructure"
+  },
+  "displayDescription": {
+    "zh": "把一条爆款视频拆成逐镜结构表，再把结构搬到你自己的题材上，只借结构不搬素材。",
+    "en": "Produces ready-to-use drafts from your own input."
+  },
+  "avatar": "avatars/expert.png",
+  "categoryId": "06-ContentCreative",
+  "defaultInitPrompt": {
+    "zh": "我想学爆款视频的结构但不想抄，先用内置示例给我看拉片拆解和结构复刻怎么做。",
+    "en": "Start with the built-in example for Video Breakdown and Restructure."
+  },
+  "plugin": "jifan-lapian-fuke",
+  "keywords": [
+    "拉片复刻师",
+    "极帆",
+    "拉片拆解表生成",
+    "结构复刻方案生成",
+    "复刻执行清单生成"
+  ],
+  "tags": [
+    {
+      "zh": "拉片拆解表生成",
+      "en": "Shot-by-shot Breakdown"
+    },
+    {
+      "zh": "结构复刻方案生成",
+      "en": "Structure Transfer Plan"
+    },
+    {
+      "zh": "复刻执行清单生成",
+      "en": "Production Checklist"
+    }
+  ],
+  "quickPrompts": [
+    {
+      "zh": "我想学爆款视频的结构但不想抄，先用内置示例给我看拉片拆解和结构复刻怎么做。",
+      "en": "Start with the built-in example for Video Breakdown and Restructure."
+    },
+    {
+      "zh": "用内置示例演示：把拆出来的结构映射到你自己的题材上，逐镜说明你该拍什么，不复制原片画面与文案。",
+      "en": "Run the built-in example for Structure Transfer Plan."
+    },
+    {
+      "zh": "用内置示例演示：把复刻方案落成执行清单：要拍哪些镜头、需要什么素材、谁做、大概多久。",
+      "en": "Run the built-in example for Production Checklist."
+    }
+  ]
+}

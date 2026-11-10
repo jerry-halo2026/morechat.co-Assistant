@@ -1,0 +1,45 @@
+{
+ "stage": "S0",
+ "optional": "可选，检查脚本不检查。用于蒙太奇 / 情绪段的规划；举证段的节奏由论证决定。镜长、转场与色彩均按当前素材决定。说明见 references/editing-grammar.md §2。",
+ "segment": {
+  "name": "<情绪蒙太奇 / 甜蜜合集 / 回忆段>",
+  "span_s": [
+   0,
+   90
+  ],
+  "audio_policy_ref": "project.audio_policy",
+  "music": null,
+  "audio_note": "只有项目 audio policy 明确允许且本段实际使用音乐时，才填写 music / beat_anchors；此模板不授权新增 BGM 或改变原声策略。"
+ },
+ "sections": [
+  {
+   "id": "A",
+   "role": "<慢段 | 加速 | 换气 | 高潮 | 收尾>",
+   "span_s": [
+    0,
+    30
+   ],
+   "target_median_shot_s": null,
+   "in_shot_motion": "<low | mid | high>",
+   "text_units": [
+    {
+     "type": "<人物出场标注 | 观察文字>",
+     "copy_ref": "<V0 文案 id>",
+     "referent": "<字指的人、动作或物件>",
+     "carrier_shot": "<源片 + 时间码：所指对象偏向一侧、对面有平静暗部、镜头静止>"
+    }
+   ],
+   "transition_in": "cut",
+   "beat_anchors": []
+  }
+ ],
+ "grade": {
+  "unify": "none",
+  "accent_hue": "<本条视频自己定，不沿用参考的颜色>",
+  "exempt_sections": [
+   "<举证段：保留原色>"
+  ]
+ },
+ "reference_trace": [],
+ "self_check": "节奏计划是可选规划，不是阈值或 Gate。成片后可运行：python3 -I scripts/analyze_clip.py structure <成片> --out <目录> --sections \"0-30:A,30-60:B\"，按当前段落的叙事功能复核"
+}

@@ -1,0 +1,193 @@
+{
+  "name": "fullstack-forge-team",
+  "version": "2.4.1",
+  "description": "Full-stack system delivery team: 8 roles across the full lifecycle for websites, apps, iOS/HarmonyOS apps, mini programs, and software systems — from requirement & platform selection through product, engineering, testing, release, DevOps, and growth",
+  "agents": [
+    "./agents/forge-lead.md",
+    "./agents/product-scout.md",
+    "./agents/product-manager.md",
+    "./agents/fullstack-engineer.md",
+    "./agents/qa-tester.md",
+    "./agents/release-manager.md",
+    "./agents/ops-sre.md",
+    "./agents/growth-operator.md"
+  ],
+  "skills": [
+    "./skills/forge-orchestrator"
+  ],
+  "expertType": "team",
+  "agentName": "forge-lead",
+  "teamInfo": {
+    "leadAgent": "forge-lead",
+    "memberAgents": [
+      "product-scout",
+      "product-manager",
+      "fullstack-engineer",
+      "qa-tester",
+      "release-manager",
+      "ops-sre",
+      "growth-operator"
+    ]
+  },
+  "displayName": {
+    "en": "FullStack Forge Team",
+    "zh": "全栈智造专家团"
+  },
+  "profession": {
+    "en": "Full-Stack System Delivery Team",
+    "zh": "全栈系统交付专家团"
+  },
+  "displayDescription": {
+    "en": "An 8-role full-stack delivery team that builds websites, apps, iOS & HarmonyOS apps, mini programs, and software systems end to end — from requirement and platform selection to product, engineering, testing, release, DevOps, and growth.",
+    "zh": "8位专业角色覆盖全栈系统交付全生命周期：网站、App、iOS与鸿蒙应用、微信小程序、桌面软件等，从需求与平台选型，到产品、研发、测试、上线、运维、运营一体化智造交付。"
+  },
+  "avatar": "avatars/team.png",
+  "categoryId": "02-Engineering",
+  "defaultInitPrompt": {
+    "zh": "帮我把需求做成网站/App/小程序并交付上线",
+    "en": "Help me build and launch my website, app, or mini program"
+  },
+  "plugin": "fullstack-forge-team",
+  "tags": [
+    {
+      "en": "Full-Stack Dev",
+      "zh": "全栈开发"
+    },
+    {
+      "en": "App & Web",
+      "zh": "App与网站"
+    },
+    {
+      "en": "Delivery",
+      "zh": "交付上线"
+    }
+  ],
+  "quickPrompts": [
+    {
+      "zh": "帮我把需求做成网站/App/小程序并交付上线",
+      "en": "Help me build and launch my website, app, or mini program"
+    },
+    {
+      "zh": "帮我做一个iOS/鸿蒙App的全栈开发方案",
+      "en": "Help me plan full-stack development for an iOS/HarmonyOS app"
+    },
+    {
+      "zh": "帮我评估一个网站/软件系统从0到上线的完整路径",
+      "en": "Help me plan a website/software system from 0 to launch"
+    },
+    {
+      "zh": "续接上次交付的项目，查看进度并继续推进",
+      "en": "Continue my last delivery project, check progress and keep going"
+    },
+    {
+      "zh": "对已上线项目做数据复盘和迭代建议",
+      "en": "Review my launched project with data analysis and iteration advice"
+    }
+  ],
+  "members": [
+    {
+      "id": "forge-lead",
+      "name": {
+        "en": "ForgeHub",
+        "zh": "智造中枢"
+      },
+      "profession": {
+        "en": "Team Lead & Orchestrator",
+        "zh": "主理人"
+      },
+      "avatar": "avatars/forge-lead.png",
+      "role": "lead"
+    },
+    {
+      "id": "product-scout",
+      "name": {
+        "en": "Scouty",
+        "zh": "选品洞察师"
+      },
+      "profession": {
+        "en": "Requirement & Platform Analyst",
+        "zh": "需求与平台选型师"
+      },
+      "avatar": "avatars/product-scout.png",
+      "role": "member"
+    },
+    {
+      "id": "product-manager",
+      "name": {
+        "en": "ProdCraft",
+        "zh": "产品主理人"
+      },
+      "profession": {
+        "en": "Product Manager",
+        "zh": "产品经理"
+      },
+      "avatar": "avatars/product-manager.png",
+      "role": "member"
+    },
+    {
+      "id": "fullstack-engineer",
+      "name": {
+        "en": "StackPro",
+        "zh": "全栈研发师"
+      },
+      "profession": {
+        "en": "Full-Stack Engineer",
+        "zh": "全栈研发工程师"
+      },
+      "avatar": "avatars/fullstack-engineer.png",
+      "role": "member"
+    },
+    {
+      "id": "qa-tester",
+      "name": {
+        "en": "TestGuard",
+        "zh": "质量测试官"
+      },
+      "profession": {
+        "en": "QA & Test Engineer",
+        "zh": "测试工程师"
+      },
+      "avatar": "avatars/qa-tester.png",
+      "role": "member"
+    },
+    {
+      "id": "release-manager",
+      "name": {
+        "en": "ShipFast",
+        "zh": "上线发布师"
+      },
+      "profession": {
+        "en": "Release & DevOps Manager",
+        "zh": "发布交付工程师"
+      },
+      "avatar": "avatars/release-manager.png",
+      "role": "member"
+    },
+    {
+      "id": "ops-sre",
+      "name": {
+        "en": "OpsShield",
+        "zh": "运维守护师"
+      },
+      "profession": {
+        "en": "Operations & SRE",
+        "zh": "运维保障工程师"
+      },
+      "avatar": "avatars/ops-sre.png",
+      "role": "member"
+    },
+    {
+      "id": "growth-operator",
+      "name": {
+        "en": "GrowthRocket",
+        "zh": "增长运营师"
+      },
+      "profession": {
+        "en": "Growth & Operations Specialist",
+        "zh": "增长运营专家"
+      },
+      "avatar": "avatars/growth-operator.png",
+      "role": "member"
+    }
+  ]
+}

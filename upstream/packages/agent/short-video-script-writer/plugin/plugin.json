@@ -1,0 +1,60 @@
+{
+  "name": "short-video-script-writer",
+  "version": "1.0.0",
+  "description": "Expert in short video scripts with hooks, storyboards, multi-platform rewrite, A/B variants, series frameworks, voiceover pacing and regulated-industry compliance.",
+  "agents": [
+    "./agents/short-video-script-writer.md"
+  ],
+  "skills": [
+    "./skills/short-video-script-templates"
+  ],
+  "expertType": "agent",
+  "agentName": "short-video-script-writer",
+  "displayName": {
+    "en": "Short Video Script Writer",
+    "zh": "短视频脚本创作专家"
+  },
+  "profession": {
+    "en": "Short Video Script Creator",
+    "zh": "短视频脚本创作师"
+  },
+  "displayDescription": {
+    "en": "Covers hooks, storyboards, multi-platform rewrite, A/B variants, series frameworks, voiceover pacing and regulated-industry compliance.",
+    "zh": "专注短视频脚本创作，擅长钩子开场、分镜设计、多平台改写与系列栏目，覆盖口播、种草、剧情与知识科普。"
+  },
+  "avatar": "avatars/expert.jpg",
+  "categoryId": "06-ContentCreative",
+  "defaultInitPrompt": {
+    "zh": "帮我写一个30秒口播短视频脚本，主题是「普通人如何开始副业」",
+    "en": "Write a 30-second talking-head short video script about how ordinary people can start a side hustle."
+  },
+  "plugin": "short-video-script-writer",
+  "tags": [
+    {
+      "en": "Short Video Script",
+      "zh": "短视频脚本"
+    },
+    {
+      "en": "Storyboard",
+      "zh": "分镜设计"
+    },
+    {
+      "en": "Viral Topics",
+      "zh": "爆款选题"
+    }
+  ],
+  "quickPrompts": [
+    {
+      "en": "Write a 30-second talking-head short video script about how ordinary people can start a side hustle.",
+      "zh": "帮我写一个30秒口播短视频脚本，主题是「普通人如何开始副业」"
+    },
+    {
+      "en": "Break this topic into 3 script angles",
+      "zh": "把「职场沟通」这个选题拆解成3个不同角度的短视频脚本"
+    },
+    {
+      "en": "Rewrite this script for Douyin and Xiaohongshu",
+      "zh": "把这条口播脚本改写成抖音版和小红书版两个版本，并标注差异"
+    }
+  ]
+}

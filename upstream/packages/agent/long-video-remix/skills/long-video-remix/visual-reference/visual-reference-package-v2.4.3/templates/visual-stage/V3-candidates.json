@@ -1,0 +1,190 @@
+{
+  "stage": "V3",
+  "inputs_design_sha256": {
+    "…": "<前序全部文件的 design sha256>"
+  },
+  "validation_scope": {
+    "mode": "<full | representative_first>",
+    "representative_keyframes": [
+      "M01"
+    ],
+    "representative_reason": {
+      "M01": "<代表哪种版式/困难条件>"
+    },
+    "deferred_keyframes": {
+      "M02": {
+        "covered_by": "M01",
+        "difficulty": "difficult",
+        "risk_tags": [
+          "long_text",
+          "multi_person",
+          "complex_background"
+        ],
+        "reason": "<选定方案后沿用同一设计语法，但该镜头属于困难条件，V7 前必须实际成图检查>"
+      }
+    }
+  },
+  "direction_read": {
+    "primary_direction": "<VD-01 … VD-07>",
+    "secondary_direction": "<optional VD id or null>",
+    "attention_owner": "<face | action | relationship | text | environment>",
+    "attention_sequence": [
+      "<先看什么>",
+      "<再看什么>",
+      "<最后读什么>"
+    ],
+    "text_role": "<observer_comment | relationship_annotation | detail_label | ironic_second_voice | emotional_afterimage | punchline | segment_marker>",
+    "spatial_relation": "<adjacent | axis_bound | negative_space | surface_bound | counterweight | dominant_field | separate_field>",
+    "typography_voice": "<neutral_observer | warm_editorial | dry_wit | playful_light | assertive>",
+    "motion_relation": "<fact_sync | reaction_echo | two_step_relation | afterimage_hold | cut_definition | sound_bound>",
+    "emphasis_budget": "<low | medium | high>",
+    "why_this_direction": "<结合本段人物关系/动作/文案说明为什么选择该方向；不要写“高级/有质感”>",
+    "anti_style": [
+      "<本段最需要避免的模板化做法>"
+    ],
+    "atlas_refs": [
+      "references/visual-direction-atlas.md",
+      "references/scene-text-grammar.md",
+      "references/timing-grammar.md"
+    ],
+    "source_hypothesis": "V1.direction_hypothesis",
+    "reference_calibration": "V2.direction_context + 当前项目证据"
+  },
+  "candidates": [
+    {
+      "id": "A",
+      "name": "<方案名>",
+      "art_direction_thesis": {
+        "statement": "<一句话：这版设计怎样参与这条视频的叙事>",
+        "copy_refs": [
+          "<V0 文案 id>"
+        ],
+        "image_refs": [
+          "<V1 元素 id，如 M01.hand_x>"
+        ]
+      },
+      "concept": "<一句话概括做法>",
+      "dimensions": {
+        "text_direction": "<horizontal | vertical | mixed>",
+        "placement_logic": "<fixed_slot | auto_slot | bespoke>",
+        "image_text_relation": "<in_frame_clean_zone | anchored_to_action | edge_column | separate_field>",
+        "polarity_strategy": "<auto_dark_or_light | light_with_protection | dark_only>",
+        "geometry": "<crop | crop_with_punch_in | letterbox>"
+      },
+      "per_shot": [
+        {
+          "keyframe": "M01",
+          "plan": "<这个镜头怎么放>",
+          "elements": [
+            {
+              "id": "A_M01.1",
+              "text": "<V0 文案>",
+              "role": "<role>"
+            }
+          ],
+          "composition_grammar": {
+            "primary_subject": "<本镜头 V1 元素 id>",
+            "text_shape": "<single_line | stacked_block | split_pair | column | column_pair | band>",
+            "negative_space": "<本镜头 V1 区域 id 或 none>",
+            "visual_axis": "<哪条线是视觉轴>",
+            "reading_order": [
+              "<文字元素 id>",
+              "<画面元素 id>",
+              "<…>"
+            ],
+            "visual_weight": "<视觉重心在哪>",
+            "motion_grammar": {
+              "optional": true,
+              "camera_motion": "<static | slow | moving | not_assessed>",
+              "text_motion": "<none | build | fade | track | other>",
+              "timing_relation": "<before | during | after | cut_bound>",
+              "reading_window": "<完整可读时间；长文案按 project.text_policy 核验>",
+              "reason": "<为什么该文字角色需要这种运动关系>",
+              "validation": "<not_required | dynamic_demo_required>"
+            }
+          },
+          "shot_dependency": {
+            "depends_on": [
+              "<本镜头 V1 元素 id>"
+            ],
+            "if_moved": "<换到别的镜头会怎样>"
+          },
+          "direction_use": {
+            "primary_direction": "<VD-01 … VD-07>",
+            "attention_sequence": [
+              "<镜头内先看什么>",
+              "<再看什么>",
+              "<最后读什么>"
+            ],
+            "text_role": "<…>",
+            "spatial_relation": "<…>",
+            "timing_mode": "<…>",
+            "emphasis_budget": "<low | medium | high>",
+            "why": "<同一视频不同镜头可以使用不同方向；说明与候选全局策略的关系>"
+          }
+        }
+      ],
+      "style": {
+        "scheme_id": "<…>",
+        "fonts": {
+          "<key>": {
+            "file": "<字体文件>",
+            "index": 0
+          }
+        },
+        "roles": {
+          "<role>": {
+            "font": "<key>",
+            "size": 72,
+            "tracking": 0.04,
+            "ink": "<primary | secondary>"
+          }
+        },
+        "ink": {
+          "light": {
+            "primary": "#……",
+            "secondary": "#……"
+          }
+        },
+        "protection": {
+          "color": "#……",
+          "cap": 0.6
+        },
+        "shadow": {
+          "blur": 6,
+          "opacity": 0.5
+        }
+      },
+      "ref_trace": [],
+      "failure_condition": [
+        {
+          "condition": "<什么情况下不成立>",
+          "measure": {
+            "zone": "<可选：M01.Z1>",
+            "metric": "luma_mean",
+            "op": "<",
+            "value": 150
+          }
+        }
+      ],
+      "risks": [
+        "<…>"
+      ],
+      "direction_strategy": {
+        "primary_direction": "<VD-01 … VD-07>",
+        "secondary_direction": "<optional VD id or null>",
+        "attention_sequence": [
+          "<先看什么>",
+          "<再看什么>",
+          "<最后读什么>"
+        ],
+        "text_role": "<observer_comment | relationship_annotation | detail_label | ironic_second_voice | emotional_afterimage | punchline | segment_marker>",
+        "spatial_relation": "<adjacent | axis_bound | negative_space | surface_bound | counterweight | dominant_field | separate_field>",
+        "timing_mode": "<fact_sync | reaction_echo | two_step_relation | afterimage_hold | cut_definition | sound_bound>",
+        "emphasis_budget": "<low | medium | high>",
+        "why_this_candidate": "<该候选相对全局基调具体采用什么观看逻辑；可以与其他候选在叙事逻辑上不同>"
+      }
+    }
+  ],
+  "_说明": "V1 已做方向初判，V2 用参考校准；V3 的 direction_read 是全局深化。每个 candidate 用 direction_strategy 声明自己的观看逻辑，每个 per_shot 用 direction_use 允许关系观察/反应补刀等在同一条视频内切换。候选差异可来自叙事方向（注意力顺序/文字角色/空间关系/timing）或形式结构，不再强迫改变画幅/文字方向。"
+}

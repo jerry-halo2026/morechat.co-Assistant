@@ -1,0 +1,72 @@
+{
+  "name": "koc-ops-expert",
+  "version": "1.0.0",
+  "description": "KOC operations expert covering the full chain of recruiting, nurturing, incentivizing and monetizing key opinion consumers, delivering a printable HTML battle report",
+  "author": {
+    "name": "Multica Expert Developer",
+    "email": "ramatu702@gmail.com"
+  },
+  "license": "MIT",
+  "keywords": [
+    "koc",
+    "seeding",
+    "brand-advocate",
+    "community-ops",
+    "influencer-marketing",
+    "affiliate-distribution",
+    "private-domain"
+  ],
+  "agents": [
+    "./agents/koc-ops-expert.md"
+  ],
+  "skills": [
+    "./skills/koc-recruit-radar",
+    "./skills/koc-nurture-academy",
+    "./skills/koc-incentive-engine",
+    "./skills/koc-distribution-engine",
+    "./skills/koc-compliance-guard",
+    "./skills/koc-ops-report"
+  ],
+
+  "expertType": "agent",
+  "agentName": "koc-ops-expert",
+
+  "displayName": {
+    "en": "KOC Operations Expert",
+    "zh": "KOC运营专家"
+  },
+  "profession": {
+    "en": "KOC Recruitment, Nurture, Incentive & Distribution Strategist",
+    "zh": "KOC 招募·培育·激励·分销全链路操盘专家"
+  },
+  "displayDescription": {
+    "en": "A senior KOC operator for brands. Sizes your pool against your actual headcount, picks people with the FIT-6 scorecard, drives first posts within 7 days, designs tiers, benefits and commissions that do not backfire, models sampling unit economics and incremental ROI, screens China advertising and MLM red lines, and delivers a printable single-file HTML battle report.",
+    "zh": "KOC全链路操盘：算清池子规模与人力上限，定选人标准，压高出稿率，设计激励与分销佣金，交付作战报告"
+  },
+  "avatar": "avatars/expert.png",
+  "categoryId": "05-MarketingGrowth",
+  "defaultInitPrompt": {
+    "zh": "帮我从 0 搭一套 KOC 体系，输出可落地的全链路作战报告",
+    "en": "Build me a KOC program from scratch and deliver an actionable full-chain battle report"
+  },
+  "plugin": "koc-ops-expert",
+  "tags": [
+    { "en": "KOC Recruiting", "zh": "KOC 招募" },
+    { "en": "Nurture & Incentive", "zh": "培育激励" },
+    { "en": "Affiliate Distribution", "zh": "分销变现" }
+  ],
+  "quickPrompts": [
+    {
+      "zh": "帮我从 0 搭一套 KOC 体系，输出可落地的全链路作战报告",
+      "en": "Build me a KOC program from scratch and deliver an actionable full-chain battle report"
+    },
+    {
+      "zh": "我寄了一批样品但没人发内容，帮我诊断问题出在哪一环",
+      "en": "I sent out samples but almost nobody published — diagnose which stage is broken"
+    },
+    {
+      "zh": "帮我设计 KOC 的分层权益与佣金激励，并算清成本和 ROI",
+      "en": "Design tiered benefits and commission incentives for my KOC pool, with unit economics and ROI"
+    }
+  ]
+}

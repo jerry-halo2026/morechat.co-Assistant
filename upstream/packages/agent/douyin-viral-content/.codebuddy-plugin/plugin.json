@@ -1,0 +1,62 @@
+{
+  "name": "douyin-viral-content",
+  "version": "1.0.0",
+  "description": "Douyin viral content manufacturing expert — a fully-automated closed loop from hotspot discovery to compliant publishing: 3D trend scanning (hot list + realtime works search + AI feed), viral benchmarking (daily hot works + 7-day like surge), copy replication (style distillation + prohibited-word screening), and effect verification (daily like surge tracking).",
+  "author": {
+    "name": "WorkBuddy",
+    "email": ""
+  },
+  "agents": ["./agents/douyin-viral-content.md"],
+  "skills": [
+    "./skills/douyin-hot-trend",
+    "./skills/douyin-search",
+    "./skills/douyin-ai-feed",
+    "./skills/douyin-daily-hot",
+    "./skills/douyin-weekly-surge",
+    "./skills/multi-copywrite-alchemy",
+    "./skills/douyin-prohibited-word",
+    "./skills/douyin-content-surge"
+  ],
+
+  "expertType": "agent",
+  "agentName": "douyin-viral-content",
+
+  "displayName": {
+    "en": "Douyin Viral Content Expert",
+    "zh": "抖音爆款内容专家"
+  },
+  "profession": {
+    "en": "Douyin Viral Content Producer",
+    "zh": "抖音爆款内容制造专家"
+  },
+  "displayDescription": {
+    "en": "A fully-automated viral content pipeline for Douyin: scan hotspots in 3 dimensions, benchmark surging hits, replicate distilled copy, screen prohibited words, and verify results in a closed loop.",
+    "zh": "全自动爆款生产线：三维扫描热点、锁定飙升爆款、复刻蒸馏文案、违禁词扫雷，闭环验证效果。"
+  },
+  "avatar": "avatars/expert.png",
+  "categoryId": "06-ContentCreative",
+  "defaultInitPrompt": {
+    "zh": "帮我从热点捕捉开始，走完爆款对标、文案复刻、违禁词扫雷的全流程，产出一条可直接发布的抖音爆款文案。",
+    "en": "Take me through the full pipeline — from hotspot discovery, viral benchmarking, and copy replication to prohibited-word screening — and produce a publish-ready Douyin viral script."
+  },
+  "plugin": "douyin-viral-content",
+  "tags": [
+    { "en": "Viral Copywriting", "zh": "爆款文案" },
+    { "en": "Trend Discovery", "zh": "热点挖掘" },
+    { "en": "Content Compliance", "zh": "合规扫雷" }
+  ],
+  "quickPrompts": [
+    {
+      "en": "Take me through the full pipeline — from hotspot discovery, viral benchmarking, and copy replication to prohibited-word screening — and produce a publish-ready Douyin viral script.",
+      "zh": "帮我从热点捕捉开始，走完爆款对标、文案复刻、违禁词扫雷的全流程，产出一条可直接发布的抖音爆款文案。"
+    },
+    {
+      "en": "Scan the hottest topics on Douyin right now and identify viral topics and content formats that fit my niche.",
+      "zh": "扫描当下抖音最热话题，找出适合我赛道的爆款选题和内容形态。"
+    },
+    {
+      "en": "Track my published Douyin works and check whether they entered the daily like surge ranking.",
+      "zh": "追踪我发布的抖音作品，看它是否进入每日点藏飙升榜。"
+    }
+  ]
+}

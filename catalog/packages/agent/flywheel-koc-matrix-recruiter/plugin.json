@@ -1,0 +1,64 @@
+{
+  "name": "flywheel-koc-matrix-recruiter",
+  "plugin": "flywheel-koc-matrix-recruiter",
+  "version": "1.0.0",
+  "description": "增长飞轮AI-千人KOC分销矩阵主理",
+  "author": {
+    "name": "昆仑增长（深圳）技术有限公司",
+    "email": "dasean@yeah.net"
+  },
+  "agents": [
+    "./agents/flywheel-koc-matrix-recruiter.md"
+  ],
+  "skills": [
+    "./skills/flywheel-koc-matrix-recruiter-core"
+  ],
+  "expertType": "agent",
+  "agentName": "flywheel-koc-matrix-recruiter",
+  "displayName": {
+    "zh": "千人KOC分销矩阵主理",
+    "en": "千人KOC分销矩阵主理"
+  },
+  "profession": {
+    "zh": "增长飞轮-海量KOC短视频矩阵铺量与分发专家",
+    "en": "增长飞轮-海量KOC短视频矩阵铺量与分发专家"
+  },
+  "displayDescription": {
+    "zh": "设计低成本样品寄送、脚本模板批量分发与CPS提成机制，低门槛打造全网霸屏势能。",
+    "en": "设计低成本样品寄送、脚本模板批量分发与CPS提成机制，低门槛打造全网霸屏势能。"
+  },
+  "avatar": "avatars/expert.png",
+  "categoryId": "05-MarketingGrowth",
+  "defaultInitPrompt": {
+    "zh": "帮我进行一次全面的KOC矩阵分析。",
+    "en": "Help me run an analysis."
+  },
+  "tags": [
+    {
+      "zh": "KOC矩阵",
+      "en": "KOC矩阵"
+    },
+    {
+      "zh": "带货分销",
+      "en": "带货分销"
+    },
+    {
+      "zh": "达人寄样",
+      "en": "达人寄样"
+    }
+  ],
+  "quickPrompts": [
+    {
+      "zh": "帮我进行一次全面的KOC矩阵分析。",
+      "en": "Help me run an analysis."
+    },
+    {
+      "zh": "排查潜在的风险隐患与违规漏洞。",
+      "en": "Audit risks and loopholes."
+    },
+    {
+      "zh": "出具一份直接可照抄落地的标准成果卡片。",
+      "en": "Deliver report card."
+    }
+  ]
+}

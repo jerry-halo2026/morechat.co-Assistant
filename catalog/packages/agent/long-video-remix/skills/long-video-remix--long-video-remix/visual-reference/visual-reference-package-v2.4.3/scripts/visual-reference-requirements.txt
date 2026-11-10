@@ -1,0 +1,6 @@
+Pillow>=10
+numpy>=1.24
+
+# Optional reference-clip analysis (not required for V0–V7 / visual package use)
+opencv-python-headless>=4.8
+scipy>=1.10

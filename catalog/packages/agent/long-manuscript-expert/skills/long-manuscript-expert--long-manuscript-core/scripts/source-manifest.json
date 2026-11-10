@@ -1,0 +1,10 @@
+{
+  "schema": "paper.source-manifest.v1",
+  "revision": 2,
+  "files": {
+    "skills/long-manuscript-core/references/diagnostics-catalog.json": "9467080d5007c7e837d009fcd0e3d0de65d1d590b93393758f54f86f85701471",
+    "skills/long-manuscript-core/scripts/paper_diagnostic.py": "e272034ac20e917dc9e24ea3f91e8fe41881128e7a18cf2cfacfd5b4aff3aa62",
+    "skills/long-manuscript-core/scripts/strategy_client.py": "ba0925892373e96e8de19aa0c309d94dac13d23942905f5dcd377f898cd65c19",
+    "skills/long-manuscript-core/scripts/strategy_client_v2.py": "d1d009251a4fa640a481a23621d797fb0076b5baf2f4f48ed43b7b9c0d7fc248"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "schema_version": "1.0",
+  "capabilities": [
+    {
+      "capability": "inspect_media",
+      "actual_tool": "synthetic-fixture",
+      "entrypoint": "sources.json",
+      "status": "available",
+      "input_mapping": {},
+      "output_mapping": {},
+      "time_unit": "ms",
+      "end_semantics": "left_closed_right_open",
+      "limits": {
+        "synthetic_only": true
+      },
+      "tested_range": "SRC001 0-8000ms",
+      "timestamp_method": "measured_pts",
+      "audio_observation": true,
+      "video_observation": true,
+      "fallback": null
+    },
+    {
+      "capability": "render_visual_proof",
+      "actual_tool": "python3",
+      "entrypoint": "render_visual_proof.py",
+      "status": "available",
+      "input_mapping": {
+        "canvas": "320x180",
+        "text": "embedded synthetic fixture"
+      },
+      "output_mapping": {
+        "proof": "proof.svg"
+      },
+      "time_unit": null,
+      "end_semantics": null,
+      "limits": {
+        "synthetic_only": true
+      },
+      "tested_range": "proof.svg",
+      "timestamp_method": null,
+      "audio_observation": false,
+      "video_observation": false,
+      "fallback": "keep Visual Gate open"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:fbs:paper.strategy-receipt-query.v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "consumer",
+    "request_id",
+    "request_digest"
+  ],
+  "properties": {
+    "schema": {
+      "const": "paper.strategy-receipt-query.v1"
+    },
+    "consumer": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "product",
+        "version"
+      ],
+      "properties": {
+        "product": {
+          "const": "long-manuscript-expert"
+        },
+        "version": {
+          "enum": [
+            "2026.11.0200",
+            "2026.11.5"
+          ]
+        }
+      }
+    },
+    "request_id": {
+      "type": "string",
+      "format": "uuid",
+      "minLength": 36,
+      "maxLength": 36
+    },
+    "request_digest": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    }
+  }
+}

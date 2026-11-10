@@ -1,0 +1,64 @@
+{
+  "name": "designkit-ugc-commerce",
+  "version": "1.0.39",
+  "description": "Create authentic UGC presenter videos from product images and selling points, tailored to each platform and conversion goal.",
+  "author": {
+    "name": "美图设计室",
+    "email": "designkit@meitu.com"
+  },
+  "agents": [
+    "./agents/designkit-ugc-commerce.md"
+  ],
+  "skills": [
+    "./skills/ugc-commerce"
+  ],
+  "expertType": "agent",
+  "agentName": "designkit-ugc-commerce",
+  "displayName": {
+    "en": "UGC Product Videos",
+    "zh": "真人口播"
+  },
+  "profession": {
+    "en": "UGC Commerce Video Director",
+    "zh": "UGC口播带货AI视频导演"
+  },
+  "displayDescription": {
+    "en": "Create authentic UGC presenter videos from product images and selling points, tailored to each platform and conversion goal.",
+    "zh": "根据商品素材完成UGC口播带货AI视频创作，从购买理由、真人感口播脚本、镜头到成片，适配产品种草与广告投放。美图设计室提供。"
+  },
+  "avatar": "avatars/expert.png",
+  "categoryId": "06-ContentCreative",
+  "defaultInitPrompt": {
+    "en": "Create a TikTok UGC presenter video for this product.",
+    "zh": "为这个商品制作一支 TikTok UGC 真人口播带货视频。"
+  },
+  "plugin": "designkit-ugc-commerce",
+  "tags": [
+    {
+      "en": "DesignKit",
+      "zh": "美图设计室"
+    },
+    {
+      "en": "UGC Video",
+      "zh": "UGC视频"
+    },
+    {
+      "en": "Social Commerce",
+      "zh": "口播带货"
+    }
+  ],
+  "quickPrompts": [
+    {
+      "en": "Create a TikTok UGC presenter video for this product.",
+      "zh": "为这个商品制作一支 TikTok UGC 真人口播带货视频。"
+    },
+    {
+      "en": "Turn these selling points into a natural creator-style pitch.",
+      "zh": "把这些卖点做成自然真实的达人口播视频。"
+    },
+    {
+      "en": "Create a conversion-focused UGC product video from these images.",
+      "zh": "用这些商品图生成一支转化导向的 UGC 带货视频。"
+    }
+  ]
+}

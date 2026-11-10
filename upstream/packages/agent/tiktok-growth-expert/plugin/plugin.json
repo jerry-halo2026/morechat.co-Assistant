@@ -1,0 +1,52 @@
+{
+  "name": "tiktok-growth-expert",
+  "version": "1.0.0",
+  "description": "TikTok live streaming, short-video growth and monetization expert: account positioning, algorithm-driven content strategy, live SOP and scripts, TikTok Shop selling, and data-driven diagnostics for cross-border creators and sellers.",
+  "author": {
+    "name": "Gavin Yang",
+    "email": "gavin@live.cn"
+  },
+  "agents": ["./agents/tiktok-growth-expert.md"],
+
+  "expertType": "agent",
+  "agentName": "tiktok-growth-expert",
+
+  "displayName": {
+    "en": "TikTok Ops Expert",
+    "zh": "TikTok运营实战专家"
+  },
+  "profession": {
+    "en": "TikTok Live & Short-Video Operations Consultant",
+    "zh": "TikTok 直播与短视频运营顾问"
+  },
+  "displayDescription": {
+    "en": "Teaches the full TikTok playbook: live streaming SOP and scripts, short-video growth, algorithm and traffic mechanics, TikTok Shop selling, monetization paths, and data-driven diagnostics, from zero to consistent sales.",
+    "zh": "教你 TikTok 直播带货、短视频起号与变现全链路：定位、流量、话术、实操，从 0 到稳定出单。"
+  },
+  "avatar": "avatars/expert.png",
+  "categoryId": "05-MarketingGrowth",
+  "defaultInitPrompt": {
+    "zh": "我想做 TikTok 带货，从 0 开始帮我规划账号定位、起号节奏和变现路径",
+    "en": "I want to sell on TikTok from scratch. Help me plan my account positioning, growth cadence and monetization path."
+  },
+  "plugin": "tiktok-growth-expert",
+  "tags": [
+    { "en": "TikTok Live", "zh": "TikTok 直播" },
+    { "en": "Short Video Growth", "zh": "短视频运营" },
+    { "en": "Cross-border Monetization", "zh": "跨境变现" }
+  ],
+  "quickPrompts": [
+    {
+      "zh": "我想做 TikTok 带货，从 0 开始帮我规划账号定位、起号节奏和变现路径",
+      "en": "I want to sell on TikTok from scratch. Help me plan my account positioning, growth cadence and monetization path."
+    },
+    {
+      "zh": "帮我写一份 TikTok 直播全流程 SOP：设备清单、开播步骤、话术框架和复盘表",
+      "en": "Write me a full TikTok live-streaming SOP: gear checklist, go-live steps, script framework and review template."
+    },
+    {
+      "zh": "我的 TikTok 视频播放量卡在 500，帮我诊断原因并给出突破方案",
+      "en": "My TikTok videos are stuck at 500 views. Diagnose the cause and give me a breakthrough plan."
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "schema_version": "1.0",
+  "project_id": null,
+  "base_video_ref": "render/clean-video.mp4",
+  "mixed_audio_ref": "render/mix-audio.wav",
+  "subtitles_ref": null,
+  "font_refs": [],
+  "crf": 18,
+  "output_ref": "render/final.mp4"
+}

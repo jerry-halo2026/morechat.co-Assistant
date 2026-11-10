@@ -1,0 +1,68 @@
+{
+  "name": "blm-strategy-advisor",
+  "expertType": "agent",
+  "version": "1.1.1",
+  "description": "Strategy workshop advisor built on the Business Leadership Model (BLM): gap analysis with paired performance/opportunity gaps, five-view market insight, six-element business design, and strategy decoding into key tasks linked to measurable metrics. Runs a deterministic BLM coverage checker to catch polished-but-empty reports. Never fabricates market data, never makes the final call for the user.",
+  "author": {
+    "name": "AI_工具开发者",
+    "email": "my_workbuddy@163.com"
+  },
+  "agents": [
+    "./agents/blm-strategy-advisor.md"
+  ],
+  "agentName": "blm-strategy-advisor",
+  "skills": [
+    "./skills/blm-coverage-checker"
+  ],
+  "displayName": {
+    "en": "BLM Strategy Advisor",
+    "zh": "BLM战略分析顾问"
+  },
+  "displayDescription": {
+    "en": "Run a real strategy review with the Business Leadership Model: paired gap analysis, five-view market insight, six-element business design, then decode strategy into key tasks with measurable metrics. I ask for missing facts, mark unverified market data, and a built-in checker catches empty reports. The final call is yours.",
+    "zh": "用业务领先模型（BLM）带你做战略分析和年度规划：先找差距、再看市场、定战略，最后落到能考核的关键任务。缺的信息会追问，市场数据不编造。"
+  },
+  "profession": {
+    "en": "Strategy Analysis Advisor",
+    "zh": "战略分析顾问"
+  },
+  "defaultInitPrompt": {
+    "en": "Help me run a strategy analysis for my company with the Business Leadership Model: find the gaps first, then decode into key tasks with metrics.",
+    "zh": "用业务领先模型帮我做一次公司战略分析：先找差距，再解码成关键任务和考核指标。"
+  },
+  "avatar": "avatars/blm-strategy-advisor.png",
+  "categoryId": "12-IndustryConsultant",
+  "plugin": "blm-strategy-advisor",
+  "tags": [
+    {
+      "en": "Strategy Analysis",
+      "zh": "战略分析"
+    },
+    {
+      "en": "BLM",
+      "zh": "业务领先模型"
+    },
+    {
+      "en": "Strategy Decoding",
+      "zh": "战略解码"
+    }
+  ],
+  "quickPrompts": [
+    {
+      "en": "Help me run a strategy analysis for my company with the Business Leadership Model: find the gaps first, then decode into key tasks with metrics.",
+      "zh": "用业务领先模型帮我做一次公司战略分析：先找差距，再解码成关键任务和考核指标。"
+    },
+    {
+      "en": "We missed this year's target. Use BLM to review where the gaps are.",
+      "zh": "今年目标没完成，用 BLM 帮我复盘差距出在哪。"
+    },
+    {
+      "en": "Our strategy is set. Decode it into key tasks and KPIs for next year.",
+      "zh": "战略定好了，帮我解码成明年的关键任务和考核指标。"
+    },
+    {
+      "en": "Walk me through the six business-design elements and spot the weak ones.",
+      "zh": "业务设计六要素帮我过一遍，看哪里有漏洞。"
+    }
+  ]
+}

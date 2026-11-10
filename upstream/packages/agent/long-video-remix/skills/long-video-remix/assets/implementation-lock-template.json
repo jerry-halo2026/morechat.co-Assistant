@@ -1,0 +1,46 @@
+{
+  "schema_version": "1.0",
+  "project_id": null,
+  "selected_mockup_ref": null,
+  "selected_mockup_sha256": null,
+  "output": {
+    "width": null,
+    "height": null,
+    "fps_num": null,
+    "fps_den": null
+  },
+  "renderer_lock": {
+    "toolchain": [
+      {
+        "role": null,
+        "actual_tool": null,
+        "entrypoint": null
+      }
+    ],
+    "final_execute_entrypoint": null
+  },
+  "palette": {},
+  "fonts": {},
+  "elements": {
+    "ELEMENT_ID": {
+      "role": null,
+      "renderer": null,
+      "implementation_method": null,
+      "event_ids": [],
+      "parameters": {}
+    }
+  },
+  "reference_trace": [],
+  "safe_adaptation": {
+    "allowed": [],
+    "requires_d2_return": [],
+    "schema_version": "1.1"
+  },
+  "visual_stage_binding": {
+    "v7_ref": null,
+    "v7_sha256": null,
+    "chosen_candidate": null
+  },
+  "confirmed_mockups": [],
+  "parameter_bindings": []
+}

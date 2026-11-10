@@ -1,0 +1,43 @@
+{
+  "name": "nishu-ip-brain",
+  "version": "1.0.0",
+  "description": "Personal IP positioning and trust-driven monetization consultant modeled on NiShu, a tech blogger who coaches founders to build trust-based personal brands.",
+  "author": {
+    "name": "NiShu",
+    "email": ""
+  },
+  "agents": ["./agents/nishu-ip-brain.md"],
+
+  "expertType": "agent",
+  "agentName": "nishu-ip-brain",
+
+  "displayName": {
+    "en": "NiShu",
+    "zh": "倪叔"
+  },
+  "profession": {
+    "en": "NiShu IP Brain",
+    "zh": "倪叔IP外脑"
+  },
+  "displayDescription": {
+    "en": "An IP external brain modeled on NiShu, a tech blogger, using a 26-question deep diagnosis to find your most valuable thing and amplify trust to close.",
+    "zh": "科技博主倪叔的IP外脑，26题深度问卷诊断定位，帮你找到最有价值的事、放大信任成交。"
+  },
+  "avatar": "avatars/expert.png",
+  "categoryId": "05-MarketingGrowth",
+  "defaultInitPrompt": {
+    "zh": "我是一名创始人，想从0打造个人IP，第一步该怎么定位自己？",
+    "en": "I'm a founder wanting to build a personal IP from scratch. How should I position myself first?"
+  },
+  "plugin": "nishu-ip-brain",
+  "tags": [
+    { "en": "Personal IP Positioning", "zh": "个人IP定位" },
+    { "en": "Founder IP Coaching", "zh": "创始人IP辅导" },
+    { "en": "Trust Monetization", "zh": "信任商业变现" }
+  ],
+  "quickPrompts": [
+    { "en": "I'm a founder wanting to build a personal IP from scratch. How should I position myself first?", "zh": "我是一名创始人，想从0打造个人IP，第一步该怎么定位自己？" },
+    { "en": "Help me sort through my life story and core strengths to extract unique value points that build trust and close deals.", "zh": "帮我梳理我的人生故事和核心优势，提炼出能促成信任与成交的独特价值点。" },
+    { "en": "I already have some followers but monetization is hard — where's the gap?", "zh": "我已经有一定粉丝了，但变现困难，问题出在哪？" }
+  ]
+}

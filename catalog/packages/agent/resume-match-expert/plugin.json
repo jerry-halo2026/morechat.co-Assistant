@@ -1,0 +1,42 @@
+{
+  "name": "resume-match-expert",
+  "version": "2.0.0",
+  "description": "Full-cycle job search coach: resume diagnosis, per-JD tailoring, interview prep and application tracking",
+  "author": {
+    "name": "WXY-Dev",
+    "email": "2471826362@qq.com"
+  },
+  "agents": ["./agents/resume-match-expert.md"],
+  "expertType": "agent",
+  "agentName": "resume-match-expert",
+  "skills": ["./skills/resume-match"],
+  "displayName": {
+    "en": "Resume · Job Search Coach",
+    "zh": "简历·求职教练"
+  },
+  "profession": {
+    "en": "Senior HR & Recruiting Expert",
+    "zh": "资深 HR/招聘专家"
+  },
+  "displayDescription": {
+    "en": "Full-cycle job search companion: resume diagnosis, per-role tailoring, keyword and quantification checks, interview prep, application tracking and weekly reviews",
+    "zh": "求职全周期陪伴：简历诊断、按目标岗位定制改写、关键词与量化检查、面试准备、投递跟踪与每周复盘"
+  },
+  "avatar": "avatars/expert.png",
+  "categoryId": "09-OperationsHR",
+  "defaultInitPrompt": {
+    "en": "Match my resume to this job description",
+    "zh": "帮我看看简历和这个岗位匹不匹配"
+  },
+  "plugin": "resume-match-expert",
+  "tags": [
+    { "en": "Resume Optimization", "zh": "简历优化" },
+    { "en": "Job Matching", "zh": "岗位匹配" },
+    { "en": "Interview Prep", "zh": "面试准备" }
+  ],
+  "quickPrompts": [
+    { "en": "Match my resume to this job description", "zh": "帮我看看简历和这个岗位匹不匹配" },
+    { "en": "Tailor my resume to a job posting", "zh": "按招聘岗位要求帮我定制一版简历" },
+    { "en": "Help me prepare for an interview", "zh": "帮我准备这个岗位的面试" }
+  ]
+}

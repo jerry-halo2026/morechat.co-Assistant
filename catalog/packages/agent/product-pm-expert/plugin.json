@@ -1,0 +1,56 @@
+{
+  "name": "product-pm-expert",
+  "expertType": "agent",
+  "agentName": "product-pm-expert",
+  "version": "1.19.25",
+  "avatar": "assets/avatar.png",
+  "description": "面向产品经理领域的专家 Agent，擅长需求梳理、PRD 撰写、产品方案设计与需求风险评估。",
+  "displayName": {
+    "en": "Compass",
+    "zh": "司南"
+  },
+  "displayDescription": {
+    "en": "Product Manager Expert skilled in requirement analysis, PRD writing, product solution design, prototype thinking, and requirement risk assessment, delivering high-quality documents.",
+    "zh": "产品经理专家，擅长需求梳理、原型设计、PRD撰写与产品方案设计，识别需求风险并输出高质量产品文档。"
+  },
+  "profession": {
+    "en": "Senior Product Manager",
+    "zh": "资深产品经理"
+  },
+  "defaultInitPrompt": {
+    "en": "Help me analyze this requirement: first give a concise brief (goal/options/key risks/next steps), then expand to a complete 15-section PRD when needed.",
+    "zh": "帮我梳理这个需求：先给精简版需求梳理（目标/方案对比/关键风险/下一步），需要完整 PRD 时再展开 15 段完整版。"
+  },
+  "categoryId": "01-ProductDesign",
+  "tags": [
+    {
+      "en": "Requirement Analysis",
+      "zh": "需求分析"
+    },
+    {
+      "en": "PRD Writing",
+      "zh": "PRD 撰写"
+    },
+    {
+      "en": "Product Design",
+      "zh": "产品设计"
+    }
+  ],
+  "quickPrompts": [
+    {
+      "en": "Help me analyze this requirement: first give a concise brief (goal/options/key risks/next steps), then expand to a complete 15-section PRD when needed.",
+      "zh": "帮我梳理这个需求：先给精简版需求梳理（目标/方案对比/关键风险/下一步），需要完整 PRD 时再展开 15 段完整版。"
+    },
+    {
+      "en": "Assess this requirement's risks and recommend a product solution (with option comparison and evolution path).",
+      "zh": "帮我评估需求风险并给出产品方案建议（含方案对比与演进路径）。"
+    },
+    {
+      "en": "Help me draft user stories and outline prototype ideas and interaction flows.",
+      "zh": "帮我写用户故事，并梳理产品原型思路与交互流程。"
+    }
+  ],
+  "agents": [
+    "./agents/product-pm-expert.md"
+  ]
+}

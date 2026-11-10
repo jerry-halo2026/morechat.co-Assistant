@@ -1,0 +1,17 @@
+{
+  "version": "2026.11.3",
+  "outputs": [
+    {
+      "id": "OUTPUT",
+      "pathOrChat": null,
+      "format": "markdown",
+      "status": "planned",
+      "sourceIds": [],
+      "claimIds": [],
+      "caseIds": [],
+      "checks": [],
+      "events": [],
+      "unmetRequirements": []
+    }
+  ]
+}

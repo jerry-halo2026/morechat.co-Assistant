@@ -1,0 +1,43 @@
+# Long Video Remix v1.5.1-public-methodology-clean · Project Instructions
+
+本项目中，与长视频结构化、编导、视觉设计、剪辑执行或同一项目续接有关的任务，持续按 long-video-remix v1.5.1-public-methodology-clean 工作。一般工具咨询等无关问题不强行套入视频阶段。
+
+优先使用已安装的“长视频结构化与混剪执行 / long-video-remix”及当前项目最新文件。本轮插件未附带时，读取项目文件 `CHAT_PROJECT_REFERENCE.md` 与当前视频最新 `project.json` / handoff；不要把曾经调用过插件当作本轮已经加载。若无法读取，明确缺口，只暂停依赖它的动作，不猜测或重建已确认状态。
+
+续接先恢复：当前大阶段、Scope Lock、有效确认、pending/stale Gate、本轮明确修改范围。优先级始终是本轮明确要求 > 已确认结论/指定底稿 > 模型推断。未被本轮列入修改范围的既有内容保持不变。
+
+主线固定为 Broad Structure → Direct 1 → Detail Structure → Direct 2 → Execute → QA。两次 Direct 不默认自动串行。用户明确指定本轮担任某次 Director，或已有该阶段明确输入时，才完成对应创意决策。
+
+每个大阶段完成后必须生成面向下一阶段的可独立交付 `handoff.md`；不能只在聊天里总结。handoff 至少包含当前阶段与 Scope Lock、有效确认与 pending/stale 项、下一步、实际随附文件清单与 SHA-256、源媒体 source_signature/time_mapping/locator 及跨机器重绑定说明。Detail 另保留 `execution-handoff.md`。换模型、换会话、换机器时，接收方应能只凭 `project.json` + handoff + 随附产物继续；旧机器绝对路径只作 locator，路径变化时按 source signature / time mapping 重绑定，不重建已确认状态。该要求是阶段出口交付约束，不新增用户审批 Gate。
+
+Direct 2 采用视觉设计时，新项目以 `project.visual_pipeline.visual_stage_dir` 指向的 `visual/V0-intake.json` → `V7-lock.json` 为视觉设计事实源，方向与剪辑方法见包内视觉方法目录，正式 V0–V7 模板和 checker 保留视觉方向衔接与渐进质量验证：V0 用 `design_scope` 区分 `explore_new / reuse_confirmed / simple_text`；只有新风格探索强制 2–3 套候选，成熟方案/简单文字允许单案。V3 可用 `representative_first` 先覆盖不同版式和困难条件的代表帧，选定后再扩展；V5 默认保留 small-screen 与 do-not-transfer，blur/squint 按问题使用，blind-map 只在真实盲审时启用；V6 只登记用户原话和实际展示 artifact SHA；V7 冻结并记录代表帧扩展依据。`no_ref_needed` 可贯通至 V7。重复的 design-chain / V7 style / Implementation Lock bridge 用同步脚本生成，不重复手填；真实执行参数仍需明确。`visual-methods.json` 只负责 production method。
+
+从 `references/visual-reference-router.md` 读取视觉方向、图文关系、时序、剪辑和人物关系观察方法。V2 在 `no_ref_needed` 逐项写明当前源帧、文案和验证计划如何校准方向。
+
+视觉方向知识层不是新 Gate：V1 先完成真实画面问题，再在 **V2 选参考前**用 Atlas / Scene × Text Grammar / Timing Grammar 写 `direction_hypothesis`，不得引用 REF/XR/MR。V2 用 `direction_context` 与逐项 `no_ref_needed` 记录当前项目证据；V3 再写全局 `direction_read`、candidate `direction_strategy` 和逐镜头 `direction_use`。候选真实差异可来自注意力顺序、文字角色、空间关系、timing 与强调预算，不为通过比稿硬改画幅。
+
+`reuse_confirmed` 必须绑定此前真实 V6/V7/confirmed artifact SHA，图文关系/动效语言/几何策略变更则回 `explore_new`；公开版 `explore_new` 的 V5 必须做精确绑定源帧 file+SHA、当前 keyframe 所属 unit 完整文案集合和实际画布的 baseline vs candidate A/B；文件 SHA 相同或解码后像素完全相同都只能记 no_visible_change，不能作为视觉提升证据；`representative_first` 的困难 deferred 镜头必须在 V7 用实际成图复核，不重新比稿但不能只写 adaptation，且所有 V7 rect 必须在 canvas 内。
+
+V7 之后必须形成可执行 Application Chain：`implementation-lock.json.visual_stage_binding` 精确绑定当前 V7，`confirmed_mockups` 精确绑定 V6 选中候选的全部实际 artifact；V7 的每条 `structure_card + transfer + element + parameter_path` 必须逐条桥接到 Implementation Lock 的真实 `target_element_ids` / 可解析 `parameter_paths`，并记录 proof checks / do-not-copy checks。Proof / Final QA 的 ReferenceCompliance 绑定选中候选真实使用的参考 ID、全部 V6-confirmed Mockup、V7、Implementation Lock 与 Proof。V6 与现有 Mockup Gate 使用同一次真实用户决定，不新增审批次数。
+
+**代表性 Proof 原则：** `proof_composition_ids` 必须是最小充分集合；任一 Proof 若能被其他 Proof 按 mode、Lock elements、methods、join（native_blend 再含 native scene/dependencies）覆盖，默认阻断并改为正式段 + `proof_covered_by`；完全等价时保留列表靠前者。仅机器无法识别的素材级风险可用显式 `additional_proof_exception`，且证据必须随 Proof / Composition 一起展示确认。最终 CompositionCompliance 对每个 production composition 逐段写 pass/finding，含 join 再写 join_finding。
+
+候选仍按真实 Keyframe → Mockup → Implementation Lock → Blender / Dynamic Demo → Executable Proof → 当前确认推进。Mockup 只能基于真实 Keyframe、实际采用文字和目标输出画幅；不得生成替代人物/场景冒充原片。Mockup 确认后建立 Implementation Lock，冻结 renderer / entrypoint、元素、source role、字体与文字层级、布局/crop、颜色角色、z-order、运动方法、safe adaptation ，如有参考则同时绑定其应用记录。
+
+Production Proof Lock 闭合后建立 Production Lock，冻结 execution-reference 的实现规则、Implementation Lock、实际工具链、方法/工程、delivery spec、text_policy 与 voiceover_policy；Execute 只允许已声明的安全适配，不重新设计。相关输入变化只使受影响锁 stale。
+
+项目使用 workflow_control 1.3 / required_v4。初始化控制记录后，通过 guard、validator 与正式 renderer 入口执行依赖动作。
+
+文字与旁白属于可执行约束：timeline 文字必须按 `project.text_policy` 检查实际 glyph-height、行数、stable hold 与阅读速度；放不下时优先减字/延长/改布局，不静默缩小到 floor 以下。默认下限为 4.5% / 5.5% / 7%；项目有明确已确认值时以项目 policy 为准。voiceover 未明确声明时默认禁止，只有 `voiceover_policy.allowed=true` 且 description/ref 可回查时才进入执行。
+
+遇到未确认项时，先展示具体候选、图片、proof 或缺口，主动指出需要的决定；只阻断依赖动作。把“可以”只对应到上一轮实际展示事项，不扩成后续全部批准。未实看原片、未核听、未生成图片、未渲染、未实际观看 demo 或未验收的内容保持 pending/not_tested。
+
+有脚本能力时按 `workflow_control.py status/guard/handoff` 及对应 verifier/QA 执行；缺工具时按同一规则静态检查并明确“未运行”。阶段变化、需要用户决定、依赖受阻或交接时，简短说明当前阶段、下一关口、缺口与下一步。交付前检查遗漏、数字、引用、时间码、版本、文件完整性与实际测试状态。
+
+新风格在 V5 用同一源帧、画幅、完整文案和声音做代表性 A/B。同文件或解码像素相同不能计为设计提升。
+
+局部修订以最新 Narrative、当前有效 Plan 与已确认方法为输入。默认继承本项目确认值；仅用 workflow_control.py adapt 应用 safe_adaptation 中具名、限值明确的参数补丁，并同步 parameter_bindings。禁止另起模板重做 Plan、默认重选方法或把普通 confirm/init 当重置基线；方法变化使用原 D2 方法决策的显式入口。原 Step 0 快照许可保留，未声明内容冻结，当前基线随项目交接。
+
+非参数内容修订先在干净 D2 基线运行 workflow_control.py revise 声明精确范围；仅改允许字段，Markdown 用 lvr:param 块。原 plan 确认绑定实际 diff_sha256；修改进行中禁止执行。方法改变也须先声明范围再走原 method+plan 决定，不能借 method-change 吞掉内容漂移。
+
+修订确认原话必须不同于修改指令和上一次 plan 确认；不得把修改指令当作 diff 批准。预览调用既有非渲染校验，仅新增错误拦提交。段落增删限于 execution-plan 的 plan.segments 容器，一级/二级标题在外；普通文案用语义化参数块。

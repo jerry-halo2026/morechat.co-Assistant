@@ -1,0 +1,61 @@
+{
+  "stage": "V7",
+  "inputs_design_sha256": {
+    "…": "<前序全部文件的 design sha256>"
+  },
+  "chosen_candidate": "<与 V6 一致>",
+  "renderer": "<最终工具链>",
+  "canvas": [
+    1920,
+    1080
+  ],
+  "style": "<由 scripts/sync_visual_stage.py 从 V3 选定方案自动同步，不建议手填>",
+  "elements": [
+    {
+      "id": "<V4 元素 id>",
+      "keyframe": "M01",
+      "unit": "<B001>",
+      "text": "<…>",
+      "role": "<…>",
+      "validation_basis": "<代表性验证模式下，未在 V4 出现的扩展元素必须填已验证 keyframe；V4 元素可省略>",
+      "adaptation": "<扩展元素说明如何从代表帧规则适配；V4 元素可省略>",
+      "rect": [
+        100,
+        100,
+        600,
+        220
+      ],
+      "align": "<left | right | vertical>",
+      "polarity": "<light | dark>",
+      "protection_alpha": 0.0,
+      "t_in": 0.0,
+      "t_out": 0.0,
+      "motion": {
+        "in": "opacity",
+        "frames": 4,
+        "out": "cut"
+      }
+    }
+  ],
+  "reference_trace": [],
+  "expansion_checks": [
+    {
+      "keyframe": "M02",
+      "candidate": "<与 V6 一致>",
+      "file": "adaptation/M02.png",
+      "sha256": "<sha256>",
+      "scale_x_equals_scale_y": true,
+      "elements": [
+        {
+          "id": "<V7 element id>",
+          "text": "<V0 文案>",
+          "min_hanzi_ink_px": 72,
+          "contrast_median": 4.5,
+          "contrast_worst": 3.0,
+          "min_clearance_px": 24,
+          "subtitle_overlap": false
+        }
+      ]
+    }
+  ]
+}

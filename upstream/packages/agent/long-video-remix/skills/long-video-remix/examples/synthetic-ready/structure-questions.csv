@@ -1,0 +1,2 @@
+question_id,stage,source_id,episode,scene_id,detail_interval_id,frame_refs,plan_node_id,question,answer,answer_status,evidence_refs,confidence,confidence_basis,unverified_items,next_check,review_refs
+Q001,detail,SRC001,,S001,DI001,frame:F001,P01,Does the selected synthetic interval support the target narrative fact?,Supported by the controlled synthetic record,supported,observation:DO001,high,controlled synthetic fixture,none,none,R001

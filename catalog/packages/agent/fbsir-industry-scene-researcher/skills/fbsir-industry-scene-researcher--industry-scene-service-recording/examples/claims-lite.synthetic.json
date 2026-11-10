@@ -1,0 +1,29 @@
+{
+  "schemaVersion": "research.claims-lite/v1",
+  "brief": {
+    "question": "合成示例：如何核对一条报道中的流程描述？",
+    "declaredSourceFamilyCount": 1
+  },
+  "claims": [
+    {
+      "id": "SYNTHETIC-C1",
+      "text": "合成报道写道：草案经人工确认后进入知识库；此示例不证明真实企业采用。",
+      "status": "current",
+      "evidenceLevel": "source_fact",
+      "assertionKind": "descriptive",
+      "assertionScope": "reported_content",
+      "evidence": [
+        {
+          "sourceId": "SYNTHETIC-S1",
+          "familyId": "SYNTHETIC-F1",
+          "sourceRole": "media_reporting",
+          "reference": "https://synthetic.example/method-fixture",
+          "readStatus": "content_read",
+          "anchor": "合成夹具第1段；仅演示输入形状，未实际访问网络",
+          "productionMethod": "unknown"
+        }
+      ],
+      "limitations": ["全部字段为合成输入，不是网络读取回执或真实案例证据"]
+    }
+  ]
+}

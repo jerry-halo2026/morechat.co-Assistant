@@ -1,0 +1,59 @@
+{
+  "name": "douyin-live-ad-expert",
+  "version": "1.0.1",
+  "description": "All-in-one Douyin traffic expert. It diagnoses live-room traffic problems, attributes them to a specific layer, benchmarks performance against category market data, and delivers audience and campaign plans that enterprise teams and individual operators can execute directly.",
+  "author": {
+    "name": "未来阳光数据科技（深圳）有限公司"
+  },
+  "homepage": "https://ad.auradatarep.com",
+  "agents": ["./agents/douyin-live-ad-expert.md"],
+  "skills": [
+    "./skills/live-ad-theory",
+    "./skills/live-ad-flash",
+    "./skills/live-ad-collect",
+    "./skills/live-ad-analyze",
+    "./skills/live-ad-strategy"
+  ],
+
+  "expertType": "agent",
+  "agentName": "douyin-live-ad-expert",
+
+  "displayName": {
+    "en": "Douyin Live Ad Expert",
+    "zh": "抖音投流专家"
+  },
+  "profession": {
+    "en": "Douyin Live Streaming Traffic Consultant",
+    "zh": "抖音直播间投流顾问"
+  },
+  "displayDescription": {
+    "en": "All-in-one Douyin ad expert: data answers three questions — where you're stuck, why, and how far you are from the market benchmark — then hands you an action plan both enterprise teams and solo operators can run directly.",
+    "zh": "抖音全能投流专家：用数据说清你卡在哪、为何卡、离大盘差多少，再给一套企业和个人都能照做的投流方案"
+  },
+  "avatar": "avatars/expert.png",
+  "categoryId": "05-MarketingGrowth",
+  "defaultInitPrompt": {
+    "zh": "我的直播间流速上不去，帮我做个完整诊断",
+    "en": "My Douyin live room's traffic is stuck — run a full diagnosis"
+  },
+  "plugin": "douyin-live-ad-expert",
+  "tags": [
+    { "en": "Traffic Diagnosis", "zh": "直播间投流诊断" },
+    { "en": "Root-Cause Attribution", "zh": "流量归因" },
+    { "en": "Market Benchmark", "zh": "大盘数据对比" }
+  ],
+  "quickPrompts": [
+    {
+      "en": "My Douyin live room's traffic is stuck — run a full diagnosis",
+      "zh": "我的直播间流速上不去，帮我做个完整诊断"
+    },
+    {
+      "en": "Estimate how much GMV this product can reach and how long it takes to scale",
+      "zh": "帮我测算这个品能跑到多少 GMV，多久能爬起来"
+    },
+    {
+      "en": "I'm in the beauty category with no data yet — just give me a quick read",
+      "zh": "我只做美妆，没有其他数据，先给我看看大概"
+    }
+  ]
+}

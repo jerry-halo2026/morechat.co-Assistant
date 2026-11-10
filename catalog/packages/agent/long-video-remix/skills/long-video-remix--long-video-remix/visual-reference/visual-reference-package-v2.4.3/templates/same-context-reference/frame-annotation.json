@@ -1,0 +1,9 @@
+{
+  "locator": "<source identifier and timecode>",
+  "text": [0, 0, 0, 0],
+  "background": [0, 0, 0, 0],
+  "subject": [0, 0, 0, 0],
+  "relationship_note": "<文字离人物/动作多远、靠哪一侧、避开什么动作路径>",
+  "action_avoidance_note": "<若人物/手势在动，说明文字避让哪一段动作；无则说明无明显动作冲突>",
+  "why_it_works": "<为什么这个处理在该镜头成立：主次、关系、语气或叙事作用>"
+}

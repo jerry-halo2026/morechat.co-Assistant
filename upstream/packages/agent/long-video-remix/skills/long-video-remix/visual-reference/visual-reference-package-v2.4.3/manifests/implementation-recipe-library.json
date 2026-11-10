@@ -1,0 +1,329 @@
+{
+  "schema_version": "2.0",
+  "version": "2.1.0",
+  "library_role": "our_implementation_methods_not_source_authoring_claims",
+  "recipes": [
+    {
+      "recipe_id": "IR-01",
+      "name": "Transform Timing Rig",
+      "type": "mechanism_system",
+      "covers": [
+        "T01",
+        "T02",
+        "T03",
+        "T04",
+        "T05",
+        "T06",
+        "T07"
+      ],
+      "implementation": "F-Curves + Drivers + custom properties; optional offset tooling",
+      "controls": [
+        "progress",
+        "delay_frames",
+        "stiffness",
+        "damping",
+        "overshoot",
+        "hold_frames",
+        "phase",
+        "seed"
+      ],
+      "status": "spec_ready_unrun"
+    },
+    {
+      "recipe_id": "IR-02",
+      "name": "Camera Depth Rig",
+      "type": "system",
+      "covers": [
+        "C01",
+        "C02",
+        "C03",
+        "C04",
+        "C05",
+        "C06",
+        "C07",
+        "C08"
+      ],
+      "implementation": "Camera + Follow Path + Damped/Locked Track + depth planes + DOF",
+      "controls": [
+        "camera_path",
+        "offset_factor",
+        "look_target",
+        "lens",
+        "focus_target",
+        "fstop",
+        "depth_spacing",
+        "drift"
+      ],
+      "status": "spec_only_in_public_build",
+      "transfer_principles": [
+        "景深证据必须来自 BG/FG/MID 几何、视差和焦点本身，不由诊断文字承担。",
+        "若文字只承担解释/诊断角色，使用 screen-space annotation；按相机投影逐帧跟随并做像素安全区 clamp。",
+        "相机轨迹、look target、lens、focus target、f-stop、depth spacing 都应成为 Implementation Lock 中可解析参数。"
+      ],
+      "do_not_implement": [
+        "不要用平面 scale 假装真正的 3D dolly/parallax 后又声称有空间证据。",
+        "不要把 screen-space 标注写成 world-space depth evidence。",
+        "不要靠不断猜世界坐标解决屏幕裁切；检查 camera projection / pixel-safe bounds。"
+      ]
+    },
+    {
+      "recipe_id": "IR-03",
+      "name": "Tracking & Occlusion Rig",
+      "type": "system",
+      "covers": [
+        "S01",
+        "S02",
+        "S03",
+        "S04",
+        "S05"
+      ],
+      "implementation": "Movie Clip tracking + Camera/Object Solver + Follow Track + depth geometry/mattes",
+      "controls": [
+        "clip",
+        "track_name",
+        "use_3d_position",
+        "surface_proxy",
+        "occluder",
+        "handoff_influence"
+      ],
+      "status": "spec_only_in_public_build",
+      "transfer_principles": [
+        "附着元素应跟随 surface proxy / track，而不是独立漂移。",
+        "遮挡优先由真实 geometry/matte depth relationship 产生；透明度只用于必要的视觉过渡，不替代空间关系。",
+        "Tracking / surface / occluder / handoff influence 分开记录，便于当前项目替换真实素材与追踪数据。"
+      ],
+      "do_not_implement": [
+        "不要把 opacity fade 冒充 geometry occlusion。",
+        "卡片、文字和构图应根据当前项目的素材和表达目标重新制作。",
+        "不要把我们的 Blender Follow Track / proxy 实现写成原 Reference 项目的已知技术栈。"
+      ]
+    },
+    {
+      "recipe_id": "IR-04",
+      "name": "Spatial Typography Rig",
+      "type": "system",
+      "covers": [
+        "G01",
+        "G02",
+        "G03",
+        "G04",
+        "G06",
+        "G07"
+      ],
+      "implementation": "Text/planes + Grease Pencil + Build + masks + stagger controls",
+      "controls": [
+        "char_delay",
+        "build_factor",
+        "mask_progress",
+        "world_anchor",
+        "divider",
+        "annotation_hold"
+      ],
+      "status": "spec_ready_unrun"
+    },
+    {
+      "recipe_id": "IR-05",
+      "name": "Morph & Deform Rig",
+      "type": "mechanism_system",
+      "covers": [
+        "G05",
+        "R07",
+        "D01",
+        "D02"
+      ],
+      "implementation": "Shape Keys + Lattice/Displace + Geometry Nodes",
+      "controls": [
+        "shape_value",
+        "evaluation_time",
+        "deform_strength",
+        "falloff"
+      ],
+      "status": "spec_ready_unrun"
+    },
+    {
+      "recipe_id": "IR-06",
+      "name": "Transition Choreography Rig",
+      "type": "system",
+      "covers": [
+        "R01",
+        "R02",
+        "R03",
+        "R04",
+        "R05",
+        "R06"
+      ],
+      "implementation": "Geometry occlusion + camera path + DOF + light/compositor; editorial match when appropriate",
+      "controls": [
+        "transition_window",
+        "occluder_path",
+        "match_vector",
+        "camera_path",
+        "focus_curve",
+        "light_curve"
+      ],
+      "status": "spec_ready_unrun"
+    },
+    {
+      "recipe_id": "IR-07",
+      "name": "Material & Optical Rig",
+      "type": "system",
+      "covers": [
+        "I01",
+        "I02",
+        "I03",
+        "I04",
+        "I05",
+        "I06",
+        "I07"
+      ],
+      "implementation": "Principled materials + lights + render motion blur + compositor",
+      "controls": [
+        "roughness",
+        "ior",
+        "transmission",
+        "light_energy",
+        "shutter",
+        "grain",
+        "distortion",
+        "glow"
+      ],
+      "status": "spec_ready_unrun"
+    },
+    {
+      "recipe_id": "IR-08",
+      "name": "Simulation Rig",
+      "type": "system",
+      "covers": [
+        "D03",
+        "D04",
+        "D05",
+        "D06",
+        "D07",
+        "D08",
+        "P03"
+      ],
+      "implementation": "Soft/Rigid/Cloth + Geometry Nodes Simulation Zone + particles/volumes",
+      "controls": [
+        "mass",
+        "damping",
+        "collision",
+        "timestep",
+        "seed",
+        "cache",
+        "bake"
+      ],
+      "status": "spec_ready_unrun"
+    },
+    {
+      "recipe_id": "IR-09",
+      "name": "Procedural Response Rig",
+      "type": "system",
+      "covers": [
+        "P01",
+        "P02",
+        "P04",
+        "P06"
+      ],
+      "implementation": "Geometry Proximity + fields + Random Value + Sample Sound Frequencies + drivers",
+      "controls": [
+        "distance",
+        "falloff",
+        "seed",
+        "frequency_band",
+        "smoothing",
+        "response_range"
+      ],
+      "status": "spec_ready_unrun"
+    },
+    {
+      "recipe_id": "IR-10",
+      "name": "Modular Motion System",
+      "type": "system",
+      "covers": [
+        "P05",
+        "T04",
+        "T05",
+        "T06",
+        "G06"
+      ],
+      "implementation": "Collections + custom-property master controls + drivers/actions/NLA + component offsets",
+      "controls": [
+        "state",
+        "progress",
+        "component_delay",
+        "component_scale",
+        "motion_role",
+        "override"
+      ],
+      "status": "spec_only_in_public_build",
+      "transfer_principles": [
+        "组件应有 motion_role，统一由 master state/progress 驱动，再通过 component_delay / response scale 建立层级。",
+        "装饰 pattern 必须预留 text exclusion zone，并检查整个动态路径而非只看起止帧。",
+        "stagger / overlap 应服务阅读顺序，不能让全部组件同时启动或抢主标题。"
+      ],
+      "do_not_implement": [
+        "不要让图案横条穿过主字笔画。",
+        "不要把所有层都做同一种 easing / 同时入场，形成模板动画。",
+        "将节奏、层级和组件联动用于当前项目，具体图形、字形和配色按项目设计。"
+      ]
+    },
+    {
+      "recipe_id": "IR-11",
+      "name": "Editorial Time Rig",
+      "type": "system",
+      "covers": [
+        "T08",
+        "T09",
+        "E01",
+        "E02",
+        "E03",
+        "E04",
+        "E05"
+      ],
+      "implementation": "VSE/compositor/planes when spatial; otherwise prefer FFmpeg timeline",
+      "controls": [
+        "source_range",
+        "speed_curve",
+        "crop_rect",
+        "freeze_hold",
+        "replay_count",
+        "time_offset",
+        "split_state"
+      ],
+      "status": "spec_ready_unrun"
+    },
+    {
+      "recipe_id": "IR-12",
+      "name": "Caption Slot & Adaptive Protection",
+      "type": "system",
+      "covers": [
+        "L01",
+        "L02",
+        "L03",
+        "L04"
+      ],
+      "implementation": "Pillow + numpy still tool driven by a cue sheet; style supplied by the project scheme; decision log; QA loop",
+      "controls": [
+        "slot",
+        "slots_allowed",
+        "anchor",
+        "protection_cap",
+        "floor_exempt",
+        "style"
+      ],
+      "status": "spec_only_in_public_build",
+      "transfer_principles": [
+        "先由 V3 方案决定字体、颜色、字号，工具只做选择和测量，不做设计。",
+        "保护从文字块向最近画面边缘柔和衰减，强度按对比度目标反算取最小值。",
+        "对比度在墨迹外 4px 环带上测，不在整块区域上测。"
+      ],
+      "do_not_implement": [
+        "使用当前项目的实际源帧和已登记文案做静帧验证。",
+        "不要把 QA 全部通过当作设计成立；设计判断在 V5。",
+        "不要只检查一帧；生产中需在停留时间内采样。"
+      ],
+      "note": "Blender / FFmpeg 复刻需按同参数实现并单独 Proof；像素一致性本版未验证。",
+      "tool": "scripts/caption_place.py"
+    }
+  ]
+}

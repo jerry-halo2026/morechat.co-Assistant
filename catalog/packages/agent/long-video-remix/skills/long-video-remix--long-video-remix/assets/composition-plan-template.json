@@ -1,0 +1,80 @@
+{
+  "schema_version": "1.0",
+  "project_id": null,
+  "implementation_lock_ref": "implementation-lock.json",
+  "output": {
+    "width": null,
+    "height": null,
+    "fps_num": null,
+    "fps_den": null
+  },
+  "proof_scope_policy": "representative_risk_based_v2",
+  "compositions": [
+    {
+      "composition_id": "C01",
+      "backend": "blender",
+      "mode": "layers",
+      "method_ids": [
+        "PM001"
+      ],
+      "implementation_element_ids": [],
+      "event_ids": [],
+      "anchor_event_id": null,
+      "local_start_frame": 0,
+      "frame_count": null,
+      "groups": {},
+      "layers": [],
+      "joins": [
+        {
+          "frame": null,
+          "before_frames": null,
+          "after_frames": null,
+          "from_event_id": null,
+          "to_event_id": null,
+          "cut_intent": null,
+          "outgoing_state": null,
+          "incoming_state": null,
+          "motion_handoff": null
+        }
+      ],
+      "preview_audio_ref": null,
+      "silent_demo": false,
+      "silent_reason": null,
+      "scene_ref": "compositions/C01/v1.blend",
+      "video_ref": "compositions/C01/v1-visual.mp4",
+      "demo_ref": "compositions/C01/v1-demo.mp4",
+      "proof_ref": "compositions/C01/v1-proof.png",
+      "receipt_ref": "compositions/C01/v1-render.json",
+      "readback_ref": "compositions/C01/v1-readback.json",
+      "review_ref": "compositions/C01/v1-review.json",
+      "delivery_role": "proof_only"
+    },
+    {
+      "composition_id": "C02",
+      "backend": "blender",
+      "mode": "layers",
+      "method_ids": [
+        "PM001"
+      ],
+      "implementation_element_ids": [],
+      "event_ids": [],
+      "anchor_event_id": null,
+      "local_start_frame": 0,
+      "frame_count": null,
+      "groups": {},
+      "layers": [],
+      "joins": [],
+      "no_join_reason": "Example production-only window; replace with actual join coverage or a concrete reason.",
+      "proof_covered_by": "C01",
+      "proof_coverage_reason": "Same renderer, locked implementation elements, methods and join-risk class as C01; replace with project-specific evidence.",
+      "scene_ref": "compositions/C02/v1.blend",
+      "video_ref": "compositions/C02/v1-visual.mp4",
+      "receipt_ref": "compositions/C02/v1-render.json",
+      "readback_ref": "compositions/C02/v1-readback.json",
+      "delivery_role": "delivery"
+    }
+  ],
+  "proof_composition_ids": [
+    "C01"
+  ]
+}

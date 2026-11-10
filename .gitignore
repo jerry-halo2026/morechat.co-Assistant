@@ -1,0 +1,14 @@
+# dependencies (none required — node built-ins only)
+node_modules/
+package-lock.json
+
+# os / editor junk
+.DS_Store
+Thumbs.db
+*.log
+.idea/
+.vscode/
+
+# local scratch
+tmp/
+.out/

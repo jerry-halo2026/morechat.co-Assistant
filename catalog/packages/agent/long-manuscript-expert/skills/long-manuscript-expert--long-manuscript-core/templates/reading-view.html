@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- long-manuscript-expert 2026.11.5 stable reading view template.
+     Replace {{FORM_ID}} with T01..T05, {{TITLE}} etc. with the SAME draft
+     version as the editable manuscript. Static substitute for interactive
+     figures: critical values are printed, never hover-only. -->
+<title>{{TITLE}}</title>
+<link rel="stylesheet" href="../assets/five-forms.css">
+<style>
+  body { margin: 0; background: #e9edf1; }
+  .reading-note { max-width: 210mm; margin: 8mm auto 0; font-size: 9pt; color: #4b5563; }
+  .paper-static-chart svg { max-width: 100%; height: auto; }
+</style>
+</head>
+<body data-form="{{FORM_ID}}">
+<p class="reading-note">稳定阅读呈现 · 版本 2026.11.5 · 与可编辑主稿同一版本；关键数值以静态标签和底表呈现，不依赖悬停。静态版式资产存在不等于宿主已显示通过。</p>
+
+<section class="paper-page">
+  <p class="paper-caption">报告 / {{TITLE}} · 第 1 页 · 资料截至 {{AS_OF}}</p>
+  <h1>{{TITLE}}</h1>
+  <p class="sem-main">{{LEAD_FINDING}}</p>
+  <h2>研究问题与边界</h2>
+  <p>{{SCOPE}}</p>
+  <p class="sem-unknown">未读范围与不可计算项：{{UNREAD_AND_UNKNOWN}}</p>
+  <h2>实际覆盖</h2>
+  <p>{{PERIOD_AND_COVERAGE}}</p>
+  <div class="zero-vs-missing"><span class="zero">{{TRUE_ZERO}}</span> · <span class="missing">{{MISSING}}</span></div>
+  <figure class="paper-static-chart">
+    <img src="../assets/layout/{{FORM_ID}}-layout.svg" alt="{{FORM_NAME}}静态版式示意：{{ALT_TEXT}}">
+    <figcaption class="paper-caption">图 1 · {{FIGURE_CAPTION}} · 单位 {{UNIT}} · 期间 {{PERIOD}} · 样本/分母 {{DENOMINATOR}} · 来源 {{SOURCE}} · 限制 {{LIMITS}}</figcaption>
+  </figure>
+  <table class="paper-table base-table">
+    <caption class="paper-caption">底表 1 · 与图 1 同一快照；原值与换算并列</caption>
+    <thead><tr><th>对象</th><th>原值</th><th>原单位</th><th>换算值</th><th>显示单位</th><th>期间</th><th>分母</th><th>缺失状态</th></tr></thead>
+    <tbody>{{BASE_TABLE_ROWS}}</tbody>
+  </table>
+  <p class="paper-source">来源与定位：{{SOURCE_LOCATORS}}</p>
+  <p class="paper-page-number">1 / {{PAGE_COUNT}}</p>
+</section>
+
+<section class="paper-page">
+  <p class="paper-caption">报告 / {{TITLE}} · 第 2 页</p>
+  <h2>承重主张与证据回查</h2>
+  <table class="paper-table">
+    <thead><tr><th>主张</th><th>支持</th><th>反证/限制</th><th>适用条件</th><th>正文落点</th></tr></thead>
+    <tbody>{{CLAIM_ROWS}}</tbody>
+  </table>
+  <h2>写作建议与唯一下一步</h2>
+  <p>{{WRITING_GUIDANCE}}</p>
+  <p class="sem-risk">已知未同步项（范围外，仅标注）：{{OUT_OF_SCOPE_SYNC}}</p>
+  <p class="paper-source">{{SOURCE_LOCATORS}}</p>
+  <p class="paper-page-number">2 / {{PAGE_COUNT}}</p>
+</section>
+</body>
+</html>

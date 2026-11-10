@@ -1,0 +1,43 @@
+{
+  "schema": "research.track-method-cards/v1",
+  "synthetic": true,
+  "description": "三张本地合成研究方法卡，不是真实案例、真实产品、已验证性能或经营收益。",
+  "cards": [
+    {
+      "track_id": "smart-hardware-service-triage",
+      "track_version": 1,
+      "title": "智能硬件售后故障分诊",
+      "decision": "如何分流售后问题、安排人工复核与升级，并保留人工最终派单责任。",
+      "demand_focus": ["设备类型与固件版本", "问题类型与现有处理基线", "可分享数据与禁止外发范围", "人审责任与升级条件"],
+      "supply_checks": ["本地日志可得性与分类对象", "是否要求客户原文外传", "人工复核机制", "指标主体、时期与分母"],
+      "deliverables": ["可比案例与限制", "故障分诊试点卡"],
+      "keywords": ["售后", "故障", "分诊", "工单", "派单"],
+      "synthetic": true,
+      "performance_claims": "none"
+    },
+    {
+      "track_id": "smart-hardware-quality-review",
+      "track_version": 1,
+      "title": "智能硬件试制与生产异常复核",
+      "decision": "试制或生产异常提示是否值得进入有边界的小规模人工复核试点。",
+      "demand_focus": ["检查流程与缺陷定义", "样本、设备及环境差异", "误判与漏判代价", "异常处置负责人"],
+      "supply_checks": ["传感或图像条件", "训练与验证样本边界", "人工处置与失效条件", "成本及可复制条件"],
+      "deliverables": ["同机制对照", "条件化验证方案"],
+      "keywords": ["质检", "试制", "生产", "异常", "缺陷"],
+      "synthetic": true,
+      "performance_claims": "none"
+    },
+    {
+      "track_id": "smart-hardware-edge-interaction",
+      "track_version": 1,
+      "title": "智能硬件端侧交互方案评估",
+      "decision": "端侧智能交互是否适合当前任务、用户、设备与连接环境。",
+      "demand_focus": ["交互任务与使用环境", "连接条件与端云边界", "功耗和时延目标", "验收方式与人工兜底"],
+      "supply_checks": ["设备与模型版本", "测试条件和测量方法", "环境鲁棒性", "失效降级与全成本"],
+      "deliverables": ["证据比较与权衡", "需要实测的假设清单"],
+      "keywords": ["端侧", "边缘", "交互", "离线", "语音"],
+      "synthetic": true,
+      "performance_claims": "none"
+    }
+  ]
+}

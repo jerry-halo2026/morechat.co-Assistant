@@ -1,0 +1,43 @@
+{
+  "name": "life-value-advisor",
+  "version": "1.0.1",
+  "description": "A life cost-value advisor grounded in the 672 evidence-based tips of 《高性价比人生指南》, judging whether things are worth it, safe, or risky.",
+  "author": {
+    "name": "胖子张",
+    "email": "zhang@multica.local"
+  },
+  "agents": ["./agents/life-value-advisor.md"],
+
+  "expertType": "agent",
+  "agentName": "life-value-advisor",
+
+  "displayName": {
+    "en": "Life Value Advisor",
+    "zh": "人生高性价比顾问"
+  },
+  "profession": {
+    "en": "Life Cost-Value Advisor",
+    "zh": "人生性价比顾问"
+  },
+  "displayDescription": {
+    "en": "Grounded in 672 evidence-based tips, helps you quickly judge whether something is worth it, safe, or risky using a cost-benefit framework.",
+    "zh": "基于《高性价比人生指南》672条循证建议，用成本收益框架帮你评判一件事划不划算、安不安全、有无坑。"
+  },
+  "avatar": "avatars/expert.png",
+  "categoryId": "12-IndustryConsultant",
+  "defaultInitPrompt": {
+    "zh": "帮我用成本收益框架评判一件事划不划算",
+    "en": "Help me judge whether something is worth it using the cost-benefit framework"
+  },
+  "plugin": "life-value-advisor",
+  "tags": [
+    { "en": "Cost-Benefit Decision", "zh": "性价比决策" },
+    { "en": "Risk & Scam Avoidance", "zh": "避坑防骗" },
+    { "en": "Health, Finance & Law", "zh": "健康理财法律" }
+  ],
+  "quickPrompts": [
+    { "en": "Help me judge whether something is worth it using the cost-benefit framework", "zh": "帮我用成本收益框架评判一件事划不划算" },
+    { "en": "Before I sign / lend / invest, check if there is any trap", "zh": "遇到要签字、借钱、投资的事，先帮我查有没有坑" },
+    { "en": "I want to do X (e.g. buy supplements / change job / start a business), what does the book say", "zh": "我想做某件事（如买保健品/换工作/创业），书里怎么说" }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "name": "omnichannel-ads-expert",
+  "version": "1.0.0",
+  "description": "Omnichannel advertising expert covering account setup, creative production, campaign monitoring and optimization across major domestic and overseas media platforms.",
+  "author": {
+    "name": "chenghao"
+  },
+  "agents": ["./agents/omnichannel-ads-expert.md"],
+  "skills": ["./skills/omnichannel-ads-playbook"],
+
+  "expertType": "agent",
+  "agentName": "omnichannel-ads-expert",
+
+  "displayName": {
+    "en": "Omni",
+    "zh": "全渠道投放官"
+  },
+  "profession": {
+    "en": "Omnichannel Advertising Specialist",
+    "zh": "全渠道广告投放专家"
+  },
+  "displayDescription": {
+    "en": "End-to-end paid media specialist across Ocean Engine, Tencent Ads, Kuaishou, Xiaohongshu, Google, Meta and TikTok — covering account setup, creative production, campaign monitoring and performance optimization.",
+    "zh": "覆盖巨量、腾讯、快手、小红书、Google、Meta等国内外媒体投放，擅长账户搭建、素材创意与优化。"
+  },
+  "avatar": "avatars/expert.png",
+  "categoryId": "05-MarketingGrowth",
+  "defaultInitPrompt": {
+    "zh": "我有 5 万预算要推一款新 App，帮我做一份巨量引擎 + 腾讯广告的跨平台投放方案",
+    "en": "I have a 50k budget to launch a new app — build me a cross-platform media plan for Ocean Engine and Tencent Ads."
+  },
+  "plugin": "omnichannel-ads-expert",
+  "tags": [
+    { "en": "Cross-Platform Media Strategy", "zh": "跨平台投放策略" },
+    { "en": "Ad Creative Production", "zh": "广告素材创意" },
+    { "en": "Campaign Monitoring & Optimization", "zh": "投放监控与优化" }
+  ],
+  "quickPrompts": [
+    {
+      "en": "I have a 50k budget to launch a new app — build me a cross-platform media plan for Ocean Engine and Tencent Ads.",
+      "zh": "我有 5 万预算要推一款新 App，帮我做一份巨量引擎 + 腾讯广告的跨平台投放方案"
+    },
+    {
+      "en": "Write a batch of feed ad creatives: 3 short-video voiceover scripts plus 5 headline variants.",
+      "zh": "帮我写一批信息流广告素材：3 条短视频口播脚本 + 5 组标题文案"
+    },
+    {
+      "en": "Here is my daily campaign report — diagnose why spend won't scale and CPA keeps rising, then give me concrete optimization actions.",
+      "zh": "这是我的投放日报，帮我诊断跑不起量、成本持续上涨的原因并给出优化动作"
+    }
+  ]
+}

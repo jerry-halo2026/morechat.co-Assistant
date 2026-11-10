@@ -1,0 +1,82 @@
+{
+  "name": "long-video-remix",
+  "version": "1.5.1",
+  "description": "AI video editing and long-video remix expert: indexes hours of long video with source timecodes, extracts short-video-worthy highlights, designs remix plans, and executes the confirmed cut with an audited final export. Direct 2 generates the production method with a Visual Methods library (M01-M14 plus F01-F09 fallbacks) and can build Blender compositions for static proof and continuous motion demos before the FFmpeg finish.",
+  "author": {
+    "name": "hazelliuliu1823-cloud",
+    "email": "44393349@qq.com"
+  },
+  "homepage": "https://github.com/hazelliuliu1823-cloud/long-video-remix",
+  "license": "MIT",
+  "keywords": [
+    "long video",
+    "footage search",
+    "video editing",
+    "remix",
+    "highlight reel",
+    "retention analysis",
+    "MCN",
+    "长视频",
+    "素材库",
+    "混剪",
+    "剪辑",
+    "选题",
+    "编导",
+    "留存分析"
+  ],
+  "agents": [
+    "./agents/long-video-remix.md"
+  ],
+  "skills": [
+    "./skills/long-video-remix"
+  ],
+  "expertType": "agent",
+  "agentName": "long-video-remix",
+  "displayName": {
+    "en": "Don't Look Down on Ashtrays",
+    "zh": "禁止看不上烟灰缸"
+  },
+  "profession": {
+    "en": "AI Video Editing & Long-Video Remix Expert",
+    "zh": "AI视频剪辑｜长视频转短视频·混剪"
+  },
+  "displayDescription": {
+    "zh": "长视频转短视频、找高光、做直播切片与影视混剪；从原片时间码、叙事方案到字幕视觉、动态制作和成片核查，一路做到可执行。",
+    "en": "Analyze long videos and build a searchable footage index, extract highlight clips, design short-video remix plans with original timecodes, and support execution and final-cut review."
+  },
+  "avatar": "avatars/expert.png",
+  "categoryId": "06-ContentCreative",
+  "quickPrompts": [
+    {
+      "zh": "这个1小时视频太长了，帮我找出最值得剪成短视频的3条内容，并标出原片时间码",
+      "en": "What short videos worth posting on their own can this livestream yield? Extract the highlight moments, cut livestream clips, and label their original timecodes."
+    },
+    {
+      "zh": "我不想要AI流水账剪辑。帮我把这段素材剪成一条有故事、有节奏的60秒短视频",
+      "en": "For a film or variety-show CP remix, how do I turn the shippable moments into a story? Find the key dialogue, looks and interactions, and thread the emotional beats together."
+    },
+    {
+      "zh": "内容已经选好了，帮我把字幕、画面节奏和视觉效果做到能直接制作，先给我看真实画面样稿",
+      "en": "For a Xiaohongshu or Douyin short, how do I hook viewers in the first three seconds? Design the opening hook, subtitles and music from your footage, and show a visual mockup first."
+    }
+  ],
+  "defaultInitPrompt": {
+    "zh": "这个1小时视频太长了，帮我找出最值得剪成短视频的3条内容，并标出原片时间码",
+    "en": "What short videos worth posting on their own can this livestream yield? Extract the highlight moments, cut livestream clips, and label their original timecodes."
+  },
+  "plugin": "long-video-remix",
+  "tags": [
+    {
+      "en": "Video Editing",
+      "zh": "AI视频剪辑"
+    },
+    {
+      "en": "Long-to-Short Video",
+      "zh": "长视频转短视频"
+    },
+    {
+      "en": "Video Remix",
+      "zh": "视频混剪"
+    }
+  ]
+}

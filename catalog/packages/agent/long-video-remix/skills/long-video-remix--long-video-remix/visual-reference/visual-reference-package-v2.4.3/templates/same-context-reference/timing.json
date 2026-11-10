@@ -1,0 +1,7 @@
+{
+  "appear_after_frames": 0,
+  "hold_frames": 0,
+  "exit_before_cut_frames": 0,
+  "mode": "<whole | word | line | other>",
+  "timing_purpose": "<为什么在这个动作/台词节点出现、为什么停这么久、为什么在这里退出>"
+}

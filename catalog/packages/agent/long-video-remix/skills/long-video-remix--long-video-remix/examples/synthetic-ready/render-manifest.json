@@ -1,0 +1,166 @@
+{
+  "schema_version": "1.4",
+  "timeline_status": "ready_for_render",
+  "render_authorized": true,
+  "render_allowed": true,
+  "compilation_mode": "render",
+  "eligibility": "validated_for_render",
+  "execution_authorization_ref": "execution-authorization.json",
+  "execution_authorization_digest": "e52dde75d224606034007fd4aa8bb5d513adeaf15df1f076979aa222b7b58b1e",
+  "playback_verified": false,
+  "project_id": "synthetic-review",
+  "coordinate_space": "output",
+  "fps_num": 25,
+  "fps_den": 1,
+  "width": 320,
+  "height": 180,
+  "total_frames": 125,
+  "duration_budget": {
+    "sum_event_frames": 125,
+    "sum_transition_overlap_frames": 0,
+    "computed_output_frames": 125,
+    "target_max_frames": null,
+    "status": "checked_no_limit"
+  },
+  "duration_seconds": 5.0,
+  "events": [
+    {
+      "event_id": "E001",
+      "kind": "source",
+      "source_id": "SRC001",
+      "unit_id": "U001",
+      "source_in_ms": 1000,
+      "source_out_ms": 6000,
+      "speed": 1,
+      "out_in_frame": 0,
+      "out_out_frame": 125,
+      "function": "controlled synthetic scene",
+      "deep_observation_refs": [
+        "DO001"
+      ],
+      "edit_boundary_ref": "EB001",
+      "source_signature": "81b93a79efb1ad2a8c5cf0610e1576051c9383c95147670c7ef2aae11f43c3bd",
+      "time_mapping_digest": "da3787e2d862bcce35bac3c8f3c3e23e5d6feb8619cb9c04cae4219e779b043b",
+      "adopted_observation_refs": [
+        "DO001"
+      ],
+      "adopted_boundary_ref": "EB001",
+      "evidence_status": "supported",
+      "source_constraint_ref": "source:SRC001",
+      "audio_boundary": {
+        "required_start_ms": 1300,
+        "required_end_ms": 5800
+      },
+      "dialogue_required_range": "1300-5800",
+      "sync_mode": "locked",
+      "audio_source_refs": [
+        "A001"
+      ],
+      "adopted_utterance_refs": [
+        "T001"
+      ],
+      "d2_selection_snapshot": {
+        "edit_boundary_ref": "EB001",
+        "planned_source_in_ms": 1000,
+        "planned_source_out_ms": 6000,
+        "safe_in_start_ms": 900,
+        "safe_in_end_ms": 1200,
+        "safe_out_start_ms": 5900,
+        "safe_out_end_ms": 6200,
+        "allowed_adjustments": []
+      },
+      "assembly_in_frame": 0,
+      "assembly_out_frame": 125,
+      "edit_boundary": {
+        "boundary_id": "EB001",
+        "continuity_type": "dialogue",
+        "preferred_in_ms": 1000,
+        "preferred_out_ms": 6000,
+        "safe_in_start_ms": 900,
+        "safe_in_end_ms": 1200,
+        "safe_out_start_ms": 5900,
+        "safe_out_end_ms": 6200,
+        "must_keep_ranges": [
+          {
+            "start_ms": 1300,
+            "end_ms": 5800
+          }
+        ],
+        "cut_risk": "low"
+      },
+      "source_version": "synthetic-v1",
+      "source_time_mapping": {
+        "type": "identity"
+      }
+    }
+  ],
+  "joins": [],
+  "audio_tracks": [
+    {
+      "track_id": "A001",
+      "kind": "original",
+      "source_id": "SRC001",
+      "source_in_ms": 1000,
+      "source_out_ms": 6000,
+      "gain_db": 0,
+      "anchor_event_id": "E001",
+      "local_in_frame": 0,
+      "local_out_frame": 125,
+      "narrative_role": "dialogue_information",
+      "treatment_reason": "preserve full synthetic audio",
+      "source_signature": "81b93a79efb1ad2a8c5cf0610e1576051c9383c95147670c7ef2aae11f43c3bd",
+      "time_mapping_digest": "da3787e2d862bcce35bac3c8f3c3e23e5d6feb8619cb9c04cae4219e779b043b",
+      "source_constraint_ref": "source:SRC001",
+      "sync_event_id": "E001",
+      "sync_mode": "locked",
+      "speed": 1,
+      "fade_in_ms": 0,
+      "fade_out_ms": 0,
+      "treatment": "preserve",
+      "review_refs": [
+        "R001"
+      ],
+      "out_in_frame": 0,
+      "out_out_frame": 125,
+      "coordinate_space": "output"
+    }
+  ],
+  "text_tracks": [
+    {
+      "text_id": "TXT001",
+      "kind": "explanation",
+      "text": "synthetic review",
+      "anchor_event_id": "E001",
+      "local_in_frame": 0,
+      "local_out_frame": 125,
+      "fade_in_frames": 0,
+      "stable_hold_frames": 125,
+      "fade_out_frames": 0,
+      "out_in_frame": 0,
+      "out_out_frame": 125,
+      "coordinate_space": "output"
+    }
+  ],
+  "audio_required": true,
+  "expected_quiet_ranges": [],
+  "cache_keys": {
+    "units": {
+      "E001": "8a7dfaf61e538911bce4beae240b704f1f82ab9e8fbfb9d9890a2790ac0e47b1"
+    },
+    "clean_video": "c35270562cc261782700fbb9233e719e13c4b328c235ab55f4783d05554d3bf5",
+    "mix_audio": "54fc50054dea9926018a1fd61e6bd9d9e75a1ea443e9b4c246f8c8fd13403b65",
+    "final": "e361135c30077474bac69539bdaae08f7219e25f5228df02510f81bb4914d81e"
+  },
+  "cache_reusable_by_layer": {
+    "units": {
+      "E001": true
+    },
+    "clean_video": true,
+    "mix_audio": true,
+    "final": true
+  },
+  "cache_reusable": true,
+  "warnings": [],
+  "input_digest": "e48af500d02f60e169dec122577b25c3a84c84231ca767a3cc96840c188e7f9b",
+  "manifest_digest": "53c5f947e09e769f98410f9f081eca2b27e44779443ac5c79aed76b2da1565ed"
+}

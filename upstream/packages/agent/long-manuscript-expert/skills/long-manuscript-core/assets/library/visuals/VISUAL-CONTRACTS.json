@@ -1,0 +1,131 @@
+{
+  "schema": "paper.visual-contracts.v1",
+  "types": [
+    {
+      "id": "decision-card",
+      "required": [
+        "metric_definition",
+        "unit",
+        "period",
+        "source_refs",
+        "limitations"
+      ],
+      "unknown_behavior": "unknown panel;never coerce null to0"
+    },
+    {
+      "id": "interval-comparison",
+      "required": [
+        "metric_definition",
+        "unit",
+        "period",
+        "source_refs",
+        "limitations"
+      ],
+      "unknown_behavior": "unknown panel;never coerce null to0"
+    },
+    {
+      "id": "tradeoff-scatter",
+      "required": [
+        "metric_definition",
+        "unit",
+        "period",
+        "source_refs",
+        "limitations"
+      ],
+      "unknown_behavior": "unknown panel;never coerce null to0"
+    },
+    {
+      "id": "cost-waterfall",
+      "required": [
+        "metric_definition",
+        "unit",
+        "period",
+        "source_refs",
+        "limitations"
+      ],
+      "unknown_behavior": "unknown panel;never coerce null to0"
+    },
+    {
+      "id": "evidence-heatmap",
+      "required": [
+        "metric_definition",
+        "unit",
+        "period",
+        "source_refs",
+        "limitations"
+      ],
+      "unknown_behavior": "unknown panel;never coerce null to0"
+    },
+    {
+      "id": "process-swimlane",
+      "required": [
+        "metric_definition",
+        "unit",
+        "period",
+        "source_refs",
+        "limitations"
+      ],
+      "unknown_behavior": "unknown panel;never coerce null to0"
+    },
+    {
+      "id": "paired-effect",
+      "required": [
+        "metric_definition",
+        "unit",
+        "period",
+        "source_refs",
+        "limitations"
+      ],
+      "unknown_behavior": "unknown panel;never coerce null to0"
+    },
+    {
+      "id": "source-family-graph",
+      "required": [
+        "metric_definition",
+        "unit",
+        "period",
+        "source_refs",
+        "limitations"
+      ],
+      "unknown_behavior": "unknown panel;never coerce null to0"
+    },
+    {
+      "id": "freshness-timeline",
+      "required": [
+        "metric_definition",
+        "unit",
+        "period",
+        "source_refs",
+        "limitations"
+      ],
+      "unknown_behavior": "unknown panel;never coerce null to0"
+    },
+    {
+      "id": "change-impact-map",
+      "required": [
+        "metric_definition",
+        "unit",
+        "period",
+        "source_refs",
+        "limitations"
+      ],
+      "unknown_behavior": "unknown panel;never coerce null to0"
+    },
+    {
+      "id": "evidence-table",
+      "required": [
+        "field_definition",
+        "source_refs",
+        "missing_state",
+        "limitations"
+      ],
+      "unknown_behavior": "unknown/blank row with reason;never coerce null to0"
+    }
+  ],
+  "cost_waterfall": "known subtotal only;unknown items separate",
+  "paired_effect": "requires paired/common task and baseline;chart does not establish causality",
+  "heatmap": "separate supported/limited/conflict/unknown states;not an unqualified score",
+  "data_source": "synthetic preview separate from audit or research observations",
+  "stable_product_id": "long-manuscript-expert",
+  "target_version": "2026.11.5"
+}

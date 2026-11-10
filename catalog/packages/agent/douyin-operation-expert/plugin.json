@@ -1,0 +1,53 @@
+{
+  "name": "douyin-operation-expert",
+  "version": "2.0.0",
+  "description": "Douyin precision operations expert for short-video, live-streaming and local-life group-buying growth, grounded in the 3451 framework (triangle + five flows + regional IP), the official Shengyijing 4L/5A6C audience models (with F&B and hotel industry calibers, 6C, eight personas, crowd-pack targeting, crowd-flow 4 scenarios, touchpoint attribution, diagnostic Q&A), M1-M3 traffic allocation, mall 7-source traffic, search two-way capture, and ROI break-even methodology. Also pulls a video link's public stats + creator-backend full metrics (play count / completion rate / 2s-bounce / 5s-completion / avg watch time / traffic source breakdown / engagement rates) + spoken transcript, then delivers comprehensive 6-dimension scorecard with funnel analysis and cross-attribution optimization actions.",
+  "author": {
+    "name": "Multica",
+    "email": "multica@tencent.com"
+  },
+  "agents": ["./agents/douyin-operation-expert.md"],
+  "skills": ["./skills/douyin-precision-ops", "./skills/douyin-video-intel"],
+
+  "expertType": "agent",
+  "agentName": "douyin-operation-expert",
+
+  "displayName": {
+    "en": "Douyin Precision Operations Expert",
+    "zh": "抖音精细化运营专家"
+  },
+  "profession": {
+    "en": "Douyin Operations Strategist",
+    "zh": "抖音运营操盘手"
+  },
+  "displayDescription": {
+    "en": "Specialist in Douyin short-video, live-streaming and local-life group-buying operations, mastering the 3451 framework, 5A audience assets, mall 7-source traffic, search two-way capture and ROI break-even; also pulls video public data + creator-backend full metrics + transcript for comprehensive scorecard analysis and optimization actions.",
+    "zh": "抖音短视频/直播/团购操盘，精通3451与5A6C，支持视频全量数据+文案综合评估"
+  },
+  "avatar": "avatars/expert.png",
+  "categoryId": "05-MarketingGrowth",
+  "defaultInitPrompt": {
+    "en": "I am your Douyin precision operations expert, specialized in short-video, live-streaming and local-life group-buying growth. Tell me your account/store status (followers, recent views & recommend-flow ratio, live-room three-rates/velocity, group-buying redemption & rate, gross margin, operation score, ad budget) and I will use the 3451 framework to locate your gap and give an actionable plan.",
+    "zh": "我是抖音精细化运营专家，擅长短视频、直播与团购本地生活增长。请告诉我你的账号/门店现状（粉丝量、近期播放与推荐流占比、直播间三率/流速、团购核销率、毛利率、经营分、投放预算），我用3451框架帮你定位缺哪块，并给出可落地优化方案。"
+  },
+  "plugin": "douyin-operation-expert",
+  "tags": [
+    { "en": "Live & Short-Video Ops", "zh": "直播与短视频运营" },
+    { "en": "Local-Life Group-Buying", "zh": "团购本地生活" },
+    { "en": "Full-Funnel Audience Asset", "zh": "全域人群资产精细化" }
+  ],
+  "quickPrompts": [
+    {
+      "en": "I am your Douyin precision operations expert, specialized in short-video, live-streaming and local-life group-buying growth. Tell me your account/store status (followers, recent views & recommend-flow ratio, live-room three-rates/velocity, group-buying redemption & rate, gross margin, operation score, ad budget) and I will use the 3451 framework to locate your gap and give an actionable plan.",
+      "zh": "我是抖音精细化运营专家，擅长短视频、直播与团购本地生活增长。请告诉我你的账号/门店现状（粉丝量、近期播放与推荐流占比、直播间三率/流速、团购核销率、毛利率、经营分、投放预算），我用3451框架帮你定位缺哪块，并给出可落地优化方案。"
+    },
+    {
+      "en": "Diagnose my live room with the viewing-model vs conversion-model lens, and give a certainty + shift-focus revamp plan.",
+      "zh": "帮我用观看模型/成交模型诊断直播间，并给出确定性+转移焦点改造方案"
+    },
+    {
+      "en": "Give me a Douyin video link (and your creator-backend data if available), I'll pull full metrics + transcript and deliver a comprehensive 6-dimension scorecard with funnel analysis, content cross-attribution and Top 5 optimization actions.",
+      "zh": "丢一条抖音视频链接（有后台数据更好），我帮你扒取全量数据+口播文案，输出综合评分卡、漏斗分析、数据×文案交叉归因和Top5优化建议"
+    }
+  ]
+}

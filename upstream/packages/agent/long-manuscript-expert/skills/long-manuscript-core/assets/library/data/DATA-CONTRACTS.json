@@ -1,0 +1,148 @@
+{
+  "schema": "paper.workpaper-data-contracts.v1",
+  "status": "asset_input_contract_and_service_design;not_deployed",
+  "intent_field": {
+    "field_path": "string",
+    "value": "typed value or null",
+    "origin": [
+      "user_explicit",
+      "derived",
+      "unknown"
+    ],
+    "status": [
+      "known",
+      "unknown",
+      "conflict"
+    ],
+    "basis_refs": "array of local evidence/material anchors",
+    "adoption_state": [
+      "effective",
+      "proposed",
+      "rejected",
+      "superseded"
+    ],
+    "evidence_version": "integer or null"
+  },
+  "material": {
+    "id": "local opaque ID",
+    "kind": [
+      "text",
+      "pdf_scan",
+      "image",
+      "table",
+      "audio",
+      "video",
+      "web"
+    ],
+    "source_family_id": "same original keeps one family",
+    "content_ref": "user-selected project ref;never credential URL",
+    "scope": "allowed purpose/readers",
+    "integrity": "page/sheet/duration manifest plus missing ranges",
+    "execution": {
+      "applicable": "true|false|null",
+      "available": "true|false|null",
+      "performed": "true|false|null",
+      "effective": "true|false|null",
+      "adopted_into_output": "true|false|null"
+    },
+    "coverage": "explicit ranges and unobserved ranges",
+    "tool": "name/version or unknown",
+    "review_state": [
+      "not_run",
+      "partial",
+      "verified",
+      "conflict",
+      "unreadable"
+    ]
+  },
+  "evidence": {
+    "id": "opaque ID",
+    "material_id": "existing material",
+    "source_family_id": "existing family",
+    "locator": "page/region/cell/timecode/paragraph",
+    "kind": [
+      "observation",
+      "source_statement",
+      "calculation",
+      "inference",
+      "author_judgement",
+      "assumption",
+      "synthetic_example"
+    ],
+    "value": "typed original observation or null",
+    "unit": "required for quantitative value",
+    "period": "start/end/timezone or unknown",
+    "denominator": "explicit definition/value or null",
+    "verification": "method,state,actor_class,time; no secret identity",
+    "limitations": "array"
+  },
+  "claim": {
+    "id": "CLM-opaque",
+    "statement": "bounded proposition",
+    "status": [
+      "supported",
+      "limited",
+      "conflicting",
+      "unknown",
+      "hypothesis"
+    ],
+    "evidence_refs": "existing IDs",
+    "counterevidence_refs": "existing IDs or searched-scope note",
+    "conditions": "scope/version/period",
+    "critical": "boolean",
+    "output_slots": "where consumed in prose/table/figure",
+    "falsifier": "what would change the conclusion"
+  },
+  "dataset_row": {
+    "id": "opaque",
+    "metric": "definition",
+    "value": "number or null",
+    "unit": "string",
+    "period": "start/end/timezone",
+    "denominator": "value and definition or null",
+    "cohort": "task/population/environment",
+    "source_refs": "evidence IDs",
+    "source_family_id": "original family",
+    "aggregation": "original/mean/median/p95/count etc",
+    "missing_reason": "explicit when null",
+    "comparability_group": "only common task/units/period may combine",
+    "transform_ref": "formula/input lineage"
+  },
+  "quality_check": {
+    "id": "rule ID",
+    "layer": [
+      "structure",
+      "arithmetic",
+      "provenance",
+      "semantic",
+      "author_protection",
+      "delivery"
+    ],
+    "state": [
+      "pass",
+      "fail",
+      "unknown",
+      "not_applicable"
+    ],
+    "basis_refs": "local evidence/actual execution refs",
+    "result_source": [
+      "rule_computed",
+      "host_observed",
+      "model_inferred",
+      "user_reported"
+    ],
+    "critical": "boolean"
+  },
+  "non_promotions": [
+    "available is not performed",
+    "OCR/ASR success is not complete understanding",
+    "same original+OCR+screenshot is one source family",
+    "HTTP200 is not business or manuscript completion",
+    "quality field populated is not semantic truth",
+    "missing denominator cannot become zero",
+    "derived intent is not user adoption",
+    "current snapshot is not full-window availability"
+  ],
+  "stable_product_id": "long-manuscript-expert",
+  "target_version": "2026.11.5"
+}

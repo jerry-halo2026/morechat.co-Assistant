@@ -1,0 +1,26 @@
+name: validate
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  gate:
+    name: portability gate (G1-G5)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Run hard gate (tokens, avatars, limits, index sha256, utf-8)
+        run: node scripts/check-portability.mjs
+      - name: Summarize index
+        run: |
+          node -e '
+            const fs=require("fs"),c=require("crypto");
+            const idx=JSON.parse(fs.readFileSync("index.json","utf8"));
+            console.log("schemaVersion:", idx.schemaVersion);
+            console.log("packages:", idx.packages.length, "skills:", idx.stats.skills, "files:", idx.stats.files);
+            console.log("index.json sha256:", c.createHash("sha256").update(fs.readFileSync("index.json")).digest("hex"));
+          '

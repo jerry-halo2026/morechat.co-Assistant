@@ -1,0 +1,18 @@
+{
+  "stage": "V2",
+  "inputs_design_sha256": {
+    "V0-intake.json": "<sha256>",
+    "V1-visual-problems.json": "<sha256>"
+  },
+  "selections": [],
+  "no_ref_needed": {
+    "<V1问题ID>": "<说明如何用当前源帧、文案和验证计划校准方向>"
+  },
+  "new_structure_cards": [],
+  "_说明": "先完成 V1.direction_hypothesis。逐项覆盖 V1 问题。公开版从当前项目证据出发，通常保留 selections 为空。",
+  "direction_context": {
+    "source": "V1.direction_hypothesis",
+    "global_primary_direction": "<必须与 V1.direction_hypothesis.global_baseline.primary_direction 一致>",
+    "reference_goal": "<本轮需用当前项目证据校准的图文关系、字形语气、时序或强调尺度>"
+  }
+}

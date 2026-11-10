@@ -1,0 +1,43 @@
+{
+  "name": "ecom-data-analyst",
+  "version": "1.0.0",
+  "description": "Zero-barrier e-commerce data analyst that speaks merchant language—directly tells you which product is bleeding money and what to fix tomorrow.",
+  "author": {
+    "name": "左木莲安",
+    "email": "zuomulianan@teesoft.cn"
+  },
+  "agents": ["./agents/ecom-data-analyst.md"],
+
+  "expertType": "agent",
+  "agentName": "ecom-data-analyst",
+
+  "displayName": {
+    "en": "E-commerce Data Analyst",
+    "zh": "左木莲安"
+  },
+  "profession": {
+    "en": "E-commerce Data Analyst",
+    "zh": "电商数据分析专家"
+  },
+  "displayDescription": {
+    "en": "Zero-barrier upload: skip the jargon, get straight to which product is losing money and what to fix tomorrow. Your smart e-commerce CGO for slashing costs and growing profits.",
+    "zh": "零门槛上传数据，不讲废话，直接指出哪个产品亏钱、明天该改哪个词——帮你降本增效多赚钱的智能电商CGO"
+  },
+  "avatar": "avatars/expert.png",
+  "categoryId": "05-MarketingGrowth",
+  "defaultInitPrompt": {
+    "zh": "上传昨天的店铺数据，帮我生成一份经营日报，直接告诉我哪个产品有问题、明天该调整什么",
+    "en": "Upload yesterday's store data and generate a daily report—tell me directly which products are bleeding and what to fix tomorrow"
+  },
+  "plugin": "ecom-data-analyst",
+  "tags": [
+    { "en": "E-commerce Analytics", "zh": "电商数据分析" },
+    { "en": "ROI & Ad Optimization", "zh": "ROI与投流优化" },
+    { "en": "Hit Product & Competitor Intel", "zh": "爆品预测与竞品拆解" }
+  ],
+  "quickPrompts": [
+    { "en": "Upload yesterday's store data and generate a daily report—tell me directly which products are bleeding and what to fix tomorrow", "zh": "上传昨天的店铺数据，帮我生成一份经营日报，直接告诉我哪个产品有问题、明天该调整什么" },
+    { "en": "Analyze my ad campaign data, identify keywords and audiences burning money without converting, and give optimization tips", "zh": "分析我的直通车/千川投放数据，找出哪些关键词和人群在烧钱不转化，给我优化建议" },
+    { "en": "Diagnose why my store traffic suddenly dropped, analyze the conversion funnel, and give investigation leads with fixes", "zh": "帮我诊断店铺流量为什么突然下滑，分析流量漏斗给出排查方向和修复建议" }
+  ]
+}

@@ -1,0 +1,2848 @@
+{
+  "schemaVersion": 1,
+  "generator": "morechat-assistant/scripts/build-catalog.mjs",
+  "generatedAt": "2026-11-10T05:24:28.838Z",
+  "source": {
+    "catalogRoot": "catalog",
+    "upstreamRoot": "upstream",
+    "sourceRepo": "D:/dev/bot"
+  },
+  "avatarPolicy": "avatars are not distributed; generated product-side",
+  "hashAlgorithm": "sha256 over files sorted by relative path, fed as relPath\\0 content \\0",
+  "stats": {
+    "packages": 39,
+    "agents": 34,
+    "teams": 5,
+    "skills": 113,
+    "files": 977,
+    "bytes": 14969836,
+    "sourceBytes": 14951123,
+    "duplicateSkillNames": [
+      {
+        "name": "fullstack-dev",
+        "count": 2
+      },
+      {
+        "name": "research",
+        "count": 2
+      },
+      {
+        "name": "research-add-fields",
+        "count": 2
+      },
+      {
+        "name": "research-add-items",
+        "count": 2
+      },
+      {
+        "name": "research-deep",
+        "count": 2
+      },
+      {
+        "name": "research-report",
+        "count": 2
+      }
+    ]
+  },
+  "packages": [
+    {
+      "id": "ai-engineer",
+      "kind": "agent",
+      "name": {
+        "zh": "深网网",
+        "en": "Amy"
+      },
+      "profession": {
+        "zh": "AI工程师",
+        "en": "AI Engineer"
+      },
+      "description": "Full-stack AI engineer proficient in ML model development, deployment, and optimization, bringing AI from research papers to production environments",
+      "descriptionZh": "精通ML模型开发部署优化的全栈AI工程师，将AI从论文带到生产环境",
+      "version": "1.0.2",
+      "path": "packages/agent/ai-engineer",
+      "files": 44,
+      "bytes": 223542,
+      "sha256": "facd415b08bfb20d5d0664a1960ba2febd42d7b207587c50230636f77bd1515f",
+      "skills": [
+        {
+          "name": "agent-browser-core",
+          "ns": "ai-engineer--agent-browser-core",
+          "path": "skills/ai-engineer--agent-browser-core",
+          "files": 6,
+          "bytes": 7059,
+          "sha256": "74c1b437d4a836e8ba8b7b08c16506655862206423efe49c5e6e0fabc112f699"
+        },
+        {
+          "name": "agent-team-orchestration",
+          "ns": "ai-engineer--agent-team-orchestration",
+          "path": "skills/ai-engineer--agent-team-orchestration",
+          "files": 6,
+          "bytes": 21431,
+          "sha256": "d79b5965541dbddeba07dc5589059fd8115b493eef679e66763ab35b05314155"
+        },
+        {
+          "name": "deep-research",
+          "ns": "ai-engineer--deep-research",
+          "path": "skills/ai-engineer--deep-research",
+          "files": 8,
+          "bytes": 22830,
+          "sha256": "4312fe5b9d306febac0e56c4e1f8cd7b8e01fa3ea36d2fdf217d853adee48100"
+        },
+        {
+          "name": "research",
+          "ns": "ai-engineer--deep-research-research-en-research",
+          "path": "skills/ai-engineer--deep-research-research-en-research",
+          "files": 2,
+          "bytes": 11184,
+          "sha256": "4a170fda558c54396c82fd656b34e7d61bf033436c48f8c66dd17275ede81d69"
+        },
+        {
+          "name": "research-add-fields",
+          "ns": "ai-engineer--deep-research-research-en-research-add-fields",
+          "path": "skills/ai-engineer--deep-research-research-en-research-add-fields",
+          "files": 1,
+          "bytes": 936,
+          "sha256": "a3527dbe965797a1f49784249a32e6e3f0b851cbbcd5b0194fd3d27a0034e7c9"
+        },
+        {
+          "name": "research-add-items",
+          "ns": "ai-engineer--deep-research-research-en-research-add-items",
+          "path": "skills/ai-engineer--deep-research-research-en-research-add-items",
+          "files": 1,
+          "bytes": 800,
+          "sha256": "3cc46fe5492f005da5dd866b85d24b7e6a39cc61b7e41653f28151c5f14f26b8"
+        },
+        {
+          "name": "research-deep",
+          "ns": "ai-engineer--deep-research-research-en-research-deep",
+          "path": "skills/ai-engineer--deep-research-research-en-research-deep",
+          "files": 1,
+          "bytes": 3520,
+          "sha256": "9d764812d66e986315264a519ba98f6f304b3695167a890089f29bc9cc82117a"
+        },
+        {
+          "name": "research-report",
+          "ns": "ai-engineer--deep-research-research-report",
+          "path": "skills/ai-engineer--deep-research-research-report",
+          "files": 1,
+          "bytes": 3616,
+          "sha256": "03b6e1d76e3561fc1ea6c92c4cf1f8ade73efd3e8cb3609507bdd512b3e41adc"
+        },
+        {
+          "name": "fullstack-dev",
+          "ns": "ai-engineer--fullstack-dev",
+          "path": "skills/ai-engineer--fullstack-dev",
+          "files": 9,
+          "bytes": 121065,
+          "sha256": "5a8609adf29e99f6e8f3aa3a4e6509009baf8fb56eb7e8994be12c614c62be68"
+        },
+        {
+          "name": "research",
+          "ns": "ai-engineer--research",
+          "path": "skills/ai-engineer--research",
+          "files": 2,
+          "bytes": 10712,
+          "sha256": "36323726d1cb46d0bd3cbb8328f875f618e65a9ab17c70642bfda677ca788768"
+        },
+        {
+          "name": "research-add-fields",
+          "ns": "ai-engineer--research-add-fields",
+          "path": "skills/ai-engineer--research-add-fields",
+          "files": 1,
+          "bytes": 906,
+          "sha256": "56c955ac64466276a054eab9dfdc419ef70fc0de2164c1adcc60750e2649a6e1"
+        },
+        {
+          "name": "research-add-items",
+          "ns": "ai-engineer--research-add-items",
+          "path": "skills/ai-engineer--research-add-items",
+          "files": 1,
+          "bytes": 786,
+          "sha256": "a9b2e534ee28ec23bbfd6d71293bfd734cf56bda5140c5e7e81c1e3f7147ea8d"
+        },
+        {
+          "name": "research-deep",
+          "ns": "ai-engineer--research-deep",
+          "path": "skills/ai-engineer--research-deep",
+          "files": 1,
+          "bytes": 3393,
+          "sha256": "2ba78f0b3bdd297fc52f17613facf4144c262799928ccaa464d7302d64fedfa3"
+        },
+        {
+          "name": "research-report",
+          "ns": "ai-engineer--research-report",
+          "path": "skills/ai-engineer--research-report",
+          "files": 1,
+          "bytes": 3859,
+          "sha256": "8120fdf80280d50fbbb61460e6af240cd1296f2e87dce9f55fc445b221880162"
+        }
+      ],
+      "requires": [
+        "python"
+      ],
+      "tags": [
+        {
+          "zh": "AI工程",
+          "en": "AI Engineering"
+        },
+        {
+          "zh": "模型部署",
+          "en": "Model Deployment"
+        },
+        {
+          "zh": "ML流水线",
+          "en": "ML Pipeline"
+        }
+      ],
+      "categoryId": "04-DataAI"
+    },
+    {
+      "id": "backend-architect",
+      "kind": "agent",
+      "name": {
+        "zh": "磐石石",
+        "en": "Joy"
+      },
+      "profession": {
+        "zh": "后端架构师",
+        "en": "Backend Architect"
+      },
+      "description": "Deep expertise in distributed systems and high-concurrency architecture, excelling at transforming complex business into elegant technical solutions",
+      "descriptionZh": "深耕分布式系统和高并发架构，擅长将复杂业务转化为优雅技术方案",
+      "version": "1.0.1",
+      "path": "packages/agent/backend-architect",
+      "files": 112,
+      "bytes": 5832129,
+      "sha256": "44d156cdd75252516139227bcdb5e63c68370171c00ea99612295643a0756fe3",
+      "skills": [
+        {
+          "name": "frontend-dev",
+          "ns": "backend-architect--frontend-dev",
+          "path": "skills/backend-architect--frontend-dev",
+          "files": 98,
+          "bytes": 5687308,
+          "sha256": "9b149af96e5e89f99a1428e17cca1a86b37bfa1b02ef2ab8cde86b5efaae45e2"
+        },
+        {
+          "name": "fullstack-dev",
+          "ns": "backend-architect--fullstack-dev",
+          "path": "skills/backend-architect--fullstack-dev",
+          "files": 9,
+          "bytes": 124899,
+          "sha256": "8a9c1c954f0db37be53ff4cff5ab808785d7074aee5b164d2878f17e51d600d5"
+        }
+      ],
+      "requires": [
+        "python",
+        "canvas"
+      ],
+      "tags": [
+        {
+          "zh": "后端架构",
+          "en": "Backend Architecture"
+        },
+        {
+          "zh": "微服务",
+          "en": "Microservices"
+        },
+        {
+          "zh": "高可用设计",
+          "en": "High Availability"
+        }
+      ],
+      "categoryId": "02-Engineering"
+    },
+    {
+      "id": "blm-strategy-advisor",
+      "kind": "agent",
+      "name": {
+        "zh": "BLM战略分析顾问",
+        "en": "BLM Strategy Advisor"
+      },
+      "profession": {
+        "zh": "战略分析顾问",
+        "en": "Strategy Analysis Advisor"
+      },
+      "description": "Run a real strategy review with the Business Leadership Model: paired gap analysis, five-view market insight, six-element business design, then decode strategy into key tasks with measurable metrics. I ask for missing facts, mark unverified market data, and a built-in checker catches empty reports. The final call is yours.",
+      "descriptionZh": "用业务领先模型（BLM）带你做战略分析和年度规划：先找差距、再看市场、定战略，最后落到能考核的关键任务。缺的信息会追问，市场数据不编造。",
+      "version": "1.1.1",
+      "path": "packages/agent/blm-strategy-advisor",
+      "files": 5,
+      "bytes": 49003,
+      "sha256": "591e94bff29b93ff2d53af0b20c9e5e0b654c5163dfe225db6d44968e984ad1b",
+      "skills": [
+        {
+          "name": "blm-coverage-checker",
+          "ns": "blm-strategy-advisor--blm-coverage-checker",
+          "path": "skills/blm-strategy-advisor--blm-coverage-checker",
+          "files": 2,
+          "bytes": 28105,
+          "sha256": "41dec82ba33c4df896c984b15b0b22b000613ebfc32595c0fa8bf0a753d267e7"
+        }
+      ],
+      "requires": [
+        "python"
+      ],
+      "tags": [
+        {
+          "en": "Strategy Analysis",
+          "zh": "战略分析"
+        },
+        {
+          "en": "BLM",
+          "zh": "业务领先模型"
+        },
+        {
+          "en": "Strategy Decoding",
+          "zh": "战略解码"
+        }
+      ],
+      "categoryId": "12-IndustryConsultant"
+    },
+    {
+      "id": "data-analysis",
+      "kind": "agent",
+      "name": {
+        "zh": "数据分析专家团",
+        "en": "Data Team"
+      },
+      "profession": {
+        "zh": "数据分析团队",
+        "en": "Data Analysis Expert Team"
+      },
+      "description": "Six-expert data team: clarify the question, audit the data, dig with ten playbooks, red-team every conclusion before delivery - with a zero-dependency analysis toolbox built in.",
+      "descriptionZh": "六人专家团接力：澄清需求、体检数据、十大打法深挖，结论先过红队复核再交付，自带零依赖分析工具箱。",
+      "version": "1.0.0",
+      "path": "packages/agent/data-analysis",
+      "files": 19,
+      "bytes": 101628,
+      "sha256": "78184ebcd3716dad2201a56a6dd8c0e88444668ef703d12107a3ecf17ffbed27",
+      "skills": [
+        {
+          "name": "data-analysis-cn",
+          "ns": "data-analysis--data-analysis-cn",
+          "path": "skills/data-analysis--data-analysis-cn",
+          "files": 10,
+          "bytes": 80457,
+          "sha256": "24e251077123df7d4d5dea886246350475afef411d85d219b4cccd6187356df4"
+        }
+      ],
+      "requires": [
+        "python"
+      ],
+      "tags": [
+        {
+          "en": "Data Analysis",
+          "zh": "数据分析"
+        },
+        {
+          "en": "Data Driven",
+          "zh": "数据驱动"
+        },
+        {
+          "en": "Business Analysis",
+          "zh": "经营分析"
+        }
+      ],
+      "categoryId": "04-DataAI"
+    },
+    {
+      "id": "designkit-ugc-commerce",
+      "kind": "agent",
+      "name": {
+        "zh": "真人口播",
+        "en": "UGC Product Videos"
+      },
+      "profession": {
+        "zh": "UGC口播带货AI视频导演",
+        "en": "UGC Commerce Video Director"
+      },
+      "description": "Create authentic UGC presenter videos from product images and selling points, tailored to each platform and conversion goal.",
+      "descriptionZh": "根据商品素材完成UGC口播带货AI视频创作，从购买理由、真人感口播脚本、镜头到成片，适配产品种草与广告投放。美图设计室提供。",
+      "version": "1.0.39",
+      "path": "packages/agent/designkit-ugc-commerce",
+      "files": 5,
+      "bytes": 40795,
+      "sha256": "c2076a40887de6efeef53dc3d2d149ed43c54fedcb61e79024fb4adbdcb67f36",
+      "skills": [
+        {
+          "name": "ugc-commerce",
+          "ns": "designkit-ugc-commerce--ugc-commerce",
+          "path": "skills/designkit-ugc-commerce--ugc-commerce",
+          "files": 2,
+          "bytes": 26652,
+          "sha256": "4382a2d011a105b2da9075d45cfba36d72de76156cda49f46cb901118f9e399c"
+        }
+      ],
+      "requires": [],
+      "tags": [
+        {
+          "en": "DesignKit",
+          "zh": "美图设计室"
+        },
+        {
+          "en": "UGC Video",
+          "zh": "UGC视频"
+        },
+        {
+          "en": "Social Commerce",
+          "zh": "口播带货"
+        }
+      ],
+      "categoryId": "06-ContentCreative"
+    },
+    {
+      "id": "douyin-live-ad-expert",
+      "kind": "agent",
+      "name": {
+        "zh": "抖音投流专家",
+        "en": "Douyin Live Ad Expert"
+      },
+      "profession": {
+        "zh": "抖音直播间投流顾问",
+        "en": "Douyin Live Streaming Traffic Consultant"
+      },
+      "description": "All-in-one Douyin ad expert: data answers three questions — where you're stuck, why, and how far you are from the market benchmark — then hands you an action plan both enterprise teams and solo operators can run directly.",
+      "descriptionZh": "抖音全能投流专家：用数据说清你卡在哪、为何卡、离大盘差多少，再给一套企业和个人都能照做的投流方案",
+      "version": "1.0.1",
+      "path": "packages/agent/douyin-live-ad-expert",
+      "files": 15,
+      "bytes": 74517,
+      "sha256": "fd5c353ed5930553f4d5b2ded64fd9a88a92d6924924acc4444a465b437ba55d",
+      "skills": [
+        {
+          "name": "live-ad-analyze",
+          "ns": "douyin-live-ad-expert--live-ad-analyze",
+          "path": "skills/douyin-live-ad-expert--live-ad-analyze",
+          "files": 2,
+          "bytes": 7713,
+          "sha256": "7742b6ca15b5f72577213e8f6d4f561ddedf56d6fbba54d6ace65d987a32d2bf"
+        },
+        {
+          "name": "live-ad-collect",
+          "ns": "douyin-live-ad-expert--live-ad-collect",
+          "path": "skills/douyin-live-ad-expert--live-ad-collect",
+          "files": 2,
+          "bytes": 6916,
+          "sha256": "c47a47cca80a72de778ec4883aabad4c000a9083ee72ae623436b4b8e9c83949"
+        },
+        {
+          "name": "live-ad-flash",
+          "ns": "douyin-live-ad-expert--live-ad-flash",
+          "path": "skills/douyin-live-ad-expert--live-ad-flash",
+          "files": 4,
+          "bytes": 22809,
+          "sha256": "2d295437134da94e6ced01cff017129eb161a31fb4a6da44113430b9c30aa1b5"
+        },
+        {
+          "name": "live-ad-strategy",
+          "ns": "douyin-live-ad-expert--live-ad-strategy",
+          "path": "skills/douyin-live-ad-expert--live-ad-strategy",
+          "files": 2,
+          "bytes": 7121,
+          "sha256": "460e350c12be477484a20d9c75b758d3b376efd0363deb70b391e48f8aaf91b9"
+        },
+        {
+          "name": "live-ad-theory",
+          "ns": "douyin-live-ad-expert--live-ad-theory",
+          "path": "skills/douyin-live-ad-expert--live-ad-theory",
+          "files": 2,
+          "bytes": 13008,
+          "sha256": "033510facf822171fff9551637768cfcb20a3f2fa5ac38b7afa0e4ff1f89757b"
+        }
+      ],
+      "requires": [],
+      "tags": [
+        {
+          "en": "Traffic Diagnosis",
+          "zh": "直播间投流诊断"
+        },
+        {
+          "en": "Root-Cause Attribution",
+          "zh": "流量归因"
+        },
+        {
+          "en": "Market Benchmark",
+          "zh": "大盘数据对比"
+        }
+      ],
+      "categoryId": "05-MarketingGrowth"
+    },
+    {
+      "id": "douyin-operation-expert",
+      "kind": "agent",
+      "name": {
+        "zh": "抖音精细化运营专家",
+        "en": "Douyin Precision Operations Expert"
+      },
+      "profession": {
+        "zh": "抖音运营操盘手",
+        "en": "Douyin Operations Strategist"
+      },
+      "description": "Specialist in Douyin short-video, live-streaming and local-life group-buying operations, mastering the 3451 framework, 5A audience assets, mall 7-source traffic, search two-way capture and ROI break-even; also pulls video public data + creator-backend full metrics + transcript for comprehensive scorecard analysis and optimization actions.",
+      "descriptionZh": "抖音短视频/直播/团购操盘，精通3451与5A6C，支持视频全量数据+文案综合评估",
+      "version": "2.0.0",
+      "path": "packages/agent/douyin-operation-expert",
+      "files": 9,
+      "bytes": 122629,
+      "sha256": "46554020f25f6f81900cbb3640cfddf8e23cdfedda7b5224032461cf8f34dc6c",
+      "skills": [
+        {
+          "name": "douyin-precision-ops",
+          "ns": "douyin-operation-expert--douyin-precision-ops",
+          "path": "skills/douyin-operation-expert--douyin-precision-ops",
+          "files": 1,
+          "bytes": 33188,
+          "sha256": "d98e7fb0f8a899af93bac062f6af87ea825e6e6a5cd349efc8c2deb7162b9d0f"
+        },
+        {
+          "name": "douyin-video-intel",
+          "ns": "douyin-operation-expert--douyin-video-intel",
+          "path": "skills/douyin-operation-expert--douyin-video-intel",
+          "files": 5,
+          "bytes": 68745,
+          "sha256": "1f4b6e02621e99ccce9369b2ddbc34d1a21fa937d2caf440523d8aaa0dc11624"
+        }
+      ],
+      "requires": [
+        "python"
+      ],
+      "tags": [
+        {
+          "en": "Live & Short-Video Ops",
+          "zh": "直播与短视频运营"
+        },
+        {
+          "en": "Local-Life Group-Buying",
+          "zh": "团购本地生活"
+        },
+        {
+          "en": "Full-Funnel Audience Asset",
+          "zh": "全域人群资产精细化"
+        }
+      ],
+      "categoryId": "05-MarketingGrowth"
+    },
+    {
+      "id": "douyin-strategist",
+      "kind": "agent",
+      "name": {
+        "zh": "斗音音",
+        "en": "Maya"
+      },
+      "profession": {
+        "zh": "抖音策略师",
+        "en": "Douyin Strategist"
+      },
+      "description": "Expert in Douyin algorithm and content ecosystem, creating viral short videos and achieving commercial monetization",
+      "descriptionZh": "精通抖音算法和内容生态，打造短视频爆款并实现商业化变现",
+      "version": "1.0.2",
+      "path": "packages/agent/douyin-strategist",
+      "files": 13,
+      "bytes": 68674,
+      "sha256": "26c7a51626386a1eae7c7014782f8a6c37cfc2227caa269ceef1691958b8c699",
+      "skills": [
+        {
+          "name": "anti-distill",
+          "ns": "douyin-strategist--anti-distill",
+          "path": "skills/douyin-strategist--anti-distill",
+          "files": 6,
+          "bytes": 33789,
+          "sha256": "0c8c6e640ede00628daf2ec330175ecbbc49c49bc1ec8b5799286e461847e2c7"
+        },
+        {
+          "name": "humanizer",
+          "ns": "douyin-strategist--humanizer",
+          "path": "skills/douyin-strategist--humanizer",
+          "files": 2,
+          "bytes": 21209,
+          "sha256": "4b8897e3fcb5e1b00b50cf183ed89cd6cc24ab18839bf2fd4342632988fe8295"
+        }
+      ],
+      "requires": [],
+      "tags": [
+        {
+          "zh": "抖音运营",
+          "en": "Douyin Operations"
+        },
+        {
+          "zh": "短视频策略",
+          "en": "Short Video Strategy"
+        },
+        {
+          "zh": "流量变现",
+          "en": "Traffic Monetization"
+        }
+      ],
+      "categoryId": "06-ContentCreative"
+    },
+    {
+      "id": "douyin-viral-content",
+      "kind": "agent",
+      "name": {
+        "zh": "抖音爆款内容专家",
+        "en": "Douyin Viral Content Expert"
+      },
+      "profession": {
+        "zh": "抖音爆款内容制造专家",
+        "en": "Douyin Viral Content Producer"
+      },
+      "description": "A fully-automated viral content pipeline for Douyin: scan hotspots in 3 dimensions, benchmark surging hits, replicate distilled copy, screen prohibited words, and verify results in a closed loop.",
+      "descriptionZh": "全自动爆款生产线：三维扫描热点、锁定飙升爆款、复刻蒸馏文案、违禁词扫雷，闭环验证效果。",
+      "version": "1.0.0",
+      "path": "packages/agent/douyin-viral-content",
+      "files": 49,
+      "bytes": 418006,
+      "sha256": "67b9f5185663eb62c51e9d930ad4e86f4eb8b3d6cbd1b223c5105eb4efa2187c",
+      "skills": [
+        {
+          "name": "douyin-ai-feed",
+          "ns": "douyin-viral-content--douyin-ai-feed",
+          "path": "skills/douyin-viral-content--douyin-ai-feed",
+          "files": 5,
+          "bytes": 48443,
+          "sha256": "c4a36ac8600f4b2fd0810a000aa3035a02005215f1694429121e4dadeb8f4e1f"
+        },
+        {
+          "name": "douyin-content-surge",
+          "ns": "douyin-viral-content--douyin-content-surge",
+          "path": "skills/douyin-viral-content--douyin-content-surge",
+          "files": 6,
+          "bytes": 33524,
+          "sha256": "25d016c55ef80a9108427d3dd2fe379c56bd8cb771881959083617fd8f59312e"
+        },
+        {
+          "name": "douyin-daily-hot",
+          "ns": "douyin-viral-content--douyin-daily-hot",
+          "path": "skills/douyin-viral-content--douyin-daily-hot",
+          "files": 6,
+          "bytes": 34509,
+          "sha256": "b56eba72a73462db10e7f12985ed477a05073542c9358db82bc2f2c755573484"
+        },
+        {
+          "name": "douyin-hot-trend",
+          "ns": "douyin-viral-content--douyin-hot-trend",
+          "path": "skills/douyin-viral-content--douyin-hot-trend",
+          "files": 7,
+          "bytes": 85167,
+          "sha256": "27c161f108e8ec159a2e3e64865fb4b329c1cd26905903a651bcca702e65c29b"
+        },
+        {
+          "name": "douyin-prohibited-word",
+          "ns": "douyin-viral-content--douyin-prohibited-word",
+          "path": "skills/douyin-viral-content--douyin-prohibited-word",
+          "files": 5,
+          "bytes": 51799,
+          "sha256": "ad159316dd2d2515ee61e76ce8825be55134beac16a6a91996378b25e6b98977"
+        },
+        {
+          "name": "douyin-search",
+          "ns": "douyin-viral-content--douyin-search",
+          "path": "skills/douyin-viral-content--douyin-search",
+          "files": 4,
+          "bytes": 23137,
+          "sha256": "97d4926fc587957593c38f51ef5c611c1a234753dac15480bb2eb6abbb1e93c6"
+        },
+        {
+          "name": "douyin-weekly-surge",
+          "ns": "douyin-viral-content--douyin-weekly-surge",
+          "path": "skills/douyin-viral-content--douyin-weekly-surge",
+          "files": 6,
+          "bytes": 34281,
+          "sha256": "e0a55986ed35f9473669d12ba37c13b7a722a1cd0af791d6e273503563733aa0"
+        },
+        {
+          "name": "multi-copywrite-alchemy",
+          "ns": "douyin-viral-content--multi-copywrite-alchemy",
+          "path": "skills/douyin-viral-content--multi-copywrite-alchemy",
+          "files": 7,
+          "bytes": 88285,
+          "sha256": "cb8b1bce63ab148c0e7cd70d77c72e620250dac86e0c94b6ed0d568775a7e34d"
+        }
+      ],
+      "requires": [
+        "python"
+      ],
+      "tags": [
+        {
+          "en": "Viral Copywriting",
+          "zh": "爆款文案"
+        },
+        {
+          "en": "Trend Discovery",
+          "zh": "热点挖掘"
+        },
+        {
+          "en": "Content Compliance",
+          "zh": "合规扫雷"
+        }
+      ],
+      "categoryId": "06-ContentCreative"
+    },
+    {
+      "id": "ecom-data-analyst",
+      "kind": "agent",
+      "name": {
+        "zh": "左木莲安",
+        "en": "E-commerce Data Analyst"
+      },
+      "profession": {
+        "zh": "电商数据分析专家",
+        "en": "E-commerce Data Analyst"
+      },
+      "description": "Zero-barrier upload: skip the jargon, get straight to which product is losing money and what to fix tomorrow. Your smart e-commerce CGO for slashing costs and growing profits.",
+      "descriptionZh": "零门槛上传数据，不讲废话，直接指出哪个产品亏钱、明天该改哪个词——帮你降本增效多赚钱的智能电商CGO",
+      "version": "1.0.0",
+      "path": "packages/agent/ecom-data-analyst",
+      "files": 3,
+      "bytes": 15249,
+      "sha256": "37735298a0f946c59c80f73e37b6abe4a9c748fd5aa4a31e7168d6284e652723",
+      "skills": [],
+      "requires": [],
+      "tags": [
+        {
+          "en": "E-commerce Analytics",
+          "zh": "电商数据分析"
+        },
+        {
+          "en": "ROI & Ad Optimization",
+          "zh": "ROI与投流优化"
+        },
+        {
+          "en": "Hit Product & Competitor Intel",
+          "zh": "爆品预测与竞品拆解"
+        }
+      ],
+      "categoryId": "05-MarketingGrowth"
+    },
+    {
+      "id": "fbsir-industry-scene-researcher",
+      "kind": "agent",
+      "name": {
+        "zh": "高创智库",
+        "en": "Gaochuang Think Tank"
+      },
+      "profession": {
+        "zh": "智能原生案例研究员",
+        "en": "Industry Scene Researcher"
+      },
+      "description": "Find useful cases across industries, check the evidence, and explain how AI changes the work. Turn documents, images and audiovisual material into actions suited to your business.",
+      "descriptionZh": "从业务难题出发，跨行业找案例、核验证据、拆解智能原生机制，把图文影音转成适合你的行动方案。",
+      "version": "2026.11.3",
+      "path": "packages/agent/fbsir-industry-scene-researcher",
+      "files": 50,
+      "bytes": 360442,
+      "sha256": "9215c20bc8370d9bea160f7e34284d507b66a15a3b75566ffcfb4545c59769db",
+      "skills": [
+        {
+          "name": "industry-scene-service-recording",
+          "ns": "fbsir-industry-scene-researcher--industry-scene-service-recording",
+          "path": "skills/fbsir-industry-scene-researcher--industry-scene-service-recording",
+          "files": 45,
+          "bytes": 336758,
+          "sha256": "5f0350bc83b620851297b7ecd68eeee7b52d40d154cee53ff8c542b544617123"
+        }
+      ],
+      "requires": [
+        "node"
+      ],
+      "tags": [
+        {
+          "zh": "案例研究",
+          "en": "Case Research"
+        },
+        {
+          "zh": "智能原生",
+          "en": "AI-Native"
+        },
+        {
+          "zh": "企业创新",
+          "en": "Enterprise Innovation"
+        }
+      ],
+      "categoryId": "12-IndustryConsultant"
+    },
+    {
+      "id": "finance",
+      "kind": "agent",
+      "name": {
+        "zh": "finance",
+        "en": "finance"
+      },
+      "profession": {
+        "zh": "",
+        "en": ""
+      },
+      "description": "财务与会计插件，支持月末结账、日记账分录、账户核对、财务报表生成、差异分析和 SOX 审计支持。",
+      "descriptionZh": "",
+      "version": "1.0.0",
+      "path": "packages/agent/finance",
+      "files": 12,
+      "bytes": 118205,
+      "sha256": "208410344b1b0e4d1fe7989f680b2fcc48d8a634996726e7eb501be15c548b74",
+      "skills": [
+        {
+          "name": "audit-support",
+          "ns": "finance--audit-support",
+          "path": "skills/finance--audit-support",
+          "files": 1,
+          "bytes": 16779,
+          "sha256": "d60c62d48624433d5316de2b130191ca526aa67d195d064ac42995fdd73a16da"
+        },
+        {
+          "name": "close-management",
+          "ns": "finance--close-management",
+          "path": "skills/finance--close-management",
+          "files": 1,
+          "bytes": 10256,
+          "sha256": "48676e7d85703a699977ab0048d334388e07ac2e6fa37b1395528acedd42f193"
+        },
+        {
+          "name": "finance-workflows",
+          "ns": "finance--finance-workflows",
+          "path": "skills/finance--finance-workflows",
+          "files": 1,
+          "bytes": 29435,
+          "sha256": "028771edebdd173e38956dc61eea274aa01cfd7d6cb7d8c7b1803620bc96da8e"
+        },
+        {
+          "name": "financial-statements",
+          "ns": "finance--financial-statements",
+          "path": "skills/finance--financial-statements",
+          "files": 1,
+          "bytes": 10009,
+          "sha256": "5ea312a9ca798266824d10d946f9f57664f0b96c6791e5a5d080dff1477c9fc0"
+        },
+        {
+          "name": "journal-entry-prep",
+          "ns": "finance--journal-entry-prep",
+          "path": "skills/finance--journal-entry-prep",
+          "files": 1,
+          "bytes": 7819,
+          "sha256": "68d7b55d1cd4bff2b3b854c55706a5d68a9538a8f843ccc91f583b35f2e8e00a"
+        },
+        {
+          "name": "reconciliation",
+          "ns": "finance--reconciliation",
+          "path": "skills/finance--reconciliation",
+          "files": 1,
+          "bytes": 8108,
+          "sha256": "75a7c08346805d5725d498620f3cf55222b901693298e6f3fee86440f9cc7453"
+        },
+        {
+          "name": "variance-analysis",
+          "ns": "finance--variance-analysis",
+          "path": "skills/finance--variance-analysis",
+          "files": 1,
+          "bytes": 11178,
+          "sha256": "ca9a24365b12d29838bd614e2638f7479e164b3043cb08680bc79bcb4bd1e29b"
+        }
+      ],
+      "requires": [],
+      "tags": [],
+      "categoryId": ""
+    },
+    {
+      "id": "flywheel-koc-matrix-recruiter",
+      "kind": "agent",
+      "name": {
+        "zh": "千人KOC分销矩阵主理",
+        "en": "千人KOC分销矩阵主理"
+      },
+      "profession": {
+        "zh": "增长飞轮-海量KOC短视频矩阵铺量与分发专家",
+        "en": "增长飞轮-海量KOC短视频矩阵铺量与分发专家"
+      },
+      "description": "设计低成本样品寄送、脚本模板批量分发与CPS提成机制，低门槛打造全网霸屏势能。",
+      "descriptionZh": "设计低成本样品寄送、脚本模板批量分发与CPS提成机制，低门槛打造全网霸屏势能。",
+      "version": "1.0.0",
+      "path": "packages/agent/flywheel-koc-matrix-recruiter",
+      "files": 8,
+      "bytes": 4408,
+      "sha256": "10ed9435c3fe5d4a4ee8fed4e8a59f6cf6070d5e738d52f76bb1b6c142f77093",
+      "skills": [
+        {
+          "name": "flywheel-koc-matrix-recruiter-core",
+          "ns": "flywheel-koc-matrix-recruiter--flywheel-koc-matrix-recruiter-core",
+          "path": "skills/flywheel-koc-matrix-recruiter--flywheel-koc-matrix-recruiter-core",
+          "files": 3,
+          "bytes": 730,
+          "sha256": "beaf886cd042238ee80d625a5255afe69584902979b3ac53ff908aa102e97111"
+        }
+      ],
+      "requires": [
+        "python"
+      ],
+      "tags": [
+        {
+          "zh": "KOC矩阵",
+          "en": "KOC矩阵"
+        },
+        {
+          "zh": "带货分销",
+          "en": "带货分销"
+        },
+        {
+          "zh": "达人寄样",
+          "en": "达人寄样"
+        }
+      ],
+      "categoryId": "05-MarketingGrowth"
+    },
+    {
+      "id": "huashu-doc-reviewer",
+      "kind": "agent",
+      "name": {
+        "zh": "花叔文档审稿专家",
+        "en": "Huashu Document Reviewer"
+      },
+      "profession": {
+        "zh": "合同与公文审稿",
+        "en": "Contract & Document Review"
+      },
+      "description": "AI reviewer that injects comments and tracked changes directly into your original .docx. No new file returned, formatting preserved.",
+      "descriptionZh": "为「一人公司」打造的 AI 审稿专家。直接在 .docx 原文里加批注气泡和追踪修订，不返回新文档、不破坏原格式。",
+      "version": "1.0.1",
+      "path": "packages/agent/huashu-doc-reviewer",
+      "files": 3,
+      "bytes": 10503,
+      "sha256": "ac94b3b53554cf418c87348d8fdf6f2d3e6d9902186d9cd0a2a414c4f4c44986",
+      "skills": [],
+      "requires": [],
+      "tags": [
+        {
+          "zh": "合同审查",
+          "en": "Contract Review"
+        },
+        {
+          "zh": "文档批注",
+          "en": "Document Annotation"
+        },
+        {
+          "zh": "追踪修订",
+          "en": "Tracked Changes"
+        }
+      ],
+      "categoryId": "11-SecurityCompliance"
+    },
+    {
+      "id": "jifan-lapian-fuke",
+      "kind": "agent",
+      "name": {
+        "zh": "爆款视频拉片与分镜复刻",
+        "en": "Video Breakdown and Restructure"
+      },
+      "profession": {
+        "zh": "拉片复刻师",
+        "en": "Video Breakdown and Restructure"
+      },
+      "description": "Produces ready-to-use drafts from your own input.",
+      "descriptionZh": "把一条爆款视频拆成逐镜结构表，再把结构搬到你自己的题材上，只借结构不搬素材。",
+      "version": "1.0.2",
+      "path": "packages/agent/jifan-lapian-fuke",
+      "files": 21,
+      "bytes": 42466,
+      "sha256": "9660bf3d70ca6bc8324e260f529b894598ecd704d3aec79aa9d454dc3f96118f",
+      "skills": [
+        {
+          "name": "jifan-lapian-chaifen",
+          "ns": "jifan-lapian-fuke--jifan-lapian-chaifen",
+          "path": "skills/jifan-lapian-fuke--jifan-lapian-chaifen",
+          "files": 5,
+          "bytes": 10057,
+          "sha256": "b340a1e5dcf9a8047625a2fc9a2b6ab248d89f5caebbc460a5da9b19006a0555"
+        },
+        {
+          "name": "jifan-lapian-jiegou",
+          "ns": "jifan-lapian-fuke--jifan-lapian-jiegou",
+          "path": "skills/jifan-lapian-fuke--jifan-lapian-jiegou",
+          "files": 5,
+          "bytes": 10385,
+          "sha256": "3c98ec7c49e8547640472b80ce41265d685e6e5e94be3d6412e0625407651586"
+        },
+        {
+          "name": "jifan-lapian-qingdan",
+          "ns": "jifan-lapian-fuke--jifan-lapian-qingdan",
+          "path": "skills/jifan-lapian-fuke--jifan-lapian-qingdan",
+          "files": 5,
+          "bytes": 10261,
+          "sha256": "1459806a1696c6e51eabcfa1ed44d468dbdaed8c166822efba85e8e634b9de5e"
+        }
+      ],
+      "requires": [
+        "python"
+      ],
+      "tags": [
+        {
+          "zh": "拉片拆解表生成",
+          "en": "Shot-by-shot Breakdown"
+        },
+        {
+          "zh": "结构复刻方案生成",
+          "en": "Structure Transfer Plan"
+        },
+        {
+          "zh": "复刻执行清单生成",
+          "en": "Production Checklist"
+        }
+      ],
+      "categoryId": "06-ContentCreative"
+    },
+    {
+      "id": "koc-ops-expert",
+      "kind": "agent",
+      "name": {
+        "zh": "KOC运营专家",
+        "en": "KOC Operations Expert"
+      },
+      "profession": {
+        "zh": "KOC 招募·培育·激励·分销全链路操盘专家",
+        "en": "KOC Recruitment, Nurture, Incentive & Distribution Strategist"
+      },
+      "description": "A senior KOC operator for brands. Sizes your pool against your actual headcount, picks people with the FIT-6 scorecard, drives first posts within 7 days, designs tiers, benefits and commissions that do not backfire, models sampling unit economics and incremental ROI, screens China advertising and MLM red lines, and delivers a printable single-file HTML battle report.",
+      "descriptionZh": "KOC全链路操盘：算清池子规模与人力上限，定选人标准，压高出稿率，设计激励与分销佣金，交付作战报告",
+      "version": "1.0.0",
+      "path": "packages/agent/koc-ops-expert",
+      "files": 31,
+      "bytes": 464252,
+      "sha256": "97e956ef0a67b78ea6b33aa6491cb3ccbd5bf31e9be9f4e323de4f1bead76597",
+      "skills": [
+        {
+          "name": "koc-compliance-guard",
+          "ns": "koc-ops-expert--koc-compliance-guard",
+          "path": "skills/koc-ops-expert--koc-compliance-guard",
+          "files": 4,
+          "bytes": 48267,
+          "sha256": "85fe701c528ad9e40a3fce8da8a7e473d476f7c7203d1ff8829d6fbaf6dec3c8"
+        },
+        {
+          "name": "koc-distribution-engine",
+          "ns": "koc-ops-expert--koc-distribution-engine",
+          "path": "skills/koc-ops-expert--koc-distribution-engine",
+          "files": 5,
+          "bytes": 70550,
+          "sha256": "2ea1bc7e1a3f36532df23cb9c4939e59abaafdad5a9da5cc505914b6256b16ec"
+        },
+        {
+          "name": "koc-incentive-engine",
+          "ns": "koc-ops-expert--koc-incentive-engine",
+          "path": "skills/koc-ops-expert--koc-incentive-engine",
+          "files": 4,
+          "bytes": 39166,
+          "sha256": "09fda037587e03ef673986f618eee5c22d4223edad8cebf94c8c6a085ccda5a9"
+        },
+        {
+          "name": "koc-nurture-academy",
+          "ns": "koc-ops-expert--koc-nurture-academy",
+          "path": "skills/koc-ops-expert--koc-nurture-academy",
+          "files": 6,
+          "bytes": 45951,
+          "sha256": "0430afce388588e5839dcb1ee1c22e435402bb94ad1b64b234f0477eec448714"
+        },
+        {
+          "name": "koc-ops-report",
+          "ns": "koc-ops-expert--koc-ops-report",
+          "path": "skills/koc-ops-expert--koc-ops-report",
+          "files": 5,
+          "bytes": 168128,
+          "sha256": "7d308190e338e73711e78ed8d58a99994ea1246127e59606a48928fd84c8dcb7"
+        },
+        {
+          "name": "koc-recruit-radar",
+          "ns": "koc-ops-expert--koc-recruit-radar",
+          "path": "skills/koc-ops-expert--koc-recruit-radar",
+          "files": 4,
+          "bytes": 48737,
+          "sha256": "a3720e3b7785330ea91153eae2b4582cbe86bb5df81cadbf91e1308817d2a6df"
+        }
+      ],
+      "requires": [
+        "python"
+      ],
+      "tags": [
+        {
+          "en": "KOC Recruiting",
+          "zh": "KOC 招募"
+        },
+        {
+          "en": "Nurture & Incentive",
+          "zh": "培育激励"
+        },
+        {
+          "en": "Affiliate Distribution",
+          "zh": "分销变现"
+        }
+      ],
+      "categoryId": "05-MarketingGrowth"
+    },
+    {
+      "id": "life-value-advisor",
+      "kind": "agent",
+      "name": {
+        "zh": "人生高性价比顾问",
+        "en": "Life Value Advisor"
+      },
+      "profession": {
+        "zh": "人生性价比顾问",
+        "en": "Life Cost-Value Advisor"
+      },
+      "description": "Grounded in 672 evidence-based tips, helps you quickly judge whether something is worth it, safe, or risky using a cost-benefit framework.",
+      "descriptionZh": "基于《高性价比人生指南》672条循证建议，用成本收益框架帮你评判一件事划不划算、安不安全、有无坑。",
+      "version": "1.0.1",
+      "path": "packages/agent/life-value-advisor",
+      "files": 38,
+      "bytes": 1831605,
+      "sha256": "f99dc8f2b048306c860014a460630af6620a9bc9f1e7f9056f1d9f876a9fb932",
+      "skills": [],
+      "requires": [],
+      "tags": [
+        {
+          "en": "Cost-Benefit Decision",
+          "zh": "性价比决策"
+        },
+        {
+          "en": "Risk & Scam Avoidance",
+          "zh": "避坑防骗"
+        },
+        {
+          "en": "Health, Finance & Law",
+          "zh": "健康理财法律"
+        }
+      ],
+      "categoryId": "12-IndustryConsultant"
+    },
+    {
+      "id": "livestream-ecommerce-coach",
+      "kind": "agent",
+      "name": {
+        "zh": "播旺旺",
+        "en": "Ria"
+      },
+      "profession": {
+        "zh": "直播电商教练",
+        "en": "Livestream E-commerce Coach"
+      },
+      "description": "Expert in full-chain livestream e-commerce operations, from scripts to traffic investment, helping achieve GMV breakthroughs",
+      "descriptionZh": "精通直播带货全链路运营，从话术到投流帮助实现GMV突破",
+      "version": "1.0.2",
+      "path": "packages/agent/livestream-ecommerce-coach",
+      "files": 30,
+      "bytes": 389668,
+      "sha256": "0289fbe37fddc85cd58b558cb82337e6b7d868be203c52e48ed08609cf5d92d1",
+      "skills": [
+        {
+          "name": "ab-test-setup",
+          "ns": "livestream-ecommerce-coach--ab-test-setup",
+          "path": "skills/livestream-ecommerce-coach--ab-test-setup",
+          "files": 1,
+          "bytes": 11680,
+          "sha256": "bc06c71ee2dd5e9cfa4de28e05569bf27191cdcd51bb8fdc1c5e6aca686a6c0e"
+        },
+        {
+          "name": "analytics-tracking",
+          "ns": "livestream-ecommerce-coach--analytics-tracking",
+          "path": "skills/livestream-ecommerce-coach--analytics-tracking",
+          "files": 1,
+          "bytes": 11339,
+          "sha256": "f912af9f51c450ea4ffb058a33d902bc9c52afc53ff26890abc2d95de6796dda"
+        },
+        {
+          "name": "competitor-alternatives",
+          "ns": "livestream-ecommerce-coach--competitor-alternatives",
+          "path": "skills/livestream-ecommerce-coach--competitor-alternatives",
+          "files": 1,
+          "bytes": 20362,
+          "sha256": "fb418237792cf7b972ed2b465a81ccbcf0fac1e1adfc4c61d333857ceb15bb58"
+        },
+        {
+          "name": "copy-editing",
+          "ns": "livestream-ecommerce-coach--copy-editing",
+          "path": "skills/livestream-ecommerce-coach--copy-editing",
+          "files": 1,
+          "bytes": 13420,
+          "sha256": "1fb1815317450eb8ad67c0c0424ab7ad3bd03ffea77d211bf4d72f12f4f5b620"
+        },
+        {
+          "name": "copywriting",
+          "ns": "livestream-ecommerce-coach--copywriting",
+          "path": "skills/livestream-ecommerce-coach--copywriting",
+          "files": 1,
+          "bytes": 13569,
+          "sha256": "db01f1e4d7d6b7586b17ebd97e3936104b9accba84122110430f33f44620dda1"
+        },
+        {
+          "name": "email-sequence",
+          "ns": "livestream-ecommerce-coach--email-sequence",
+          "path": "skills/livestream-ecommerce-coach--email-sequence",
+          "files": 1,
+          "bytes": 23941,
+          "sha256": "f812c7eac7f8485da8b415d07da3662c8cf59526c885601f770d74903d590018"
+        },
+        {
+          "name": "form-cro",
+          "ns": "livestream-ecommerce-coach--form-cro",
+          "path": "skills/livestream-ecommerce-coach--form-cro",
+          "files": 1,
+          "bytes": 10906,
+          "sha256": "e939c7dfb9185d78475c9cb05212f007a3139db2e3d08f8640fcdad681e96ad2"
+        },
+        {
+          "name": "free-tool-strategy",
+          "ns": "livestream-ecommerce-coach--free-tool-strategy",
+          "path": "skills/livestream-ecommerce-coach--free-tool-strategy",
+          "files": 1,
+          "bytes": 11873,
+          "sha256": "dc4d3676a5dc9c0bfc737800ccacae092f734b28ab4acd9d578238bee613f048"
+        },
+        {
+          "name": "launch-strategy",
+          "ns": "livestream-ecommerce-coach--launch-strategy",
+          "path": "skills/livestream-ecommerce-coach--launch-strategy",
+          "files": 1,
+          "bytes": 12565,
+          "sha256": "5bed125a985eb2cce86093c5cd1a53071af659bdac2898d84c6403e193686730"
+        },
+        {
+          "name": "market-researcher",
+          "ns": "livestream-ecommerce-coach--market-researcher",
+          "path": "skills/livestream-ecommerce-coach--market-researcher",
+          "files": 1,
+          "bytes": 9279,
+          "sha256": "b1631a1d4623615edba54bcd01d31a1ca344a1b659e2fd02f14f36e3dff5354e"
+        },
+        {
+          "name": "marketing-ideas",
+          "ns": "livestream-ecommerce-coach--marketing-ideas",
+          "path": "skills/livestream-ecommerce-coach--marketing-ideas",
+          "files": 1,
+          "bytes": 25038,
+          "sha256": "68bc0d3406533ed219b48e614d7cc468def2aae04e83e999231fa40da1eb8415"
+        },
+        {
+          "name": "marketing-psychology",
+          "ns": "livestream-ecommerce-coach--marketing-psychology",
+          "path": "skills/livestream-ecommerce-coach--marketing-psychology",
+          "files": 1,
+          "bytes": 21783,
+          "sha256": "e6d05d211f5bea3e40a69788c6b858256f11b6c1fdaeb4bff8adcedb054defd9"
+        },
+        {
+          "name": "marketing-skills",
+          "ns": "livestream-ecommerce-coach--marketing-skills",
+          "path": "skills/livestream-ecommerce-coach--marketing-skills",
+          "files": 2,
+          "bytes": 3699,
+          "sha256": "a6663a84c0d9f543f1a6eed09da5fbe9f707ac13d956b3bcc22e1268fcaddcf1"
+        },
+        {
+          "name": "onboarding-cro",
+          "ns": "livestream-ecommerce-coach--onboarding-cro",
+          "path": "skills/livestream-ecommerce-coach--onboarding-cro",
+          "files": 1,
+          "bytes": 11722,
+          "sha256": "431ebb665fdb828a85cafb9d05532d5f71e141124970d72f638eeeb52226fef0"
+        },
+        {
+          "name": "page-cro",
+          "ns": "livestream-ecommerce-coach--page-cro",
+          "path": "skills/livestream-ecommerce-coach--page-cro",
+          "files": 1,
+          "bytes": 11057,
+          "sha256": "183d9303dec05f18d7de3ed911f6e33c1ebed5b7be95c7582cf4e87d78e3722d"
+        },
+        {
+          "name": "paid-ads",
+          "ns": "livestream-ecommerce-coach--paid-ads",
+          "path": "skills/livestream-ecommerce-coach--paid-ads",
+          "files": 1,
+          "bytes": 15551,
+          "sha256": "2a7fafdc72b1f5e0787af52d48866e8bf2d5cbb7681866ab991eccc9eec0d825"
+        },
+        {
+          "name": "paywall-upgrade-cro",
+          "ns": "livestream-ecommerce-coach--paywall-upgrade-cro",
+          "path": "skills/livestream-ecommerce-coach--paywall-upgrade-cro",
+          "files": 1,
+          "bytes": 14762,
+          "sha256": "a34e2c8cb1c1a0effa6098b2d9fb09c261abdeabe156925d258ef89426a6b718"
+        },
+        {
+          "name": "popup-cro",
+          "ns": "livestream-ecommerce-coach--popup-cro",
+          "path": "skills/livestream-ecommerce-coach--popup-cro",
+          "files": 1,
+          "bytes": 11667,
+          "sha256": "05dbf7d2882bac6b3fe51b7079b595548b44208779aabe75fcd8c2610edd02fc"
+        },
+        {
+          "name": "pricing-strategy",
+          "ns": "livestream-ecommerce-coach--pricing-strategy",
+          "path": "skills/livestream-ecommerce-coach--pricing-strategy",
+          "files": 1,
+          "bytes": 22949,
+          "sha256": "66ad76b7ec261cd5fda829bfc8994bbfc9014a16d85e176efe7c356294bb36ba"
+        },
+        {
+          "name": "programmatic-seo",
+          "ns": "livestream-ecommerce-coach--programmatic-seo",
+          "path": "skills/livestream-ecommerce-coach--programmatic-seo",
+          "files": 1,
+          "bytes": 17104,
+          "sha256": "b8e35cc11e2216580a7eccd0dd39dd2a4d31f041e9771aeaecb361897384af9b"
+        },
+        {
+          "name": "referral-program",
+          "ns": "livestream-ecommerce-coach--referral-program",
+          "path": "skills/livestream-ecommerce-coach--referral-program",
+          "files": 1,
+          "bytes": 17395,
+          "sha256": "3dd733bf00e147e2736700c4203d3a88db7ff170266199a339377fe02afa7fd3"
+        },
+        {
+          "name": "schema-markup",
+          "ns": "livestream-ecommerce-coach--schema-markup",
+          "path": "skills/livestream-ecommerce-coach--schema-markup",
+          "files": 1,
+          "bytes": 13788,
+          "sha256": "94775ab83ee8952ba476af3664c89bd0c0b1a52dd8d132a189c3f7db00d9c57c"
+        },
+        {
+          "name": "seo-audit",
+          "ns": "livestream-ecommerce-coach--seo-audit",
+          "path": "skills/livestream-ecommerce-coach--seo-audit",
+          "files": 1,
+          "bytes": 8837,
+          "sha256": "0c1ab4e61d5df7d33132e545138b713e2cb08d638eed9b528cb84833854f02af"
+        },
+        {
+          "name": "signup-flow-cro",
+          "ns": "livestream-ecommerce-coach--signup-flow-cro",
+          "path": "skills/livestream-ecommerce-coach--signup-flow-cro",
+          "files": 1,
+          "bytes": 10114,
+          "sha256": "49122b17f825ea53e5040879e9a2dca81463fcaf7daf689a6bea524d91b10840"
+        },
+        {
+          "name": "social-content",
+          "ns": "livestream-ecommerce-coach--social-content",
+          "path": "skills/livestream-ecommerce-coach--social-content",
+          "files": 1,
+          "bytes": 21847,
+          "sha256": "7d42bfc5c65a863226f8d84e490d0f391366c9993b23f0f37c60f235ebfa52e7"
+        }
+      ],
+      "requires": [],
+      "tags": [
+        {
+          "zh": "直播带货",
+          "en": "Livestream Sales"
+        },
+        {
+          "zh": "话术设计",
+          "en": "Script Design"
+        },
+        {
+          "zh": "主播培训",
+          "en": "Host Training"
+        }
+      ],
+      "categoryId": "05-MarketingGrowth"
+    },
+    {
+      "id": "long-manuscript-expert",
+      "kind": "agent",
+      "name": {
+        "zh": "福帮手",
+        "en": "FBSir"
+      },
+      "profession": {
+        "zh": "专业研报底稿助手",
+        "en": "Professional Research Working Paper Assistant"
+      },
+      "description": "Turns web and local materials into sourced long-form working papers with counterevidence, five report forms, protected scoped revision and portable project continuity.",
+      "descriptionZh": "结合联网与本地材料，生成有出处、含反证的长篇底稿，支持五类报告形态、局部修订与接续。",
+      "version": "2026.11.5",
+      "path": "packages/agent/long-manuscript-expert",
+      "files": 74,
+      "bytes": 766668,
+      "sha256": "2d48cff63d5c6d18a6604788226f02cde3e881447cce89e3bd5de70a71bf7cad",
+      "skills": [
+        {
+          "name": "long-manuscript-core",
+          "ns": "long-manuscript-expert--long-manuscript-core",
+          "path": "skills/long-manuscript-expert--long-manuscript-core",
+          "files": 65,
+          "bytes": 722681,
+          "sha256": "7948228ecf0e3cd166c5c4f429cb0efcec9c69f4b2303dc13555f6c5217194d9"
+        }
+      ],
+      "requires": [
+        "python"
+      ],
+      "tags": [
+        {
+          "en": "Topic Research",
+          "zh": "主题研究"
+        },
+        {
+          "en": "Evidence Working Papers",
+          "zh": "证据底稿"
+        },
+        {
+          "en": "Long-form Revision",
+          "zh": "长文续改"
+        }
+      ],
+      "categoryId": "12-IndustryConsultant"
+    },
+    {
+      "id": "long-video-remix",
+      "kind": "agent",
+      "name": {
+        "zh": "禁止看不上烟灰缸",
+        "en": "Don't Look Down on Ashtrays"
+      },
+      "profession": {
+        "zh": "AI视频剪辑｜长视频转短视频·混剪",
+        "en": "AI Video Editing & Long-Video Remix Expert"
+      },
+      "description": "Analyze long videos and build a searchable footage index, extract highlight clips, design short-video remix plans with original timecodes, and support execution and final-cut review.",
+      "descriptionZh": "长视频转短视频、找高光、做直播切片与影视混剪；从原片时间码、叙事方案到字幕视觉、动态制作和成片核查，一路做到可执行。",
+      "version": "1.5.1",
+      "path": "packages/agent/long-video-remix",
+      "files": 170,
+      "bytes": 2075937,
+      "sha256": "672b5676b8e5716f5edb08094e05aa73f8019d6c744e23b051c6b0c103cac71d",
+      "skills": [
+        {
+          "name": "long-video-remix",
+          "ns": "long-video-remix--long-video-remix",
+          "path": "skills/long-video-remix--long-video-remix",
+          "files": 167,
+          "bytes": 2046645,
+          "sha256": "4c48c469185bd92e1c8f87506631b9e5e4d0321af04fad9ee5b267bba712157a"
+        }
+      ],
+      "requires": [
+        "python"
+      ],
+      "tags": [
+        {
+          "en": "Video Editing",
+          "zh": "AI视频剪辑"
+        },
+        {
+          "en": "Long-to-Short Video",
+          "zh": "长视频转短视频"
+        },
+        {
+          "en": "Video Remix",
+          "zh": "视频混剪"
+        }
+      ],
+      "categoryId": "06-ContentCreative"
+    },
+    {
+      "id": "nishu-ip-brain",
+      "kind": "agent",
+      "name": {
+        "zh": "倪叔",
+        "en": "NiShu"
+      },
+      "profession": {
+        "zh": "倪叔IP外脑",
+        "en": "NiShu IP Brain"
+      },
+      "description": "An IP external brain modeled on NiShu, a tech blogger, using a 26-question deep diagnosis to find your most valuable thing and amplify trust to close.",
+      "descriptionZh": "科技博主倪叔的IP外脑，26题深度问卷诊断定位，帮你找到最有价值的事、放大信任成交。",
+      "version": "1.0.0",
+      "path": "packages/agent/nishu-ip-brain",
+      "files": 3,
+      "bytes": 12657,
+      "sha256": "ab615f6d37a915476fa5442f2daad9c7b2cc7f30fc4ed5c84fb80e508b4fea11",
+      "skills": [],
+      "requires": [],
+      "tags": [
+        {
+          "en": "Personal IP Positioning",
+          "zh": "个人IP定位"
+        },
+        {
+          "en": "Founder IP Coaching",
+          "zh": "创始人IP辅导"
+        },
+        {
+          "en": "Trust Monetization",
+          "zh": "信任商业变现"
+        }
+      ],
+      "categoryId": "05-MarketingGrowth"
+    },
+    {
+      "id": "omnichannel-ads-expert",
+      "kind": "agent",
+      "name": {
+        "zh": "全渠道投放官",
+        "en": "Omni"
+      },
+      "profession": {
+        "zh": "全渠道广告投放专家",
+        "en": "Omnichannel Advertising Specialist"
+      },
+      "description": "End-to-end paid media specialist across Ocean Engine, Tencent Ads, Kuaishou, Xiaohongshu, Google, Meta and TikTok — covering account setup, creative production, campaign monitoring and performance optimization.",
+      "descriptionZh": "覆盖巨量、腾讯、快手、小红书、Google、Meta等国内外媒体投放，擅长账户搭建、素材创意与优化。",
+      "version": "1.0.0",
+      "path": "packages/agent/omnichannel-ads-expert",
+      "files": 10,
+      "bytes": 45122,
+      "sha256": "68f3a59e9e5b0c6094a1188b2e457153d4e87b9f4583932d4f9f44fbda97258f",
+      "skills": [
+        {
+          "name": "omnichannel-ads-playbook",
+          "ns": "omnichannel-ads-expert--omnichannel-ads-playbook",
+          "path": "skills/omnichannel-ads-expert--omnichannel-ads-playbook",
+          "files": 7,
+          "bytes": 30064,
+          "sha256": "0596a88dae277831e8440514720c640e12cbf681c74598c707b294bcfb6fd9ec"
+        }
+      ],
+      "requires": [],
+      "tags": [
+        {
+          "en": "Cross-Platform Media Strategy",
+          "zh": "跨平台投放策略"
+        },
+        {
+          "en": "Ad Creative Production",
+          "zh": "广告素材创意"
+        },
+        {
+          "en": "Campaign Monitoring & Optimization",
+          "zh": "投放监控与优化"
+        }
+      ],
+      "categoryId": "05-MarketingGrowth"
+    },
+    {
+      "id": "performance-payroll-employment-risk-expert",
+      "kind": "agent",
+      "name": {
+        "zh": "简小衡 - 简道云系列专家",
+        "en": "Jian Xiaoheng"
+      },
+      "profession": {
+        "zh": "绩效薪酬顾问",
+        "en": "Performance and Payroll Advisor"
+      },
+      "description": "Reviews performance, payroll, and contract data to identify process, pay, and employment risks.",
+      "descriptionZh": "复核绩效、工资和合同数据，定位流程异常、薪酬差异与用工风险。",
+      "version": "1.6.6",
+      "path": "packages/agent/performance-payroll-employment-risk-expert",
+      "files": 6,
+      "bytes": 27212,
+      "sha256": "a0d874b66922cb3df1e9636cea475592cbf2f0c4ae06bc418006ae65679f07e8",
+      "skills": [
+        {
+          "name": "performance-payroll-risk-analysis",
+          "ns": "performance-payroll-employment-risk-expert--performance-payroll-risk-analysis",
+          "path": "skills/performance-payroll-employment-risk-expert--performance-payroll-risk-analysis",
+          "files": 3,
+          "bytes": 9713,
+          "sha256": "98c6f458bf827f707bf35b35f71d8882a737276b189ed7abf86cf6239f4740d0"
+        }
+      ],
+      "requires": [],
+      "tags": [
+        {
+          "en": "Performance",
+          "zh": "绩效管理"
+        },
+        {
+          "en": "Payroll",
+          "zh": "薪酬管理"
+        },
+        {
+          "en": "Jiandaoyun",
+          "zh": "简道云"
+        }
+      ],
+      "categoryId": "09-OperationsHR"
+    },
+    {
+      "id": "photo-composition-expert",
+      "kind": "agent",
+      "name": {
+        "zh": "光影工匠",
+        "en": "FrameCraft"
+      },
+      "profession": {
+        "zh": "摄影构图师",
+        "en": "Photography Composition Specialist"
+      },
+      "description": "Veteran photographer with 10+ years of experience in portrait, landscape, and product composition. Turns framing principles into on-site shot lists and field-ready checklists so you think clearly before pressing the shutter.",
+      "descriptionZh": "十年人像、风光、产品构图经验。擅长把构图原理翻译成可执行现场清单，按快门前先把画面想清楚。",
+      "version": "1.0.0",
+      "path": "packages/agent/photo-composition-expert",
+      "files": 3,
+      "bytes": 9954,
+      "sha256": "3aa24a4efd8b26b6fb14834b92b91785d071b93259826ca24c30010a89b5d403",
+      "skills": [],
+      "requires": [],
+      "tags": [
+        {
+          "en": "Portrait Composition",
+          "zh": "人像构图"
+        },
+        {
+          "en": "Landscape Composition",
+          "zh": "风光构图"
+        },
+        {
+          "en": "Product Composition",
+          "zh": "产品构图"
+        }
+      ],
+      "categoryId": "06-ContentCreative"
+    },
+    {
+      "id": "product-management",
+      "kind": "agent",
+      "name": {
+        "zh": "product-management",
+        "en": "product-management"
+      },
+      "profession": {
+        "zh": "",
+        "en": ""
+      },
+      "description": "产品管理插件，支持功能规格编写、路线图规划、利益相关者沟通、用户研究综合、竞品分析和指标审查。",
+      "descriptionZh": "",
+      "version": "1.0.0",
+      "path": "packages/agent/product-management",
+      "files": 12,
+      "bytes": 121862,
+      "sha256": "639049f735dd70cd3d65ead47e7b0d96bd7cd3d584d807ae563245ce0d4c489f",
+      "skills": [
+        {
+          "name": "competitive-analysis",
+          "ns": "product-management--competitive-analysis",
+          "path": "skills/product-management--competitive-analysis",
+          "files": 1,
+          "bytes": 10540,
+          "sha256": "b9698bdd9fe6c17923e20353aeac34d8201a7c6dd75018a917d1d735291a35c8"
+        },
+        {
+          "name": "feature-spec",
+          "ns": "product-management--feature-spec",
+          "path": "skills/product-management--feature-spec",
+          "files": 1,
+          "bytes": 8860,
+          "sha256": "3e7836b363028815b63b9a5d2b1949d93aca05800858b9070e98501be049932c"
+        },
+        {
+          "name": "metrics-tracking",
+          "ns": "product-management--metrics-tracking",
+          "path": "skills/product-management--metrics-tracking",
+          "files": 1,
+          "bytes": 13372,
+          "sha256": "8bbfc40787a4f574af041e8e0218a158ab4f36773236b33b77a48ac41689ef1a"
+        },
+        {
+          "name": "product-management-workflows",
+          "ns": "product-management--product-management-workflows",
+          "path": "skills/product-management--product-management-workflows",
+          "files": 1,
+          "bytes": 26026,
+          "sha256": "6c21ba785eccd0fbc79385959e77ba2d8fdd842570192806230fd2ba14538a4a"
+        },
+        {
+          "name": "roadmap-management",
+          "ns": "product-management--roadmap-management",
+          "path": "skills/product-management--roadmap-management",
+          "files": 1,
+          "bytes": 8805,
+          "sha256": "c3a4242bc244c30c6e3d9717f4f542eec2dc5bef7d6c90aa2fb7ff0e3606261b"
+        },
+        {
+          "name": "stakeholder-comms",
+          "ns": "product-management--stakeholder-comms",
+          "path": "skills/product-management--stakeholder-comms",
+          "files": 1,
+          "bytes": 10783,
+          "sha256": "1ecda6f4c81ae18603b5835b2d9eff489f435e352198bce84b8b0ad50d17083a"
+        },
+        {
+          "name": "user-research-synthesis",
+          "ns": "product-management--user-research-synthesis",
+          "path": "skills/product-management--user-research-synthesis",
+          "files": 1,
+          "bytes": 11218,
+          "sha256": "a5c08b7a5db753dbe075f30d77a312414349a796113ec1b6bf731f5bc3cf03b8"
+        }
+      ],
+      "requires": [],
+      "tags": [],
+      "categoryId": ""
+    },
+    {
+      "id": "product-pm-expert",
+      "kind": "agent",
+      "name": {
+        "zh": "司南",
+        "en": "Compass"
+      },
+      "profession": {
+        "zh": "资深产品经理",
+        "en": "Senior Product Manager"
+      },
+      "description": "Product Manager Expert skilled in requirement analysis, PRD writing, product solution design, prototype thinking, and requirement risk assessment, delivering high-quality documents.",
+      "descriptionZh": "产品经理专家，擅长需求梳理、原型设计、PRD撰写与产品方案设计，识别需求风险并输出高质量产品文档。",
+      "version": "1.19.25",
+      "path": "packages/agent/product-pm-expert",
+      "files": 14,
+      "bytes": 321282,
+      "sha256": "86e845a3bcb8816ab1425d17db385d083767a818cda933d6b7c2bdf3ec1c7be6",
+      "skills": [
+        {
+          "name": "product-pm",
+          "ns": "product-pm-expert--product-pm",
+          "path": "skills/product-pm-expert--product-pm",
+          "files": 1,
+          "bytes": 39340,
+          "sha256": "74d2f9daaf853c4fe579827a531f0119a0fb57e834a781025557ecdba8539ebb"
+        }
+      ],
+      "requires": [],
+      "tags": [
+        {
+          "en": "Requirement Analysis",
+          "zh": "需求分析"
+        },
+        {
+          "en": "PRD Writing",
+          "zh": "PRD 撰写"
+        },
+        {
+          "en": "Product Design",
+          "zh": "产品设计"
+        }
+      ],
+      "categoryId": "01-ProductDesign"
+    },
+    {
+      "id": "product-strategy-advisor",
+      "kind": "agent",
+      "name": {
+        "zh": "产品战略顾问",
+        "en": "Product Strategy Advisor"
+      },
+      "profession": {
+        "zh": "产品战略顾问：把产品想清楚往哪走、凭什么赢",
+        "en": "Product Strategy Advisor"
+      },
+      "description": "Clarify where your product is going, why it wins, and how it makes money — strategy canvas, business model, pricing, and macro scans, all in plain language.",
+      "descriptionZh": "帮你把产品「往哪走、凭什么赢、怎么赚钱」一步步想清楚：交付战略画布、商业模式画布和定价方案，数字绝不编。",
+      "version": "1.1.1",
+      "path": "packages/agent/product-strategy-advisor",
+      "files": 19,
+      "bytes": 36320,
+      "sha256": "b48ebb16d8410f825c66ebb2ea4505ce6230d7385e48c099c54bd6425a6a56a4",
+      "skills": [],
+      "requires": [],
+      "tags": [
+        {
+          "en": "Strategy",
+          "zh": "定战略"
+        },
+        {
+          "en": "Business model",
+          "zh": "理商业模式"
+        },
+        {
+          "en": "Pricing",
+          "zh": "定价变现"
+        }
+      ],
+      "categoryId": "12-IndustryConsultant"
+    },
+    {
+      "id": "rea-reverse-engineer",
+      "kind": "agent",
+      "name": {
+        "zh": "REA 逆向功能分析专家",
+        "en": "REA Reverse Engineer Anything Expert"
+      },
+      "profession": {
+        "zh": "软件逆向分析工程师",
+        "en": "Software Reverse Engineering Analyst"
+      },
+      "description": "Analyzes how closed-source software features work using the REA toolchain, covering Electron apps, websites, .NET assemblies and native binaries, with evidence-backed explanations and feature reconstruction plans.",
+      "descriptionZh": "基于REA解析无源码软件功能，覆盖Electron、网站与二进制，输出证据链与重建方案。",
+      "version": "1.0.0",
+      "path": "packages/agent/rea-reverse-engineer",
+      "files": 8,
+      "bytes": 24073,
+      "sha256": "00a35dfc8a698104f5946322a82a2313682af0be0ae7dcbd4bc84da53166ee37",
+      "skills": [
+        {
+          "name": "rea-analysis",
+          "ns": "rea-reverse-engineer--rea-analysis",
+          "path": "skills/rea-reverse-engineer--rea-analysis",
+          "files": 5,
+          "bytes": 13680,
+          "sha256": "25c88f12d1b91039404fa58a9d908e8970c626d4bc2198f3590b826e2955ac7e"
+        }
+      ],
+      "requires": [],
+      "tags": [
+        {
+          "en": "Reverse Engineering",
+          "zh": "逆向分析"
+        },
+        {
+          "en": "Feature Reconstruction",
+          "zh": "功能重建"
+        },
+        {
+          "en": "Software Security",
+          "zh": "软件安全"
+        }
+      ],
+      "categoryId": "02-Engineering"
+    },
+    {
+      "id": "resume-match-expert",
+      "kind": "agent",
+      "name": {
+        "zh": "简历·求职教练",
+        "en": "Resume · Job Search Coach"
+      },
+      "profession": {
+        "zh": "资深 HR/招聘专家",
+        "en": "Senior HR & Recruiting Expert"
+      },
+      "description": "Full-cycle job search companion: resume diagnosis, per-role tailoring, keyword and quantification checks, interview prep, application tracking and weekly reviews",
+      "descriptionZh": "求职全周期陪伴：简历诊断、按目标岗位定制改写、关键词与量化检查、面试准备、投递跟踪与每周复盘",
+      "version": "2.0.0",
+      "path": "packages/agent/resume-match-expert",
+      "files": 11,
+      "bytes": 105359,
+      "sha256": "e2c770db668e6bd4fb1bb699cd4ee218d1a66c52e0e5868cb448dbb5787cdda1",
+      "skills": [
+        {
+          "name": "resume-match",
+          "ns": "resume-match-expert--resume-match",
+          "path": "skills/resume-match-expert--resume-match",
+          "files": 8,
+          "bytes": 80857,
+          "sha256": "68724e99a63f9e61c40a70192833aa65d4498b83e2f22d0bead7b0d9374574c2"
+        }
+      ],
+      "requires": [
+        "python"
+      ],
+      "tags": [
+        {
+          "en": "Resume Optimization",
+          "zh": "简历优化"
+        },
+        {
+          "en": "Job Matching",
+          "zh": "岗位匹配"
+        },
+        {
+          "en": "Interview Prep",
+          "zh": "面试准备"
+        }
+      ],
+      "categoryId": "09-OperationsHR"
+    },
+    {
+      "id": "short-video-script-writer",
+      "kind": "agent",
+      "name": {
+        "zh": "短视频脚本创作专家",
+        "en": "Short Video Script Writer"
+      },
+      "profession": {
+        "zh": "短视频脚本创作师",
+        "en": "Short Video Script Creator"
+      },
+      "description": "Covers hooks, storyboards, multi-platform rewrite, A/B variants, series frameworks, voiceover pacing and regulated-industry compliance.",
+      "descriptionZh": "专注短视频脚本创作，擅长钩子开场、分镜设计、多平台改写与系列栏目，覆盖口播、种草、剧情与知识科普。",
+      "version": "1.0.0",
+      "path": "packages/agent/short-video-script-writer",
+      "files": 5,
+      "bytes": 18199,
+      "sha256": "1424ab40f14076466891500e82cbc123f0a4e8260a7b57dc64f722c9686edd29",
+      "skills": [
+        {
+          "name": "short-video-script-templates",
+          "ns": "short-video-script-writer--short-video-script-templates",
+          "path": "skills/short-video-script-writer--short-video-script-templates",
+          "files": 2,
+          "bytes": 8958,
+          "sha256": "53fe76deb60b20d439bc48dd5d362277de3ec22fee0df54c041cf9156d1d6fb8"
+        }
+      ],
+      "requires": [],
+      "tags": [
+        {
+          "en": "Short Video Script",
+          "zh": "短视频脚本"
+        },
+        {
+          "en": "Storyboard",
+          "zh": "分镜设计"
+        },
+        {
+          "en": "Viral Topics",
+          "zh": "爆款选题"
+        }
+      ],
+      "categoryId": "06-ContentCreative"
+    },
+    {
+      "id": "tiktok-growth-expert",
+      "kind": "agent",
+      "name": {
+        "zh": "TikTok运营实战专家",
+        "en": "TikTok Ops Expert"
+      },
+      "profession": {
+        "zh": "TikTok 直播与短视频运营顾问",
+        "en": "TikTok Live & Short-Video Operations Consultant"
+      },
+      "description": "Teaches the full TikTok playbook: live streaming SOP and scripts, short-video growth, algorithm and traffic mechanics, TikTok Shop selling, monetization paths, and data-driven diagnostics, from zero to consistent sales.",
+      "descriptionZh": "教你 TikTok 直播带货、短视频起号与变现全链路：定位、流量、话术、实操，从 0 到稳定出单。",
+      "version": "1.0.0",
+      "path": "packages/agent/tiktok-growth-expert",
+      "files": 12,
+      "bytes": 41182,
+      "sha256": "57aa78367b969f274aa12ba4b94695b74ee06b297fa0c89599c2e24018032676",
+      "skills": [
+        {
+          "name": "tiktok-growth-playbook",
+          "ns": "tiktok-growth-expert--tiktok-growth-playbook",
+          "path": "skills/tiktok-growth-expert--tiktok-growth-playbook",
+          "files": 9,
+          "bytes": 30788,
+          "sha256": "f2249a4867803e4425e90c32134fa25a89aeea3a230166b01ca84bda694816da"
+        }
+      ],
+      "requires": [],
+      "tags": [
+        {
+          "en": "TikTok Live",
+          "zh": "TikTok 直播"
+        },
+        {
+          "en": "Short Video Growth",
+          "zh": "短视频运营"
+        },
+        {
+          "en": "Cross-border Monetization",
+          "zh": "跨境变现"
+        }
+      ],
+      "categoryId": "05-MarketingGrowth"
+    },
+    {
+      "id": "trade-market-analyst",
+      "kind": "agent",
+      "name": {
+        "zh": "易查云海外市场洞察分析师",
+        "en": "Trade AI Market Insights Analyst"
+      },
+      "profession": {
+        "zh": "市场分析",
+        "en": "Market Analysis"
+      },
+      "description": "Analyze a target market's size, trend, price bands, and supplier landscape with customs and official trade statistics, and judge whether it is worth entering.",
+      "descriptionZh": "用海关与官方贸易统计分析目标市场的规模、走势、价格带和供应格局，判断值不值得进、该怎么进。",
+      "version": "0.1.5",
+      "path": "packages/agent/trade-market-analyst",
+      "files": 19,
+      "bytes": 148784,
+      "sha256": "8a67aa4b9ca3f9e352bbdce1b20894ff82a6ec54da6bf68592f9507a6f1876ff",
+      "skills": [
+        {
+          "name": "trade-data-router",
+          "ns": "trade-market-analyst--trade-data-router",
+          "path": "skills/trade-market-analyst--trade-data-router",
+          "files": 1,
+          "bytes": 17826,
+          "sha256": "75fd434f69af7102d591c75564374d5d5e7f5f256ac378d6dc7473991825c9e7"
+        },
+        {
+          "name": "trade-market-entry",
+          "ns": "trade-market-analyst--trade-market-entry",
+          "path": "skills/trade-market-analyst--trade-market-entry",
+          "files": 2,
+          "bytes": 7488,
+          "sha256": "35b13488280bf8f92f5268355f7e22f11f3d5b20f9b057eaf8f101c177cb4692"
+        },
+        {
+          "name": "trade-research-report",
+          "ns": "trade-market-analyst--trade-research-report",
+          "path": "skills/trade-market-analyst--trade-research-report",
+          "files": 13,
+          "bytes": 112517,
+          "sha256": "9723e10241a4e4bc3d8f24fc58322a816b68908507585134ae1d7adfa8f33501"
+        }
+      ],
+      "requires": [],
+      "tags": [
+        {
+          "zh": "市场分析",
+          "en": "Market Analysis"
+        },
+        {
+          "zh": "国别分析",
+          "en": "Country Analysis"
+        },
+        {
+          "zh": "进出口趋势",
+          "en": "Trade Trends"
+        }
+      ],
+      "categoryId": "14-WorldWise"
+    },
+    {
+      "id": "workplace-cross-team-collaboration-guide",
+      "kind": "agent",
+      "name": {
+        "zh": "职场跨部门协作专家",
+        "en": "Workplace Cross-team Collaboration Expert"
+      },
+      "profession": {
+        "zh": "职场跨部门协作专家",
+        "en": "Workplace Cross-team Collaboration Expert"
+      },
+      "description": "A collaboration guide for cross-department project leads: align goals, set responsibilities and a sync rhythm, then advance by checklist, resolve conflicts, and let every side verify against the tables for on-time delivery.",
+      "descriptionZh": "面向跨部门项目负责人的协作指南：先对齐目标、定好分工和同步节奏，再按清单推进、处理冲突，让各方按表复核、按期交付。",
+      "version": "0.1.0",
+      "path": "packages/agent/workplace-cross-team-collaboration-guide",
+      "files": 9,
+      "bytes": 20968,
+      "sha256": "6ab496619a22a6b79b0c46e8af602f3bda899bd134116b895b50340a8902c7b9",
+      "skills": [
+        {
+          "name": "conflict-resolution",
+          "ns": "workplace-cross-team-collaboration-guide--conflict-resolution",
+          "path": "skills/workplace-cross-team-collaboration-guide--conflict-resolution",
+          "files": 1,
+          "bytes": 1213,
+          "sha256": "b5c4e1552c6c858b64f68dbe5a6bd1b765acbddb1f33b8b03d7a394edd6ffb9e"
+        },
+        {
+          "name": "goal-alignment-charter",
+          "ns": "workplace-cross-team-collaboration-guide--goal-alignment-charter",
+          "path": "skills/workplace-cross-team-collaboration-guide--goal-alignment-charter",
+          "files": 1,
+          "bytes": 1124,
+          "sha256": "b5160f6d7d5eb9b1632871210ee5a1badd314d135b6610581c4a9c31ccab5484"
+        },
+        {
+          "name": "role-progress-sync",
+          "ns": "workplace-cross-team-collaboration-guide--role-progress-sync",
+          "path": "skills/workplace-cross-team-collaboration-guide--role-progress-sync",
+          "files": 1,
+          "bytes": 1204,
+          "sha256": "59baea5964bf6b019ac5b807e6a06e07de68b51d2b14cb2e4c1368cbe4e97b96"
+        }
+      ],
+      "requires": [],
+      "tags": [
+        {
+          "en": "Cross-team collaboration",
+          "zh": "跨部门协作"
+        },
+        {
+          "en": "Project delivery",
+          "zh": "项目推进"
+        },
+        {
+          "en": "Workplace communication",
+          "zh": "职场沟通"
+        }
+      ],
+      "categoryId": "06-ContentCreative"
+    },
+    {
+      "id": "workspace-builder",
+      "kind": "agent",
+      "name": {
+        "zh": "小台",
+        "en": "DeskCraft"
+      },
+      "profession": {
+        "zh": "工作台搭建师",
+        "en": "Workspace Builder"
+      },
+      "description": "Build custom digital workspaces for students, professionals, creators, parents, and lifestyle users. Responsive HTML with local data persistence, one-click deployment.",
+      "descriptionZh": "为不同人群定制专属数字工作台，覆盖学习备考、职场效率、自媒体创作、宝妈育儿、生活管理五大场景，PC/移动端双适配，一键部署即用",
+      "version": "1.5.1",
+      "path": "packages/agent/workspace-builder",
+      "files": 2,
+      "bytes": 25966,
+      "sha256": "858b65a005b70fbd79ca6a1e1949ba5fde7a5a80a322aa029b45e2b7661b27d0",
+      "skills": [],
+      "requires": [],
+      "tags": [
+        {
+          "en": "Workspace Builder",
+          "zh": "工作台搭建"
+        },
+        {
+          "en": "Responsive Web",
+          "zh": "响应式网页"
+        },
+        {
+          "en": "Personal Productivity",
+          "zh": "个人效率工具"
+        }
+      ],
+      "categoryId": "02-Engineering"
+    },
+    {
+      "id": "ai-content-creator-team",
+      "kind": "team",
+      "name": {
+        "zh": "内容创作专家团",
+        "en": "Content Creator Team"
+      },
+      "profession": {
+        "zh": "内容创作专家团",
+        "en": "Content Creator Team"
+      },
+      "description": "AI-driven multimodal content production team providing end-to-end creative solutions from strategy to delivery, covering positioning, moodboard, ad direction, copywriting, video generation, image creation, generative polish, and content adaptation.",
+      "descriptionZh": "AI驱动的多模态内容生产团队，从创意策划到成品交付全覆盖，涵盖品牌定位、情绪板、广告方向、文案创作、视频生成、图片设计、精修合成和素材改编。",
+      "version": "1.0.0",
+      "path": "packages/team/ai-content-creator-team",
+      "files": 16,
+      "bytes": 145590,
+      "sha256": "b06fdeaa03b52f98eeb60500fc96b7ff2a5ce419cb9cbf5ac871ce02752cc894",
+      "skills": [
+        {
+          "name": "ai-content-production",
+          "ns": "ai-content-creator-team--ai-content-production",
+          "path": "skills/ai-content-creator-team--ai-content-production",
+          "files": 7,
+          "bytes": 56243,
+          "sha256": "e8ea06c6240f3f6b660e8548b22305580e1999a5d8ace9682539cde1ec3986a2"
+        }
+      ],
+      "requires": [],
+      "tags": [
+        {
+          "en": "Creative Strategy",
+          "zh": "创意策划"
+        },
+        {
+          "en": "AI Video & Image",
+          "zh": "AI视频与图片"
+        },
+        {
+          "en": "Generative Polish",
+          "zh": "精修合成"
+        }
+      ],
+      "categoryId": "06-ContentCreative",
+      "leadAgent": "ai-content-creator-team-lead",
+      "members": [
+        {
+          "id": "ai-content-creator-team-lead",
+          "name": {
+            "zh": "司远",
+            "en": "Soren"
+          },
+          "profession": {
+            "zh": "创意总监",
+            "en": "Creative Director"
+          },
+          "role": "lead"
+        },
+        {
+          "id": "creative-strategist",
+          "name": {
+            "zh": "策凌",
+            "en": "Celine"
+          },
+          "profession": {
+            "zh": "创意策划师",
+            "en": "Creative Strategist"
+          },
+          "role": "member"
+        },
+        {
+          "id": "copywriter",
+          "name": {
+            "zh": "笔澜",
+            "en": "Penn"
+          },
+          "profession": {
+            "zh": "文案创作专家",
+            "en": "Copywriter"
+          },
+          "role": "member"
+        },
+        {
+          "id": "video-generator",
+          "name": {
+            "zh": "维欧",
+            "en": "Veo"
+          },
+          "profession": {
+            "zh": "视频生成专家",
+            "en": "Video Generation Expert"
+          },
+          "role": "member"
+        },
+        {
+          "id": "image-creator",
+          "name": {
+            "zh": "珀西",
+            "en": "Percy"
+          },
+          "profession": {
+            "zh": "图文创作专家",
+            "en": "Image & Text Creator"
+          },
+          "role": "member"
+        },
+        {
+          "id": "video-editor",
+          "name": {
+            "zh": "柯立",
+            "en": "Clip"
+          },
+          "profession": {
+            "zh": "视频编辑专家",
+            "en": "Video Editing Expert"
+          },
+          "role": "member"
+        },
+        {
+          "id": "content-adapter",
+          "name": {
+            "zh": "艾达",
+            "en": "Ada"
+          },
+          "profession": {
+            "zh": "素材改编专家",
+            "en": "Content Adaptation Expert"
+          },
+          "role": "member"
+        }
+      ]
+    },
+    {
+      "id": "content-monetization-team",
+      "kind": "team",
+      "name": {
+        "zh": "内容变现商业化专家团",
+        "en": "Content Monetization Team"
+      },
+      "profession": {
+        "zh": "内容变现商业化专家团",
+        "en": "Content Monetization Team"
+      },
+      "description": "5 specialists collaborate on CPS affiliate commissions, CPE/CPM performance ads, creator-brand marketplace matching, and revenue analysis to maximize content monetization ROI",
+      "descriptionZh": "5人专家团协作覆盖CPS带货分佣、CPE/CPM效果广告、创作者-品牌交易撮合与收益分析，助力内容创作者和品牌方实现商业化价值最大化",
+      "version": "1.0.0",
+      "path": "packages/team/content-monetization-team",
+      "files": 12,
+      "bytes": 77925,
+      "sha256": "df9e774e7f81097b14c41f0389e93ff083f84f50685c8070f0ab0ba30e187971",
+      "skills": [
+        {
+          "name": "content-monetization-ops",
+          "ns": "content-monetization-team--content-monetization-ops",
+          "path": "skills/content-monetization-team--content-monetization-ops",
+          "files": 5,
+          "bytes": 36040,
+          "sha256": "c3ff5e5883e7d8bafe76a8ae9350e90164a25575a762b0d53290d6ca2f4f9a50"
+        }
+      ],
+      "requires": [],
+      "tags": [
+        {
+          "en": "Content Monetization",
+          "zh": "内容变现"
+        },
+        {
+          "en": "CPS/CPE/CPM",
+          "zh": "CPS/CPE/CPM"
+        },
+        {
+          "en": "Creator Commerce",
+          "zh": "创作者商业化"
+        }
+      ],
+      "categoryId": "05-MarketingGrowth",
+      "leadAgent": "content-monetization-team-lead",
+      "members": [
+        {
+          "id": "content-monetization-team-lead",
+          "name": {
+            "zh": "芬利",
+            "en": "Finley"
+          },
+          "profession": {
+            "zh": "商业化策略师",
+            "en": "Monetization Strategist"
+          },
+          "role": "lead"
+        },
+        {
+          "id": "cps-specialist",
+          "name": {
+            "zh": "赛勒",
+            "en": "Seller"
+          },
+          "profession": {
+            "zh": "CPS 佣金专家",
+            "en": "CPS Commission Expert"
+          },
+          "role": "member"
+        },
+        {
+          "id": "cpe-cpm-expert",
+          "name": {
+            "zh": "艾菲",
+            "en": "Effect"
+          },
+          "profession": {
+            "zh": "效果广告专家",
+            "en": "CPE/CPM Performance Expert"
+          },
+          "role": "member"
+        },
+        {
+          "id": "marketplace-operator",
+          "name": {
+            "zh": "麦奇",
+            "en": "Match"
+          },
+          "profession": {
+            "zh": "商务合作顾问",
+            "en": "Business Collaboration Advisor"
+          },
+          "role": "member"
+        },
+        {
+          "id": "revenue-analyst",
+          "name": {
+            "zh": "普罗",
+            "en": "Profit"
+          },
+          "profession": {
+            "zh": "收益分析师",
+            "en": "Revenue Analyst"
+          },
+          "role": "member"
+        }
+      ]
+    },
+    {
+      "id": "fullstack-forge-team",
+      "kind": "team",
+      "name": {
+        "zh": "全栈智造专家团",
+        "en": "FullStack Forge Team"
+      },
+      "profession": {
+        "zh": "全栈系统交付专家团",
+        "en": "Full-Stack System Delivery Team"
+      },
+      "description": "An 8-role full-stack delivery team that builds websites, apps, iOS & HarmonyOS apps, mini programs, and software systems end to end — from requirement and platform selection to product, engineering, testing, release, DevOps, and growth.",
+      "descriptionZh": "8位专业角色覆盖全栈系统交付全生命周期：网站、App、iOS与鸿蒙应用、微信小程序、桌面软件等，从需求与平台选型，到产品、研发、测试、上线、运维、运营一体化智造交付。",
+      "version": "2.4.1",
+      "path": "packages/team/fullstack-forge-team",
+      "files": 19,
+      "bytes": 155135,
+      "sha256": "bf7c69ba1f10b6a5823c0934eacc4ea6746b5efeba1ba29e1ad03a399e66b0ac",
+      "skills": [
+        {
+          "name": "forge-orchestrator",
+          "ns": "fullstack-forge-team--forge-orchestrator",
+          "path": "skills/fullstack-forge-team--forge-orchestrator",
+          "files": 9,
+          "bytes": 91682,
+          "sha256": "d370d9bd83c7234c5ae266cfee94840d985fb206a0f0b61ecb937629975adc7c"
+        }
+      ],
+      "requires": [],
+      "tags": [
+        {
+          "en": "Full-Stack Dev",
+          "zh": "全栈开发"
+        },
+        {
+          "en": "App & Web",
+          "zh": "App与网站"
+        },
+        {
+          "en": "Delivery",
+          "zh": "交付上线"
+        }
+      ],
+      "categoryId": "02-Engineering",
+      "leadAgent": "forge-lead",
+      "members": [
+        {
+          "id": "forge-lead",
+          "name": {
+            "zh": "智造中枢",
+            "en": "ForgeHub"
+          },
+          "profession": {
+            "zh": "主理人",
+            "en": "Team Lead & Orchestrator"
+          },
+          "role": "lead"
+        },
+        {
+          "id": "product-scout",
+          "name": {
+            "zh": "选品洞察师",
+            "en": "Scouty"
+          },
+          "profession": {
+            "zh": "需求与平台选型师",
+            "en": "Requirement & Platform Analyst"
+          },
+          "role": "member"
+        },
+        {
+          "id": "product-manager",
+          "name": {
+            "zh": "产品主理人",
+            "en": "ProdCraft"
+          },
+          "profession": {
+            "zh": "产品经理",
+            "en": "Product Manager"
+          },
+          "role": "member"
+        },
+        {
+          "id": "fullstack-engineer",
+          "name": {
+            "zh": "全栈研发师",
+            "en": "StackPro"
+          },
+          "profession": {
+            "zh": "全栈研发工程师",
+            "en": "Full-Stack Engineer"
+          },
+          "role": "member"
+        },
+        {
+          "id": "qa-tester",
+          "name": {
+            "zh": "质量测试官",
+            "en": "TestGuard"
+          },
+          "profession": {
+            "zh": "测试工程师",
+            "en": "QA & Test Engineer"
+          },
+          "role": "member"
+        },
+        {
+          "id": "release-manager",
+          "name": {
+            "zh": "上线发布师",
+            "en": "ShipFast"
+          },
+          "profession": {
+            "zh": "发布交付工程师",
+            "en": "Release & DevOps Manager"
+          },
+          "role": "member"
+        },
+        {
+          "id": "ops-sre",
+          "name": {
+            "zh": "运维守护师",
+            "en": "OpsShield"
+          },
+          "profession": {
+            "zh": "运维保障工程师",
+            "en": "Operations & SRE"
+          },
+          "role": "member"
+        },
+        {
+          "id": "growth-operator",
+          "name": {
+            "zh": "增长运营师",
+            "en": "GrowthRocket"
+          },
+          "profession": {
+            "zh": "增长运营专家",
+            "en": "Growth & Operations Specialist"
+          },
+          "role": "member"
+        }
+      ]
+    },
+    {
+      "id": "mvp-dev-expert-team",
+      "kind": "team",
+      "name": {
+        "zh": "MVP开发专家团",
+        "en": "MVP Dev Expert Team"
+      },
+      "profession": {
+        "zh": "MVP开发专家团",
+        "en": "MVP Dev Expert Team"
+      },
+      "description": "Share your idea — 8 experts handle research, design, coding, testing, and deployment to build your MVP.",
+      "descriptionZh": "说出你的想法，8位专家从调研、设计、编码、测试到部署全流程协作，帮你快速开发MVP产品",
+      "version": "2.1.1",
+      "path": "packages/team/mvp-dev-expert-team",
+      "files": 44,
+      "bytes": 510715,
+      "sha256": "b2bf3dcf54cba1abd2f97f4762fd58d86d9a1181b99c45cecd13bddd44bbe3ff",
+      "skills": [],
+      "requires": [],
+      "tags": [
+        {
+          "en": "MVP Development",
+          "zh": "MVP开发"
+        },
+        {
+          "en": "Full-Stack",
+          "zh": "全栈开发"
+        },
+        {
+          "en": "Rapid Prototyping",
+          "zh": "快速原型"
+        }
+      ],
+      "categoryId": "02-Engineering",
+      "leadAgent": "mvp-dev-expert-team-team-lead",
+      "members": [
+        {
+          "id": "mvp-dev-expert-team-team-lead",
+          "name": {
+            "zh": "大湾区靓仔",
+            "en": "DaWanQu JingZai"
+          },
+          "profession": {
+            "zh": "项目总监",
+            "en": "Project Director"
+          },
+          "role": "lead"
+        },
+        {
+          "id": "mvp-dev-expert-team-pm",
+          "name": {
+            "zh": "许清楚",
+            "en": "Xu Qingchu"
+          },
+          "profession": {
+            "zh": "产品经理",
+            "en": "Product Manager"
+          },
+          "role": "member"
+        },
+        {
+          "id": "mvp-dev-expert-team-designer",
+          "name": {
+            "zh": "颜好看",
+            "en": "Yan Haokan"
+          },
+          "profession": {
+            "zh": "UI/UX设计师",
+            "en": "UI/UX Designer"
+          },
+          "role": "member"
+        },
+        {
+          "id": "mvp-dev-expert-team-architect",
+          "name": {
+            "zh": "高见远",
+            "en": "Gao Jianyuan"
+          },
+          "profession": {
+            "zh": "首席架构师",
+            "en": "Chief Architect"
+          },
+          "role": "member"
+        },
+        {
+          "id": "mvp-dev-expert-team-frontend",
+          "name": {
+            "zh": "贾思敏",
+            "en": "Jia Simin"
+          },
+          "profession": {
+            "zh": "前端工程师",
+            "en": "Frontend Engineer"
+          },
+          "role": "member"
+        },
+        {
+          "id": "mvp-dev-expert-team-backend",
+          "name": {
+            "zh": "贝洛奇",
+            "en": "Bei Luoqi"
+          },
+          "profession": {
+            "zh": "后端工程师",
+            "en": "Backend Engineer"
+          },
+          "role": "member"
+        },
+        {
+          "id": "mvp-dev-expert-team-qa",
+          "name": {
+            "zh": "严过关",
+            "en": "Yan Guoguan"
+          },
+          "profession": {
+            "zh": "测试工程师",
+            "en": "QA Engineer"
+          },
+          "role": "member"
+        },
+        {
+          "id": "mvp-dev-expert-team-devops",
+          "name": {
+            "zh": "卜宕机",
+            "en": "Bu Dangji"
+          },
+          "profession": {
+            "zh": "运维工程师",
+            "en": "DevOps Engineer"
+          },
+          "role": "member"
+        }
+      ]
+    },
+    {
+      "id": "opc-team",
+      "kind": "team",
+      "name": {
+        "zh": "一人公司专家团",
+        "en": "One-Person Company Team"
+      },
+      "profession": {
+        "zh": "一人公司专家团",
+        "en": "One-Person Company Team"
+      },
+      "description": "Based on «The One-Person Company Methodology» by Easy, 9 experts guide you through the full journey from resource audit, niche positioning to MVP, conversion, and operations review.",
+      "descriptionZh": "基于由Easy创作的《一人企业方法论》，9位专家陪你走完从资源盘点、利基定位到MVP、转化、复盘的一人公司全流程共创",
+      "version": "1.0.0",
+      "path": "packages/team/opc-team",
+      "files": 42,
+      "bytes": 111205,
+      "sha256": "9d467e942ab4e76db6ec959ee441beba70fb543cf6b9bc3417640dc11f743a25",
+      "skills": [
+        {
+          "name": "opc-asset-ops",
+          "ns": "opc-team--opc-asset-ops",
+          "path": "skills/opc-team--opc-asset-ops",
+          "files": 3,
+          "bytes": 5918,
+          "sha256": "b030736a06973664d389d9e78554deb596d8d84ef8709f03a4807da7740fb4d2"
+        },
+        {
+          "name": "opc-business-model-design",
+          "ns": "opc-team--opc-business-model-design",
+          "path": "skills/opc-team--opc-business-model-design",
+          "files": 4,
+          "bytes": 5962,
+          "sha256": "2077e9c93ad0b761b5b65c183436800e9ed3049a289efae7e8653e2bb2de7861"
+        },
+        {
+          "name": "opc-conversion-loop",
+          "ns": "opc-team--opc-conversion-loop",
+          "path": "skills/opc-team--opc-conversion-loop",
+          "files": 3,
+          "bytes": 5165,
+          "sha256": "5a3b4ccf63d52de72c9a040d309a82b6d414f93e82719f076802aac03ae06017"
+        },
+        {
+          "name": "opc-dashboard-review",
+          "ns": "opc-team--opc-dashboard-review",
+          "path": "skills/opc-team--opc-dashboard-review",
+          "files": 4,
+          "bytes": 5189,
+          "sha256": "e05fb7123b1a5c5590e59bd9b63973f1ed1a1f0f157717520233291d887e6a53"
+        },
+        {
+          "name": "opc-mvp-designer",
+          "ns": "opc-team--opc-mvp-designer",
+          "path": "skills/opc-team--opc-mvp-designer",
+          "files": 3,
+          "bytes": 5001,
+          "sha256": "969005a259f9e34cbb1eb7425e5f9001af8c74eb04a2795aa21b9c0571114f34"
+        },
+        {
+          "name": "opc-niche-positioning",
+          "ns": "opc-team--opc-niche-positioning",
+          "path": "skills/opc-team--opc-niche-positioning",
+          "files": 4,
+          "bytes": 15217,
+          "sha256": "47add67f7c850372018d404fb26bea12b85c415ec6d28f286dad8ee3f0572e82"
+        },
+        {
+          "name": "opc-orchestrator",
+          "ns": "opc-team--opc-orchestrator",
+          "path": "skills/opc-team--opc-orchestrator",
+          "files": 4,
+          "bytes": 19410,
+          "sha256": "c7dd8b0a31dbd4ac3d49a5430a4cf29e8072a62be5d94dbc72525388e4f8c17b"
+        },
+        {
+          "name": "opc-resource-audit",
+          "ns": "opc-team--opc-resource-audit",
+          "path": "skills/opc-team--opc-resource-audit",
+          "files": 3,
+          "bytes": 10743,
+          "sha256": "4ef445aa9f9d0cf8bc8e749c815f698c575495c34569446897441359a8a6d136"
+        },
+        {
+          "name": "opc-value-proposition",
+          "ns": "opc-team--opc-value-proposition",
+          "path": "skills/opc-team--opc-value-proposition",
+          "files": 3,
+          "bytes": 5909,
+          "sha256": "ab3946dbb4f93bf83bbffe92acfafac9ed76fef5cfe4519f2c10bd36536f05c1"
+        }
+      ],
+      "requires": [],
+      "tags": [
+        {
+          "zh": "一人公司",
+          "en": "One-Person Company"
+        },
+        {
+          "zh": "商业模式",
+          "en": "Business Model"
+        },
+        {
+          "zh": "经营复盘",
+          "en": "Operations Review"
+        }
+      ],
+      "categoryId": "12-IndustryConsultant",
+      "leadAgent": "opc-team-lead",
+      "members": [
+        {
+          "id": "opc-team-lead",
+          "name": {
+            "zh": "易牧",
+            "en": "Yimu"
+          },
+          "profession": {
+            "zh": "首席编排师",
+            "en": "Chief Orchestrator"
+          },
+          "role": "lead"
+        },
+        {
+          "id": "opc-resource-auditor",
+          "name": {
+            "zh": "顾盘",
+            "en": "Gupan"
+          },
+          "profession": {
+            "zh": "资源盘点师",
+            "en": "Resource Auditor"
+          },
+          "role": "member"
+        },
+        {
+          "id": "opc-niche-strategist",
+          "name": {
+            "zh": "林利基",
+            "en": "Linji"
+          },
+          "profession": {
+            "zh": "利基定位师",
+            "en": "Niche Strategist"
+          },
+          "role": "member"
+        },
+        {
+          "id": "opc-value-designer",
+          "name": {
+            "zh": "言之",
+            "en": "Yanzhi"
+          },
+          "profession": {
+            "zh": "价值主张设计师",
+            "en": "Value Proposition Designer"
+          },
+          "role": "member"
+        },
+        {
+          "id": "opc-model-architect",
+          "name": {
+            "zh": "墨方",
+            "en": "Mofang"
+          },
+          "profession": {
+            "zh": "商业模式架构师",
+            "en": "Business Model Architect"
+          },
+          "role": "member"
+        },
+        {
+          "id": "opc-mvp-designer",
+          "name": {
+            "zh": "验真",
+            "en": "Yanzhen"
+          },
+          "profession": {
+            "zh": "MVP实验设计师",
+            "en": "MVP Experiment Designer"
+          },
+          "role": "member"
+        },
+        {
+          "id": "opc-conversion-designer",
+          "name": {
+            "zh": "闭环",
+            "en": "Bihuan"
+          },
+          "profession": {
+            "zh": "转化路径设计师",
+            "en": "Conversion Path Designer"
+          },
+          "role": "member"
+        },
+        {
+          "id": "opc-asset-strategist",
+          "name": {
+            "zh": "沉墨",
+            "en": "Chenmo"
+          },
+          "profession": {
+            "zh": "资产沉淀师",
+            "en": "Asset Compounding Strategist"
+          },
+          "role": "member"
+        },
+        {
+          "id": "opc-dashboard-reviewer",
+          "name": {
+            "zh": "复明",
+            "en": "Fuming"
+          },
+          "profession": {
+            "zh": "经营复盘师",
+            "en": "Operations Reviewer"
+          },
+          "role": "member"
+        }
+      ]
+    }
+  ]
+}

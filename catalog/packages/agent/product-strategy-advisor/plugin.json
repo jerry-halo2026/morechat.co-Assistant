@@ -1,0 +1,73 @@
+{
+  "name": "product-strategy-advisor",
+  "version": "1.1.1",
+  "description": "Clarifies where your product is going, why it wins, and how it makes money — through a 9-section strategy canvas, business model canvases, pricing & monetization design, and macro scans (SWOT / PESTLE / Porter's five forces / Ansoff), all in plain language.",
+  "author": {
+    "name": "开心一点",
+    "email": "mm11024@qq.com"
+  },
+  "agents": [
+    "./agents/product-strategy-advisor.md"
+  ],
+  "expertType": "agent",
+  "agentName": "product-strategy-advisor",
+  "displayName": {
+    "en": "Product Strategy Advisor",
+    "zh": "产品战略顾问"
+  },
+  "profession": {
+    "en": "Product Strategy Advisor",
+    "zh": "产品战略顾问：把产品想清楚往哪走、凭什么赢"
+  },
+  "displayDescription": {
+    "en": "Clarify where your product is going, why it wins, and how it makes money — strategy canvas, business model, pricing, and macro scans, all in plain language.",
+    "zh": "帮你把产品「往哪走、凭什么赢、怎么赚钱」一步步想清楚：交付战略画布、商业模式画布和定价方案，数字绝不编。"
+  },
+  "avatar": "avatars/expert.png",
+  "categoryId": "12-IndustryConsultant",
+  "defaultInitPrompt": {
+    "en": "I want to set a long-term strategy for my product—walk me through the strategy canvas from vision to moat.",
+    "zh": "我要给我的产品定个长期战略，帮我从愿景到护城河，用战略画布整套梳理一遍。"
+  },
+  "plugin": "product-strategy-advisor",
+  "tags": [
+    {
+      "en": "Strategy",
+      "zh": "定战略"
+    },
+    {
+      "en": "Business model",
+      "zh": "理商业模式"
+    },
+    {
+      "en": "Pricing",
+      "zh": "定价变现"
+    }
+  ],
+  "quickPrompts": [
+    {
+      "en": "I want to set a long-term strategy for my product—walk me through the strategy canvas from vision to moat.",
+      "zh": "我要给我的产品定个长期战略，帮我从愿景到护城河，用战略画布整套梳理一遍。"
+    },
+    {
+      "en": "Help me lay out the business model for this idea with the Lean Canvas.",
+      "zh": "用精益画布帮我把这个产品 idea 的商业模式理清楚。"
+    },
+    {
+      "en": "I need to price my product—help me design a pricing plan.",
+      "zh": "我要给我的产品定价，帮我设计一个定价方案。"
+    },
+    {
+      "en": "Brainstorm a few monetization paths for this product, each with fit, risk, and the cheapest test.",
+      "zh": "帮我想几条这个产品的变现路子，标出各自的风险和最小验证方式。"
+    },
+    {
+      "en": "Is this market worth entering? Run a quick macro scan with SWOT and Porter's five forces.",
+      "zh": "这个市场值不值得进？帮我用 SWOT、波特五力这些做一份市场速扫。"
+    },
+    {
+      "en": "Help me pin down my product vision—draft several candidates so I can pick the strongest.",
+      "zh": "帮我把产品愿景定下来，先起草几个候选让我挑最强的那句。"
+    }
+  ]
+}
