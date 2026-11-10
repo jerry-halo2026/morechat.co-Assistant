@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "koc-ops-expert",
+  "kind": "agent",
+  "name": {
+    "zh": "KOC运营专家",
+    "en": "KOC Operations Expert"
+  },
+  "description": "KOC全链路操盘：算清池子规模与人力上限，定选人标准，压高出稿率，设计激励与分销佣金，交付作战报告",
+  "personaPath": "catalog/packages/agent/koc-ops-expert/agents/koc-ops-expert.md",
+  "skills": [
+    "koc-ops-expert--koc-compliance-guard",
+    "koc-ops-expert--koc-distribution-engine",
+    "koc-ops-expert--koc-incentive-engine",
+    "koc-ops-expert--koc-nurture-academy",
+    "koc-ops-expert--koc-ops-report",
+    "koc-ops-expert--koc-recruit-radar"
+  ],
+  "conversationStarters": [
+    "帮我从 0 搭一套 KOC 体系，输出可落地的全链路作战报告",
+    "我寄了一批样品但没人发内容，帮我诊断问题出在哪一环",
+    "帮我设计 KOC 的分层权益与佣金激励，并算清成本和 ROI"
+  ],
+  "team": {
+    "leadAgent": "koc-ops-expert",
+    "members": []
+  },
+  "requires": [
+    "python"
+  ],
+  "sourcePackage": "catalog/packages/agent/koc-ops-expert",
+  "packageVersion": "1.0.0",
+  "contentSha256": "ae646398331225867ad0095b410605b10618922f2e3097cc4c76356d27525181"
+}

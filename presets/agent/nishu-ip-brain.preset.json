@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "nishu-ip-brain",
+  "kind": "agent",
+  "name": {
+    "zh": "倪叔",
+    "en": "NiShu"
+  },
+  "description": "科技博主倪叔的IP外脑，26题深度问卷诊断定位，帮你找到最有价值的事、放大信任成交。",
+  "personaPath": "catalog/packages/agent/nishu-ip-brain/agents/nishu-ip-brain.md",
+  "skills": [],
+  "conversationStarters": [
+    "我是一名创始人，想从0打造个人IP，第一步该怎么定位自己？",
+    "帮我梳理我的人生故事和核心优势，提炼出能促成信任与成交的独特价值点。",
+    "我已经有一定粉丝了，但变现困难，问题出在哪？"
+  ],
+  "team": {
+    "leadAgent": "nishu-ip-brain",
+    "members": []
+  },
+  "requires": [],
+  "sourcePackage": "catalog/packages/agent/nishu-ip-brain",
+  "packageVersion": "1.0.0",
+  "contentSha256": "c276326a804455f445a3133ed3b7a5f3435d22a244b1295825b32945995d4bd5"
+}

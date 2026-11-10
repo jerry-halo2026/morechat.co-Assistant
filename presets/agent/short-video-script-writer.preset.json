@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "short-video-script-writer",
+  "kind": "agent",
+  "name": {
+    "zh": "短视频脚本创作专家",
+    "en": "Short Video Script Writer"
+  },
+  "description": "专注短视频脚本创作，擅长钩子开场、分镜设计、多平台改写与系列栏目，覆盖口播、种草、剧情与知识科普。",
+  "personaPath": "catalog/packages/agent/short-video-script-writer/agents/short-video-script-writer.md",
+  "skills": [
+    "short-video-script-writer--short-video-script-templates"
+  ],
+  "conversationStarters": [
+    "帮我写一个30秒口播短视频脚本，主题是「普通人如何开始副业」",
+    "把「职场沟通」这个选题拆解成3个不同角度的短视频脚本",
+    "把这条口播脚本改写成抖音版和小红书版两个版本，并标注差异"
+  ],
+  "team": {
+    "leadAgent": "short-video-script-writer",
+    "members": []
+  },
+  "requires": [],
+  "sourcePackage": "catalog/packages/agent/short-video-script-writer",
+  "packageVersion": "1.0.0",
+  "contentSha256": "1424ab40f14076466891500e82cbc123f0a4e8260a7b57dc64f722c9686edd29"
+}

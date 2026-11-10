@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "douyin-live-ad-expert",
+  "kind": "agent",
+  "name": {
+    "zh": "抖音投流专家",
+    "en": "Douyin Live Ad Expert"
+  },
+  "description": "抖音全能投流专家：用数据说清你卡在哪、为何卡、离大盘差多少，再给一套企业和个人都能照做的投流方案",
+  "personaPath": "catalog/packages/agent/douyin-live-ad-expert/agents/douyin-live-ad-expert.md",
+  "skills": [
+    "douyin-live-ad-expert--live-ad-analyze",
+    "douyin-live-ad-expert--live-ad-collect",
+    "douyin-live-ad-expert--live-ad-flash",
+    "douyin-live-ad-expert--live-ad-strategy",
+    "douyin-live-ad-expert--live-ad-theory"
+  ],
+  "conversationStarters": [
+    "我的直播间流速上不去，帮我做个完整诊断",
+    "帮我测算这个品能跑到多少 GMV，多久能爬起来",
+    "我只做美妆，没有其他数据，先给我看看大概"
+  ],
+  "team": {
+    "leadAgent": "douyin-live-ad-expert",
+    "members": []
+  },
+  "requires": [],
+  "sourcePackage": "catalog/packages/agent/douyin-live-ad-expert",
+  "packageVersion": "1.0.1",
+  "contentSha256": "fd5c353ed5930553f4d5b2ded64fd9a88a92d6924924acc4444a465b437ba55d"
+}

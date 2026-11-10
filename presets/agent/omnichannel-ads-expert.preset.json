@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "omnichannel-ads-expert",
+  "kind": "agent",
+  "name": {
+    "zh": "全渠道投放官",
+    "en": "Omni"
+  },
+  "description": "覆盖巨量、腾讯、快手、小红书、Google、Meta等国内外媒体投放，擅长账户搭建、素材创意与优化。",
+  "personaPath": "catalog/packages/agent/omnichannel-ads-expert/agents/omnichannel-ads-expert.md",
+  "skills": [
+    "omnichannel-ads-expert--omnichannel-ads-playbook"
+  ],
+  "conversationStarters": [
+    "我有 5 万预算要推一款新 App，帮我做一份巨量引擎 + 腾讯广告的跨平台投放方案",
+    "帮我写一批信息流广告素材：3 条短视频口播脚本 + 5 组标题文案",
+    "这是我的投放日报，帮我诊断跑不起量、成本持续上涨的原因并给出优化动作"
+  ],
+  "team": {
+    "leadAgent": "omnichannel-ads-expert",
+    "members": []
+  },
+  "requires": [],
+  "sourcePackage": "catalog/packages/agent/omnichannel-ads-expert",
+  "packageVersion": "1.0.0",
+  "contentSha256": "68f3a59e9e5b0c6094a1188b2e457153d4e87b9f4583932d4f9f44fbda97258f"
+}

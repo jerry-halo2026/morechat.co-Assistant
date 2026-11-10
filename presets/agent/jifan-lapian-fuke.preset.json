@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "jifan-lapian-fuke",
+  "kind": "agent",
+  "name": {
+    "zh": "爆款视频拉片与分镜复刻",
+    "en": "Video Breakdown and Restructure"
+  },
+  "description": "把一条爆款视频拆成逐镜结构表，再把结构搬到你自己的题材上，只借结构不搬素材。",
+  "personaPath": "catalog/packages/agent/jifan-lapian-fuke/agents/jifan-lapian-fuke.md",
+  "skills": [
+    "jifan-lapian-fuke--jifan-lapian-chaifen",
+    "jifan-lapian-fuke--jifan-lapian-jiegou",
+    "jifan-lapian-fuke--jifan-lapian-qingdan"
+  ],
+  "conversationStarters": [
+    "我想学爆款视频的结构但不想抄，先用内置示例给我看拉片拆解和结构复刻怎么做。",
+    "用内置示例演示：把拆出来的结构映射到你自己的题材上，逐镜说明你该拍什么，不复制原片画面与文案。",
+    "用内置示例演示：把复刻方案落成执行清单：要拍哪些镜头、需要什么素材、谁做、大概多久。"
+  ],
+  "team": {
+    "leadAgent": "jifan-lapian-fuke",
+    "members": []
+  },
+  "requires": [
+    "python"
+  ],
+  "sourcePackage": "catalog/packages/agent/jifan-lapian-fuke",
+  "packageVersion": "1.0.2",
+  "contentSha256": "de664591a1e4e950e2846633a7bae8743d7c516b57cce5389d18a020f89cbc96"
+}

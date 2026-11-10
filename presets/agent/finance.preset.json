@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "finance",
+  "kind": "agent",
+  "name": {
+    "zh": "finance",
+    "en": "finance"
+  },
+  "description": "财务与会计插件，支持月末结账、日记账分录、账户核对、财务报表生成、差异分析和 SOX 审计支持。",
+  "personaPath": "catalog/packages/agent/finance/agents/finance-accounting-expert.md",
+  "skills": [
+    "finance--audit-support",
+    "finance--close-management",
+    "finance--finance-workflows",
+    "finance--financial-statements",
+    "finance--journal-entry-prep",
+    "finance--reconciliation",
+    "finance--variance-analysis"
+  ],
+  "conversationStarters": [],
+  "team": {
+    "leadAgent": "finance-accounting-expert",
+    "members": []
+  },
+  "requires": [],
+  "sourcePackage": "catalog/packages/agent/finance",
+  "packageVersion": "1.0.0",
+  "contentSha256": "1959af94aa4e69177168685a5206cad6bcca0a3be68847144e040a261955f927"
+}

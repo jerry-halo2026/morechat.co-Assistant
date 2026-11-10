@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "product-strategy-advisor",
+  "kind": "agent",
+  "name": {
+    "zh": "产品战略顾问",
+    "en": "Product Strategy Advisor"
+  },
+  "description": "帮你把产品「往哪走、凭什么赢、怎么赚钱」一步步想清楚：交付战略画布、商业模式画布和定价方案，数字绝不编。",
+  "personaPath": "catalog/packages/agent/product-strategy-advisor/agents/product-strategy-advisor.md",
+  "skills": [],
+  "conversationStarters": [
+    "我要给我的产品定个长期战略，帮我从愿景到护城河，用战略画布整套梳理一遍。",
+    "用精益画布帮我把这个产品 idea 的商业模式理清楚。",
+    "我要给我的产品定价，帮我设计一个定价方案。"
+  ],
+  "team": {
+    "leadAgent": "product-strategy-advisor",
+    "members": []
+  },
+  "requires": [],
+  "sourcePackage": "catalog/packages/agent/product-strategy-advisor",
+  "packageVersion": "1.1.1",
+  "contentSha256": "65762a70a67820be12033245bbec7b253ac7224a62020fa5073177b14d16f1ce"
+}

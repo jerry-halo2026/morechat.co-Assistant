@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "designkit-ugc-commerce",
+  "kind": "agent",
+  "name": {
+    "zh": "真人口播",
+    "en": "UGC Product Videos"
+  },
+  "description": "根据商品素材完成UGC口播带货AI视频创作，从购买理由、真人感口播脚本、镜头到成片，适配产品种草与广告投放。美图设计室提供。",
+  "personaPath": "catalog/packages/agent/designkit-ugc-commerce/agents/designkit-ugc-commerce.md",
+  "skills": [
+    "designkit-ugc-commerce--ugc-commerce"
+  ],
+  "conversationStarters": [
+    "为这个商品制作一支 TikTok UGC 真人口播带货视频。",
+    "把这些卖点做成自然真实的达人口播视频。",
+    "用这些商品图生成一支转化导向的 UGC 带货视频。"
+  ],
+  "team": {
+    "leadAgent": "designkit-ugc-commerce",
+    "members": []
+  },
+  "requires": [],
+  "sourcePackage": "catalog/packages/agent/designkit-ugc-commerce",
+  "packageVersion": "1.0.39",
+  "contentSha256": "178bfb273cd80fe9ff88191fa4661eb9beffe801304ac7dc9f04f68117ef2571"
+}

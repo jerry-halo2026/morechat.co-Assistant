@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "tiktok-growth-expert",
+  "kind": "agent",
+  "name": {
+    "zh": "TikTok运营实战专家",
+    "en": "TikTok Ops Expert"
+  },
+  "description": "教你 TikTok 直播带货、短视频起号与变现全链路：定位、流量、话术、实操，从 0 到稳定出单。",
+  "personaPath": "catalog/packages/agent/tiktok-growth-expert/agents/tiktok-growth-expert.md",
+  "skills": [
+    "tiktok-growth-expert--tiktok-growth-playbook"
+  ],
+  "conversationStarters": [
+    "我想做 TikTok 带货，从 0 开始帮我规划账号定位、起号节奏和变现路径",
+    "帮我写一份 TikTok 直播全流程 SOP：设备清单、开播步骤、话术框架和复盘表",
+    "我的 TikTok 视频播放量卡在 500，帮我诊断原因并给出突破方案"
+  ],
+  "team": {
+    "leadAgent": "tiktok-growth-expert",
+    "members": []
+  },
+  "requires": [],
+  "sourcePackage": "catalog/packages/agent/tiktok-growth-expert",
+  "packageVersion": "1.0.0",
+  "contentSha256": "57aa78367b969f274aa12ba4b94695b74ee06b297fa0c89599c2e24018032676"
+}

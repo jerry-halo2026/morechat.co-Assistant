@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "product-pm-expert",
+  "kind": "agent",
+  "name": {
+    "zh": "司南",
+    "en": "Compass"
+  },
+  "description": "产品经理专家，擅长需求梳理、原型设计、PRD撰写与产品方案设计，识别需求风险并输出高质量产品文档。",
+  "personaPath": "catalog/packages/agent/product-pm-expert/agents/product-pm-expert.md",
+  "skills": [
+    "product-pm-expert--product-pm"
+  ],
+  "conversationStarters": [
+    "帮我梳理这个需求：先给精简版需求梳理（目标/方案对比/关键风险/下一步），需要完整 PRD 时再展开 15 段完整版。",
+    "帮我评估需求风险并给出产品方案建议（含方案对比与演进路径）。",
+    "帮我写用户故事，并梳理产品原型思路与交互流程。"
+  ],
+  "team": {
+    "leadAgent": "product-pm-expert",
+    "members": []
+  },
+  "requires": [],
+  "sourcePackage": "catalog/packages/agent/product-pm-expert",
+  "packageVersion": "1.19.25",
+  "contentSha256": "f53881faa50fd8093cd3fda2ea2900df00d1cda1b6a4a8cdc3702d1b65c5e795"
+}

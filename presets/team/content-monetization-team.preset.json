@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "content-monetization-team",
+  "kind": "team",
+  "name": {
+    "zh": "内容变现商业化专家团",
+    "en": "Content Monetization Team"
+  },
+  "description": "5人专家团协作覆盖CPS带货分佣、CPE/CPM效果广告、创作者-品牌交易撮合与收益分析，助力内容创作者和品牌方实现商业化价值最大化",
+  "personaPath": "catalog/packages/team/content-monetization-team/agents/content-monetization-team-lead.md",
+  "skills": [
+    "content-monetization-team--content-monetization-ops"
+  ],
+  "conversationStarters": [
+    "帮我设计一套适合我账号的内容变现方案",
+    "分析哪种结算模式（CPS/CPE/CPM）最适合我当前的粉丝体量",
+    "帮我评估这个品牌推广任务的收益是否合理"
+  ],
+  "team": {
+    "leadAgent": "content-monetization-team-lead",
+    "members": [
+      "cps-specialist",
+      "cpe-cpm-expert",
+      "marketplace-operator",
+      "revenue-analyst"
+    ]
+  },
+  "requires": [],
+  "sourcePackage": "catalog/packages/team/content-monetization-team",
+  "packageVersion": "1.0.0",
+  "contentSha256": "906f4f9648534027c223359b5ff00a0084746f242a8577a1f07e120916eeeb2c"
+}

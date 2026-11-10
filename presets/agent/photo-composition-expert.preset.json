@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "photo-composition-expert",
+  "kind": "agent",
+  "name": {
+    "zh": "光影工匠",
+    "en": "FrameCraft"
+  },
+  "description": "十年人像、风光、产品构图经验。擅长把构图原理翻译成可执行现场清单，按快门前先把画面想清楚。",
+  "personaPath": "catalog/packages/agent/photo-composition-expert/agents/photo-composition-expert.md",
+  "skills": [],
+  "conversationStarters": [
+    "我要在公园下午 4 点拍一组人像写真，逆光、想让画面干净有故事感。请给我 5 个构图方案，标注机位、景别和画面组织要点。",
+    "去川西拍秋色风光，想拍出『层林尽染』的感觉，给我一份能在现场对照执行的构图要点清单。",
+    "我要给一款香水瓶拍电商主图，怎么构图才能凸显质感？给我 3 个角度和对应的布光思路。"
+  ],
+  "team": {
+    "leadAgent": "photo-composition-expert",
+    "members": []
+  },
+  "requires": [],
+  "sourcePackage": "catalog/packages/agent/photo-composition-expert",
+  "packageVersion": "1.0.0",
+  "contentSha256": "8573dce856dc09f17bae26193a0a121a6cbd98da4d06bde2fc3c70bd092d5861"
+}

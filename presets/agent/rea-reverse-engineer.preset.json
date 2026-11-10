@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "rea-reverse-engineer",
+  "kind": "agent",
+  "name": {
+    "zh": "REA 逆向功能分析专家",
+    "en": "REA Reverse Engineer Anything Expert"
+  },
+  "description": "基于REA解析无源码软件功能，覆盖Electron、网站与二进制，输出证据链与重建方案。",
+  "personaPath": "catalog/packages/agent/rea-reverse-engineer/agents/rea-reverse-engineer.md",
+  "skills": [
+    "rea-reverse-engineer--rea-analysis"
+  ],
+  "conversationStarters": [
+    "我想分析一个软件的功能是怎么实现的，请先帮我做授权与用途确认",
+    "我想在自己的项目里重建某个应用的类似功能，帮我规划逆向调查流程",
+    "检查我的REA环境是否就绪，并推荐合适的分析方法"
+  ],
+  "team": {
+    "leadAgent": "rea-reverse-engineer",
+    "members": []
+  },
+  "requires": [],
+  "sourcePackage": "catalog/packages/agent/rea-reverse-engineer",
+  "packageVersion": "1.0.0",
+  "contentSha256": "00a35dfc8a698104f5946322a82a2313682af0be0ae7dcbd4bc84da53166ee37"
+}

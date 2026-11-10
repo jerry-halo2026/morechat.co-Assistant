@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "fbsir-industry-scene-researcher",
+  "kind": "agent",
+  "name": {
+    "zh": "高创智库",
+    "en": "Gaochuang Think Tank"
+  },
+  "description": "从业务难题出发，跨行业找案例、核验证据、拆解智能原生机制，把图文影音转成适合你的行动方案。",
+  "personaPath": "catalog/packages/agent/fbsir-industry-scene-researcher/agents/fbsir-industry-scene-researcher.md",
+  "skills": [
+    "fbsir-industry-scene-researcher--industry-scene-service-recording"
+  ],
+  "conversationStarters": [
+    "我们做【业务】，想解决【问题】。请找值得借鉴的智能原生案例，包含同业和跨行业思路，比较做法、成效依据与适用条件，建议先试哪一条。",
+    "帮我看这份【资料或案例】：AI改了哪些环节，价值从哪里来，哪些说法还需核实？请核对原始依据、补充同类对照，整理成一页团队简报。",
+    "我们想借鉴【案例或做法】，已有【条件】。哪些能借鉴，哪些要调整？请给小范围试点：步骤、分工、成本、验收指标和停止条件。"
+  ],
+  "team": {
+    "leadAgent": "fbsir-industry-scene-researcher",
+    "members": []
+  },
+  "requires": [
+    "node"
+  ],
+  "sourcePackage": "catalog/packages/agent/fbsir-industry-scene-researcher",
+  "packageVersion": "2026.11.3",
+  "contentSha256": "586729d09df91b1de2bcc929418651acd12bf539c29876f96adbc57a777d5da2"
+}

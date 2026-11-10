@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "trade-market-analyst",
+  "kind": "agent",
+  "name": {
+    "zh": "易查云海外市场洞察分析师",
+    "en": "Trade AI Market Insights Analyst"
+  },
+  "description": "用海关与官方贸易统计分析目标市场的规模、走势、价格带和供应格局，判断值不值得进、该怎么进。",
+  "personaPath": "catalog/packages/agent/trade-market-analyst/agents/trade-market-analyst.md",
+  "skills": [
+    "trade-market-analyst--trade-data-router",
+    "trade-market-analyst--trade-market-entry",
+    "trade-market-analyst--trade-research-report"
+  ],
+  "conversationStarters": [
+    "评估越南市场的不锈钢保温杯（HS 961700）值不值得进：近两年进口规模走势、主要来源国份额和价格带，再给出进入建议。",
+    "查美国近两年从各国进口 LED 灯具（HS 9405）的走势，以及中国、墨西哥、越南等来源国的份额变化。",
+    "按 HS 961700 查美国不锈钢保温杯的进口价格带，我的 FOB 报价 3.2 美元/只落在哪一档？"
+  ],
+  "team": {
+    "leadAgent": "trade-market-analyst",
+    "members": []
+  },
+  "requires": [],
+  "sourcePackage": "catalog/packages/agent/trade-market-analyst",
+  "packageVersion": "0.1.5",
+  "contentSha256": "085b4b64dda44a84aeeebe05feac18555a1af2f3cbc1943c843d464389a296bc"
+}

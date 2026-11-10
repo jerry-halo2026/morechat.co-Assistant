@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "data-analysis",
+  "kind": "agent",
+  "name": {
+    "zh": "数据分析专家团",
+    "en": "Data Team"
+  },
+  "description": "六人专家团接力：澄清需求、体检数据、十大打法深挖，结论先过红队复核再交付，自带零依赖分析工具箱。",
+  "personaPath": "catalog/packages/agent/data-analysis/agents/data-team-lead.md",
+  "skills": [
+    "data-analysis--data-analysis-cn"
+  ],
+  "conversationStarters": [
+    "这是我们店上半年的销售 Excel，帮我分析下为什么 6 月掉得厉害，周五汇报要用",
+    "帮我算下这个转化漏斗哪步最拉胯：浏览 10 万、加购 3.2 万、下单 1.5 万、支付 9800",
+    "拿这份用户订单表做全套分析：先体检数据，再 RFM 分层和留存矩阵，结论过一遍红队复核，最后出给老板的一页纸"
+  ],
+  "team": {
+    "leadAgent": "data-team-lead",
+    "members": [
+      "data-engineer",
+      "data-statistician",
+      "insight-consultant",
+      "visual-storyteller",
+      "red-team-reviewer"
+    ]
+  },
+  "requires": [
+    "python"
+  ],
+  "sourcePackage": "catalog/packages/agent/data-analysis",
+  "packageVersion": "1.0.0",
+  "contentSha256": "4776f6e95a4679f96898213ccc4c83460946d963775f7dbaefe702472712e035"
+}

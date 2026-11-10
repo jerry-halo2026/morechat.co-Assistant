@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "fullstack-forge-team",
+  "kind": "team",
+  "name": {
+    "zh": "全栈智造专家团",
+    "en": "FullStack Forge Team"
+  },
+  "description": "8位专业角色覆盖全栈系统交付全生命周期：网站、App、iOS与鸿蒙应用、微信小程序、桌面软件等，从需求与平台选型，到产品、研发、测试、上线、运维、运营一体化智造交付。",
+  "personaPath": "catalog/packages/team/fullstack-forge-team/agents/forge-lead.md",
+  "skills": [
+    "fullstack-forge-team--forge-orchestrator"
+  ],
+  "conversationStarters": [
+    "帮我把需求做成网站/App/小程序并交付上线",
+    "帮我做一个iOS/鸿蒙App的全栈开发方案",
+    "帮我评估一个网站/软件系统从0到上线的完整路径"
+  ],
+  "team": {
+    "leadAgent": "forge-lead",
+    "members": [
+      "product-scout",
+      "product-manager",
+      "fullstack-engineer",
+      "qa-tester",
+      "release-manager",
+      "ops-sre",
+      "growth-operator"
+    ]
+  },
+  "requires": [],
+  "sourcePackage": "catalog/packages/team/fullstack-forge-team",
+  "packageVersion": "2.4.1",
+  "contentSha256": "1d96644a3ccf4641aa695c3476111bab0e25b7982e1cbda200b75c220133268f"
+}

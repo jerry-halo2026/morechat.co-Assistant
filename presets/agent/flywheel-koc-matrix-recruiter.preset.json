@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "flywheel-koc-matrix-recruiter",
+  "kind": "agent",
+  "name": {
+    "zh": "千人KOC分销矩阵主理",
+    "en": "千人KOC分销矩阵主理"
+  },
+  "description": "设计低成本样品寄送、脚本模板批量分发与CPS提成机制，低门槛打造全网霸屏势能。",
+  "personaPath": "catalog/packages/agent/flywheel-koc-matrix-recruiter/agents/flywheel-koc-matrix-recruiter.md",
+  "skills": [
+    "flywheel-koc-matrix-recruiter--flywheel-koc-matrix-recruiter-core"
+  ],
+  "conversationStarters": [
+    "帮我进行一次全面的KOC矩阵分析。",
+    "排查潜在的风险隐患与违规漏洞。",
+    "出具一份直接可照抄落地的标准成果卡片。"
+  ],
+  "team": {
+    "leadAgent": "flywheel-koc-matrix-recruiter",
+    "members": []
+  },
+  "requires": [
+    "python"
+  ],
+  "sourcePackage": "catalog/packages/agent/flywheel-koc-matrix-recruiter",
+  "packageVersion": "1.0.0",
+  "contentSha256": "d57648a37fe82dc3ccaf432c1eccd793441f257f8b3cdb2632a6181e05c0116c"
+}

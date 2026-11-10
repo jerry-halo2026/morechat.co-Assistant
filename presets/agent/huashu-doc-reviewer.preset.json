@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "huashu-doc-reviewer",
+  "kind": "agent",
+  "name": {
+    "zh": "花叔文档审稿专家",
+    "en": "Huashu Document Reviewer"
+  },
+  "description": "为「一人公司」打造的 AI 审稿专家。直接在 .docx 原文里加批注气泡和追踪修订，不返回新文档、不破坏原格式。",
+  "personaPath": "catalog/packages/agent/huashu-doc-reviewer/agents/doc-reviewer.md",
+  "skills": [],
+  "conversationStarters": [
+    "用合同审查模式帮我审一下：contract.docx",
+    "这份方案需要逻辑评审：proposal-v2.docx",
+    "帮我把这份报告的表述顺一遍，留修订痕迹：report.docx"
+  ],
+  "team": {
+    "leadAgent": "doc-reviewer",
+    "members": []
+  },
+  "requires": [],
+  "sourcePackage": "catalog/packages/agent/huashu-doc-reviewer",
+  "packageVersion": "1.0.1",
+  "contentSha256": "59d3a6bdba7a9b467904cc2aa440eb3038490f01b054975ba48d66b909c1d56e"
+}

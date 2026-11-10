@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "douyin-viral-content",
+  "kind": "agent",
+  "name": {
+    "zh": "抖音爆款内容专家",
+    "en": "Douyin Viral Content Expert"
+  },
+  "description": "全自动爆款生产线：三维扫描热点、锁定飙升爆款、复刻蒸馏文案、违禁词扫雷，闭环验证效果。",
+  "personaPath": "catalog/packages/agent/douyin-viral-content/agents/douyin-viral-content.md",
+  "skills": [
+    "douyin-viral-content--douyin-ai-feed",
+    "douyin-viral-content--douyin-content-surge",
+    "douyin-viral-content--douyin-daily-hot",
+    "douyin-viral-content--douyin-hot-trend",
+    "douyin-viral-content--douyin-prohibited-word",
+    "douyin-viral-content--douyin-search",
+    "douyin-viral-content--douyin-weekly-surge",
+    "douyin-viral-content--multi-copywrite-alchemy"
+  ],
+  "conversationStarters": [
+    "帮我从热点捕捉开始，走完爆款对标、文案复刻、违禁词扫雷的全流程，产出一条可直接发布的抖音爆款文案。",
+    "扫描当下抖音最热话题，找出适合我赛道的爆款选题和内容形态。",
+    "追踪我发布的抖音作品，看它是否进入每日点藏飙升榜。"
+  ],
+  "team": {
+    "leadAgent": "douyin-viral-content",
+    "members": []
+  },
+  "requires": [
+    "python"
+  ],
+  "sourcePackage": "catalog/packages/agent/douyin-viral-content",
+  "packageVersion": "1.0.0",
+  "contentSha256": "6056424cd9edc97cc4940a6cb2e9ffa498b4127a845b716f545348742aaf5b81"
+}

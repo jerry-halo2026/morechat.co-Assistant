@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "backend-architect",
+  "kind": "agent",
+  "name": {
+    "zh": "磐石石",
+    "en": "Joy"
+  },
+  "description": "深耕分布式系统和高并发架构，擅长将复杂业务转化为优雅技术方案",
+  "personaPath": "catalog/packages/agent/backend-architect/agents/backend-architect.md",
+  "skills": [
+    "backend-architect--frontend-dev",
+    "backend-architect--fullstack-dev"
+  ],
+  "conversationStarters": [
+    "我们的后端系统架构需要重构,需要更好的扩展性和稳定性,请后端架构师帮我们设计可靠的后端架构方案。",
+    "优化数据库架构和查询性能",
+    "制定微服务拆分和服务治理方案"
+  ],
+  "team": {
+    "leadAgent": "backend-architect",
+    "members": []
+  },
+  "requires": [
+    "python",
+    "canvas"
+  ],
+  "sourcePackage": "catalog/packages/agent/backend-architect",
+  "packageVersion": "1.0.1",
+  "contentSha256": "de4650f576a14221daacf8782f4d751b7419690b8e3531c171e85eb0cb3d8bf2"
+}

@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "douyin-strategist",
+  "kind": "agent",
+  "name": {
+    "zh": "斗音音",
+    "en": "Maya"
+  },
+  "description": "精通抖音算法和内容生态，打造短视频爆款并实现商业化变现",
+  "personaPath": "catalog/packages/agent/douyin-strategist/agents/douyin-strategist.md",
+  "skills": [
+    "douyin-strategist--anti-distill",
+    "douyin-strategist--humanizer"
+  ],
+  "conversationStarters": [
+    "我们想在抖音上建立品牌账号并实现快速增长,请抖音战略家帮我们制定抖音运营和内容策略。",
+    "写3个爆款短视频脚本",
+    "设计抖音直播带货全流程方案"
+  ],
+  "team": {
+    "leadAgent": "douyin-strategist",
+    "members": []
+  },
+  "requires": [],
+  "sourcePackage": "catalog/packages/agent/douyin-strategist",
+  "packageVersion": "1.0.2",
+  "contentSha256": "a0f98bbd96e5d123f97651cfffff13a20c156c2614f9cfbddf2c7a8941010c46"
+}

@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "resume-match-expert",
+  "kind": "agent",
+  "name": {
+    "zh": "简历·求职教练",
+    "en": "Resume · Job Search Coach"
+  },
+  "description": "求职全周期陪伴：简历诊断、按目标岗位定制改写、关键词与量化检查、面试准备、投递跟踪与每周复盘",
+  "personaPath": "catalog/packages/agent/resume-match-expert/agents/resume-match-expert.md",
+  "skills": [
+    "resume-match-expert--resume-match"
+  ],
+  "conversationStarters": [
+    "帮我看看简历和这个岗位匹不匹配",
+    "按招聘岗位要求帮我定制一版简历",
+    "帮我准备这个岗位的面试"
+  ],
+  "team": {
+    "leadAgent": "resume-match-expert",
+    "members": []
+  },
+  "requires": [
+    "python"
+  ],
+  "sourcePackage": "catalog/packages/agent/resume-match-expert",
+  "packageVersion": "2.0.0",
+  "contentSha256": "55816ae9b55069a22131366270b74f14da33c3f37268de1e7ee19a4d919c50f0"
+}

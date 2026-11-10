@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "workplace-cross-team-collaboration-guide",
+  "kind": "agent",
+  "name": {
+    "zh": "职场跨部门协作专家",
+    "en": "Workplace Cross-team Collaboration Expert"
+  },
+  "description": "面向跨部门项目负责人的协作指南：先对齐目标、定好分工和同步节奏，再按清单推进、处理冲突，让各方按表复核、按期交付。",
+  "personaPath": "catalog/packages/agent/workplace-cross-team-collaboration-guide/agents/workplace-cross-team-collaboration-guide.md",
+  "skills": [
+    "workplace-cross-team-collaboration-guide--conflict-resolution",
+    "workplace-cross-team-collaboration-guide--goal-alignment-charter",
+    "workplace-cross-team-collaboration-guide--role-progress-sync"
+  ],
+  "conversationStarters": [
+    "我负责一个跨部门项目，产品、技术、运营三方都要参与，现在卡在上线检查清单到底谁负责、截止时间一拖再拖。我把项目目标、各方诉求和卡住的地方原话都贴给你，请你先帮我对齐目标、定好分工和同步节奏，再给我一张协作章程表、一张分工表、一张同步节奏表和一个冲突处理步骤。",
+    "我们三个部门对同一个项目的成功标准说法不一样，开会总在争优先级。请你按各方原话对齐一个共同目标，再把分歧写进一张表，标出谁拍板、谁执行、谁复核。",
+    "项目进度每周都靠口头问，到了截止前才发现有人没动手。请你给我一个同步节奏表和一份进度对照表，标出每周谁汇报什么、卡住了找谁、超过几天算延期。"
+  ],
+  "team": {
+    "leadAgent": "workplace-cross-team-collaboration-guide",
+    "members": []
+  },
+  "requires": [],
+  "sourcePackage": "catalog/packages/agent/workplace-cross-team-collaboration-guide",
+  "packageVersion": "0.1.0",
+  "contentSha256": "6ab496619a22a6b79b0c46e8af602f3bda899bd134116b895b50340a8902c7b9"
+}

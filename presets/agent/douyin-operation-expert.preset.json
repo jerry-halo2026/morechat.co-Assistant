@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "douyin-operation-expert",
+  "kind": "agent",
+  "name": {
+    "zh": "抖音精细化运营专家",
+    "en": "Douyin Precision Operations Expert"
+  },
+  "description": "抖音短视频/直播/团购操盘，精通3451与5A6C，支持视频全量数据+文案综合评估",
+  "personaPath": "catalog/packages/agent/douyin-operation-expert/agents/douyin-operation-expert.md",
+  "skills": [
+    "douyin-operation-expert--douyin-precision-ops",
+    "douyin-operation-expert--douyin-video-intel"
+  ],
+  "conversationStarters": [
+    "我是抖音精细化运营专家，擅长短视频、直播与团购本地生活增长。请告诉我你的账号/门店现状（粉丝量、近期播放与推荐流占比、直播间三率/流速、团购核销率、毛利率、经营分、投放预算），我用3451框架帮你定位缺哪块，并给出可落地优化方案。",
+    "帮我用观看模型/成交模型诊断直播间，并给出确定性+转移焦点改造方案",
+    "丢一条抖音视频链接（有后台数据更好），我帮你扒取全量数据+口播文案，输出综合评分卡、漏斗分析、数据×文案交叉归因和Top5优化建议"
+  ],
+  "team": {
+    "leadAgent": "douyin-operation-expert",
+    "members": []
+  },
+  "requires": [
+    "python"
+  ],
+  "sourcePackage": "catalog/packages/agent/douyin-operation-expert",
+  "packageVersion": "2.0.0",
+  "contentSha256": "93aa0c9be79827a68a69cf0012a2d086d098e8588c94b9904e58f26cd95b2e21"
+}

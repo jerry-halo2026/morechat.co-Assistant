@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "product-management",
+  "kind": "agent",
+  "name": {
+    "zh": "product-management",
+    "en": "product-management"
+  },
+  "description": "产品管理插件，支持功能规格编写、路线图规划、利益相关者沟通、用户研究综合、竞品分析和指标审查。",
+  "personaPath": "catalog/packages/agent/product-management/agents/product-management-expert.md",
+  "skills": [
+    "product-management--competitive-analysis",
+    "product-management--feature-spec",
+    "product-management--metrics-tracking",
+    "product-management--product-management-workflows",
+    "product-management--roadmap-management",
+    "product-management--stakeholder-comms",
+    "product-management--user-research-synthesis"
+  ],
+  "conversationStarters": [],
+  "team": {
+    "leadAgent": "product-management-expert",
+    "members": []
+  },
+  "requires": [],
+  "sourcePackage": "catalog/packages/agent/product-management",
+  "packageVersion": "1.0.0",
+  "contentSha256": "6d52d52305b03495950d128261a6eddb8c4b65e984f5ae1b0824a9e276586bf4"
+}

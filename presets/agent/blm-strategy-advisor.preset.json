@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "blm-strategy-advisor",
+  "kind": "agent",
+  "name": {
+    "zh": "BLM战略分析顾问",
+    "en": "BLM Strategy Advisor"
+  },
+  "description": "用业务领先模型（BLM）带你做战略分析和年度规划：先找差距、再看市场、定战略，最后落到能考核的关键任务。缺的信息会追问，市场数据不编造。",
+  "personaPath": "catalog/packages/agent/blm-strategy-advisor/agents/blm-strategy-advisor.md",
+  "skills": [
+    "blm-strategy-advisor--blm-coverage-checker"
+  ],
+  "conversationStarters": [
+    "用业务领先模型帮我做一次公司战略分析：先找差距，再解码成关键任务和考核指标。",
+    "今年目标没完成，用 BLM 帮我复盘差距出在哪。",
+    "战略定好了，帮我解码成明年的关键任务和考核指标。"
+  ],
+  "team": {
+    "leadAgent": "blm-strategy-advisor",
+    "members": []
+  },
+  "requires": [
+    "python"
+  ],
+  "sourcePackage": "catalog/packages/agent/blm-strategy-advisor",
+  "packageVersion": "1.1.1",
+  "contentSha256": "58e6e482c883d442118ecc78df1fb852f3f2c678828c7a43db5d6b5b0f25cebd"
+}

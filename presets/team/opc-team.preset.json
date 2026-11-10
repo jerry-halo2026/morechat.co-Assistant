@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "id": "opc-team",
+  "kind": "team",
+  "name": {
+    "zh": "一人公司专家团",
+    "en": "One-Person Company Team"
+  },
+  "description": "基于由Easy创作的《一人企业方法论》，9位专家陪你走完从资源盘点、利基定位到MVP、转化、复盘的一人公司全流程共创",
+  "personaPath": "catalog/packages/team/opc-team/agents/opc-team-lead.md",
+  "skills": [
+    "opc-team--opc-asset-ops",
+    "opc-team--opc-business-model-design",
+    "opc-team--opc-conversion-loop",
+    "opc-team--opc-dashboard-review",
+    "opc-team--opc-mvp-designer",
+    "opc-team--opc-niche-positioning",
+    "opc-team--opc-orchestrator",
+    "opc-team--opc-resource-audit",
+    "opc-team--opc-value-proposition"
+  ],
+  "conversationStarters": [
+    "我想从零开始规划一个一人公司，帮我启动资源盘点。",
+    "我有个想法但找不到利基，帮我用三环框架梳理一下。",
+    "我的产品在跑但卡住了，帮我做一次系统的经营复盘。"
+  ],
+  "team": {
+    "leadAgent": "opc-team-lead",
+    "members": [
+      "opc-resource-auditor",
+      "opc-niche-strategist",
+      "opc-value-designer",
+      "opc-model-architect",
+      "opc-mvp-designer",
+      "opc-conversion-designer",
+      "opc-asset-strategist",
+      "opc-dashboard-reviewer"
+    ]
+  },
+  "requires": [],
+  "sourcePackage": "catalog/packages/team/opc-team",
+  "packageVersion": "1.0.0",
+  "contentSha256": "c5541cc0672dda64c6bc8f8b7bef765ce8f401602c07d5eff55eda4ca94cb2a7"
+}

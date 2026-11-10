@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "long-video-remix",
+  "kind": "agent",
+  "name": {
+    "zh": "禁止看不上烟灰缸",
+    "en": "Don't Look Down on Ashtrays"
+  },
+  "description": "长视频转短视频、找高光、做直播切片与影视混剪；从原片时间码、叙事方案到字幕视觉、动态制作和成片核查，一路做到可执行。",
+  "personaPath": "catalog/packages/agent/long-video-remix/agents/long-video-remix.md",
+  "skills": [
+    "long-video-remix--long-video-remix"
+  ],
+  "conversationStarters": [
+    "这个1小时视频太长了，帮我找出最值得剪成短视频的3条内容，并标出原片时间码",
+    "我不想要AI流水账剪辑。帮我把这段素材剪成一条有故事、有节奏的60秒短视频",
+    "内容已经选好了，帮我把字幕、画面节奏和视觉效果做到能直接制作，先给我看真实画面样稿"
+  ],
+  "team": {
+    "leadAgent": "long-video-remix",
+    "members": []
+  },
+  "requires": [
+    "python"
+  ],
+  "sourcePackage": "catalog/packages/agent/long-video-remix",
+  "packageVersion": "1.5.1",
+  "contentSha256": "201233523ce80bb1752fd07ca45556137ed23644ffb99c9c4d5f5608cb318a1b"
+}

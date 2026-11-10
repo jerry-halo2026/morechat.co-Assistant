@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "ecom-data-analyst",
+  "kind": "agent",
+  "name": {
+    "zh": "左木莲安",
+    "en": "E-commerce Data Analyst"
+  },
+  "description": "零门槛上传数据，不讲废话，直接指出哪个产品亏钱、明天该改哪个词——帮你降本增效多赚钱的智能电商CGO",
+  "personaPath": "catalog/packages/agent/ecom-data-analyst/agents/ecom-data-analyst.md",
+  "skills": [],
+  "conversationStarters": [
+    "上传昨天的店铺数据，帮我生成一份经营日报，直接告诉我哪个产品有问题、明天该调整什么",
+    "分析我的直通车/千川投放数据，找出哪些关键词和人群在烧钱不转化，给我优化建议",
+    "帮我诊断店铺流量为什么突然下滑，分析流量漏斗给出排查方向和修复建议"
+  ],
+  "team": {
+    "leadAgent": "ecom-data-analyst",
+    "members": []
+  },
+  "requires": [],
+  "sourcePackage": "catalog/packages/agent/ecom-data-analyst",
+  "packageVersion": "1.0.0",
+  "contentSha256": "37735298a0f946c59c80f73e37b6abe4a9c748fd5aa4a31e7168d6284e652723"
+}

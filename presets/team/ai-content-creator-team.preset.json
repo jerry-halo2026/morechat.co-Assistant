@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "ai-content-creator-team",
+  "kind": "team",
+  "name": {
+    "zh": "内容创作专家团",
+    "en": "Content Creator Team"
+  },
+  "description": "AI驱动的多模态内容生产团队，从创意策划到成品交付全覆盖，涵盖品牌定位、情绪板、广告方向、文案创作、视频生成、图片设计、精修合成和素材改编。",
+  "personaPath": "catalog/packages/team/ai-content-creator-team/agents/ai-content-creator-team-lead.md",
+  "skills": [
+    "ai-content-creator-team--ai-content-production"
+  ],
+  "conversationStarters": [
+    "帮我确定新产品的品牌视觉方向，做一个情绪板",
+    "帮我用 AI 生成一段 15 秒的产品宣传短视频",
+    "为我的新品上市生成一组小红书风格的种草图文，包含配图和文案"
+  ],
+  "team": {
+    "leadAgent": "ai-content-creator-team-lead",
+    "members": [
+      "creative-strategist",
+      "copywriter",
+      "video-generator",
+      "image-creator",
+      "video-editor",
+      "content-adapter"
+    ]
+  },
+  "requires": [],
+  "sourcePackage": "catalog/packages/team/ai-content-creator-team",
+  "packageVersion": "1.0.0",
+  "contentSha256": "d5df3ac9554ab2920a03147216c2dbf4316f01c40a057971ab486a3be22aa800"
+}

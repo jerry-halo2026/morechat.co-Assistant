@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "long-manuscript-expert",
+  "kind": "agent",
+  "name": {
+    "zh": "福帮手",
+    "en": "FBSir"
+  },
+  "description": "结合联网与本地材料，生成有出处、含反证的长篇底稿，支持五类报告形态、局部修订与接续。",
+  "personaPath": "catalog/packages/agent/long-manuscript-expert/agents/long-manuscript-expert.md",
+  "skills": [
+    "long-manuscript-expert--long-manuscript-core"
+  ],
+  "conversationStarters": [
+    "围绕【行业、企业或议题】，结合联网搜索和我的材料，形成有出处、含反证的研究底稿，并给出写作建议。",
+    "把这批材料整理成图鉴、白皮书、数据报告、人群专题或方法论，并说明哪种形态更适合我的读者。",
+    "将这些新材料加入已有底稿，只更新受影响章节，保留我的判断和手改，并从项目文件接着写。"
+  ],
+  "team": {
+    "leadAgent": "long-manuscript-expert",
+    "members": []
+  },
+  "requires": [
+    "python"
+  ],
+  "sourcePackage": "catalog/packages/agent/long-manuscript-expert",
+  "packageVersion": "2026.11.5",
+  "contentSha256": "e34a708edd24cdceb7748b7016790bddae4210e90b8158c27e755acc5476ed27"
+}

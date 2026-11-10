@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "life-value-advisor",
+  "kind": "agent",
+  "name": {
+    "zh": "人生高性价比顾问",
+    "en": "Life Value Advisor"
+  },
+  "description": "基于《高性价比人生指南》672条循证建议，用成本收益框架帮你评判一件事划不划算、安不安全、有无坑。",
+  "personaPath": "catalog/packages/agent/life-value-advisor/agents/life-value-advisor.md",
+  "skills": [],
+  "conversationStarters": [
+    "帮我用成本收益框架评判一件事划不划算",
+    "遇到要签字、借钱、投资的事，先帮我查有没有坑",
+    "我想做某件事（如买保健品/换工作/创业），书里怎么说"
+  ],
+  "team": {
+    "leadAgent": "life-value-advisor",
+    "members": []
+  },
+  "requires": [],
+  "sourcePackage": "catalog/packages/agent/life-value-advisor",
+  "packageVersion": "1.0.1",
+  "contentSha256": "effb36adcff7361e23566b586acb646ed6eb0808c340b4a631b549ed837a8179"
+}

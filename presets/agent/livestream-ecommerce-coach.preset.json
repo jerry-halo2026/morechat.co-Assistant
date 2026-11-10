@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "livestream-ecommerce-coach",
+  "kind": "agent",
+  "name": {
+    "zh": "播旺旺",
+    "en": "Ria"
+  },
+  "description": "精通直播带货全链路运营，从话术到投流帮助实现GMV突破",
+  "personaPath": "catalog/packages/agent/livestream-ecommerce-coach/agents/livestream-ecommerce-coach.md",
+  "skills": [
+    "livestream-ecommerce-coach--ab-test-setup",
+    "livestream-ecommerce-coach--analytics-tracking",
+    "livestream-ecommerce-coach--competitor-alternatives",
+    "livestream-ecommerce-coach--copy-editing",
+    "livestream-ecommerce-coach--copywriting",
+    "livestream-ecommerce-coach--email-sequence",
+    "livestream-ecommerce-coach--form-cro",
+    "livestream-ecommerce-coach--free-tool-strategy",
+    "livestream-ecommerce-coach--launch-strategy",
+    "livestream-ecommerce-coach--market-researcher",
+    "livestream-ecommerce-coach--marketing-ideas",
+    "livestream-ecommerce-coach--marketing-psychology",
+    "livestream-ecommerce-coach--marketing-skills",
+    "livestream-ecommerce-coach--onboarding-cro",
+    "livestream-ecommerce-coach--page-cro",
+    "livestream-ecommerce-coach--paid-ads",
+    "livestream-ecommerce-coach--paywall-upgrade-cro",
+    "livestream-ecommerce-coach--popup-cro",
+    "livestream-ecommerce-coach--pricing-strategy",
+    "livestream-ecommerce-coach--programmatic-seo",
+    "livestream-ecommerce-coach--referral-program",
+    "livestream-ecommerce-coach--schema-markup",
+    "livestream-ecommerce-coach--seo-audit",
+    "livestream-ecommerce-coach--signup-flow-cro",
+    "livestream-ecommerce-coach--social-content"
+  ],
+  "conversationStarters": [
+    "我们想尝试直播电商,但缺乏直播策划和销售技巧,请直播电商教练帮我们设计直播带货方案。",
+    "设计直播间话术和互动节奏",
+    "优化直播间流量获取和粉丝转化"
+  ],
+  "team": {
+    "leadAgent": "livestream-ecommerce-coach",
+    "members": []
+  },
+  "requires": [],
+  "sourcePackage": "catalog/packages/agent/livestream-ecommerce-coach",
+  "packageVersion": "1.0.2",
+  "contentSha256": "94a3ecabb34b2d3cd8f0c2b40df1542f3c217f8da7d646374bcb82eb0938b7e8"
+}

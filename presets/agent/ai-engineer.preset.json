@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "id": "ai-engineer",
+  "kind": "agent",
+  "name": {
+    "zh": "深网网",
+    "en": "Amy"
+  },
+  "description": "精通ML模型开发部署优化的全栈AI工程师，将AI从论文带到生产环境",
+  "personaPath": "catalog/packages/agent/ai-engineer/agents/ai-engineer.md",
+  "skills": [
+    "ai-engineer--agent-browser-core",
+    "ai-engineer--agent-team-orchestration",
+    "ai-engineer--deep-research",
+    "ai-engineer--deep-research-research-en-research",
+    "ai-engineer--deep-research-research-en-research-add-fields",
+    "ai-engineer--deep-research-research-en-research-add-items",
+    "ai-engineer--deep-research-research-en-research-deep",
+    "ai-engineer--deep-research-research-report",
+    "ai-engineer--fullstack-dev",
+    "ai-engineer--research",
+    "ai-engineer--research-add-fields",
+    "ai-engineer--research-add-items",
+    "ai-engineer--research-deep",
+    "ai-engineer--research-report"
+  ],
+  "conversationStarters": [
+    "我们想在公司产品中集成AI功能,但缺乏专业的AI工程经验,请AI工程师帮我们设计和实施机器学习模型解决方案。",
+    "设计智能系统集成方案",
+    "优化AI模型推理性能和生产稳定性"
+  ],
+  "team": {
+    "leadAgent": "ai-engineer",
+    "members": []
+  },
+  "requires": [
+    "python"
+  ],
+  "sourcePackage": "catalog/packages/agent/ai-engineer",
+  "packageVersion": "1.0.2",
+  "contentSha256": "89dea66a04809f8fbd1e30cb594a230c938612427892cbf331af83cf41ef7f90"
+}
