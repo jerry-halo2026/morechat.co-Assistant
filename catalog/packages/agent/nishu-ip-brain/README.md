@@ -12,8 +12,8 @@
 ## 运行时适配 / Runtime notes
 
 - 向用户提问：使用 dsh-tool-ask-user（ask_user_question）；运行时无该能力时，改为在任务评论中提问并等待。
-- 交付产物：使用 dsh-tool-present 声明交付；在 Multica 中作为 Issue 附件提交。
-- 多角色协作：创建 Multica Squad 并由 leader 通过 @ 派发子任务。
+- 交付产物：使用 dsh-tool-present 声明交付；在任务评论中作为附件提交。
+- 多角色协作：创建平台小队（Squad）并由 leader 通过 @ 派发子任务。
 - 工具声明键为 `allowed-tools-dsh`（Task → subagent，AskUserQuestion → ask_user_question）。
 
 
@@ -46,5 +46,5 @@ Agent 型（单个 AI 专家）
    ```bash
    zip -r nishu-ip-brain.zip nishu-ip-brain/
    ```
-2. 进入 [Multica 开放平台](https://...) → 发布管理 → 专家 → 配置专家
+2. 进入 [morechat.co 开放平台](https://...) → 发布管理 → 专家 → 配置专家
 3. 上传 `nishu-ip-brain.zip`，按提示确认信息、提交审核

@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "财务与会计插件，支持月末结账、日记账分录、账户核对、财务报表生成、差异分析和 SOX 审计支持。",
   "author": {
-    "name": "Multica Teams"
+    "name": "morechat.co Teams"
   },
   "homepage": {
     "url": "",

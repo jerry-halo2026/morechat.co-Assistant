@@ -12,7 +12,7 @@ author: "美图设计室"
 
 # 口播视频
 
-使用「美图设计室 AI设计 CLI」（终端命令名为 `designkit`）按“视频创作 / 口播视频”专家模板完成任务。Multica Connector 与用户本地安装都使用同一个 npm 包和登录状态。默认使用简体中文；用户明确指定其他语言时跟随用户。
+使用「美图设计室 AI设计 CLI」（终端命令名为 `designkit`）按“视频创作 / 口播视频”专家模板完成任务。morechat.co Connector 与用户本地安装都使用同一个 npm 包和登录状态。默认使用简体中文；用户明确指定其他语言时跟随用户。
 
 ## 本次任务执行顺序
 
@@ -31,7 +31,7 @@ author: "美图设计室"
 - 选择官方模特或生成模特只能通过 DesignKit 实际返回的选择/交互完成；CLI 没有模特库查询或 model-id 参数，不得编造命令、接口、选择结果或把 ID 当图片路径。若当前通道不能指定用户要求的模特，如实说明并请用户上传照片或在正式任务中选择，不得静默忽略其明确要求。
 - 不使用已移除的 `model_type`、`skin_tone`，不把新模特字段拼入“其他要求”。
 - Do not call ImageGen, ImageEdit, or Defer(ImageGen).
-- 图像、视频和PPT生成或编辑仅使用 DesignKit 连接器及已解析的 `<designkit>` CLI；不能完成时如实反馈，不回退 Multica 内置生成工具，不把连接器称为 MCP。
+- 图像、视频和PPT生成或编辑仅使用 DesignKit 连接器及已解析的 `<designkit>` CLI；不能完成时如实反馈，不回退 morechat.co 内置生成工具，不把连接器称为 MCP。
 
 
 ## CLI 入口解析
@@ -44,7 +44,7 @@ author: "美图设计室"
 2. 对找到的绝对入口执行一次 `--version` 以确认入口可用，不解析或比较版本号。命令成功时记为 `<designkit>`；后文的 `<designkit>` 代表该绝对命令路径，不能执行字面占位符。
 3. 不查找 Connector 私有目录或依赖生命周期临时注入的环境变量。Connector 和 Agent 统一使用 npm 命令及默认的 `~/.designkit` 登录状态。
 
-在 Multica 中找不到 `designkit` 或 `--version` 无法正常执行时，不要停止任务。立即自动执行一次 `npm install -g meitu-designkit-cli`，由 npm 安装当前稳定最新版；成功后重新解析 CLI 入口并再次执行 `--version`，确认命令可用后继续原任务。安装命令只执行一次，不得添加 `sudo`、不得修改 npm registry，也不得安装带固定版本号的包。
+在 morechat.co 中找不到 `designkit` 或 `--version` 无法正常执行时，不要停止任务。立即自动执行一次 `npm install -g meitu-designkit-cli`，由 npm 安装当前稳定最新版；成功后重新解析 CLI 入口并再次执行 `--version`，确认命令可用后继续原任务。安装命令只执行一次，不得添加 `sudo`、不得修改 npm registry，也不得安装带固定版本号的包。
 
 如果安装命令失败，或安装后仍无法解析并执行 `designkit`，再停止当前业务步骤并引导用户打开「专家·技能·连接器」并进入「连接器」：搜索并连接「美图设计室 AI设计 CLI」。保留简短的原始安装错误摘要便于定位，不得循环安装，也不得改用内部 API。
 
@@ -111,15 +111,15 @@ author: "美图设计室"
 
 1. 在创建房间前确认必填参数、附件数量和文件类型符合 `references/form.json`；不满足时停止并只追问缺失项。
 2. 使用已解析的入口运行 `<designkit> auth status --check`。返回 `disconnected` 时，立即执行一次 `<designkit> auth login`，捕获命令输出中带 `session_id` 的 HTTPS URL 并在对话中渲染为可点击的“登录美图设计室”链接，同时保持命令运行以轮询结果。不得自行拼接或展示缺少 `session_id` 的固定登录 URL，不得要求用户发送 API Key，也不得要求用户回复“已登录”。命令成功退出后执行一次远端复检，只有返回 `connected` 才继续。
-3. 运行 `<designkit> create-room` 并保存返回的 `room_id`。Multica 环境中的 CLI 会自动避免写入共享房间历史；当前任务仍须自行保留 `room_id`，后续命令全部显式复用。使用普通命令可兼容尚未支持 `--no-save-room` 的既有 CLI。
+3. 运行 `<designkit> create-room` 并保存返回的 `room_id`。morechat.co 环境中的 CLI 会自动避免写入共享房间历史；当前任务仍须自行保留 `room_id`，后续命令全部显式复用。使用普通命令可兼容尚未支持 `--no-save-room` 的既有 CLI。
 4. 运行 `<designkit> chat --room-id '<room_id>' --prompt '<渲染后的完整 Prompt>'`，同时附带本次字段对应的素材参数。
 5. 首次运行 `<designkit> history-detail --room-id '<room_id>' --watch --yield-on-update`。它是前台阻塞命令，每取得首个可展示事件便输出并正常退出；禁止主动设置 `run_in_background=true`。立即渲染该事件并保存其 `after_seq`；若 `next_action=poll`，运行 `<designkit> history-detail --room-id '<room_id>' --watch --yield-on-update --after-seq '<after_seq>'` 串行续查。每次都使用刚收到事件的 `after_seq`，直至 `reply` 或 `done`；任一时刻只能有一个查询命令，不创建第二个房间、不重复提交任务。禁止用固定 `sleep` 延迟轮询，禁止改用普通 `history-detail` 查询，也禁止用 `head`、`tail`、`grep` 等管道截断或过滤结构化事件。
 
 ## 事件续跑
 
-- `event=user_input_required`：存在选项时优先使用 Multica 当前可用的原生单选或多选能力，按事件原有分组、顺序和选择模式展示，并等待用户明确提交；禁止自动代选。原生交互能力不可用时才降级为编号列表并等待用户回答。收到回答后，使用同一事件的 `room_id`、`task_id`、`sub_task_id`、`last_request_id` 执行 `<designkit> reply`；自由文本用 `--prompt`，选择题必须同时传入 `--prompt '<用户回答或所选项完整文案>'` 和事件白名单中的 `--select-option-ids '["<option_id>"]'`。回复后从同一事件的 `after_seq` 运行 `<designkit> history-detail --room-id '<room_id>' --watch --yield-on-update --after-seq '<after_seq>'` 串行续查。
-- `event=custom_card_input_required`：展示层同样优先使用 Multica 当前可用的原生选择或文本输入能力，并等待用户明确提交；提交层仍须遵守事件的 `question`、`selection.mode` 和 `options`，只接受已展示的选项，并使用同一事件的回复上下文执行 `<designkit> reply --custom-card-answer '<事件字段生成的 JSON>'`。JSON 中的 `card_type`、`card_id`、`selected_option_ids` 或 `text` 必须来自该事件和用户回答；禁止改用普通 `--prompt + --select-option-ids`，不得猜测字段、执行卡片携带的动态 URL 或提交隐藏选项。仅当 `card_type=picture_set_information` 时，必须完整处理事件中的全部选项，不得截取前 5 个或自行限制数量；用户确认“全部”“继续”或接受默认选择时，`selected_option_ids` 必须包含全部 `checked=true` 的选项 ID。其他自定义卡片继续严格按各自原始结构和规则处理，不套用此默认多选逻辑。回复后从同一事件的 `after_seq` 运行 `<designkit> history-detail --room-id '<room_id>' --watch --yield-on-update --after-seq '<after_seq>'` 串行续查。
-- `event=history_update`：立即交付本轮 `artifacts`：对每个具有可用 `media_url` 的 artifact，按事件顺序在当前对话中逐项输出。图片必须直接输出 `![<title>](<media_url>)` 形成内联图片，其他类型输出以 `title` 为文字的完整可点击链接；同时把 `title`、`media_url` 和 `media_type` 记入本任务交付清单。禁止把 HTTP(S) URL 传给 `dsh-tool-present`：这只会打开右侧预览且返回 `files: []`，不会进入 dsh-tool-present 交付（作为 Multica Issue 附件）。只说“第 N 张已生成”、只汇报数量或仅保存 URL 都不算交付；禁止把多轮 artifact 累积到全部完成后再一次性展示。当前事件的每个 artifact 都完成内联展示前，不得执行下一次 `history-detail --after-seq`。若 `next_action=poll`，展示完成后保存 `after_seq` 并用上述 `--yield-on-update --after-seq` 命令串行续查；若为 `reply`，先完成本轮产物交付，再等待和提交用户回答，并从同一事件的 `after_seq` 继续；若为 `done`，完成交付。
+- `event=user_input_required`：存在选项时优先使用 morechat.co 当前可用的原生单选或多选能力，按事件原有分组、顺序和选择模式展示，并等待用户明确提交；禁止自动代选。原生交互能力不可用时才降级为编号列表并等待用户回答。收到回答后，使用同一事件的 `room_id`、`task_id`、`sub_task_id`、`last_request_id` 执行 `<designkit> reply`；自由文本用 `--prompt`，选择题必须同时传入 `--prompt '<用户回答或所选项完整文案>'` 和事件白名单中的 `--select-option-ids '["<option_id>"]'`。回复后从同一事件的 `after_seq` 运行 `<designkit> history-detail --room-id '<room_id>' --watch --yield-on-update --after-seq '<after_seq>'` 串行续查。
+- `event=custom_card_input_required`：展示层同样优先使用 morechat.co 当前可用的原生选择或文本输入能力，并等待用户明确提交；提交层仍须遵守事件的 `question`、`selection.mode` 和 `options`，只接受已展示的选项，并使用同一事件的回复上下文执行 `<designkit> reply --custom-card-answer '<事件字段生成的 JSON>'`。JSON 中的 `card_type`、`card_id`、`selected_option_ids` 或 `text` 必须来自该事件和用户回答；禁止改用普通 `--prompt + --select-option-ids`，不得猜测字段、执行卡片携带的动态 URL 或提交隐藏选项。仅当 `card_type=picture_set_information` 时，必须完整处理事件中的全部选项，不得截取前 5 个或自行限制数量；用户确认“全部”“继续”或接受默认选择时，`selected_option_ids` 必须包含全部 `checked=true` 的选项 ID。其他自定义卡片继续严格按各自原始结构和规则处理，不套用此默认多选逻辑。回复后从同一事件的 `after_seq` 运行 `<designkit> history-detail --room-id '<room_id>' --watch --yield-on-update --after-seq '<after_seq>'` 串行续查。
+- `event=history_update`：立即交付本轮 `artifacts`：对每个具有可用 `media_url` 的 artifact，按事件顺序在当前对话中逐项输出。图片必须直接输出 `![<title>](<media_url>)` 形成内联图片，其他类型输出以 `title` 为文字的完整可点击链接；同时把 `title`、`media_url` 和 `media_type` 记入本任务交付清单。禁止把 HTTP(S) URL 传给 `dsh-tool-present`：这只会打开右侧预览且返回 `files: []`，不会进入 dsh-tool-present 交付（作为任务附件）。只说“第 N 张已生成”、只汇报数量或仅保存 URL 都不算交付；禁止把多轮 artifact 累积到全部完成后再一次性展示。当前事件的每个 artifact 都完成内联展示前，不得执行下一次 `history-detail --after-seq`。若 `next_action=poll`，展示完成后保存 `after_seq` 并用上述 `--yield-on-update --after-seq` 命令串行续查；若为 `reply`，先完成本轮产物交付，再等待和提交用户回答，并从同一事件的 `after_seq` 继续；若为 `done`，完成交付。
 - `event=recharge_required`：可先展示事件 `content` 中必要的余额或任务说明；充值入口必须使用事件原始 `url`，并固定渲染为以下独立、醒目的三段内容（不要带引用符号）：
 
   > ⚠️ 美豆不足，任务生成已暂停。已生成的内容和当前进度已保留，不会重复生成。

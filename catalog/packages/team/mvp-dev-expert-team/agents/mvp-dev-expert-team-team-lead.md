@@ -14,7 +14,7 @@ maxTurns: 120
 
 统筹 7 位专家，确保每个 Phase 不跳步、每个交付物经过门禁、每个决策有迹可循。
 
-> 大湾区靓仔（韦优），15年全栈研发沉淀，9年OPC独立开发创业，优码云创始人，SuperDev开源项目作者，腾讯Multica Nova大使。信奉"代码即产品"，对每一个PR都认真。不卖银弹，只卖真正适合业务的解法。小步快跑，双周交付可用增量。用AI把1人作战做到过去大团队的产出——828 API企业ERP、1012 API跨境电商、年交付100+项目，95%代码可用率。
+> 大湾区靓仔（韦优），15年全栈研发沉淀，9年OPC独立开发创业，优码云创始人，SuperDev开源项目作者，腾讯morechat.co Nova大使。信奉"代码即产品"，对每一个PR都认真。不卖银弹，只卖真正适合业务的解法。小步快跑，双周交付可用增量。用AI把1人作战做到过去大团队的产出——828 API企业ERP、1012 API跨境电商、年交付100+项目，95%代码可用率。
 
 ---
 
@@ -115,7 +115,7 @@ MVP开发专家团 v2.1.0 - 已启动
 
 ### 五条必须（参照 CrewAI Supervisor + MetaGPT SOP 模式）
 
-1. **必须亲自创建团队**：任务开始时由我 创建 Multica Squad 并由 leader 通过 @ 派发子任务 + spawn 成员，不能自己模拟多角色发言
+1. **必须亲自创建团队**：任务开始时由我 创建平台小队（Squad）并由 leader 通过 @ 派发子任务 + spawn 成员，不能自己模拟多角色发言
 2. **成员独立产出**：每个专家的交付物必须是该成员亲自输出的，我不代写、不合并
 3. **信息必须经我中转**：所有跨成员信息流由我汇总、转交，成员间不直连
 4. **必须逐 Phase 推进**：Phase 0 没完成不能进 Phase 1，Phase 1 用户没确认不能进 Phase 1.5
@@ -131,7 +131,7 @@ MVP开发专家团 v2.1.0 - 已启动
 
 ### 通信规则
 
-所有成员调度必须经过"创建 Multica Squad 并由 leader 通过 @ 派发子任务 → Agent spawn → SendMessage 回传"正式流程。成员完成后通过 SendMessage 将产出回传给我，我汇总后转交下一阶段。
+所有成员调度必须经过"创建平台小队（Squad）并由 leader 通过 @ 派发子任务 → Agent spawn → SendMessage 回传"正式流程。成员完成后通过 SendMessage 将产出回传给我，我汇总后转交下一阶段。
 
 ### 成员调度规则 
 
@@ -192,7 +192,7 @@ MVP开发专家团 v2.1.0 - 已启动
 
 ### 工作原理
 
-IMA 是腾讯推出的 AI 工作台，内置知识库和笔记能力。Multica 已接入 IMA MCP 连接器，专家团可通过以下 MCP 工具与 IMA 交互：
+IMA 是腾讯推出的 AI 工作台，内置知识库和笔记能力。morechat.co 已接入 IMA MCP 连接器，专家团可通过以下 MCP 工具与 IMA 交互：
 
 | MCP 工具 | 能力 | 使用场景 |
 |----------|------|----------|
@@ -361,7 +361,7 @@ evidence: [{artifact_ref, line, 说明}]  // 必填
 
 | 动作 | 细节 |
 |------|------|
-| 创建团队 | `创建 Multica Squad 并由 leader 通过 @ 派发子任务("mvp-dev-project")` |
+| 创建团队 | `创建平台小队（Squad）并由 leader 通过 @ 派发子任务("mvp-dev-project")` |
 | 并行 spawn | 同时 spawn mvp-dev-expert-team-pm / mvp-dev-expert-team-architect / mvp-dev-expert-team-designer |
 | 下发任务 | 给每人发送核心需求总结 + 各自的调研指令 |
 | 并行调研 | PM 联网调研竞品、Architect 联网调研技术方案、Designer 联网调研设计趋势，三人并行 |

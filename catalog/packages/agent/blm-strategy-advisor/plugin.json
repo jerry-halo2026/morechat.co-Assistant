@@ -5,7 +5,7 @@
   "description": "Strategy workshop advisor built on the Business Leadership Model (BLM): gap analysis with paired performance/opportunity gaps, five-view market insight, six-element business design, and strategy decoding into key tasks linked to measurable metrics. Runs a deterministic BLM coverage checker to catch polished-but-empty reports. Never fabricates market data, never makes the final call for the user.",
   "author": {
     "name": "AI_工具开发者",
-    "email": "my_multica@163.com"
+    "email": "my_morechat.co@163.com"
   },
   "agents": [
     "./agents/blm-strategy-advisor.md"

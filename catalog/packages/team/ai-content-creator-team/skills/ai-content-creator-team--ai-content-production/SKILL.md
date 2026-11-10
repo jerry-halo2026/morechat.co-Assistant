@@ -1,7 +1,7 @@
 ---
 name: ai-content-production
 description: |
-  AI 多模态内容生产技能包，基于 Multica 内置工具（HY-Video、YT-Video、HY-Image、YT-VITA、ImageGen、ImageEdit），
+  AI 多模态内容生产技能包，基于 morechat.co 内置工具（HY-Video、YT-Video、HY-Image、YT-VITA、ImageGen、ImageEdit），
   涵盖创意策略、视频生成、图片创作、视频编辑、发布级精修和素材改编的完整知识体系。
   触发词：视频生成、图片创作、AI创作、智能剪辑、视频翻译、素材分析、内容合成、Prompt工程、创意策划、情绪板、广告方向、精修
 ---
@@ -10,9 +10,9 @@ description: |
 
 ## 功能说明
 
-本技能包为 AI 内容创作专家团提供完整的多模态内容生产知识体系，基于 Multica 平台内置工具，覆盖从创意策划到视频生成、从图片创作到发布级精修、从智能编辑到内容改编的全链路创作能力。
+本技能包为 AI 内容创作专家团提供完整的多模态内容生产知识体系，基于 morechat.co 平台内置工具，覆盖从创意策划到视频生成、从图片创作到发布级精修、从智能编辑到内容改编的全链路创作能力。
 
-## Multica 可用工具总览
+## morechat.co 可用工具总览
 
 ### 内置工具
 | 工具 | 触发方式 | 能力 |
@@ -91,4 +91,4 @@ description: |
 1. 所有生成任务有最大等待时间限制（通常 20 分钟）
 2. 内容安全底线：禁止涉及未成年人或违规内容
 3. 语言匹配：输出语言与用户请求语言保持一致
-4. **工具边界**：所有成员只能使用 Multica 内置工具，不得引用外部 API（如 Grok、Veo、Gemini 等）
+4. **工具边界**：所有成员只能使用 morechat.co 内置工具，不得引用外部 API（如 Grok、Veo、Gemini 等）

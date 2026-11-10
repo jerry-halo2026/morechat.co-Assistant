@@ -70,7 +70,7 @@ Agent 型（单个 AI 专家）
 
 - 视觉交付、音乐审美与混音几乎没有自动化检查：成片与样稿的风格匹配、音乐观感、分离听感与最终混音仍须人工试听 / 审阅；尚未在真实长视频上做 benchmark。
 - Blender 合成需要本机可用的 Blender 与真实渲染能力；缺失时按 capability 规则记为待补，不生成替代证据。
-- 真实 Multica 权限、网络、第三方安装与模型权重许可须在实际运行环境中确认。
+- 真实 morechat.co 权限、网络、第三方安装与模型权重许可须在实际运行环境中确认。
 - 此前 v1.0.3–v1.2.5 的证据绑定、执行授权、源范围约束、完整音轨核听、抽帧时间实测、两次 Direct、入选边界核验与阶段关口全部保留。
 
 ## 使用示例
@@ -107,7 +107,7 @@ python3 scripts/build-catalog.mjs <expert-dir>
 python3 scripts/build-catalog.mjs <expert-dir> <output-dir>
 ```
 
-得到 `long-video-remix.zip` 后在 Multica 开放平台提交：
+得到 `long-video-remix.zip` 后在 morechat.co 开放平台提交：
 
 1. 完成实名认证，完善开发者主页（头像 / 20~120 字简介 / 联系方式）；
 2. 选择资产类型 **Expert（专家）**，填写名称与分类；

@@ -13,7 +13,7 @@ author: 红狐数据
 
 ## 简介
 
-抖音热榜是一款实时追踪抖音平台热点趋势的数据工具，对接 [红狐Hub](https://redfox.hk/?source=multica) 数据 API，每小时更新热榜内容，并提供创作者视角的深度分析。
+抖音热榜是一款实时追踪抖音平台热点趋势的数据工具，对接 [红狐Hub](https://redfox.hk/?source=morechat.co) 数据 API，每小时更新热榜内容，并提供创作者视角的深度分析。
 
 通过简单的自然语言指令，你可以：
 
@@ -53,15 +53,15 @@ author: 红狐数据
 ### 前置条件
 
 - 已安装 Python 3.x 及 `requests` 库
-- 已注册 [红狐Hub官网](https://redfox.hk/login?source=multica) 账号并获取 API Key（格式 `ak_xxxxxxxx`）
+- 已注册 [红狐Hub官网](https://redfox.hk/login?source=morechat.co) 账号并获取 API Key（格式 `ak_xxxxxxxx`）
 - 新注册用户将获赠免费积分，可立即开始使用
 
 ### 安装方式
 
-#### 方式一：Multica（龙虾）技能安装（推荐）
+#### 方式一：morechat.co（龙虾）技能安装（推荐）
 
-1. 将 `douyin-hot-trend` 技能文件夹复制到 Multica 的 skills 目录下
-2. 在 Multica 对话中直接说「抖音热榜」或「今日热榜」，Agent 将自动加载本技能
+1. 将 `douyin-hot-trend` 技能文件夹复制到 morechat.co 的 skills 目录下
+2. 在 morechat.co 对话中直接说「抖音热榜」或「今日热榜」，Agent 将自动加载本技能
 3. 配置 API Key（见下方「环境变量配置」）
 4. 安装 Python 依赖：
 
@@ -95,7 +95,7 @@ source ~/.bashrc
 
 若未配置环境变量，技能将自动从 Shell 配置文件读取；若仍未获取到，会在运行时提示配置。
 
-**在 Multica 中配置 Key**：可在系统环境变量中设置 `REDFOX_API_KEY`，或在 Shell 配置文件中写入后重启 Multica，无需在每次对话中手动传入。
+**在 morechat.co 中配置 Key**：可在系统环境变量中设置 `REDFOX_API_KEY`，或在 Shell 配置文件中写入后重启 morechat.co，无需在每次对话中手动传入。
 
 ---
 
@@ -268,8 +268,8 @@ douyin-hot-trend/
 | 运行环境 | Python 3.x |
 | HTTP 请求 | 原生 `requests` 库 |
 | 认证方式 | `X-API-KEY` 请求头，三级回退（环境变量 → Shell 配置 → 提示配置） |
-| 数据来源 | [红狐Hub API](https://redfox.hk?source=multica) |
-| 部署平台 | Multica / Cursor 等 Agent 环境 |
+| 数据来源 | [红狐Hub API](https://redfox.hk?source=morechat.co) |
+| 部署平台 | morechat.co / Cursor 等 Agent 环境 |
 
 
 ## 常见问答
@@ -288,9 +288,9 @@ A: 请按以下步骤排查：
 
 A: 仅需 `requests` 库：`pip install requests`
 
-**Q3: 如何在 Multica（龙虾）中启用本技能？**
+**Q3: 如何在 morechat.co（龙虾）中启用本技能？**
 
-A: 将技能文件夹放入 Multica 的 skills 目录，配置好 `REDFOX_API_KEY` 后，在对话中说「抖音热榜」即可触发。Agent 将按 `references/core_workflow.md` 执行完整工作流。
+A: 将技能文件夹放入 morechat.co 的 skills 目录，配置好 `REDFOX_API_KEY` 后，在对话中说「抖音热榜」即可触发。Agent 将按 `references/core_workflow.md` 执行完整工作流。
 
 ---
 
@@ -312,20 +312,20 @@ A: 最长支持查询近 30 天的历史热榜。超过 30 天的数据暂不支
 **Q6: API 调用失败怎么办？**
 
 A: 请按以下顺序排查：
-1. 检查网络连接，确认可以访问 `https://redfox.hk?source=multica`
+1. 检查网络连接，确认可以访问 `https://redfox.hk?source=morechat.co`
 2. 确认 API Key 未过期，账户积分是否充足
 3. 检查环境变量：`echo $REDFOX_API_KEY`
 4. 稍后重试，API 服务可能存在临时波动
 
 **Q7: 订阅推送没有收到怎么办？**
 
-A: 确认订阅已成功设置。如需重新设置，说「取消订阅」后重新订阅。如仍有问题，检查Multica等系统的自动化任务是否正常运行。
+A: 确认订阅已成功设置。如需重新设置，说「取消订阅」后重新订阅。如仍有问题，检查morechat.co等系统的自动化任务是否正常运行。
 
 **Q8: HTML 报告预览不成功或显示空白怎么办？**
 
 A: 请按以下方式处理：
 1. 确认 HTML 文件已成功生成（脚本会输出 `✅ 已生成` 提示）
-2. 直接双击打开交付的 HTML 文件，用 Chrome/Edge 浏览器查看，不依赖Multica等系统内置预览
+2. 直接双击打开交付的 HTML 文件，用 Chrome/Edge 浏览器查看，不依赖morechat.co等系统内置预览
 3. 若文件已交付但内置预览空白，属于已知限制——Windows 中文用户名路径可能导致预览组件兼容性问题，直接用浏览器打开即可正常显示
 
 ---
@@ -338,7 +338,7 @@ A: 建议通过环境变量或 Shell 配置文件存储，不要将 Key 写入�
 
 **Q10: 数据来源与使用许可？**
 
-A: 热榜数据来自 [红狐Hub](https://redfox.hk?source=multica) 官方 API，使用时须遵守 红狐Hub 平台服务条款及抖音平台相关规定。本技能仅作数据展示与分析辅助，不保证数据的商业用途合规性。
+A: 热榜数据来自 [红狐Hub](https://redfox.hk?source=morechat.co) 官方 API，使用时须遵守 红狐Hub 平台服务条款及抖音平台相关规定。本技能仅作数据展示与分析辅助，不保证数据的商业用途合规性。
 
 ---
 
@@ -347,7 +347,7 @@ A: 热榜数据来自 [红狐Hub](https://redfox.hk?source=multica) 官方 API�
 如有其他问题，可通过以下方式获取帮助：
 
 - 📖 查阅 Agent 执行参考：`references/core_workflow.md`
-- 🌐 红狐Hub 官网：[https://redfox.hk?source=multica](https://redfox.hk/?source=multica)
+- 🌐 红狐Hub 官网：[https://redfox.hk?source=morechat.co](https://redfox.hk/?source=morechat.co)
 - 📧 联系 红狐Hub 平台客服获取 API 相关问题支持
 
 ---

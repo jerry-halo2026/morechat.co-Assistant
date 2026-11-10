@@ -76,8 +76,8 @@ playwright install chromium
 
 ### 获取 API Key
 
-1. 访问 [红狐Hub 官网](https://redfox.hk?source=multica) 了解服务详情
-2. 前往 [注册页面](https://redfox.hk/login?source=multica) 注册账号
+1. 访问 [红狐Hub 官网](https://redfox.hk?source=morechat.co) 了解服务详情
+2. 前往 [注册页面](https://redfox.hk/login?source=morechat.co) 注册账号
 3. **新注册用户将获赠免费积分**，可立即开始使用 API 服务
 4. 注册登录后，在个人中心获取 API Key，格式为 `ak_xxxxxxxx`
 

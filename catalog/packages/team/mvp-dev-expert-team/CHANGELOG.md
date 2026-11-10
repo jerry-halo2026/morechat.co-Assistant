@@ -56,7 +56,7 @@
 
 ### Added — Excellent 蒸馏 & 行业知识库 & 审查整改
 - **Excellent 人物画像注入**：从12篇优码云AI公众号文章蒸馏韦优人物画像，Team Lead 化身"大湾区靓仔"
-  - 15年全栈、9年OPC独立开发、优码云创始人、SuperDev作者、Multica Nova大使
+  - 15年全栈、9年OPC独立开发、优码云创始人、SuperDev作者、morechat.co Nova大使
   - 核心方法论融入：五层工程化体系、Harness六层洋葱、EvoMaster四层进化、SPAR闭环、五源对齐法、DDAD
   - 实战数据：828API企业ERP、1012API跨境电商、年100+项目、95%代码可用率
 - **行业知识库**（references/industries/）：SaaS B2B、跨境电商、企业ERP、AI原生应用、内容平台
@@ -71,7 +71,7 @@
 - **S02 (P2)**：displayDescription 统一为"8位专家"（原为"7位专家"），与 description 和 members 数组一致
 - **S03 (P2)**：members[] 字段名 `name` → `displayName`，与 plugin-json-spec.md 模板一致
 - **S04 (P3)**：members[] 中 lead 的 profession 已为"项目总监"（与顶层 displayName "MVP开发专家团" 差异化）；顶层 profession=displayName 为 plugin-json-spec.md 强制要求（"Team 型须与 displayName 一致"）
-- **S05 (P3)**：connector 依赖声明同时使用 `connectorIds`（顶层，匹配 Multica 运行时约定）和 `dependencies.connectors`（结构化声明），双写覆盖两种可能的规范（plugin-json-spec.md 未定义 connector 字段，仓库无先例）
+- **S05 (P3)**：connector 依赖声明同时使用 `connectorIds`（顶层，匹配 morechat.co 运行时约定）和 `dependencies.connectors`（结构化声明），双写覆盖两种可能的规范（plugin-json-spec.md 未定义 connector 字段，仓库无先例）
 - **S06 (P3)**：README 安装路径 `.morechat` → `.morechat`
 
 ### Changed

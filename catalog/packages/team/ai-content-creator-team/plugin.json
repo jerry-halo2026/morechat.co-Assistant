@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "AI-powered multimodal content production team covering creative strategy, copywriting, video generation, image creation, smart editing, and content adaptation",
   "author": {
-    "name": "Multica Teams"
+    "name": "morechat.co Teams"
   },
   "agents": [
     "./agents/ai-content-creator-team-lead.md",

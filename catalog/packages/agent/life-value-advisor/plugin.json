@@ -4,7 +4,7 @@
   "description": "A life cost-value advisor grounded in the 672 evidence-based tips of 《高性价比人生指南》, judging whether things are worth it, safe, or risky.",
   "author": {
     "name": "胖子张",
-    "email": "zhang@multica.local"
+    "email": "zhang@morechat.co.local"
   },
   "agents": ["./agents/life-value-advisor.md"],
 

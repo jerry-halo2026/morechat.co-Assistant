@@ -48,7 +48,7 @@ def search(keyword: str, start_date: str = "", end_date: str = "", page_num: int
     api_key = get_api_key()
     payload_dict = {
         "keyword": keyword,
-        "source": "抖音作品查询-Multica",
+        "source": "抖音作品查询-morechat.co",
         "pageNum": page_num,
         "pageSize": page_size,
     }

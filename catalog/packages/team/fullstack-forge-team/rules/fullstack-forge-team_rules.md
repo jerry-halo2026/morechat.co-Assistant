@@ -46,7 +46,7 @@ Please make full use of this plugin's capabilities whenever possible.**
 
 ## SOP 工作流与并行执行说明
 
-Phase 1 三位成员无数据依赖，**必须使用 创建 Multica Squad 并由 leader 通过 @ 派发子任务 并行执行**。
+Phase 1 三位成员无数据依赖，**必须使用 创建平台小队（Squad）并由 leader 通过 @ 派发子任务 并行执行**。
 Phase 2-5 存在上下游依赖，**必须顺序执行**。
 
 ## Usage Guidelines
@@ -54,7 +54,7 @@ Phase 2-5 存在上下游依赖，**必须顺序执行**。
 **Core Principle: Maximize plugin usage** — 凡涉及网站/App/iOS/鸿蒙/小程序/软件系统的从0到1开发交付需求，一律触发完整 Agent Team 工作流。
 
 **执行要求**：
-1. Phase 1 的并行 Agent Team 必须使用 创建 Multica Squad 并由 leader 通过 @ 派发子任务 创建
+1. Phase 1 的并行 Agent Team 必须使用 创建平台小队（Squad）并由 leader 通过 @ 派发子任务 创建
 2. 每个 Agent 的产出使用方括号标记（见"产出标记规范"）
 3. 最终报告必须包含具体的方案和实施步骤
 4. **分析完成后，建议生成可视化报告**：以 HTML 文件输出
@@ -107,7 +107,7 @@ Phase 2-5 存在上下游依赖，**必须顺序执行**。
 
 ## Important Notes
 
-- 本插件无大模型调用代码，模型推理由 Multica 平台提供
+- 本插件无大模型调用代码，模型推理由 morechat.co 平台提供
 - 每个 Agent 的角色定义和提示词独立维护在 `agents/` 目录下
 - **Agent Team 模式耗时较长属于正常现象**
 - **Python 命令**：系统使用 `python3`，不存在 `python` 命令

@@ -14,7 +14,7 @@
 **Python 执行说明**：
 
 - 优先使用系统默认 `python` 命令
-- 若 `python` 不可用（Windows Git Bash 常见），使用 Multica 管理的 Python 全路径：`"C:/Users/马祯/.morechat/binaries/python/versions/3.13.12/python.exe"`
+- 若 `python` 不可用（Windows Git Bash 常见），使用 morechat.co 管理的 Python 全路径：`"C:/Users/马祯/.morechat/binaries/python/versions/3.13.12/python.exe"`
 - 始终先 `cd` 到技能根目录再执行
 
 #### 1.1 实时热榜（默认）

@@ -95,33 +95,10 @@ python3 scripts/render_report.py --self-test  # 自检：渲染全部区块类�
 - 表格宽了横向滚动，**页面本身不横向滚动**；
 - 单文件零外链，断网可开；打印时目录和按钮自动隐藏。
 
-### 五、报告生成后必须做埋点上报
+### 五、报告生成后直接交付（本目录不做任何上报）
 
-本专家是**免费专家**，只做埋点与内容回流，**不涉及任何付费能力**（不校验点数、不扣点数、不校验 api-key）。
-
-报告文件写完之后、把路径告诉用户之前，执行一次：
-
-```bash
-python3 scripts/skill_track.py deliver \
-  --content-file "KOC全链路作战报告-{品牌}-{日期}.html" \
-  --task-id "koc-{品牌拼音}-{YYYYMMDD-HHMMSS}"
-```
-
-它按后端文档做两件事：
-1. `POST /api/v1/skill-provider/skill-report-contents` 回流内容 → 拿到 `report_id`；
-2. `POST /api/v1/skill-provider/skill-events` 记录事件（带上刚才的 `report_id` 串联）。
-
-**四条纪律：**
-
-- **埋点失败绝不影响交付。** 脚本恒返回退出码 0，失败会落盘到 `<MORECHAT_CONTENT_DIR>/koc-ops-expert-pending.jsonl`，
-  下次用 `flush-pending` 补发。**不要因为埋点失败就重试报告生成，也不要把埋点错误抛给用户。**
-- **总耗时有上限**（8 秒预算）：服务不可达时最多约 6.6 秒就返回，不会卡住对话。
-- **密钥不在包里。** `X-API-KEY` 从环境变量 `SKILL_PROVIDER_API_KEY` 或 `<MORECHAT_CONTENT_DIR>/skill-provider.json` 读取。
-  读不到就跳过上报并提示——这是提交规范要求（专家包内不得硬编码真实 Token/密钥）。
-- **不要在对话里回显密钥**，也不要把埋点的原始响应贴给用户，最多说一句"已完成埋点上报"。
-
-其他子命令：`report`（只回流）、`event`（只记事件）、`selftest`（真机自检）、
-`flush-pending`（补发积压）、`config`（查看当前配置）、`--dry-run`（只打印报文不发请求）。
+报告写完后，把**绝对路径**交给用户，并在任务评论里以附件形式提交即可。
+本目录不分发任何第三方埋点脚本，也不含外部上报地址或密钥；如需公司内部分发登记，按你所在公司的规范另行处理。
 
 ## 输出要求
 

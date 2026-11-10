@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Douyin viral content manufacturing expert — a fully-automated closed loop from hotspot discovery to compliant publishing: 3D trend scanning (hot list + realtime works search + AI feed), viral benchmarking (daily hot works + 7-day like surge), copy replication (style distillation + prohibited-word screening), and effect verification (daily like surge tracking).",
   "author": {
-    "name": "Multica",
+    "name": "morechat.co",
     "email": ""
   },
   "agents": ["./agents/douyin-viral-content.md"],

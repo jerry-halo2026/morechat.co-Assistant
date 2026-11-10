@@ -1,6 +1,6 @@
 # AI 原生产品设计规范
 
-> 基于 Excellent AI商业落地经验 + SuperDev设计系统 + Multica实战蒸馏
+> 基于 Excellent AI商业落地经验 + SuperDev设计系统 + morechat.co实战蒸馏
 
 ## 行业特征
 

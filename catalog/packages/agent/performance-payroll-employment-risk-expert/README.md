@@ -12,8 +12,8 @@
 ## 运行时适配 / Runtime notes
 
 - 向用户提问：使用 dsh-tool-ask-user（ask_user_question）；运行时无该能力时，改为在任务评论中提问并等待。
-- 交付产物：使用 dsh-tool-present 声明交付；在 Multica 中作为 Issue 附件提交。
-- 多角色协作：创建 Multica Squad 并由 leader 通过 @ 派发子任务。
+- 交付产物：使用 dsh-tool-present 声明交付；在任务评论中作为附件提交。
+- 多角色协作：创建平台小队（Squad）并由 leader 通过 @ 派发子任务。
 - 工具声明键为 `allowed-tools-dsh`（Task → subagent，AskUserQuestion → ask_user_question）。
 
 
@@ -32,7 +32,7 @@
 - 连接器：`jiandaoyun`
 - 官方模板（非使用前提）：https://www.jiandaoyun.com/index/solution_center/app/64f5a5bdbc68c7541396ba75?utm_src=agentjxxcwb
 - 默认匿名化和群组汇总；个人薪酬/绩效仅在必要且授权时显示。
-- 新增能力审核通过后需在 Multica 断开并重新连接；目标表单还需开放新增权限。
+- 新增能力审核通过后需在 morechat.co 断开并重新连接；目标表单还需开放新增权限。
 - 不自动调薪、定绩效、PIP 或解除；涉及法律与财税需专业人员复核。
 
 官方文档：https://hc.jiandaoyun.com/open/25090

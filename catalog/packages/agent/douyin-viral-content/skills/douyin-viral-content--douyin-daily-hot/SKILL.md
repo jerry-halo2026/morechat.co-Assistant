@@ -34,7 +34,7 @@ author: 红狐数据
 
 ### 获取 API Key
 
-请前往 [红狐hub](https://redfox.hk/settings/api-keys?source=multica) 获取API KEY
+请前往 [红狐hub](https://redfox.hk/settings/api-keys?source=morechat.co) 获取API KEY
 
 ### 配置 API Key
 

@@ -12,12 +12,12 @@
 ## 运行时适配 / Runtime notes
 
 - 向用户提问：使用 dsh-tool-ask-user（ask_user_question）；运行时无该能力时，改为在任务评论中提问并等待。
-- 交付产物：使用 dsh-tool-present 声明交付；在 Multica 中作为 Issue 附件提交。
-- 多角色协作：创建 Multica Squad 并由 leader 通过 @ 派发子任务。
+- 交付产物：使用 dsh-tool-present 声明交付；在任务评论中作为附件提交。
+- 多角色协作：创建平台小队（Squad）并由 leader 通过 @ 派发子任务。
 - 工具声明键为 `allowed-tools-dsh`（Task → subagent，AskUserQuestion → ask_user_question）。
 
 
-> Multica Expert Team 上架包 · 基于《一人企业方法论》第三版
+> morechat.co Expert Team 上架包 · 基于《一人企业方法论》第三版
 
 ## 团队简介
 
@@ -63,7 +63,7 @@ OPC一人公司专家团是基于 [《一人公司方法论》](https://github.c
 ## 技术参数
 
 - 目录契约：所有专家共享 `opc-doc/`（state / inputs / outputs 三个子目录）
-- 主理人遵循「团队协作铁律」——所有成员调度走 创建 Multica Squad 并由 leader 通过 @ 派发子任务 → 调度 → 回传流程，禁止主理人代写成员产出
+- 主理人遵循「团队协作铁律」——所有成员调度走 创建平台小队（Squad）并由 leader 通过 @ 派发子任务 → 调度 → 回传流程，禁止主理人代写成员产出
 - 每个成员预加载对应 `skills/opc-*` 详细方法论
 - 默认中文，遵循「教学 / 引导 / 直通」三种交互模式
 
@@ -74,7 +74,7 @@ OPC一人公司专家团是基于 [《一人公司方法论》](https://github.c
 - 配套阅读：<https://ft07.com/opb-book-index/>
 - 推演沙箱：<https://ft07.com/real-business-simulator/>
 
-## Multica 接入
+## morechat.co 接入
 
 - expertType：`team`
 - categoryId：`12-IndustryConsultant`

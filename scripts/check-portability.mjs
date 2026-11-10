@@ -24,7 +24,12 @@ const INDEX = path.join(ROOT, 'index.json');
 
 const MIB = 1024 * 1024;
 const LIMITS = { file: 1 * MIB, skill: 8 * MIB, skillFiles: 512, pkg: 16 * MIB };
-const BANNED = /WorkBuddy|CodeBuddy|workbuddy|codebuddy|\.workbuddy|WORKBUDDY_CONFIG_DIR|expert-manager|package_expert|present_files/g;
+const BANNED =
+  /workbuddy|codebuddy|\bexpert-manager\b|package_expert|present_files|skill_track|skill-provider|SKILL_PROVIDER_|120\.77\.156\.6/gi;
+// A hardcoded *public* bare-IP http(s) endpoint is never acceptable content: it is
+// either vendor telemetry or a dead host. Loopback is allowed — several skills run
+// their own local helper service on 127.0.0.1 and that is exactly right.
+const BARE_IP_URL = /https?:\/\/(?!127\.0\.0\.1|localhost|0\.0\.0\.0|\[::1\])(?:\d{1,3}\.){3}\d{1,3}(?::\d+)?/g;
 const IMAGE_EXT = new Set(['.png', '.jpg', '.jpeg', '.gif', '.webp', '.bmp', '.ico']);
 
 const failures = [];
@@ -55,14 +60,20 @@ function treeSha256(files, base) {
 // ------------------------------------------------------------------ G1 token scan
 const all = walk(CAT);
 const hitRows = [];
+const ipRows = [];
 for (const f of all) {
   const text = fs.readFileSync(f.abs).toString('latin1');
   const m = text.match(BANNED);
   if (m) hitRows.push({ file: `catalog/${f.rel}`, hits: m.length, tokens: [...new Set(m)].join(',') });
+  const ips = text.match(BARE_IP_URL);
+  if (ips) ipRows.push({ file: `catalog/${f.rel}`, hits: ips.length, tokens: [...new Set(ips)].join(',') });
 }
 if (!all.length) fail('G1', 'catalog/ is empty or missing');
 if (hitRows.length) {
   for (const r of hitRows) fail('G1', `${r.file}: ${r.hits} hit(s) -> ${r.tokens}`);
+}
+if (ipRows.length) {
+  for (const r of ipRows) fail('G6', `${r.file}: hardcoded IP endpoint ${r.tokens}`);
 }
 
 // ------------------------------------------------------------------ G2 avatars / images

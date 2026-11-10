@@ -49,8 +49,8 @@ import json, urllib.request
 API_KEY = "环境变量 REDFOX_API_KEY"
 
 PLATFORM_SOURCE_MAP = {
-    "gzh": "复刻蒸馏写作技能-公众号-Multica",
-    "dy":  "复刻蒸馏写作技能-抖音-Multica",
+    "gzh": "复刻蒸馏写作技能-公众号-morechat.co",
+    "dy":  "复刻蒸馏写作技能-抖音-morechat.co",
 }
 
 def redfox_api(path, payload, timeout=30):
@@ -83,7 +83,7 @@ def redfox_api(path, payload, timeout=30):
 | 配置项 | 值 |
 |--------|----|
 | 接口 | `POST gzhData/queryUser` |
-| 入参 | `{"accountName": "公众号名称", "source": "复刻蒸馏写作技能-公众号-Multica"}` 或 `{"accountId": "公众号ID", "source": "复刻蒸馏写作技能-公众号-Multica"}` |
+| 入参 | `{"accountName": "公众号名称", "source": "复刻蒸馏写作技能-公众号-morechat.co"}` 或 `{"accountId": "公众号ID", "source": "复刻蒸馏写作技能-公众号-morechat.co"}` |
 | 关键字段 | `accountName`、`accountId`、`description` |
 
 **Step 2 - 获取作品列表**：
@@ -91,7 +91,7 @@ def redfox_api(path, payload, timeout=30):
 | 配置项 | 值 |
 |--------|----|
 | 接口 | `POST gzhData/queryWorkList` |
-| 入参 | `{"accountId": "公众号ID", "source": "复刻蒸馏写作技能-公众号-Multica"}` |
+| 入参 | `{"accountId": "公众号ID", "source": "复刻蒸馏写作技能-公众号-morechat.co"}` |
 | 关键字段 | 返回文章列表，含 `title`、`publishTime`、`workId`/`id` 等 |
 
 **Step 3 - 获取作品详情**：
@@ -99,7 +99,7 @@ def redfox_api(path, payload, timeout=30):
 | 配置项 | 值 |
 |--------|----|
 | 接口 | `POST gzhData/queryArticleDetail` |
-| 入参 | `{"workId": "文章ID", "source": "复刻蒸馏写作技能-公众号-Multica"}` 或 `{"id": "文章ID", "source": "复刻蒸馏写作技能-公众号-Multica"}` |
+| 入参 | `{"workId": "文章ID", "source": "复刻蒸馏写作技能-公众号-morechat.co"}` 或 `{"id": "文章ID", "source": "复刻蒸馏写作技能-公众号-morechat.co"}` |
 | 关键字段 | `content`（文章全文）、`title`、`readCount`、`likeCount` |
 
 **采集策略**：
@@ -120,7 +120,7 @@ def redfox_api(path, payload, timeout=30):
 | 配置项 | 值 |
 |--------|----|
 | 接口 | `POST dyData/queryUser` |
-| 入参 | `{"accountId": "抖音号", "source": "复刻蒸馏写作技能-抖音-Multica"}` 或 `{"accountName": "抖音名称", "source": "复刻蒸馏写作技能-抖音-Multica"}` |
+| 入参 | `{"accountId": "抖音号", "source": "复刻蒸馏写作技能-抖音-morechat.co"}` 或 `{"accountName": "抖音名称", "source": "复刻蒸馏写作技能-抖音-morechat.co"}` |
 | 关键字段 | `nickname`、`uid`、`followerCount`、`awemeCount` |
 
 > **注意**：优先使用 `accountId`（抖音号），`accountName` 可能模糊匹配到错误账号。
@@ -130,7 +130,7 @@ def redfox_api(path, payload, timeout=30):
 | 配置项 | 值 |
 |--------|----|
 | 接口 | `POST dyData/queryWorkList` |
-| 入参 | `{"accountId": "抖音号", "source": "复刻蒸馏写作技能-抖音-Multica"}` 或 `{"uid": "用户UID", "source": "复刻蒸馏写作技能-抖音-Multica"}` |
+| 入参 | `{"accountId": "抖音号", "source": "复刻蒸馏写作技能-抖音-morechat.co"}` 或 `{"uid": "用户UID", "source": "复刻蒸馏写作技能-抖音-morechat.co"}` |
 | 关键字段 | 返回作品列表，含 `title`/`desc`、`publishTime`、`awemeId`/`id` |
 
 **Step 3 - 获取作品详情**：
@@ -138,7 +138,7 @@ def redfox_api(path, payload, timeout=30):
 | 配置项 | 值 |
 |--------|----|
 | 接口 | `POST dyData/queryWork` |
-| 入参 | `{"awemeId": "作品ID", "source": "复刻蒸馏写作技能-抖音-Multica"}` 或 `{"id": "作品ID", "source": "复刻蒸馏写作技能-抖音-Multica"}` |
+| 入参 | `{"awemeId": "作品ID", "source": "复刻蒸馏写作技能-抖音-morechat.co"}` 或 `{"id": "作品ID", "source": "复刻蒸馏写作技能-抖音-morechat.co"}` |
 | 关键字段 | `desc`（作品描述/文案）、`title`、`likeCount`、`commentCount` |
 
 **采集策略**：

@@ -3,7 +3,7 @@
   "version": "1.5.1",
   "description": "Build custom digital workspaces (HTML) for different user groups: students, professionals, content creators, parents, and lifestyle users, with responsive design and local data persistence.",
   "author": {
-    "name": "Multica 团队",
+    "name": "morechat.co 团队",
     "email": ""
   },
   "agents": ["./agents/workspace-builder.md"],

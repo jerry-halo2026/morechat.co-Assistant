@@ -39,8 +39,8 @@ A weekly content surge monitoring tool that tracks tens of thousands of Douyin w
 ## API Key Acquisition & Security
 
 - This skill requires the environment variable: `REDFOX_API_KEY`.
-- `REDFOX_API_KEY` is provided by [RedFoxHub](https://redfox.hk/settings/api-keys?source=multica) (`https://redfox.hk`).
-- Please register an account at [RedFoxHub](https://redfox.hk?source=multica) to obtain your `REDFOX_API_KEY`.
+- `REDFOX_API_KEY` is provided by [RedFoxHub](https://redfox.hk/settings/api-keys?source=morechat.co) (`https://redfox.hk`).
+- Please register an account at [RedFoxHub](https://redfox.hk?source=morechat.co) to obtain your `REDFOX_API_KEY`.
 - Configure the `REDFOX_API_KEY` environment variable on your device before using this skill.
 - Before providing your key, verify its source, scope, validity period, and whether reset/revocation is supported.
 - Never hardcode or expose keys in plain text within code, prompts, logs, or output files.

@@ -32,7 +32,7 @@ author: 红狐数据
 
 ## 🔑 鉴权
 
-前往 [红狐hub](https://redfox.hk/settings/api-keys?source=multica) 获取 API Key，通过以下方式配置：
+前往 [红狐hub](https://redfox.hk/settings/api-keys?source=morechat.co) 获取 API Key，通过以下方式配置：
 
 ```bash
 # 方式一：配置文件（如 OpenClaw 的 ~/.openclaw/openclaw.json）

@@ -56,5 +56,5 @@ Configure the following environment variables before deployment:
 
 1. Download the expert package
 2. Extract to <MORECHAT_CONTENT_DIR>/plugins/marketplaces/my-experts/plugins/mvp-dev-expert-team/
-3. Restart Multica, find "MVP Dev Expert Team" in the expert list
+3. Restart morechat.co, find "MVP Dev Expert Team" in the expert list
 4. Click to start a conversation, enter your product idea to launch

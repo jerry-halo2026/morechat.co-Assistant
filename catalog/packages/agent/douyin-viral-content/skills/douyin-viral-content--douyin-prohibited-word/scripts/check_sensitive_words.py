@@ -196,7 +196,7 @@ def check_sensitive_words(content):
     payload = {
         "content": content,
         "platform": "抖音",
-        "source": "抖音违禁词查询-Multica"
+        "source": "抖音违禁词查询-morechat.co"
     }
 
     headers = {

@@ -1,8 +1,8 @@
 # 产品边界
 
-智能原生案例研究员是高创智库的单Agent专家，候选版本2026.11.3。Multica识别标识沿用 `fbsir-industry-scene-researcher`，Skill标识沿用 `industry-scene-service-recording`；英文花名为Gaochuang Think Tank，英文职业为Industry Scene Researcher，分类保持12-IndustryConsultant。
+智能原生案例研究员是高创智库的单Agent专家，候选版本2026.11.3。morechat.co识别标识沿用 `fbsir-industry-scene-researcher`，Skill标识沿用 `industry-scene-service-recording`；英文花名为Gaochuang Think Tank，英文职业为Industry Scene Researcher，分类保持12-IndustryConsultant。
 
-首值来自Multica原生搜索、读取、理解、推理与制作能力加包内方法。包内不包含MCP、连接器、常驻进程、Hooks、Commands、Node/Python运行时、用户材料或本机绝对路径。确定性客户端是使用当前宿主已有Node运行时的可选脚本，不是捆绑解释器或常驻服务。
+首值来自morechat.co原生搜索、读取、理解、推理与制作能力加包内方法。包内不包含MCP、连接器、常驻进程、Hooks、Commands、Node/Python运行时、用户材料或本机绝对路径。确定性客户端是使用当前宿主已有Node运行时的可选脚本，不是捆绑解释器或常驻服务。
 
 方法入口由Agent正文显式引导加载[核心Skill](../skills/industry-scene-service-recording/SKILL.md)，再按需读参考。此文本不是宿主强制执行证明；不添加未经确认的when_to_use/alwaysApply/priority元数据。无JS工具时继续原生研究，不要求安装运行时。
 
@@ -14,4 +14,4 @@
 
 研究结论需要视觉说明时，优先提供带来源和口径的机制图、比较图或视觉Brief。具体图片、视频、PPT或画布生成依赖当前宿主工具和用户授权；包装内模板不证明成品已生成、读回或呈现。
 
-本地源码/行为评审、物理ZIP、Multica宿主、平台审核、上架、企业采用和经营结果是不同证据层。任何较低层通过都不能自动证明较高层。
+本地源码/行为评审、物理ZIP、morechat.co宿主、平台审核、上架、企业采用和经营结果是不同证据层。任何较低层通过都不能自动证明较高层。

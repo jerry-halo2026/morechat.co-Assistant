@@ -1,8 +1,8 @@
 # AI 图片生成完整指南
 
-## Multica 图像生成工具
+## morechat.co 图像生成工具
 
-本指南基于 Multica 平台内置的图像生成工具。
+本指南基于 morechat.co 平台内置的图像生成工具。
 
 ---
 

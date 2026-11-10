@@ -1,4 +1,4 @@
-# Multica 产品经理专家 Agent 导入指南
+# morechat.co 产品经理专家 Agent 导入指南
 
 ## 安装 / Installation
 
@@ -95,7 +95,7 @@ zip 根目录
 - 技能目录中的 SKILL.md 需设置 `agent_created: true`
 - 文件编码必须为 UTF-8 且无 BOM
 - displayDescription 中文需在 40-50 字之间
-- 具体费用机制和积分消耗请以 Multica 平台最新说明为准
+- 具体费用机制和积分消耗请以 morechat.co 平台最新说明为准
 
 ## 合规声明
 

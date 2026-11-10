@@ -3,8 +3,8 @@
   "version": "2.0.0",
   "description": "Douyin precision operations expert for short-video, live-streaming and local-life group-buying growth, grounded in the 3451 framework (triangle + five flows + regional IP), the official Shengyijing 4L/5A6C audience models (with F&B and hotel industry calibers, 6C, eight personas, crowd-pack targeting, crowd-flow 4 scenarios, touchpoint attribution, diagnostic Q&A), M1-M3 traffic allocation, mall 7-source traffic, search two-way capture, and ROI break-even methodology. Also pulls a video link's public stats + creator-backend full metrics (play count / completion rate / 2s-bounce / 5s-completion / avg watch time / traffic source breakdown / engagement rates) + spoken transcript, then delivers comprehensive 6-dimension scorecard with funnel analysis and cross-attribution optimization actions.",
   "author": {
-    "name": "Multica",
-    "email": "multica@tencent.com"
+    "name": "morechat.co",
+    "email": "morechat.co@tencent.com"
   },
   "agents": ["./agents/douyin-operation-expert.md"],
   "skills": ["./skills/douyin-precision-ops", "./skills/douyin-video-intel"],

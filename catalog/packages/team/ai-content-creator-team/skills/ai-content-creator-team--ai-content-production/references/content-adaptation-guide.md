@@ -2,7 +2,7 @@
 
 本文档涵盖三大素材改编能力：视频翻译、视频分析和多媒体合成。
 
-## Multica 可用工具
+## morechat.co 可用工具
 
 | 工具/模型 | 调用方式 | 能力 |
 |-----------|----------|------|
@@ -88,7 +88,7 @@ Translate this English tutorial video to Japanese with natural voice cloning and
 
 ## 二、视频内容分析（基于 YT-VITA）
 
-> 视频内容分析使用 Multica 内置的 **YT-VITA** 模型（调用参数 `youtu-vita`），支持视频/图片内容理解分析、视频结构解析、图像目标检测。通过 `多模态内容生成` Skill 自动触发。
+> 视频内容分析使用 morechat.co 内置的 **YT-VITA** 模型（调用参数 `youtu-vita`），支持视频/图片内容理解分析、视频结构解析、图像目标检测。通过 `多模态内容生成` Skill 自动触发。
 
 ### 2.1 分析维度
 

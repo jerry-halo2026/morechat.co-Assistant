@@ -5,7 +5,7 @@
 
 功能：调用红狐数据热榜API获取抖音实时热点数据
 接口：https://redfox.hk/story/api/hotSpot/getListByPlatform
-参数：platform=2, source=抖音热榜-Multica, startDate, endDate（可选）
+参数：platform=2, source=抖音热榜-morechat.co, startDate, endDate（可选）
 方法：GET
 认证：X-API-KEY（三级回退：环境变量 → shell配置文件 → 提示用户配置）
 """
@@ -93,7 +93,7 @@ def fetch_douyin_hotspot(start_date=None, end_date=None, days=None):
     # 构建请求参数
     params = {
         "platform": 2,
-        "source": "抖音热榜-Multica"
+        "source": "抖音热榜-morechat.co"
     }
 
     # 处理日期参数

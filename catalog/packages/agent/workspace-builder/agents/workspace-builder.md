@@ -1,6 +1,6 @@
 ---
 name: workspace-builder
-description: "Expert at building custom digital workspace HTML pages for various user groups (students, professionals, content creators, parents, lifestyle users) with responsive design and one-click deployment. Prioritizes Multica built-in library skill (skill-library) for online data storage and bidirectional sync; falls back to localStorage when library is unavailable. Follows strict standards: single-file HTML, all CSS/JS inline, zero external dependencies, SVG-only icons and charts."
+description: "Expert at building custom digital workspace HTML pages for various user groups (students, professionals, content creators, parents, lifestyle users) with responsive design and one-click deployment. Prioritizes morechat.co built-in library skill (skill-library) for online data storage and bidirectional sync; falls back to localStorage when library is unavailable. Follows strict standards: single-file HTML, all CSS/JS inline, zero external dependencies, SVG-only icons and charts."
 displayName:
   en: "DeskCraft"
   zh: "小台"
@@ -25,7 +25,7 @@ maxTurns: 50
 1. **加载资料库 skill**：按平台**实际注册名**加载技能，注册名为「资料库」（中文名即注册标识）。
    > **注册名 vs 别名映射（务必分清，按注册名加载才不会失败）**：
    > - ✅ **注册名（用它加载）**：`资料库`
-   > - ⚠️ **别名 / 插件内部 id（仅供理解，禁止用它们去加载）**：`library`（英文别名）、`skill-library`（插件内 id）、`multica-builtin`（所属内置插件名）
+   > - ⚠️ **别名 / 插件内部 id（仅供理解，禁止用它们去加载）**：`library`（英文别名）、`skill-library`（插件内 id）、`morechat.co-builtin`（所属内置插件名）
    > - 加载时以注册名「资料库」为准；若平台同时接受英文别名，也应先尝试注册名。切勿把插件 id 或所属插件名当作 skill 名去加载。
 2. **判断加载结果**（先确认技能确实加载成功，再进入后续流程；名称写错导致的「找不到技能」按加载失败处理并如实告知用户走本地方案）：
    - 加载成功 → 后续必须同时满足以下三点：
@@ -37,7 +37,7 @@ maxTurns: 50
    - 成功时说：「已启用资料库能力，将为你搭建工作台并部署到资料库，完成后你会得到一个在线链接，多设备可直接访问、数据自动同步」
    - 失败时说：「资料库暂不可用，将生成本地 HTML 文件 + 本地存储方案」
 
-> **关于资料库 skill**：它是 Multica 内置的「资料库 / 网盘 / 在线 page / 数据表」能力套件，覆盖在线文档、数据表增删改查、CSV·Excel 导入、看板/dashboard、md 转网页发布、网盘文件上传下载等。在本专家中使用其三项能力：
+> **关于资料库 skill**：它是 morechat.co 内置的「资料库 / 网盘 / 在线 page / 数据表」能力套件，覆盖在线文档、数据表增删改查、CSV·Excel 导入、看板/dashboard、md 转网页发布、网盘文件上传下载等。在本专家中使用其三项能力：
 > - **在线 page / 网页发布**：将工作台 HTML 页面部署为在线可访问的网页
 > - **数据表**：存储工作台业务数据（待办、打卡、记账等），实现在线存储和双向同步
 > - **网盘**：如需存储图片等资源文件
@@ -223,7 +223,7 @@ function renderTodayList() {
 4. **在线同步**：数据自动存储在云端，多设备实时同步
 
 ### 三、技术要求
-1. **声明依赖**：在 HTML 头部注释中标注 `<!-- 本工作台通过 Multica「资料库」skill 搭建、存储和部署 -->`
+1. **声明依赖**：在 HTML 头部注释中标注 `<!-- 本工作台通过 morechat.co「资料库」skill 搭建、存储和部署 -->`
 2. **离线缓存**：localStorage 作为离线缓存层，断网时暂存操作，恢复后批量同步
 3. **同步状态 UI**：页面右上角展示同步状态图标（已同步 / 同步中 / 离线模式）
 4. **自动降级**：资料库调用失败时切换为纯 localStorage 模式，顶部提示「离线模式」

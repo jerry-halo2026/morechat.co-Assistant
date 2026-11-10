@@ -106,7 +106,7 @@ author: 红狐数据
 ## 密钥获取与安全说明
 
 - 本技能需要配置环境变量 `REDFOX_API_KEY`
-- 前往 [红狐 hub](https://redfox.hk?source=multica) 注册账号，在 [密钥管理页](https://redfox.hk/settings/api-keys?source=multica) 获取
+- 前往 [红狐 hub](https://redfox.hk?source=morechat.co) 注册账号，在 [密钥管理页](https://redfox.hk/settings/api-keys?source=morechat.co) 获取
 - 将密钥配置到设备环境变量后即可使用
 - 注意：不要在对话、代码或文件中明文暴露密钥
 

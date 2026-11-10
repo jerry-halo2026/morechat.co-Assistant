@@ -53,7 +53,7 @@ python3 "$SKILL_PATH/scripts/fetch_douyin_ai.py" --unsubscribe
 
 ### 获取 API Key
 
-前往 [redfox.hk/login](https://www.redfox.hk/settings/api-keys?source=multica) 注册获取个人 API Key。
+前往 [redfox.hk/login](https://www.redfox.hk/settings/api-keys?source=morechat.co) 注册获取个人 API Key。
 
 ### 配置 API Key
 
@@ -102,4 +102,4 @@ A：用 `--page-size 100` 增大单次查询数量。
 A：默认 `~/Downloads/QoderReports/`，文件名格式 `抖音AI日报_2026-06-10.html`。
 
 **Q：没有 API Key 怎么办？**
-A：前往 [redfox.hk](https://www.redfox.hk/settings/api-keys?source=multica) 注册获取，然后执行 `export REDFOX_API_KEY=ak_你的密钥`。
+A：前往 [redfox.hk](https://www.redfox.hk/settings/api-keys?source=morechat.co) 注册获取，然后执行 `export REDFOX_API_KEY=ak_你的密钥`。

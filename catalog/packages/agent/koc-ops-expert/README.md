@@ -12,12 +12,12 @@
 ## 运行时适配 / Runtime notes
 
 - 向用户提问：使用 dsh-tool-ask-user（ask_user_question）；运行时无该能力时，改为在任务评论中提问并等待。
-- 交付产物：使用 dsh-tool-present 声明交付；在 Multica 中作为 Issue 附件提交。
-- 多角色协作：创建 Multica Squad 并由 leader 通过 @ 派发子任务。
+- 交付产物：使用 dsh-tool-present 声明交付；在任务评论中作为附件提交。
+- 多角色协作：创建平台小队（Squad）并由 leader 通过 @ 派发子任务。
 - 工具声明键为 `allowed-tools-dsh`（Task → subagent，AskUserQuestion → ask_user_question）。
 
 
-Multica 专家包（Agent 型）。覆盖 KOC **招募 → 培育 → 激励 → 分销 → 留存汰换**全链路，
+morechat.co 专家包（Agent 型）。覆盖 KOC **招募 → 培育 → 激励 → 分销 → 留存汰换**全链路，
 通过结构化问诊拿到决策信息，输出一份**单文件、可打印、明暗自适应的 HTML 作战报告**。
 
 - **专家标识**：`koc-ops-expert`
@@ -76,7 +76,6 @@ koc-ops-expert/
 | `koc-distribution-engine` | `koc_econ.py` | `sample` 寄样经济模型（O\*、ROI、敏感性）/ `commission` c_max 与佣金结构拆解 / `tier` 阶梯佣金模拟 |
 | `koc-compliance-guard` | `compliance_check.py` | `text` 禁用词与广告标识扫描 / `distribution` 分销三闸检查 / `checklist` 发布前自检 |
 | `koc-ops-report` | `render_report.py` | 19 种区块的单文件 HTML 报告渲染（内联 SVG 图表、明暗双模式、可打印） |
-| `koc-ops-report` | `skill_track.py` | `deliver` 内容回流 + 事件埋点 / `selftest` 真机自检 / `flush-pending` 补发 / `config` 查配置 |
 
 ---
 
@@ -112,28 +111,20 @@ python3 scripts/render_report.py --data report.json --out 报告.html
 
 | 顺序 | 接口 | 作用 |
 |---|---|---|
-| 1 | `POST /api/v1/skill-provider/skill-report-contents` | 免费 SKILL 内容回流 → 返回 `report_id` |
-| 2 | `POST /api/v1/skill-provider/skill-events` | 事件埋点（带上 `report_id` 串联）→ 返回 `event_id` |
+| 1 | `POST /api/v1/report-service/skill-report-contents` | 免费 SKILL 内容回流 → 返回 `report_id` |
+| 2 | `POST /api/v1/report-service/skill-events` | 事件埋点（带上 `report_id` 串联）→ 返回 `event_id` |
 
-触发时机：**每次生成 HTML 报告之后**，由 `skills/koc-ops-report/scripts/skill_track.py` 执行。
 
 ```bash
 cd skills/koc-ops-report
-python3 scripts/skill_track.py deliver --content-file 报告.html --task-id koc-20260818-001
-python3 scripts/skill_track.py selftest        # 真机连通性自检
-python3 scripts/skill_track.py flush-pending   # 补发失败积压
-python3 scripts/skill_track.py config          # 查看当前配置
 ```
 
 ### 配置（包内不硬编码密钥）
 
 | 环境变量 | 说明 | 默认 |
 |---|---|---|
-| `SKILL_PROVIDER_BASE_URL` | 后端地址 | `http://120.77.156.6:8001`（开发测试环境） |
-| `SKILL_PROVIDER_API_KEY` | `X-API-KEY` | **无默认，必须由部署方注入** |
-| `SKILL_PLATFORM` | 平台标识 | `multica` |
-| `WORKBUDDY_ACCOUNT_ID` | 用户账号 ID | `anonymous` |
-| `SKILL_TRACK_DISABLED` | 设 `1` 则完全不上报 | `0` |
+| `SKILL_PLATFORM` | 平台标识 | `morechat.co` |
+| `MORECHAT_REPORT_DISABLED` | 设 `1` 则完全不上报 | `0` |
 
 
 > ⚠️ **为什么不把 key 写进包里**：提交规范明确要求"专家包内不得硬编码任何真实 Token / 密钥"，
@@ -196,7 +187,7 @@ zip -r koc-ops-expert.zip koc-ops-expert -x "*.DS_Store" -x "*__pycache__*"
 
 ## 七、与「达人分销专家」的边界（同品牌多专家上架时的差异化说明）
 
-Multica 对同一品牌上架多个专家有差异化要求。本专家与达人分销类专家的边界：
+morechat.co 对同一品牌上架多个专家有差异化要求。本专家与达人分销类专家的边界：
 
 | 维度 | **KOC运营专家（本专家）** | 达人分销专家 |
 |---|---|---|

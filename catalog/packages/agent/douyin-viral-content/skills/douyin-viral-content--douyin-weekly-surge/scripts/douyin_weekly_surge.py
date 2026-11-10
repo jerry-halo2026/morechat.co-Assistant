@@ -92,7 +92,7 @@ def call_api(category="全部", start_time=None):
         start_time = yesterday()
 
     body = {
-        "source": "抖音七日点赞飙升榜-Multica",
+        "source": "抖音七日点赞飙升榜-morechat.co",
     }
     if category and category != "全部":
         body["type"] = category

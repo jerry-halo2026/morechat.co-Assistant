@@ -39,8 +39,8 @@ Analyze an author's articles, deeply reconstruct their thinking patterns and wri
 ## API Key Acquisition & Security
 
 - This skill requires the environment variable: `REDFOX_API_KEY`.
-- `REDFOX_API_KEY` is issued by [RedFoxHub](https://redfox.hk/settings/api-keys?source=multica) (`https://redfox.hk`).
-- Register at [RedFoxHub](https://redfox.hk?source=multica) to obtain `REDFOX_API_KEY`.
+- `REDFOX_API_KEY` is issued by [RedFoxHub](https://redfox.hk/settings/api-keys?source=morechat.co) (`https://redfox.hk`).
+- Register at [RedFoxHub](https://redfox.hk?source=morechat.co) to obtain `REDFOX_API_KEY`.
 - Configure `REDFOX_API_KEY` on your device before using this skill.
 - Before providing your key, confirm its source, scope, validity period, and whether it can be reset or revoked.
 - Do not hard-code or expose keys in plain text in code, prompts, logs, or output files.

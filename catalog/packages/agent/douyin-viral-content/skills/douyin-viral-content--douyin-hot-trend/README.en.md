@@ -39,8 +39,8 @@ A smart hot trend tool that tracks Douyin trending topics in real time, uncovers
 ## API Key Acquisition & Security
 
 - This skill requires the environment variable: `REDFOX_API_KEY`.
-- `REDFOX_API_KEY` is provided by [RedFoxHub](https://redfox.hk/settings/api-keys?source=multica) (`https://redfox.hk`).
-- Register an account at [RedFoxHub](https://redfox.hk?source=multica) to obtain your `REDFOX_API_KEY`.
+- `REDFOX_API_KEY` is provided by [RedFoxHub](https://redfox.hk/settings/api-keys?source=morechat.co) (`https://redfox.hk`).
+- Register an account at [RedFoxHub](https://redfox.hk?source=morechat.co) to obtain your `REDFOX_API_KEY`.
 - Configure the device environment variable `REDFOX_API_KEY` before using this skill.
 - Before providing a key, confirm its source, scope, expiration, and whether it supports reset/revocation.
 - Never hardcode or expose the key in plaintext in code, prompts, logs, or output files.

@@ -4,7 +4,7 @@
   "description": "Veteran photographer specializing in composition design for portraits, landscapes, and product shots—turns framing principles into on-site shot lists and field-ready checklists.",
   "author": {
     "name": "kefeng",
-    "email": "kefeng@local.multica"
+    "email": "kefeng@local.morechat.co"
   },
   "agents": ["./agents/photo-composition-expert.md"],
 

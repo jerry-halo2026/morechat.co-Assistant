@@ -6,7 +6,7 @@ description: "检查一份战略分析/战略解码文本有没有空转：双�
 description_zh: "检查一份战略分析/战略解码文本有没有空转：双差距是否成对、五看是否齐全、业务设计六要素是否覆盖、关键任务有没有挂钩考核指标、行业数字有没有挂待验证标签。防『看起来很美的空报告』。"
 description_en: "Deterministically verify a strategy-analysis document against the BLM (Business Leadership Model) checklist: paired performance/opportunity gaps, five market-insight views, six business-design elements, key tasks linked to metrics, and unsourced market figures flagged. Catches polished-but-empty reports; never fabricates content."
 version: 1.2.0
-author: Multica
+author: morechat.co
 category: office
 allowed-tools-dsh: ["scripts/python", "scripts/bash"]
 user-invocable: true

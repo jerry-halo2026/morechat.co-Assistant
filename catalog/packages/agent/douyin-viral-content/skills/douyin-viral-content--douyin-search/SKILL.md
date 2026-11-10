@@ -27,7 +27,7 @@ author: 红狐数据
 
 ## 🔑 鉴权
 
-- 获取 API Key：前往 [红狐hub](https://redfox.hk/settings/api-keys?source=multica)
+- 获取 API Key：前往 [红狐hub](https://redfox.hk/settings/api-keys?source=morechat.co)
 - 配置方式1：写入 `~/.openclaw/openclaw.json` → `{ "env": { "REDFOX_API_KEY": "ak_xxxx..." } }`
 - 配置方式2：终端执行 `export REDFOX_API_KEY="ak_xxxx..."`
 

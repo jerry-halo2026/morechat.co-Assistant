@@ -29,7 +29,7 @@ except ImportError:
 # ─── 配置 ─────────────────────────────────────────────────────────────────────────
 API_URL = "https://redfox.hk/story/api/parseWork/queryDyAiMsgs"
 ENV_KEY = "REDFOX_API_KEY"
-SOURCE = "AI抖音信息源-Multica"
+SOURCE = "AI抖音信息源-morechat.co"
 
 DEFAULT_KEYWORD = "AI"
 DEFAULT_OUTPUT_DIR = Path.home() / "Downloads" / "QoderReports"

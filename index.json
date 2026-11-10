@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "generator": "morechat-assistant/scripts/build-catalog.mjs",
-  "generatedAt": "2026-11-10T05:24:28.838Z",
+  "generatedAt": "2026-11-10T05:31:44.807Z",
   "source": {
     "catalogRoot": "catalog",
     "upstreamRoot": "upstream",
@@ -14,9 +14,9 @@
     "agents": 34,
     "teams": 5,
     "skills": 113,
-    "files": 977,
-    "bytes": 14969836,
-    "sourceBytes": 14951123,
+    "files": 976,
+    "bytes": 14951068,
+    "sourceBytes": 14933887,
     "duplicateSkillNames": [
       {
         "name": "fullstack-dev",
@@ -61,8 +61,8 @@
       "version": "1.0.2",
       "path": "packages/agent/ai-engineer",
       "files": 44,
-      "bytes": 223542,
-      "sha256": "facd415b08bfb20d5d0664a1960ba2febd42d7b207587c50230636f77bd1515f",
+      "bytes": 223546,
+      "sha256": "89dea66a04809f8fbd1e30cb594a230c938612427892cbf331af83cf41ef7f90",
       "skills": [
         {
           "name": "agent-browser-core",
@@ -212,8 +212,8 @@
       "version": "1.0.1",
       "path": "packages/agent/backend-architect",
       "files": 112,
-      "bytes": 5832129,
-      "sha256": "44d156cdd75252516139227bcdb5e63c68370171c00ea99612295643a0756fe3",
+      "bytes": 5832133,
+      "sha256": "de4650f576a14221daacf8782f4d751b7419690b8e3531c171e85eb0cb3d8bf2",
       "skills": [
         {
           "name": "frontend-dev",
@@ -268,16 +268,16 @@
       "version": "1.1.1",
       "path": "packages/agent/blm-strategy-advisor",
       "files": 5,
-      "bytes": 49003,
-      "sha256": "591e94bff29b93ff2d53af0b20c9e5e0b654c5163dfe225db6d44968e984ad1b",
+      "bytes": 49015,
+      "sha256": "58e6e482c883d442118ecc78df1fb852f3f2c678828c7a43db5d6b5b0f25cebd",
       "skills": [
         {
           "name": "blm-coverage-checker",
           "ns": "blm-strategy-advisor--blm-coverage-checker",
           "path": "skills/blm-strategy-advisor--blm-coverage-checker",
           "files": 2,
-          "bytes": 28105,
-          "sha256": "41dec82ba33c4df896c984b15b0b22b000613ebfc32595c0fa8bf0a753d267e7"
+          "bytes": 28109,
+          "sha256": "f8b14cd5e483e72453a5946a0f8c038d6e68138e1a8bd446d330bc315ff13777"
         }
       ],
       "requires": [
@@ -315,8 +315,8 @@
       "version": "1.0.0",
       "path": "packages/agent/data-analysis",
       "files": 19,
-      "bytes": 101628,
-      "sha256": "78184ebcd3716dad2201a56a6dd8c0e88444668ef703d12107a3ecf17ffbed27",
+      "bytes": 101632,
+      "sha256": "4776f6e95a4679f96898213ccc4c83460946d963775f7dbaefe702472712e035",
       "skills": [
         {
           "name": "data-analysis-cn",
@@ -362,16 +362,16 @@
       "version": "1.0.39",
       "path": "packages/agent/designkit-ugc-commerce",
       "files": 5,
-      "bytes": 40795,
-      "sha256": "c2076a40887de6efeef53dc3d2d149ed43c54fedcb61e79024fb4adbdcb67f36",
+      "bytes": 40809,
+      "sha256": "178bfb273cd80fe9ff88191fa4661eb9beffe801304ac7dc9f04f68117ef2571",
       "skills": [
         {
           "name": "ugc-commerce",
           "ns": "designkit-ugc-commerce--ugc-commerce",
           "path": "skills/designkit-ugc-commerce--ugc-commerce",
           "files": 2,
-          "bytes": 26652,
-          "sha256": "4382a2d011a105b2da9075d45cfba36d72de76156cda49f46cb901118f9e399c"
+          "bytes": 26667,
+          "sha256": "097cd44e4741be839e21b85511baca9c58f442e11a2db9240bd7ac43f5f12f2d"
         }
       ],
       "requires": [],
@@ -484,8 +484,8 @@
       "version": "2.0.0",
       "path": "packages/agent/douyin-operation-expert",
       "files": 9,
-      "bytes": 122629,
-      "sha256": "46554020f25f6f81900cbb3640cfddf8e23cdfedda7b5224032461cf8f34dc6c",
+      "bytes": 122637,
+      "sha256": "93aa0c9be79827a68a69cf0012a2d086d098e8588c94b9904e58f26cd95b2e21",
       "skills": [
         {
           "name": "douyin-precision-ops",
@@ -539,8 +539,8 @@
       "version": "1.0.2",
       "path": "packages/agent/douyin-strategist",
       "files": 13,
-      "bytes": 68674,
-      "sha256": "26c7a51626386a1eae7c7014782f8a6c37cfc2227caa269ceef1691958b8c699",
+      "bytes": 68678,
+      "sha256": "a0f98bbd96e5d123f97651cfffff13a20c156c2614f9cfbddf2c7a8941010c46",
       "skills": [
         {
           "name": "anti-distill",
@@ -592,72 +592,72 @@
       "version": "1.0.0",
       "path": "packages/agent/douyin-viral-content",
       "files": 49,
-      "bytes": 418006,
-      "sha256": "67b9f5185663eb62c51e9d930ad4e86f4eb8b3d6cbd1b223c5105eb4efa2187c",
+      "bytes": 418358,
+      "sha256": "6056424cd9edc97cc4940a6cb2e9ffa498b4127a845b716f545348742aaf5b81",
       "skills": [
         {
           "name": "douyin-ai-feed",
           "ns": "douyin-viral-content--douyin-ai-feed",
           "path": "skills/douyin-viral-content--douyin-ai-feed",
           "files": 5,
-          "bytes": 48443,
-          "sha256": "c4a36ac8600f4b2fd0810a000aa3035a02005215f1694429121e4dadeb8f4e1f"
+          "bytes": 48471,
+          "sha256": "3ab6c585a74c16a3cf635bcdc43476a2687523df56a76d6c4bfa18c5fbe7f0b5"
         },
         {
           "name": "douyin-content-surge",
           "ns": "douyin-viral-content--douyin-content-surge",
           "path": "skills/douyin-viral-content--douyin-content-surge",
           "files": 6,
-          "bytes": 33524,
-          "sha256": "25d016c55ef80a9108427d3dd2fe379c56bd8cb771881959083617fd8f59312e"
+          "bytes": 33544,
+          "sha256": "9ffba7fa5d2c47f550f16dcba582117e2900ac6081488fa97a5cfbe5f0bd22b3"
         },
         {
           "name": "douyin-daily-hot",
           "ns": "douyin-viral-content--douyin-daily-hot",
           "path": "skills/douyin-viral-content--douyin-daily-hot",
           "files": 6,
-          "bytes": 34509,
-          "sha256": "b56eba72a73462db10e7f12985ed477a05073542c9358db82bc2f2c755573484"
+          "bytes": 34549,
+          "sha256": "4e0fbc5db2b0d46ef6362ab885b260311e7346c6e7d9cf1d73283780c2538be6"
         },
         {
           "name": "douyin-hot-trend",
           "ns": "douyin-viral-content--douyin-hot-trend",
           "path": "skills/douyin-viral-content--douyin-hot-trend",
           "files": 7,
-          "bytes": 85167,
-          "sha256": "27c161f108e8ec159a2e3e64865fb4b329c1cd26905903a651bcca702e65c29b"
+          "bytes": 85267,
+          "sha256": "e6dd9df6edffda6d87e3a25430e51ef4cac0fc1547cb3c87b5140a4b6e8bd7d8"
         },
         {
           "name": "douyin-prohibited-word",
           "ns": "douyin-viral-content--douyin-prohibited-word",
           "path": "skills/douyin-viral-content--douyin-prohibited-word",
           "files": 5,
-          "bytes": 51799,
-          "sha256": "ad159316dd2d2515ee61e76ce8825be55134beac16a6a91996378b25e6b98977"
+          "bytes": 51835,
+          "sha256": "309c6b0c825b23bcf17d534345c3406e5890a8602ee55001c433a623519fa9d0"
         },
         {
           "name": "douyin-search",
           "ns": "douyin-viral-content--douyin-search",
           "path": "skills/douyin-viral-content--douyin-search",
           "files": 4,
-          "bytes": 23137,
-          "sha256": "97d4926fc587957593c38f51ef5c611c1a234753dac15480bb2eb6abbb1e93c6"
+          "bytes": 23161,
+          "sha256": "113d5f2efb5e0d361c8dbedc2145ff272ef166182b387f0a701d374ada3304b2"
         },
         {
           "name": "douyin-weekly-surge",
           "ns": "douyin-viral-content--douyin-weekly-surge",
           "path": "skills/douyin-viral-content--douyin-weekly-surge",
           "files": 6,
-          "bytes": 34281,
-          "sha256": "e0a55986ed35f9473669d12ba37c13b7a722a1cd0af791d6e273503563733aa0"
+          "bytes": 34305,
+          "sha256": "85d160d6c558f28d414eec78590461862dd28c6e36cefd0174417b3016b75be9"
         },
         {
           "name": "multi-copywrite-alchemy",
           "ns": "douyin-viral-content--multi-copywrite-alchemy",
           "path": "skills/douyin-viral-content--multi-copywrite-alchemy",
           "files": 7,
-          "bytes": 88285,
-          "sha256": "cb8b1bce63ab148c0e7cd70d77c72e620250dac86e0c94b6ed0d568775a7e34d"
+          "bytes": 88361,
+          "sha256": "006d7aa2ea1091c776260cee4ab8fcd91a2b658509cfa910ecfd3e5a57326793"
         }
       ],
       "requires": [
@@ -731,16 +731,16 @@
       "version": "2026.11.3",
       "path": "packages/agent/fbsir-industry-scene-researcher",
       "files": 50,
-      "bytes": 360442,
-      "sha256": "9215c20bc8370d9bea160f7e34284d507b66a15a3b75566ffcfb4545c59769db",
+      "bytes": 360482,
+      "sha256": "586729d09df91b1de2bcc929418651acd12bf539c29876f96adbc57a777d5da2",
       "skills": [
         {
           "name": "industry-scene-service-recording",
           "ns": "fbsir-industry-scene-researcher--industry-scene-service-recording",
           "path": "skills/fbsir-industry-scene-researcher--industry-scene-service-recording",
           "files": 45,
-          "bytes": 336758,
-          "sha256": "5f0350bc83b620851297b7ecd68eeee7b52d40d154cee53ff8c542b544617123"
+          "bytes": 336770,
+          "sha256": "c716421ff6d21967fd7134ef6b0959f38be71a6db2fc2c32b9ee4c2983650afb"
         }
       ],
       "requires": [
@@ -778,8 +778,8 @@
       "version": "1.0.0",
       "path": "packages/agent/finance",
       "files": 12,
-      "bytes": 118205,
-      "sha256": "208410344b1b0e4d1fe7989f680b2fcc48d8a634996726e7eb501be15c548b74",
+      "bytes": 118233,
+      "sha256": "1959af94aa4e69177168685a5206cad6bcca0a3be68847144e040a261955f927",
       "skills": [
         {
           "name": "audit-support",
@@ -858,8 +858,8 @@
       "version": "1.0.0",
       "path": "packages/agent/flywheel-koc-matrix-recruiter",
       "files": 8,
-      "bytes": 4408,
-      "sha256": "10ed9435c3fe5d4a4ee8fed4e8a59f6cf6070d5e738d52f76bb1b6c142f77093",
+      "bytes": 4412,
+      "sha256": "d57648a37fe82dc3ccaf432c1eccd793441f257f8b3cdb2632a6181e05c0116c",
       "skills": [
         {
           "name": "flywheel-koc-matrix-recruiter-core",
@@ -905,8 +905,8 @@
       "version": "1.0.1",
       "path": "packages/agent/huashu-doc-reviewer",
       "files": 3,
-      "bytes": 10503,
-      "sha256": "ac94b3b53554cf418c87348d8fdf6f2d3e6d9902186d9cd0a2a414c4f4c44986",
+      "bytes": 10511,
+      "sha256": "59d3a6bdba7a9b467904cc2aa440eb3038490f01b054975ba48d66b909c1d56e",
       "skills": [],
       "requires": [],
       "tags": [
@@ -941,8 +941,8 @@
       "version": "1.0.2",
       "path": "packages/agent/jifan-lapian-fuke",
       "files": 21,
-      "bytes": 42466,
-      "sha256": "9660bf3d70ca6bc8324e260f529b894598ecd704d3aec79aa9d454dc3f96118f",
+      "bytes": 42470,
+      "sha256": "de664591a1e4e950e2846633a7bae8743d7c516b57cce5389d18a020f89cbc96",
       "skills": [
         {
           "name": "jifan-lapian-chaifen",
@@ -1003,9 +1003,9 @@
       "descriptionZh": "KOC全链路操盘：算清池子规模与人力上限，定选人标准，压高出稿率，设计激励与分销佣金，交付作战报告",
       "version": "1.0.0",
       "path": "packages/agent/koc-ops-expert",
-      "files": 31,
-      "bytes": 464252,
-      "sha256": "97e956ef0a67b78ea6b33aa6491cb3ccbd5bf31e9be9f4e323de4f1bead76597",
+      "files": 30,
+      "bytes": 444618,
+      "sha256": "ae646398331225867ad0095b410605b10618922f2e3097cc4c76356d27525181",
       "skills": [
         {
           "name": "koc-compliance-guard",
@@ -1043,9 +1043,9 @@
           "name": "koc-ops-report",
           "ns": "koc-ops-expert--koc-ops-report",
           "path": "skills/koc-ops-expert--koc-ops-report",
-          "files": 5,
-          "bytes": 168128,
-          "sha256": "7d308190e338e73711e78ed8d58a99994ea1246127e59606a48928fd84c8dcb7"
+          "files": 4,
+          "bytes": 149520,
+          "sha256": "679a1e5202dcc3c6478a1be2d8011020311b45d6a8cc10d4b72a57f1a4ce00c7"
         },
         {
           "name": "koc-recruit-radar",
@@ -1091,8 +1091,8 @@
       "version": "1.0.1",
       "path": "packages/agent/life-value-advisor",
       "files": 38,
-      "bytes": 1831605,
-      "sha256": "f99dc8f2b048306c860014a460630af6620a9bc9f1e7f9056f1d9f876a9fb932",
+      "bytes": 1831609,
+      "sha256": "effb36adcff7361e23566b586acb646ed6eb0808c340b4a631b549ed837a8179",
       "skills": [],
       "requires": [],
       "tags": [
@@ -1127,8 +1127,8 @@
       "version": "1.0.2",
       "path": "packages/agent/livestream-ecommerce-coach",
       "files": 30,
-      "bytes": 389668,
-      "sha256": "0289fbe37fddc85cd58b558cb82337e6b7d868be203c52e48ed08609cf5d92d1",
+      "bytes": 389672,
+      "sha256": "94a3ecabb34b2d3cd8f0c2b40df1542f3c217f8da7d646374bcb82eb0938b7e8",
       "skills": [
         {
           "name": "ab-test-setup",
@@ -1364,16 +1364,16 @@
       "version": "2026.11.5",
       "path": "packages/agent/long-manuscript-expert",
       "files": 74,
-      "bytes": 766668,
-      "sha256": "2d48cff63d5c6d18a6604788226f02cde3e881447cce89e3bd5de70a71bf7cad",
+      "bytes": 766696,
+      "sha256": "e34a708edd24cdceb7748b7016790bddae4210e90b8158c27e755acc5476ed27",
       "skills": [
         {
           "name": "long-manuscript-core",
           "ns": "long-manuscript-expert--long-manuscript-core",
           "path": "skills/long-manuscript-expert--long-manuscript-core",
           "files": 65,
-          "bytes": 722681,
-          "sha256": "7948228ecf0e3cd166c5c4f429cb0efcec9c69f4b2303dc13555f6c5217194d9"
+          "bytes": 722697,
+          "sha256": "805ec1bdd4818a91aac4688d4fc54393d36dc80a40aec348262654d9d606baa3"
         }
       ],
       "requires": [
@@ -1411,8 +1411,8 @@
       "version": "1.5.1",
       "path": "packages/agent/long-video-remix",
       "files": 170,
-      "bytes": 2075937,
-      "sha256": "672b5676b8e5716f5edb08094e05aa73f8019d6c744e23b051c6b0c103cac71d",
+      "bytes": 2075945,
+      "sha256": "201233523ce80bb1752fd07ca45556137ed23644ffb99c9c4d5f5608cb318a1b",
       "skills": [
         {
           "name": "long-video-remix",
@@ -1458,8 +1458,8 @@
       "version": "1.0.0",
       "path": "packages/agent/nishu-ip-brain",
       "files": 3,
-      "bytes": 12657,
-      "sha256": "ab615f6d37a915476fa5442f2daad9c7b2cc7f30fc4ed5c84fb80e508b4fea11",
+      "bytes": 12665,
+      "sha256": "c276326a804455f445a3133ed3b7a5f3435d22a244b1295825b32945995d4bd5",
       "skills": [],
       "requires": [],
       "tags": [
@@ -1539,16 +1539,16 @@
       "version": "1.6.6",
       "path": "packages/agent/performance-payroll-employment-risk-expert",
       "files": 6,
-      "bytes": 27212,
-      "sha256": "a0d874b66922cb3df1e9636cea475592cbf2f0c4ae06bc418006ae65679f07e8",
+      "bytes": 27228,
+      "sha256": "a51be31943683df451b69501dec4abf5480202aae1d38c75beec07a5b4e96dcf",
       "skills": [
         {
           "name": "performance-payroll-risk-analysis",
           "ns": "performance-payroll-employment-risk-expert--performance-payroll-risk-analysis",
           "path": "skills/performance-payroll-employment-risk-expert--performance-payroll-risk-analysis",
           "files": 3,
-          "bytes": 9713,
-          "sha256": "98c6f458bf827f707bf35b35f71d8882a737276b189ed7abf86cf6239f4740d0"
+          "bytes": 9717,
+          "sha256": "6563fb8913bc8d7cd1c0f84eafd37fe10c5252dece2ef98129026230be4c8a7b"
         }
       ],
       "requires": [],
@@ -1584,8 +1584,8 @@
       "version": "1.0.0",
       "path": "packages/agent/photo-composition-expert",
       "files": 3,
-      "bytes": 9954,
-      "sha256": "3aa24a4efd8b26b6fb14834b92b91785d071b93259826ca24c30010a89b5d403",
+      "bytes": 9958,
+      "sha256": "8573dce856dc09f17bae26193a0a121a6cbd98da4d06bde2fc3c70bd092d5861",
       "skills": [],
       "requires": [],
       "tags": [
@@ -1620,8 +1620,8 @@
       "version": "1.0.0",
       "path": "packages/agent/product-management",
       "files": 12,
-      "bytes": 121862,
-      "sha256": "639049f735dd70cd3d65ead47e7b0d96bd7cd3d584d807ae563245ce0d4c489f",
+      "bytes": 121866,
+      "sha256": "6d52d52305b03495950d128261a6eddb8c4b65e984f5ae1b0824a9e276586bf4",
       "skills": [
         {
           "name": "competitive-analysis",
@@ -1700,8 +1700,8 @@
       "version": "1.19.25",
       "path": "packages/agent/product-pm-expert",
       "files": 14,
-      "bytes": 321282,
-      "sha256": "86e845a3bcb8816ab1425d17db385d083767a818cda933d6b7c2bdf3ec1c7be6",
+      "bytes": 321290,
+      "sha256": "f53881faa50fd8093cd3fda2ea2900df00d1cda1b6a4a8cdc3702d1b65c5e795",
       "skills": [
         {
           "name": "product-pm",
@@ -1745,8 +1745,8 @@
       "version": "1.1.1",
       "path": "packages/agent/product-strategy-advisor",
       "files": 19,
-      "bytes": 36320,
-      "sha256": "b48ebb16d8410f825c66ebb2ea4505ce6230d7385e48c099c54bd6425a6a56a4",
+      "bytes": 36324,
+      "sha256": "65762a70a67820be12033245bbec7b253ac7224a62020fa5073177b14d16f1ce",
       "skills": [],
       "requires": [],
       "tags": [
@@ -1826,8 +1826,8 @@
       "version": "2.0.0",
       "path": "packages/agent/resume-match-expert",
       "files": 11,
-      "bytes": 105359,
-      "sha256": "e2c770db668e6bd4fb1bb699cd4ee218d1a66c52e0e5868cb448dbb5787cdda1",
+      "bytes": 105363,
+      "sha256": "55816ae9b55069a22131366270b74f14da33c3f37268de1e7ee19a4d919c50f0",
       "skills": [
         {
           "name": "resume-match",
@@ -1963,16 +1963,16 @@
       "version": "0.1.5",
       "path": "packages/agent/trade-market-analyst",
       "files": 19,
-      "bytes": 148784,
-      "sha256": "8a67aa4b9ca3f9e352bbdce1b20894ff82a6ec54da6bf68592f9507a6f1876ff",
+      "bytes": 148808,
+      "sha256": "085b4b64dda44a84aeeebe05feac18555a1af2f3cbc1943c843d464389a296bc",
       "skills": [
         {
           "name": "trade-data-router",
           "ns": "trade-market-analyst--trade-data-router",
           "path": "skills/trade-market-analyst--trade-data-router",
           "files": 1,
-          "bytes": 17826,
-          "sha256": "75fd434f69af7102d591c75564374d5d5e7f5f256ac378d6dc7473991825c9e7"
+          "bytes": 17830,
+          "sha256": "a73c94861739cdfa621744396e36e03038b75b07eb287dd18e545e838a0d01d7"
         },
         {
           "name": "trade-market-entry",
@@ -1987,8 +1987,8 @@
           "ns": "trade-market-analyst--trade-research-report",
           "path": "skills/trade-market-analyst--trade-research-report",
           "files": 13,
-          "bytes": 112517,
-          "sha256": "9723e10241a4e4bc3d8f24fc58322a816b68908507585134ae1d7adfa8f33501"
+          "bytes": 112529,
+          "sha256": "dbefb1cf2fc0cb2cd4af5a10cf3595621692e47fbab2b37ce4a94820ce8f1468"
         }
       ],
       "requires": [],
@@ -2085,8 +2085,8 @@
       "version": "1.5.1",
       "path": "packages/agent/workspace-builder",
       "files": 2,
-      "bytes": 25966,
-      "sha256": "858b65a005b70fbd79ca6a1e1949ba5fde7a5a80a322aa029b45e2b7661b27d0",
+      "bytes": 25986,
+      "sha256": "736d5a1e06da50de87484ba9b5f00923b5da268ead47c83c6f14f201075a8d1b",
       "skills": [],
       "requires": [],
       "tags": [
@@ -2121,16 +2121,16 @@
       "version": "1.0.0",
       "path": "packages/team/ai-content-creator-team",
       "files": 16,
-      "bytes": 145590,
-      "sha256": "b06fdeaa03b52f98eeb60500fc96b7ff2a5ce419cb9cbf5ac871ce02752cc894",
+      "bytes": 145698,
+      "sha256": "d5df3ac9554ab2920a03147216c2dbf4316f01c40a057971ab486a3be22aa800",
       "skills": [
         {
           "name": "ai-content-production",
           "ns": "ai-content-creator-team--ai-content-production",
           "path": "skills/ai-content-creator-team--ai-content-production",
           "files": 7,
-          "bytes": 56243,
-          "sha256": "e8ea06c6240f3f6b660e8548b22305580e1999a5d8ace9682539cde1ec3986a2"
+          "bytes": 56283,
+          "sha256": "150328d5e5922362c0f24950afac2c1d4d7c3082c188f2fa76ba4831e59d7235"
         }
       ],
       "requires": [],
@@ -2253,8 +2253,8 @@
       "version": "1.0.0",
       "path": "packages/team/content-monetization-team",
       "files": 12,
-      "bytes": 77925,
-      "sha256": "df9e774e7f81097b14c41f0389e93ff083f84f50685c8070f0ab0ba30e187971",
+      "bytes": 77933,
+      "sha256": "906f4f9648534027c223359b5ff00a0084746f242a8577a1f07e120916eeeb2c",
       "skills": [
         {
           "name": "content-monetization-ops",
@@ -2361,16 +2361,16 @@
       "version": "2.4.1",
       "path": "packages/team/fullstack-forge-team",
       "files": 19,
-      "bytes": 155135,
-      "sha256": "bf7c69ba1f10b6a5823c0934eacc4ea6746b5efeba1ba29e1ad03a399e66b0ac",
+      "bytes": 155179,
+      "sha256": "1d96644a3ccf4641aa695c3476111bab0e25b7982e1cbda200b75c220133268f",
       "skills": [
         {
           "name": "forge-orchestrator",
           "ns": "fullstack-forge-team--forge-orchestrator",
           "path": "skills/fullstack-forge-team--forge-orchestrator",
           "files": 9,
-          "bytes": 91682,
-          "sha256": "d370d9bd83c7234c5ae266cfee94840d985fb206a0f0b61ecb937629975adc7c"
+          "bytes": 91698,
+          "sha256": "1b1e559ff7266f3df2e7b67dc84df968f5abd24a3e7fc28486bf57d2203695b9"
         }
       ],
       "requires": [],
@@ -2505,8 +2505,8 @@
       "version": "2.1.1",
       "path": "packages/team/mvp-dev-expert-team",
       "files": 44,
-      "bytes": 510715,
-      "sha256": "b2bf3dcf54cba1abd2f97f4762fd58d86d9a1181b99c45cecd13bddd44bbe3ff",
+      "bytes": 510767,
+      "sha256": "82976df56754565af4c0542348039d6217a3cb72b764020cde56b25ce244d0de",
       "skills": [],
       "requires": [],
       "tags": [
@@ -2640,8 +2640,8 @@
       "version": "1.0.0",
       "path": "packages/team/opc-team",
       "files": 42,
-      "bytes": 111205,
-      "sha256": "9d467e942ab4e76db6ec959ee441beba70fb543cf6b9bc3417640dc11f743a25",
+      "bytes": 111237,
+      "sha256": "c5541cc0672dda64c6bc8f8b7bef765ce8f401602c07d5eff55eda4ca94cb2a7",
       "skills": [
         {
           "name": "opc-asset-ops",

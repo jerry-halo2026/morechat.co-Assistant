@@ -91,7 +91,7 @@ def fetch_douyin_hotspot(start_date=None, end_date=None, days=None):
     url = "https://redfox.hk/story/api/hotSpot/getListByPlatform"
     params = {
         "platform": 2,
-        "source": "抖音热榜-Multica"
+        "source": "抖音热榜-morechat.co"
     }
 
     query_type = "实时"

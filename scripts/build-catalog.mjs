@@ -12,7 +12,7 @@
  *   - avatars/ is never copied (product side generates avatar images).
  *   - .downloaded_at / .DS_Store / __pycache__ / *.pyc are dropped.
  *   - Runtime bindings (WorkBuddy / CodeBuddy / expert-manager / present_files / TeamCreate /
- *     AskUserQuestion / allowed-tools) are rewritten for the Multica + DSH runtime.
+ *     AskUserQuestion / allowed-tools) are rewritten for the Squad/Issue + DSH runtime.
  *   - plugin.json keeps its exact upstream formatting and byte layout except for the
  *     prohibited runtime strings, which are substituted in place; the untouched original
  *     is preserved under upstream/.
@@ -38,7 +38,13 @@ const PKG_OUT = path.join(CAT, 'packages');
 const UP_OUT = path.join(UP, 'packages');
 
 const SKIP_DIRS = new Set(['avatars', '__pycache__', '.git', 'node_modules', '.venv']);
-const SKIP_FILES = new Set(['.downloaded_at', '.DS_Store', 'Thumbs.db']);
+const SKIP_FILES = new Set([
+  '.downloaded_at',
+  '.DS_Store',
+  'Thumbs.db',
+  // vendor telemetry helper (see stripVendorTelemetry): never distributed
+  'skill_track.py',
+]);
 const SKIP_EXT = new Set(['.png', '.jpg', '.jpeg', '.webp', '.gif', '.bmp', '.ico', '.pyc', '.zip']);
 const BIN_EXT = new Set(['.ttf', '.otf', '.woff', '.woff2', '.pdf', '.pyc']);
 
@@ -87,8 +93,8 @@ const ASK_USER_INLINE = 'dsh-tool-ask-user（ask_user_question）';
 const ASK_USER_FULL =
   '使用 dsh-tool-ask-user（ask_user_question）向用户提问；若运行时无该能力，改为在任务评论中提问并等待';
 const PRESENT_INLINE = 'dsh-tool-present';
-const PRESENT_FULL = '使用 dsh-tool-present 声明交付；在 Multica 中作为 Issue 附件提交';
-const TEAM_CREATE = '创建 Multica Squad 并由 leader 通过 @ 派发子任务';
+const PRESENT_FULL = '使用 dsh-tool-present 声明交付；在任务评论中作为附件提交';
+const TEAM_CREATE = '创建平台小队（Squad）并由 leader 通过 @ 派发子任务';
 const CONTENT_DIR = '<MORECHAT_CONTENT_DIR>';
 
 /** Ordered rewrite chain. Every entry targets runtime bindings. */
@@ -97,8 +103,8 @@ const REWRITES = [
   [/\$WORKBUDDY_CONFIG_DIR/g, CONTENT_DIR],
   [/\bWORKBUDDY_CONFIG_DIR\b/g, 'MORECHAT_CONTENT_DIR'],
   // WorkBuddy artifact channel -> dsh present tool
-  [/WorkBuddy\s*产物/g, 'dsh-tool-present 交付（作为 Multica Issue 附件）'],
-  [/workbuddy\s*产物/g, 'dsh-tool-present 交付（作为 Multica Issue 附件）'],
+  [/WorkBuddy\s*产物/g, 'dsh-tool-present 交付（作为任务附件）'],
+  [/workbuddy\s*产物/g, 'dsh-tool-present 交付（作为任务附件）'],
   // standalone list item / line: tool names in YAML lists
   [/^([ \t]*[-*+][ \t]*)(`?AskUserQuestion`?)[ \t]*$/gm, '$1ask_user_question'],
   [/^([ \t]*[-*+][ \t]*)(`?present_files`?)[ \t]*$/gm, '$1dsh-tool-present'],
@@ -121,11 +127,39 @@ const REWRITES = [
   [/\bpackage_expert\.py\b/g, 'build-catalog.mjs'],
   [/\bregister_expert\.py\b/g, 'build-catalog.mjs'],
   // --- product / runtime names ---
-  [/\bWorkBuddy\b/g, 'Multica'],
-  [/\bworkbuddy\b/g, 'multica'],
-  [/\bCodeBuddy\b/g, 'Multica'],
-  [/\bcodebuddy\b/g, 'multica'],
+  [/\bWorkBuddy\b/g, 'morechat.co'],
+  [/\bworkbuddy\b/g, 'morechat.co'],
+  [/\bCodeBuddy\b/g, 'morechat.co'],
+  [/\bcodebuddy\b/g, 'morechat.co'],
 ];
+
+/**
+ * Upstream `koc-ops-report` ships a vendor telemetry helper that POSTs report
+ * bodies to a hardcoded third-party host (http://120.77.156.6:8001) and reports
+ * account/client_ip back. Company report content must not leave the tenant, so
+ * the section, the helper script and every trace of the endpoint are removed
+ * from the distributed copy. The untouched originals live under upstream/.
+ */
+const TELEMETRY_SECTION =
+  /### 五、报告生成后必须做埋点上报[\s\S]*?(?=\n## 输出要求)/;
+const TELEMETRY_REPLACEMENT = `### 五、报告生成后直接交付（本目录不做任何上报）
+
+报告写完后，把**绝对路径**交给用户，并在任务评论里以附件形式提交即可。
+本目录不分发任何第三方埋点脚本，也不含外部上报地址或密钥；如需公司内部分发登记，按你所在公司的规范另行处理。
+`;
+const TELEMETRY_LINE =
+  /^.*(?:skill_track\.py|SKILL_PROVIDER_|WORKBUDDY_ACCOUNT_ID|120\.77\.156\.6).*$\n?/gm;
+
+function stripVendorTelemetry(text) {
+  return text
+    .replace(TELEMETRY_SECTION, TELEMETRY_REPLACEMENT)
+    .replace(TELEMETRY_LINE, '')
+    .replace(/\bWORKBUDDY_([A-Z0-9_]+)/g, 'MORECHAT_$1')
+    .replace(/\bSKILL_PROVIDER_([A-Z0-9_]+)/g, 'MORECHAT_REPORT_$1')
+    .replace(/\bSKILL_TRACK_([A-Z0-9_]+)/g, 'MORECHAT_REPORT_$1')
+    .replace(/120\.77\.156\.6(?::\d+)?/g, '<internal-report-endpoint>')
+    .replace(/skill-provider/g, 'report-service');
+}
 
 /** Frontmatter tool key rename + tool id mapping (allowed-tools: -> allowed-tools-dsh:). */
 function rewriteAllowedTools(text) {
@@ -144,18 +178,19 @@ function rewriteAllowedTools(text) {
 function convertText(text) {
   // allowed-tools mapping first, so the tool id lands as a plain id (ask_user_question)
   // instead of being rewritten into the prose form by the inline rules below.
-  let out = rewriteAllowedTools(text);
+  let out = stripVendorTelemetry(text);
+  out = rewriteAllowedTools(out);
   for (const [re, rep] of REWRITES) out = out.replace(re, rep);
   return out;
 }
 
 /** plugin.json: preserve layout, substitute only the prohibited runtime strings. */
 function convertPluginJson(text) {
-  return text
-    .replace(/WorkBuddy/g, 'Multica')
-    .replace(/CodeBuddy/g, 'Multica')
-    .replace(/codebuddy/g, 'multica')
-    .replace(/workbuddy/g, 'multica');
+  return stripVendorTelemetry(text)
+    .replace(/WorkBuddy/g, 'morechat.co')
+    .replace(/CodeBuddy/g, 'morechat.co')
+    .replace(/codebuddy/g, 'morechat.co')
+    .replace(/workbuddy/g, 'morechat.co');
 }
 
 // ---------------------------------------------------------------- README install section
@@ -171,8 +206,8 @@ const INSTALL_BLOCK = `## 安装 / Installation
 const RUNTIME_BLOCK = `## 运行时适配 / Runtime notes
 
 - 向用户提问：使用 dsh-tool-ask-user（ask_user_question）；运行时无该能力时，改为在任务评论中提问并等待。
-- 交付产物：使用 dsh-tool-present 声明交付；在 Multica 中作为 Issue 附件提交。
-- 多角色协作：创建 Multica Squad 并由 leader 通过 @ 派发子任务。
+- 交付产物：使用 dsh-tool-present 声明交付；在任务评论中作为附件提交。
+- 多角色协作：创建平台小队（Squad）并由 leader 通过 @ 派发子任务。
 - 工具声明键为 \`allowed-tools-dsh\`（Task → subagent，AskUserQuestion → ask_user_question）。
 `;
 

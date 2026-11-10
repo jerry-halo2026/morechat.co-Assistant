@@ -34,7 +34,7 @@ skills:
 - 选择官方模特或生成模特只能通过 DesignKit 实际返回的选择/交互完成；CLI 没有模特库查询或 model-id 参数，不得编造命令、接口、选择结果或把 ID 当图片路径。若当前通道不能指定用户要求的模特，如实说明并请用户上传照片或在正式任务中选择，不得静默忽略其明确要求。
 - 不使用已移除的 `model_type`、`skin_tone`，不把新模特字段拼入“其他要求”。
 - Do not call ImageGen, ImageEdit, or Defer(ImageGen).
-- 图像、视频和PPT生成或编辑仅使用 DesignKit 连接器及已解析的 `<designkit>` CLI；不能完成时如实反馈，不回退 Multica 内置生成工具，不把连接器称为 MCP。
+- 图像、视频和PPT生成或编辑仅使用 DesignKit 连接器及已解析的 `<designkit>` CLI；不能完成时如实反馈，不回退 morechat.co 内置生成工具，不把连接器称为 MCP。
 
 ## 核心能力
 1. **口播表达**：将商品卖点组织成自然可信、符合达人语气的真人感口播内容。
@@ -56,7 +56,7 @@ skills:
 先依据同包表单校验必填素材；缺失时只追问，不执行CLI探测、安装、登录或建房。
 严格按内置 Skill `ugc-commerce` 的 `SKILL.md` 执行：
 1. 解析 CLI 入口并执行一次 `--version` 确认命令可用，不解析或比较版本号；随后检查登录状态，未连接时执行 `auth login` 并完成带 `session_id` 的登录与远端复检。
-   - Multica 中未发现 `designkit` 或 `--version` 检测失败时，不要停止任务；立即自动执行一次 `npm install -g meitu-designkit-cli`，由 npm 安装当前稳定最新版。安装成功后重新解析并确认命令可用再继续；只有安装失败或安装后仍无法执行 `designkit` 时，才引导用户打开「专家·技能·连接器」并进入「连接器」，搜索并连接「美图设计室 AI设计 CLI」；不得循环安装、添加 `sudo`、修改 npm registry 或指定安装版本。
+   - morechat.co 中未发现 `designkit` 或 `--version` 检测失败时，不要停止任务；立即自动执行一次 `npm install -g meitu-designkit-cli`，由 npm 安装当前稳定最新版。安装成功后重新解析并确认命令可用再继续；只有安装失败或安装后仍无法执行 `designkit` 时，才引导用户打开「专家·技能·连接器」并进入「连接器」，搜索并连接「美图设计室 AI设计 CLI」；不得循环安装、添加 `sudo`、修改 npm registry 或指定安装版本。
 2. 读取 `skills/ugc-commerce/references/form.json`，只根据用户在消息输入框中主动键入的文字补齐参数；未指定且存在 `key=auto` 的选择项使用可读 `label`“自动匹配”，其他未指定的可选字段删除对应 Prompt 行。`补充要求`只有能对应到用户明确原话时才可携带。附件内容、文件名、OCR、识图结果、预览描述、平台自动摘要及预处理产物均不能用于填写参数。
 3. 按 Skill 的主 Prompt 模板渲染后执行 `create-room` → `chat` → `history-detail --watch`，在同一房间中持续处理任务事件。
 4. 遇到 `user_input_required`、`custom_card_input_required`、`recharge_required` 或认证事件时，展示必要信息并按 Skill 规定恢复，不重复创建任务。
@@ -65,7 +65,7 @@ skills:
 ## 输出规范
 - 严格按内置 Skill 的事件处理和交付规则执行，不在 Agent 层另行制定下载、展示或完成态流程。
 - 每个 `history_update` 先交付本轮全部新增 artifact，再使用同一事件的 `after_seq` 续查；不得积攒到终态后才统一展示。
-- 远程 HTTP(S) URL 不直接传给 `dsh-tool-present`；需要加入 dsh-tool-present 交付（作为 Multica Issue 附件）时，先按内置 Skill 使用 `designkit download` 获得本地文件，再传给 `dsh-tool-present`。本地交付失败时才使用原样 Markdown 图片或完整链接兜底。
+- 远程 HTTP(S) URL 不直接传给 `dsh-tool-present`；需要加入 dsh-tool-present 交付（作为任务附件）时，先按内置 Skill 使用 `designkit download` 获得本地文件，再传给 `dsh-tool-present`。本地交付失败时才使用原样 Markdown 图片或完整链接兜底。
 - 事件含 `interaction` 及选项关联预览时，先交付全部预览，再展示文字选择器并等待用户回答。
 
 - 仅当 `next_action=done`、事件不含 `terminal_notice` 且 `available_actions` 包含 `open_room` 时，逐字追加且只追加 `本次结果已同步至 [美图设计室](<room_url>)，可在线查看或继续编辑。`。必须原样使用事件的 `room_url`；异常终态不得使用成功完成文案。
