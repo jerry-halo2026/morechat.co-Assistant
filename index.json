@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "generator": "morechat-assistant/scripts/build-catalog.mjs",
-  "generatedAt": "2026-11-12T15:10:22.726Z",
+  "generatedAt": "2026-11-12T16:56:36.659Z",
   "source": {
     "catalogRoot": "catalog",
     "upstreamRoot": "upstream",
@@ -68,6 +68,13 @@
           "name": "agent-browser-core",
           "ns": "ai-engineer--agent-browser-core",
           "path": "skills/ai-engineer--agent-browser-core",
+          "fileList": [
+            "references/agent-browser-command-map.md",
+            "references/agent-browser-overview.md",
+            "references/agent-browser-safety.md",
+            "references/agent-browser-troubleshooting.md",
+            "references/agent-browser-workflows.md"
+          ],
           "files": 6,
           "bytes": 7059,
           "sha256": "74c1b437d4a836e8ba8b7b08c16506655862206423efe49c5e6e0fabc112f699"
@@ -76,6 +83,13 @@
           "name": "agent-team-orchestration",
           "ns": "ai-engineer--agent-team-orchestration",
           "path": "skills/ai-engineer--agent-team-orchestration",
+          "fileList": [
+            ".clawhub/origin.json",
+            "references/communication.md",
+            "references/patterns.md",
+            "references/task-lifecycle.md",
+            "references/team-setup.md"
+          ],
           "files": 6,
           "bytes": 21431,
           "sha256": "d79b5965541dbddeba07dc5589059fd8115b493eef679e66763ab35b05314155"
@@ -84,6 +98,15 @@
           "name": "deep-research",
           "ns": "ai-engineer--deep-research",
           "path": "skills/ai-engineer--deep-research",
+          "fileList": [
+            "agents/web-search-agent.md",
+            "agents/web-search-modules/academic-papers.md",
+            "agents/web-search-modules/chinese-tech.md",
+            "agents/web-search-modules/general-web.md",
+            "agents/web-search-modules/github-debug.md",
+            "agents/web-search-modules/stackoverflow.md",
+            "agents/web-search-opencode.md"
+          ],
           "files": 8,
           "bytes": 22830,
           "sha256": "4312fe5b9d306febac0e56c4e1f8cd7b8e01fa3ea36d2fdf217d853adee48100"
@@ -92,6 +115,9 @@
           "name": "research",
           "ns": "ai-engineer--deep-research-research-en-research",
           "path": "skills/ai-engineer--deep-research-research-en-research",
+          "fileList": [
+            "validate_json.py"
+          ],
           "files": 2,
           "bytes": 11184,
           "sha256": "4a170fda558c54396c82fd656b34e7d61bf033436c48f8c66dd17275ede81d69"
@@ -100,6 +126,7 @@
           "name": "research-add-fields",
           "ns": "ai-engineer--deep-research-research-en-research-add-fields",
           "path": "skills/ai-engineer--deep-research-research-en-research-add-fields",
+          "fileList": [],
           "files": 1,
           "bytes": 936,
           "sha256": "a3527dbe965797a1f49784249a32e6e3f0b851cbbcd5b0194fd3d27a0034e7c9"
@@ -108,6 +135,7 @@
           "name": "research-add-items",
           "ns": "ai-engineer--deep-research-research-en-research-add-items",
           "path": "skills/ai-engineer--deep-research-research-en-research-add-items",
+          "fileList": [],
           "files": 1,
           "bytes": 800,
           "sha256": "3cc46fe5492f005da5dd866b85d24b7e6a39cc61b7e41653f28151c5f14f26b8"
@@ -116,6 +144,7 @@
           "name": "research-deep",
           "ns": "ai-engineer--deep-research-research-en-research-deep",
           "path": "skills/ai-engineer--deep-research-research-en-research-deep",
+          "fileList": [],
           "files": 1,
           "bytes": 3520,
           "sha256": "9d764812d66e986315264a519ba98f6f304b3695167a890089f29bc9cc82117a"
@@ -124,6 +153,7 @@
           "name": "research-report",
           "ns": "ai-engineer--deep-research-research-report",
           "path": "skills/ai-engineer--deep-research-research-report",
+          "fileList": [],
           "files": 1,
           "bytes": 3616,
           "sha256": "03b6e1d76e3561fc1ea6c92c4cf1f8ade73efd3e8cb3609507bdd512b3e41adc"
@@ -132,6 +162,16 @@
           "name": "fullstack-dev",
           "ns": "ai-engineer--fullstack-dev",
           "path": "skills/ai-engineer--fullstack-dev",
+          "fileList": [
+            "references/api-design.md",
+            "references/auth-flow.md",
+            "references/db-schema.md",
+            "references/django-best-practices.md",
+            "references/environment-management.md",
+            "references/release-checklist.md",
+            "references/technology-selection.md",
+            "references/testing-strategy.md"
+          ],
           "files": 9,
           "bytes": 121065,
           "sha256": "5a8609adf29e99f6e8f3aa3a4e6509009baf8fb56eb7e8994be12c614c62be68"
@@ -140,6 +180,9 @@
           "name": "research",
           "ns": "ai-engineer--research",
           "path": "skills/ai-engineer--research",
+          "fileList": [
+            "validate_json.py"
+          ],
           "files": 2,
           "bytes": 10712,
           "sha256": "36323726d1cb46d0bd3cbb8328f875f618e65a9ab17c70642bfda677ca788768"
@@ -148,6 +191,7 @@
           "name": "research-add-fields",
           "ns": "ai-engineer--research-add-fields",
           "path": "skills/ai-engineer--research-add-fields",
+          "fileList": [],
           "files": 1,
           "bytes": 906,
           "sha256": "56c955ac64466276a054eab9dfdc419ef70fc0de2164c1adcc60750e2649a6e1"
@@ -156,6 +200,7 @@
           "name": "research-add-items",
           "ns": "ai-engineer--research-add-items",
           "path": "skills/ai-engineer--research-add-items",
+          "fileList": [],
           "files": 1,
           "bytes": 786,
           "sha256": "a9b2e534ee28ec23bbfd6d71293bfd734cf56bda5140c5e7e81c1e3f7147ea8d"
@@ -164,6 +209,7 @@
           "name": "research-deep",
           "ns": "ai-engineer--research-deep",
           "path": "skills/ai-engineer--research-deep",
+          "fileList": [],
           "files": 1,
           "bytes": 3393,
           "sha256": "2ba78f0b3bdd297fc52f17613facf4144c262799928ccaa464d7302d64fedfa3"
@@ -172,6 +218,7 @@
           "name": "research-report",
           "ns": "ai-engineer--research-report",
           "path": "skills/ai-engineer--research-report",
+          "fileList": [],
           "files": 1,
           "bytes": 3859,
           "sha256": "8120fdf80280d50fbbb61460e6af240cd1296f2e87dce9f55fc445b221880162"
@@ -219,6 +266,105 @@
           "name": "frontend-dev",
           "ns": "backend-architect--frontend-dev",
           "path": "skills/backend-architect--frontend-dev",
+          "fileList": [
+            "canvas-fonts/ArsenalSC-OFL.txt",
+            "canvas-fonts/ArsenalSC-Regular.ttf",
+            "canvas-fonts/BigShoulders-Bold.ttf",
+            "canvas-fonts/BigShoulders-OFL.txt",
+            "canvas-fonts/BigShoulders-Regular.ttf",
+            "canvas-fonts/Boldonse-OFL.txt",
+            "canvas-fonts/Boldonse-Regular.ttf",
+            "canvas-fonts/BricolageGrotesque-Bold.ttf",
+            "canvas-fonts/BricolageGrotesque-OFL.txt",
+            "canvas-fonts/BricolageGrotesque-Regular.ttf",
+            "canvas-fonts/CrimsonPro-Bold.ttf",
+            "canvas-fonts/CrimsonPro-Italic.ttf",
+            "canvas-fonts/CrimsonPro-OFL.txt",
+            "canvas-fonts/CrimsonPro-Regular.ttf",
+            "canvas-fonts/DMMono-OFL.txt",
+            "canvas-fonts/DMMono-Regular.ttf",
+            "canvas-fonts/EricaOne-OFL.txt",
+            "canvas-fonts/EricaOne-Regular.ttf",
+            "canvas-fonts/GeistMono-Bold.ttf",
+            "canvas-fonts/GeistMono-OFL.txt",
+            "canvas-fonts/GeistMono-Regular.ttf",
+            "canvas-fonts/Gloock-OFL.txt",
+            "canvas-fonts/Gloock-Regular.ttf",
+            "canvas-fonts/IBMPlexMono-Bold.ttf",
+            "canvas-fonts/IBMPlexMono-OFL.txt",
+            "canvas-fonts/IBMPlexMono-Regular.ttf",
+            "canvas-fonts/IBMPlexSerif-Bold.ttf",
+            "canvas-fonts/IBMPlexSerif-BoldItalic.ttf",
+            "canvas-fonts/IBMPlexSerif-Italic.ttf",
+            "canvas-fonts/IBMPlexSerif-Regular.ttf",
+            "canvas-fonts/InstrumentSans-Bold.ttf",
+            "canvas-fonts/InstrumentSans-BoldItalic.ttf",
+            "canvas-fonts/InstrumentSans-Italic.ttf",
+            "canvas-fonts/InstrumentSans-OFL.txt",
+            "canvas-fonts/InstrumentSans-Regular.ttf",
+            "canvas-fonts/InstrumentSerif-Italic.ttf",
+            "canvas-fonts/InstrumentSerif-Regular.ttf",
+            "canvas-fonts/Italiana-OFL.txt",
+            "canvas-fonts/Italiana-Regular.ttf",
+            "canvas-fonts/JetBrainsMono-Bold.ttf",
+            "canvas-fonts/JetBrainsMono-OFL.txt",
+            "canvas-fonts/JetBrainsMono-Regular.ttf",
+            "canvas-fonts/Jura-Light.ttf",
+            "canvas-fonts/Jura-Medium.ttf",
+            "canvas-fonts/Jura-OFL.txt",
+            "canvas-fonts/LibreBaskerville-OFL.txt",
+            "canvas-fonts/LibreBaskerville-Regular.ttf",
+            "canvas-fonts/Lora-Bold.ttf",
+            "canvas-fonts/Lora-BoldItalic.ttf",
+            "canvas-fonts/Lora-Italic.ttf",
+            "canvas-fonts/Lora-OFL.txt",
+            "canvas-fonts/Lora-Regular.ttf",
+            "canvas-fonts/NationalPark-Bold.ttf",
+            "canvas-fonts/NationalPark-OFL.txt",
+            "canvas-fonts/NationalPark-Regular.ttf",
+            "canvas-fonts/NothingYouCouldDo-OFL.txt",
+            "canvas-fonts/NothingYouCouldDo-Regular.ttf",
+            "canvas-fonts/Outfit-Bold.ttf",
+            "canvas-fonts/Outfit-OFL.txt",
+            "canvas-fonts/Outfit-Regular.ttf",
+            "canvas-fonts/PixelifySans-Medium.ttf",
+            "canvas-fonts/PixelifySans-OFL.txt",
+            "canvas-fonts/PoiretOne-OFL.txt",
+            "canvas-fonts/PoiretOne-Regular.ttf",
+            "canvas-fonts/RedHatMono-Bold.ttf",
+            "canvas-fonts/RedHatMono-OFL.txt",
+            "canvas-fonts/RedHatMono-Regular.ttf",
+            "canvas-fonts/Silkscreen-OFL.txt",
+            "canvas-fonts/Silkscreen-Regular.ttf",
+            "canvas-fonts/SmoochSans-Medium.ttf",
+            "canvas-fonts/SmoochSans-OFL.txt",
+            "canvas-fonts/Tektur-Medium.ttf",
+            "canvas-fonts/Tektur-OFL.txt",
+            "canvas-fonts/Tektur-Regular.ttf",
+            "canvas-fonts/WorkSans-Bold.ttf",
+            "canvas-fonts/WorkSans-BoldItalic.ttf",
+            "canvas-fonts/WorkSans-Italic.ttf",
+            "canvas-fonts/WorkSans-OFL.txt",
+            "canvas-fonts/WorkSans-Regular.ttf",
+            "canvas-fonts/YoungSerif-OFL.txt",
+            "canvas-fonts/YoungSerif-Regular.ttf",
+            "references/asset-prompt-guide.md",
+            "references/env-setup.md",
+            "references/minimax-cli-reference.md",
+            "references/minimax-image-guide.md",
+            "references/minimax-music-guide.md",
+            "references/minimax-tts-guide.md",
+            "references/minimax-video-guide.md",
+            "references/minimax-voice-catalog.md",
+            "references/motion-recipes.md",
+            "references/troubleshooting.md",
+            "scripts/minimax_image.py",
+            "scripts/minimax_music.py",
+            "scripts/minimax_tts.py",
+            "scripts/minimax_video.py",
+            "templates/generator_template.js",
+            "templates/viewer.html"
+          ],
           "files": 98,
           "bytes": 5687308,
           "sha256": "9b149af96e5e89f99a1428e17cca1a86b37bfa1b02ef2ab8cde86b5efaae45e2"
@@ -227,6 +373,16 @@
           "name": "fullstack-dev",
           "ns": "backend-architect--fullstack-dev",
           "path": "skills/backend-architect--fullstack-dev",
+          "fileList": [
+            "references/api-design.md",
+            "references/auth-flow.md",
+            "references/db-schema.md",
+            "references/django-best-practices.md",
+            "references/environment-management.md",
+            "references/release-checklist.md",
+            "references/technology-selection.md",
+            "references/testing-strategy.md"
+          ],
           "files": 9,
           "bytes": 124899,
           "sha256": "8a9c1c954f0db37be53ff4cff5ab808785d7074aee5b164d2878f17e51d600d5"
@@ -275,6 +431,9 @@
           "name": "blm-coverage-checker",
           "ns": "blm-strategy-advisor--blm-coverage-checker",
           "path": "skills/blm-strategy-advisor--blm-coverage-checker",
+          "fileList": [
+            "scripts/blm_coverage.py"
+          ],
           "files": 2,
           "bytes": 28109,
           "sha256": "f8b14cd5e483e72453a5946a0f8c038d6e68138e1a8bd446d330bc315ff13777"
@@ -322,6 +481,17 @@
           "name": "data-analysis-cn",
           "ns": "data-analysis--data-analysis-cn",
           "path": "skills/data-analysis--data-analysis-cn",
+          "fileList": [
+            "references/analysis-playbooks.md",
+            "references/china-data-sources.md",
+            "references/datakit-cookbook.md",
+            "references/industry-metrics.md",
+            "references/metrics-frameworks.md",
+            "references/red-team-checklist.md",
+            "references/report-templates.md",
+            "references/statistics-guardrails.md",
+            "scripts/datakit.py"
+          ],
           "files": 10,
           "bytes": 80236,
           "sha256": "74f0af40b2aaded4107f1b224c15613bdedabc4ef4c1c047edddca535bf1659c"
@@ -369,6 +539,9 @@
           "name": "ugc-commerce",
           "ns": "designkit-ugc-commerce--ugc-commerce",
           "path": "skills/designkit-ugc-commerce--ugc-commerce",
+          "fileList": [
+            "references/form.json"
+          ],
           "files": 2,
           "bytes": 26667,
           "sha256": "097cd44e4741be839e21b85511baca9c58f442e11a2db9240bd7ac43f5f12f2d"
@@ -414,6 +587,9 @@
           "name": "live-ad-analyze",
           "ns": "douyin-live-ad-expert--live-ad-analyze",
           "path": "skills/douyin-live-ad-expert--live-ad-analyze",
+          "fileList": [
+            "templates/analysis-report.md"
+          ],
           "files": 2,
           "bytes": 7713,
           "sha256": "7742b6ca15b5f72577213e8f6d4f561ddedf56d6fbba54d6ace65d987a32d2bf"
@@ -422,6 +598,9 @@
           "name": "live-ad-collect",
           "ns": "douyin-live-ad-expert--live-ad-collect",
           "path": "skills/douyin-live-ad-expert--live-ad-collect",
+          "fileList": [
+            "templates/collect-checklist.md"
+          ],
           "files": 2,
           "bytes": 6916,
           "sha256": "c47a47cca80a72de778ec4883aabad4c000a9083ee72ae623436b4b8e9c83949"
@@ -430,6 +609,11 @@
           "name": "live-ad-flash",
           "ns": "douyin-live-ad-expert--live-ad-flash",
           "path": "skills/douyin-live-ad-expert--live-ad-flash",
+          "fileList": [
+            "references/category-baseline.md",
+            "references/estimation-chain.md",
+            "templates/flash-report.md"
+          ],
           "files": 4,
           "bytes": 22809,
           "sha256": "2d295437134da94e6ced01cff017129eb161a31fb4a6da44113430b9c30aa1b5"
@@ -438,6 +622,9 @@
           "name": "live-ad-strategy",
           "ns": "douyin-live-ad-expert--live-ad-strategy",
           "path": "skills/douyin-live-ad-expert--live-ad-strategy",
+          "fileList": [
+            "templates/action-guide.md"
+          ],
           "files": 2,
           "bytes": 7121,
           "sha256": "460e350c12be477484a20d9c75b758d3b376efd0363deb70b391e48f8aaf91b9"
@@ -446,6 +633,9 @@
           "name": "live-ad-theory",
           "ns": "douyin-live-ad-expert--live-ad-theory",
           "path": "skills/douyin-live-ad-expert--live-ad-theory",
+          "fileList": [
+            "references/core-theory.md"
+          ],
           "files": 2,
           "bytes": 13008,
           "sha256": "033510facf822171fff9551637768cfcb20a3f2fa5ac38b7afa0e4ff1f89757b"
@@ -491,6 +681,7 @@
           "name": "douyin-precision-ops",
           "ns": "douyin-operation-expert--douyin-precision-ops",
           "path": "skills/douyin-operation-expert--douyin-precision-ops",
+          "fileList": [],
           "files": 1,
           "bytes": 33188,
           "sha256": "d98e7fb0f8a899af93bac062f6af87ea825e6e6a5cd349efc8c2deb7162b9d0f"
@@ -499,6 +690,12 @@
           "name": "douyin-video-intel",
           "ns": "douyin-operation-expert--douyin-video-intel",
           "path": "skills/douyin-operation-expert--douyin-video-intel",
+          "fileList": [
+            "references/metrics-caliber.md",
+            "references/teardown-framework.md",
+            "scripts/douyin_transcript.py",
+            "scripts/douyin_video_data.py"
+          ],
           "files": 5,
           "bytes": 68745,
           "sha256": "1f4b6e02621e99ccce9369b2ddbc34d1a21fa937d2caf440523d8aaa0dc11624"
@@ -546,6 +743,13 @@
           "name": "anti-distill",
           "ns": "douyin-strategist--anti-distill",
           "path": "skills/douyin-strategist--anti-distill",
+          "fileList": [
+            "examples/zhangsan_before_after.md",
+            "prompts/classifier.md",
+            "prompts/diluter_general.md",
+            "prompts/diluter_persona.md",
+            "prompts/diluter_work.md"
+          ],
           "files": 6,
           "bytes": 33789,
           "sha256": "0c8c6e640ede00628daf2ec330175ecbbc49c49bc1ec8b5799286e461847e2c7"
@@ -554,6 +758,9 @@
           "name": "humanizer",
           "ns": "douyin-strategist--humanizer",
           "path": "skills/douyin-strategist--humanizer",
+          "fileList": [
+            "README.md"
+          ],
           "files": 2,
           "bytes": 21209,
           "sha256": "4b8897e3fcb5e1b00b50cf183ed89cd6cc24ab18839bf2fd4342632988fe8295"
@@ -599,6 +806,12 @@
           "name": "douyin-ai-feed",
           "ns": "douyin-viral-content--douyin-ai-feed",
           "path": "skills/douyin-viral-content--douyin-ai-feed",
+          "fileList": [
+            "README.en.md",
+            "README.md",
+            "assets/report_template.html",
+            "scripts/fetch_douyin_ai.py"
+          ],
           "files": 5,
           "bytes": 48471,
           "sha256": "3ab6c585a74c16a3cf635bcdc43476a2687523df56a76d6c4bfa18c5fbe7f0b5"
@@ -607,6 +820,13 @@
           "name": "douyin-content-surge",
           "ns": "douyin-viral-content--douyin-content-surge",
           "path": "skills/douyin-viral-content--douyin-content-surge",
+          "fileList": [
+            "README.en.md",
+            "README.md",
+            "references/api-config.md",
+            "references/interaction-guide.md",
+            "scripts/douyin_daily_increment.py"
+          ],
           "files": 6,
           "bytes": 33544,
           "sha256": "9ffba7fa5d2c47f550f16dcba582117e2900ac6081488fa97a5cfbe5f0bd22b3"
@@ -615,6 +835,13 @@
           "name": "douyin-daily-hot",
           "ns": "douyin-viral-content--douyin-daily-hot",
           "path": "skills/douyin-viral-content--douyin-daily-hot",
+          "fileList": [
+            "README.en.md",
+            "README.md",
+            "references/api-config.md",
+            "references/interaction-guide.md",
+            "scripts/douyin_daily_hot.py"
+          ],
           "files": 6,
           "bytes": 34549,
           "sha256": "4e0fbc5db2b0d46ef6362ab885b260311e7346c6e7d9cf1d73283780c2538be6"
@@ -623,6 +850,14 @@
           "name": "douyin-hot-trend",
           "ns": "douyin-viral-content--douyin-hot-trend",
           "path": "skills/douyin-viral-content--douyin-hot-trend",
+          "fileList": [
+            "README.en.md",
+            "README.md",
+            "references/core_workflow.md",
+            "scripts/gen_douyin_hot_html.py",
+            "scripts/hotspot_fetcher.py",
+            "scripts/temp_hot_data.json"
+          ],
           "files": 7,
           "bytes": 85267,
           "sha256": "e6dd9df6edffda6d87e3a25430e51ef4cac0fc1547cb3c87b5140a4b6e8bd7d8"
@@ -631,6 +866,12 @@
           "name": "douyin-prohibited-word",
           "ns": "douyin-viral-content--douyin-prohibited-word",
           "path": "skills/douyin-viral-content--douyin-prohibited-word",
+          "fileList": [
+            "README.en.md",
+            "README.md",
+            "references/core_workflow.md",
+            "scripts/check_sensitive_words.py"
+          ],
           "files": 5,
           "bytes": 51835,
           "sha256": "309c6b0c825b23bcf17d534345c3406e5890a8602ee55001c433a623519fa9d0"
@@ -639,6 +880,11 @@
           "name": "douyin-search",
           "ns": "douyin-viral-content--douyin-search",
           "path": "skills/douyin-viral-content--douyin-search",
+          "fileList": [
+            "README.en.md",
+            "README.md",
+            "scripts/search_douyin.py"
+          ],
           "files": 4,
           "bytes": 23161,
           "sha256": "113d5f2efb5e0d361c8dbedc2145ff272ef166182b387f0a701d374ada3304b2"
@@ -647,6 +893,13 @@
           "name": "douyin-weekly-surge",
           "ns": "douyin-viral-content--douyin-weekly-surge",
           "path": "skills/douyin-viral-content--douyin-weekly-surge",
+          "fileList": [
+            "README.en.md",
+            "README.md",
+            "references/api-config.md",
+            "references/interaction-guide.md",
+            "scripts/douyin_weekly_surge.py"
+          ],
           "files": 6,
           "bytes": 34305,
           "sha256": "85d160d6c558f28d414eec78590461862dd28c6e36cefd0174417b3016b75be9"
@@ -655,6 +908,14 @@
           "name": "multi-copywrite-alchemy",
           "ns": "douyin-viral-content--multi-copywrite-alchemy",
           "path": "skills/douyin-viral-content--multi-copywrite-alchemy",
+          "fileList": [
+            "README.en.md",
+            "README.md",
+            "references/7-dimensions-framework.md",
+            "references/core_workflow.md",
+            "references/persona-template.md",
+            "references/writing-formulas.md"
+          ],
           "files": 7,
           "bytes": 88361,
           "sha256": "006d7aa2ea1091c776260cee4ab8fcd91a2b658509cfa910ecfd3e5a57326793"
@@ -738,6 +999,52 @@
           "name": "industry-scene-service-recording",
           "ns": "fbsir-industry-scene-researcher--industry-scene-service-recording",
           "path": "skills/fbsir-industry-scene-researcher--industry-scene-service-recording",
+          "fileList": [
+            "examples/README.md",
+            "examples/case-comparison.md",
+            "examples/claims-lite.synthetic.json",
+            "examples/enterprise-action.md",
+            "examples/single-case-analysis.md",
+            "examples/smart-hardware-edge-interaction.md",
+            "examples/smart-hardware-quality-review.md",
+            "examples/smart-hardware-service-triage.md",
+            "references/case-comparison-and-seven-dimensions.md",
+            "references/case-mechanisms-and-pilot-card.md",
+            "references/china-enterprise-context.md",
+            "references/claims-and-delivery-gates.md",
+            "references/delivery-and-continuation.md",
+            "references/evidence-and-conflicts.md",
+            "references/feedback-and-observation.md",
+            "references/intent-and-entry.md",
+            "references/large-materials-processing.md",
+            "references/multimodal-materials.md",
+            "references/policy-and-guidance.md",
+            "references/reasoning-and-transfer.md",
+            "references/search-and-source-reading.md",
+            "references/segment-track-research.md",
+            "references/strategy-and-intent.md",
+            "references/tools-and-methods.md",
+            "schemas/claims-lite.schema.json",
+            "schemas/common.schema.json",
+            "schemas/continuation.schema.json",
+            "schemas/material-observation.schema.json",
+            "schemas/research-objects.schema.json",
+            "schemas/track-research.schema.json",
+            "scripts/claims-lite.mjs",
+            "scripts/feedback-file.mjs",
+            "scripts/research-kernel.mjs",
+            "scripts/research-presentation.mjs",
+            "scripts/strategy-client.mjs",
+            "scripts/track-research.mjs",
+            "templates/continuation-record.json",
+            "templates/material-batch-plan.json",
+            "templates/material-batch-planning-input.json",
+            "templates/output-manifest.json",
+            "templates/research-brief.json",
+            "templates/research-report-outline.md",
+            "templates/smart-hardware-method-cards.json",
+            "templates/track-research.json"
+          ],
           "files": 45,
           "bytes": 336770,
           "sha256": "c716421ff6d21967fd7134ef6b0959f38be71a6db2fc2c32b9ee4c2983650afb"
@@ -785,6 +1092,7 @@
           "name": "audit-support",
           "ns": "finance--audit-support",
           "path": "skills/finance--audit-support",
+          "fileList": [],
           "files": 1,
           "bytes": 16779,
           "sha256": "d60c62d48624433d5316de2b130191ca526aa67d195d064ac42995fdd73a16da"
@@ -793,6 +1101,7 @@
           "name": "close-management",
           "ns": "finance--close-management",
           "path": "skills/finance--close-management",
+          "fileList": [],
           "files": 1,
           "bytes": 10256,
           "sha256": "48676e7d85703a699977ab0048d334388e07ac2e6fa37b1395528acedd42f193"
@@ -801,6 +1110,7 @@
           "name": "finance-workflows",
           "ns": "finance--finance-workflows",
           "path": "skills/finance--finance-workflows",
+          "fileList": [],
           "files": 1,
           "bytes": 29435,
           "sha256": "028771edebdd173e38956dc61eea274aa01cfd7d6cb7d8c7b1803620bc96da8e"
@@ -809,6 +1119,7 @@
           "name": "financial-statements",
           "ns": "finance--financial-statements",
           "path": "skills/finance--financial-statements",
+          "fileList": [],
           "files": 1,
           "bytes": 10009,
           "sha256": "5ea312a9ca798266824d10d946f9f57664f0b96c6791e5a5d080dff1477c9fc0"
@@ -817,6 +1128,7 @@
           "name": "journal-entry-prep",
           "ns": "finance--journal-entry-prep",
           "path": "skills/finance--journal-entry-prep",
+          "fileList": [],
           "files": 1,
           "bytes": 7819,
           "sha256": "68d7b55d1cd4bff2b3b854c55706a5d68a9538a8f843ccc91f583b35f2e8e00a"
@@ -825,6 +1137,7 @@
           "name": "reconciliation",
           "ns": "finance--reconciliation",
           "path": "skills/finance--reconciliation",
+          "fileList": [],
           "files": 1,
           "bytes": 8108,
           "sha256": "75a7c08346805d5725d498620f3cf55222b901693298e6f3fee86440f9cc7453"
@@ -833,6 +1146,7 @@
           "name": "variance-analysis",
           "ns": "finance--variance-analysis",
           "path": "skills/finance--variance-analysis",
+          "fileList": [],
           "files": 1,
           "bytes": 11178,
           "sha256": "ca9a24365b12d29838bd614e2638f7479e164b3043cb08680bc79bcb4bd1e29b"
@@ -865,6 +1179,10 @@
           "name": "flywheel-koc-matrix-recruiter-core",
           "ns": "flywheel-koc-matrix-recruiter--flywheel-koc-matrix-recruiter-core",
           "path": "skills/flywheel-koc-matrix-recruiter--flywheel-koc-matrix-recruiter-core",
+          "fileList": [
+            "scripts/evaluate.py",
+            "templates/result.md"
+          ],
           "files": 3,
           "bytes": 730,
           "sha256": "beaf886cd042238ee80d625a5255afe69584902979b3ac53ff908aa102e97111"
@@ -948,6 +1266,12 @@
           "name": "jifan-lapian-chaifen",
           "ns": "jifan-lapian-fuke--jifan-lapian-chaifen",
           "path": "skills/jifan-lapian-fuke--jifan-lapian-chaifen",
+          "fileList": [
+            "examples/jifan-lapian-chaifen-sample.json",
+            "references/input-schema.md",
+            "scripts/_draft.py",
+            "scripts/build_jifan_lapian_chaifen.py"
+          ],
           "files": 5,
           "bytes": 10057,
           "sha256": "b340a1e5dcf9a8047625a2fc9a2b6ab248d89f5caebbc460a5da9b19006a0555"
@@ -956,6 +1280,12 @@
           "name": "jifan-lapian-jiegou",
           "ns": "jifan-lapian-fuke--jifan-lapian-jiegou",
           "path": "skills/jifan-lapian-fuke--jifan-lapian-jiegou",
+          "fileList": [
+            "examples/jifan-lapian-jiegou-sample.json",
+            "references/input-schema.md",
+            "scripts/_draft.py",
+            "scripts/build_jifan_lapian_jiegou.py"
+          ],
           "files": 5,
           "bytes": 10385,
           "sha256": "3c98ec7c49e8547640472b80ce41265d685e6e5e94be3d6412e0625407651586"
@@ -964,6 +1294,12 @@
           "name": "jifan-lapian-qingdan",
           "ns": "jifan-lapian-fuke--jifan-lapian-qingdan",
           "path": "skills/jifan-lapian-fuke--jifan-lapian-qingdan",
+          "fileList": [
+            "examples/jifan-lapian-qingdan-sample.json",
+            "references/input-schema.md",
+            "scripts/_draft.py",
+            "scripts/build_jifan_lapian_qingdan.py"
+          ],
           "files": 5,
           "bytes": 10261,
           "sha256": "1459806a1696c6e51eabcfa1ed44d468dbdaed8c166822efba85e8e634b9de5e"
@@ -1011,6 +1347,11 @@
           "name": "koc-compliance-guard",
           "ns": "koc-ops-expert--koc-compliance-guard",
           "path": "skills/koc-ops-expert--koc-compliance-guard",
+          "fileList": [
+            "references/legal-redlines.md",
+            "references/platform-rules.md",
+            "scripts/compliance_check.py"
+          ],
           "files": 4,
           "bytes": 48267,
           "sha256": "85fe701c528ad9e40a3fce8da8a7e473d476f7c7203d1ff8829d6fbaf6dec3c8"
@@ -1019,6 +1360,12 @@
           "name": "koc-distribution-engine",
           "ns": "koc-ops-expert--koc-distribution-engine",
           "path": "skills/koc-ops-expert--koc-distribution-engine",
+          "fileList": [
+            "references/platform-links.md",
+            "references/unit-economics.md",
+            "scripts/koc_econ.py",
+            "templates/koc-ledger-headers.csv"
+          ],
           "files": 5,
           "bytes": 70550,
           "sha256": "2ea1bc7e1a3f36532df23cb9c4939e59abaafdad5a9da5cc505914b6256b16ec"
@@ -1027,6 +1374,11 @@
           "name": "koc-incentive-engine",
           "ns": "koc-ops-expert--koc-incentive-engine",
           "path": "skills/koc-ops-expert--koc-incentive-engine",
+          "fileList": [
+            "references/incentive-design.md",
+            "references/settlement-and-tiers.md",
+            "scripts/incentive_calc.py"
+          ],
           "files": 4,
           "bytes": 39166,
           "sha256": "09fda037587e03ef673986f618eee5c22d4223edad8cebf94c8c6a085ccda5a9"
@@ -1035,6 +1387,13 @@
           "name": "koc-nurture-academy",
           "ns": "koc-ops-expert--koc-nurture-academy",
           "path": "skills/koc-ops-expert--koc-nurture-academy",
+          "fileList": [
+            "references/content-brief.md",
+            "references/onboarding-sop.md",
+            "references/qc-rubric.md",
+            "scripts/cqs_score.py",
+            "templates/content-brief.md"
+          ],
           "files": 6,
           "bytes": 45951,
           "sha256": "0430afce388588e5839dcb1ee1c22e435402bb94ad1b64b234f0477eec448714"
@@ -1043,6 +1402,11 @@
           "name": "koc-ops-report",
           "ns": "koc-ops-expert--koc-ops-report",
           "path": "skills/koc-ops-expert--koc-ops-report",
+          "fileList": [
+            "references/report-outline.md",
+            "scripts/render_report.py",
+            "templates/example-report.json"
+          ],
           "files": 4,
           "bytes": 149520,
           "sha256": "679a1e5202dcc3c6478a1be2d8011020311b45d6a8cc10d4b72a57f1a4ce00c7"
@@ -1051,6 +1415,11 @@
           "name": "koc-recruit-radar",
           "ns": "koc-ops-expert--koc-recruit-radar",
           "path": "skills/koc-ops-expert--koc-recruit-radar",
+          "fileList": [
+            "references/fit6-scorecard.md",
+            "references/six-pools.md",
+            "scripts/koc_fit.py"
+          ],
           "files": 4,
           "bytes": 48737,
           "sha256": "a3720e3b7785330ea91153eae2b4582cbe86bb5df81cadbf91e1308817d2a6df"
@@ -1134,6 +1503,7 @@
           "name": "ab-test-setup",
           "ns": "livestream-ecommerce-coach--ab-test-setup",
           "path": "skills/livestream-ecommerce-coach--ab-test-setup",
+          "fileList": [],
           "files": 1,
           "bytes": 11680,
           "sha256": "bc06c71ee2dd5e9cfa4de28e05569bf27191cdcd51bb8fdc1c5e6aca686a6c0e"
@@ -1142,6 +1512,7 @@
           "name": "analytics-tracking",
           "ns": "livestream-ecommerce-coach--analytics-tracking",
           "path": "skills/livestream-ecommerce-coach--analytics-tracking",
+          "fileList": [],
           "files": 1,
           "bytes": 11339,
           "sha256": "f912af9f51c450ea4ffb058a33d902bc9c52afc53ff26890abc2d95de6796dda"
@@ -1150,6 +1521,7 @@
           "name": "competitor-alternatives",
           "ns": "livestream-ecommerce-coach--competitor-alternatives",
           "path": "skills/livestream-ecommerce-coach--competitor-alternatives",
+          "fileList": [],
           "files": 1,
           "bytes": 20362,
           "sha256": "fb418237792cf7b972ed2b465a81ccbcf0fac1e1adfc4c61d333857ceb15bb58"
@@ -1158,6 +1530,7 @@
           "name": "copy-editing",
           "ns": "livestream-ecommerce-coach--copy-editing",
           "path": "skills/livestream-ecommerce-coach--copy-editing",
+          "fileList": [],
           "files": 1,
           "bytes": 13420,
           "sha256": "1fb1815317450eb8ad67c0c0424ab7ad3bd03ffea77d211bf4d72f12f4f5b620"
@@ -1166,6 +1539,7 @@
           "name": "copywriting",
           "ns": "livestream-ecommerce-coach--copywriting",
           "path": "skills/livestream-ecommerce-coach--copywriting",
+          "fileList": [],
           "files": 1,
           "bytes": 13569,
           "sha256": "db01f1e4d7d6b7586b17ebd97e3936104b9accba84122110430f33f44620dda1"
@@ -1174,6 +1548,7 @@
           "name": "email-sequence",
           "ns": "livestream-ecommerce-coach--email-sequence",
           "path": "skills/livestream-ecommerce-coach--email-sequence",
+          "fileList": [],
           "files": 1,
           "bytes": 23941,
           "sha256": "f812c7eac7f8485da8b415d07da3662c8cf59526c885601f770d74903d590018"
@@ -1182,6 +1557,7 @@
           "name": "form-cro",
           "ns": "livestream-ecommerce-coach--form-cro",
           "path": "skills/livestream-ecommerce-coach--form-cro",
+          "fileList": [],
           "files": 1,
           "bytes": 10906,
           "sha256": "e939c7dfb9185d78475c9cb05212f007a3139db2e3d08f8640fcdad681e96ad2"
@@ -1190,6 +1566,7 @@
           "name": "free-tool-strategy",
           "ns": "livestream-ecommerce-coach--free-tool-strategy",
           "path": "skills/livestream-ecommerce-coach--free-tool-strategy",
+          "fileList": [],
           "files": 1,
           "bytes": 11873,
           "sha256": "dc4d3676a5dc9c0bfc737800ccacae092f734b28ab4acd9d578238bee613f048"
@@ -1198,6 +1575,7 @@
           "name": "launch-strategy",
           "ns": "livestream-ecommerce-coach--launch-strategy",
           "path": "skills/livestream-ecommerce-coach--launch-strategy",
+          "fileList": [],
           "files": 1,
           "bytes": 12565,
           "sha256": "5bed125a985eb2cce86093c5cd1a53071af659bdac2898d84c6403e193686730"
@@ -1206,6 +1584,7 @@
           "name": "market-researcher",
           "ns": "livestream-ecommerce-coach--market-researcher",
           "path": "skills/livestream-ecommerce-coach--market-researcher",
+          "fileList": [],
           "files": 1,
           "bytes": 9279,
           "sha256": "b1631a1d4623615edba54bcd01d31a1ca344a1b659e2fd02f14f36e3dff5354e"
@@ -1214,6 +1593,7 @@
           "name": "marketing-ideas",
           "ns": "livestream-ecommerce-coach--marketing-ideas",
           "path": "skills/livestream-ecommerce-coach--marketing-ideas",
+          "fileList": [],
           "files": 1,
           "bytes": 25038,
           "sha256": "68bc0d3406533ed219b48e614d7cc468def2aae04e83e999231fa40da1eb8415"
@@ -1222,6 +1602,7 @@
           "name": "marketing-psychology",
           "ns": "livestream-ecommerce-coach--marketing-psychology",
           "path": "skills/livestream-ecommerce-coach--marketing-psychology",
+          "fileList": [],
           "files": 1,
           "bytes": 21783,
           "sha256": "e6d05d211f5bea3e40a69788c6b858256f11b6c1fdaeb4bff8adcedb054defd9"
@@ -1230,6 +1611,9 @@
           "name": "marketing-skills",
           "ns": "livestream-ecommerce-coach--marketing-skills",
           "path": "skills/livestream-ecommerce-coach--marketing-skills",
+          "fileList": [
+            ".clawhub/origin.json"
+          ],
           "files": 2,
           "bytes": 3699,
           "sha256": "a6663a84c0d9f543f1a6eed09da5fbe9f707ac13d956b3bcc22e1268fcaddcf1"
@@ -1238,6 +1622,7 @@
           "name": "onboarding-cro",
           "ns": "livestream-ecommerce-coach--onboarding-cro",
           "path": "skills/livestream-ecommerce-coach--onboarding-cro",
+          "fileList": [],
           "files": 1,
           "bytes": 11722,
           "sha256": "431ebb665fdb828a85cafb9d05532d5f71e141124970d72f638eeeb52226fef0"
@@ -1246,6 +1631,7 @@
           "name": "page-cro",
           "ns": "livestream-ecommerce-coach--page-cro",
           "path": "skills/livestream-ecommerce-coach--page-cro",
+          "fileList": [],
           "files": 1,
           "bytes": 11057,
           "sha256": "183d9303dec05f18d7de3ed911f6e33c1ebed5b7be95c7582cf4e87d78e3722d"
@@ -1254,6 +1640,7 @@
           "name": "paid-ads",
           "ns": "livestream-ecommerce-coach--paid-ads",
           "path": "skills/livestream-ecommerce-coach--paid-ads",
+          "fileList": [],
           "files": 1,
           "bytes": 15551,
           "sha256": "2a7fafdc72b1f5e0787af52d48866e8bf2d5cbb7681866ab991eccc9eec0d825"
@@ -1262,6 +1649,7 @@
           "name": "paywall-upgrade-cro",
           "ns": "livestream-ecommerce-coach--paywall-upgrade-cro",
           "path": "skills/livestream-ecommerce-coach--paywall-upgrade-cro",
+          "fileList": [],
           "files": 1,
           "bytes": 14762,
           "sha256": "a34e2c8cb1c1a0effa6098b2d9fb09c261abdeabe156925d258ef89426a6b718"
@@ -1270,6 +1658,7 @@
           "name": "popup-cro",
           "ns": "livestream-ecommerce-coach--popup-cro",
           "path": "skills/livestream-ecommerce-coach--popup-cro",
+          "fileList": [],
           "files": 1,
           "bytes": 11667,
           "sha256": "05dbf7d2882bac6b3fe51b7079b595548b44208779aabe75fcd8c2610edd02fc"
@@ -1278,6 +1667,7 @@
           "name": "pricing-strategy",
           "ns": "livestream-ecommerce-coach--pricing-strategy",
           "path": "skills/livestream-ecommerce-coach--pricing-strategy",
+          "fileList": [],
           "files": 1,
           "bytes": 22949,
           "sha256": "66ad76b7ec261cd5fda829bfc8994bbfc9014a16d85e176efe7c356294bb36ba"
@@ -1286,6 +1676,7 @@
           "name": "programmatic-seo",
           "ns": "livestream-ecommerce-coach--programmatic-seo",
           "path": "skills/livestream-ecommerce-coach--programmatic-seo",
+          "fileList": [],
           "files": 1,
           "bytes": 17104,
           "sha256": "b8e35cc11e2216580a7eccd0dd39dd2a4d31f041e9771aeaecb361897384af9b"
@@ -1294,6 +1685,7 @@
           "name": "referral-program",
           "ns": "livestream-ecommerce-coach--referral-program",
           "path": "skills/livestream-ecommerce-coach--referral-program",
+          "fileList": [],
           "files": 1,
           "bytes": 17395,
           "sha256": "3dd733bf00e147e2736700c4203d3a88db7ff170266199a339377fe02afa7fd3"
@@ -1302,6 +1694,7 @@
           "name": "schema-markup",
           "ns": "livestream-ecommerce-coach--schema-markup",
           "path": "skills/livestream-ecommerce-coach--schema-markup",
+          "fileList": [],
           "files": 1,
           "bytes": 13788,
           "sha256": "94775ab83ee8952ba476af3664c89bd0c0b1a52dd8d132a189c3f7db00d9c57c"
@@ -1310,6 +1703,7 @@
           "name": "seo-audit",
           "ns": "livestream-ecommerce-coach--seo-audit",
           "path": "skills/livestream-ecommerce-coach--seo-audit",
+          "fileList": [],
           "files": 1,
           "bytes": 8837,
           "sha256": "0c1ab4e61d5df7d33132e545138b713e2cb08d638eed9b528cb84833854f02af"
@@ -1318,6 +1712,7 @@
           "name": "signup-flow-cro",
           "ns": "livestream-ecommerce-coach--signup-flow-cro",
           "path": "skills/livestream-ecommerce-coach--signup-flow-cro",
+          "fileList": [],
           "files": 1,
           "bytes": 10114,
           "sha256": "49122b17f825ea53e5040879e9a2dca81463fcaf7daf689a6bea524d91b10840"
@@ -1326,6 +1721,7 @@
           "name": "social-content",
           "ns": "livestream-ecommerce-coach--social-content",
           "path": "skills/livestream-ecommerce-coach--social-content",
+          "fileList": [],
           "files": 1,
           "bytes": 21847,
           "sha256": "7d42bfc5c65a863226f8d84e490d0f391366c9993b23f0f37c60f235ebfa52e7"
@@ -1371,6 +1767,72 @@
           "name": "long-manuscript-core",
           "ns": "long-manuscript-expert--long-manuscript-core",
           "path": "skills/long-manuscript-expert--long-manuscript-core",
+          "fileList": [
+            "assets/five-forms.css",
+            "assets/layout/T01-layout.svg",
+            "assets/layout/T02-layout.svg",
+            "assets/layout/T03-layout.svg",
+            "assets/layout/T04-layout.svg",
+            "assets/layout/T05-layout.svg",
+            "assets/library/MANIFEST.json",
+            "assets/library/blocks.json",
+            "assets/library/data/DATA-CONTRACTS.json",
+            "assets/library/recipes.json",
+            "assets/library/templates/hw-compare.md",
+            "assets/library/templates/hw-decision.md",
+            "assets/library/templates/hw-update.md",
+            "assets/library/templates/qa-evaluation.md",
+            "assets/library/templates/qa-grounding.md",
+            "assets/library/templates/qa-refresh.md",
+            "assets/library/templates/service-diagnosis.md",
+            "assets/library/templates/service-effect.md",
+            "assets/library/templates/service-pilot.md",
+            "assets/library/templates/software-benchmark.md",
+            "assets/library/templates/software-integration.md",
+            "assets/library/templates/software-selection.md",
+            "assets/library/templates/source-atlas.md",
+            "assets/library/templates/source-audience.md",
+            "assets/library/templates/source-data.md",
+            "assets/library/templates/source-method.md",
+            "assets/library/templates/source-whitepaper.md",
+            "assets/library/visuals/VISUAL-CONTRACTS.json",
+            "assets/library/visuals/VISUAL-CROSSWALK.json",
+            "references/contracts/query.schema.json",
+            "references/contracts/result.schema.json",
+            "references/delivery-and-quality.md",
+            "references/diagnostics-catalog.json",
+            "references/five-forms.md",
+            "references/material-and-media.md",
+            "references/research-and-evidence.md",
+            "references/research-tracks-v2r2.md",
+            "references/revision-and-continuity.md",
+            "references/revision-and-recovery.md",
+            "references/service-contract.md",
+            "scripts/composition.py",
+            "scripts/local_observation.py",
+            "scripts/paper_diagnostic.py",
+            "scripts/paper_forms.py",
+            "scripts/preview_budget.py",
+            "scripts/product_entry.py",
+            "scripts/project_card.py",
+            "scripts/scoped_writer.py",
+            "scripts/source-manifest.json",
+            "scripts/strategy_client.py",
+            "scripts/strategy_client_0200.py",
+            "scripts/strategy_client_v2.py",
+            "templates/FORM-CATALOG.json",
+            "templates/T01-atlas.md",
+            "templates/T02-whitepaper.md",
+            "templates/T03-data-report.md",
+            "templates/T04-population-study.md",
+            "templates/T05-methodology.md",
+            "templates/local-observation-record.md",
+            "templates/project-card.md",
+            "templates/reading-view.html",
+            "templates/research-track-method-templates.md",
+            "templates/smart-hardware-working-paper.md",
+            "templates/working-paper-base.md"
+          ],
           "files": 65,
           "bytes": 722697,
           "sha256": "805ec1bdd4818a91aac4688d4fc54393d36dc80a40aec348262654d9d606baa3"
@@ -1418,6 +1880,174 @@
           "name": "long-video-remix",
           "ns": "long-video-remix--long-video-remix",
           "path": "skills/long-video-remix--long-video-remix",
+          "fileList": [
+            "CHAT_PROJECT_REFERENCE.md",
+            "INSTALL.en.md",
+            "INSTALL.md",
+            "LICENSE",
+            "PROJECT_INSTRUCTIONS.txt",
+            "QA.md",
+            "README.en.md",
+            "README.md",
+            "SHA256SUMS",
+            "agents/openai.yaml",
+            "assets/action-node-candidate-template.csv",
+            "assets/benchmark-template.md",
+            "assets/brief-template.md",
+            "assets/capability-map-template.json",
+            "assets/composition-plan-template.json",
+            "assets/content-map-template.md",
+            "assets/deep-observation-template.csv",
+            "assets/delivery-spec-template.json",
+            "assets/detail-interval-template.csv",
+            "assets/edit-boundary-template.csv",
+            "assets/editorial-plan-template.md",
+            "assets/execution-authorization-template.json",
+            "assets/execution-handoff-template.md",
+            "assets/execution-plan-template.md",
+            "assets/execution-reference-template.md",
+            "assets/frame-observation-template.csv",
+            "assets/implementation-lock-template.json",
+            "assets/keyframe-reference-template.json",
+            "assets/narrative-direction-template.md",
+            "assets/project-template.json",
+            "assets/speaker-adjudication-template.csv",
+            "assets/structure-exception-template.json",
+            "assets/structure-question-template.csv",
+            "assets/timeline-template.json",
+            "assets/visual-methods-template.json",
+            "examples/synthetic-ready/action-node-candidates.csv",
+            "examples/synthetic-ready/capability-map.json",
+            "examples/synthetic-ready/content-map.md",
+            "examples/synthetic-ready/coverage.json",
+            "examples/synthetic-ready/deep-observations.csv",
+            "examples/synthetic-ready/detail-intervals.csv",
+            "examples/synthetic-ready/edit-boundaries.csv",
+            "examples/synthetic-ready/execution-authorization.json",
+            "examples/synthetic-ready/execution-handoff.md",
+            "examples/synthetic-ready/execution-plan.md",
+            "examples/synthetic-ready/execution-reference.md",
+            "examples/synthetic-ready/frame-observations.csv",
+            "examples/synthetic-ready/frames.jsonl",
+            "examples/synthetic-ready/keyframe-references.json",
+            "examples/synthetic-ready/narrative-direction.md",
+            "examples/synthetic-ready/overview.md",
+            "examples/synthetic-ready/project.json",
+            "examples/synthetic-ready/render-manifest.json",
+            "examples/synthetic-ready/render_visual_proof.py",
+            "examples/synthetic-ready/reviews.jsonl",
+            "examples/synthetic-ready/scenes.jsonl",
+            "examples/synthetic-ready/sources.json",
+            "examples/synthetic-ready/speaker-adjudications.csv",
+            "examples/synthetic-ready/structure-exceptions.jsonl",
+            "examples/synthetic-ready/structure-questions.csv",
+            "examples/synthetic-ready/timeline.json",
+            "examples/synthetic-ready/transcript.jsonl",
+            "examples/synthetic-ready/transitions.json",
+            "examples/synthetic-ready/units.jsonl",
+            "references/data-contracts.md",
+            "references/detail-evidence.md",
+            "references/execution-integrity.md",
+            "references/execution-package.md",
+            "references/mcp-adapter.md",
+            "references/montage-rules.md",
+            "references/qa-handoff.md",
+            "references/regression-checklist.md",
+            "references/render-engineering.md",
+            "references/structure-regression-matrix.md",
+            "references/style-system.md",
+            "references/visual-methods/application.md",
+            "references/visual-methods/fallback-recipes.md",
+            "references/visual-methods/index.md",
+            "references/visual-methods/method-library.md",
+            "references/visual-methods/research-extension.md",
+            "references/visual-methods/resources.md",
+            "references/visual-production.md",
+            "references/visual-reference-router.md",
+            "references/workflow-control.md",
+            "references/workflow.md",
+            "scripts/audit_render.py",
+            "scripts/blender_composite_worker.py",
+            "scripts/check_render_authorization.py",
+            "scripts/compile_render_manifest.py",
+            "scripts/detail_gates.py",
+            "scripts/execution_integrity.py",
+            "scripts/extract_frames.py",
+            "scripts/finish_ffmpeg.py",
+            "scripts/prepare_execution_authorization.py",
+            "scripts/render_blender_composition.py",
+            "scripts/sync_visual_stage.py",
+            "scripts/timeline_math.py",
+            "scripts/validate_project.py",
+            "scripts/versioning.py",
+            "scripts/visual_pipeline.py",
+            "scripts/workflow_control.py",
+            "tests/_composition_smoke.py",
+            "tests/_synthetic_project.py",
+            "tests/fixtures/ready-project.json",
+            "tests/test_checksums.py",
+            "tests/test_detail_gates.py",
+            "tests/test_dialogue_continuity.py",
+            "tests/test_execution_integrity.py",
+            "tests/test_execution_package.py",
+            "tests/test_extract_frames.py",
+            "tests/test_independent_audio_dialogue.py",
+            "tests/test_method_adaptation.py",
+            "tests/test_public_visual_stages.py",
+            "tests/test_scoped_revision.py",
+            "tests/test_selected_range_verification.py",
+            "tests/test_size_budget.py",
+            "tests/test_visual_pipeline.py",
+            "tests/test_visual_references.py",
+            "tests/test_workflow_control.py",
+            "visual-reference/README.md",
+            "visual-reference/visual-reference-package-v2.4.3/README.md",
+            "visual-reference/visual-reference-package-v2.4.3/SHA256SUMS",
+            "visual-reference/visual-reference-package-v2.4.3/manifests/external-references.json",
+            "visual-reference/visual-reference-package-v2.4.3/manifests/implementation-recipe-library.json",
+            "visual-reference/visual-reference-package-v2.4.3/manifests/reference-assets.json",
+            "visual-reference/visual-reference-package-v2.4.3/manifests/reference-structure-cards.json",
+            "visual-reference/visual-reference-package-v2.4.3/manifests/visual-direction-atlas.json",
+            "visual-reference/visual-reference-package-v2.4.3/references/cp-relationship-visual-application.md",
+            "visual-reference/visual-reference-package-v2.4.3/references/editing-grammar.md",
+            "visual-reference/visual-reference-package-v2.4.3/references/motion-implementation-map.md",
+            "visual-reference/visual-reference-package-v2.4.3/references/scene-text-grammar.md",
+            "visual-reference/visual-reference-package-v2.4.3/references/style-system.md",
+            "visual-reference/visual-reference-package-v2.4.3/references/timing-grammar.md",
+            "visual-reference/visual-reference-package-v2.4.3/references/visual-design-procedure.md",
+            "visual-reference/visual-reference-package-v2.4.3/references/visual-direction-atlas.md",
+            "visual-reference/visual-reference-package-v2.4.3/references/visual-reference-asset-spec.md",
+            "visual-reference/visual-reference-package-v2.4.3/scripts/analyze_clip.py",
+            "visual-reference/visual-reference-package-v2.4.3/scripts/art_direction_brief.py",
+            "visual-reference/visual-reference-package-v2.4.3/scripts/caption_place.py",
+            "visual-reference/visual-reference-package-v2.4.3/scripts/check_visual_stage.py",
+            "visual-reference/visual-reference-package-v2.4.3/scripts/design_quality_audit.py",
+            "visual-reference/visual-reference-package-v2.4.3/scripts/finalize_independent_review.py",
+            "visual-reference/visual-reference-package-v2.4.3/scripts/make_motion_state_board.py",
+            "visual-reference/visual-reference-package-v2.4.3/scripts/make_review_board.py",
+            "visual-reference/visual-reference-package-v2.4.3/scripts/measure_frame.py",
+            "visual-reference/visual-reference-package-v2.4.3/scripts/prepare_design_review.py",
+            "visual-reference/visual-reference-package-v2.4.3/scripts/refresh_visual_chain.py",
+            "visual-reference/visual-reference-package-v2.4.3/scripts/visual-reference-requirements.txt",
+            "visual-reference/visual-reference-package-v2.4.3/templates/art-direction/README.md",
+            "visual-reference/visual-reference-package-v2.4.3/templates/art-direction/independent-review-response.json",
+            "visual-reference/visual-reference-package-v2.4.3/templates/caption-placement.json",
+            "visual-reference/visual-reference-package-v2.4.3/templates/reference-clip/ANALYSIS.md",
+            "visual-reference/visual-reference-package-v2.4.3/templates/reference-clip/boxes.json",
+            "visual-reference/visual-reference-package-v2.4.3/templates/reference-clip/source.json",
+            "visual-reference/visual-reference-package-v2.4.3/templates/same-context-reference/README.md",
+            "visual-reference/visual-reference-package-v2.4.3/templates/same-context-reference/frame-annotation.json",
+            "visual-reference/visual-reference-package-v2.4.3/templates/same-context-reference/timing.json",
+            "visual-reference/visual-reference-package-v2.4.3/templates/sequence/S0-sequence-plan.json",
+            "visual-reference/visual-reference-package-v2.4.3/templates/visual-stage/V0-intake.json",
+            "visual-reference/visual-reference-package-v2.4.3/templates/visual-stage/V1-visual-problems.json",
+            "visual-reference/visual-reference-package-v2.4.3/templates/visual-stage/V2-reference-selection.json",
+            "visual-reference/visual-reference-package-v2.4.3/templates/visual-stage/V3-candidates.json",
+            "visual-reference/visual-reference-package-v2.4.3/templates/visual-stage/V4-mockups.json",
+            "visual-reference/visual-reference-package-v2.4.3/templates/visual-stage/V5-design-review.json",
+            "visual-reference/visual-reference-package-v2.4.3/templates/visual-stage/V6-user-decision.json",
+            "visual-reference/visual-reference-package-v2.4.3/templates/visual-stage/V7-lock.json"
+          ],
           "files": 167,
           "bytes": 2046645,
           "sha256": "4c48c469185bd92e1c8f87506631b9e5e4d0321af04fad9ee5b267bba712157a"
@@ -1501,6 +2131,14 @@
           "name": "omnichannel-ads-playbook",
           "ns": "omnichannel-ads-expert--omnichannel-ads-playbook",
           "path": "skills/omnichannel-ads-expert--omnichannel-ads-playbook",
+          "fileList": [
+            "references/creative-playbook.md",
+            "references/metrics-optimization.md",
+            "references/platform-playbooks.md",
+            "templates/creative-batch-template.md",
+            "templates/daily-report-template.md",
+            "templates/media-plan-template.md"
+          ],
           "files": 7,
           "bytes": 30064,
           "sha256": "0596a88dae277831e8440514720c640e12cbf681c74598c707b294bcfb6fd9ec"
@@ -1546,6 +2184,10 @@
           "name": "performance-payroll-risk-analysis",
           "ns": "performance-payroll-employment-risk-expert--performance-payroll-risk-analysis",
           "path": "skills/performance-payroll-employment-risk-expert--performance-payroll-risk-analysis",
+          "fileList": [
+            "references/hrm-template-map.md",
+            "references/performance-payroll-metrics.md"
+          ],
           "files": 3,
           "bytes": 9717,
           "sha256": "6563fb8913bc8d7cd1c0f84eafd37fe10c5252dece2ef98129026230be4c8a7b"
@@ -1627,6 +2269,7 @@
           "name": "competitive-analysis",
           "ns": "product-management--competitive-analysis",
           "path": "skills/product-management--competitive-analysis",
+          "fileList": [],
           "files": 1,
           "bytes": 10540,
           "sha256": "b9698bdd9fe6c17923e20353aeac34d8201a7c6dd75018a917d1d735291a35c8"
@@ -1635,6 +2278,7 @@
           "name": "feature-spec",
           "ns": "product-management--feature-spec",
           "path": "skills/product-management--feature-spec",
+          "fileList": [],
           "files": 1,
           "bytes": 8860,
           "sha256": "3e7836b363028815b63b9a5d2b1949d93aca05800858b9070e98501be049932c"
@@ -1643,6 +2287,7 @@
           "name": "metrics-tracking",
           "ns": "product-management--metrics-tracking",
           "path": "skills/product-management--metrics-tracking",
+          "fileList": [],
           "files": 1,
           "bytes": 13372,
           "sha256": "8bbfc40787a4f574af041e8e0218a158ab4f36773236b33b77a48ac41689ef1a"
@@ -1651,6 +2296,7 @@
           "name": "product-management-workflows",
           "ns": "product-management--product-management-workflows",
           "path": "skills/product-management--product-management-workflows",
+          "fileList": [],
           "files": 1,
           "bytes": 26026,
           "sha256": "6c21ba785eccd0fbc79385959e77ba2d8fdd842570192806230fd2ba14538a4a"
@@ -1659,6 +2305,7 @@
           "name": "roadmap-management",
           "ns": "product-management--roadmap-management",
           "path": "skills/product-management--roadmap-management",
+          "fileList": [],
           "files": 1,
           "bytes": 8805,
           "sha256": "c3a4242bc244c30c6e3d9717f4f542eec2dc5bef7d6c90aa2fb7ff0e3606261b"
@@ -1667,6 +2314,7 @@
           "name": "stakeholder-comms",
           "ns": "product-management--stakeholder-comms",
           "path": "skills/product-management--stakeholder-comms",
+          "fileList": [],
           "files": 1,
           "bytes": 10783,
           "sha256": "1ecda6f4c81ae18603b5835b2d9eff489f435e352198bce84b8b0ad50d17083a"
@@ -1675,6 +2323,7 @@
           "name": "user-research-synthesis",
           "ns": "product-management--user-research-synthesis",
           "path": "skills/product-management--user-research-synthesis",
+          "fileList": [],
           "files": 1,
           "bytes": 11218,
           "sha256": "a5c08b7a5db753dbe075f30d77a312414349a796113ec1b6bf731f5bc3cf03b8"
@@ -1707,6 +2356,7 @@
           "name": "product-pm",
           "ns": "product-pm-expert--product-pm",
           "path": "skills/product-pm-expert--product-pm",
+          "fileList": [],
           "files": 1,
           "bytes": 39340,
           "sha256": "74d2f9daaf853c4fe579827a531f0119a0fb57e834a781025557ecdba8539ebb"
@@ -1788,6 +2438,12 @@
           "name": "rea-analysis",
           "ns": "rea-reverse-engineer--rea-analysis",
           "path": "skills/rea-reverse-engineer--rea-analysis",
+          "fileList": [
+            "references/rea-command-catalog.md",
+            "references/rea-setup-guide.md",
+            "references/sample-output-notes.md",
+            "templates/authorization-and-disclaimer.md"
+          ],
           "files": 5,
           "bytes": 13680,
           "sha256": "25c88f12d1b91039404fa58a9d908e8970c626d4bc2198f3590b826e2955ac7e"
@@ -1833,6 +2489,15 @@
           "name": "resume-match",
           "ns": "resume-match-expert--resume-match",
           "path": "skills/resume-match-expert--resume-match",
+          "fileList": [
+            "references/interview-prep.md",
+            "references/job-search-playbook.md",
+            "references/learning-resources.md",
+            "references/resume-guide.md",
+            "scripts/analyze_resume.py",
+            "scripts/export_docx.py",
+            "templates/job-tracker.md"
+          ],
           "files": 8,
           "bytes": 80857,
           "sha256": "68724e99a63f9e61c40a70192833aa65d4498b83e2f22d0bead7b0d9374574c2"
@@ -1880,6 +2545,9 @@
           "name": "short-video-script-templates",
           "ns": "short-video-script-writer--short-video-script-templates",
           "path": "skills/short-video-script-writer--short-video-script-templates",
+          "fileList": [
+            "references/script-formats.md"
+          ],
           "files": 2,
           "bytes": 8958,
           "sha256": "53fe76deb60b20d439bc48dd5d362277de3ec22fee0df54c041cf9156d1d6fb8"
@@ -1925,6 +2593,16 @@
           "name": "tiktok-growth-playbook",
           "ns": "tiktok-growth-expert--tiktok-growth-playbook",
           "path": "skills/tiktok-growth-expert--tiktok-growth-playbook",
+          "fileList": [
+            "references/01-account-positioning.md",
+            "references/02-content-strategy.md",
+            "references/03-algorithm-and-traffic.md",
+            "references/04-live-streaming.md",
+            "references/05-tiktok-shop.md",
+            "references/06-monetization.md",
+            "references/07-data-and-analytics.md",
+            "references/08-pitfalls-and-compliance.md"
+          ],
           "files": 9,
           "bytes": 30788,
           "sha256": "f2249a4867803e4425e90c32134fa25a89aeea3a230166b01ca84bda694816da"
@@ -1970,6 +2648,7 @@
           "name": "trade-data-router",
           "ns": "trade-market-analyst--trade-data-router",
           "path": "skills/trade-market-analyst--trade-data-router",
+          "fileList": [],
           "files": 1,
           "bytes": 17830,
           "sha256": "a73c94861739cdfa621744396e36e03038b75b07eb287dd18e545e838a0d01d7"
@@ -1978,6 +2657,9 @@
           "name": "trade-market-entry",
           "ns": "trade-market-analyst--trade-market-entry",
           "path": "skills/trade-market-analyst--trade-market-entry",
+          "fileList": [
+            "references/method.md"
+          ],
           "files": 2,
           "bytes": 7488,
           "sha256": "35b13488280bf8f92f5268355f7e22f11f3d5b20f9b057eaf8f101c177cb4692"
@@ -1986,6 +2668,20 @@
           "name": "trade-research-report",
           "ns": "trade-market-analyst--trade-research-report",
           "path": "skills/trade-market-analyst--trade-research-report",
+          "fileList": [
+            "references/acquisition.md",
+            "references/analysis.md",
+            "references/company-profiles.md",
+            "references/contacts.md",
+            "references/first-batch.md",
+            "references/host-business.md",
+            "references/html-report.md",
+            "references/people-background.md",
+            "references/risk-evidence.md",
+            "references/signals.md",
+            "references/trade-records.md",
+            "references/verification.md"
+          ],
           "files": 13,
           "bytes": 112529,
           "sha256": "dbefb1cf2fc0cb2cd4af5a10cf3595621692e47fbab2b37ce4a94820ce8f1468"
@@ -2031,6 +2727,7 @@
           "name": "conflict-resolution",
           "ns": "workplace-cross-team-collaboration-guide--conflict-resolution",
           "path": "skills/workplace-cross-team-collaboration-guide--conflict-resolution",
+          "fileList": [],
           "files": 1,
           "bytes": 1213,
           "sha256": "b5c4e1552c6c858b64f68dbe5a6bd1b765acbddb1f33b8b03d7a394edd6ffb9e"
@@ -2039,6 +2736,7 @@
           "name": "goal-alignment-charter",
           "ns": "workplace-cross-team-collaboration-guide--goal-alignment-charter",
           "path": "skills/workplace-cross-team-collaboration-guide--goal-alignment-charter",
+          "fileList": [],
           "files": 1,
           "bytes": 1124,
           "sha256": "b5160f6d7d5eb9b1632871210ee5a1badd314d135b6610581c4a9c31ccab5484"
@@ -2047,6 +2745,7 @@
           "name": "role-progress-sync",
           "ns": "workplace-cross-team-collaboration-guide--role-progress-sync",
           "path": "skills/workplace-cross-team-collaboration-guide--role-progress-sync",
+          "fileList": [],
           "files": 1,
           "bytes": 1204,
           "sha256": "59baea5964bf6b019ac5b807e6a06e07de68b51d2b14cb2e4c1368cbe4e97b96"
@@ -2128,6 +2827,14 @@
           "name": "ai-content-production",
           "ns": "ai-content-creator-team--ai-content-production",
           "path": "skills/ai-content-creator-team--ai-content-production",
+          "fileList": [
+            "references/content-adaptation-guide.md",
+            "references/creative-strategy-guide.md",
+            "references/generative-polish-guide.md",
+            "references/image-generation-guide.md",
+            "references/video-editing-specs.md",
+            "references/video-generation-guide.md"
+          ],
           "files": 7,
           "bytes": 56283,
           "sha256": "150328d5e5922362c0f24950afac2c1d4d7c3082c188f2fa76ba4831e59d7235"
@@ -2260,6 +2967,12 @@
           "name": "content-monetization-ops",
           "ns": "content-monetization-team--content-monetization-ops",
           "path": "skills/content-monetization-team--content-monetization-ops",
+          "fileList": [
+            "references/credits-system.md",
+            "references/marketplace-operations.md",
+            "references/monetization-models.md",
+            "references/promotion-task-management.md"
+          ],
           "files": 5,
           "bytes": 36040,
           "sha256": "c3ff5e5883e7d8bafe76a8ae9350e90164a25575a762b0d53290d6ca2f4f9a50"
@@ -2368,6 +3081,16 @@
           "name": "forge-orchestrator",
           "ns": "fullstack-forge-team--forge-orchestrator",
           "path": "skills/fullstack-forge-team--forge-orchestrator",
+          "fileList": [
+            "references/growth-retention.md",
+            "references/ops-monitoring.md",
+            "references/platform-selection.md",
+            "references/product-design.md",
+            "references/qa-testing.md",
+            "references/release-deployment.md",
+            "references/requirement-analysis.md",
+            "references/tech-stack-architecture.md"
+          ],
           "files": 9,
           "bytes": 91698,
           "sha256": "1b1e559ff7266f3df2e7b67dc84df968f5abd24a3e7fc28486bf57d2203695b9"
@@ -2647,6 +3370,10 @@
           "name": "opc-asset-ops",
           "ns": "opc-team--opc-asset-ops",
           "path": "skills/opc-team--opc-asset-ops",
+          "fileList": [
+            "references/asset-taxonomy.md",
+            "references/knowledge-structure.md"
+          ],
           "files": 3,
           "bytes": 5918,
           "sha256": "b030736a06973664d389d9e78554deb596d8d84ef8709f03a4807da7740fb4d2"
@@ -2655,6 +3382,11 @@
           "name": "opc-business-model-design",
           "ns": "opc-team--opc-business-model-design",
           "path": "skills/opc-team--opc-business-model-design",
+          "fileList": [
+            "references/bmc-lite.md",
+            "references/lean-canvas-lite.md",
+            "references/pricing-checklist.md"
+          ],
           "files": 4,
           "bytes": 5962,
           "sha256": "2077e9c93ad0b761b5b65c183436800e9ed3049a289efae7e8653e2bb2de7861"
@@ -2663,6 +3395,10 @@
           "name": "opc-conversion-loop",
           "ns": "opc-team--opc-conversion-loop",
           "path": "skills/opc-team--opc-conversion-loop",
+          "fileList": [
+            "references/channel-playbook.md",
+            "references/conversion-patterns.md"
+          ],
           "files": 3,
           "bytes": 5165,
           "sha256": "5a3b4ccf63d52de72c9a040d309a82b6d414f93e82719f076802aac03ae06017"
@@ -2671,6 +3407,11 @@
           "name": "opc-dashboard-review",
           "ns": "opc-team--opc-dashboard-review",
           "path": "skills/opc-team--opc-dashboard-review",
+          "fileList": [
+            "references/review-metrics.md",
+            "references/stop-loss-rules.md",
+            "references/weekly-review-template.md"
+          ],
           "files": 4,
           "bytes": 5189,
           "sha256": "e05fb7123b1a5c5590e59bd9b63973f1ed1a1f0f157717520233291d887e6a53"
@@ -2679,6 +3420,10 @@
           "name": "opc-mvp-designer",
           "ns": "opc-team--opc-mvp-designer",
           "path": "skills/opc-team--opc-mvp-designer",
+          "fileList": [
+            "references/experiment-template.md",
+            "references/mvp-patterns.md"
+          ],
           "files": 3,
           "bytes": 5001,
           "sha256": "969005a259f9e34cbb1eb7425e5f9001af8c74eb04a2795aa21b9c0571114f34"
@@ -2687,6 +3432,11 @@
           "name": "opc-niche-positioning",
           "ns": "opc-team--opc-niche-positioning",
           "path": "skills/opc-team--opc-niche-positioning",
+          "fileList": [
+            "references/market-scan-checklist.md",
+            "references/niche-evaluation.md",
+            "references/positioning-formula.md"
+          ],
           "files": 4,
           "bytes": 15217,
           "sha256": "47add67f7c850372018d404fb26bea12b85c415ec6d28f286dad8ee3f0572e82"
@@ -2695,6 +3445,11 @@
           "name": "opc-orchestrator",
           "ns": "opc-team--opc-orchestrator",
           "path": "skills/opc-team--opc-orchestrator",
+          "fileList": [
+            "references/file-contract.md",
+            "references/interaction-protocol.md",
+            "references/stage-map.md"
+          ],
           "files": 4,
           "bytes": 19410,
           "sha256": "c7dd8b0a31dbd4ac3d49a5430a4cf29e8072a62be5d94dbc72525388e4f8c17b"
@@ -2703,6 +3458,10 @@
           "name": "opc-resource-audit",
           "ns": "opc-team--opc-resource-audit",
           "path": "skills/opc-team--opc-resource-audit",
+          "fileList": [
+            "references/resource-categories.md",
+            "references/scoring-rubric.md"
+          ],
           "files": 3,
           "bytes": 10743,
           "sha256": "4ef445aa9f9d0cf8bc8e749c815f698c575495c34569446897441359a8a6d136"
@@ -2711,6 +3470,10 @@
           "name": "opc-value-proposition",
           "ns": "opc-team--opc-value-proposition",
           "path": "skills/opc-team--opc-value-proposition",
+          "fileList": [
+            "references/messaging-template.md",
+            "references/vpc-lite.md"
+          ],
           "files": 3,
           "bytes": 5909,
           "sha256": "ab3946dbb4f93bf83bbffe92acfafac9ed76fef5cfe4519f2c10bd36536f05c1"

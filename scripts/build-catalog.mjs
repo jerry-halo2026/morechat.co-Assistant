@@ -514,6 +514,9 @@ function copyPackage(kind, id) {
       name: s.name,
       ns,
       path: `skills/${ns}`,
+      // Paths, so an installer knows what else a skill ships. Without them the
+      // catalog says "7 files" and the downloader can only guess SKILL.md.
+      fileList: sfiles.map((f) => f.rel).filter((rel) => rel !== 'SKILL.md').sort(),
       files: sfiles.length,
       bytes,
       sha256: treeSha256(sfiles),
