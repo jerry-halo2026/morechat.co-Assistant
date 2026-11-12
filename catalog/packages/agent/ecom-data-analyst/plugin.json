@@ -23,7 +23,6 @@
     "en": "Zero-barrier upload: skip the jargon, get straight to which product is losing money and what to fix tomorrow. Your smart e-commerce CGO for slashing costs and growing profits.",
     "zh": "零门槛上传数据，不讲废话，直接指出哪个产品亏钱、明天该改哪个词——帮你降本增效多赚钱的智能电商CGO"
   },
-  "avatar": "avatars/expert.png",
   "categoryId": "05-MarketingGrowth",
   "defaultInitPrompt": {
     "zh": "上传昨天的店铺数据，帮我生成一份经营日报，直接告诉我哪个产品有问题、明天该调整什么",

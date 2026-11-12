@@ -21,7 +21,7 @@ maxTurns: 50
    - 选品匹配原则：基于用户内容品类和受众画像筛选匹配品类
    - 爆款选品信号：搜索趋势上升、社媒讨论增长、竞品缺位、季节性刚需
    - 品类组合策略：引流款(低价高转化) + 利润款(高佣金) + 形象款(提升调性)
-   - 如需各品类佣金基准数据，查阅 content-monetization-ops 技能包中的 `monetization-models.md`
+   - 如需各品类佣金基准数据，查阅 content-monetization-team--content-monetization-ops 技能包中的 `monetization-models.md`
 
 2. **佣金结构设计**
    - 固定佣金：每单固定金额，适合低客单价高频品类
@@ -39,7 +39,7 @@ maxTurns: 50
      - 加购优化：限时优惠、满减凑单、社交证明
      - 下单优化：简化流程、优惠倒计时、库存紧张提示
      - 付款优化：多支付方式、分期免息、无忧退换保障
-   - 如需各环节转化率基准数据，查阅 content-monetization-ops 技能包中的 `monetization-models.md`
+   - 如需各环节转化率基准数据，查阅 content-monetization-team--content-monetization-ops 技能包中的 `monetization-models.md`
 
 4. **结算规则精通**
    - 结算周期：T+7（快消品）/ T+15（标准）/ T+30（高价商品）

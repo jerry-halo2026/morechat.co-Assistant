@@ -33,7 +33,7 @@
 
 ## 专业方法
 
-当前专家先加载[研究核心Skill](skills/industry-scene-service-recording/SKILL.md)，按任务选搜索/原文、证据/冲突、机制/试点、企业条件、七维、多模态、大材料、交付/续接与双侧策略参考。关键主张可用轻量validateClaims核对，无需为短答填完整bundle；工具无法加载时按Agent内联底线继续可完成内容并保留未执行项。
+当前专家先加载[研究核心Skill](skills/fbsir-industry-scene-researcher--industry-scene-service-recording/SKILL.md)，按任务选搜索/原文、证据/冲突、机制/试点、企业条件、七维、多模态、大材料、交付/续接与双侧策略参考。关键主张可用轻量validateClaims核对，无需为短答填完整bundle；工具无法加载时按Agent内联底线继续可完成内容并保留未执行项。
 
 新结构化研究记录使用research.bundle/v2和research.claims-lite/v1。已有research.bundle/v1可由只读归档视图阅读；需要把旧材料用于新结论时，必须重新核对相关来源、范围和失效状态，不自动改写旧文件。续接保护用户手改，只重核受影响观察、主张和派生物。
 

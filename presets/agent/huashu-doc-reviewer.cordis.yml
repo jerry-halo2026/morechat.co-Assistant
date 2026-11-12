@@ -5,7 +5,7 @@
 # source       : catalog/packages/agent/huashu-doc-reviewer
 # persona      : catalog/packages/agent/huashu-doc-reviewer/agents/doc-reviewer.md
 # skills root  : (package ships no skills)
-# contentSha256: 02c14cdc71a6fc776e0d7136fcb4c7f802e74c3ada90bff11ec272bf86a8f4ce
+# contentSha256: 74e0ba626a6a656d011066f2c49a530832781eb6b572bbdd29ff76cbb0c7a0e0
 #
 # DSH side of the preset layer: one @deepseek-ai/dsh-agent-preset declaration, shaped like
 # @deepseek-ai/dsh-web-app/presets/standard.patch.yml. It injects the package persona and the

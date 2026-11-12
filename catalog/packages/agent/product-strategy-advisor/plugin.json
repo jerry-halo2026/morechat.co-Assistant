@@ -23,7 +23,6 @@
     "en": "Clarify where your product is going, why it wins, and how it makes money — strategy canvas, business model, pricing, and macro scans, all in plain language.",
     "zh": "帮你把产品「往哪走、凭什么赢、怎么赚钱」一步步想清楚：交付战略画布、商业模式画布和定价方案，数字绝不编。"
   },
-  "avatar": "avatars/expert.png",
   "categoryId": "12-IndustryConsultant",
   "defaultInitPrompt": {
     "en": "I want to set a long-term strategy for my product—walk me through the strategy canvas from vision to moat.",

@@ -1,0 +1,100 @@
+{
+  "schemaVersion": 1,
+  "generator": "morechat-assistant/scripts/fixup-catalog.mjs",
+  "generatedAt": "2026-11-12T13:59:37.817Z",
+  "root": "D:\\dev\\morechat-assistant",
+  "counts": {
+    "packages": 39,
+    "agents": 34,
+    "teams": 5,
+    "imageFiles": 0
+  },
+  "avatarFields": {
+    "packages": 0,
+    "pluginFields": 0,
+    "memberFields": 0,
+    "dangling": 0,
+    "rows": []
+  },
+  "connectorFields": {
+    "packages": 0,
+    "rows": []
+  },
+  "bareSkillRefs": {
+    "occurrences": 0,
+    "files": 0,
+    "keptAsAgentIdentity": 5,
+    "rows": [],
+    "kept": [
+      {
+        "pkg": "agent/long-video-remix",
+        "file": "catalog/packages/agent/long-video-remix/agents/long-video-remix.md",
+        "line": 2,
+        "name": "long-video-remix",
+        "decision": "keep-identity",
+        "ctx": "name: long-video-remix"
+      },
+      {
+        "pkg": "team/opc-team",
+        "file": "catalog/packages/team/opc-team/agents/opc-mvp-designer.md",
+        "line": 2,
+        "name": "opc-mvp-designer",
+        "decision": "keep-identity",
+        "ctx": "name: opc-mvp-designer"
+      },
+      {
+        "pkg": "team/opc-team",
+        "file": "catalog/packages/team/opc-team/agents/opc-team-lead.md",
+        "line": 51,
+        "name": "opc-mvp-designer",
+        "decision": "keep-identity",
+        "ctx": "- `name: \"opc-mvp-designer\", subagent_type: \"opc-mvp-designer\"`"
+      },
+      {
+        "pkg": "team/opc-team",
+        "file": "catalog/packages/team/opc-team/agents/opc-team-lead.md",
+        "line": 51,
+        "name": "opc-mvp-designer",
+        "decision": "keep-identity",
+        "ctx": "- `name: \"opc-mvp-designer\", subagent_type: \"opc-mvp-designer\"`"
+      },
+      {
+        "pkg": "team/opc-team",
+        "file": "catalog/packages/team/opc-team/agents/opc-team-lead.md",
+        "line": 73,
+        "name": "opc-mvp-designer",
+        "decision": "keep-member",
+        "ctx": "| 验证 06 | `opc-mvp-designer` | MVP实验设计师 验真 | 最小验证假设和验证形式 |"
+      }
+    ],
+    "unmatched": []
+  },
+  "badPaths": {
+    "resolvable": 569,
+    "unresolved": 0,
+    "fixable": 0,
+    "rows": []
+  },
+  "brandWords": {
+    "total": 0,
+    "byToken": {
+      "Codex": 0,
+      "WorkBuddy": 0,
+      "CodeBuddy": 0,
+      ".codebuddy": 0
+    },
+    "rows": []
+  },
+  "missingFrontmatter": {
+    "count": 0,
+    "rows": []
+  },
+  "indexIntegrity": {
+    "ok": true,
+    "problems": []
+  },
+  "presetLayer": {
+    "ok": true,
+    "problems": []
+  }
+}

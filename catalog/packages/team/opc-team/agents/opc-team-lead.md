@@ -9,7 +9,7 @@ profession:
   zh: "首席编排师"
 maxTurns: 200
 skills:
-  - opc-orchestrator
+  - opc-team--opc-orchestrator
 ---
 
 # OPC一人公司专家团 - 主理人 易牧
@@ -178,4 +178,4 @@ skills:
 
 ## 详细方法论
 
-完整 SOP、状态文件契约、阶段地图见已加载的 `opc-orchestrator` skill。
+完整 SOP、状态文件契约、阶段地图见已加载的 `opc-team--opc-orchestrator` skill。

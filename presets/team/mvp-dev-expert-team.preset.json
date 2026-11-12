@@ -26,8 +26,10 @@
       "mvp-dev-expert-team-devops"
     ]
   },
-  "requires": [],
+  "requires": [
+    "mcp:ima-mcp"
+  ],
   "sourcePackage": "catalog/packages/team/mvp-dev-expert-team",
   "packageVersion": "2.1.1",
-  "contentSha256": "eaeae06f2b821fe0bb36f669c3f6d7c7e80bfd018332ab3386a60f859e2a780b"
+  "contentSha256": "8c4110d6c363ab0f2b9dc7de4f07a216f10d916598064d6fbedc5947590aacc1"
 }

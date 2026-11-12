@@ -5,7 +5,7 @@
 ## 安装完整 ZIP
 
 1. 解压得到 `long-video-remix/`；保留 SKILL.md、references、assets、scripts、tests、examples、agents 和 visual-reference 全部目录。
-2. 将完整文件夹放入执行工具的本地技能目录：Claude Code 为 `~/.claude/skills/`，Codex 为 `~/.agents/skills/`；按实际工具已配置的技能目录安装。
+2. 将完整文件夹放入执行工具的本地技能目录：Claude Code 为 `~/.claude/skills/`，morechat 为 `~/.agents/skills/`；按实际工具已配置的技能目录安装。
 3. 更新已有副本时，先备份，再替换完整文件夹。视频项目、源媒体与制作数据放在独立项目目录。
 4. 使用时自行提供当前项目的源素材，项目数据和媒体放在安装目录之外。
 

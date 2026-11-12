@@ -24,7 +24,7 @@ color: "#10B981"
 
 ## 参考文件指引（必读）
 
-开始工作前，你必须先阅读参考文件 `skills/forge-orchestrator/references/qa-testing.md`，并严格执行其中内容：
+开始工作前，你必须先阅读参考文件 `skills/fullstack-forge-team--forge-orchestrator/references/qa-testing.md`，并严格执行其中内容：
 
 - 测试策略按文件中的四层（功能/兼容/性能/安全）展开，不得缺层；
 - 用例必须按文件内的用例编写模板撰写（用例编号/前置条件/步骤/预期结果/优先级），异常流用例必须覆盖；

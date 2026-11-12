@@ -427,6 +427,12 @@ function copyPackage(kind, id) {
   // in upstream/. The catalog copy only has to be valid JSON with real paths.
   const pluginObj = JSON.parse(convertedPlugin);
   pluginObj.skills = namespacedSkills;
+  // The product draws avatars from the agent id (Aora) and ships no raster files, so
+  // a surviving vatar path points at nothing.
+  stripAvatarFields(pluginObj);
+  // A workerbuddy connector id means nothing here; keep the requirement as a plain
+  // mcp:<name> entry below and drop the vendor pointer.
+  stripConnectors(pluginObj);
   const finalPlugin = JSON.stringify(pluginObj, null, 2) + '\n';  if (process.env.DEBUG_PLUGIN) console.error('DBG', kind, id, 'skills', skills.length, 'ns', namespacedSkills.slice(0,2));
   fs.writeFileSync(path.join(catalogDir, 'plugin.json'), finalPlugin, 'utf8');
   outFiles.push({ rel: 'plugin.json', abs: path.join(catalogDir, 'plugin.json') });
@@ -548,3 +554,43 @@ console.log('---');
 console.log(`packages=${packages.length} agents=${report.agents} teams=${report.teams} skills=${report.skills} files=${report.files}`);
 console.log(`bytes=${report.bytes} (${(report.bytes / 1048576).toFixed(2)} MiB)  sourceBytes(incl avatars)=${report.srcBytes} (${(report.srcBytes / 1048576).toFixed(2)} MiB)`);
 console.log(`duplicate skill names: ${dupNames.map((d) => `${d.name}x${d.count}`).join(', ') || 'none'}`);
+
+/**
+ * Removes `avatar` and every `members[].avatar`.
+ *
+ * The content repository ships manifests only - `avatars/` is never copied - so a
+ * remaining path points at a file that does not exist in the package. The product
+ * derives an Aora face from the agent id instead.
+ */
+function stripAvatarFields(plugin) {
+  delete plugin.avatar;
+  if (Array.isArray(plugin.members)) {
+    for (const member of plugin.members) {
+      if (member && typeof member === 'object') delete member.avatar;
+    }
+  }
+}
+
+/**
+ * Removes the upstream connector declarations and returns their names.
+ *
+ * `dependencies.connectors` / `connectorIds` name a workerbuddy-side integration.
+ * The requirement is real (the package expects that capability), the identifier is
+ * not, so the name travels to `requires` as `mcp:<name>` and the field goes away.
+ */
+function stripConnectors(plugin) {
+  const names = [];
+  const collect = (value) => {
+    if (Array.isArray(value)) {
+      for (const entry of value) if (typeof entry === 'string' && entry.trim()) names.push(entry.trim());
+    }
+  };
+  if (plugin.dependencies && typeof plugin.dependencies === 'object') {
+    collect(plugin.dependencies.connectors);
+    delete plugin.dependencies.connectors;
+    if (Object.keys(plugin.dependencies).length === 0) delete plugin.dependencies;
+  }
+  collect(plugin.connectorIds);
+  delete plugin.connectorIds;
+  return names;
+}

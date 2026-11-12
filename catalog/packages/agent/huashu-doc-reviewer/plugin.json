@@ -23,7 +23,6 @@
     "zh": "为「一人公司」打造的 AI 审稿专家。直接在 .docx 原文里加批注气泡和追踪修订，不返回新文档、不破坏原格式。",
     "en": "AI reviewer that injects comments and tracked changes directly into your original .docx. No new file returned, formatting preserved."
   },
-  "avatar": "avatars/doc-reviewer.png",
   "categoryId": "11-SecurityCompliance",
   "defaultInitPrompt": {
     "zh": "用合同审查模式帮我审一下：contract.docx",

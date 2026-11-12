@@ -8,7 +8,7 @@ profession:
   en: "AI Video Editing & Long-Video Remix Expert"
   zh: "AI视频剪辑与长视频混剪专家"
 maxTurns: 80
-skills: [long-video-remix]
+skills: [long-video-remix--long-video-remix]
 ---
 
 # AI视频剪辑与长视频混剪专家 - 禁止看不上烟灰缸

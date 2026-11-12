@@ -41,7 +41,6 @@
     "en": "An 8-role full-stack delivery team that builds websites, apps, iOS & HarmonyOS apps, mini programs, and software systems end to end — from requirement and platform selection to product, engineering, testing, release, DevOps, and growth.",
     "zh": "8位专业角色覆盖全栈系统交付全生命周期：网站、App、iOS与鸿蒙应用、微信小程序、桌面软件等，从需求与平台选型，到产品、研发、测试、上线、运维、运营一体化智造交付。"
   },
-  "avatar": "avatars/team.png",
   "categoryId": "02-Engineering",
   "defaultInitPrompt": {
     "zh": "帮我把需求做成网站/App/小程序并交付上线",
@@ -95,7 +94,6 @@
         "en": "Team Lead & Orchestrator",
         "zh": "主理人"
       },
-      "avatar": "avatars/forge-lead.png",
       "role": "lead"
     },
     {
@@ -108,7 +106,6 @@
         "en": "Requirement & Platform Analyst",
         "zh": "需求与平台选型师"
       },
-      "avatar": "avatars/product-scout.png",
       "role": "member"
     },
     {
@@ -121,7 +118,6 @@
         "en": "Product Manager",
         "zh": "产品经理"
       },
-      "avatar": "avatars/product-manager.png",
       "role": "member"
     },
     {
@@ -134,7 +130,6 @@
         "en": "Full-Stack Engineer",
         "zh": "全栈研发工程师"
       },
-      "avatar": "avatars/fullstack-engineer.png",
       "role": "member"
     },
     {
@@ -147,7 +142,6 @@
         "en": "QA & Test Engineer",
         "zh": "测试工程师"
       },
-      "avatar": "avatars/qa-tester.png",
       "role": "member"
     },
     {
@@ -160,7 +154,6 @@
         "en": "Release & DevOps Manager",
         "zh": "发布交付工程师"
       },
-      "avatar": "avatars/release-manager.png",
       "role": "member"
     },
     {
@@ -173,7 +166,6 @@
         "en": "Operations & SRE",
         "zh": "运维保障工程师"
       },
-      "avatar": "avatars/ops-sre.png",
       "role": "member"
     },
     {
@@ -186,7 +178,6 @@
         "en": "Growth & Operations Specialist",
         "zh": "增长运营专家"
       },
-      "avatar": "avatars/growth-operator.png",
       "role": "member"
     }
   ]

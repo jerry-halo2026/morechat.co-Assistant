@@ -5,7 +5,7 @@
 # source       : catalog/packages/agent/koc-ops-expert
 # persona      : catalog/packages/agent/koc-ops-expert/agents/koc-ops-expert.md
 # skills root  : catalog/packages/agent/koc-ops-expert/skills (6 bundle(s))
-# contentSha256: 44cb218af8d0b991fd89d49c3655bfad42e4a1927c76160137d58072cf7332da
+# contentSha256: c3c378bc68edf64b4007499eea4d145500dca272d06e4d44636a7c6e2b85cbed
 #
 # DSH side of the preset layer: one @deepseek-ai/dsh-agent-preset declaration, shaped like
 # @deepseek-ai/dsh-web-app/presets/standard.patch.yml. It injects the package persona and the

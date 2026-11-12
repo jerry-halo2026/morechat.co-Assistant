@@ -27,7 +27,6 @@
     "zh": "从业务难题出发，跨行业找案例、核验证据、拆解智能原生机制，把图文影音转成适合你的行动方案。",
     "en": "Find useful cases across industries, check the evidence, and explain how AI changes the work. Turn documents, images and audiovisual material into actions suited to your business."
   },
-  "avatar": "avatars/expert.png",
   "categoryId": "12-IndustryConsultant",
   "defaultInitPrompt": {
     "zh": "我们做【业务】，想解决【问题】。请找值得借鉴的智能原生案例，包含同业和跨行业思路，比较做法、成效依据与适用条件，建议先试哪一条。",

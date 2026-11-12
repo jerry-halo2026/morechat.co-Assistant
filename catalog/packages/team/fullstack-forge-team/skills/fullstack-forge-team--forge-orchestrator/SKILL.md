@@ -14,7 +14,7 @@ allowed-tools-dsh: Read,Bash
 ## 目录结构
 
 ```
-skills/forge-orchestrator/
+skills/fullstack-forge-team--forge-orchestrator/
 ├── SKILL.md                    # 本文件：协调器主流程
 └── references/                 # 专业参考库（成员开工前必读对应文件）
     ├── requirement-analysis.md      # 需求分析方法论

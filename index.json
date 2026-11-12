@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "generator": "morechat-assistant/scripts/build-catalog.mjs",
-  "generatedAt": "2026-11-10T09:00:36.244Z",
+  "generatedAt": "2026-11-12T13:59:29.288Z",
   "source": {
     "catalogRoot": "catalog",
     "upstreamRoot": "upstream",
@@ -15,7 +15,7 @@
     "teams": 5,
     "skills": 113,
     "files": 976,
-    "bytes": 14956698,
+    "bytes": 14959548,
     "sourceBytes": 14933887,
     "duplicateSkillNames": [
       {
@@ -61,8 +61,8 @@
       "version": "1.0.2",
       "path": "packages/agent/ai-engineer",
       "files": 44,
-      "bytes": 224162,
-      "sha256": "b60157c27498dc65ee12231a44cca1f21569af4dd8f6d7ad19c3f5559affcc5a",
+      "bytes": 224180,
+      "sha256": "4a90188f693a24c8f52a77ac8420ca589924a9f66c27b0ca00992dc03e68edea",
       "skills": [
         {
           "name": "agent-browser-core",
@@ -212,8 +212,8 @@
       "version": "1.0.1",
       "path": "packages/agent/backend-architect",
       "files": 112,
-      "bytes": 5832113,
-      "sha256": "6ccec3214125b53660d26ce3620239e76ab2da2299b3ba692050f74643a92841",
+      "bytes": 5832117,
+      "sha256": "e9290463d43cde9128a4bbbcb1f811d4d0a5118f8036a244baf7f8e4abedb1d2",
       "skills": [
         {
           "name": "frontend-dev",
@@ -268,8 +268,8 @@
       "version": "1.1.1",
       "path": "packages/agent/blm-strategy-advisor",
       "files": 5,
-      "bytes": 49037,
-      "sha256": "cfad2b5bb291d7de4be8cf64ad7fa928b73d455bc78913f71f70f44fee7f5138",
+      "bytes": 49077,
+      "sha256": "f85d2ae83ce7f94c6b6372fc3e62741f66cf9d15d1c10729d645dfc474c13579",
       "skills": [
         {
           "name": "blm-coverage-checker",
@@ -315,8 +315,8 @@
       "version": "1.0.0",
       "path": "packages/agent/data-analysis",
       "files": 19,
-      "bytes": 102171,
-      "sha256": "0f4fd1efce0825b130da0bf17da2a923d7b2ff5f31538fbf1e67422c57d2f354",
+      "bytes": 102141,
+      "sha256": "fbbcdaeca8f7a9c2010f2f99da3067d0e9baefeae7fa6c6ad82a5e93494d16cc",
       "skills": [
         {
           "name": "data-analysis-cn",
@@ -362,8 +362,8 @@
       "version": "1.0.39",
       "path": "packages/agent/designkit-ugc-commerce",
       "files": 5,
-      "bytes": 40833,
-      "sha256": "d8bd6c725780ea5d835928648c952d7dd9d670aaaa2e310a931a8e824bb6ff18",
+      "bytes": 40943,
+      "sha256": "7de27d712e5c1fbbba1a4fe80709ab99031bf8addb2a559f44aff9510d704e7b",
       "skills": [
         {
           "name": "ugc-commerce",
@@ -407,8 +407,8 @@
       "version": "1.0.1",
       "path": "packages/agent/douyin-live-ad-expert",
       "files": 15,
-      "bytes": 74627,
-      "sha256": "c38f4644bcca0c990b38dadeb2321766cb34d104fddf88217e05f5252b3eccee",
+      "bytes": 74938,
+      "sha256": "d90bcdb6cecd7441a45765b10665dde5ce19fa09668b68f8de0f0701ccc9abd1",
       "skills": [
         {
           "name": "live-ad-analyze",
@@ -484,8 +484,8 @@
       "version": "2.0.0",
       "path": "packages/agent/douyin-operation-expert",
       "files": 9,
-      "bytes": 122700,
-      "sha256": "f187c3c99758397fbd0b46b33664aa18fa1858082ba4ebcca6d8758d5e989d13",
+      "bytes": 122716,
+      "sha256": "12c7ee94427ad3fb60a3509df33efbed963431e36eb26bf802cbb0ed0ecfef7e",
       "skills": [
         {
           "name": "douyin-precision-ops",
@@ -539,8 +539,8 @@
       "version": "1.0.2",
       "path": "packages/agent/douyin-strategist",
       "files": 13,
-      "bytes": 68658,
-      "sha256": "897d8e5fd2a81b762ab06b34fc9364cc98904d2a3c686024a5302cd6602236b5",
+      "bytes": 68662,
+      "sha256": "356ca40dc898d10f8b3170b2f74f08d45f1d9ee84e4c81e461b5baf3707be532",
       "skills": [
         {
           "name": "anti-distill",
@@ -592,8 +592,8 @@
       "version": "1.0.0",
       "path": "packages/agent/douyin-viral-content",
       "files": 49,
-      "bytes": 418526,
-      "sha256": "9804ca326a6c5645c370fdb68af4c088b7b2676970fbfe4cfb9b501b54927035",
+      "bytes": 419394,
+      "sha256": "d1687c5bb2b7a9d70457693f4be0e23162d24e74399ebfc479564c3562381fa4",
       "skills": [
         {
           "name": "douyin-ai-feed",
@@ -695,8 +695,8 @@
       "version": "1.0.0",
       "path": "packages/agent/ecom-data-analyst",
       "files": 3,
-      "bytes": 15324,
-      "sha256": "9bbe49453cb8a0917a4725aa122883c163103df363138ef4133575a1f6bfb43d",
+      "bytes": 15290,
+      "sha256": "f86cff5b5a9139dbd7fcb6571d363e230a31a49c4ac252bee5ca5945bcb96e9a",
       "skills": [],
       "requires": [],
       "tags": [
@@ -731,8 +731,8 @@
       "version": "2026.11.3",
       "path": "packages/agent/fbsir-industry-scene-researcher",
       "files": 50,
-      "bytes": 360450,
-      "sha256": "ae6ca3f6758fd914df6aba24fb7a7227c44a34068dd54106026420b9fa4e739b",
+      "bytes": 360954,
+      "sha256": "4bc26c9ba2c98c3ab9503bd7767b0a3beb3ab058b1464af3583ebf7cd480f84c",
       "skills": [
         {
           "name": "industry-scene-service-recording",
@@ -778,8 +778,8 @@
       "version": "1.0.0",
       "path": "packages/agent/finance",
       "files": 12,
-      "bytes": 118297,
-      "sha256": "38c0a93b308594c99104fa1ff46d25f7bbb72e4c044e3de39dcca83daefda4d5",
+      "bytes": 118369,
+      "sha256": "3b4a15d81c2ee4b79acb0d48806ee30dfadcd30e77d5916d2c760c85e8150edb",
       "skills": [
         {
           "name": "audit-support",
@@ -858,8 +858,8 @@
       "version": "1.0.0",
       "path": "packages/agent/flywheel-koc-matrix-recruiter",
       "files": 8,
-      "bytes": 4444,
-      "sha256": "72b0a4399c655d2cce7c4711cb7e0615de0204b84e95b02893091231331212fc",
+      "bytes": 4410,
+      "sha256": "70880b0b6b58fd06b3aa5342c7b7c156b4ba33a80f4eb71217240a676de466c8",
       "skills": [
         {
           "name": "flywheel-koc-matrix-recruiter-core",
@@ -905,8 +905,8 @@
       "version": "1.0.1",
       "path": "packages/agent/huashu-doc-reviewer",
       "files": 3,
-      "bytes": 10527,
-      "sha256": "02c14cdc71a6fc776e0d7136fcb4c7f802e74c3ada90bff11ec272bf86a8f4ce",
+      "bytes": 10487,
+      "sha256": "74e0ba626a6a656d011066f2c49a530832781eb6b572bbdd29ff76cbb0c7a0e0",
       "skills": [],
       "requires": [],
       "tags": [
@@ -941,8 +941,8 @@
       "version": "1.0.2",
       "path": "packages/agent/jifan-lapian-fuke",
       "files": 21,
-      "bytes": 42528,
-      "sha256": "f3edd45c01d03306ebe9239cebbbb03eb570314e9a60d001757fd73aa1eec957",
+      "bytes": 42665,
+      "sha256": "4804f9574e5b2118bf5e5134fd39a1d1de13a64d6bf5db31fad00751ab2bfcba",
       "skills": [
         {
           "name": "jifan-lapian-chaifen",
@@ -1004,8 +1004,8 @@
       "version": "1.0.0",
       "path": "packages/agent/koc-ops-expert",
       "files": 30,
-      "bytes": 444760,
-      "sha256": "44cb218af8d0b991fd89d49c3655bfad42e4a1927c76160137d58072cf7332da",
+      "bytes": 445048,
+      "sha256": "c3c378bc68edf64b4007499eea4d145500dca272d06e4d44636a7c6e2b85cbed",
       "skills": [
         {
           "name": "koc-compliance-guard",
@@ -1091,8 +1091,8 @@
       "version": "1.0.1",
       "path": "packages/agent/life-value-advisor",
       "files": 38,
-      "bytes": 1831684,
-      "sha256": "63896abba991bdbd5c4afd90ca4e8b661121f1363c3931538aace2dbd076bb87",
+      "bytes": 1831650,
+      "sha256": "44d15dc67dd9b6f8be0b27280e1ce98d31bad9e1e9b8b01f173688c7b36b70e7",
       "skills": [],
       "requires": [],
       "tags": [
@@ -1127,8 +1127,8 @@
       "version": "1.0.2",
       "path": "packages/agent/livestream-ecommerce-coach",
       "files": 30,
-      "bytes": 391029,
-      "sha256": "941ad33f42a12df341b46cb67fcf1ef476c45a41ff609edb276a373a68932375",
+      "bytes": 390451,
+      "sha256": "cd7cc0af200b8d792faf3d844966cd68e9b3682df9986907889a7841ce65fe11",
       "skills": [
         {
           "name": "ab-test-setup",
@@ -1231,8 +1231,8 @@
           "ns": "livestream-ecommerce-coach--marketing-skills",
           "path": "skills/livestream-ecommerce-coach--marketing-skills",
           "files": 2,
-          "bytes": 3699,
-          "sha256": "a6663a84c0d9f543f1a6eed09da5fbe9f707ac13d956b3bcc22e1268fcaddcf1"
+          "bytes": 3099,
+          "sha256": "b6e7896d77bd5c064cc40abc3ac834395765d3dccc025b6a6020a8f3097072c6"
         },
         {
           "name": "onboarding-cro",
@@ -1364,16 +1364,16 @@
       "version": "2026.11.5",
       "path": "packages/agent/long-manuscript-expert",
       "files": 74,
-      "bytes": 766655,
-      "sha256": "aebd490167d22491a35d43c66f4d572dc967c11ddd9b61ad7e3f2e1cbe58b07d",
+      "bytes": 767104,
+      "sha256": "0cf43ed3fdd2a1c4b1327fd147dbeec6116416f952fb0c1b4f639f1a5a997bbd",
       "skills": [
         {
           "name": "long-manuscript-core",
           "ns": "long-manuscript-expert--long-manuscript-core",
           "path": "skills/long-manuscript-expert--long-manuscript-core",
           "files": 65,
-          "bytes": 722697,
-          "sha256": "805ec1bdd4818a91aac4688d4fc54393d36dc80a40aec348262654d9d606baa3"
+          "bytes": 722901,
+          "sha256": "c12f98575bef412da140f52201674b375318adbce7d330e7032dfb3e53d83573"
         }
       ],
       "requires": [
@@ -1411,16 +1411,16 @@
       "version": "1.5.1",
       "path": "packages/agent/long-video-remix",
       "files": 170,
-      "bytes": 2075883,
-      "sha256": "ad0d0743c9991972da1e4d1e870a6643d44fea3b193fbc4ffb88db24ff93eb81",
+      "bytes": 2076266,
+      "sha256": "087b90451c5945f941349f3b56cac31765e30e1990552d9380ca7d660b41ff48",
       "skills": [
         {
           "name": "long-video-remix",
           "ns": "long-video-remix--long-video-remix",
           "path": "skills/long-video-remix--long-video-remix",
           "files": 167,
-          "bytes": 2046645,
-          "sha256": "4c48c469185bd92e1c8f87506631b9e5e4d0321af04fad9ee5b267bba712157a"
+          "bytes": 2047044,
+          "sha256": "65c7553ef34149f7e53a60aadf430e04e4ca9f165acde36294a266fcce29c1bc"
         }
       ],
       "requires": [
@@ -1458,8 +1458,8 @@
       "version": "1.0.0",
       "path": "packages/agent/nishu-ip-brain",
       "files": 3,
-      "bytes": 12784,
-      "sha256": "280711b5e2500fb069b5970ff2a50f80476a550360cb5fe41bb896444ccef90e",
+      "bytes": 12750,
+      "sha256": "eede1ed43fdc94c0468ed390cb930af4d65b093a617ef1769f520736bb953fb6",
       "skills": [],
       "requires": [],
       "tags": [
@@ -1494,8 +1494,8 @@
       "version": "1.0.0",
       "path": "packages/agent/omnichannel-ads-expert",
       "files": 10,
-      "bytes": 45156,
-      "sha256": "3f4334ed15ae011c1d00691d77f0c21a64eeaa17ecf7ccca9cb68236faa074e9",
+      "bytes": 45339,
+      "sha256": "1e596d2526ae4a33c4a3f818a9f5654e760c95ec5397dbc476f074b908ccca9f",
       "skills": [
         {
           "name": "omnichannel-ads-playbook",
@@ -1539,8 +1539,8 @@
       "version": "1.6.6",
       "path": "packages/agent/performance-payroll-employment-risk-expert",
       "files": 6,
-      "bytes": 27272,
-      "sha256": "d43b26eecfc0c426cf9ecf1548d301d1ca37a99fe9b6469b23f6f24c9eb96316",
+      "bytes": 27212,
+      "sha256": "ffdc49c83e90abf3c9e280f39b9bd2e1660d062809fa08d662a3ec5817c0e1d6",
       "skills": [
         {
           "name": "performance-payroll-risk-analysis",
@@ -1551,7 +1551,9 @@
           "sha256": "6563fb8913bc8d7cd1c0f84eafd37fe10c5252dece2ef98129026230be4c8a7b"
         }
       ],
-      "requires": [],
+      "requires": [
+        "mcp:jiandaoyun"
+      ],
       "tags": [
         {
           "en": "Performance",
@@ -1584,8 +1586,8 @@
       "version": "1.0.0",
       "path": "packages/agent/photo-composition-expert",
       "files": 3,
-      "bytes": 10035,
-      "sha256": "86849ba2c3a37bfa03f089fbfa8b850ef8c038befcd12a95493bd60286beac66",
+      "bytes": 10001,
+      "sha256": "ef8201223fd59ccffff772f951df6082fc937b83b0c3f48f7cad702e802f2b4b",
       "skills": [],
       "requires": [],
       "tags": [
@@ -1620,8 +1622,8 @@
       "version": "1.0.0",
       "path": "packages/agent/product-management",
       "files": 12,
-      "bytes": 122007,
-      "sha256": "4c5aa8786a0eac478b884f112b7483daa51deb5ac1744e86e23a6b9d195a1ff2",
+      "bytes": 122147,
+      "sha256": "f5753e841a12c69891e7b2ca064a3a07fa5c160b416eb442ba7ca03cbcd568d4",
       "skills": [
         {
           "name": "competitive-analysis",
@@ -1700,8 +1702,8 @@
       "version": "1.19.25",
       "path": "packages/agent/product-pm-expert",
       "files": 14,
-      "bytes": 321300,
-      "sha256": "6d62b2555189ca7f7a3a23007c74463f445ae56c649f8ccfc7afe9924ef5e98e",
+      "bytes": 321267,
+      "sha256": "a219d6cec0c6ed932e3dcc6390ec197c5b2ca39a5fea8eb10cc6bbd405595dc4",
       "skills": [
         {
           "name": "product-pm",
@@ -1745,8 +1747,8 @@
       "version": "1.1.1",
       "path": "packages/agent/product-strategy-advisor",
       "files": 19,
-      "bytes": 36341,
-      "sha256": "8dcf63508da16a5922ee01bc78f0e8b5dfed07b1a936f5082df2bf4117e2cd90",
+      "bytes": 36307,
+      "sha256": "f0a3fe8bd6cf270579030d152b7bb69da42fde9d4c56db2c3cec85d200d4d033",
       "skills": [],
       "requires": [],
       "tags": [
@@ -1781,8 +1783,8 @@
       "version": "1.0.0",
       "path": "packages/agent/rea-reverse-engineer",
       "files": 8,
-      "bytes": 24161,
-      "sha256": "10e7e867565b5143f51a81eb1bae40961ae5ba558938bf51b9e5ea994e2edbb9",
+      "bytes": 24171,
+      "sha256": "887b367b76dc0b2d4317f8f4f1c11bc8473925f635eb450ff08a5b5a27a52c85",
       "skills": [
         {
           "name": "rea-analysis",
@@ -1826,16 +1828,16 @@
       "version": "2.0.0",
       "path": "packages/agent/resume-match-expert",
       "files": 11,
-      "bytes": 105496,
-      "sha256": "c768135843479f2132912d00f83b06f69b9cb20eb04e7d6744cb51ce269f9e4f",
+      "bytes": 105722,
+      "sha256": "2d40341aaa297890fa027755408ec93cafb5b76d1d6113d6bf807bb20b6482d0",
       "skills": [
         {
           "name": "resume-match",
           "ns": "resume-match-expert--resume-match",
           "path": "skills/resume-match-expert--resume-match",
           "files": 8,
-          "bytes": 80857,
-          "sha256": "68724e99a63f9e61c40a70192833aa65d4498b83e2f22d0bead7b0d9374574c2"
+          "bytes": 80878,
+          "sha256": "47506a0c5285006002eb024f99fc02807aafea0af235981313e592672247b987"
         }
       ],
       "requires": [
@@ -1873,8 +1875,8 @@
       "version": "1.0.0",
       "path": "packages/agent/short-video-script-writer",
       "files": 5,
-      "bytes": 18226,
-      "sha256": "fddcb50b5777683fe93e81282143329aef759c880a1a9f0721deec778050e053",
+      "bytes": 18246,
+      "sha256": "004bbdabf8e6417a7a6347e456e5b11e1a15be4d771ac1f10cdd1363ce384ab2",
       "skills": [
         {
           "name": "short-video-script-templates",
@@ -1918,8 +1920,8 @@
       "version": "1.0.0",
       "path": "packages/agent/tiktok-growth-expert",
       "files": 12,
-      "bytes": 41315,
-      "sha256": "8b0592062f5629071e2ee6804873db00fdc516844d9f5a6fb7c35f380e58abc8",
+      "bytes": 41765,
+      "sha256": "0b265e774de0dbe48e7b086edbe79805e52c6cf27078cff97058cba015032f86",
       "skills": [
         {
           "name": "tiktok-growth-playbook",
@@ -1963,8 +1965,8 @@
       "version": "0.1.5",
       "path": "packages/agent/trade-market-analyst",
       "files": 19,
-      "bytes": 148964,
-      "sha256": "fc7ee388a98d2031124ff4d90575cfedd421a911c3a8e8e95b5d6a02aff54059",
+      "bytes": 149142,
+      "sha256": "79c8587c48226b3670f6f0c954760ad24052788568c3eedbb9672ae86a7519bc",
       "skills": [
         {
           "name": "trade-data-router",
@@ -1991,7 +1993,9 @@
           "sha256": "dbefb1cf2fc0cb2cd4af5a10cf3595621692e47fbab2b37ce4a94820ce8f1468"
         }
       ],
-      "requires": [],
+      "requires": [
+        "mcp:oc_f6675393645e7c78"
+      ],
       "tags": [
         {
           "zh": "市场分析",
@@ -2024,32 +2028,32 @@
       "version": "0.1.0",
       "path": "packages/agent/workplace-cross-team-collaboration-guide",
       "files": 9,
-      "bytes": 21095,
-      "sha256": "5b3a54fdb9d57606d9b2726e8d9de0850e5336c6ff29014e5f9a89873c25cad0",
+      "bytes": 21480,
+      "sha256": "fd94ed08f6b1a10f4d219d97b8dec02e8610389547526c736d83c2d5745dbb08",
       "skills": [
         {
           "name": "conflict-resolution",
           "ns": "workplace-cross-team-collaboration-guide--conflict-resolution",
           "path": "skills/workplace-cross-team-collaboration-guide--conflict-resolution",
           "files": 1,
-          "bytes": 1213,
-          "sha256": "b5c4e1552c6c858b64f68dbe5a6bd1b765acbddb1f33b8b03d7a394edd6ffb9e"
+          "bytes": 1348,
+          "sha256": "f61266a0e93cdeeb80c5932092b41aff4123d394f09e95e9ace1d508fd55e48d"
         },
         {
           "name": "goal-alignment-charter",
           "ns": "workplace-cross-team-collaboration-guide--goal-alignment-charter",
           "path": "skills/workplace-cross-team-collaboration-guide--goal-alignment-charter",
           "files": 1,
-          "bytes": 1124,
-          "sha256": "b5160f6d7d5eb9b1632871210ee5a1badd314d135b6610581c4a9c31ccab5484"
+          "bytes": 1265,
+          "sha256": "cedd2331e7df033383d8a10bf00d17bc498ad8c0351f167d144c73f1890b15e4"
         },
         {
           "name": "role-progress-sync",
           "ns": "workplace-cross-team-collaboration-guide--role-progress-sync",
           "path": "skills/workplace-cross-team-collaboration-guide--role-progress-sync",
           "files": 1,
-          "bytes": 1204,
-          "sha256": "59baea5964bf6b019ac5b807e6a06e07de68b51d2b14cb2e4c1368cbe4e97b96"
+          "bytes": 1341,
+          "sha256": "6fa63584341c6e4ef7709f2cd1b1f6f1f37c5926368a89f43807b53223959aef"
         }
       ],
       "requires": [],
@@ -2085,8 +2089,8 @@
       "version": "1.5.1",
       "path": "packages/agent/workspace-builder",
       "files": 2,
-      "bytes": 26104,
-      "sha256": "9cedefa10e001a1c21a815b3123428b5e771e531600e19ef8f3d2ad729ceab80",
+      "bytes": 26070,
+      "sha256": "60576a34e30689a2f55a7937c93b53f6b040c057067aeaccae8c11014e50a44e",
       "skills": [],
       "requires": [],
       "tags": [
@@ -2121,8 +2125,8 @@
       "version": "1.0.0",
       "path": "packages/team/ai-content-creator-team",
       "files": 16,
-      "bytes": 146125,
-      "sha256": "47e4369d5d1ffdf18ea98c2470ba4d052cefd6efde549622b1811c4d2ab37c7a",
+      "bytes": 145814,
+      "sha256": "3f1fc0ef9dd0c8a8d355fdf32cc8d848abd24da1d16df24e25ea08a3e4126850",
       "skills": [
         {
           "name": "ai-content-production",
@@ -2253,8 +2257,8 @@
       "version": "1.0.0",
       "path": "packages/team/content-monetization-team",
       "files": 12,
-      "bytes": 78276,
-      "sha256": "f472640dd042b03cc066b4144f18136ca0bc7ff0e36e4eb2675465145ae0040b",
+      "bytes": 78234,
+      "sha256": "de432317d8dad154c05ceae73e18437e7a811b8fd2b16728926deba37b401c7e",
       "skills": [
         {
           "name": "content-monetization-ops",
@@ -2361,16 +2365,16 @@
       "version": "2.4.1",
       "path": "packages/team/fullstack-forge-team",
       "files": 19,
-      "bytes": 155201,
-      "sha256": "67bc4bf9494455e259231c5310aa55dc2497a730cdf010f41f21f57f3a3a6db5",
+      "bytes": 155461,
+      "sha256": "cd2a742468e7f0a3d697432b718d2a0bff4468e1dcb616b1e188e9ed893ce286",
       "skills": [
         {
           "name": "forge-orchestrator",
           "ns": "fullstack-forge-team--forge-orchestrator",
           "path": "skills/fullstack-forge-team--forge-orchestrator",
           "files": 9,
-          "bytes": 91698,
-          "sha256": "1b1e559ff7266f3df2e7b67dc84df968f5abd24a3e7fc28486bf57d2203695b9"
+          "bytes": 91720,
+          "sha256": "46efaa25c23f6c2db94ead0747438fd9556574e533568ec0cb701c51b6e46496"
         }
       ],
       "requires": [],
@@ -2505,10 +2509,12 @@
       "version": "2.1.1",
       "path": "packages/team/mvp-dev-expert-team",
       "files": 44,
-      "bytes": 510589,
-      "sha256": "eaeae06f2b821fe0bb36f669c3f6d7c7e80bfd018332ab3386a60f859e2a780b",
+      "bytes": 509990,
+      "sha256": "8c4110d6c363ab0f2b9dc7de4f07a216f10d916598064d6fbedc5947590aacc1",
       "skills": [],
-      "requires": [],
+      "requires": [
+        "mcp:ima-mcp"
+      ],
       "tags": [
         {
           "en": "MVP Development",
@@ -2640,80 +2646,80 @@
       "version": "1.0.0",
       "path": "packages/team/opc-team",
       "files": 42,
-      "bytes": 111843,
-      "sha256": "7aebfe4d958ffca60665d156694e39766e508bddae63a2fcbcf506379f0a18b2",
+      "bytes": 111568,
+      "sha256": "7485d319e70782dff0458ac365c8f57b1faac88bbd47461dcd31d96834c10815",
       "skills": [
         {
           "name": "opc-asset-ops",
           "ns": "opc-team--opc-asset-ops",
           "path": "skills/opc-team--opc-asset-ops",
           "files": 3,
-          "bytes": 5918,
-          "sha256": "b030736a06973664d389d9e78554deb596d8d84ef8709f03a4807da7740fb4d2"
+          "bytes": 5922,
+          "sha256": "f6e823466b4a4e62af31967b9e933151921267bcd7e263e431ee2769c9f3d9ee"
         },
         {
           "name": "opc-business-model-design",
           "ns": "opc-team--opc-business-model-design",
           "path": "skills/opc-team--opc-business-model-design",
           "files": 4,
-          "bytes": 5962,
-          "sha256": "2077e9c93ad0b761b5b65c183436800e9ed3049a289efae7e8653e2bb2de7861"
+          "bytes": 5966,
+          "sha256": "da57c48ee16cc3942395ced6bcd8631ed1671fbe04ab60b075315199b0077d5a"
         },
         {
           "name": "opc-conversion-loop",
           "ns": "opc-team--opc-conversion-loop",
           "path": "skills/opc-team--opc-conversion-loop",
           "files": 3,
-          "bytes": 5165,
-          "sha256": "5a3b4ccf63d52de72c9a040d309a82b6d414f93e82719f076802aac03ae06017"
+          "bytes": 5169,
+          "sha256": "da6ca1a558b08a9fb83f14a7314f05e9a903b512499a50ff0447f31aee907484"
         },
         {
           "name": "opc-dashboard-review",
           "ns": "opc-team--opc-dashboard-review",
           "path": "skills/opc-team--opc-dashboard-review",
           "files": 4,
-          "bytes": 5189,
-          "sha256": "e05fb7123b1a5c5590e59bd9b63973f1ed1a1f0f157717520233291d887e6a53"
+          "bytes": 5193,
+          "sha256": "8d3bcc34da4d10f4cae2569efcdb627a9554aa07e7f062a7a404bb5c61ae5d90"
         },
         {
           "name": "opc-mvp-designer",
           "ns": "opc-team--opc-mvp-designer",
           "path": "skills/opc-team--opc-mvp-designer",
           "files": 3,
-          "bytes": 5001,
-          "sha256": "969005a259f9e34cbb1eb7425e5f9001af8c74eb04a2795aa21b9c0571114f34"
+          "bytes": 5005,
+          "sha256": "ac55e89127002833bba3f68d44830dc338804007eede5afb5e84f01759d09d40"
         },
         {
           "name": "opc-niche-positioning",
           "ns": "opc-team--opc-niche-positioning",
           "path": "skills/opc-team--opc-niche-positioning",
           "files": 4,
-          "bytes": 15217,
-          "sha256": "47add67f7c850372018d404fb26bea12b85c415ec6d28f286dad8ee3f0572e82"
+          "bytes": 15221,
+          "sha256": "b157e947e1c6450f3944566c6a4230f523a6fedb341062b8e358adb2eb7c45d9"
         },
         {
           "name": "opc-orchestrator",
           "ns": "opc-team--opc-orchestrator",
           "path": "skills/opc-team--opc-orchestrator",
           "files": 4,
-          "bytes": 19410,
-          "sha256": "c7dd8b0a31dbd4ac3d49a5430a4cf29e8072a62be5d94dbc72525388e4f8c17b"
+          "bytes": 19414,
+          "sha256": "6475f022e7758fc69bfb41792bf25cc9efb9f0d3af0c3543597cb7a07220de31"
         },
         {
           "name": "opc-resource-audit",
           "ns": "opc-team--opc-resource-audit",
           "path": "skills/opc-team--opc-resource-audit",
           "files": 3,
-          "bytes": 10743,
-          "sha256": "4ef445aa9f9d0cf8bc8e749c815f698c575495c34569446897441359a8a6d136"
+          "bytes": 10747,
+          "sha256": "c49338d58c550adc0ad9d5430c83ac1150fb6727b02b1376e406e5c849ff042c"
         },
         {
           "name": "opc-value-proposition",
           "ns": "opc-team--opc-value-proposition",
           "path": "skills/opc-team--opc-value-proposition",
           "files": 3,
-          "bytes": 5909,
-          "sha256": "ab3946dbb4f93bf83bbffe92acfafac9ed76fef5cfe4519f2c10bd36536f05c1"
+          "bytes": 5913,
+          "sha256": "d5d517a13b58932d0ebd1e5f45d36446fc19dd4328276b94e156b7398d800bb7"
         }
       ],
       "requires": [],

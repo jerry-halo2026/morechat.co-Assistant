@@ -26,7 +26,6 @@
     "en": "Create authentic UGC presenter videos from product images and selling points, tailored to each platform and conversion goal.",
     "zh": "根据商品素材完成UGC口播带货AI视频创作，从购买理由、真人感口播脚本、镜头到成片，适配产品种草与广告投放。美图设计室提供。"
   },
-  "avatar": "avatars/expert.png",
   "categoryId": "06-ContentCreative",
   "defaultInitPrompt": {
     "en": "Create a TikTok UGC presenter video for this product.",

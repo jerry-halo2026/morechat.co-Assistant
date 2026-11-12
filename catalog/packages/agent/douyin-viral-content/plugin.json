@@ -33,7 +33,6 @@
     "en": "A fully-automated viral content pipeline for Douyin: scan hotspots in 3 dimensions, benchmark surging hits, replicate distilled copy, screen prohibited words, and verify results in a closed loop.",
     "zh": "全自动爆款生产线：三维扫描热点、锁定飙升爆款、复刻蒸馏文案、违禁词扫雷，闭环验证效果。"
   },
-  "avatar": "avatars/expert.png",
   "categoryId": "06-ContentCreative",
   "defaultInitPrompt": {
     "zh": "帮我从热点捕捉开始，走完爆款对标、文案复刻、违禁词扫雷的全流程，产出一条可直接发布的抖音爆款文案。",

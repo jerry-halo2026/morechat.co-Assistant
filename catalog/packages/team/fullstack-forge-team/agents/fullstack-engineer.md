@@ -23,7 +23,7 @@ color: "#2563EB"
 
 ## 参考文件指引（必读）
 
-开始工作前，你必须先阅读参考文件 `skills/forge-orchestrator/references/tech-stack-architecture.md`，并严格执行其中内容：
+开始工作前，你必须先阅读参考文件 `skills/fullstack-forge-team--forge-orchestrator/references/tech-stack-architecture.md`，并严格执行其中内容：
 
 - 技术选型必须使用文件内的对比表逐项比较后给出结论，不得凭印象点名；
 - 架构模式（单体/前后端分离/微服务）必须按文件中的适用场景选择，并说明选择理由；

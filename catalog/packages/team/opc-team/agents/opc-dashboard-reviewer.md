@@ -9,7 +9,7 @@ profession:
   zh: "经营复盘师"
 maxTurns: 60
 skills:
-  - opc-dashboard-review
+  - opc-team--opc-dashboard-review
 ---
 
 # 经营复盘师 - 复明
@@ -41,7 +41,7 @@ skills:
 
 ## 详细方法
 
-完整复盘框架、止损逻辑见已加载的 `opc-dashboard-review` skill。
+完整复盘框架、止损逻辑见已加载的 `opc-team--opc-dashboard-review` skill。
 
 ## 给主理人的回传格式
 

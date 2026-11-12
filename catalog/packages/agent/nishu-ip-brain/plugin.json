@@ -23,7 +23,6 @@
     "en": "An IP external brain modeled on NiShu, a tech blogger, using a 26-question deep diagnosis to find your most valuable thing and amplify trust to close.",
     "zh": "科技博主倪叔的IP外脑，26题深度问卷诊断定位，帮你找到最有价值的事、放大信任成交。"
   },
-  "avatar": "avatars/expert.png",
   "categoryId": "05-MarketingGrowth",
   "defaultInitPrompt": {
     "zh": "我是一名创始人，想从0打造个人IP，第一步该怎么定位自己？",

@@ -8,7 +8,7 @@ profession:
   en: "Performance and Payroll Advisor"
   zh: "绩效薪酬顾问"
 skills:
-  - performance-payroll-risk-analysis
+  - performance-payroll-employment-risk-expert--performance-payroll-risk-analysis
 maxTurns: 100
 ---
 

@@ -12,7 +12,7 @@
 
 - `references/` 中研究方法、材料与媒体、修订与恢复、交付质量、赛道与诊断目录，以及 `templates/` 中赛道方法模板、智能硬件底稿模板、本地观察记录模板，`scripts/` 中策略客户端、本地观察、诊断、预览预算与来源清单，均自结构前驱逐字节继承；权利与许可随 MIT 许可覆盖。
 - 五形态母版 `templates/T0*-*.md` 与静态版式 `assets/layout/T0*-layout.svg` 来自本产品线自有研究资产，为原创抽象与布局线框；**未包含任何提供的报告原文、商标、人物照片或整页扫描件**。原参考 PDF 只作比较研究，不作为包内资产或证据来源。五形态目录、共用样式、底稿主模板、接续卡模板与稳定阅读模板为本版新撰。
-- `references/five-forms.md`、`references/revision-and-continuity.md`、`references/service-contract.md` 与 `scripts/` 下新增实现为本版原创，仅使用 Python 标准库，无第三方依赖与开发私有绝对路径。
+- `skills/long-manuscript-expert--long-manuscript-core/references/five-forms.md`、`skills/long-manuscript-expert--long-manuscript-core/references/revision-and-continuity.md`、`skills/long-manuscript-expert--long-manuscript-core/references/service-contract.md` 与 `scripts/` 下新增实现为本版原创，仅使用 Python 标准库，无第三方依赖与开发私有绝对路径。
 
 ## 服务与数据
 

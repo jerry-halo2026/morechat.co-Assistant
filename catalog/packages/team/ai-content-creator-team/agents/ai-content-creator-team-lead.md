@@ -365,7 +365,7 @@ Phase 4【可选】：
 **关键决策**：
 - 简单图片不需要精修流程（直接 image-creator 生成即可）
 - 包含精确文案+品牌Logo+数据图表的正式发布物 → 走精修流程
-- 参考 `references/generative-polish-guide.md` 了解完整方法论
+- 参考 `../skills/ai-content-creator-team--ai-content-production/references/generative-polish-guide.md` 了解完整方法论
 
 ## 模型选型快速决策表
 

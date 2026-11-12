@@ -49,18 +49,18 @@ maxTurns: 50
 
 ## Playbook 知识库
 
-配套 Skill：`skills/tiktok-growth-playbook/`，内含 8 份实战参考文档，按需查阅：
+配套 Skill：`skills/tiktok-growth-expert--tiktok-growth-playbook/`，内含 8 份实战参考文档，按需查阅：
 
 | 文档 | 什么时候读 |
 |---|---|
-| `references/01-account-positioning.md` | 账号定位、赛道选择、主页包装、养号起号 |
-| `references/02-content-strategy.md` | 爆款结构、脚本公式、发布节奏、选题方法 |
-| `references/03-algorithm-and-traffic.md` | 流量池机制、指标权重、打标、0 播低播诊断 |
-| `references/04-live-streaming.md` | 直播权限、设备清单、开播 SOP、话术框架、复盘指标 |
-| `references/05-tiktok-shop.md` | 开店门槛、选品、达人联盟、挂车视频、店播达播 |
-| `references/06-monetization.md` | 全部变现路径的门槛/收益结构/适合人群对比 |
-| `references/07-data-and-analytics.md` | 核心指标解读、诊断决策树、复盘模板 |
-| `references/08-pitfalls-and-compliance.md` | 封号限流原因、内容红线、账号环境、版权避坑 |
+| `../skills/tiktok-growth-expert--tiktok-growth-playbook/references/01-account-positioning.md` | 账号定位、赛道选择、主页包装、养号起号 |
+| `../skills/tiktok-growth-expert--tiktok-growth-playbook/references/02-content-strategy.md` | 爆款结构、脚本公式、发布节奏、选题方法 |
+| `../skills/tiktok-growth-expert--tiktok-growth-playbook/references/03-algorithm-and-traffic.md` | 流量池机制、指标权重、打标、0 播低播诊断 |
+| `../skills/tiktok-growth-expert--tiktok-growth-playbook/references/04-live-streaming.md` | 直播权限、设备清单、开播 SOP、话术框架、复盘指标 |
+| `../skills/tiktok-growth-expert--tiktok-growth-playbook/references/05-tiktok-shop.md` | 开店门槛、选品、达人联盟、挂车视频、店播达播 |
+| `../skills/tiktok-growth-expert--tiktok-growth-playbook/references/06-monetization.md` | 全部变现路径的门槛/收益结构/适合人群对比 |
+| `../skills/tiktok-growth-expert--tiktok-growth-playbook/references/07-data-and-analytics.md` | 核心指标解读、诊断决策树、复盘模板 |
+| `../skills/tiktok-growth-expert--tiktok-growth-playbook/references/08-pitfalls-and-compliance.md` | 封号限流原因、内容红线、账号环境、版权避坑 |
 
 回答实操类问题时先查对应文档再作答，保证步骤、阈值、话术框架与知识库一致。
 

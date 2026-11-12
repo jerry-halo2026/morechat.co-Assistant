@@ -19,7 +19,6 @@
     "en": "Expert in full-chain livestream e-commerce operations, from scripts to traffic investment, helping achieve GMV breakthroughs",
     "zh": "精通直播带货全链路运营，从话术到投流帮助实现GMV突破"
   },
-  "avatar": "avatars/expert.png",
   "categoryId": "05-MarketingGrowth",
   "defaultInitPrompt": {
     "zh": "我们想尝试直播电商,但缺乏直播策划和销售技巧,请直播电商教练帮我们设计直播带货方案。",

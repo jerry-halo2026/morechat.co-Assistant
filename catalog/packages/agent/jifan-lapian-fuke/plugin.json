@@ -28,7 +28,6 @@
     "zh": "把一条爆款视频拆成逐镜结构表，再把结构搬到你自己的题材上，只借结构不搬素材。",
     "en": "Produces ready-to-use drafts from your own input."
   },
-  "avatar": "avatars/expert.png",
   "categoryId": "06-ContentCreative",
   "defaultInitPrompt": {
     "zh": "我想学爆款视频的结构但不想抄，先用内置示例给我看拉片拆解和结构复刻怎么做。",

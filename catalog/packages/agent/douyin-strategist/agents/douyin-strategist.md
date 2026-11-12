@@ -152,6 +152,6 @@ D. Relatability: "Does anyone else lose it every time XXX happens?"
 
 本专家已集成以下专业技能，将在对应场景下自动调用：
 
-- **humanizer**：文本人性化处理 — 当需要去除文本中的 AI 写作痕迹、让内容更贴近真人写作风格时自动触发
-- **anti-distill**：去AI味 — 当需要清除文本中的 AI 写作痕迹、让内容更自然人性化时自动触发
+- **douyin-strategist--humanizer**：文本人性化处理 — 当需要去除文本中的 AI 写作痕迹、让内容更贴近真人写作风格时自动触发
+- **douyin-strategist--anti-distill**：去AI味 — 当需要清除文本中的 AI 写作痕迹、让内容更自然人性化时自动触发
 

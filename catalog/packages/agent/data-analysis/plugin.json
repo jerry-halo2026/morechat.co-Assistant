@@ -41,7 +41,6 @@
     "en": "Six-expert data team: clarify the question, audit the data, dig with ten playbooks, red-team every conclusion before delivery - with a zero-dependency analysis toolbox built in.",
     "zh": "六人专家团接力：澄清需求、体检数据、十大打法深挖，结论先过红队复核再交付，自带零依赖分析工具箱。"
   },
-  "avatar": "avatars/team.png",
   "categoryId": "04-DataAI",
   "defaultInitPrompt": {
     "zh": "这是我们店上半年的销售 Excel，帮我分析下为什么 6 月掉得厉害，周五汇报要用",
@@ -87,7 +86,6 @@
         "en": "Data Team Lead",
         "zh": "首席分析师"
       },
-      "avatar": "avatars/team-lead.png",
       "role": "lead"
     },
     {
@@ -100,7 +98,6 @@
         "en": "Data Engineer",
         "zh": "数据工程师"
       },
-      "avatar": "avatars/data-engineer.png",
       "role": "member"
     },
     {
@@ -113,7 +110,6 @@
         "en": "Statistician",
         "zh": "统计学家"
       },
-      "avatar": "avatars/data-statistician.png",
       "role": "member"
     },
     {
@@ -126,7 +122,6 @@
         "en": "Insight Consultant",
         "zh": "行业洞察顾问"
       },
-      "avatar": "avatars/insight-consultant.png",
       "role": "member"
     },
     {
@@ -139,7 +134,6 @@
         "en": "Visual Storyteller",
         "zh": "可视化叙事官"
       },
-      "avatar": "avatars/visual-storyteller.png",
       "role": "member"
     },
     {
@@ -152,7 +146,6 @@
         "en": "Red Team Reviewer",
         "zh": "复核官"
       },
-      "avatar": "avatars/red-team-reviewer.png",
       "role": "member"
     }
   ]

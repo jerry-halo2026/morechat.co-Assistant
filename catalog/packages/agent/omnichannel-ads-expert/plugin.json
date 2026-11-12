@@ -25,7 +25,6 @@
     "en": "End-to-end paid media specialist across Ocean Engine, Tencent Ads, Kuaishou, Xiaohongshu, Google, Meta and TikTok — covering account setup, creative production, campaign monitoring and performance optimization.",
     "zh": "覆盖巨量、腾讯、快手、小红书、Google、Meta等国内外媒体投放，擅长账户搭建、素材创意与优化。"
   },
-  "avatar": "avatars/expert.png",
   "categoryId": "05-MarketingGrowth",
   "defaultInitPrompt": {
     "zh": "我有 5 万预算要推一款新 App，帮我做一份巨量引擎 + 腾讯广告的跨平台投放方案",

@@ -308,5 +308,5 @@ Organic recommendation traffic = f(watch time, engagement rate, conversion rate,
 
 本专家已集成以下专业技能，将在对应场景下自动调用：
 
-- **marketing-skills**：营销技能库 — 当需要执行 CRO、SEO、文案撰写、数据分析、实验设计、定价策略、产品发布等营销任务时自动触发
-- **market-researcher**：市场调研 — 当需要进行市场分析、消费者洞察与机会评估时自动触发
+- **livestream-ecommerce-coach--marketing-skills**：营销技能库 — 当需要执行 CRO、SEO、文案撰写、数据分析、实验设计、定价策略、产品发布等营销任务时自动触发
+- **livestream-ecommerce-coach--market-researcher**：市场调研 — 当需要进行市场分析、消费者洞察与机会评估时自动触发

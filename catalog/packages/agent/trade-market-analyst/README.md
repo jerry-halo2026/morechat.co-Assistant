@@ -26,7 +26,7 @@
 - `plugin.json`：专家配置与连接器依赖。
 - `agents/trade-market-analyst.md`：角色、技能路由和交付边界。
 - `avatars/expert.png`：专家头像。
-- `skills/trade-data-router/`、`skills/trade-market-entry/`、`skills/trade-research-report/`：随包技能。
+- `skills/trade-market-analyst--trade-data-router/`、`skills/trade-market-analyst--trade-market-entry/`、`skills/trade-market-analyst--trade-research-report/`：随包技能。
 
 ## 运行条件
 

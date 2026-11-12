@@ -28,7 +28,6 @@
     "zh": "用海关与官方贸易统计分析目标市场的规模、走势、价格带和供应格局，判断值不值得进、该怎么进。",
     "en": "Analyze a target market's size, trend, price bands, and supplier landscape with customs and official trade statistics, and judge whether it is worth entering."
   },
-  "avatar": "./avatars/expert.png",
   "categoryId": "14-WorldWise",
   "defaultInitPrompt": {
     "zh": "评估越南市场的不锈钢保温杯（HS 961700）值不值得进：近两年进口规模走势、主要来源国份额和价格带，再给出进入建议。",
@@ -62,10 +61,5 @@
       "zh": "按 HS 961700 查美国不锈钢保温杯的进口价格带，我的 FOB 报价 3.2 美元/只落在哪一档？",
       "en": "Look up US import price bands for stainless steel vacuum flasks under HS 961700. Where does my FOB quote of USD 3.20 per unit fall?"
     }
-  ],
-  "dependencies": {
-    "connectors": [
-      "oc_f6675393645e7c78"
-    ]
-  }
+  ]
 }

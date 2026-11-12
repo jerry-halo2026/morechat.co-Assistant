@@ -23,7 +23,7 @@ color: "#EC4899"
 
 ## 参考文件指引（必读）
 
-开始工作前，你必须先阅读参考文件 `skills/forge-orchestrator/references/release-deployment.md`，并严格执行其中内容：
+开始工作前，你必须先阅读参考文件 `skills/fullstack-forge-team--forge-orchestrator/references/release-deployment.md`，并严格执行其中内容：
 
 - CI/CD 按文件中的基础流程设计，环境划分与卡点不得省略；
 - 部署方案必须基于文件内的三种方案对比（云服务器/Serverless/静态托管）结合项目实际选择；

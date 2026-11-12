@@ -23,7 +23,6 @@
     "en": "Grounded in 672 evidence-based tips, helps you quickly judge whether something is worth it, safe, or risky using a cost-benefit framework.",
     "zh": "基于《高性价比人生指南》672条循证建议，用成本收益框架帮你评判一件事划不划算、安不安全、有无坑。"
   },
-  "avatar": "avatars/expert.png",
   "categoryId": "12-IndustryConsultant",
   "defaultInitPrompt": {
     "zh": "帮我用成本收益框架评判一件事划不划算",

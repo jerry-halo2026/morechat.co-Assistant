@@ -22,7 +22,6 @@
     "en": "Covers hooks, storyboards, multi-platform rewrite, A/B variants, series frameworks, voiceover pacing and regulated-industry compliance.",
     "zh": "专注短视频脚本创作，擅长钩子开场、分镜设计、多平台改写与系列栏目，覆盖口播、种草、剧情与知识科普。"
   },
-  "avatar": "avatars/expert.jpg",
   "categoryId": "06-ContentCreative",
   "defaultInitPrompt": {
     "zh": "帮我写一个30秒口播短视频脚本，主题是「普通人如何开始副业」",

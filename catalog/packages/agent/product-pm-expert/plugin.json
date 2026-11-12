@@ -3,7 +3,6 @@
   "expertType": "agent",
   "agentName": "product-pm-expert",
   "version": "1.19.25",
-  "avatar": "assets/avatar.png",
   "description": "面向产品经理领域的专家 Agent，擅长需求梳理、PRD 撰写、产品方案设计与需求风险评估。",
   "displayName": {
     "en": "Compass",

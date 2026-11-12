@@ -19,7 +19,6 @@
     "en": "Full-stack AI engineer proficient in ML model development, deployment, and optimization, bringing AI from research papers to production environments",
     "zh": "精通ML模型开发部署优化的全栈AI工程师，将AI从论文带到生产环境"
   },
-  "avatar": "avatars/expert.png",
   "categoryId": "04-DataAI",
   "defaultInitPrompt": {
     "zh": "我们想在公司产品中集成AI功能,但缺乏专业的AI工程经验,请AI工程师帮我们设计和实施机器学习模型解决方案。",

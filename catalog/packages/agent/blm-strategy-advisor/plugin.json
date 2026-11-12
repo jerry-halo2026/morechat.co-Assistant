@@ -30,7 +30,6 @@
     "en": "Help me run a strategy analysis for my company with the Business Leadership Model: find the gaps first, then decode into key tasks with metrics.",
     "zh": "用业务领先模型帮我做一次公司战略分析：先找差距，再解码成关键任务和考核指标。"
   },
-  "avatar": "avatars/blm-strategy-advisor.png",
   "categoryId": "12-IndustryConsultant",
   "plugin": "blm-strategy-advisor",
   "tags": [

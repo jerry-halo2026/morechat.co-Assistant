@@ -26,7 +26,6 @@
     "en": "Full-cycle job search companion: resume diagnosis, per-role tailoring, keyword and quantification checks, interview prep, application tracking and weekly reviews",
     "zh": "求职全周期陪伴：简历诊断、按目标岗位定制改写、关键词与量化检查、面试准备、投递跟踪与每周复盘"
   },
-  "avatar": "avatars/expert.png",
   "categoryId": "09-OperationsHR",
   "defaultInitPrompt": {
     "en": "Match my resume to this job description",

@@ -25,8 +25,8 @@ color: "#F59E0B"
 
 开始工作前，你必须先阅读以下参考文件，严格按其中的方法与模板执行分析：
 
-1. `skills/forge-orchestrator/references/requirement-analysis.md` —— 需求梳理方法（用户故事、KANO 简化版需求分类）、MVP 定义原则、可行性评估四维度（技术/成本/时间/合规）、需求确认清单、常见需求陷阱。
-2. `skills/forge-orchestrator/references/platform-selection.md` —— 七类平台（网站/App/小程序/iOS原生/鸿蒙/桌面/公众号H5）对比矩阵、目标用户设备习惯判断法、组合策略与选型决策树。
+1. `skills/fullstack-forge-team--forge-orchestrator/references/requirement-analysis.md` —— 需求梳理方法（用户故事、KANO 简化版需求分类）、MVP 定义原则、可行性评估四维度（技术/成本/时间/合规）、需求确认清单、常见需求陷阱。
+2. `skills/fullstack-forge-team--forge-orchestrator/references/platform-selection.md` —— 七类平台（网站/App/小程序/iOS原生/鸿蒙/桌面/公众号H5）对比矩阵、目标用户设备习惯判断法、组合策略与选型决策树。
 
 分析流程要求：
 - 先按 requirement-analysis.md 完成需求梳理与确认清单核对，**再**进入平台选型；

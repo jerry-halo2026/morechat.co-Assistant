@@ -1,6 +1,6 @@
 ---
 name: opc-asset-ops
-description: Turn repeatable outputs of a one-person company into compounding assets. Use when Codex needs to explain asset-compounding concepts when needed, verify prerequisite outputs, ask one question at a time, present multiple assetization priorities, and write user-confirmed outputs into `opc-doc/`.
+description: Turn repeatable outputs of a one-person company into compounding assets. Use when the agent needs to explain asset-compounding concepts when needed, verify prerequisite outputs, ask one question at a time, present multiple assetization priorities, and write user-confirmed outputs into `opc-doc/`.
 ---
 
 # 资产沉淀

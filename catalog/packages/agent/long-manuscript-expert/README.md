@@ -19,7 +19,7 @@
 plugin.json     专家清单（类型/ID/版本/展示字段）
 agents/long-manuscript-expert.md 单专家定义与方法正文
 avatars/                         福帮手品牌头像（自旧版逐字节继承）
-skills/long-manuscript-core/
+skills/long-manuscript-expert--long-manuscript-core/
   SKILL.md                       方法内核与按需加载路由
   references/                    研究、材料媒体、修订恢复、交付质量、赛道、诊断、五形态、接续、服务合同
   templates/                     五形态母版、形态目录、底稿主模板、接续卡、稳定阅读模板

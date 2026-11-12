@@ -43,7 +43,6 @@
     "en": "AI-driven multimodal content production team providing end-to-end creative solutions from strategy to delivery, covering positioning, moodboard, ad direction, copywriting, video generation, image creation, generative polish, and content adaptation.",
     "zh": "AI驱动的多模态内容生产团队，从创意策划到成品交付全覆盖，涵盖品牌定位、情绪板、广告方向、文案创作、视频生成、图片设计、精修合成和素材改编。"
   },
-  "avatar": "avatars/team.png",
   "categoryId": "06-ContentCreative",
   "defaultInitPrompt": {
     "en": "Help me define the brand visual direction for my new product and create a moodboard",
@@ -88,7 +87,6 @@
         "en": "Creative Director",
         "zh": "创意总监"
       },
-      "avatar": "avatars/ai-content-creator-team-lead.png",
       "role": "lead"
     },
     {
@@ -101,7 +99,6 @@
         "en": "Creative Strategist",
         "zh": "创意策划师"
       },
-      "avatar": "avatars/creative-strategist.png",
       "role": "member"
     },
     {
@@ -114,7 +111,6 @@
         "en": "Copywriter",
         "zh": "文案创作专家"
       },
-      "avatar": "avatars/copywriter.png",
       "role": "member"
     },
     {
@@ -127,7 +123,6 @@
         "en": "Video Generation Expert",
         "zh": "视频生成专家"
       },
-      "avatar": "avatars/video-generator.png",
       "role": "member"
     },
     {
@@ -140,7 +135,6 @@
         "en": "Image & Text Creator",
         "zh": "图文创作专家"
       },
-      "avatar": "avatars/image-creator.png",
       "role": "member"
     },
     {
@@ -153,7 +147,6 @@
         "en": "Video Editing Expert",
         "zh": "视频编辑专家"
       },
-      "avatar": "avatars/video-editor.png",
       "role": "member"
     },
     {
@@ -166,7 +159,6 @@
         "en": "Content Adaptation Expert",
         "zh": "素材改编专家"
       },
-      "avatar": "avatars/content-adapter.png",
       "role": "member"
     }
   ]

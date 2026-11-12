@@ -1,6 +1,6 @@
 ---
 name: opc-resource-audit
-description: Inventory all founder resources across 8 categories for a one-person company. Use when Codex needs to systematically confirm what resources the founder has — experience, network, skills, relationships, channels, assets, time/money constraints, hard limits — by first doing a broad scan of each category, then drilling into specifics (distribution, usable portions, how to use, cost of use), and producing a confirmed detailed resource inventory written to `opc-doc/`. Does NOT analyze directions, preferences, suitability, or risk tolerance — those belong to downstream skills.
+description: Inventory all founder resources across 8 categories for a one-person company. Use when the agent needs to systematically confirm what resources the founder has — experience, network, skills, relationships, channels, assets, time/money constraints, hard limits — by first doing a broad scan of each category, then drilling into specifics (distribution, usable portions, how to use, cost of use), and producing a confirmed detailed resource inventory written to `opc-doc/`. Does NOT analyze directions, preferences, suitability, or risk tolerance — those belong to downstream skills.
 ---
 
 # 资源盘点

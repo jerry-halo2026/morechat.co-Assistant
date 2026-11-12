@@ -30,7 +30,6 @@
     "en": "All-in-one Douyin ad expert: data answers three questions — where you're stuck, why, and how far you are from the market benchmark — then hands you an action plan both enterprise teams and solo operators can run directly.",
     "zh": "抖音全能投流专家：用数据说清你卡在哪、为何卡、离大盘差多少，再给一套企业和个人都能照做的投流方案"
   },
-  "avatar": "avatars/expert.png",
   "categoryId": "05-MarketingGrowth",
   "defaultInitPrompt": {
     "zh": "我的直播间流速上不去，帮我做个完整诊断",

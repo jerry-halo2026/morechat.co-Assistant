@@ -25,11 +25,11 @@ Agent 型（单个 AI 专家）
 
 ## 附带 Skill
 
-`skills/omnichannel-ads-playbook` — 投放实战手册：
+`skills/omnichannel-ads-expert--omnichannel-ads-playbook/` — 投放实战手册：
 
-- `references/platform-playbooks.md` — 平台速查表、层级结构、命名规范、需求澄清清单、审核红线
-- `references/creative-playbook.md` — 创意矩阵、钩子库、脚本结构、素材衰退应对
-- `references/metrics-optimization.md` — 指标口径、漏斗排查、诊断决策树、出价与放量策略
+- `skills/omnichannel-ads-expert--omnichannel-ads-playbook/references/platform-playbooks.md` — 平台速查表、层级结构、命名规范、需求澄清清单、审核红线
+- `skills/omnichannel-ads-expert--omnichannel-ads-playbook/references/creative-playbook.md` — 创意矩阵、钩子库、脚本结构、素材衰退应对
+- `skills/omnichannel-ads-expert--omnichannel-ads-playbook/references/metrics-optimization.md` — 指标口径、漏斗排查、诊断决策树、出价与放量策略
 - `templates/media-plan-template.md` — 跨平台投放方案
 - `templates/creative-batch-template.md` — 素材批次交付
 - `templates/daily-report-template.md` — 投放日报与诊断

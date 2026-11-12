@@ -1,6 +1,6 @@
 ---
 name: opc-value-proposition
-description: Design value propositions for candidate customer segments and help the user choose the strongest one. Use when Codex needs to explain jobs, pains, and gains when needed, check niche-positioning prerequisites, ask one question at a time, present multiple value-proposition options, and write user-confirmed outputs into `opc-doc/`.
+description: Design value propositions for candidate customer segments and help the user choose the strongest one. Use when the agent needs to explain jobs, pains, and gains when needed, check niche-positioning prerequisites, ask one question at a time, present multiple value-proposition options, and write user-confirmed outputs into `opc-doc/`.
 ---
 
 # 价值主张

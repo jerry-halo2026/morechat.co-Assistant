@@ -1,3 +1,8 @@
+---
+name: workplace-cross-team-collaboration-guide--role-progress-sync
+description: "分工不清，同步只能靠口头追问。"
+---
+
 # 分工与进度同步
 
 分工不清，同步只能靠口头追问。先定一人负责、一人复核、有截止时间、有交付物，再按周对照。

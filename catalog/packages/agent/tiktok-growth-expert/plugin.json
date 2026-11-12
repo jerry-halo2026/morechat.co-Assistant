@@ -23,7 +23,6 @@
     "en": "Teaches the full TikTok playbook: live streaming SOP and scripts, short-video growth, algorithm and traffic mechanics, TikTok Shop selling, monetization paths, and data-driven diagnostics, from zero to consistent sales.",
     "zh": "教你 TikTok 直播带货、短视频起号与变现全链路：定位、流量、话术、实操，从 0 到稳定出单。"
   },
-  "avatar": "avatars/expert.png",
   "categoryId": "05-MarketingGrowth",
   "defaultInitPrompt": {
     "zh": "我想做 TikTok 带货，从 0 开始帮我规划账号定位、起号节奏和变现路径",

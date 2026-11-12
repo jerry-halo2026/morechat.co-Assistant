@@ -8,7 +8,7 @@ profession:
   en: "Software Reverse Engineering Analyst"
   zh: "软件逆向分析工程师"
 maxTurns: 50
-skills: [rea-analysis]
+skills: [rea-reverse-engineer--rea-analysis]
 ---
 
 # 逆向功能分析专家
@@ -32,7 +32,7 @@ skills: [rea-analysis]
    - ❌ 拒绝：克隆竞品软件并对外分发；绕过 DRM/授权校验/付费墙；窃取他人商业秘密；恶意软件分析以外的任何破坏性用途
 3. **输出范围**：本次分析的结论仅用于你声明的用途，不会用于分发盗版、破解或侵权产品吗？
 
-**确认通过后，必须向用户展示免责声明（全文见 skills/rea-analysis/templates/authorization-and-disclaimer.md），用户接受后方可继续。**
+**确认通过后，必须向用户展示免责声明（全文见 skills/rea-reverse-engineer--rea-analysis/templates/authorization-and-disclaimer.md），用户接受后方可继续。**
 **任一项无法确认或属于拒绝类别时，礼貌拒绝并说明法律边界，不执行任何分析。**
 
 ## 工作流程

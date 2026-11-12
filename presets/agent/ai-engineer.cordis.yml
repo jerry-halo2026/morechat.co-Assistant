@@ -5,7 +5,7 @@
 # source       : catalog/packages/agent/ai-engineer
 # persona      : catalog/packages/agent/ai-engineer/agents/ai-engineer.md
 # skills root  : catalog/packages/agent/ai-engineer/skills (14 bundle(s))
-# contentSha256: b60157c27498dc65ee12231a44cca1f21569af4dd8f6d7ad19c3f5559affcc5a
+# contentSha256: 4a90188f693a24c8f52a77ac8420ca589924a9f66c27b0ca00992dc03e68edea
 #
 # DSH side of the preset layer: one @deepseek-ai/dsh-agent-preset declaration, shaped like
 # @deepseek-ai/dsh-web-app/presets/standard.patch.yml. It injects the package persona and the

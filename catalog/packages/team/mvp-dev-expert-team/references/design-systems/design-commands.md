@@ -205,7 +205,7 @@ Live 模式（浏览器内变体热替换）与设计检测 Hook 仅在 web 项�
 
 组件细节打磨，阴影 / 边框 / 圆角 / 过渡。多门控流程，不可压缩。
 
-- **执行步骤**：Step 0 项目基础（用现有框架 / 组件库 / 图标集）→ Step 1 shape → Step 2 加载参考 → Step 3 视觉方向与资产（harness 有原生图像生成时走完整 codex 流程，无则一行声明跳过）→ Step 4 生产级实现 → Step 5 浏览器内视觉迭代 → Step 6 呈现。
+- **执行步骤**：Step 0 项目基础（用现有框架 / 组件库 / 图标集）→ Step 1 shape → Step 2 加载参考 → Step 3 视觉方向与资产（harness 有原生图像生成时走完整 morechat 流程，无则一行声明跳过）→ Step 4 生产级实现 → Step 5 浏览器内视觉迭代 → Step 6 呈现。
 - **检查项**：真实内容（无占位文案 / 占位图 / 死链 / 假控件）；保留 approved mock 的主要成分；语义优先（真实标题 / landmarks / labels / 状态播报）；全状态覆盖；触控目标；图片 URL 已验证；尊重构建管线（不直接写 `build/` `dist/`）。
 - **反模式**：把 shape 确认当作 code-green（shape 之后还有方向 / 调色 / mock 几道门）；用卡片 / 项目符号 / emoji / 假指标 / CSS 面板代替必需图像；压缩门控；不读截图就声称迭代完成。
 
@@ -307,7 +307,7 @@ Live 模式（浏览器内变体热替换）与设计检测 Hook 仅在 web 项�
 
 #### hooks — 设计检测钩子
 
-管理 per-project 设计检测器。edit 后 post-tool-use 推 reminder（Claude Code / Codex / Copilot）或 preToolUse 阻止坏写（Cursor）。
+管理 per-project 设计检测器。edit 后 post-tool-use 推 reminder（Claude Code / morechat / Copilot）或 preToolUse 阻止坏写（Cursor）。
 
 - **执行步骤**：路由 action（status / on / off / ignore-rule / ignore-file / ignore-value / reset）→ 调 `hook-admin.mjs` → 用户验证后持久化例外。
 - **检查项**：例外收窄到最具体（`ignore-value` 优于 `ignore-rule`，file-scoped 优于 `ignore-file`）；共享 config 默认，`--local` 仅用户明确要私人例外；inline 注释 disable marker 仅随导出文件离开仓库时用。

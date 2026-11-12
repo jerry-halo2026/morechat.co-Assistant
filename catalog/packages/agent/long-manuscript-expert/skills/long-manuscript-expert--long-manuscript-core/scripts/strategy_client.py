@@ -4,7 +4,7 @@
 This module is the expert-side client for the frozen strategy contract
 ``strategy-v1.json`` and the four JSON Schemas (request / response / feedback /
 catalog). It is standard-library Python only (no third-party dependencies) and
-is meant to be shared verbatim with the backend (Codex) for local integration:
+is meant to be shared verbatim with the backend (morechat) for local integration:
 the same ``prepare_request`` / ``validate_response`` / ``call_dev`` entry points
 are used both offline (no network) and against the explicit development endpoint.
 
@@ -36,7 +36,7 @@ RESERVED EXTENSION POINT — research segment (Owner addition 2026-10-27):
   for the research field, the research question, evidence-applicability
   conditions and strategy. It MUST NOT link to group QR codes, group joining,
   group capacity, or upstream/downstream spaces. The wire contract for this
-  extension will be issued separately by Codex; this client does NOT invent any
+  extension will be issued separately by morechat; this client does NOT invent any
   interface or wire field. The segment is stored ONLY in the local brief /
   local annotations and is never sent on ``paper.intent.v1`` (which is closed).
 """
@@ -136,7 +136,7 @@ RESEARCH_SEGMENT_NOTE = (
     "strategy. Used ONLY for research field, research question, evidence "
     "applicability conditions and strategy. MUST NOT link to group QR codes, "
     "group joining, group capacity, or upstream/downstream spaces. The wire "
-    "contract is issued separately by Codex; this client invents no interface "
+    "contract is issued separately by morechat; this client invents no interface "
     "and adds no field to paper.intent.v1."
 )
 
@@ -1576,7 +1576,7 @@ class StrategyClient:
                              attempts=attempts, observation=observation))
 
 
-# --- Minimal CLI for Codex local integration --------------------------------
+# --- Minimal CLI for morechat local integration --------------------------------
 def _load_json_path(path: str) -> dict:
     # Bounded read first, then format validation; file problems surface as a
     # safe closed code, never as a traceback carrying a private path.

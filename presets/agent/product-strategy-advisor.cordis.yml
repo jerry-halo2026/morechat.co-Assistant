@@ -5,7 +5,7 @@
 # source       : catalog/packages/agent/product-strategy-advisor
 # persona      : catalog/packages/agent/product-strategy-advisor/agents/product-strategy-advisor.md
 # skills root  : (package ships no skills)
-# contentSha256: 8dcf63508da16a5922ee01bc78f0e8b5dfed07b1a936f5082df2bf4117e2cd90
+# contentSha256: f0a3fe8bd6cf270579030d152b7bb69da42fde9d4c56db2c3cec85d200d4d033
 #
 # DSH side of the preset layer: one @deepseek-ai/dsh-agent-preset declaration, shaped like
 # @deepseek-ai/dsh-web-app/presets/standard.patch.yml. It injects the package persona and the

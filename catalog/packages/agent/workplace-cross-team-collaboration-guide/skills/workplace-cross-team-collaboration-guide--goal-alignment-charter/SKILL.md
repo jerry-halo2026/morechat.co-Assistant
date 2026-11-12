@@ -1,3 +1,8 @@
+---
+name: workplace-cross-team-collaboration-guide--goal-alignment-charter
+description: "目标对不齐，分工再细也会跑偏。"
+---
+
 # 目标对齐与协作章程
 
 目标对不齐，分工再细也会跑偏。先按原话对齐，再写章程。

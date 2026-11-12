@@ -22,8 +22,10 @@
     "leadAgent": "trade-market-analyst",
     "members": []
   },
-  "requires": [],
+  "requires": [
+    "mcp:oc_f6675393645e7c78"
+  ],
   "sourcePackage": "catalog/packages/agent/trade-market-analyst",
   "packageVersion": "0.1.5",
-  "contentSha256": "fc7ee388a98d2031124ff4d90575cfedd421a911c3a8e8e95b5d6a02aff54059"
+  "contentSha256": "79c8587c48226b3670f6f0c954760ad24052788568c3eedbb9672ae86a7519bc"
 }

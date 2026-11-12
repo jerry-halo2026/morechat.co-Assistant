@@ -26,7 +26,6 @@
     "en": "Analyzes how closed-source software features work using the REA toolchain, covering Electron apps, websites, .NET assemblies and native binaries, with evidence-backed explanations and feature reconstruction plans.",
     "zh": "基于REA解析无源码软件功能，覆盖Electron、网站与二进制，输出证据链与重建方案。"
   },
-  "avatar": "avatars/expert.png",
   "categoryId": "02-Engineering",
   "defaultInitPrompt": {
     "zh": "我想分析一个软件的功能是怎么实现的，请先帮我做授权与用途确认",

@@ -42,7 +42,6 @@
     "en": "Share your idea — 8 experts handle research, design, coding, testing, and deployment to build your MVP.",
     "zh": "说出你的想法，8位专家从调研、设计、编码、测试到部署全流程协作，帮你快速开发MVP产品"
   },
-  "avatar": "avatars/team.png",
   "categoryId": "02-Engineering",
   "defaultInitPrompt": {
     "zh": "我想从零做一个团队协作工具",
@@ -83,7 +82,6 @@
         "en": "Project Director",
         "zh": "项目总监"
       },
-      "avatar": "avatars/mvp-dev-expert-team-team-lead.png",
       "role": "lead",
       "name": {
         "en": "DaWanQu JingZai",
@@ -96,7 +94,6 @@
         "en": "Product Manager",
         "zh": "产品经理"
       },
-      "avatar": "avatars/mvp-dev-expert-team-pm.png",
       "role": "member",
       "name": {
         "en": "Xu Qingchu",
@@ -109,7 +106,6 @@
         "en": "UI/UX Designer",
         "zh": "UI/UX设计师"
       },
-      "avatar": "avatars/mvp-dev-expert-team-designer.png",
       "role": "member",
       "name": {
         "en": "Yan Haokan",
@@ -122,7 +118,6 @@
         "en": "Chief Architect",
         "zh": "首席架构师"
       },
-      "avatar": "avatars/mvp-dev-expert-team-architect.png",
       "role": "member",
       "name": {
         "en": "Gao Jianyuan",
@@ -135,7 +130,6 @@
         "en": "Frontend Engineer",
         "zh": "前端工程师"
       },
-      "avatar": "avatars/mvp-dev-expert-team-frontend.png",
       "role": "member",
       "name": {
         "en": "Jia Simin",
@@ -148,7 +142,6 @@
         "en": "Backend Engineer",
         "zh": "后端工程师"
       },
-      "avatar": "avatars/mvp-dev-expert-team-backend.png",
       "role": "member",
       "name": {
         "en": "Bei Luoqi",
@@ -161,7 +154,6 @@
         "en": "QA Engineer",
         "zh": "测试工程师"
       },
-      "avatar": "avatars/mvp-dev-expert-team-qa.png",
       "role": "member",
       "name": {
         "en": "Yan Guoguan",
@@ -174,7 +166,6 @@
         "en": "DevOps Engineer",
         "zh": "运维工程师"
       },
-      "avatar": "avatars/mvp-dev-expert-team-devops.png",
       "role": "member",
       "name": {
         "en": "Bu Dangji",
@@ -183,13 +174,5 @@
     }
   ],
   "plugin": "mvp-dev-expert-team",
-  "connectorIds": [
-    "ima-mcp"
-  ],
-  "dependencies": {
-    "connectors": [
-      "ima-mcp"
-    ]
-  },
   "skills": []
 }

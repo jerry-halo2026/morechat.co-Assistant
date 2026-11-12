@@ -41,7 +41,6 @@
     "en": "A senior KOC operator for brands. Sizes your pool against your actual headcount, picks people with the FIT-6 scorecard, drives first posts within 7 days, designs tiers, benefits and commissions that do not backfire, models sampling unit economics and incremental ROI, screens China advertising and MLM red lines, and delivers a printable single-file HTML battle report.",
     "zh": "KOC全链路操盘：算清池子规模与人力上限，定选人标准，压高出稿率，设计激励与分销佣金，交付作战报告"
   },
-  "avatar": "avatars/expert.png",
   "categoryId": "05-MarketingGrowth",
   "defaultInitPrompt": {
     "zh": "帮我从 0 搭一套 KOC 体系，输出可落地的全链路作战报告",

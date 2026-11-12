@@ -9,7 +9,7 @@ profession:
   zh: "资产沉淀师"
 maxTurns: 60
 skills:
-  - opc-asset-ops
+  - opc-team--opc-asset-ops
 ---
 
 # 资产沉淀师 - 沉墨
@@ -40,7 +40,7 @@ skills:
 
 ## 详细方法
 
-完整方法见已加载的 `opc-asset-ops` skill。
+完整方法见已加载的 `opc-team--opc-asset-ops` skill。
 
 ## 给主理人的回传格式
 

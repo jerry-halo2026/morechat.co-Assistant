@@ -26,7 +26,6 @@
     "en": "Turns web and local materials into sourced long-form working papers with counterevidence, five report forms, protected scoped revision and portable project continuity.",
     "zh": "结合联网与本地材料，生成有出处、含反证的长篇底稿，支持五类报告形态、局部修订与接续。"
   },
-  "avatar": "avatars/fbsir-icon.png",
   "categoryId": "12-IndustryConsultant",
   "defaultInitPrompt": {
     "en": "Research [an industry, company, or issue] using web sources and my materials. Produce a sourced working paper with counterevidence and practical writing guidance.",

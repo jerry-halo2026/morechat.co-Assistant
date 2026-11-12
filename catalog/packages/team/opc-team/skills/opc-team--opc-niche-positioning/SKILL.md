@@ -1,6 +1,6 @@
 ---
 name: opc-niche-positioning
-description: Find and position a viable niche market for a one-person company by combining market mapping and customer segmentation. Use when Codex needs to explain niche concepts when needed, check founder-resource prerequisites, ask one question at a time, generate multiple niche options, and write user-confirmed positioning outputs into `opc-doc/`.
+description: Find and position a viable niche market for a one-person company by combining market mapping and customer segmentation. Use when the agent needs to explain niche concepts when needed, check founder-resource prerequisites, ask one question at a time, generate multiple niche options, and write user-confirmed positioning outputs into `opc-doc/`.
 ---
 
 # 利基定位

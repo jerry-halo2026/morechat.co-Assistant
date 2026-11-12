@@ -1,6 +1,6 @@
 ---
 name: opc-dashboard-review
-description: Review the operating health of a one-person company using lightweight metrics, bottleneck analysis, and stop-loss logic. Use when Codex needs to explain review concepts when needed, verify available outputs, ask one question at a time, present multiple bottleneck hypotheses, and write user-confirmed outputs into `opc-doc/`.
+description: Review the operating health of a one-person company using lightweight metrics, bottleneck analysis, and stop-loss logic. Use when the agent needs to explain review concepts when needed, verify available outputs, ask one question at a time, present multiple bottleneck hypotheses, and write user-confirmed outputs into `opc-doc/`.
 ---
 
 # 经营复盘

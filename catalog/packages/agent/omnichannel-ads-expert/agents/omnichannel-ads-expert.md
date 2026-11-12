@@ -7,7 +7,7 @@ displayName:
 profession:
   en: "Omnichannel Advertising Specialist"
   zh: "全渠道广告投放专家"
-skills: [omnichannel-ads-playbook]
+skills: [omnichannel-ads-expert--omnichannel-ads-playbook]
 maxTurns: 50
 ---
 

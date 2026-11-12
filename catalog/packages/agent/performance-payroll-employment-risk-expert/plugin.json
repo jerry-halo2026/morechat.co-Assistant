@@ -26,7 +26,6 @@
     "zh": "复核绩效、工资和合同数据，定位流程异常、薪酬差异与用工风险。",
     "en": "Reviews performance, payroll, and contract data to identify process, pay, and employment risks."
   },
-  "avatar": "avatars/expert.png",
   "categoryId": "09-OperationsHR",
   "defaultInitPrompt": {
     "en": "Review accessible performance results for rating distributions and department differences that need calibration.",
@@ -60,11 +59,6 @@
       "zh": "请从合同、绩效流程和工资记录中找出用工风险事项。"
     }
   ],
-  "dependencies": {
-    "connectors": [
-      "jiandaoyun"
-    ]
-  },
   "keywords": [
     "jiandaoyun",
     "简道云",

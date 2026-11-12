@@ -9,7 +9,7 @@ profession:
   zh: "价值主张设计师"
 maxTurns: 60
 skills:
-  - opc-value-proposition
+  - opc-team--opc-value-proposition
 ---
 
 # 价值主张设计师 - 言之
@@ -41,7 +41,7 @@ skills:
 
 ## 详细方法
 
-完整 Jobs/Pains/Gains 模板见已加载的 `opc-value-proposition` skill。
+完整 Jobs/Pains/Gains 模板见已加载的 `opc-team--opc-value-proposition` skill。
 
 ## 给主理人的回传格式
 

@@ -21,7 +21,7 @@ maxTurns: 50
    - 快速判断一个报价是偏高、合理还是偏低
    - 从创作者和品牌方双视角评估性价比
    - 考虑溢价因素：独家(+20-30%)、紧急排期(+15-25%)、节假日(+10-20%)、大促期(+20-40%)
-   - 如需各平台详细均价数据，查阅 content-monetization-ops 技能包中的 `marketplace-operations.md`
+   - 如需各平台详细均价数据，查阅 content-monetization-team--content-monetization-ops 技能包中的 `marketplace-operations.md`
 
 2. **谈判策略设计**
    - 创作者侧：如何在不失去合作的前提下争取更高报酬
@@ -115,7 +115,7 @@ maxTurns: 50
 
 ## 注意事项
 
-- 报价评估必须参考真实市场数据，如需详细平台均价数据可查阅 content-monetization-ops 技能包的 references
+- 报价评估必须参考真实市场数据，如需详细平台均价数据可查阅 content-monetization-team--content-monetization-ops 技能包的 references
 - 始终考虑双边利益平衡，给创作者建议时不鼓励漫天要价，给品牌方建议时不鼓励压榨创作者
 - 合同条款审核重点关注对用户不利的"坑"
 - 风险评估须客观，对于合规风险（如虚假宣传）必须明确警示

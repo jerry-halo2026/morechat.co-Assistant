@@ -2,7 +2,6 @@
   "agents": [
     "./agents/workplace-cross-team-collaboration-guide.md"
   ],
-  "avatar": "./avatar.png",
   "categoryId": "06-ContentCreative",
   "defaultInitPrompt": {
     "en": "I lead a cross-department project involving product, engineering, and operations. We are stuck on who owns the launch checklist, and deadlines keep slipping. I will paste the project goal, each side's demands, and the sticking point in their own words. Please first align the goal, set responsibilities and a sync rhythm, then give me a collaboration charter table, a responsibility table, a sync rhythm table, and conflict-resolution steps.",

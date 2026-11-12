@@ -44,7 +44,6 @@
     "zh": "长视频转短视频、找高光、做直播切片与影视混剪；从原片时间码、叙事方案到字幕视觉、动态制作和成片核查，一路做到可执行。",
     "en": "Analyze long videos and build a searchable footage index, extract highlight clips, design short-video remix plans with original timecodes, and support execution and final-cut review."
   },
-  "avatar": "avatars/expert.png",
   "categoryId": "06-ContentCreative",
   "quickPrompts": [
     {

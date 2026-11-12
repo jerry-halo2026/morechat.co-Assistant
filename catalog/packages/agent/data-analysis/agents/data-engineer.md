@@ -28,11 +28,11 @@ color: "#0EA5E9"
 ## 工具用法
 
 ```bash
-python <SKILL_ROOT>/skills/data-analysis-cn/scripts/datakit.py profile 数据.csv --json
-python <SKILL_ROOT>/skills/data-analysis-cn/scripts/datakit.py clean 数据.csv
+python <SKILL_ROOT>../skills/data-analysis--data-analysis-cn/scripts/datakit.py profile 数据.csv --json
+python <SKILL_ROOT>../skills/data-analysis--data-analysis-cn/scripts/datakit.py clean 数据.csv
 ```
 
-工具细节查 `@references/datakit-cookbook.md`。GBK 编码直接读，"128万"这种数字原生认识。
+工具细节查 `@../skills/data-analysis--data-analysis-cn/references/datakit-cookbook.md`。GBK 编码直接读，"128万"这种数字原生认识。
 
 ## 交付物模板
 
