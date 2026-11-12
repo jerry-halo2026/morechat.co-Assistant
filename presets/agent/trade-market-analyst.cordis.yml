@@ -5,7 +5,7 @@
 # source       : catalog/packages/agent/trade-market-analyst
 # persona      : catalog/packages/agent/trade-market-analyst/agents/trade-market-analyst.md
 # skills root  : catalog/packages/agent/trade-market-analyst/skills (3 bundle(s))
-# contentSha256: 79c8587c48226b3670f6f0c954760ad24052788568c3eedbb9672ae86a7519bc
+# contentSha256: c974d3970bd858bcc54f776705158774315b78a2b92433491b1ecd9fa2973218
 #
 # DSH side of the preset layer: one @deepseek-ai/dsh-agent-preset declaration, shaped like
 # @deepseek-ai/dsh-web-app/presets/standard.patch.yml. It injects the package persona and the

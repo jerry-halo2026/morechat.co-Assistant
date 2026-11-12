@@ -69,21 +69,21 @@
 从专家根目录使用守卫时，单工作单元的基本顺序如下；多帧计划在 `init` 时重复传入 `--unit` 一次声明完整。只有 `authorize` 返回 `status: authorized` 且退出码为 0 才能启动对应预览，拒绝结果不得启动：
 
 ```bash
-python skills/long-manuscript-expert--long-manuscript-core/scripts/preview_budget.py init --state preview-state.json --route final-html:host-preview --unit main
-python skills/long-manuscript-expert--long-manuscript-core/scripts/preview_budget.py authorize --state preview-state.json --unit main
+python skills/long-manuscript-core/scripts/preview_budget.py init --state preview-state.json --route final-html:host-preview --unit main
+python skills/long-manuscript-core/scripts/preview_budget.py authorize --state preview-state.json --unit main
 # 仅在上一条授权后执行一次宿主预览；随后按实际结果记录，不把 returned 当作视觉通过。
-python skills/long-manuscript-expert--long-manuscript-core/scripts/preview_budget.py complete --state preview-state.json --attempt-id 1 --outcome failed --artifact-state missing --note "实际返回信息；原因未知则明确写未知"
+python skills/long-manuscript-core/scripts/preview_budget.py complete --state preview-state.json --attempt-id 1 --outcome failed --artifact-state missing --note "实际返回信息；原因未知则明确写未知"
 # 仅前次符合失败条件且有依据时申请一次同单元重试。
-python skills/long-manuscript-expert--long-manuscript-core/scripts/preview_budget.py authorize --state preview-state.json --unit main --retry-of 1 --reason "与实际失败对应的重试依据"
-python skills/long-manuscript-expert--long-manuscript-core/scripts/preview_budget.py stop --state preview-state.json --reason "达到预算或交付方决定停止"
-python skills/long-manuscript-expert--long-manuscript-core/scripts/preview_budget.py status --state preview-state.json
+python skills/long-manuscript-core/scripts/preview_budget.py authorize --state preview-state.json --unit main --retry-of 1 --reason "与实际失败对应的重试依据"
+python skills/long-manuscript-core/scripts/preview_budget.py stop --state preview-state.json --reason "达到预算或交付方决定停止"
+python skills/long-manuscript-core/scripts/preview_budget.py status --state preview-state.json
 ```
 
 若尝试 1 实际记录为 `unknown`，不得执行上例重试；取得原调用结果的具体证据后改用以下命令。无法取得证据时直接 `stop`，不得换单元、换输出路径或重新 `init`：
 
 ```bash
-python skills/long-manuscript-expert--long-manuscript-core/scripts/preview_budget.py resolve --state preview-state.json --attempt-id 1 --outcome returned --artifact-state generated --evidence "原调用结果的具体证据定位"
-python skills/long-manuscript-expert--long-manuscript-core/scripts/preview_budget.py status --state preview-state.json
+python skills/long-manuscript-core/scripts/preview_budget.py resolve --state preview-state.json --attempt-id 1 --outcome returned --artifact-state generated --evidence "原调用结果的具体证据定位"
+python skills/long-manuscript-core/scripts/preview_budget.py status --state preview-state.json
 ```
 
 最小工作记录如下；守卫状态文件或等效手工记录均可，但必须能回查：

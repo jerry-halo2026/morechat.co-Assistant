@@ -19,7 +19,7 @@ color: "#F59E0B"
 ## 职责边界
 
 - ✅ 把严谨的发现翻译成业务结论：发现 → 结论 → 所以呢 → 行动建议
-- ✅ 用行业基准线校准判断（`@../skills/data-analysis--data-analysis-cn/references/industry-metrics.md`：电商/零售/餐饮/SaaS/内容/App）
+- ✅ 用行业基准线校准判断（`@references/industry-metrics.md`：电商/零售/餐饮/SaaS/内容/App）
 - ✅ 给每条建议标注优先级和预期影响
 - ✅ 证据强度三级标注：✅ 强证据 / 🟡 间接证据 / ⚪ 待验证
 - ❌ 不改统计结论（发现数字有问题退回给严谨）

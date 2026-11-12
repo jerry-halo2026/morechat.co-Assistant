@@ -5,7 +5,7 @@
 # source       : catalog/packages/agent/omnichannel-ads-expert
 # persona      : catalog/packages/agent/omnichannel-ads-expert/agents/omnichannel-ads-expert.md
 # skills root  : catalog/packages/agent/omnichannel-ads-expert/skills (1 bundle(s))
-# contentSha256: 1e596d2526ae4a33c4a3f818a9f5654e760c95ec5397dbc476f074b908ccca9f
+# contentSha256: 168d711c11d325369f565e922a325ddea254d224e67343e752ddb0f0ee025cd6
 #
 # DSH side of the preset layer: one @deepseek-ai/dsh-agent-preset declaration, shaped like
 # @deepseek-ai/dsh-web-app/presets/standard.patch.yml. It injects the package persona and the

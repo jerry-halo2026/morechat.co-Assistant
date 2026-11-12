@@ -4,7 +4,7 @@
 
 首值来自morechat.co原生搜索、读取、理解、推理与制作能力加包内方法。包内不包含MCP、连接器、常驻进程、Hooks、Commands、Node/Python运行时、用户材料或本机绝对路径。确定性客户端是使用当前宿主已有Node运行时的可选脚本，不是捆绑解释器或常驻服务。
 
-方法入口由Agent正文显式引导加载[核心Skill](../skills/fbsir-industry-scene-researcher--industry-scene-service-recording/SKILL.md)，再按需读参考。此文本不是宿主强制执行证明；不添加未经确认的when_to_use/alwaysApply/priority元数据。无JS工具时继续原生研究，不要求安装运行时。
+方法入口由Agent正文显式引导加载核心Skill（`fbsir-industry-scene-researcher--industry-scene-service-recording` 技能的 `SKILL.md`），再按需读参考。此文本不是宿主强制执行证明；不添加未经确认的when_to_use/alwaysApply/priority元数据。无JS工具时继续原生研究，不要求安装运行时。
 
 本版保留原行业场景研究员的产品识别标识与专业方法，增强业务问题驱动搜索、互补来源与反证、跨行业迁移、双侧未知/冲突/版本和首值后少量建议。用户给出的材料保持只读，用户修改和本产品自身续接需要保护。
 

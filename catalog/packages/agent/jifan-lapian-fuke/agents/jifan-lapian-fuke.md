@@ -9,9 +9,9 @@ profession:
   zh: "拉片复刻师"
 maxTurns: 60
 skills:
-  - jifan-lapian-fuke--jifan-lapian-chaifen
-  - jifan-lapian-fuke--jifan-lapian-jiegou
-  - jifan-lapian-fuke--jifan-lapian-qingdan
+  - jifan-lapian-chaifen
+  - jifan-lapian-jiegou
+  - jifan-lapian-qingdan
 ---
 
 # 拉片复刻师
@@ -20,9 +20,9 @@ skills:
 
 ## 自动路由
 
-- 用户提到拉片时，调用 `jifan-lapian-fuke--jifan-lapian-chaifen`。
-- 用户提到结构复刻时，调用 `jifan-lapian-fuke--jifan-lapian-jiegou`。
-- 用户提到执行清单时，调用 `jifan-lapian-fuke--jifan-lapian-qingdan`。
+- 用户提到拉片时，调用 `jifan-lapian-chaifen`。
+- 用户提到结构复刻时，调用 `jifan-lapian-jiegou`。
+- 用户提到执行清单时，调用 `jifan-lapian-qingdan`。
 
 ## 工作边界
 
@@ -34,6 +34,6 @@ skills:
 
 ## 演示执行步骤
 
-- `python3 skills/jifan-lapian-fuke--jifan-lapian-chaifen/scripts/build_jifan_lapian_chaifen.py --input examples/jifan-lapian-chaifen-sample.json --output /tmp/jifan-lapian-chaifen.md`
-- `python3 skills/jifan-lapian-fuke--jifan-lapian-jiegou/scripts/build_jifan_lapian_jiegou.py --input examples/jifan-lapian-jiegou-sample.json --output /tmp/jifan-lapian-jiegou.md`
-- `python3 skills/jifan-lapian-fuke--jifan-lapian-qingdan/scripts/build_jifan_lapian_qingdan.py --input examples/jifan-lapian-qingdan-sample.json --output /tmp/jifan-lapian-qingdan.md`
+- `python3 skills/jifan-lapian-chaifen/scripts/build_jifan_lapian_chaifen.py --input examples/jifan-lapian-chaifen-sample.json --output /tmp/jifan-lapian-chaifen.md`
+- `python3 skills/jifan-lapian-jiegou/scripts/build_jifan_lapian_jiegou.py --input examples/jifan-lapian-jiegou-sample.json --output /tmp/jifan-lapian-jiegou.md`
+- `python3 skills/jifan-lapian-qingdan/scripts/build_jifan_lapian_qingdan.py --input examples/jifan-lapian-qingdan-sample.json --output /tmp/jifan-lapian-qingdan.md`

@@ -22,7 +22,7 @@ description: >-
 
 ## Skills 参考库说明
 
-本团队配有专业参考库 `skills/fullstack-forge-team--forge-orchestrator/references/`，共 8 份专业知识文件。**分派任务时，你必须同时告知对应成员"开始工作前先阅读指定的参考文件"**，成员将依据参考文件中的方法论与模板产出，避免凭空发挥导致的质量波动。
+本团队配有专业参考库 `skills/forge-orchestrator/references/`，共 8 份专业知识文件。**分派任务时，你必须同时告知对应成员"开始工作前先阅读指定的参考文件"**，成员将依据参考文件中的方法论与模板产出，避免凭空发挥导致的质量波动。
 
 参考文件按需读取：团长做诊断与整合时只需阅读本文件；成员执行专业任务时，由团长在下发的任务指令中明确指定必读的参考文件路径（见"各阶段参考文件映射"）。
 
@@ -174,13 +174,13 @@ Phase 5 增长运营 + 整合报告
 
 | 阶段 | 成员 | 必读参考文件 |
 |------|------|--------------|
-| Phase 1 | 选品洞察师 | `../skills/fullstack-forge-team--forge-orchestrator/references/requirement-analysis.md`、`../skills/fullstack-forge-team--forge-orchestrator/references/platform-selection.md` |
-| Phase 1 | 产品主理人 | `../skills/fullstack-forge-team--forge-orchestrator/references/product-design.md` |
-| Phase 1 | 全栈研发师 | `../skills/fullstack-forge-team--forge-orchestrator/references/tech-stack-architecture.md` |
-| Phase 2 | 质量测试官 | `../skills/fullstack-forge-team--forge-orchestrator/references/qa-testing.md` |
-| Phase 3 | 上线发布师 | `../skills/fullstack-forge-team--forge-orchestrator/references/release-deployment.md` |
-| Phase 4 | 运维守护师 | `../skills/fullstack-forge-team--forge-orchestrator/references/ops-monitoring.md` |
-| Phase 5 | 增长运营师 | `../skills/fullstack-forge-team--forge-orchestrator/references/growth-retention.md` |
+| Phase 1 | 选品洞察师 | `references/requirement-analysis.md`、`references/platform-selection.md` |
+| Phase 1 | 产品主理人 | `references/product-design.md` |
+| Phase 1 | 全栈研发师 | `references/tech-stack-architecture.md` |
+| Phase 2 | 质量测试官 | `references/qa-testing.md` |
+| Phase 3 | 上线发布师 | `references/release-deployment.md` |
+| Phase 4 | 运维守护师 | `references/ops-monitoring.md` |
+| Phase 5 | 增长运营师 | `references/growth-retention.md` |
 
 单模块模式下同样执行此映射：用户只要某类产出，就调用对应成员并指定其参考文件。
 

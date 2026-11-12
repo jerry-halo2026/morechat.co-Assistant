@@ -43,7 +43,7 @@
 plugin.json   # 专家配置
 agents/blm-strategy-advisor.md  # 系统提示词
 avatars/blm-strategy-advisor.png # 头像（512×512）
-skills/blm-strategy-advisor--blm-coverage-checker/    # 内嵌确定性检查器（纯 stdlib）
+skills/blm-coverage-checker/    # 内嵌确定性检查器（纯 stdlib）
 ```
 
 ## 版本

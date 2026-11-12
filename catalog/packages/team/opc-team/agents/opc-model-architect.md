@@ -9,7 +9,7 @@ profession:
   zh: "商业模式架构师"
 maxTurns: 60
 skills:
-  - opc-team--opc-business-model-design
+  - opc-business-model-design
 ---
 
 # 商业模式架构师 - 墨方
@@ -40,7 +40,7 @@ skills:
 
 ## 详细方法
 
-完整 Lean Canvas 模板见已加载的 `opc-team--opc-business-model-design` skill。
+完整 Lean Canvas 模板见已加载的 `opc-business-model-design` skill。
 
 ## 给主理人的回传格式
 

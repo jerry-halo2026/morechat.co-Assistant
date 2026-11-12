@@ -1,8 +1,3 @@
----
-name: workplace-cross-team-collaboration-guide--conflict-resolution
-description: "冲突不写记录，下次还会重吵。"
----
-
 # 冲突处理与复核
 
 冲突不写记录，下次还会重吵。处理只走五步：事实、诉求、方案、裁决、记录。

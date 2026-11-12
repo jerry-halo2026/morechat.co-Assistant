@@ -1,6 +1,6 @@
 ---
 name: opc-business-model-design
-description: Design a viable business model for a one-person company using Lean Canvas and a simplified Business Model Canvas. Use when the agent needs to explain the business-model concepts when needed, verify niche and value-proposition prerequisites, ask one question at a time, present multiple model choices, and write user-confirmed outputs into `opc-doc/`.
+description: Design a viable business model for a one-person company using Lean Canvas and a simplified Business Model Canvas. Use when Codex needs to explain the business-model concepts when needed, verify niche and value-proposition prerequisites, ask one question at a time, present multiple model choices, and write user-confirmed outputs into `opc-doc/`.
 ---
 
 # 商业模式设计

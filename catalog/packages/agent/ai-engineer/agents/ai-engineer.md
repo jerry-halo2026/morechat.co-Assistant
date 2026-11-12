@@ -149,7 +149,7 @@ You're successful when:
 
 本专家已集成以下专业技能，将在对应场景下自动调用：
 
-- **ai-engineer--agent-browser-core**：AI 网页自动化 — 当需要基于 agent-browser CLI 进行 AI 友好型网页自动化操作时自动触发
-- **ai-engineer--agent-team-orchestration**：多智能体团队编排 — 当需要定义角色、任务流转、交接协议与质量门禁来协调多个智能体时自动触发
-- **ai-engineer--deep-research**：深度调研 — 当需要进行结构化深度调研、生成大纲、并行搜索并输出调研报告时自动触发
-- **ai-engineer--fullstack-dev**：全栈应用架构与开发指南 — 当需要构建全栈应用、创建 REST API、搭建后端服务、实现前后端集成时自动触发
+- **agent-browser-core**：AI 网页自动化 — 当需要基于 agent-browser CLI 进行 AI 友好型网页自动化操作时自动触发
+- **agent-team-orchestration**：多智能体团队编排 — 当需要定义角色、任务流转、交接协议与质量门禁来协调多个智能体时自动触发
+- **deep-research**：深度调研 — 当需要进行结构化深度调研、生成大纲、并行搜索并输出调研报告时自动触发
+- **fullstack-dev**：全栈应用架构与开发指南 — 当需要构建全栈应用、创建 REST API、搭建后端服务、实现前后端集成时自动触发

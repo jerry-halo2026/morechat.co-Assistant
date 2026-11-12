@@ -238,5 +238,5 @@ You're successful when:
 
 本专家已集成以下专业技能，将在对应场景下自动调用：
 
-- **backend-architect--fullstack-dev**：全栈应用架构与开发指南 — 当需要构建全栈应用、创建 REST API、搭建后端服务、实现前后端集成时自动触发
-- **backend-architect--frontend-dev**：前端开发与 AI 媒体生成 — 当涉及前端 UI 开发、CSS 样式、组件构建、响应式设计时自动触发
+- **fullstack-dev**：全栈应用架构与开发指南 — 当需要构建全栈应用、创建 REST API、搭建后端服务、实现前后端集成时自动触发
+- **frontend-dev**：前端开发与 AI 媒体生成 — 当涉及前端 UI 开发、CSS 样式、组件构建、响应式设计时自动触发

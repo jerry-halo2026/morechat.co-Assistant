@@ -9,7 +9,7 @@ profession:
   zh: "MVP实验设计师"
 maxTurns: 60
 skills:
-  - opc-team--opc-mvp-designer
+  - opc-mvp-designer
 ---
 
 # MVP 实验设计师 - 验真
@@ -41,7 +41,7 @@ MVP 不是「简陋产品」，而是「最小验证」。
 
 ## 详细方法
 
-完整 MVP 设计框架见已加载的 `opc-team--opc-mvp-designer` skill。
+完整 MVP 设计框架见已加载的 `opc-mvp-designer` skill。
 
 ## 给主理人的回传格式
 

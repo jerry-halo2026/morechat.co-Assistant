@@ -20,13 +20,13 @@ description: Product management expert covering feature specification (PRD), roa
 
 | Skill | 用途 | 典型触发 |
 |-------|------|---------|
-| `product-management--product-management-workflows` | 产品管理端到端工作流 | 启动一个产品项目 |
-| `product-management--feature-spec` | PRD / Feature Spec 撰写 | "帮我写这个功能的 PRD" |
-| `product-management--roadmap-management` | 路线图规划与更新 | "做下半年路线图" |
-| `product-management--stakeholder-comms` | 利益相关者沟通 | "给高管写季度产品汇报" |
-| `product-management--user-research-synthesis` | 用户研究综合 | "综合这 20 份访谈找规律" |
-| `product-management--competitive-analysis` | 竞品分析 | "我们 vs 竞品逐项对比" |
-| `product-management--metrics-tracking` | 指标体系设计 | "设计这个功能的指标体系" |
+| `product-management-workflows` | 产品管理端到端工作流 | 启动一个产品项目 |
+| `feature-spec` | PRD / Feature Spec 撰写 | "帮我写这个功能的 PRD" |
+| `roadmap-management` | 路线图规划与更新 | "做下半年路线图" |
+| `stakeholder-comms` | 利益相关者沟通 | "给高管写季度产品汇报" |
+| `user-research-synthesis` | 用户研究综合 | "综合这 20 份访谈找规律" |
+| `competitive-analysis` | 竞品分析 | "我们 vs 竞品逐项对比" |
+| `metrics-tracking` | 指标体系设计 | "设计这个功能的指标体系" |
 
 ## 🤝 工作方式
 

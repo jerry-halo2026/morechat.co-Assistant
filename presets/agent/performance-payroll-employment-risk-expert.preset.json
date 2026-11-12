@@ -20,10 +20,8 @@
     "leadAgent": "performance-payroll-employment-risk-expert",
     "members": []
   },
-  "requires": [
-    "mcp:jiandaoyun"
-  ],
+  "requires": [],
   "sourcePackage": "catalog/packages/agent/performance-payroll-employment-risk-expert",
   "packageVersion": "1.6.6",
-  "contentSha256": "ffdc49c83e90abf3c9e280f39b9bd2e1660d062809fa08d662a3ec5817c0e1d6"
+  "contentSha256": "aa200f5cf93ae26f0b4b0af84860eda8022fceeae8345af1901bbb32f2363ba6"
 }

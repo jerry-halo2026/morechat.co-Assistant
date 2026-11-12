@@ -69,8 +69,8 @@ examples:
 六维体检：**缺失、重复、异常值、口径不一致、逻辑矛盾**（下单时间晚于支付时间）、**分布突变**（某天数据量断崖——可能是导出事故）。
 
 ```bash
-python <SKILL_ROOT>/scripts/datakit.py profile 数据.csv --json   # 数据画像
-python <SKILL_ROOT>/scripts/datakit.py clean 数据.csv             # 自动清洗 + 留痕
+python scripts/datakit.py profile 数据.csv --json   # 数据画像
+python scripts/datakit.py clean 数据.csv             # 自动清洗 + 留痕
 ```
 
 清洗决策**逐条留痕**：删了什么、填了什么、为什么——可回溯，复盘时说得清。产出可用率评分 A/B/C/D + 风险声明（哪些结论受数据质量限制）。
@@ -128,14 +128,14 @@ python <SKILL_ROOT>/scripts/datakit.py clean 数据.csv             # 自动清�
 零依赖纯标准库，CSV 进、结果出，`--json` 输出机器可读：
 
 ```bash
-python <SKILL_ROOT>/scripts/datakit.py profile 数据.csv --json          # 数据画像+质量评分
-python <SKILL_ROOT>/scripts/datakit.py clean 数据.csv                   # 清洗+决策留痕
-python <SKILL_ROOT>/scripts/datakit.py funnel --counts 10万,3.2万,1.5万,9800 --labels 浏览,加购,下单,支付
-python <SKILL_ROOT>/scripts/datakit.py cohort 活跃.csv --id 用户ID --date 日期
-python <SKILL_ROOT>/scripts/datakit.py rfm 订单.csv --id 用户ID --date 订单日期 --amount 金额 --out 分层.csv
-python <SKILL_ROOT>/scripts/datakit.py abc 销售.csv --dim 商品 --value 销售额
-python <SKILL_ROOT>/scripts/datakit.py sig --prop-a 0.052,1200 --prop-b 0.068,1200
-python <SKILL_ROOT>/scripts/datakit.py sig --sample-size --baseline 0.05 --mde 0.01
+python scripts/datakit.py profile 数据.csv --json          # 数据画像+质量评分
+python scripts/datakit.py clean 数据.csv                   # 清洗+决策留痕
+python scripts/datakit.py funnel --counts 10万,3.2万,1.5万,9800 --labels 浏览,加购,下单,支付
+python scripts/datakit.py cohort 活跃.csv --id 用户ID --date 日期
+python scripts/datakit.py rfm 订单.csv --id 用户ID --date 订单日期 --amount 金额 --out 分层.csv
+python scripts/datakit.py abc 销售.csv --dim 商品 --value 销售额
+python scripts/datakit.py sig --prop-a 0.052,1200 --prop-b 0.068,1200
+python scripts/datakit.py sig --sample-size --baseline 0.05 --mde 0.01
 ```
 
 细节和实战示例见 `references/datakit-cookbook.md`。**CSV 支持 GBK 编码**（Excel 导出直接读），数字认识"万/亿"后缀。

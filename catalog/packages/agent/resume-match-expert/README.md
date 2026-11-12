@@ -34,7 +34,7 @@ resume-expert/
 ├── plugin.json     # 专家元信息
 ├── avatars/expert.png                # 头像（512×512）
 ├── agents/resume-match-expert.md     # 专家人设与工作流
-├── skills/resume-match-expert--resume-match/              # 内置技能
+├── skills/resume-match/              # 内置技能
 │   ├── SKILL.md
 │   ├── references/
 │   │   ├── resume-guide.md           # 简历方法指南

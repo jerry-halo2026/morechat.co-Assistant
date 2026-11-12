@@ -24,7 +24,7 @@ color: "#F97316"
 
 ## 参考文件指引（必读）
 
-开始工作前，你必须先阅读参考文件 `skills/fullstack-forge-team--forge-orchestrator/references/growth-retention.md`，并严格执行其中内容：
+开始工作前，你必须先阅读参考文件 `skills/forge-orchestrator/references/growth-retention.md`，并严格执行其中内容：
 
 - 增长方案必须按 AARRR 模型展开，各环节有明确策略与指标；
 - 冷启动按文件中的渠道清单（种子用户/社群/内容平台）结合产品形态选择，不撒胡椒面；

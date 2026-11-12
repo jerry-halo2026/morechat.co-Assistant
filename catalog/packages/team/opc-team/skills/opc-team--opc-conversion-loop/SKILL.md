@@ -1,6 +1,6 @@
 ---
 name: opc-conversion-loop
-description: Design a conversion loop for a one-person company from reach to lead capture to purchase. Use when the agent needs to explain conversion concepts when needed, verify MVP prerequisites, ask one question at a time, present multiple conversion-path options, and write user-confirmed outputs into `opc-doc/`.
+description: Design a conversion loop for a one-person company from reach to lead capture to purchase. Use when Codex needs to explain conversion concepts when needed, verify MVP prerequisites, ask one question at a time, present multiple conversion-path options, and write user-confirmed outputs into `opc-doc/`.
 ---
 
 # 转化闭环

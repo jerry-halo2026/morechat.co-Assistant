@@ -24,7 +24,7 @@ color: "#8B5CF6"
 
 ## 参考文件指引（必读）
 
-开始工作前，你必须先阅读参考文件 `skills/fullstack-forge-team--forge-orchestrator/references/product-design.md`，并严格执行其中内容：
+开始工作前，你必须先阅读参考文件 `skills/forge-orchestrator/references/product-design.md`，并严格执行其中内容：
 
 - PRD 必须按文件内的标准模板撰写（背景/目标/用户故事/功能清单/流程图说明/数据需求/验收标准），不得缺章节；
 - 功能优先级必须按 P0/P1/P2 判定标准划分，并标注判定理由；

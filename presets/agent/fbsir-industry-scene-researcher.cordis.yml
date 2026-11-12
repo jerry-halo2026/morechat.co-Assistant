@@ -5,7 +5,7 @@
 # source       : catalog/packages/agent/fbsir-industry-scene-researcher
 # persona      : catalog/packages/agent/fbsir-industry-scene-researcher/agents/fbsir-industry-scene-researcher.md
 # skills root  : catalog/packages/agent/fbsir-industry-scene-researcher/skills (1 bundle(s))
-# contentSha256: 4bc26c9ba2c98c3ab9503bd7767b0a3beb3ab058b1464af3583ebf7cd480f84c
+# contentSha256: adf3d1e4badb776ba1a68b7fe6b2094629bffb68e221d24f542821ab0ee5dcd7
 #
 # DSH side of the preset layer: one @deepseek-ai/dsh-agent-preset declaration, shaped like
 # @deepseek-ai/dsh-web-app/presets/standard.patch.yml. It injects the package persona and the

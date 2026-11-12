@@ -64,7 +64,7 @@
 
 ### V3 候选方案（先 Direction Read，再 Art Direction，最后参数）
 
-**先不要选字体。** 打开 `visual-direction-atlas.md`、`scene-text-grammar.md`、`timing-grammar.md`，完成 V3 的 `direction_read`：
+**先不要选字体。** 打开 `references/visual-direction-atlas.md`、`scene-text-grammar.md`、`timing-grammar.md`，完成 V3 的 `direction_read`：
 
 - `attention_owner / attention_sequence`：这一刻先看人物、动作、关系还是文字；
 - `text_role`：观察、关系注解、细节标注、反差第二声部、情绪余韵、punchline 或章节；

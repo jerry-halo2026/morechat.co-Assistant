@@ -15,7 +15,7 @@ Agent 型（单个 AI 专家）—— 罗凯 Kai Luo，8 年出海短视频操�
 - **数据诊断**：播放量卡层级诊断、流量结构健康度、周报/复盘模板
 - **避坑合规**：封号限流原因、内容红线、音乐版权、电商合规、割韭菜识别
 
-知识库位于 `skills/tiktok-growth-expert--tiktok-growth-playbook/references/`（8 份分册）。
+知识库位于 `skills/tiktok-growth-playbook/references/`（8 份分册）。
 
 ## 使用示例
 

@@ -181,7 +181,64 @@ function convertText(text) {
   let out = stripVendorTelemetry(text);
   out = rewriteAllowedTools(out);
   for (const [re, rep] of REWRITES) out = out.replace(re, rep);
-  return out;
+  // Skill paths last: they depend on the namespaced skill directories this same run
+  // creates, and the source addresses files relative to the package root, which no
+  // host has at run time.
+  return rewriteSkillPaths(out);
+}
+
+/**
+ * Turns a package-relative skill path into a skill reference.
+ *
+ * The source briefs were written for a host whose working directory was the package,
+ * so a file is addressed as `../skills/<ns>/references/x.md`. After import the skill
+ * lives at `{workdir}/.dsh/skills/<ns>/` and there is no `../skills/` to walk up
+ * into - the agent would look for a path that cannot exist.
+ *
+ * A markdown link cannot keep its target (the path is the thing being removed), so it
+ * becomes the link text followed by the reference. A command line keeps its
+ * executable shape: run the file from inside the skill's directory.
+ */
+function rewriteSkillPaths(text) {
+  const TICK = String.fromCharCode(96);
+  const NS = '[a-z0-9-]+--[a-z0-9-]+';
+  const LINK = new RegExp(
+    `\\[([^\\]]+)\\]\\((?:<SKILL_ROOT>|@)?(?:\\.\\.\\/skills|<SKILL_ROOT>\\/skills)\\/(${NS})\\/([^\\s\`'")\\],，。；]+)\\)`,
+    'g',
+  );
+  const SKILL_PATH = new RegExp(
+    `(?:<SKILL_ROOT>|@)?(?:\\.\\.\\/skills\\/(${NS})|<SKILL_ROOT>\\/skills\\/(${NS})|<SKILL_ROOT>)\\/([^\\s\`'")\\],，。；]+)`,
+    'g',
+  );
+  const COMMAND_LINE = /^\s*(?:[-*|]\s*)?(?:python3?|node|bash|sh|npx|cd|\.\/)/;
+
+  return text
+    .split('\n')
+    .map((line) => {
+      if (!line.includes('skills/') && !line.includes('<SKILL_ROOT>')) return line;
+      // Markdown links first: their parentheses would otherwise be read as prose.
+      let out = line.replace(LINK, (_m, label, ns, rest) => `${label}（${TICK}${ns}${TICK} 技能的 ${TICK}${rest}${TICK}）`);
+      if (out !== line) return out;
+      if (COMMAND_LINE.test(out)) {
+        const ns = out.match(new RegExp(`\\.\\.\\/skills\\/(${NS})\\/`))?.[1]
+          ?? out.match(new RegExp(`<SKILL_ROOT>\\/skills\\/(${NS})\\/`))?.[1];
+        if (!ns) return out.replace(/<SKILL_ROOT>\//g, '');
+        const command = out
+          .replace(/<SKILL_ROOT>|\.\.\/skills\/[a-z0-9-]+--[a-z0-9-]+\//g, '')
+          .trim();
+        const indent = out.match(/^\s*/)?.[0] ?? '';
+        return `${indent}在 ${TICK}${ns}${TICK} 技能目录下执行：${TICK}${command}${TICK}`;
+      }
+      return out.replace(SKILL_PATH, (match, nsA, nsB, rest, offset, whole) => {
+        const ns = nsA ?? nsB ?? null;
+        if (!ns) return match.replace(/^<SKILL_ROOT>\//, '');
+        const before = whole[offset - 1];
+        const after = whole[offset + match.length];
+        if (before === TICK && after === TICK) return `${ns} 技能的 ${rest}`;
+        return `${TICK}${ns}${TICK} 技能的 ${TICK}${rest}${TICK}`;
+      });
+    })
+    .join('\n');
 }
 
 /** plugin.json: preserve layout, substitute only the prohibited runtime strings. */
@@ -410,7 +467,16 @@ function copyPackage(kind, id) {
       fs.copyFileSync(f.abs, dst);
     } else {
       let s = fs.readFileSync(f.abs, 'utf8');
-      s = convertText(s);
+      // A brief in this package may name a skill by its source directory, which no
+    // longer exists once every skill is namespaced. The map turns it into the ns
+    // BEFORE the path rewriter runs, so the rewriter sees a path it recognises.
+    for (const [relDir, nsName] of skillNs) {
+      const dir = relDir.replace(/^skills\//, "");
+      if (dir === nsName || !dir) continue;
+      s = s.split(`../skills/${dir}/`).join(`../skills/${nsName}/`);
+      s = s.split(`<SKILL_ROOT>/skills/${dir}/`).join(`../skills/${nsName}/`);
+    }
+    s = convertText(s);
       if (rel === 'README.md' || (rel.endsWith('/README.md') && !rel.startsWith('skills/'))) s = rewriteReadme(s);
       fs.writeFileSync(dst, s, 'utf8');
     }

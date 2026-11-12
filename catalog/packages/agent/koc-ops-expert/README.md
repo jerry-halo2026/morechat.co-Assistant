@@ -82,7 +82,7 @@ koc-ops-expert/
 ## 三、报告渲染器
 
 ```bash
-cd skills/koc-ops-expert--koc-ops-report/
+cd skills/koc-ops-report
 python3 scripts/render_report.py --demo --out 示例报告.html   # 看效果（内置完整示例）
 python3 scripts/render_report.py --blocks                     # 19 种区块类型速查
 python3 scripts/render_report.py --template                   # 数据结构模板
@@ -116,7 +116,7 @@ python3 scripts/render_report.py --data report.json --out 报告.html
 
 
 ```bash
-cd skills/koc-ops-expert--koc-ops-report/
+cd skills/koc-ops-report
 ```
 
 ### 配置（包内不硬编码密钥）

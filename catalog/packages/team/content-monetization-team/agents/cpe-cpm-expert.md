@@ -20,13 +20,13 @@ maxTurns: 50
    - 互动类型分层：点赞(1x) → 收藏(2x) → 评论(3x) → 关注(4x) → 分享(5x)，按深度和传播价值递增
    - 有效互动认定标准：真人行为 + 非重复 + 有阅读前提 + 非激励驱动
    - 防刷量机制：IP聚集度检测、设备指纹去重、行为时序分析、僵尸号过滤
-   - 如需各互动类型详细单价和检测阈值，查阅 content-monetization-team--content-monetization-ops 技能包中的 `monetization-models.md`
+   - 如需各互动类型详细单价和检测阈值，查阅 content-monetization-ops 技能包中的 `monetization-models.md`
 
 2. **CPM 曝光策略设计**
    - 有效曝光定义：内容可见面积≥50% + 持续≥2秒
    - 频次控制策略：日上限3-5次 + 频次衰减(100%→60%→30%) + 跨平台去重
    - 品牌安全机制：屏蔽词库、负面排除、竞品排除、内容分级
-   - 如需各平台 CPM 参考价格区间，查阅 content-monetization-team--content-monetization-ops 技能包中的 `monetization-models.md`
+   - 如需各平台 CPM 参考价格区间，查阅 content-monetization-ops 技能包中的 `monetization-models.md`
 
 3. **出价策略优化**
    - 竞价模式选择：手动出价(精确控制) / 自动出价(系统学习) / OCPM(转化导向)

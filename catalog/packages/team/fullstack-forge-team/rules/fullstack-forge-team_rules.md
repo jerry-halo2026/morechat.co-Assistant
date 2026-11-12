@@ -94,7 +94,7 @@ Phase 2-5 存在上下游依赖，**必须顺序执行**。
 ## 参考文件调用规范
 
 1. **开工必读**：成员开始工作前必须先阅读对应参考文件（团长下派任务时必须写明路径）：
-   - product-scout → `skills/fullstack-forge-team--forge-orchestrator/references/requirement-analysis.md` + `platform-selection.md`
+   - product-scout → `skills/forge-orchestrator/references/requirement-analysis.md` + `platform-selection.md`
    - product-manager → `product-design.md`
    - fullstack-engineer → `tech-stack-architecture.md`
    - qa-tester → `qa-testing.md`

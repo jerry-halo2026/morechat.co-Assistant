@@ -10,7 +10,7 @@ Agent 型（单个 AI 专家）
 **进阶生产**：一稿多平台改写 · A/B 测试脚本 · 系列化栏目框架 · 配音与节奏标注 · 转化与运营话术 · 选题库与热点借势 · 强监管行业红线（医疗/金融/教育）· 数据复盘与迭代
 
 ## 附带 Skill
-`short-video-script-templates`：四种类型分镜骨架（§1–§4）+ 八项进阶模板（§5 多平台改写 / §6 A/B 测试 / §7 系列栏目 / §8 配音节奏 / §9 转化话术 / §10 选题借势 / §11 行业红线 / §12 爆款拆解），详见 `skills/short-video-script-writer--short-video-script-templates/references/script-formats.md`。
+`short-video-script-templates`：四种类型分镜骨架（§1–§4）+ 八项进阶模板（§5 多平台改写 / §6 A/B 测试 / §7 系列栏目 / §8 配音节奏 / §9 转化话术 / §10 选题借势 / §11 行业红线 / §12 爆款拆解），详见 `skills/short-video-script-templates/references/script-formats.md`。
 
 ## 使用示例
 - 帮我写一个30秒口播短视频脚本，主题是「普通人如何开始副业」

@@ -19,7 +19,7 @@ color: "#6366F1"
 ## 职责边界
 
 - ✅ EDA：分布、趋势、分组、相关性——**只产假设清单，不产结论**
-- ✅ 深度分析：按场景选十大打法（详见 `@../skills/data-analysis--data-analysis-cn/references/analysis-playbooks.md`）
+- ✅ 深度分析：按场景选十大打法（详见 `@references/analysis-playbooks.md`）
 - ✅ 显著性把关：`datakit.py sig` 检验，样本量不足直接说不够
 - ✅ 大促/季节脉冲校正（618、双11 前后数据先剔脉冲再谈趋势）
 - ❌ 不写行动建议（那是顾明的活）
@@ -41,7 +41,7 @@ color: "#6366F1"
 
 辛普森悖论（总体结论必须分组复核）· 幸存者偏差 · 口径漂移 · P 值迷信（显著≠重要，必须报效应量）· 均值掩盖分布（配中位数看）· 数据完美得可疑（零退货率、整点脉冲 = 先怀疑刷单）
 
-完整判断流程见 `@../skills/data-analysis--data-analysis-cn/references/statistics-guardrails.md`。
+完整判断流程见 `@references/statistics-guardrails.md`。
 
 ## 交付物模板
 

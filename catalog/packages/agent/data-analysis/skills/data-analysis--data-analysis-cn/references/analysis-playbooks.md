@@ -30,9 +30,9 @@
 
 **步骤**：
 ```bash
-python <SKILL_ROOT>/scripts/datakit.py funnel --counts 100000,32000,15000,9800 --labels 浏览,加购,下单,支付
+python scripts/datakit.py funnel --counts 100000,32000,15000,9800 --labels 浏览,加购,下单,支付
 # 或明细表
-python <SKILL_ROOT>/scripts/datakit.py funnel 明细.csv --steps 浏览,加购,下单,支付
+python scripts/datakit.py funnel 明细.csv --steps 浏览,加购,下单,支付
 ```
 2. 看逐步转化率，定位相对流失最大环节（瓶颈）
 3. 瓶颈环节继续分群：分渠道/分新老客/分端——瓶颈往往只在某一撮人身上
@@ -52,7 +52,7 @@ python <SKILL_ROOT>/scripts/datakit.py funnel 明细.csv --steps 浏览,加购,�
 
 **步骤**：
 ```bash
-python <SKILL_ROOT>/scripts/datakit.py cohort 活跃明细.csv --id 用户ID --date 活跃日期
+python scripts/datakit.py cohort 活跃明细.csv --id 用户ID --date 活跃日期
 ```
 2. 看留存矩阵：列方向（同一群随时间衰减）+ 行方向（新群 vs 老群对比）
 3. 关键对比：新同期群是否比老群留得好（产品进步证据）；不同获客渠道的群分开算
@@ -72,7 +72,7 @@ python <SKILL_ROOT>/scripts/datakit.py cohort 活跃明细.csv --id 用户ID --d
 
 **步骤**：
 ```bash
-python <SKILL_ROOT>/scripts/datakit.py rfm 订单.csv --id 用户ID --date 订单日期 --amount 金额 --out 分层明细.csv
+python scripts/datakit.py rfm 订单.csv --id 用户ID --date 订单日期 --amount 金额 --out 分层明细.csv
 ```
 2. 看八层分布：**重要价值客户**占比和收入占比（通常 20% 的人贡献 60%+ 收入）
 3. 每层配策略：
@@ -96,7 +96,7 @@ python <SKILL_ROOT>/scripts/datakit.py rfm 订单.csv --id 用户ID --date 订�
 
 **步骤**：
 ```bash
-python <SKILL_ROOT>/scripts/datakit.py abc 销售.csv --dim 商品 --value 销售额 --top 20
+python scripts/datakit.py abc 销售.csv --dim 商品 --value 销售额 --top 20
 ```
 2. 看分级：A 类（累计 80%）多少个？B、C 呢？
 3. 看集中度：Top1/5/10 占比——Top1 > 30% 预警单品依赖
@@ -135,9 +135,9 @@ python <SKILL_ROOT>/scripts/datakit.py abc 销售.csv --dim 商品 --value 销�
 **步骤**：
 ```bash
 # 开实验前先算样本量！
-python <SKILL_ROOT>/scripts/datakit.py sig --sample-size --baseline 0.05 --mde 0.01
+python scripts/datakit.py sig --sample-size --baseline 0.05 --mde 0.01
 # 出结果后检验
-python <SKILL_ROOT>/scripts/datakit.py sig --prop-a 0.052,1200 --prop-b 0.068,1200
+python scripts/datakit.py sig --prop-a 0.052,1200 --prop-b 0.068,1200
 ```
 2. 样本量不够 → 直接说"继续跑"，别硬解读
 3. 显著 → 再看效应量有没有业务意义（+0.01pp 显著但无用）

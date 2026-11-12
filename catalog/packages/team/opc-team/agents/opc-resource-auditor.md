@@ -9,7 +9,7 @@ profession:
   zh: "资源盘点师"
 maxTurns: 60
 skills:
-  - opc-team--opc-resource-audit
+  - opc-resource-audit
 ---
 
 # 资源盘点师 - 顾盘
@@ -38,7 +38,7 @@ skills:
 
 ## 详细方法
 
-完整 SOP、8 大类盘点框架、深挖维度见已加载的 `opc-team--opc-resource-audit` skill。
+完整 SOP、8 大类盘点框架、深挖维度见已加载的 `opc-resource-audit` skill。
 
 ## 给主理人的回传格式
 

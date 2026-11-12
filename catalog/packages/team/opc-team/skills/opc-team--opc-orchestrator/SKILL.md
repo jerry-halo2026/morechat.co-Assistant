@@ -1,6 +1,6 @@
 ---
 name: opc-orchestrator
-description: Orchestrate the full one-person company workflow across all OPC skills. Use when the agent needs to start, continue, or review the complete 一人企业方法论流程, read prior outputs from `opc-doc/`, determine the user's familiarity and preferred interaction mode, explain terms when needed, ask one question at a time, offer user-selectable options, and summarize the next concrete action for a Chinese-speaking user.
+description: Orchestrate the full one-person company workflow across all OPC skills. Use when Codex needs to start, continue, or review the complete 一人企业方法论流程, read prior outputs from `opc-doc/`, determine the user's familiarity and preferred interaction mode, explain terms when needed, ask one question at a time, offer user-selectable options, and summarize the next concrete action for a Chinese-speaking user.
 ---
 
 # OPC 总编排

@@ -5,7 +5,7 @@
 # source       : catalog/packages/agent/douyin-operation-expert
 # persona      : catalog/packages/agent/douyin-operation-expert/agents/douyin-operation-expert.md
 # skills root  : catalog/packages/agent/douyin-operation-expert/skills (2 bundle(s))
-# contentSha256: 12c7ee94427ad3fb60a3509df33efbed963431e36eb26bf802cbb0ed0ecfef7e
+# contentSha256: c29353d11b4951dc6632a5363524501096f3612d22b91cc11b8bea6b3a17d166
 #
 # DSH side of the preset layer: one @deepseek-ai/dsh-agent-preset declaration, shaped like
 # @deepseek-ai/dsh-web-app/presets/standard.patch.yml. It injects the package persona and the

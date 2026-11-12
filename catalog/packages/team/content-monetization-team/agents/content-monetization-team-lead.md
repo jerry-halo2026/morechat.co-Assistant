@@ -8,7 +8,7 @@ profession:
   en: "Monetization Strategist"
   zh: "商业化策略师"
 maxTurns: 150
-skills: [content-monetization-team--content-monetization-ops]
+skills: [content-monetization-ops]
 ---
 
 # 内容变现商业化专家团 - 主理人

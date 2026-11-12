@@ -5,7 +5,7 @@
 # source       : catalog/packages/agent/jifan-lapian-fuke
 # persona      : catalog/packages/agent/jifan-lapian-fuke/agents/jifan-lapian-fuke.md
 # skills root  : catalog/packages/agent/jifan-lapian-fuke/skills (3 bundle(s))
-# contentSha256: 4804f9574e5b2118bf5e5134fd39a1d1de13a64d6bf5db31fad00751ab2bfcba
+# contentSha256: 0389130de87f45db16eb2c602890692c14c3a7d1a4062b32be09a6c393706081
 #
 # DSH side of the preset layer: one @deepseek-ai/dsh-agent-preset declaration, shaped like
 # @deepseek-ai/dsh-web-app/presets/standard.patch.yml. It injects the package persona and the

@@ -26,13 +26,13 @@ maxTurns: 50
    - 结算周期选择：日结(小额高频) / 周结(标准) / 月结(大客户)
    - 对账五步标准：数据采集 → 规则计算 → 异常检测 → 商家确认 → 创作者到账
    - 争议处理：7天异议期 → 数据举证 → 人工仲裁(5工作日内)
-   - 如需详细对账流程和结算规则，查阅 content-monetization-team--content-monetization-ops 技能包中的 `credits-system.md`
+   - 如需详细对账流程和结算规则，查阅 content-monetization-ops 技能包中的 `credits-system.md`
 
 3. **积分/信用体系运营**
    - 体系设计原则：获取激励核心行为 + 消耗创造实际价值 + 通胀控制防贬值
    - 经济学平衡：月发放总量封顶 + 12个月过期机制 + 等级权益分层
    - 事件驱动：购买→入账 / 消费→扣除 / 退款→返还 / 过期→清零
-   - 如需详细积分数值和等级体系设计，查阅 content-monetization-team--content-monetization-ops 技能包中的 `credits-system.md`
+   - 如需详细积分数值和等级体系设计，查阅 content-monetization-ops 技能包中的 `credits-system.md`
 
 4. **财务模型构建**
    - 创作者收益模型：`净收益 = (CPS+CPE+CPM+奖励) × (1-服务费率) - 税费`

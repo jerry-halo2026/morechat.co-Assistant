@@ -1,4 +1,4 @@
-# Long Video Remix — AI Video Editing Skill for Claude Code & morechat
+# Long Video Remix — AI Video Editing Skill for Claude Code & Codex
 
 **中文** | [English](README.en.md)
 
@@ -8,7 +8,7 @@ Direct 2 使用当前项目素材校准视觉方向。新风格需做代表性�
 
 **AI video editing Agent Skill for long video → shorts, highlights and remix edits.** 把长视频先变成可检索、可回查的结构化素材层，再通过两轮 human-in-the-loop Direct 确定“讲什么 / 怎么讲”，最后用 Visual Methods、Blender motion composition、FFmpeg rendering 与 QA 把确认后的方案做成可复现、可审计的成片执行。
 
-`Claude Code · morechat · AI video editing · Long video to shorts · Video highlights · Blender · FFmpeg · Human-in-the-loop · Bilingual`
+`Claude Code · Codex · AI video editing · Long video to shorts · Video highlights · Blender · FFmpeg · Human-in-the-loop · Bilingual`
 
 **它和“一键 AI 剪辑”的区别：** 不要求模型一次黑箱看完整部长视频并直接出成片。Broad 负责低成本建立 searchable video index，Detail 只深挖真正命中的区域；Direct 1 / Direct 2 保留人的创意判断，Execute 再把已确认结果落实为真实视觉制作、时间轴、渲染与最终播放 QA。
 

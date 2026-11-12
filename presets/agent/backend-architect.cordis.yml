@@ -5,7 +5,7 @@
 # source       : catalog/packages/agent/backend-architect
 # persona      : catalog/packages/agent/backend-architect/agents/backend-architect.md
 # skills root  : catalog/packages/agent/backend-architect/skills (2 bundle(s))
-# contentSha256: e9290463d43cde9128a4bbbcb1f811d4d0a5118f8036a244baf7f8e4abedb1d2
+# contentSha256: 8a0cdef23c997267cc208f19d3fc7815a39a6edf345b8c335af94e335d556e3f
 #
 # DSH side of the preset layer: one @deepseek-ai/dsh-agent-preset declaration, shaped like
 # @deepseek-ai/dsh-web-app/presets/standard.patch.yml. It injects the package persona and the

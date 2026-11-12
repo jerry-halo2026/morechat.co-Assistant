@@ -5,7 +5,7 @@
 # source       : catalog/packages/agent/workplace-cross-team-collaboration-guide
 # persona      : catalog/packages/agent/workplace-cross-team-collaboration-guide/agents/workplace-cross-team-collaboration-guide.md
 # skills root  : catalog/packages/agent/workplace-cross-team-collaboration-guide/skills (3 bundle(s))
-# contentSha256: fd94ed08f6b1a10f4d219d97b8dec02e8610389547526c736d83c2d5745dbb08
+# contentSha256: 8d6d5494ad15ceb748b7dd0e1345d49175225d4d65a747dbeb884a38a2afbd6b
 #
 # DSH side of the preset layer: one @deepseek-ai/dsh-agent-preset declaration, shaped like
 # @deepseek-ai/dsh-web-app/presets/standard.patch.yml. It injects the package persona and the

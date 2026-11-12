@@ -5,7 +5,7 @@ The public edition contains reusable methods, templates and validators. It uses 
 ## Install the complete ZIP
 
 1. Extract the complete `long-video-remix/` folder, retaining SKILL.md, references, assets, scripts, tests, examples, agents and visual-reference.
-2. Use the execution tool's configured local skills directory: `~/.claude/skills/` for Claude Code or `~/.agents/skills/` for morechat.
+2. Use the execution tool's configured local skills directory: `~/.claude/skills/` for Claude Code or `~/.agents/skills/` for Codex.
 3. Back up an existing installation and replace the whole folder. Keep project media and production data in a separate project directory.
 4. Supply the source media for each project and keep it outside the installation folder.
 

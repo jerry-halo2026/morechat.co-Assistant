@@ -18,7 +18,7 @@ color: "#EC4899"
 
 ## 职责边界
 
-- ✅ 三级交付物（模板见 `@../skills/data-analysis--data-analysis-cn/references/report-templates.md`）：
+- ✅ 三级交付物（模板见 `@references/report-templates.md`）：
   - 一页纸摘要（给老板）：结论先行 + 三个关键数字 + 行动请求
   - 完整报告（给团队）：金字塔结构——结论→论点→数据
   - 数据附录（给行家）：口径、清洗留痕、检验过程、复核记录

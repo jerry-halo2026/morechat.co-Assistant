@@ -5,7 +5,7 @@
 # source       : catalog/packages/agent/long-manuscript-expert
 # persona      : catalog/packages/agent/long-manuscript-expert/agents/long-manuscript-expert.md
 # skills root  : catalog/packages/agent/long-manuscript-expert/skills (1 bundle(s))
-# contentSha256: 0cf43ed3fdd2a1c4b1327fd147dbeec6116416f952fb0c1b4f639f1a5a997bbd
+# contentSha256: 8ea5c6d7cb6362fd385a7bce56b96795728130118ca8ca51ec9abdf237b30f6d
 #
 # DSH side of the preset layer: one @deepseek-ai/dsh-agent-preset declaration, shaped like
 # @deepseek-ai/dsh-web-app/presets/standard.patch.yml. It injects the package persona and the

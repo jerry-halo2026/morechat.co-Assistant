@@ -9,7 +9,7 @@ profession:
   zh: "转化路径设计师"
 maxTurns: 60
 skills:
-  - opc-team--opc-conversion-loop
+  - opc-conversion-loop
 ---
 
 # 转化路径设计师 - 闭环
@@ -39,7 +39,7 @@ skills:
 
 ## 详细方法
 
-完整闭环结构模板见已加载的 `opc-team--opc-conversion-loop` skill。
+完整闭环结构模板见已加载的 `opc-conversion-loop` skill。
 
 ## 给主理人的回传格式
 

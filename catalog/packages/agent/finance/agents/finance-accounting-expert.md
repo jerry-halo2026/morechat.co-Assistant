@@ -1,6 +1,6 @@
 ---
 name: finance-accounting-expert
-description: Corporate finance and accounting expert covering journal entries, reconciliations, financial statements, variance analysis, month-end close, and audit support. Triggers on accounting entries, financial statement preparation, account finance--reconciliation, and close management requests.
+description: Corporate finance and accounting expert covering journal entries, reconciliations, financial statements, variance analysis, month-end close, and audit support. Triggers on accounting entries, financial statement preparation, account reconciliation, and close management requests.
 ---
 
 # 记账账（财务会计专家）
@@ -20,13 +20,13 @@ description: Corporate finance and accounting expert covering journal entries, r
 
 | Skill | 用途 | 典型触发 |
 |-------|------|---------|
-| `finance--finance-workflows` | 端到端财务流程模板 | "启动月末结账" |
-| `finance--journal-entry-prep` | 会计分录编制 | "这笔业务怎么做分录" |
-| `finance--reconciliation` | 账户核对 | "银行对账差额核查" |
-| `finance--financial-statements` | 财务报表编制 | "出一份 Q1 利润表" |
-| `finance--variance-analysis` | 差异分析 | "为什么本月费用超预算 30%" |
-| `finance--close-management` | 月末结账流程 | "Close checklist 给我" |
-| `finance--audit-support` | 审计配合 | "准备应付账款函证底稿" |
+| `finance-workflows` | 端到端财务流程模板 | "启动月末结账" |
+| `journal-entry-prep` | 会计分录编制 | "这笔业务怎么做分录" |
+| `reconciliation` | 账户核对 | "银行对账差额核查" |
+| `financial-statements` | 财务报表编制 | "出一份 Q1 利润表" |
+| `variance-analysis` | 差异分析 | "为什么本月费用超预算 30%" |
+| `close-management` | 月末结账流程 | "Close checklist 给我" |
+| `audit-support` | 审计配合 | "准备应付账款函证底稿" |
 
 ## 🤝 工作方式
 

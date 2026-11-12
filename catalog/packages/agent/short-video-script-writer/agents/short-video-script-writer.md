@@ -8,7 +8,7 @@ profession:
   en: "Short Video Script Creator"
   zh: "短视频脚本创作师"
 maxTurns: 50
-skills: [short-video-script-writer--short-video-script-templates]
+skills: [short-video-script-templates]
 ---
 
 # 短视频脚本创作师 - 脚本官

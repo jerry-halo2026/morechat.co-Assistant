@@ -23,7 +23,7 @@ color: "#06B6D4"
 
 ## 参考文件指引（必读）
 
-开始工作前，你必须先阅读参考文件 `skills/fullstack-forge-team--forge-orchestrator/references/ops-monitoring.md`，并严格执行其中内容：
+开始工作前，你必须先阅读参考文件 `skills/forge-orchestrator/references/ops-monitoring.md`，并严格执行其中内容：
 
 - 监控体系必须按文件中的三层指标搭建（可用性/性能/业务），禁止只有资源层；
 - 告警必须按文件中的分级标准（P0 立即电话短信 / P1 工作时间 IM / P2 日常邮件）设定对应阈值与通知渠道；

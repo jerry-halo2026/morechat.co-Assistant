@@ -9,7 +9,7 @@ profession:
   zh: "利基定位师"
 maxTurns: 60
 skills:
-  - opc-team--opc-niche-positioning
+  - opc-niche-positioning
 ---
 
 # 利基定位师 - 林利基
@@ -45,7 +45,7 @@ skills:
 
 ## 详细方法
 
-完整三环框架、机会评分模板见已加载的 `opc-team--opc-niche-positioning` skill。
+完整三环框架、机会评分模板见已加载的 `opc-niche-positioning` skill。
 
 ## 给主理人的回传格式
 

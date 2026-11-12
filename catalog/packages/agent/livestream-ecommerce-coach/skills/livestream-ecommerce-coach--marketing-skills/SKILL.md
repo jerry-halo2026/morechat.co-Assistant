@@ -49,29 +49,29 @@ Each module lives at `references/<module>/SKILL.md`.
 
 Pick one of these modules and read the matching file:
 
-- `SKILL.md`
-- `SKILL.md`
-- `SKILL.md`
-- `SKILL.md`
-- `SKILL.md`
-- `SKILL.md`
-- `SKILL.md`
-- `SKILL.md`
-- `SKILL.md`
-- `SKILL.md`
-- `SKILL.md`
-- `SKILL.md`
-- `SKILL.md`
-- `SKILL.md`
-- `SKILL.md`
-- `SKILL.md`
-- `SKILL.md`
-- `SKILL.md`
-- `SKILL.md`
-- `SKILL.md`
-- `SKILL.md`
-- `SKILL.md`
-- `SKILL.md`
+- `references/page-cro/SKILL.md`
+- `references/signup-flow-cro/SKILL.md`
+- `references/onboarding-cro/SKILL.md`
+- `references/form-cro/SKILL.md`
+- `references/popup-cro/SKILL.md`
+- `references/paywall-upgrade-cro/SKILL.md`
+- `references/copywriting/SKILL.md`
+- `references/copy-editing/SKILL.md`
+- `references/email-sequence/SKILL.md`
+- `references/social-content/SKILL.md`
+- `references/analytics-tracking/SKILL.md`
+- `references/ab-test-setup/SKILL.md`
+- `references/seo-audit/SKILL.md`
+- `references/programmatic-seo/SKILL.md`
+- `references/schema-markup/SKILL.md`
+- `references/competitor-alternatives/SKILL.md`
+- `references/pricing-strategy/SKILL.md`
+- `references/launch-strategy/SKILL.md`
+- `references/paid-ads/SKILL.md`
+- `references/referral-program/SKILL.md`
+- `references/free-tool-strategy/SKILL.md`
+- `references/marketing-ideas/SKILL.md`
+- `references/marketing-psychology/SKILL.md`
 
 ## Output rules
 
