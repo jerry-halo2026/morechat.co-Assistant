@@ -46,11 +46,11 @@ P0 缺陷不归零，不上线。没有例外。
 
 | 知识库 | 文件路径 | 何时读取 |
 |--------|----------|----------|
-| 生成式代码测试纪律 | `references/01-standards/test-discipline.md` | 制定测试策略前 |
-| 测试完整性反作弊 | `references/01-standards/test-integrity-anti-gaming.md` | 执行测试门禁前 |
-| 验证者/评审者模式 | `references/01-standards/verifier-critic-pattern.md` | 输出裁决前 |
-| 生成式代码失效模式 | `references/01-standards/generated-code-failure-modes.md` | 逐项核对前 |
-| 生产就绪记分卡 | `references/01-standards/production-readiness-scorecard.md` | Phase 4 评级前 |
+| 生成式代码测试纪律 | `mvp-dev-expert-team--references` 技能的 `01-standards/test-discipline.md` | 制定测试策略前 |
+| 测试完整性反作弊 | `mvp-dev-expert-team--references` 技能的 `01-standards/test-integrity-anti-gaming.md` | 执行测试门禁前 |
+| 验证者/评审者模式 | `mvp-dev-expert-team--references` 技能的 `01-standards/verifier-critic-pattern.md` | 输出裁决前 |
+| 生成式代码失效模式 | `mvp-dev-expert-team--references` 技能的 `01-standards/generated-code-failure-modes.md` | 逐项核对前 |
+| 生产就绪记分卡 | `mvp-dev-expert-team--references` 技能的 `01-standards/production-readiness-scorecard.md` | Phase 4 评级前 |
 
 ---
 
@@ -136,14 +136,14 @@ git diff HEAD~1 -- 'tests/' '**/*.test.*' | grep '^+' | grep -i 'skip\|xfail\|\.
 
 ### Phase 2 同步：先写测试（Spec 到测试用例）
 1. 从主理人获取 Spec 文档（含 EARS 验收标准）
-2. **Read `references/01-standards/test-discipline.md`** 了解测试纪律
+2. **Read `mvp-dev-expert-team--references` 技能的 `01-standards/test-discipline.md`** 了解测试纪律
 3. 基于 Spec 验收标准编写测试用例（单元 + 集成 + E2E）
 4. 测试用例覆盖正常路径 + 异常路径 + 边界值 + 权限 + 状态
 5. 将测试用例回传主理人，由主理人下发给前端/后端
 
 ### Phase 4 正式测试
 1. 从主理人获取开发完成且通过自检的代码
-2. **Read `references/01-standards/test-integrity-anti-gaming.md`**
+2. **Read `mvp-dev-expert-team--references` 技能的 `01-standards/test-integrity-anti-gaming.md`**
 3. **改动影响分析**（按上方模板）
 4. **测试完整性反作弊门**：执行 5 类作弊检测，发现任一 → P0 阻断
 5. **冒烟测试**（30 分钟内）→ 核心流程不通 = 直接打回
@@ -153,8 +153,8 @@ git diff HEAD~1 -- 'tests/' '**/*.test.*' | grep '^+' | grep -i 'skip\|xfail\|\.
    - 边界值（空值、最大值、格式错误）
    - 权限控制（不同角色的行为差异）
 7. **回归测试**——基于改动影响分析，验证受影响旧行为仍正常
-8. **失效模式核对**——Read `references/01-standards/generated-code-failure-modes.md`，逐项核对 6 类失效
-9. **生产就绪评级**——Read `references/01-standards/production-readiness-scorecard.md`，评出 7 维 × 3 档
+8. **失效模式核对**——Read `mvp-dev-expert-team--references` 技能的 `01-standards/generated-code-failure-modes.md`，逐项核对 6 类失效
+9. **生产就绪评级**——Read `mvp-dev-expert-team--references` 技能的 `01-standards/production-readiness-scorecard.md`，评出 7 维 × 3 档
 10. 输出质量报告 + 缺陷清单 + 回归集更新
 
 ---

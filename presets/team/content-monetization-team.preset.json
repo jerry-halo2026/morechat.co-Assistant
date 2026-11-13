@@ -17,12 +17,58 @@
     "帮我评估这个品牌推广任务的收益是否合理"
   ],
   "team": {
+    "workflow": "hub-and-spoke",
+    "handoffs": [
+      "cps-specialist → content-monetization-team-lead",
+      "cpe-cpm-expert → content-monetization-team-lead",
+      "marketplace-operator → content-monetization-team-lead",
+      "revenue-analyst → content-monetization-team-lead"
+    ],
+    "doneWhen": "四份专才结论齐备且收益口径一致",
+    "routeHints": [
+      {
+        "match": "CPS/带货/佣金",
+        "member": "cps-specialist"
+      },
+      {
+        "match": "CPE/CPM/曝光/互动",
+        "member": "cpe-cpm-expert"
+      },
+      {
+        "match": "品牌合作/撮合/报价",
+        "member": "marketplace-operator"
+      },
+      {
+        "match": "收益/ROI/数据分析",
+        "member": "revenue-analyst"
+      }
+    ],
     "leadAgent": "content-monetization-team-lead",
     "members": [
-      "cps-specialist",
-      "cpe-cpm-expert",
-      "marketplace-operator",
-      "revenue-analyst"
+      {
+        "id": "cps-specialist",
+        "skills": [
+          "content-monetization-team--content-monetization-ops"
+        ]
+      },
+      {
+        "id": "cpe-cpm-expert",
+        "skills": [
+          "content-monetization-team--content-monetization-ops"
+        ]
+      },
+      {
+        "id": "marketplace-operator",
+        "skills": [
+          "content-monetization-team--content-monetization-ops"
+        ]
+      },
+      {
+        "id": "revenue-analyst",
+        "skills": [
+          "content-monetization-team--content-monetization-ops"
+        ]
+      }
     ]
   },
   "requires": [],

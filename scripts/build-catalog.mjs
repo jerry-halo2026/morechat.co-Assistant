@@ -403,6 +403,103 @@ const slug = (s) =>
     .replace(/-{2,}/g, '-')
     .replace(/^-|-$/g, '');
 
+// ---------------------------------------------------------------- package-root libraries
+/**
+ * Packages that keep their knowledge base at the package root instead of inside a skill.
+ *
+ * `mvp-dev-expert-team` ships 31 methodology files under `references/` and its eight
+ * personas address them as package-relative paths (`references/01-standards/x.md`). An
+ * installed package is a manifest plus skills - no host reads the package root - so those
+ * files were dropped at install time and every persona pointed at a file that is not
+ * there. The library is carried by a synthesized skill instead: the files move under
+ * `skills/<ns>/`, the personas are repointed at the skill, and the root copy is no longer
+ * emitted (it would ship the same 31 files twice, for a reader that does not exist).
+ */
+const ROOT_LIBRARY = new Map([
+  [
+    'team:mvp-dev-expert-team',
+    {
+      dir: 'references',
+      name: 'references',
+      description:
+        'MVP 开发专家团的方法论资料库：代码组织规范、架构模式、成本模型、设计系统、行业与平台选型。',
+      intro:
+        'MVP 开发专家团（8 位专家）共用的方法论资料库，在对应工作阶段按需读取。',
+    },
+  ],
+]);
+
+/** Skill record for a package-root library: `relDir` is the package-relative dir. */
+function buildLibrarySkill(srcDir, lib) {
+  const abs = path.join(srcDir, lib.dir);
+  if (!fs.existsSync(abs)) return null;
+  const files = walk(abs, srcDir);
+  if (files.length === 0) return null;
+  return { relDir: lib.dir, name: lib.name, files };
+}
+
+/**
+ * SKILL.md for the library skill: enough for a router to pick it, plus an inventory so
+ * an agent knows which file answers its question without walking the tree.
+ */
+function librarySkillMd(lib, files) {
+  const rels = files.map((f) => f.rel.slice(lib.dir.length + 1)).sort();
+  const rootFiles = [];
+  const groups = new Map();
+  for (const rel of rels) {
+    const cut = rel.lastIndexOf('/');
+    if (cut < 0) {
+      rootFiles.push(rel);
+      continue;
+    }
+    const group = rel.slice(0, cut);
+    if (!groups.has(group)) groups.set(group, []);
+    groups.get(group).push(rel.slice(cut + 1));
+  }
+  const lines = [
+    '---',
+    `name: ${lib.name}`,
+    `description: ${lib.description}`,
+    '---',
+    '',
+    `# ${lib.name}`,
+    '',
+    lib.intro,
+    '',
+    '## 文件清单（按子目录）',
+    '',
+  ];
+  for (const f of rootFiles) lines.push(`- \`${f}\``);
+  for (const group of [...groups.keys()].sort()) {
+    const names = groups.get(group).sort().map((f) => `\`${f}\``).join('、');
+    lines.push(`- \`${group}/\`（${groups.get(group).length} 篇）：${names}`);
+  }
+  return `${lines.join('\n')}\n`;
+}
+
+/**
+ * Repoints a package-root library path at the skill that now carries it.
+ *
+ * The personas were written for a working directory that was the package root, so they
+ * address knowledge files as `references/<group>/<file>.md`. That root does not exist
+ * after import; the same file is `{ns} 技能的 <group>/<file>.md`, the phrasing
+ * rewriteSkillPaths already uses for `../skills/<ns>/...` references. Runs after
+ * convertText so the produced prose is not itself re-parsed as a path.
+ */
+function rewriteLibraryPaths(text, ns, dir) {
+  const TICK = String.fromCharCode(96);
+  const ref = (matched) => {
+    const rest = matched.slice(dir.length + 1);
+    return rest ? `${TICK}${ns}${TICK} 技能的 ${TICK}${rest}${TICK}` : `${TICK}${ns}${TICK}`;
+  };
+  const WRAPPED = new RegExp(`${TICK}(${dir}\\/[^${TICK}\\n]*)${TICK}`, 'g');
+  const BARE = new RegExp(
+    `(?<![A-Za-z0-9_./${TICK}-])${dir}(?:\\/[^\\s${TICK}'")\\]，。；]*)?`,
+    'g',
+  );
+  return text.replace(WRAPPED, (_m, p) => ref(p)).replace(BARE, (m) => ref(m));
+}
+
 // ---------------------------------------------------------------- main
 const report = { agents: 0, teams: 0, skills: 0, files: 0, bytes: 0, srcBytes: 0 };
 const packages = [];
@@ -435,6 +532,12 @@ function copyPackage(kind, id) {
 
   // 2) converted catalog tree
   const skills = discoverSkills(srcDir);
+  // A package-root knowledge library is a skill even though upstream ships no skills/
+  // directory for it; adding it here means the copy loop, the ns allocator, plugin.json
+  // and the index all treat it like any other skill.
+  const library = ROOT_LIBRARY.get(`${kind}:${id}`) || null;
+  const librarySkill = library ? buildLibrarySkill(srcDir, library) : null;
+  if (librarySkill) skills.push(librarySkill);
   const skillNs = new Map(); // relDir -> physical dir name
   const takenInPkg = new Set();
   for (const s of skills) {
@@ -477,10 +580,24 @@ function copyPackage(kind, id) {
       s = s.split(`<SKILL_ROOT>/skills/${dir}/`).join(`../skills/${nsName}/`);
     }
     s = convertText(s);
+      // Personas of a package-root-library package point at `references/<group>/<file>.md`;
+      // those files now live inside the synthesized skill, so the reference has to name it.
+      if (librarySkill && rel.startsWith('agents/')) {
+        s = rewriteLibraryPaths(s, skillNs.get(librarySkill.relDir), library.dir);
+      }
       if (rel === 'README.md' || (rel.endsWith('/README.md') && !rel.startsWith('skills/'))) s = rewriteReadme(s);
       fs.writeFileSync(dst, s, 'utf8');
     }
     outFiles.push({ rel, abs: dst });
+  }
+  // The synthesized skill needs its own SKILL.md; its body is generated from the files
+  // that just landed in it, so the inventory cannot drift from the tree.
+  if (librarySkill) {
+    const skillRel = `skills/${skillNs.get(librarySkill.relDir)}`;
+    const dst = path.join(catalogDir, skillRel, 'SKILL.md');
+    ensureDir(path.dirname(dst));
+    fs.writeFileSync(dst, librarySkillMd(library, librarySkill.files), 'utf8');
+    outFiles.push({ rel: `${skillRel}/SKILL.md`, abs: dst });
   }
   // plugin.json (converted in place, layout preserved) — except the skills
   // list: upstream paths (./skills/<name>) do not exist in catalog/, where

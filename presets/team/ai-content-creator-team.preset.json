@@ -17,14 +17,61 @@
     "为我的新品上市生成一组小红书风格的种草图文，包含配图和文案"
   ],
   "team": {
-    "leadAgent": "ai-content-creator-team-lead",
-    "members": [
+    "workflow": "pipeline",
+    "handoffs": [
+      "ai-content-creator-team-lead",
       "creative-strategist",
       "copywriter",
-      "video-generator",
       "image-creator",
+      "video-generator",
       "video-editor",
       "content-adapter"
+    ],
+    "doneWhen": "策略到改编六段产出齐备，主理人终审通过",
+    "routeHints": [
+      {
+        "match": "文案/脚本/标题",
+        "member": "copywriter"
+      },
+      {
+        "match": "图片/封面/海报",
+        "member": "image-creator"
+      },
+      {
+        "match": "视频/分镜/生成",
+        "member": "video-generator"
+      },
+      {
+        "match": "剪辑/成片/节奏",
+        "member": "video-editor"
+      }
+    ],
+    "leadAgent": "ai-content-creator-team-lead",
+    "members": [
+      {
+        "id": "creative-strategist",
+        "skills": []
+      },
+      {
+        "id": "copywriter",
+        "skills": []
+      },
+      {
+        "id": "video-generator",
+        "skills": []
+      },
+      {
+        "id": "image-creator",
+        "skills": []
+      },
+      {
+        "id": "video-editor",
+        "skills": []
+      },
+      {
+        "id": "content-adapter",
+        "skills": []
+      }
     ]
   },
   "requires": [],

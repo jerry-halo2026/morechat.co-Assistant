@@ -19,11 +19,26 @@
   "team": {
     "leadAgent": "data-team-lead",
     "members": [
-      "data-engineer",
-      "data-statistician",
-      "insight-consultant",
-      "visual-storyteller",
-      "red-team-reviewer"
+      {
+        "id": "data-engineer",
+        "skills": []
+      },
+      {
+        "id": "data-statistician",
+        "skills": []
+      },
+      {
+        "id": "insight-consultant",
+        "skills": []
+      },
+      {
+        "id": "visual-storyteller",
+        "skills": []
+      },
+      {
+        "id": "red-team-reviewer",
+        "skills": []
+      }
     ]
   },
   "requires": [

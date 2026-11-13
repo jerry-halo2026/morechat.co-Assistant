@@ -90,12 +90,12 @@ grep -rP '[\x{1F300}-\x{1F9FF}\x{2600}-\x{26FF}\x{2700}-\x{27BF}]' src/ --includ
 
 | 平台 | 知识库文件路径 | 适用方案 | 何时读取 |
 |------|----------------|----------|----------|
-| 微信小程序 | `references/platforms/wechat-miniprogram.md` | 方案 D (Taro 3) | 小程序开发前必读 |
-| 鸿蒙 HarmonyOS NEXT | `references/platforms/harmonyos.md` | 鸿蒙原生开发时 | HarmonyOS 开发前必读 |
+| 微信小程序 | `mvp-dev-expert-team--references` 技能的 `platforms/wechat-miniprogram.md` | 方案 D (Taro 3) | 小程序开发前必读 |
+| 鸿蒙 HarmonyOS NEXT | `mvp-dev-expert-team--references` 技能的 `platforms/harmonyos.md` | 鸿蒙原生开发时 | HarmonyOS 开发前必读 |
 
 **执行规则**：
-1. 确认技术栈方案后，如果是方案 D（Taro 小程序），Read `references/platforms/wechat-miniprogram.md`
-2. 如果是鸿蒙原生开发，Read `references/platforms/harmonyos.md`
+1. 确认技术栈方案后，如果是方案 D（Taro 小程序），Read `mvp-dev-expert-team--references` 技能的 `platforms/wechat-miniprogram.md`
+2. 如果是鸿蒙原生开发，Read `mvp-dev-expert-team--references` 技能的 `platforms/harmonyos.md`
 3. 平台规范中的限制（如包大小、API 兼容性、组件差异）必须在开发时严格遵守
 4. 平台知识库作为开发约束基线，实际开发中遇到具体问题再联网搜索补充
 
@@ -847,7 +847,7 @@ export interface CreateTaskResponse {
 ## 工作流程
 
 1. **确认技术栈**：根据架构师 Spec 确定方案 A/B/C/D/E
-2. **Read 平台知识库**：方案 D 读 `references/platforms/wechat-miniprogram.md`，鸿蒙原生读 `references/platforms/harmonyos.md`
+2. **Read 平台知识库**：方案 D 读 `mvp-dev-expert-team--references` 技能的 `platforms/wechat-miniprogram.md`，鸿蒙原生读 `mvp-dev-expert-team--references` 技能的 `platforms/harmonyos.md`
 3. **收到设计 → 先检查 P0 绝对规则**：对照三条红线 + 八条检查。不通过 → 退回设计师
 4. **通过 → 搭建组件**：按原子设计层级（Token → Atom → Molecule → Organism → Template → Page）
 5. **每个组件实现全部必要状态**（至少 6 态：Default/Hover/Focus/Active/Disabled/Loading）
@@ -1101,7 +1101,7 @@ const List = ({ items }) => (
 2. **类型定义**：src/types/api.d.ts（基于架构师 `openapi.yaml` 生成）
 3. **自检报告**：lint/test/build 结果摘要
 4. **MSW Mock 数据**：mocks/ 目录下的 API Mock 定义
-5. **失效模式自检报告**：Read `references/01-standards/generated-code-failure-modes.md`，逐项核对 6 类失效
+5. **失效模式自检报告**：Read `mvp-dev-expert-team--references` 技能的 `01-standards/generated-code-failure-modes.md`，逐项核对 6 类失效
 
 ### 失效模式自检清单（6 类 — 每次交付前必填）
 
@@ -1118,10 +1118,10 @@ const List = ({ items }) => (
 
 | 知识库 | 文件路径 | 何时读取 |
 |--------|----------|----------|
-| 生成式代码失效模式 | `references/01-standards/generated-code-failure-modes.md` | 自检前必读 |
-| 上下文工程 | `references/01-standards/context-engineering.md` | 长会话压缩前 |
-| 微信小程序规范 | `references/platforms/wechat-miniprogram.md` | 方案 D 开发前 |
-| 鸿蒙 HarmonyOS | `references/platforms/harmonyos.md` | 鸿蒙原生开发前 |
+| 生成式代码失效模式 | `mvp-dev-expert-team--references` 技能的 `01-standards/generated-code-failure-modes.md` | 自检前必读 |
+| 上下文工程 | `mvp-dev-expert-team--references` 技能的 `01-standards/context-engineering.md` | 长会话压缩前 |
+| 微信小程序规范 | `mvp-dev-expert-team--references` 技能的 `platforms/wechat-miniprogram.md` | 方案 D 开发前 |
+| 鸿蒙 HarmonyOS | `mvp-dev-expert-team--references` 技能的 `platforms/harmonyos.md` | 鸿蒙原生开发前 |
 
 ---
 

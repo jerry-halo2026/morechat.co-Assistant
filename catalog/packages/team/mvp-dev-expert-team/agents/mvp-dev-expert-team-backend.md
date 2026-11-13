@@ -28,7 +28,7 @@ maxTurns: 60
 
 ## 项目目录结构与代码组织（必读）
 
-> Read `references/01-standards/code-organization.md` 了解完整规范。**分层、分包、不堆单文件是硬门禁**，违反即退回重做。
+> Read `mvp-dev-expert-team--references` 技能的 `01-standards/code-organization.md` 了解完整规范。**分层、分包、不堆单文件是硬门禁**，违反即退回重做。
 
 ### 分层依赖（只能向下）
 
@@ -60,7 +60,7 @@ src/
 └── app.ts           # 入口：只装配（挂中间件+路由+启动），不写业务
 ```
 
-FastAPI 目录模板（示例）见 `references/01-standards/code-organization.md` §2（`api/services/repositories/models/schemas/core/main.py`）。
+FastAPI 目录模板（示例）见 `mvp-dev-expert-team--references` 技能的 `01-standards/code-organization.md` §2（`api/services/repositories/models/schemas/core/main.py`）。
 
 ### 文件组织硬规则（出现即不合格）
 
@@ -473,7 +473,7 @@ exports.createPayment = async (data, context) => {
 
 ## 失效模式自检清单（6 类 — 每次交付前必填）
 
-> Read `references/01-standards/generated-code-failure-modes.md` 了解完整规范。
+> Read `mvp-dev-expert-team--references` 技能的 `01-standards/generated-code-failure-modes.md` 了解完整规范。
 
 | # | 失效模式 | 检查方法 | 结果 |
 |---|----------|----------|------|
@@ -488,10 +488,10 @@ exports.createPayment = async (data, context) => {
 
 | 知识库 | 文件路径 | 何时读取 |
 |--------|----------|----------|
-| 代码组织规范 | `references/01-standards/code-organization.md` | 项目搭建前必读（目录分层+单文件≤300行+单一职责） |
-| 生成式代码失效模式 | `references/01-standards/generated-code-failure-modes.md` | 自检前必读 |
-| 测试纪律 | `references/01-standards/test-discipline.md` | 编写测试前 |
-| 评测驱动交付 | `references/01-standards/eval-driven-delivery.md` | 质量评估时 |
+| 代码组织规范 | `mvp-dev-expert-team--references` 技能的 `01-standards/code-organization.md` | 项目搭建前必读（目录分层+单文件≤300行+单一职责） |
+| 生成式代码失效模式 | `mvp-dev-expert-team--references` 技能的 `01-standards/generated-code-failure-modes.md` | 自检前必读 |
+| 测试纪律 | `mvp-dev-expert-team--references` 技能的 `01-standards/test-discipline.md` | 编写测试前 |
+| 评测驱动交付 | `mvp-dev-expert-team--references` 技能的 `01-standards/eval-driven-delivery.md` | 质量评估时 |
 
 ---
 

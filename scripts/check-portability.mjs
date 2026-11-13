@@ -221,7 +221,9 @@ const PRESET_ALLOWED = new Set([
   'packageVersion',
   'contentSha256',
 ]);
-const PRESET_TEAM_ALLOWED = new Set(['leadAgent', 'members']);
+const PRESET_TEAM_ALLOWED = new Set(['workflow', 'handoffs', 'doneWhen', 'routeHints', 'leadAgent', 'members']);
+const PRESET_TEAM_MEMBER_ALLOWED = new Set(['id', 'skills', 'harness']);
+const PRESET_WORKFLOWS = new Set(['pipeline', 'hub-and-spoke']);
 const PRESET_FORBIDDEN_KEY = /model|provider|api[_-]?key|secret|token|permission|role/i;
 // Model identifiers and credential shapes have no business in a preset file, in either half.
 const PRESET_MODEL_NAME =
@@ -326,7 +328,56 @@ if (!index) {
     }
     if (!Array.isArray(preset.requires)) fail('G7', `${jsonRel}: requires must be an array`);
     if (!preset.team || typeof preset.team.leadAgent !== 'string' || !Array.isArray(preset.team.members)) {
-      fail('G7', `${jsonRel}: team must be {leadAgent:string, members:string[]}`);
+      fail('G7', `${jsonRel}: team must be {leadAgent:string, members:[]}`);
+    }
+    if (preset.team && typeof preset.team === 'object') {
+      const team = preset.team;
+      // workflow shape: a pipeline or a hub; both must name real roster members
+      if (team.workflow !== undefined && !PRESET_WORKFLOWS.has(team.workflow)) {
+        fail('G7', `${jsonRel}: team.workflow ${JSON.stringify(team.workflow)} is not pipeline|hub-and-spoke`);
+      }
+      if (team.handoffs !== undefined) {
+        if (!Array.isArray(team.handoffs) || team.handoffs.some((s) => typeof s !== 'string' || !s.trim())) {
+          fail('G7', `${jsonRel}: team.handoffs must be a non-empty string array`);
+        }
+      }
+      if (team.doneWhen !== undefined && (typeof team.doneWhen !== 'string' || !team.doneWhen.trim())) {
+        fail('G7', `${jsonRel}: team.doneWhen must be a non-empty string`);
+      }
+      const rosterIds = new Set(
+        (Array.isArray(team.members) ? team.members : []).map((m) => (m && typeof m === 'object' ? m.id : m)),
+      );
+      for (const hint of Array.isArray(team.routeHints) ? team.routeHints : []) {
+        if (!hint || typeof hint.match !== 'string' || typeof hint.member !== 'string') {
+          fail('G7', `${jsonRel}: team.routeHints entries must be {match:string, member:string}`);
+          continue;
+        }
+        if (!rosterIds.has(hint.member)) fail('G7', `${jsonRel}: routeHint member ${hint.member} is not on the roster`);
+        for (const k of Object.keys(hint)) {
+          if (!['match', 'member'].includes(k)) fail('G7', `${jsonRel}: field "team.routeHints[].${k}" is not on the whitelist`);
+        }
+      }
+      for (const m of Array.isArray(team.members) ? team.members : []) {
+        if (typeof m === 'string') continue; // bare roster id, no per-member detail
+        if (!m || typeof m !== 'object' || Array.isArray(m)) {
+          fail('G7', `${jsonRel}: team.members entries must be ids or {id, skills, harness}`);
+          continue;
+        }
+        for (const k of Object.keys(m)) {
+          if (!PRESET_TEAM_MEMBER_ALLOWED.has(k)) fail('G7', `${jsonRel}: field "team.members[].${k}" is not on the whitelist`);
+        }
+        if (typeof m.id !== 'string' || !m.id.trim()) fail('G7', `${jsonRel}: team.members[] entry without id`);
+        if (!Array.isArray(m.skills) || m.skills.some((s) => typeof s !== 'string')) {
+          fail('G7', `${jsonRel}: team.members[].skills must be a string array`);
+        } else {
+          for (const ns of m.skills) {
+            if (!preset.skills.includes(ns)) fail('G7', `${jsonRel}: member ${m.id} names skill ${ns} outside the package skills`);
+          }
+        }
+        if (m.harness !== undefined && m.harness !== 'codex') {
+          fail('G7', `${jsonRel}: team.members[].harness only accepts "codex"`);
+        }
+      }
     }
 
     // (3) conversationStarters <= 3

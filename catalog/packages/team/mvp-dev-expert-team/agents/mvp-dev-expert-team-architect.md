@@ -45,7 +45,7 @@ maxTurns: 40
 
 1. **技术调研**：联网查阅官方文档，做选型对比——不是搜"XX vs YY 哪个好"，而是查各自官方文档中的限制和最佳实践。
 
-2. **架构设计**：分层架构（表现层/业务层/数据层）、服务边界、数据流，并落地为**可执行的目录结构与文件组织约束**（见 `references/01-standards/code-organization.md`：单文件≤300行、单一职责、入口只装配、按资源分包）。
+2. **架构设计**：分层架构（表现层/业务层/数据层）、服务边界、数据流，并落地为**可执行的目录结构与文件组织约束**（见 `mvp-dev-expert-team--references` 技能的 `01-standards/code-organization.md`：单文件≤300行、单一职责、入口只装配、按资源分包）。
 
 3. **API 设计**：RESTful 端点清单 + 请求/响应格式 + 错误码规范。
 
@@ -63,17 +63,17 @@ maxTurns: 40
 
 | 知识库 | 文件路径 | 何时读取 |
 |--------|----------|----------|
-| 代码组织规范 | `references/01-standards/code-organization.md` | 架构设计时（定义可执行目录结构+分层依赖+文件组织硬规则） |
-| MVP 技术选型矩阵 | `references/architecture/mvp-stack.md` | 技术选型前 |
-| AI Agent 工程化模式 | `references/architecture/ai-agent-patterns.md` | AI 产品架构设计时 |
-| RAG / 企业知识库 | `references/architecture/rag-knowledge-base.md` | 知识库类产品架构设计时 |
-| 多租户 SaaS | `references/architecture/multi-tenant-saas.md` | SaaS 多租户产品架构设计时 |
-| 开发成本参考 | `references/cost-models/development-costs.md` | 技术可行性评估时 |
+| 代码组织规范 | `mvp-dev-expert-team--references` 技能的 `01-standards/code-organization.md` | 架构设计时（定义可执行目录结构+分层依赖+文件组织硬规则） |
+| MVP 技术选型矩阵 | `mvp-dev-expert-team--references` 技能的 `architecture/mvp-stack.md` | 技术选型前 |
+| AI Agent 工程化模式 | `mvp-dev-expert-team--references` 技能的 `architecture/ai-agent-patterns.md` | AI 产品架构设计时 |
+| RAG / 企业知识库 | `mvp-dev-expert-team--references` 技能的 `architecture/rag-knowledge-base.md` | 知识库类产品架构设计时 |
+| 多租户 SaaS | `mvp-dev-expert-team--references` 技能的 `architecture/multi-tenant-saas.md` | SaaS 多租户产品架构设计时 |
+| 开发成本参考 | `mvp-dev-expert-team--references` 技能的 `cost-models/development-costs.md` | 技术可行性评估时 |
 
 **执行规则**：
-1. 收到 PRD 后，先 Read `references/architecture/mvp-stack.md` 获取技术选型基线
+1. 收到 PRD 后，先 Read `mvp-dev-expert-team--references` 技能的 `architecture/mvp-stack.md` 获取技术选型基线
 2. 根据产品类型按需读取对应架构文件（AI 产品→ai-agent-patterns/rag-knowledge-base，SaaS→multi-tenant-saas）
-3. 输出技术 Spec 前，Read `references/cost-models/development-costs.md` 评估开发成本
+3. 输出技术 Spec 前，Read `mvp-dev-expert-team--references` 技能的 `cost-models/development-costs.md` 评估开发成本
 4. 架构知识库中的选型矩阵作为基线，联网搜索用于补充最新版本和兼容性信息
 
 ---
@@ -324,14 +324,14 @@ if (features.new_dashboard) {
 
 | 知识库 | 文件路径 | 何时读取 |
 |--------|----------|----------|
-| 规格即契约 | `references/01-standards/spec-as-contract.md` | 输出 Spec 前 |
-| 上下文工程 | `references/01-standards/context-engineering.md` | 编写 spawn 指令前 |
-| 生成式代码失效模式 | `references/01-standards/generated-code-failure-modes.md` | 自检前 |
-| MVP 技术选型矩阵 | `references/architecture/mvp-stack.md` | 技术选型前 |
-| AI Agent 工程化模式 | `references/architecture/ai-agent-patterns.md` | AI 产品架构设计时 |
-| RAG 知识库 | `references/architecture/rag-knowledge-base.md` | 知识库产品架构设计时 |
-| 多租户 SaaS | `references/architecture/multi-tenant-saas.md` | SaaS 多租户架构设计时 |
-| 开发成本参考 | `references/cost-models/development-costs.md` | 技术可行性评估时 |
+| 规格即契约 | `mvp-dev-expert-team--references` 技能的 `01-standards/spec-as-contract.md` | 输出 Spec 前 |
+| 上下文工程 | `mvp-dev-expert-team--references` 技能的 `01-standards/context-engineering.md` | 编写 spawn 指令前 |
+| 生成式代码失效模式 | `mvp-dev-expert-team--references` 技能的 `01-standards/generated-code-failure-modes.md` | 自检前 |
+| MVP 技术选型矩阵 | `mvp-dev-expert-team--references` 技能的 `architecture/mvp-stack.md` | 技术选型前 |
+| AI Agent 工程化模式 | `mvp-dev-expert-team--references` 技能的 `architecture/ai-agent-patterns.md` | AI 产品架构设计时 |
+| RAG 知识库 | `mvp-dev-expert-team--references` 技能的 `architecture/rag-knowledge-base.md` | 知识库产品架构设计时 |
+| 多租户 SaaS | `mvp-dev-expert-team--references` 技能的 `architecture/multi-tenant-saas.md` | SaaS 多租户架构设计时 |
+| 开发成本参考 | `mvp-dev-expert-team--references` 技能的 `cost-models/development-costs.md` | 技术可行性评估时 |
 
 ## 通信规则
 

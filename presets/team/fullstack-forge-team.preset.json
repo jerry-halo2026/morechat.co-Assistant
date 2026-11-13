@@ -17,8 +17,9 @@
     "帮我评估一个网站/软件系统从0到上线的完整路径"
   ],
   "team": {
-    "leadAgent": "forge-lead",
-    "members": [
+    "workflow": "pipeline",
+    "handoffs": [
+      "forge-lead",
       "product-scout",
       "product-manager",
       "fullstack-engineer",
@@ -26,6 +27,73 @@
       "release-manager",
       "ops-sre",
       "growth-operator"
+    ],
+    "doneWhen": "十五项交付前自检全绿、P0 缺陷为 0",
+    "routeHints": [
+      {
+        "match": "选型/平台/需求边界",
+        "member": "product-scout"
+      },
+      {
+        "match": "功能/PRD/优先级",
+        "member": "product-manager"
+      },
+      {
+        "match": "代码/接口/前端/后端",
+        "member": "fullstack-engineer"
+      },
+      {
+        "match": "上线/部署/监控",
+        "member": "ops-sre"
+      }
+    ],
+    "leadAgent": "forge-lead",
+    "members": [
+      {
+        "id": "product-scout",
+        "skills": [
+          "fullstack-forge-team--forge-orchestrator"
+        ]
+      },
+      {
+        "id": "product-manager",
+        "skills": [
+          "fullstack-forge-team--forge-orchestrator"
+        ]
+      },
+      {
+        "id": "fullstack-engineer",
+        "skills": [
+          "fullstack-forge-team--forge-orchestrator"
+        ],
+        "harness": "codex"
+      },
+      {
+        "id": "qa-tester",
+        "skills": [
+          "fullstack-forge-team--forge-orchestrator"
+        ],
+        "harness": "codex"
+      },
+      {
+        "id": "release-manager",
+        "skills": [
+          "fullstack-forge-team--forge-orchestrator"
+        ]
+      },
+      {
+        "id": "ops-sre",
+        "skills": [
+          "fullstack-forge-team--forge-orchestrator"
+        ],
+        "harness": "codex"
+      },
+      {
+        "id": "growth-operator",
+        "skills": [
+          "fullstack-forge-team--forge-orchestrator"
+        ]
+      }
     ]
   },
   "requires": [],

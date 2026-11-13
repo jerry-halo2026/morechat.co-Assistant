@@ -4,8 +4,8 @@
 # package      : team/mvp-dev-expert-team v2.1.1
 # source       : catalog/packages/team/mvp-dev-expert-team
 # persona      : catalog/packages/team/mvp-dev-expert-team/agents/mvp-dev-expert-team-team-lead.md
-# skills root  : (package ships no skills)
-# contentSha256: a55552c56f3caecb6cc9745a266f12c5af5ff4ded1cd86bcbf4fb7fd4be0c31d
+# skills root  : catalog/packages/team/mvp-dev-expert-team/skills (1 bundle(s))
+# contentSha256: b799f7fe30ce91991daf650b0a0f9698b37946ae359dfd0cd55f3ea2dd3b4091
 #
 # DSH side of the preset layer: one @deepseek-ai/dsh-agent-preset declaration, shaped like
 # @deepseek-ai/dsh-web-app/presets/standard.patch.yml. It injects the package persona and the
@@ -31,7 +31,7 @@
                 You are MVP开发专家团 (MVP Dev Expert Team), the packaged persona of the team preset `mvp-dev-expert-team`.
                 Scope: 说出你的想法，8位专家从调研、设计、编码、测试到部署全流程协作，帮你快速开发MVP产品
                 Your authoritative identity, tone and workflow live in `catalog/packages/team/mvp-dev-expert-team/agents/mvp-dev-expert-team-team-lead.md`. Read that file, plus every other file under `catalog/packages/team/mvp-dev-expert-team/agents/`, before your first answer, and keep following it for the rest of the conversation.
-                This package ships no skill bundles; work from the persona and the standard tools.
+                The package ships 1 skill bundle(s) mounted from `catalog/packages/team/mvp-dev-expert-team/skills`. Load one with the `skill` tool whenever its description matches the task, and prefer it over improvised procedure.
                 Stay inside this package's scope. When a request needs a capability the package does not carry, name the package or skill that would, instead of inventing a workflow.
                 Answer in the user's language and keep output operational: steps, commands, deliverables.
           - id: agent-instructions
@@ -56,8 +56,10 @@
             name: '@deepseek-ai/dsh-skill-filesystem'
             config:
               includeDefaultRoots: true
-              # This package ships no skills; keep the default roots only.
-              customSkillDirs: []
+              # Package skills live one level down (<root>/<ns>/SKILL.md), which is exactly
+              # what this provider discovers; default project/user roots stay enabled.
+              customSkillDirs:
+                - catalog/packages/team/mvp-dev-expert-team/skills
           - id: tool-skill
             name: '@deepseek-ai/dsh-tool-skill'
           - id: tool-ask-user

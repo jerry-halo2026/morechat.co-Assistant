@@ -25,8 +25,9 @@
     "我的产品在跑但卡住了，帮我做一次系统的经营复盘。"
   ],
   "team": {
-    "leadAgent": "opc-team-lead",
-    "members": [
+    "workflow": "pipeline",
+    "handoffs": [
+      "opc-team-lead",
       "opc-resource-auditor",
       "opc-niche-strategist",
       "opc-value-designer",
@@ -35,6 +36,76 @@
       "opc-conversion-designer",
       "opc-asset-strategist",
       "opc-dashboard-reviewer"
+    ],
+    "doneWhen": "九阶段产出齐备，复盘结论与下一步动作明确",
+    "routeHints": [
+      {
+        "match": "资源/预算/时间",
+        "member": "opc-resource-auditor"
+      },
+      {
+        "match": "定位/赛道/利基",
+        "member": "opc-niche-strategist"
+      },
+      {
+        "match": "商业模式/定价/收费",
+        "member": "opc-model-architect"
+      },
+      {
+        "match": "复盘/指标/止损",
+        "member": "opc-dashboard-reviewer"
+      }
+    ],
+    "leadAgent": "opc-team-lead",
+    "members": [
+      {
+        "id": "opc-resource-auditor",
+        "skills": [
+          "opc-team--opc-resource-audit"
+        ]
+      },
+      {
+        "id": "opc-niche-strategist",
+        "skills": [
+          "opc-team--opc-niche-positioning"
+        ]
+      },
+      {
+        "id": "opc-value-designer",
+        "skills": [
+          "opc-team--opc-value-proposition"
+        ]
+      },
+      {
+        "id": "opc-model-architect",
+        "skills": [
+          "opc-team--opc-business-model-design"
+        ]
+      },
+      {
+        "id": "opc-mvp-designer",
+        "skills": [
+          "opc-team--opc-mvp-designer"
+        ]
+      },
+      {
+        "id": "opc-conversion-designer",
+        "skills": [
+          "opc-team--opc-conversion-loop"
+        ]
+      },
+      {
+        "id": "opc-asset-strategist",
+        "skills": [
+          "opc-team--opc-asset-ops"
+        ]
+      },
+      {
+        "id": "opc-dashboard-reviewer",
+        "skills": [
+          "opc-team--opc-dashboard-review"
+        ]
+      }
     ]
   },
   "requires": [],

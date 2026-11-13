@@ -144,17 +144,17 @@ MVP开发专家团 v2.1.0 - 已启动
 
 ### 知识库调度规则
 
-专家包内置 `references/` 分层知识库（24 篇文档），涵盖工程纪律标准、行业规范、架构模式、平台规范、设计系统、成本模型。调度成员时，**必须**在 spawn 指令中告知成员读取对应的知识库文件：
+专家包内置 `mvp-dev-expert-team--references` 分层知识库（24 篇文档），涵盖工程纪律标准、行业规范、架构模式、平台规范、设计系统、成本模型。调度成员时，**必须**在 spawn 指令中告知成员读取对应的知识库文件：
 
 | 成员 | 知识库路径 | 读取时机 |
 |------|------------|----------|
-| PM | `references/industries/{对应行业}.md` | Phase 1 调研前 |
-| 架构师 | `references/01-standards/spec-as-contract.md` + `references/01-standards/context-engineering.md` + `references/01-standards/generated-code-failure-modes.md` + `references/architecture/mvp-stack.md` + 按需 `ai-agent-patterns/rag-knowledge-base/multi-tenant-saas` + `references/cost-models/development-costs.md` | Phase 1 选型前 |
-| 设计师 | `references/design-systems/token-standard.md` + `references/industries/{对应行业}.md` | Phase 2 设计前 |
-| 前端 | `references/01-standards/generated-code-failure-modes.md` + `references/01-standards/context-engineering.md` + `references/platforms/{对应平台}.md`（wechat-miniprogram/harmonyos） | Phase 3 开发前 |
-| 后端 | `references/01-standards/generated-code-failure-modes.md` + `references/01-standards/test-discipline.md` + `references/01-standards/eval-driven-delivery.md` | Phase 3 开发前 |
-| QA | `references/01-standards/test-discipline.md` + `references/01-standards/test-integrity-anti-gaming.md` + `references/01-standards/verifier-critic-pattern.md` + `references/01-standards/generated-code-failure-modes.md` + `references/01-standards/production-readiness-scorecard.md` | Phase 2 写测试 + Phase 4 评级前 |
-| 运维 | `references/01-standards/production-readiness-scorecard.md` + `references/architecture/mvp-stack.md` + `references/cost-models/development-costs.md` | Phase 4 部署前 |
+| PM | `mvp-dev-expert-team--references` 技能的 `industries/{对应行业}.md` | Phase 1 调研前 |
+| 架构师 | `mvp-dev-expert-team--references` 技能的 `01-standards/spec-as-contract.md` + `mvp-dev-expert-team--references` 技能的 `01-standards/context-engineering.md` + `mvp-dev-expert-team--references` 技能的 `01-standards/generated-code-failure-modes.md` + `mvp-dev-expert-team--references` 技能的 `architecture/mvp-stack.md` + 按需 `ai-agent-patterns/rag-knowledge-base/multi-tenant-saas` + `mvp-dev-expert-team--references` 技能的 `cost-models/development-costs.md` | Phase 1 选型前 |
+| 设计师 | `mvp-dev-expert-team--references` 技能的 `design-systems/token-standard.md` + `mvp-dev-expert-team--references` 技能的 `industries/{对应行业}.md` | Phase 2 设计前 |
+| 前端 | `mvp-dev-expert-team--references` 技能的 `01-standards/generated-code-failure-modes.md` + `mvp-dev-expert-team--references` 技能的 `01-standards/context-engineering.md` + `mvp-dev-expert-team--references` 技能的 `platforms/{对应平台}.md`（wechat-miniprogram/harmonyos） | Phase 3 开发前 |
+| 后端 | `mvp-dev-expert-team--references` 技能的 `01-standards/generated-code-failure-modes.md` + `mvp-dev-expert-team--references` 技能的 `01-standards/test-discipline.md` + `mvp-dev-expert-team--references` 技能的 `01-standards/eval-driven-delivery.md` | Phase 3 开发前 |
+| QA | `mvp-dev-expert-team--references` 技能的 `01-standards/test-discipline.md` + `mvp-dev-expert-team--references` 技能的 `01-standards/test-integrity-anti-gaming.md` + `mvp-dev-expert-team--references` 技能的 `01-standards/verifier-critic-pattern.md` + `mvp-dev-expert-team--references` 技能的 `01-standards/generated-code-failure-modes.md` + `mvp-dev-expert-team--references` 技能的 `01-standards/production-readiness-scorecard.md` | Phase 2 写测试 + Phase 4 评级前 |
+| 运维 | `mvp-dev-expert-team--references` 技能的 `01-standards/production-readiness-scorecard.md` + `mvp-dev-expert-team--references` 技能的 `architecture/mvp-stack.md` + `mvp-dev-expert-team--references` 技能的 `cost-models/development-costs.md` | Phase 4 部署前 |
 
 **门禁检查**：每个 Phase 结束时，检查成员产出是否参照了对应知识库内容。未引用 → 退回重做。
 
@@ -226,7 +226,7 @@ Phase 0.5 → 我判断：用户是否有 IMA 知识库？（调用 get_knowledg
 
 ## 记忆系统增强（三通道 + 踩坑自学习）
 
-> Read `references/01-standards/self-improving-memory.md` 和 `references/01-standards/open-decisions-register.md` 了解完整规范。
+> Read `mvp-dev-expert-team--references` 技能的 `01-standards/self-improving-memory.md` 和 `mvp-dev-expert-team--references` 技能的 `01-standards/open-decisions-register.md` 了解完整规范。
 
 专家团在工作过程中产生的知识通过**三条记忆通道**沉淀：
 
@@ -241,7 +241,7 @@ Phase 0.5 → 我判断：用户是否有 IMA 知识库？（调用 get_knowledg
 
 ### 通道二：悬而未决登记册（OPEN-DECISIONS）
 
-> Read `references/01-standards/open-decisions-register.md` 了解完整规范。
+> Read `mvp-dev-expert-team--references` 技能的 `01-standards/open-decisions-register.md` 了解完整规范。
 
 出现「定不下来/先放一放/等外部条件」时，**立即**在 `项目/docs/decisions/OPEN-DECISIONS.md` 落条：
 
@@ -263,7 +263,7 @@ Phase 0.5 → 我判断：用户是否有 IMA 知识库？（调用 get_knowledg
 
 ### 通道三：踩坑自学习闭环（识别 → 记录 → 触发 → 验证）
 
-> Read `references/01-standards/self-improving-memory.md` 了解完整规范。
+> Read `mvp-dev-expert-team--references` 技能的 `01-standards/self-improving-memory.md` 了解完整规范。
 
 **四阶段闭环**：
 
@@ -300,7 +300,7 @@ OPEN 项关闭时可升格为 ADR。
 
 ## RoleVerdict 结构化裁决协议
 
-> Read `references/01-standards/verifier-critic-pattern.md` 了解完整规范。
+> Read `mvp-dev-expert-team--references` 技能的 `01-standards/verifier-critic-pattern.md` 了解完整规范。
 
 成员回传产出时，**必须**使用以下结构化格式，而非自由文本：
 
@@ -423,7 +423,7 @@ PM 正在调研竞品，架构师在验证技术方案，你并行做设计调�
 ### Phase 1.5: Spec 生成（自动，用户已确认三文档）
 
 > 用户确认三文档后，Spec 生成、设计细化、开发、测试自动推进。仅当技术不可行或 QA 发现 P0 缺陷时才通知用户。
-> **Spec 是规格即契约**——Read `references/01-standards/spec-as-contract.md` 了解完整要求。
+> **Spec 是规格即契约**——Read `mvp-dev-expert-team--references` 技能的 `01-standards/spec-as-contract.md` 了解完整要求。
 
 | 动作 | 细节 |
 |------|------|
@@ -600,7 +600,7 @@ Spec 一旦确认即锁定。开发过程中用户提出改动时：
 | spawn | 同时 spawn mvp-dev-expert-team-frontend + mvp-dev-expert-team-backend |
 | 下发任务 | 给前端：Spec 中的页面清单 + 设计提示词。**必须包含 P0 绝对规则提醒**；给后端：Spec 中的 API 端点清单 + DB 表清单 |
 | 自检规则 | 每模块完成后 lint -> type-check -> test，失败自动修，最多 3 轮 |
-| ⛔ 代码组织门禁 | 前后端代码完成后，**必须**对照 `references/01-standards/code-organization.md` 检查：目录分层（routes/controllers/services/repositories，依赖只向下）、单文件 ≤ 300 行、入口文件只装配零业务、单一职责、逻辑下沉 service。任一不合格 → 退回重做 |
+| ⛔ 代码组织门禁 | 前后端代码完成后，**必须**对照 `mvp-dev-expert-team--references` 技能的 `01-standards/code-organization.md` 检查：目录分层（routes/controllers/services/repositories，依赖只向下）、单文件 ≤ 300 行、入口文件只装配零业务、单一职责、逻辑下沉 service。任一不合格 → 退回重做 |
 | ⛔ Emoji 代码扫描 | 前端代码完成后，**必须执行 emoji 正则扫描**所有 .tsx/.vue/.html/.jsx 文件，发现 emoji → 立即替换为项目锁定图标库的对应图标，零容忍 |
 | UI 门禁 | 前端代码完成后对照 11 项视觉清单 + P0 绝对规则自查 |
 | 范围检查 | 开发过程中不新增 Spec 以外的功能——新增需求走变更流程 |

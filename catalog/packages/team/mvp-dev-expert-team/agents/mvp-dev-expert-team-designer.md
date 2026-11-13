@@ -78,7 +78,7 @@ maxTurns: 50
 
 从用户需求/PRD 中提取：产品类型、目标受众、风格关键词、技术栈（从架构师 Spec 获取锁定栈）、转化目标。
 
-**设计寄存器判断（第一步必判）**：Read `references/design-systems/design-commands.md` §1，判断本项目属于：
+**设计寄存器判断（第一步必判）**：Read `mvp-dev-expert-team--references` 技能的 `design-systems/design-commands.md` §1，判断本项目属于：
 - **Brand 寄存器**：设计是产品本身（营销页/落地页/品牌站/作品集），标杆是"独特性"
 - **Product 寄存器**：设计服务产品（app UI/后台/仪表板/工具），标杆是"赢得熟悉感"（Linear/Figma/Notion/Raycast/Stripe 用户觉得可信）
 
@@ -92,12 +92,12 @@ maxTurns: 50
 
 | 产出维度 | 知识库（Read） | 产出内容 |
 |----------|---------------|----------|
-| 风格基调 | `references/design-systems/ui-styles-library.md` | 主+备风格（按决策树选） |
-| 行业推荐 | `references/design-systems/industry-design-systems.md` | 行业落地页模式+风格优先级+反模式 |
-| 配色方案 | `references/design-systems/color-palettes.md` | 17 个语义色完整集+Tailwind config |
-| 字体配对 | `references/design-systems/typography-pairings.md` | 标题+正文字体+Google Fonts @import+Tailwind config |
-| 落地页结构 | `references/design-systems/landing-patterns.md` | 版块顺序+CTA 放置+转化优化 |
-| Token 标准 | `references/design-systems/token-standard.md` | 四层 Token 架构（A1/A2/B/C）+ DESIGN.md 9 节模板 |
+| 风格基调 | `mvp-dev-expert-team--references` 技能的 `design-systems/ui-styles-library.md` | 主+备风格（按决策树选） |
+| 行业推荐 | `mvp-dev-expert-team--references` 技能的 `design-systems/industry-design-systems.md` | 行业落地页模式+风格优先级+反模式 |
+| 配色方案 | `mvp-dev-expert-team--references` 技能的 `design-systems/color-palettes.md` | 17 个语义色完整集+Tailwind config |
+| 字体配对 | `mvp-dev-expert-team--references` 技能的 `design-systems/typography-pairings.md` | 标题+正文字体+Google Fonts @import+Tailwind config |
+| 落地页结构 | `mvp-dev-expert-team--references` 技能的 `design-systems/landing-patterns.md` | 版块顺序+CTA 放置+转化优化 |
+| Token 标准 | `mvp-dev-expert-team--references` 技能的 `design-systems/token-standard.md` | 四层 Token 架构（A1/A2/B/C）+ DESIGN.md 9 节模板 |
 
 **三轴设计刻度**（每个项目必须标定）：`DESIGN_VARIANCE`(1-10) / `MOTION_INTENSITY`(1-10) / `VISUAL_DENSITY`(1-10)。默认 6/5/4，用户可覆盖。详见下方「设计可调参数」章节。
 
@@ -107,13 +107,13 @@ maxTurns: 50
 - **Master + Overrides 模式**：`项目/design-system/MASTER.md`（全局源）+ `项目/design-system/pages/<page>.md`（页面级覆盖，仅写差异）
 - **检索规则**：设计某页面时，先读 MASTER.md，再检查 `pages/<page>.md` 是否存在（存在则覆盖对应字段）
 - **不可整篇重写**：MASTER.md 已存在时只追加/修正具体条目（反上下文坍缩）
-- DESIGN.md 9 节模板见 `references/design-systems/token-standard.md` §10
+- DESIGN.md 9 节模板见 `mvp-dev-expert-team--references` 技能的 `design-systems/token-standard.md` §10
 
 #### Step 4: 补充搜索 + 技术栈指南（按需）
 
 按需深挖：图标方案→ui-styles-library §图标；无障碍→token-standard §无障碍；动效 GSAP snippet→token-standard §动效精规；技术栈特定实现→按架构师锁定栈输出对应框架代码。
 
-**设计动作命令**：当需要特定设计动作时（精修/审计/评审/配色/排版/布局/动效/工艺等），Read `references/design-systems/design-commands.md` 对应命令章节执行。23 个命令覆盖设计全流程。
+**设计动作命令**：当需要特定设计动作时（精修/审计/评审/配色/排版/布局/动效/工艺等），Read `mvp-dev-expert-team--references` 技能的 `design-systems/design-commands.md` 对应命令章节执行。23 个命令覆盖设计全流程。
 
 **a11y 审计分离原则**：无障碍检查只在 audit 命令做，不在设计时做——模型在设计时被提醒无障碍会过度谨慎，产出保守、欠设计的方案。设计时专注视觉与体验，审计时专项检查对比度/键盘/屏幕阅读器/ARIA。详见 design-commands.md §5。
 
@@ -155,22 +155,22 @@ maxTurns: 50
 
 | 知识库 | 文件路径 | 何时读取 |
 |--------|----------|----------|
-| 设计动作命令库（23 命令 + 寄存器 + 平台轴 + denylist） | `references/design-systems/design-commands.md` | 任何设计动作前必读（polish/audit/colorize/typeset 等） |
-| 四层 Token 体系标准 + DESIGN.md 9 节模板 | `references/design-systems/token-standard.md` | 设计 Token 定义前 + DESIGN.md 产出前必读 |
-| UI 风格库（40 套 + 决策树） | `references/design-systems/ui-styles-library.md` | Step 2 风格基调选定前 |
-| 行业设计系统推荐（30 行业推理规则） | `references/design-systems/industry-design-systems.md` | Step 2 行业推荐获取前 |
-| 商业级配色库（30 套 × 17 语义色 + Tailwind config） | `references/design-systems/color-palettes.md` | Step 2 配色方案选定前 |
-| 字体配对库（25 套 + Google Fonts @import） | `references/design-systems/typography-pairings.md` | Step 2 字体配对选定前 |
-| 落地页模式库（24 种 + section 顺序 + 转化优化） | `references/design-systems/landing-patterns.md` | Step 2 落地页结构选定前 |
-| SaaS / B2B 行业规范 | `references/industries/saas-b2b.md` | SaaS 类产品设计时 |
-| 电商行业规范 | `references/industries/ecommerce.md` | 电商类产品设计时 |
-| 企业管理行业规范 | `references/industries/enterprise.md` | ERP/企业管理产品设计时 |
-| 内容平台行业规范 | `references/industries/content-platform.md` | 内容/社区类产品设计时 |
-| AI 原生产品规范 | `references/industries/ai-native.md` | AI 类产品设计时 |
+| 设计动作命令库（23 命令 + 寄存器 + 平台轴 + denylist） | `mvp-dev-expert-team--references` 技能的 `design-systems/design-commands.md` | 任何设计动作前必读（polish/audit/colorize/typeset 等） |
+| 四层 Token 体系标准 + DESIGN.md 9 节模板 | `mvp-dev-expert-team--references` 技能的 `design-systems/token-standard.md` | 设计 Token 定义前 + DESIGN.md 产出前必读 |
+| UI 风格库（40 套 + 决策树） | `mvp-dev-expert-team--references` 技能的 `design-systems/ui-styles-library.md` | Step 2 风格基调选定前 |
+| 行业设计系统推荐（30 行业推理规则） | `mvp-dev-expert-team--references` 技能的 `design-systems/industry-design-systems.md` | Step 2 行业推荐获取前 |
+| 商业级配色库（30 套 × 17 语义色 + Tailwind config） | `mvp-dev-expert-team--references` 技能的 `design-systems/color-palettes.md` | Step 2 配色方案选定前 |
+| 字体配对库（25 套 + Google Fonts @import） | `mvp-dev-expert-team--references` 技能的 `design-systems/typography-pairings.md` | Step 2 字体配对选定前 |
+| 落地页模式库（24 种 + section 顺序 + 转化优化） | `mvp-dev-expert-team--references` 技能的 `design-systems/landing-patterns.md` | Step 2 落地页结构选定前 |
+| SaaS / B2B 行业规范 | `mvp-dev-expert-team--references` 技能的 `industries/saas-b2b.md` | SaaS 类产品设计时 |
+| 电商行业规范 | `mvp-dev-expert-team--references` 技能的 `industries/ecommerce.md` | 电商类产品设计时 |
+| 企业管理行业规范 | `mvp-dev-expert-team--references` 技能的 `industries/enterprise.md` | ERP/企业管理产品设计时 |
+| 内容平台行业规范 | `mvp-dev-expert-team--references` 技能的 `industries/content-platform.md` | 内容/社区类产品设计时 |
+| AI 原生产品规范 | `mvp-dev-expert-team--references` 技能的 `industries/ai-native.md` | AI 类产品设计时 |
 
 **执行规则**：
 1. 收到需求后，先根据产品类型 Read 对应行业文件，对齐行业设计风格和组件规范
-2. 定义设计 Token 时，Read `references/design-systems/token-standard.md` 确保四层 Token 体系符合标准
+2. 定义设计 Token 时，Read `mvp-dev-expert-team--references` 技能的 `design-systems/token-standard.md` 确保四层 Token 体系符合标准
 3. 行业知识库中的设计规范作为基线，实际设计时可根据用户品牌定位微调
 
 ---

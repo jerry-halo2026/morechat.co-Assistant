@@ -174,5 +174,7 @@
     }
   ],
   "plugin": "mvp-dev-expert-team",
-  "skills": []
+  "skills": [
+    "./skills/mvp-dev-expert-team--references"
+  ]
 }

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "generator": "morechat-assistant/scripts/build-catalog.mjs",
-  "generatedAt": "2026-11-12T16:56:36.659Z",
+  "generatedAt": "2026-11-13T00:44:11.434Z",
   "source": {
     "catalogRoot": "catalog",
     "upstreamRoot": "upstream",
@@ -13,9 +13,9 @@
     "packages": 39,
     "agents": 34,
     "teams": 5,
-    "skills": 113,
-    "files": 976,
-    "bytes": 14953244,
+    "skills": 114,
+    "files": 977,
+    "bytes": 14957047,
     "sourceBytes": 14933887,
     "duplicateSkillNames": [
       {
@@ -3227,10 +3227,52 @@
       "descriptionZh": "说出你的想法，8位专家从调研、设计、编码、测试到部署全流程协作，帮你快速开发MVP产品",
       "version": "2.1.1",
       "path": "packages/team/mvp-dev-expert-team",
-      "files": 44,
-      "bytes": 509984,
-      "sha256": "a55552c56f3caecb6cc9745a266f12c5af5ff4ded1cd86bcbf4fb7fd4be0c31d",
-      "skills": [],
+      "files": 45,
+      "bytes": 513787,
+      "sha256": "b799f7fe30ce91991daf650b0a0f9698b37946ae359dfd0cd55f3ea2dd3b4091",
+      "skills": [
+        {
+          "name": "references",
+          "ns": "mvp-dev-expert-team--references",
+          "path": "skills/mvp-dev-expert-team--references",
+          "fileList": [
+            "01-standards/code-organization.md",
+            "01-standards/context-engineering.md",
+            "01-standards/eval-driven-delivery.md",
+            "01-standards/generated-code-failure-modes.md",
+            "01-standards/open-decisions-register.md",
+            "01-standards/production-readiness-scorecard.md",
+            "01-standards/self-improving-memory.md",
+            "01-standards/spec-as-contract.md",
+            "01-standards/test-discipline.md",
+            "01-standards/test-integrity-anti-gaming.md",
+            "01-standards/verifier-critic-pattern.md",
+            "README.md",
+            "architecture/ai-agent-patterns.md",
+            "architecture/multi-tenant-saas.md",
+            "architecture/mvp-stack.md",
+            "architecture/rag-knowledge-base.md",
+            "cost-models/development-costs.md",
+            "design-systems/color-palettes.md",
+            "design-systems/design-commands.md",
+            "design-systems/industry-design-systems.md",
+            "design-systems/landing-patterns.md",
+            "design-systems/token-standard.md",
+            "design-systems/typography-pairings.md",
+            "design-systems/ui-styles-library.md",
+            "industries/ai-native.md",
+            "industries/content-platform.md",
+            "industries/ecommerce.md",
+            "industries/enterprise.md",
+            "industries/saas-b2b.md",
+            "platforms/harmonyos.md",
+            "platforms/wechat-miniprogram.md"
+          ],
+          "files": 32,
+          "bytes": 300699,
+          "sha256": "e85ecc83f1e29a52a3214889b12d59183fe23151d96a2f5077a06fa86d56c5c3"
+        }
+      ],
       "requires": [],
       "tags": [
         {

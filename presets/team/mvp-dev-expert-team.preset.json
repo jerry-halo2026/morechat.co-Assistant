@@ -8,15 +8,18 @@
   },
   "description": "说出你的想法，8位专家从调研、设计、编码、测试到部署全流程协作，帮你快速开发MVP产品",
   "personaPath": "catalog/packages/team/mvp-dev-expert-team/agents/mvp-dev-expert-team-team-lead.md",
-  "skills": [],
+  "skills": [
+    "mvp-dev-expert-team--references"
+  ],
   "conversationStarters": [
     "我想从零做一个团队协作工具",
     "帮我开发一个电商小程序",
     "我有个产品想法，帮我做成MVP"
   ],
   "team": {
-    "leadAgent": "mvp-dev-expert-team-team-lead",
-    "members": [
+    "workflow": "pipeline",
+    "handoffs": [
+      "mvp-dev-expert-team-team-lead",
       "mvp-dev-expert-team-pm",
       "mvp-dev-expert-team-designer",
       "mvp-dev-expert-team-architect",
@@ -24,10 +27,64 @@
       "mvp-dev-expert-team-backend",
       "mvp-dev-expert-team-qa",
       "mvp-dev-expert-team-devops"
+    ],
+    "doneWhen": "八阶段产出齐备、P0 缺陷为 0、部署清单可执行",
+    "routeHints": [
+      {
+        "match": "调研/竞品/需求",
+        "member": "mvp-dev-expert-team-pm"
+      },
+      {
+        "match": "界面/视觉/交互",
+        "member": "mvp-dev-expert-team-designer"
+      },
+      {
+        "match": "架构/技术选型/数据模型",
+        "member": "mvp-dev-expert-team-architect"
+      },
+      {
+        "match": "部署/环境/上线",
+        "member": "mvp-dev-expert-team-devops"
+      }
+    ],
+    "leadAgent": "mvp-dev-expert-team-team-lead",
+    "members": [
+      {
+        "id": "mvp-dev-expert-team-pm",
+        "skills": []
+      },
+      {
+        "id": "mvp-dev-expert-team-designer",
+        "skills": []
+      },
+      {
+        "id": "mvp-dev-expert-team-architect",
+        "skills": []
+      },
+      {
+        "id": "mvp-dev-expert-team-frontend",
+        "skills": [],
+        "harness": "codex"
+      },
+      {
+        "id": "mvp-dev-expert-team-backend",
+        "skills": [],
+        "harness": "codex"
+      },
+      {
+        "id": "mvp-dev-expert-team-qa",
+        "skills": [],
+        "harness": "codex"
+      },
+      {
+        "id": "mvp-dev-expert-team-devops",
+        "skills": [],
+        "harness": "codex"
+      }
     ]
   },
   "requires": [],
   "sourcePackage": "catalog/packages/team/mvp-dev-expert-team",
   "packageVersion": "2.1.1",
-  "contentSha256": "a55552c56f3caecb6cc9745a266f12c5af5ff4ded1cd86bcbf4fb7fd4be0c31d"
+  "contentSha256": "b799f7fe30ce91991daf650b0a0f9698b37946ae359dfd0cd55f3ea2dd3b4091"
 }

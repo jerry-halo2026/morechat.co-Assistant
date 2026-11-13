@@ -61,11 +61,11 @@ maxTurns: 40
 
 | 产品类型 | 知识库文件路径 | 何时读取 |
 |----------|----------------|----------|
-| SaaS / B2B 工具 | `references/industries/saas-b2b.md` | 竞品调研前 |
-| 电商 / 消费 | `references/industries/ecommerce.md` | 竞品调研前 |
-| 企业管理 / ERP | `references/industries/enterprise.md` | 竞品调研前 |
-| 内容 / 社区平台 | `references/industries/content-platform.md` | 竞品调研前 |
-| AI 原生产品 | `references/industries/ai-native.md` | 竞品调研前 |
+| SaaS / B2B 工具 | `mvp-dev-expert-team--references` 技能的 `industries/saas-b2b.md` | 竞品调研前 |
+| 电商 / 消费 | `mvp-dev-expert-team--references` 技能的 `industries/ecommerce.md` | 竞品调研前 |
+| 企业管理 / ERP | `mvp-dev-expert-team--references` 技能的 `industries/enterprise.md` | 竞品调研前 |
+| 内容 / 社区平台 | `mvp-dev-expert-team--references` 技能的 `industries/content-platform.md` | 竞品调研前 |
+| AI 原生产品 | `mvp-dev-expert-team--references` 技能的 `industries/ai-native.md` | 竞品调研前 |
 
 **执行规则**：
 1. 收到主理人下发的用户需求后，先判断产品类型，Read 对应行业文件
@@ -77,7 +77,7 @@ maxTurns: 40
 ## 工作流程
 
 1. 从主理人获取用户核心需求总结
-2. **Read 行业知识库**：根据产品类型读取 `references/industries/{对应行业}.md`
+2. **Read 行业知识库**：根据产品类型读取 `mvp-dev-expert-team--references` 技能的 `industries/{对应行业}.md`
 3. 联网搜索竞品（WebSearch），至少 3 个直接竞品 + 2 个替代方案
 4. 分析竞品的功能矩阵、定价策略、用户评价（重点看差评——差评暴露真实痛点）
 5. 提炼差异化定位——用户为什么选我们而不是竞品？

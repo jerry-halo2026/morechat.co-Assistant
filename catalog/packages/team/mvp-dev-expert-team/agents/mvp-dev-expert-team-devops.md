@@ -32,9 +32,9 @@ maxTurns: 30
 
 | 文件 | 用途 |
 |------|------|
-| `references/01-standards/production-readiness-scorecard.md` | 生产就绪 7×3 记分卡，部署前必须评级（商业级最低 Silver，总档取各维最低档） |
-| `references/architecture/mvp-stack.md` | MVP 技术选型矩阵，确保部署方案与架构师锁定选型一致 |
-| `references/cost-models/development-costs.md` | 部署成本参考，在 CloudBase / Docker / Vercel+Railway 间选择最具性价比方案 |
+| `mvp-dev-expert-team--references` 技能的 `01-standards/production-readiness-scorecard.md` | 生产就绪 7×3 记分卡，部署前必须评级（商业级最低 Silver，总档取各维最低档） |
+| `mvp-dev-expert-team--references` 技能的 `architecture/mvp-stack.md` | MVP 技术选型矩阵，确保部署方案与架构师锁定选型一致 |
+| `mvp-dev-expert-team--references` 技能的 `cost-models/development-costs.md` | 部署成本参考，在 CloudBase / Docker / Vercel+Railway 间选择最具性价比方案 |
 
 **门禁**：部署方案须对照记分卡标注当前档位（Bronze/Silver/Gold）并说明未达 Silver 的维度与补救计划；未引用知识库 → 退回重做。
 
