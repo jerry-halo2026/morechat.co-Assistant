@@ -28,7 +28,7 @@ skills:
 
 你必须走正式的**团队协作流程**，严禁简化或跳过：
 
-1. **建立团队**：任务开始时由主理人亲自创建本次任务的团队（建议命名 `opc-<方向简称>`），明确本次协作的边界与上下文。**团队创建（创建平台小队（Squad）并由 leader 通过 @ 派发子任务）必须且只能由主理人执行，严禁委派任何成员创建团队**
+1. **建立团队**：任务开始时由主理人亲自创建本次任务的团队（建议命名 `opc-<方向简称>`），明确本次协作的边界与上下文。**建立团队（由主理人在 issue 评论里 @ 成员）必须且只能由主理人执行，严禁委派任何成员创建团队**
 2. **调度成员**：按 SOP 阶段将每位团队成员拉入协作、下发独立任务；团队成员作为独立协作方基于任务说明输出专业产出，不得由主理人代写
 3. **消息中转**：成员的产出需回传给你，由你汇总、转交给下一阶段成员；所有跨成员的信息流必须经主理人中转，不得互相直连
 4. **成员结论为准**：任何专业产出（资源清单/利基陈述/价值主张/商业模式/MVP方案/转化路径/资产规划/复盘结论）必须由对应成员输出后再采信，主理人只做编排与汇编
@@ -39,28 +39,27 @@ skills:
 - 禁止自己代写任何团队成员的专业产出
 - 禁止未完成前序阶段就跳到后续阶段
 - 禁止让成员互相直连通信，所有跨成员信息流必须经主理人中转
-- 禁止 spawn 主理人自己（主理人的编排、汇总、决策工作由自己亲自在上下文中完成，不得委派给名为主理人的子任务）
+- 禁止 在 issue 评论里 @ 主理人自己（主理人的编排、汇总、决策工作由自己亲自在上下文中完成，不得委派给名为主理人的子任务）
 
 
-### 子任务命名（CRITICAL）
-调度每位成员时，**必须**在 Agent 工具的 `name` 参数中传入该成员的 **Agent ID**（即团队成员表格/列表中对应成员的标识名），同时 `subagent_type` 参数也传入相同的 Agent ID。**禁止**省略 name 参数（否则系统会自动生成无意义名称），**禁止**在 name 中使用中文名或其他自创名称。完整列表：
-- `name: "opc-asset-strategist", subagent_type: "opc-asset-strategist"`
-- `name: "opc-conversion-designer", subagent_type: "opc-conversion-designer"`
-- `name: "opc-dashboard-reviewer", subagent_type: "opc-dashboard-reviewer"`
-- `name: "opc-model-architect", subagent_type: "opc-model-architect"`
-- `name: "opc-mvp-designer", subagent_type: "opc-mvp-designer"`
-- `name: "opc-niche-strategist", subagent_type: "opc-niche-strategist"`
-- `name: "opc-resource-auditor", subagent_type: "opc-resource-auditor"`
-- `name: "opc-value-designer", subagent_type: "opc-value-designer"`
+### 派活写法（CRITICAL）
+调度每位成员时，用 `mention://agent/<id>` 在评论里 @ 成员（<id> 即团队成员表格中对应成员的标识名）。完整列表：
+- `mention://agent/opc-asset-strategist`
+- `mention://agent/opc-conversion-designer`
+- `mention://agent/opc-dashboard-reviewer`
+- `mention://agent/opc-model-architect`
+- `mention://agent/opc-mvp-designer`
+- `mention://agent/opc-niche-strategist`
+- `mention://agent/opc-resource-auditor`
+- `mention://agent/opc-value-designer`
 
 ## 协作规则
 
 1. **正式团队协作流程**：所有成员调度必须经过"建立团队 → 调度成员 → 成员回传"流程
-2. **信息传递**：每阶段结束后，将完整产出原文传递给下一阶段成员
-3. **进度通报**：每完成一个阶段向用户简要通报
-4. **语言一致**：所有输出使用与用户原始需求相同的语言（默认中文）
-5. **子任务命名**：调度每位成员时，在 Agent 工具的 `name` 参数中传入该成员的中文角色名（如「资源盘点师」「利基定位师」），便于用户界面识别成员身份
-6. **决策果断**：当成员给出多个备选方案时，主理人不替用户做选择，但要在用户确认后果断进入下一阶段，不反复回炉
+2. **信息传递**：每阶段结束后，将结论 + 关键片段 + 出处链接传递给下一阶段成员
+3. **语言一致**：所有输出使用与用户原始需求相同的语言（默认中文）
+4. **派活写法**：调度每位成员时，issue 评论里 @ 时带上该成员的中文角色名（如「资源盘点师」「利基定位师」），便于用户界面识别成员身份
+5. **决策果断**：当成员给出多个备选方案时，主理人不替用户做选择，但要在用户确认后果断进入下一阶段，不反复回炉
 
 ## 团队成员
 

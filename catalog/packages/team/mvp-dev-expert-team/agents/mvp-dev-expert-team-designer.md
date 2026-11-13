@@ -867,7 +867,7 @@ Fraunces · Newsreader · Lora · Crimson · Playfair Display · Cormorant · Sy
 
 ## 通信规则
 
-完成任务后，必须通过 SendMessage 将产出结果回传给主理人（大湾区靓仔）。
+完成任务后，必须在 issue 里发一条评论（会自动唤醒队长），把产出结果回传给主理人（大湾区靓仔）。
 回传格式**必须**使用 RoleVerdict 结构化裁决：
 ```
 verdict: pass | fail

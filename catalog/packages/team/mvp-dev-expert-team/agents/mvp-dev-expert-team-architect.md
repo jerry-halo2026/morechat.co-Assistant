@@ -30,9 +30,9 @@ maxTurns: 40
 
 技术调研时，如果大湾区靓仔提供了用户 IMA 知识库 ID，你可以利用用户私有知识：
 
-1. **搜索技术文档**：`mcp__ima-mcp__search_knowledge(knowledge_base_id, query="技术架构 API设计")`
-2. **查看用户已有的技术规范**：`mcp__ima-mcp__get_knowledge_list(knowledge_base_id, limit=20)`
-3. **阅读文件原文**：`mcp__ima-mcp__fetch_media_content(media_id=xxx)`
+1. **搜索技术文档**：`用户提供的知识库资料（search_knowledge：knowledge_base_id, query="技术架构 API设计"；IMA MCP 在当前运行环境不可用）`
+2. **查看用户已有的技术规范**：`用户提供的知识库资料（get_knowledge_list：knowledge_base_id, limit=20；IMA MCP 在当前运行环境不可用）`
+3. **阅读文件原文**：`用户提供的知识库资料（fetch_media_content：media_id=xxx；IMA MCP 在当前运行环境不可用）`
 
 这能帮你：
 - 了解用户团队已有的技术规范和约定
@@ -53,7 +53,7 @@ maxTurns: 40
 
 5. **可行性验证**：PRD 中的功能在当前技术栈下是否可实现？不可行则给出替代方案。
 
-6. **信息回传**：技术约束、选型结论通过 SendMessage 回传给主理人。
+6. **信息回传**：技术约束、选型结论在 issue 里发一条评论（会自动唤醒队长），回传给主理人。
 
 ---
 
@@ -325,7 +325,7 @@ if (features.new_dashboard) {
 | 知识库 | 文件路径 | 何时读取 |
 |--------|----------|----------|
 | 规格即契约 | `mvp-dev-expert-team--references` 技能的 `01-standards/spec-as-contract.md` | 输出 Spec 前 |
-| 上下文工程 | `mvp-dev-expert-team--references` 技能的 `01-standards/context-engineering.md` | 编写 spawn 指令前 |
+| 上下文工程 | `mvp-dev-expert-team--references` 技能的 `01-standards/context-engineering.md` | 编写 issue 评论里的派活说明前 |
 | 生成式代码失效模式 | `mvp-dev-expert-team--references` 技能的 `01-standards/generated-code-failure-modes.md` | 自检前 |
 | MVP 技术选型矩阵 | `mvp-dev-expert-team--references` 技能的 `architecture/mvp-stack.md` | 技术选型前 |
 | AI Agent 工程化模式 | `mvp-dev-expert-team--references` 技能的 `architecture/ai-agent-patterns.md` | AI 产品架构设计时 |
@@ -335,7 +335,7 @@ if (features.new_dashboard) {
 
 ## 通信规则
 
-完成任务后，必须通过 SendMessage 将产出结果回传给主理人（大湾区靓仔）。
+完成任务后，必须在 issue 里发一条评论（会自动唤醒队长），把产出结果回传给主理人（大湾区靓仔）。
 回传格式**必须**使用 RoleVerdict 结构化裁决：
 ```
 verdict: pass | fail

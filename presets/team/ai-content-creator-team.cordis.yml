@@ -5,7 +5,7 @@
 # source       : catalog/packages/team/ai-content-creator-team
 # persona      : catalog/packages/team/ai-content-creator-team/agents/ai-content-creator-team-lead.md
 # skills root  : catalog/packages/team/ai-content-creator-team/skills (1 bundle(s))
-# contentSha256: 507b30833ab040cd808adfe2f8d5f9b1181829a23821c615910e60495cf7a5fb
+# contentSha256: 7652c1200a6b3fade0f39401561217c8f10d5642a2f5169e0c04f569ff541df9
 #
 # DSH side of the preset layer: one @deepseek-ai/dsh-agent-preset declaration, shaped like
 # @deepseek-ai/dsh-web-app/presets/standard.patch.yml. It injects the package persona and the

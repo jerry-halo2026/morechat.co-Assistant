@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "generator": "morechat-assistant/scripts/build-catalog.mjs",
-  "generatedAt": "2026-11-13T00:44:11.434Z",
+  "generatedAt": "2026-11-13T01:15:11.879Z",
   "source": {
     "catalogRoot": "catalog",
     "upstreamRoot": "upstream",
@@ -15,7 +15,7 @@
     "teams": 5,
     "skills": 114,
     "files": 977,
-    "bytes": 14957047,
+    "bytes": 14972684,
     "sourceBytes": 14933887,
     "duplicateSkillNames": [
       {
@@ -2820,8 +2820,8 @@
       "version": "1.0.0",
       "path": "packages/team/ai-content-creator-team",
       "files": 16,
-      "bytes": 145757,
-      "sha256": "507b30833ab040cd808adfe2f8d5f9b1181829a23821c615910e60495cf7a5fb",
+      "bytes": 160791,
+      "sha256": "7652c1200a6b3fade0f39401561217c8f10d5642a2f5169e0c04f569ff541df9",
       "skills": [
         {
           "name": "ai-content-production",
@@ -2836,8 +2836,8 @@
             "references/video-generation-guide.md"
           ],
           "files": 7,
-          "bytes": 56283,
-          "sha256": "150328d5e5922362c0f24950afac2c1d4d7c3082c188f2fa76ba4831e59d7235"
+          "bytes": 61625,
+          "sha256": "be35233b556ecf8c846383a59ee02d871de945575c71877e4015440cdbd51569"
         }
       ],
       "requires": [],
@@ -2960,8 +2960,8 @@
       "version": "1.0.0",
       "path": "packages/team/content-monetization-team",
       "files": 12,
-      "bytes": 77991,
-      "sha256": "df8946a76c8371009029c3f9f840e40aab1bcac9aa6383ec27acd9c2169f1354",
+      "bytes": 77728,
+      "sha256": "e3abe1aede44985ccb2cbb710b14465d3027de593dc59fdca4e917a22527b77a",
       "skills": [
         {
           "name": "content-monetization-ops",
@@ -3074,8 +3074,8 @@
       "version": "2.4.1",
       "path": "packages/team/fullstack-forge-team",
       "files": 19,
-      "bytes": 154811,
-      "sha256": "1674e92660ead9bb4573528892b58fc0a232021f7eb40b340b0dffce6b660edf",
+      "bytes": 154962,
+      "sha256": "62fc4b6b0090d89d42ac99fb8b43a19cbed0d06df567898ca9eb9fc29c7bd347",
       "skills": [
         {
           "name": "forge-orchestrator",
@@ -3092,8 +3092,8 @@
             "references/tech-stack-architecture.md"
           ],
           "files": 9,
-          "bytes": 91698,
-          "sha256": "1b1e559ff7266f3df2e7b67dc84df968f5abd24a3e7fc28486bf57d2203695b9"
+          "bytes": 91660,
+          "sha256": "2d1ba2b6b0a2f88d630b9e361de8abe9723cd2101591ff204af936ec86a7c3a1"
         }
       ],
       "requires": [],
@@ -3228,8 +3228,8 @@
       "version": "2.1.1",
       "path": "packages/team/mvp-dev-expert-team",
       "files": 45,
-      "bytes": 513787,
-      "sha256": "b799f7fe30ce91991daf650b0a0f9698b37946ae359dfd0cd55f3ea2dd3b4091",
+      "bytes": 515096,
+      "sha256": "43b86548763d09ddac0a4cd79d8b994e302f0a7963b5de346bcf552d70d1bd2c",
       "skills": [
         {
           "name": "references",
@@ -3270,7 +3270,7 @@
           ],
           "files": 32,
           "bytes": 300699,
-          "sha256": "e85ecc83f1e29a52a3214889b12d59183fe23151d96a2f5077a06fa86d56c5c3"
+          "sha256": "abc5090e48aee14a121331c2cc5915f0697dd33c28ddc64ded55155e4df5a79f"
         }
       ],
       "requires": [],
@@ -3405,8 +3405,8 @@
       "version": "1.0.0",
       "path": "packages/team/opc-team",
       "files": 42,
-      "bytes": 111352,
-      "sha256": "354a9faa97b07c95e143e071de24ebc63d50ebc07cc19102254c4849553925fa",
+      "bytes": 110758,
+      "sha256": "b2425e43d6d9816d172007714a9aec3976624eaf6f7c9a3575b54a9ae04d06f0",
       "skills": [
         {
           "name": "opc-asset-ops",

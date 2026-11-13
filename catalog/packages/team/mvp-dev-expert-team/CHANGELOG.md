@@ -7,7 +7,7 @@
 **P0 核心升级**：
 - **10 篇标准文档搬入**：从 UmaDev 知识库 `knowledge/agentic-delivery/01-standards/` 搬入 `references/01-standards/`（spec-as-contract / eval-driven-delivery / verifier-critic-pattern / test-discipline / test-integrity-anti-gaming / generated-code-failure-modes / production-readiness-scorecard / self-improving-memory / open-decisions-register / context-engineering）
 - **QA 反作弊门**：5 类测试作弊检测（删测试/弱化断言/skip新增/硬编码断言/框架篡改），杜绝「删测试换绿」
-- **QA 先写测试**：Phase 2 同步 spawn QA 写测试用例，Phase 3 前端/后端按测试实现（AgentCoder 实验 +5% pass@1）
+- **QA 先写测试**：Phase 2 同步 派给 `QA` 写测试用例，Phase 3 前端/后端按测试实现（AgentCoder 实验 +5% pass@1）
 - **QA 回归率一等指标**：解决率达标但回归率非零 = 不算完成
 - **Spec 规格即契约**：4 要素升级（out-of-scope 独立章节 + 版本锚定 + 内嵌已知坑 + 端到端验证步骤），13 章节模板
 - **悬而未决登记册**：第三记忆通道（OPEN/RESOLVED 状态机 + 7 字段 + 三类 slug + 开工复现）
@@ -22,7 +22,7 @@
 
 **P2 工程纪律**：
 - **失效模式自检**：前端/后端交付前逐项核对 6 类 AI 生成代码失效（沉默逻辑错误/同义测试/happy-path 偏差/幻觉依赖/缺失上下文/性能盲区）
-- **上下文工程纪律**：spawn 指令恰当高度 + JIT 检索 + 压实保真 + 子代理隔离
+- **上下文工程纪律**：issue 评论里的派活说明恰当高度 + JIT 检索 + 压实保真 + 子代理隔离
 - **增量增删反坍缩**：记忆文件禁止整篇重写，只追加/修正具体条目
 - **ADR 产物**：架构师每条选型产出 MADR 格式决策记录
 
@@ -48,7 +48,7 @@
   - **架构师**：技术选型前 Read `references/architecture/*.md`（4 个架构文件）+ `references/cost-models/development-costs.md`
   - **设计师**：设计 Token 前 Read `references/design-systems/token-standard.md` + 对应行业文件
   - **前端**：方案 D 开发前 Read `references/platforms/wechat-miniprogram.md`，鸿蒙原生 Read `references/platforms/harmonyos.md`
-  - **Team Lead**：新增「知识库调度规则」，spawn 成员时下发对应 references 路径，门禁时检查是否引用
+  - **Team Lead**：新增「知识库调度规则」，派活成员时下发对应 references 路径，门禁时检查是否引用
 - **结果**：13 篇知识库文档全部被至少 1 个 agent 引用，QA/后端/运维不引用（职责不需要）
 - **更新**：references/README.md 重写引用机制说明表
 
@@ -66,7 +66,7 @@
 - **6个完整 Playbook 案例**：团队协作/SaaS任务管理/内容平台/电商小程序/个人理财/腾讯生态
 
 ### Fixed — 官方审查整改（2026-07-06 审查报告）
-- **B01 (BLOCKER)**：team-lead.md 新增「成员调度规则」章节，明确 Agent 工具 name/subagent_type 参数须传 Agent ID（非中文名）
+- **B01 (BLOCKER)**：team-lead.md 新增「成员调度规则」章节，明确 issue 评论 @ 成员 name/成员标识 参数须传 Agent ID（非中文名）
 - **S01 (P4)**：playbook-cases 中 21 处 mock 凭据替换为占位符（`<YOUR_TEST_PASSWORD>` / `<MOCK_JWT_TOKEN>` / `<YOUR_DB_PASSWORD>`），消除安全扫描误报
 - **S02 (P2)**：displayDescription 统一为"8位专家"（原为"7位专家"），与 description 和 members 数组一致
 - **S03 (P2)**：members[] 字段名 `name` → `displayName`，与 plugin-json-spec.md 模板一致

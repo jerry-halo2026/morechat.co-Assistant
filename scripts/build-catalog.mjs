@@ -133,6 +133,260 @@ const REWRITES = [
   [/\bcodebuddy\b/g, 'morechat.co'],
 ];
 
+// ---------------------------------------------------------------- team runtime rewrites
+/**
+ * The five team packages were briefed for a runtime this platform does not provide.
+ *
+ * Their briefs dispatch work through an agent-to-agent message tool (`SendMessage`),
+ * a sub-agent spawn tool (`spawn` / `Agent` with `name` + `subagent_type`), a delivery
+ * tool (`deliver_attachments` / `open_result_view`) and a set of vendor multimodal
+ * services (`HY-Video`, `YT-Video`, `HY-Image`, `YT-VITA`, `ImageGen`, `ImageEdit`,
+ * `mcp__ima-mcp__*`). None of these exist here, so an agent following the text either
+ * calls a tool that is not there or - in ai-content-creator-team - deadlocks on a gate
+ * ("清单未全绿则禁止发送最终回复") that no run can ever clear.
+ *
+ * This platform has exactly three ways to dispatch work:
+ *   - `mention://agent/<id>` in an issue comment (@ a member, runs immediately),
+ *   - a child issue (`todo` starts it, `backlog` only assigns it),
+ *   - `comment add --steer` on a run that is already going.
+ * Delivery is an issue comment, and a member's comment wakes the lead. Multimodal
+ * generation depends on what the host provides; otherwise the deliverable is the
+ * prompt set / storyboard / edit script the user can run in their own tool.
+ *
+ * The rewrites below are scoped to these five package ids and run inside the convert
+ * pass (never against catalog/**, which is regenerated). Prompt-library packages and
+ * the 34 single-agent packages keep their upstream text untouched.
+ */
+const TEAM_PACKAGES = new Set([
+  'opc-team',
+  'content-monetization-team',
+  'fullstack-forge-team',
+  'mvp-dev-expert-team',
+  'ai-content-creator-team',
+]);
+
+const COMMENT_CALL = '在 issue 里发一条评论（会自动唤醒队长）';
+const MENTION_CALL = '用 `mention://agent/<id>` 在评论里 @ 成员';
+const HANDOFF = '结论 + 关键片段 + 出处链接';
+const SERVICE_SUFFIX_ZH =
+  '（若当前运行环境提供则调用，否则产出提示词/分镜表/剪辑脚本交用户用自备工具执行）';
+const SERVICE_SUFFIX_EN =
+  ' (call it if the runtime provides it, otherwise deliver the prompts / storyboard / edit script)';
+const SERVICE_NAME = String.raw`(?:HY-Video|YT-Video|HY-Image|YT-VITA|ImageGen|ImageEdit)[A-Za-z0-9._-]*`;
+const FENCE_NOTE =
+  '> 本段示例中的模型与服务名均为可选外部服务：若当前运行环境提供则调用，否则产出提示词、分镜表与剪辑脚本交用户用自备工具执行。';
+
+const TEAM_RULES = [
+  // ---- team creation: the Squad is built by the lead, members join by @ mention
+  [
+    /创建平台小队（Squad）并由 leader 通过 @ 派发子任务[ \t]*\+[ \t]*spawn[ \t]*成员/g,
+    '在 issue 评论里 @ 成员（先建小队，再 @ 派活）',
+  ],
+  [/团队创建（创建平台小队（Squad）并由 leader 通过 @ 派发子任务）/g, '建立团队（由主理人在 issue 评论里 @ 成员）'],
+  [/创建平台小队（Squad）并由 leader 通过 @ 派发子任务\("([^"]+)"\)/g, '在 issue 评论里 @ 成员（任务小队 $1）'],
+  [/(?:使用|通过)[ \t]*创建平台小队（Squad）并由 leader 通过 @ 派发子任务[ \t]*/g, '在 issue 评论里 @ 各自成员'],
+  [/创建平台小队（Squad）并由 leader 通过 @ 派发子任务/g, '在 issue 评论里 @ 成员'],
+
+  // ---- dispatch 1: no agent-to-agent message tool; a member's comment wakes the lead
+  [/通过[ \t]*(?:\*\*)?`?SendMessage`?(?:\*\*)?[ \t]*(?:工具)?[ \t]*将/g, `${COMMENT_CALL}，把`],
+  [/通过[ \t]*(?:\*\*)?`?SendMessage`?(?:\*\*)?[ \t]*(?:工具)?[ \t]*/g, `${COMMENT_CALL}，`],
+  [/SendMessage[ \t]*回传/g, 'issue 评论回传'],
+  [/\bvia SendMessage\b/g, 'by posting an issue comment that wakes the team lead'],
+  [/SendMessage[ \t]*(?:工具)?/g, COMMENT_CALL],
+
+  // ---- dispatch 2: no sub-agent spawn tool; a member is woken by an @ mention
+  [/`?name:[ \t]*"([^"]+)"[ \t]*,[ \t]*subagent_type:[ \t]*"[^"]+"`?/g, '`mention://agent/$1`'],
+  [
+    /\*\*必须\*\*[ \t]*在[ \t]*(Agent[ \t]*工具的?[ \t]*`?name`?[ \t]*参数)(?:中)?传入/g,
+    '$1**必须**传入',
+  ],
+  [
+    /(?:在[ \t]*)?Agent[ \t]*工具(?:的)?[ \t]*`?name`?[ \t]*参数(?:和[ \t]*`?subagent_type`?[ \t]*参数)?[ \t]*\*{0,2}必须\*{0,2}传入该成员的[ \t]*\*{0,2}Agent ID\*{0,2}(?:（[^）]*）)?/g,
+    `${MENTION_CALL}（<id> 即团队成员表格中对应成员的标识名）`,
+  ],
+  [/[，。]?[ \t]*同时[ \t]*`?subagent_type`?[ \t]*参数也传入相同的 Agent ID。/g, '。'],
+  [/[，,]?[ \t]*\*{0,2}禁止\*{0,2}省略 name 参数（[^）]*）/g, ''],
+  [/[，,。]?[ \t]*\*{0,2}禁止\*{0,2}在 name 中使用中文名或其他自创名称。/g, ''],
+  [/(?:在[ \t]*)?Agent[ \t]*工具的?[ \t]*`?name`?[ \t]*参数(?:中)?传入/g, 'issue 评论里 @ 时带上'],
+  [/用[ \t]*(?:`|\*\*)?Agent[ \t]*工具(?:`|\*\*)?[ \t]*重新[ \t]*spawn/g, '重新在 issue 评论里 @'],
+  [/通过[ \t]*(?:`|\*\*)?Agent[ \t]*工具(?:`|\*\*)?[ \t]*spawn/g, '通过 issue 评论 @'],
+  [/(?:`|\*\*)?Agent[ \t]*工具(?:`|\*\*)?[ \t]*spawn/g, '派活'],
+  [/(?:`|\*\*)?Agent[ \t]*工具(?:`|\*\*)?/g, 'issue 评论 @ 成员'],
+  [/name\/成员标识 参数须传 Agent ID/g, '成员标识须与团队成员表格一致'],
+  [/✅[ \t]*`?name:[ \t]*"([^"]+)"`?[ \t]*[，,][ \t]*`?subagent_type[ \t]*:[ \t]*"[^"]+"`?/g, '✅ `mention://agent/$1`'],
+  [/`?name:[ \t]*"([^"]+)"`?/g, '`mention://agent/$1`'],
+  [/(?:`|\*\*)?subagent_type(?:`|\*\*)?/g, '成员标识'],
+  [/###[ \t]*子任务命名/g, '### 派活写法'],
+  [/\*\*子任务命名\*\*/g, '**派活写法**'],
+
+  // ---- dispatch 3: no spawn verb; 派活 is an @ mention inside an issue comment
+  [/同时调度，无数据依赖，必须并行[ \t]*spawn/g, '同时调度，无数据依赖，必须在同一条 issue 评论里并行 @ 各自成员'],
+  [/并行[ \t]*spawn/g, '并行派活'],
+  [/重新[ \t]*spawn/g, '重新在 issue 评论里 @'],
+  [/spawn[ \t]*失败/g, '派活失败'],
+  [/spawn[ \t]*指令/g, 'issue 评论里的派活说明'],
+  [/spawn[ \t]*prompt/g, '派活 prompt'],
+  [/\bspawn[ \t]+([A-Za-z0-9._-]+)/g, '派给 `$1`'],
+  [/\bspawn[ \t]+(主理人自己|主理人)/g, '在 issue 评论里 @ $1'],
+  [/\bspawn[ \t]+成员/g, '派活成员'],
+  [/\bspawn[ \t]*(?=[\u4e00-\u9fa5])/g, '派活'],
+  [/\bspawn\b/g, '派活'],
+
+  // ---- capability lists: generation itself depends on the host
+  [
+    /^([ \t]*(?:[-*+][ \t]*)?)我(?:能|可以)(?:直接)?生成(视频|图片|图像)/gm,
+    '$1我能产出$2生成所需的提示词与分镜；实际生成取决于环境是否提供该服务',
+  ],
+
+  // ---- external multimodal services: drop the call form, keep the workflow
+  [
+    /所有成员\*\*必须且只能\*\*使用以下内置工具/g,
+    '所有成员的创作产出按下列能力编排；服务能否直接调用取决于当前运行环境',
+  ],
+  [/###[ \t]*内置工具/g, '### 内置能力与外部服务'],
+  [/\|[ \t]*调用参数[ \t]*\|/g, '| 服务标识 |'],
+  [/\|[ \t]*调用方式[ \t]*\|/g, '| 服务标识 |'],
+  [
+    new RegExp(String.raw`通过[ \t]*(\*\*)?\`?(${SERVICE_NAME})\`?(\*\*)?[ \t]*(?:工具)?`, 'g'),
+    (_m, b1, name, b2) => `通过 ${b1 ?? ''}${name}${b2 ?? ''}${SERVICE_SUFFIX_ZH}`,
+  ],
+  [
+    new RegExp(
+      String.raw`(?:必须[ \t]*)?(?:优先使用|推荐使用|直接使用|使用|调用|采用|推荐|用)[ \t]*(\*\*)?\`?(${SERVICE_NAME})\`?(\*\*)?[ \t]*(?:工具)?`,
+      'g',
+    ),
+    (_m, b1, name, b2) => `首选 ${b1 ?? ''}${name}${b2 ?? ''}${SERVICE_SUFFIX_ZH}`,
+  ],
+  [/(\*\*)?使用工具(\*\*)?：/g, '可选生成服务：'],
+
+  // ---- delivery 1: attachments travel as issue comments, there is no result panel
+  [
+    /^([ \t]*(?:\d+\.|-)[ \t]*)(?:\*\*)?调用[ \t]*`?deliver_attachments`?[ \t]*(?:交付)?(?:\*\*)?[:：]?[ \t]*/gm,
+    '$1把交付物写进 issue 评论（必要时附文件链接）：',
+  ],
+  [
+    /^([ \t]*(?:\d+\.|-)[ \t]*)(?:\*\*)?调用[ \t]*`?open_result_view`?[ \t]*展示[ \t]*(.+?)[ \t]*（可选）[ \t]*$/gm,
+    '$1在 issue 评论里贴出 $2 的预览链接（可选，便于用户即时查看）',
+  ],
+  [
+    /^([ \t]*(?:\d+\.|-)[ \t]*)(?:\*\*)?调用[ \t]*`?open_result_view`?[ \t]*展示[ \t]*(.+?)[ \t]*$/gm,
+    '$1在 issue 评论里贴出 $2 的预览链接',
+  ],
+  [
+    /只调用[ \t]*(?:`|\*\*)?open_result_view(?:`|\*\*)?[ \t]*展示最终视频而不调用[ \t]*(?:`|\*\*)?deliver_attachments(?:`|\*\*)?[ \t]*/g,
+    '只贴预览链接、不把产出文件写进 issue 评论',
+  ],
+  [/\|[ \t]*工具[ \t]*\|[ \t]*用途[ \t]*\|[ \t]*何时使用[ \t]*\|/g, '| 交付方式 | 用途 | 何时使用 |'],
+  [/将文件回传到用户产物面板/g, '把文件链接贴进 issue 评论'],
+  [/在预览窗口展示文件/g, '在 issue 评论里贴出预览链接'],
+  [/[ \t]*用户产物面板/g, ' issue 评论'],
+  [/必须通过此工具交付/g, '必须写进 issue 评论'],
+  [/两个工具各有用途，不可互相替代/g, '两者各有用途，不可互相替代'],
+  [/调用[ \t]*(?:`|\*\*)?deliver_attachments(?:`|\*\*)?[ \t]*交付/g, '把产物写进 issue 评论（必要时附文件链接），'],
+  [/调用[ \t]*(?:`|\*\*)?deliver_attachments(?:`|\*\*)?/g, '把产物写进 issue 评论（必要时附文件链接）'],
+  [/deliver_attachments/g, '在 issue 评论里交付产物（必要时附文件链接）'],
+  [/调用[ \t]*(?:`|\*\*)?open_result_view(?:`|\*\*)?/g, '在 issue 评论里贴出预览链接'],
+  [/open_result_view/g, 'issue 评论里的预览链接'],
+
+  // ---- delivery 2: the ai-content send gate deadlocked on a checklist it can never clear
+  [/如果任何一项未通过，禁止发送最终回复，先补齐交付。/g, '如果任何一项未通过，把未完成项和原因写进回复。'],
+  [/禁止发送最终回复/g, '把未完成项和原因写进回复'],
+
+  // ---- handoff: the platform protocol relays a conclusion plus its source, not the body
+  [/必须携带完整原文，禁止摘要、转述、删改/g, `必须携带${HANDOFF}（摘要不可替代原文出处）`],
+  [/必须为完整原文，禁止摘要转述/g, `必须为${HANDOFF}（摘要不可替代原文出处）`],
+  [/完整原文传递/g, '结论与出处传递'],
+  [/完整原文中转/g, `${HANDOFF}中转`],
+  [/完整产出原文/g, HANDOFF],
+  [/传递的完整原文/g, `传递的${HANDOFF}`],
+  [/完整原文/g, HANDOFF],
+
+  // ---- knowledge-base MCP that this host does not ship
+  [/已接入 IMA MCP 连接器/g, '当前运行环境未提供 IMA MCP 连接器'],
+  [/专家团可通过以下 MCP 工具与 IMA 交互：/g, '专家团在用户自行提供知识库文档或链接时，按下表口径读取资料：'],
+  [/\bmcp__ima-mcp__([a-z_]+)\(([^)`]*)\)/g, '用户提供的知识库资料（$1：$2；IMA MCP 在当前运行环境不可用）'],
+  [/\bmcp__ima-mcp__([a-z_]+)/g, '用户提供的知识库资料（$1；IMA MCP 在当前运行环境不可用）'],
+  [/调用 get_knowledge_base_list/g, '向用户索取可用的知识库清单'],
+];
+
+/**
+ * Applies TEAM_RULES plus the two line-shaped rewrites that a plain regex cannot do:
+ * the per-phase progress bulletin (a list item that has to be dropped without leaving a
+ * numbering hole) and the per-occurrence service suffix, which must not land inside a
+ * fenced code block.
+ */
+function rewriteTeamRuntime(text) {
+  let out = text;
+  for (const [re, rep] of TEAM_RULES) out = out.replace(re, rep);
+
+  const SERVICE_LINE = new RegExp(SERVICE_NAME);
+  const DEGRADE_MARK = '若当前运行环境提供';
+  // Already-suffixed mentions are left alone, so the pass is safe to repeat.
+  const SERVICE_ANY = new RegExp(
+    `${SERVICE_NAME}(?![^（(]*[（(](?:${DEGRADE_MARK}|call it if the runtime provides))`,
+    'g',
+  );
+
+  const kept = [];
+  let fence = false;
+  let fenceSawService = false;
+  let renumberIndent = null;
+  for (const line of out.split('\n')) {
+    if (/^[ \t]*(```+|~~~+)/.test(line)) {
+      renumberIndent = null;
+      if (!fence) {
+        fence = true;
+        fenceSawService = false;
+        kept.push(line);
+        continue;
+      }
+      fence = false;
+      kept.push(line);
+      // A code block is left byte-exact, so its service names are annotated right
+      // after it instead of inside it.
+      if (fenceSawService) kept.push(FENCE_NOTE);
+      continue;
+    }
+    if (fence && SERVICE_LINE.test(line)) fenceSawService = true;
+    // The lead still assembles the deliverable; it does not owe a bulletin per phase.
+    const bulletin = line.match(/^([ \t]*)\d+\.[ \t]*\*\*进度通报\*\*/);
+    if (bulletin) {
+      renumberIndent = bulletin[1];
+      continue;
+    }
+    let next = line;
+    if (renumberIndent !== null) {
+      const item = next.match(/^([ \t]*)(\d+)\.[ \t]/);
+      if (item && item[1] === renumberIndent) {
+        next = next.replace(/^([ \t]*)(\d+)\.[ \t]/, (_m, indent, n) => `${indent}${Number(n) - 1}. `);
+      } else {
+        renumberIndent = null;
+      }
+    }
+    if (!fence && next !== line) {
+      // A rewrite can leave a space between two CJK characters; Chinese prose does not
+      // want one there. Only touched lines are tidied, so untouched prose keeps its bytes.
+      next = next.replace(/(?<=[\u4e00-\u9fff])[ \t]+(?=[\u4e00-\u9fff])/g, '');
+    }
+    if (!fence && SERVICE_LINE.test(next) && !next.includes(DEGRADE_MARK)) {
+      const suffix = /[\u4e00-\u9fff]/.test(next) ? SERVICE_SUFFIX_ZH : SERVICE_SUFFIX_EN;
+      const mentions = next.match(SERVICE_ANY) || [];
+      if (mentions.length >= 3) {
+        // A whole inventory in one sentence reads better with one clause than with
+        // the same clause repeated after every name.
+        const trimmed = next.trimEnd();
+        next = trimmed.startsWith('|') && trimmed.endsWith('|')
+          ? `${trimmed.slice(0, -1).trimEnd()}${suffix} |`
+          : `${trimmed}${suffix}`;
+      } else {
+        next = next.replace(SERVICE_ANY, (mention) => `${mention}${suffix}`);
+      }
+    }
+    kept.push(next);
+  }
+  return kept.join('\n');
+}
+
 /**
  * Upstream `koc-ops-report` ships a vendor telemetry helper that POSTs report
  * bodies to a hardcoded third-party host (http://120.77.156.6:8001) and reports
@@ -175,12 +429,14 @@ function rewriteAllowedTools(text) {
     .replace(/^([ \t]*)-[ \t]+AskUserQuestion[ \t]*$/gm, '$1- ask_user_question');
 }
 
-function convertText(text) {
+function convertText(text, pkg = null) {
   // allowed-tools mapping first, so the tool id lands as a plain id (ask_user_question)
   // instead of being rewritten into the prose form by the inline rules below.
   let out = stripVendorTelemetry(text);
   out = rewriteAllowedTools(out);
   for (const [re, rep] of REWRITES) out = out.replace(re, rep);
+  // Team briefs only: dispatch/delivery/services this host does not provide.
+  if (pkg && pkg.kind === 'team' && TEAM_PACKAGES.has(pkg.id)) out = rewriteTeamRuntime(out);
   // Skill paths last: they depend on the namespaced skill directories this same run
   // creates, and the source addresses files relative to the package root, which no
   // host has at run time.
@@ -579,7 +835,7 @@ function copyPackage(kind, id) {
       s = s.split(`../skills/${dir}/`).join(`../skills/${nsName}/`);
       s = s.split(`<SKILL_ROOT>/skills/${dir}/`).join(`../skills/${nsName}/`);
     }
-    s = convertText(s);
+    s = convertText(s, { kind, id });
       // Personas of a package-root-library package point at `references/<group>/<file>.md`;
       // those files now live inside the synthesized skill, so the reference has to name it.
       if (librarySkill && rel.startsWith('agents/')) {
